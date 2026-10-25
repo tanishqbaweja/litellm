@@ -1,0 +1,14 @@
+{
+  "initial_source_sha": "db1791631208a8d1065cdb393185404c51c26555",
+  "retry_source_sha": "b7496a18a86bd7a0639513635738eb2dc9430047",
+  "identical_content_tree": "b914489d35403656c9e129a04326b28e26ba341b",
+  "initial_failed_job": "https://github.com/BerriAI/litellm/actions/runs/40213438328/job/121229751012",
+  "failing_test": "test_token_counter_loads_a_custom_tokenizer_off_the_event_loop",
+  "ci_lag_seconds": 0.105,
+  "ci_count_seconds": 0.409,
+  "main_lag_seconds": 0.205,
+  "main_count_seconds": 0.512,
+  "pr_lag_seconds": 0.332,
+  "pr_count_seconds": 0.636,
+  "retry_reason": "The job rerun API requires repository admin rights. One empty commit triggers CI with unchanged code and tests"
+}

@@ -1,6 +1,6 @@
 # Offline license verification, issue 26231
 
-Before is `dddbaa803d6e9fcc862ea7a5412f771cb1ae040e`, the current upstream main used for the reproduction. After is `db1791631208a8d1065cdb393185404c51c26555`
+Before is `dddbaa803d6e9fcc862ea7a5412f771cb1ae040e`, the current upstream main used for the reproduction. After is `b7496a18a86bd7a0639513635738eb2dc9430047`
 
 The proxy rejects a valid RSA-PSS license when the signed JSON contains dots. The fix reads the signature using the RSA key's byte width and checks the separator before verifying the signature
 
@@ -64,7 +64,7 @@ All 14 raw screenshots, four annotated screenshots and eight sampled frames from
 
 ## Automated checks
 
-The final tests fail on the original verifier with six assertion failures and 38 passes. The fixed verifier and adjacent health endpoint tests pass, 333 tests with 23 warnings in 14.41 seconds
+The final tests fail on the original verifier with six assertion failures and 38 passes. The fixed verifier and adjacent health endpoint tests pass on the current PR tip, 333 tests with 23 warnings in 15.72 seconds
 
 ```bash
 python -m pytest tests/unit/proxy/auth/test_litellm_license.py tests/unit/proxy/health_endpoints/test_health_endpoints.py -q
@@ -76,10 +76,18 @@ git diff --check origin/main...HEAD
 
 The full lint target passes, including its format, strict-rule, type-discipline, test-quality, OpenAPI, type-budget, import and end-to-end type checks. The whole-tree type gate reports 105899 diagnostics within its merge-base ceilings. The separate end-to-end type check reports zero errors
 
+Formatting, full lint and the mutation checks ran on `db1791631208a8d1065cdb393185404c51c26555`. That commit and the current tip have the identical content tree `b914489d35403656c9e129a04326b28e26ba341b`. The 333 affected tests, all ten live API checks and all four browser workflows were rerun on the current tip, and the screenshots and recordings here come from that fresh run
+
 Four selected mutations are caught by assertion failures, splitting at the last dot, rounding the key width down, ignoring the separator, and removing RSA verification. They produce 1, 3, 1 and 3 failures respectively. The source was restored byte-for-byte before the passing test run. This is targeted mutation verification, not a whole-project mutation score
+
+## CI retry
+
+The [initial CI unit shard](https://github.com/BerriAI/litellm/actions/runs/40213438328/job/121229751012) failed the existing `test_token_counter_loads_a_custom_tokenizer_off_the_event_loop` timing assertion: 0.105 seconds of event-loop lag during a 0.409-second count. Running that exact test separately also fails on unchanged main, 0.205 seconds during 0.512 seconds, and the original PR tip, 0.332 seconds during 0.636 seconds. The local failure logs are included as [tokenizer-main.log](tokenizer-main.log) and [tokenizer-pr.log](tokenizer-pr.log)
+
+GitHub denied the targeted rerun because it requires repository admin rights. One empty commit triggered fresh CI without changing code or tests. [ci-retry.json](ci-retry.json) records the revisions, identical content tree and measured timings; it does not claim the new CI run has passed
 
 ## Existing limitations
 
-The phone tab labels overlap the settings panel on both revisions. The existing static export also emits runtime-config and prefetch 404s, 43 before and 39 after on desktop, nine on each phone run. The fixed run adds no new 404 paths. The dialog itself fits both viewports
+The phone tab labels overlap the settings panel on both revisions. The existing static export also emits runtime-config and prefetch 404s, 60 before and 42 after on desktop, nine on each phone run. The fixed run adds no new 404 paths. The dialog itself fits both viewports
 
 The earlier proposal in [PR 26234](https://github.com/BerriAI/litellm/pull/26234) used the same signature-width approach and closed unmerged. This contribution applies it to the current verifier and mapped tests, including binary dots, non-byte-aligned RSA key sizes and invalid inputs

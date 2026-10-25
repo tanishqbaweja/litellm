@@ -1,12 +1,14 @@
 {
-  "checked_at": "2026-10-25T16:45:54.398970+00:00",
+  "checked_at": "2026-10-25T17:09:01.223556+00:00",
   "base_sha": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
-  "fixed_sha": "db1791631208a8d1065cdb393185404c51c26555",
+  "fixed_sha": "b7496a18a86bd7a0639513635738eb2dc9430047",
   "baseline_regressions": "6 failed, 38 passed",
-  "fixed_affected_tests": "333 passed, 23 warnings in 14.41s",
+  "fixed_affected_tests": "333 passed, 23 warnings in 15.72s",
+  "quality_gate_and_mutation_source_sha": "db1791631208a8d1065cdb393185404c51c26555",
+  "quality_gate_and_current_tip_content_tree": "b914489d35403656c9e129a04326b28e26ba341b",
   "format": "make format, 2932 files unchanged; targeted test formatting check passed",
   "lint": "make lint BASE_REF=origin/main LINT_JOBS=2, exit 0",
-  "whole_tree_type_gate": "105899 total diagnostics, all rules within merge-base ceilings",
+  "whole_tree_type_gate": "105899 existing diagnostics, all rules within merge-base ceilings",
   "e2e_type_check": "0 errors, 0 warnings, 0 notes",
   "mutations": {
     "mutations": [

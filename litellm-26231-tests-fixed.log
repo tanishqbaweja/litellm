@@ -81,4 +81,4 @@ tests/unit/proxy/health_endpoints/test_health_endpoints.py::test_test_model_conn
   See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
 
 -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
-333 passed, 23 warnings in 14.41s
+333 passed, 23 warnings in 15.72s

@@ -1,0 +1,75 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+________ test_token_counter_loads_a_custom_tokenizer_off_the_event_loop ________
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7e8c1e997410>
+
+    async def test_token_counter_loads_a_custom_tokenizer_off_the_event_loop(monkeypatch):
+        from litellm.rust_bridge._native import Tokenizer
+
+        from litellm import Router
+        from tests.unit.litellm_core_utils.event_loop_lag import assert_loop_stayed_free, timed_with_loop_lags
+
+        claude_tokenizer: Final = litellm.utils.select_tokenizer("claude-fable-5")["tokenizer"]
+
+        class SlowHubTokenizer:
+            @staticmethod
+            def from_pretrained(identifier: str, revision: str = "main", token: str | None = None) -> Tokenizer:
+                time.sleep(0.3)
+                return claude_tokenizer
+
+        monkeypatch.setattr("litellm.rust_bridge.tokenizer.from_pretrained", SlowHubTokenizer.from_pretrained)
+        monkeypatch.setattr(
+            "litellm.proxy.proxy_server.llm_router",
+            Router(
+                model_list=[
+                    {
+                        "model_name": "self-hosted",
+                        "litellm_params": {"model": "openai/self-hosted-model", "api_base": "http://localhost:8080/v1"},
+                        "model_info": {
+                            "custom_tokenizer": {"identifier": "my-org/tokenizer", "revision": "main", "auth_token": None}
+                        },
+                    }
+                ]
+            ),
+        )
+
+        response, took, lags = await timed_with_loop_lags(
+            lambda: proxy_server_module.token_counter(
+                TokenCountRequest(model="self-hosted", prompt="count me off the loop")
+            )
+        )
+
+        assert response.tokenizer_type == "huggingface_tokenizer"
+        assert response.total_tokens > 0
+>       assert_loop_stayed_free(took, lags)
+
+tests/unit/proxy/test_proxy_server_endpoints_and_startup.py:15248:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+took = 0.5115846199914813
+lags = (0.20472279099724255, 0.0008178829923272133, 0.00019007099419832228, 0.0001353699956089258, 0.00014271798520348964, 0.00011895898589864371, ...)
+
+    def assert_loop_stayed_free(took: float, lags: tuple[float, ...]) -> None:
+>       assert max(lags) < took / 4, f"the event loop stalled {max(lags):.3f}s during a {took:.3f}s count"
+               ^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: the event loop stalled 0.205s during a 0.512s count
+
+tests/unit/litellm_core_utils/event_loop_lag.py:45: AssertionError
+=============================== warnings summary ===============================
+tests/unit/proxy/test_proxy_server_endpoints_and_startup.py::test_token_counter_loads_a_custom_tokenizer_off_the_event_loop
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'index' on TypedDict class 'ChatCompletionThinkingBlock' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/proxy/test_proxy_server_endpoints_and_startup.py::test_token_counter_loads_a_custom_tokenizer_off_the_event_loop
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'index' on TypedDict class 'ChatCompletionRedactedThinkingBlock' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/proxy/test_proxy_server_endpoints_and_startup.py::test_token_counter_loads_a_custom_tokenizer_off_the_event_loop
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'summary' on TypedDict class 'ChatCompletionReasoningItem' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/unit/proxy/test_proxy_server_endpoints_and_startup.py::test_token_counter_loads_a_custom_tokenizer_off_the_event_loop
+1 failed, 3 warnings in 1.41s
