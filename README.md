@@ -83,7 +83,7 @@ The phone layout has existing horizontal clipping after selecting the Test tab a
 
 Exact commands and logs are in [backend checks](reports/backend-final.json), [mapped backend command](reports/backend-regression.json), [frontend checks](reports/ui-final.json), [selected frontend scope](reports/frontend-scope-checks.json), [mutations](reports/mutation-report.json), [schema regeneration](reports/api-types-check.json), [build](reports/ui-build.json) and [logs](logs)
 
-The integration tests use the repository's existing isolated-service harness, including its test-only enterprise entitlement wrapper and upstream fixture. This is separate from the live browser and curl proxies above, which did not override entitlements. The integration report retains the pre-amend Git HEAD, while its tested working-tree production bytes match the final commit as documented in the source check
+The integration tests use the repository's existing isolated-service harness with PostgreSQL, Redis, a scripted upstream and two proxies. The harness starts the actual proxy without overriding entitlements, and license validation is outside these tests. The integration report retains the pre-amend Git HEAD, while its tested working-tree production bytes match the final commit as documented in the source check
 
 The whole-UI ESLint report has zero errors but exits 2 for unrelated stale suppression entries already present on main. Changed-file lint uses the repository CI flag, and the CI budget command passes without raising budgets. Only the touched networking suppression counts were reduced. The full backend type gate passes within unchanged ceilings, including zero E2E type errors
 
