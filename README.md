@@ -2,7 +2,7 @@
 
 Evidence for [LiteLLM #34927](https://github.com/BerriAI/litellm/issues/34927), captured on 2026-10-25
 
-Before source is `dddbaa803d6e9fcc862ea7a5412f771cb1ae040e`, the current upstream main when reproduced. After source is `219212f7532165a3a579de9cb930b634b3ea9055`. The upstream change contains only the configuration fields and an endpoint regression test. This evidence branch is separate from the product branch
+Before source is `dddbaa803d6e9fcc862ea7a5412f771cb1ae040e`, the current upstream main when reproduced. After source is `81a5dc0ae2e18cb19e9f9f29a8a92d8e723bd533`. The upstream change contains only the configuration fields and an endpoint regression test. This evidence branch is separate from the product branch
 
 ## Environment and scope
 
@@ -56,3 +56,5 @@ Six affected frontend test files pass, 93 tests and no type errors, covering `ad
 `make lint BASE_REF=origin/main LINT_JOBS=2` passes. This includes formatting, Ruff, type discipline, test quality, OpenAPI documentation, E2E and harness type checks, circular imports, import safety and the repository's basedpyright budget gate. The latter accepts existing diagnostics within its ceilings and does not mean the whole codebase has zero type errors. Changed-file formatting and `git diff --check` also pass
 
 Python was 3.12.13 on Linux, uv was 0.10.9 and the browser driver used Node 24.21.0 on Windows. No UI source changed in this PR, and the dashboard export was reused rather than rebuilt for this backend-only change
+
+The initial upstream CI run failed an existing tokenizer event-loop timing assertion in `test_token_counter_loads_a_custom_tokenizer_off_the_event_loop`, with 4328 other tests passing in that shard. Running that exact test locally also fails on unchanged main and on the PR. Neither the test, its timing helper nor its proxy implementation changes here. The after revision adds an empty commit to retry CI, and this browser evidence was refreshed for that revision. OSV also reports the same three dependency advisories as unchanged main, tracked separately in upstream PR #48302

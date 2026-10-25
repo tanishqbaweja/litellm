@@ -12,7 +12,7 @@ const serviceURL = "http://127.0.0.1:51476";
 const key = process.env.LITELLM_MASTER_KEY;
 assert(key);
 const runId = Date.now().toString(36);
-const sourceSha = build === "baseline" ? "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e" : "219212f7532165a3a579de9cb930b634b3ea9055";
+const sourceSha = build === "baseline" ? "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e" : "81a5dc0ae2e18cb19e9f9f29a8a92d8e723bd533";
 const viewports = [{ name: "desktop", width: 1440, height: 900, touch: false }, { name: "phone", width: 390, height: 844, touch: true }];
 
 async function main() {
