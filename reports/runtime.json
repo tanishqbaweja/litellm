@@ -1,0 +1,23 @@
+{
+  "created_at": "2026-10-25T22:46:47.129969+00:00",
+  "base": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "default_branch": "main",
+  "branch": "litellm_fix_42689_unknown_key_spend",
+  "issue": {
+    "number": 42689,
+    "state": "OPEN",
+    "title": "[Bug]: Every failed auth with an unknown key writes its own spend rows, so an unauthenticated client decides how large the usage tables grow",
+    "url": "https://github.com/BerriAI/litellm/issues/42689",
+    "assignees": [],
+    "updatedAt": "2026-10-15T02:21:52Z"
+  },
+  "exact_open_prs": [],
+  "scope": "Do not write spend rows for unknown or malformed virtual API keys; retain recognized-key failures and non-database logging",
+  "overlap_review": {
+    "35791": "Expired Admin UI sessions only; separate known identity case already in main",
+    "38493": "Preserves metadata for recognized-key budget failures, not unknown key filtering",
+    "31006": "Sources resolved principal identity, not failure admission",
+    "47778": "Management and health response error types, not spend persistence"
+  },
+  "reproduction": "probe-main.json records 8 rejected localhost requests and 8 persisted rows in each of three spend tables on clean main"
+}

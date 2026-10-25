@@ -1,0 +1,54 @@
+{
+  "revision": "fixed",
+  "source_sha": "ad971a738117785fe3ae1efb87287f6993490227",
+  "started_at": "2026-10-25T23:15:55.452123+00:00",
+  "requests": [
+    {
+      "name": "delete-qa42689-valid",
+      "method": "POST",
+      "route": "/key/delete",
+      "command": "curl --silent --show-error --connect-timeout 3 --max-time 120 --request POST http://127.0.0.1:41481/key/delete --header 'Authorization: Bearer <QA_KEY>' --header 'Content-Type: application/json' --data-binary '{\"keys\":[\"<QA_KEY>\"]}' --write-out '\n__HTTP_STATUS__:%{http_code}'",
+      "status": 200,
+      "response": {
+        "deleted_keys": [
+          "<QA_KEY>"
+        ]
+      }
+    },
+    {
+      "name": "delete-qa42689-expired",
+      "method": "POST",
+      "route": "/key/delete",
+      "command": "curl --silent --show-error --connect-timeout 3 --max-time 120 --request POST http://127.0.0.1:41481/key/delete --header 'Authorization: Bearer <QA_KEY>' --header 'Content-Type: application/json' --data-binary '{\"keys\":[\"<QA_KEY>\"]}' --write-out '\n__HTTP_STATUS__:%{http_code}'",
+      "status": 200,
+      "response": {
+        "deleted_keys": [
+          "<QA_KEY>"
+        ]
+      }
+    },
+    {
+      "name": "delete-qa42689-budget",
+      "method": "POST",
+      "route": "/key/delete",
+      "command": "curl --silent --show-error --connect-timeout 3 --max-time 120 --request POST http://127.0.0.1:41481/key/delete --header 'Authorization: Bearer <QA_KEY>' --header 'Content-Type: application/json' --data-binary '{\"keys\":[\"<QA_KEY>\"]}' --write-out '\n__HTTP_STATUS__:%{http_code}'",
+      "status": 200,
+      "response": {
+        "deleted_keys": [
+          "<QA_KEY>"
+        ]
+      }
+    }
+  ],
+  "deleted_keys": [
+    "qa42689-valid",
+    "qa42689-expired",
+    "qa42689-budget"
+  ],
+  "remaining": [
+    {
+      "count": 0
+    }
+  ],
+  "completed_at": "2026-10-25T23:15:55.929218+00:00"
+}

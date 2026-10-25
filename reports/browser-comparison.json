@@ -1,0 +1,2087 @@
+{
+  "checked_at": "2026-10-25T23:17:13.416333+00:00",
+  "browser": "Headed Chromium 145, Playwright CLI 0.1.22",
+  "desktop": "1440x900",
+  "phone": "390x844, touch-enabled Chromium emulation",
+  "cases": [
+    {
+      "revision": "baseline",
+      "viewport": "desktop",
+      "source_sha": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+      "logs": {
+        "url": "http://127.0.0.1:41481/ui/logs/",
+        "rows": 12,
+        "failures": 11,
+        "successes": 1,
+        "expired": 2,
+        "budget": 1,
+        "valid": 1,
+        "pagination": "Showing 1-12 of 12"
+      },
+      "usage": {
+        "url": "http://127.0.0.1:41481/ui/usage/",
+        "spend": "$0.06",
+        "requests": 9,
+        "successful": 1,
+        "failed": 8,
+        "tokens": 36
+      },
+      "console_404_counts_by_path": {
+        "/ui/litellm-runtime-config.json": 4,
+        "/ui.txt": 1,
+        "/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt": 4,
+        "/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt": 4,
+        "/ui/api-keys/__next.!KGRhc2hib2FyZCk.api-keys.__PAGE__.txt": 4,
+        "/ui/playground/__next.!KGRhc2hib2FyZCk.playground.__PAGE__.txt": 4,
+        "/ui/models-and-endpoints/__next.!KGRhc2hib2FyZCk.models-and-endpoints.__PAGE__.txt": 4,
+        "/ui/mcp-servers/__next.!KGRhc2hib2FyZCk.mcp-servers.__PAGE__.txt": 4,
+        "/ui/skills/__next.!KGRhc2hib2FyZCk.skills.__PAGE__.txt": 4,
+        "/ui/guardrails/__next.!KGRhc2hib2FyZCk.guardrails.__PAGE__.txt": 4,
+        "/ui/usage/__next.!KGRhc2hib2FyZCk.usage.__PAGE__.txt": 4,
+        "/ui/policies/__next.!KGRhc2hib2FyZCk.policies.__PAGE__.txt": 4,
+        "/ui/cost-optimization/__next.!KGRhc2hib2FyZCk.cost-optimization.__PAGE__.txt": 4,
+        "/ui/model-insights/__next.!KGRhc2hib2FyZCk.model-insights.__PAGE__.txt": 4,
+        "/ui/logs/__next.!KGRhc2hib2FyZCk.logs.__PAGE__.txt": 4,
+        "/ui/guardrails-monitor/__next.!KGRhc2hib2FyZCk.guardrails-monitor.__PAGE__.txt": 4,
+        "/ui/lens/__next.!KGRhc2hib2FyZCk.lens.__PAGE__.txt": 4,
+        "/ui/teams/__next.!KGRhc2hib2FyZCk.teams.__PAGE__.txt": 4,
+        "/ui/users/__next.!KGRhc2hib2FyZCk.users.__PAGE__.txt": 4
+      },
+      "expected_unauthenticated_reopen_errors": [],
+      "console_warning_types": {
+        "Preloaded CSS not used within a few seconds": 8,
+        "The width(0) and height(0) of chart should be greater than 0,": 26
+      },
+      "observed_network_requests": [
+        {
+          "method": "GET",
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/litellm/.well-known/litellm-ui-config",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/litellm/.well-known/litellm-ui-config",
+          "status": 200
+        },
+        {
+          "method": "POST",
+          "path": "/v2/login",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/ui.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/litellm/.well-known/litellm-ui-config",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/management/v1/users/me",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/api/plugins",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/health/license",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/user/available_users",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/health/readiness/details",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/team/list",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/sso/get/ui_settings",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/get/ui_settings",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/public/litellm_blog_posts",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/get/user_banner",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/v2/user/info",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/user/daily/activity/aggregated",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/gateway/daily/activity",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/get/ui_theme_settings",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/health/deployment_warnings",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/get/latest_release_info",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/telemetry/settings",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/telemetry/ui_events/enabled",
+          "status": 200
+        },
+        {
+          "method": "HEAD",
+          "path": "/ui/",
+          "status": 200
+        },
+        {
+          "method": "HEAD",
+          "path": "/ui/home/",
+          "status": 200
+        },
+        {
+          "method": "HEAD",
+          "path": "/ui/api-keys/",
+          "status": 200
+        },
+        {
+          "method": "HEAD",
+          "path": "/ui/playground/",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/litellm/.well-known/litellm-ui-config",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/ui/__next._tree.txt",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/ui/home/__next._tree.txt",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/ui/playground/__next._tree.txt",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/ui/api-keys/__next._tree.txt",
+          "status": 200
+        },
+        {
+          "method": "HEAD",
+          "path": "/ui/models-and-endpoints/",
+          "status": 200
+        },
+        {
+          "method": "HEAD",
+          "path": "/ui/mcp-servers/",
+          "status": 200
+        },
+        {
+          "method": "HEAD",
+          "path": "/ui/skills/",
+          "status": 200
+        },
+        {
+          "method": "HEAD",
+          "path": "/ui/guardrails/",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/ui/models-and-endpoints/__next._tree.txt",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/ui/mcp-servers/__next._tree.txt",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/ui/skills/__next._tree.txt",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/ui/guardrails/__next._tree.txt",
+          "status": 200
+        },
+        {
+          "method": "HEAD",
+          "path": "/ui/policies/",
+          "status": 200
+        },
+        {
+          "method": "HEAD",
+          "path": "/ui/usage/",
+          "status": 200
+        },
+        {
+          "method": "HEAD",
+          "path": "/ui/model-insights/",
+          "status": 200
+        },
+        {
+          "method": "HEAD",
+          "path": "/ui/cost-optimization/",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/ui/policies/__next._tree.txt",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/ui/model-insights/__next._tree.txt",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/ui/usage/__next._tree.txt",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/ui/cost-optimization/__next._tree.txt",
+          "status": 200
+        },
+        {
+          "method": "HEAD",
+          "path": "/ui/logs/",
+          "status": 200
+        },
+        {
+          "method": "HEAD",
+          "path": "/ui/lens/",
+          "status": 200
+        },
+        {
+          "method": "HEAD",
+          "path": "/ui/guardrails-monitor/",
+          "status": 200
+        },
+        {
+          "method": "HEAD",
+          "path": "/ui/teams/",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/ui/logs/__next._tree.txt",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/ui/lens/__next._tree.txt",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/ui/guardrails-monitor/__next._tree.txt",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/ui/teams/__next._tree.txt",
+          "status": 200
+        },
+        {
+          "method": "HEAD",
+          "path": "/ui/users/",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/api-keys/__next.!KGRhc2hib2FyZCk.api-keys.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/playground/__next.!KGRhc2hib2FyZCk.playground.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/users/__next._tree.txt",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/ui/models-and-endpoints/__next.!KGRhc2hib2FyZCk.models-and-endpoints.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/mcp-servers/__next.!KGRhc2hib2FyZCk.mcp-servers.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/skills/__next.!KGRhc2hib2FyZCk.skills.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/guardrails/__next.!KGRhc2hib2FyZCk.guardrails.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/policies/__next.!KGRhc2hib2FyZCk.policies.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/usage/__next.!KGRhc2hib2FyZCk.usage.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/model-insights/__next.!KGRhc2hib2FyZCk.model-insights.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/cost-optimization/__next.!KGRhc2hib2FyZCk.cost-optimization.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/logs/__next.!KGRhc2hib2FyZCk.logs.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/lens/__next.!KGRhc2hib2FyZCk.lens.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/guardrails-monitor/__next.!KGRhc2hib2FyZCk.guardrails-monitor.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/teams/__next.!KGRhc2hib2FyZCk.teams.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/users/__next.!KGRhc2hib2FyZCk.users.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/logs/index.txt",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/v2/model/info",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/spend/logs/ui",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/team/list",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/key/list",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/v2/team/list",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/spend/logs/ui",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/spend/logs/ui",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/spend/logs/ui/1ddb2d84-17aa-484b-9150-0219e7e71a3d",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/api-keys/__next.!KGRhc2hib2FyZCk.api-keys.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/playground/__next.!KGRhc2hib2FyZCk.playground.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/models-and-endpoints/__next.!KGRhc2hib2FyZCk.models-and-endpoints.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/mcp-servers/__next.!KGRhc2hib2FyZCk.mcp-servers.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/skills/__next.!KGRhc2hib2FyZCk.skills.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/guardrails/__next.!KGRhc2hib2FyZCk.guardrails.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/policies/__next.!KGRhc2hib2FyZCk.policies.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/usage/__next.!KGRhc2hib2FyZCk.usage.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/model-insights/__next.!KGRhc2hib2FyZCk.model-insights.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/cost-optimization/__next.!KGRhc2hib2FyZCk.cost-optimization.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/logs/__next.!KGRhc2hib2FyZCk.logs.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/lens/__next.!KGRhc2hib2FyZCk.lens.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/guardrails-monitor/__next.!KGRhc2hib2FyZCk.guardrails-monitor.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/teams/__next.!KGRhc2hib2FyZCk.teams.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/users/__next.!KGRhc2hib2FyZCk.users.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/spend/logs/ui",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/api-keys/__next.!KGRhc2hib2FyZCk.api-keys.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/playground/__next.!KGRhc2hib2FyZCk.playground.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/models-and-endpoints/__next.!KGRhc2hib2FyZCk.models-and-endpoints.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/mcp-servers/__next.!KGRhc2hib2FyZCk.mcp-servers.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/skills/__next.!KGRhc2hib2FyZCk.skills.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/guardrails/__next.!KGRhc2hib2FyZCk.guardrails.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/policies/__next.!KGRhc2hib2FyZCk.policies.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/usage/__next.!KGRhc2hib2FyZCk.usage.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/model-insights/__next.!KGRhc2hib2FyZCk.model-insights.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/cost-optimization/__next.!KGRhc2hib2FyZCk.cost-optimization.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/logs/__next.!KGRhc2hib2FyZCk.logs.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/lens/__next.!KGRhc2hib2FyZCk.lens.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/guardrails-monitor/__next.!KGRhc2hib2FyZCk.guardrails-monitor.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/teams/__next.!KGRhc2hib2FyZCk.teams.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/users/__next.!KGRhc2hib2FyZCk.users.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/usage/index.txt",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/user/daily/activity/aggregated/users",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/user/daily/activity/aggregated/keys",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/user/daily/activity/aggregated/users",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/v2/user/info",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/tag/list",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/user/daily/activity/aggregated",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/tag/daily/activity/aggregated",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/gateway/daily/activity",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/gateway/errors/activity",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/team/list",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/model_group/info",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/sso/get/ui_settings",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/user/list",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/customer/list",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/v1/agents",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/tag/summary",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/api-keys/__next.!KGRhc2hib2FyZCk.api-keys.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/playground/__next.!KGRhc2hib2FyZCk.playground.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/models",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/ui/models-and-endpoints/__next.!KGRhc2hib2FyZCk.models-and-endpoints.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/mcp-servers/__next.!KGRhc2hib2FyZCk.mcp-servers.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/skills/__next.!KGRhc2hib2FyZCk.skills.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/guardrails/__next.!KGRhc2hib2FyZCk.guardrails.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/user/daily/activity/aggregated/model_top_keys",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/ui/policies/__next.!KGRhc2hib2FyZCk.policies.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/usage/__next.!KGRhc2hib2FyZCk.usage.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/model-insights/__next.!KGRhc2hib2FyZCk.model-insights.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/cost-optimization/__next.!KGRhc2hib2FyZCk.cost-optimization.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/logs/__next.!KGRhc2hib2FyZCk.logs.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/lens/__next.!KGRhc2hib2FyZCk.lens.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/guardrails-monitor/__next.!KGRhc2hib2FyZCk.guardrails-monitor.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/teams/__next.!KGRhc2hib2FyZCk.teams.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/users/__next.!KGRhc2hib2FyZCk.users.__PAGE__.txt",
+          "status": 404
+        }
+      ],
+      "driver_nonzero_commands": [
+        {
+          "command": "video-stop",
+          "at": "2026-10-25T23:07:40.806563+00:00",
+          "error_excerpt": "Unknown option: --filename\n"
+        },
+        {
+          "command": "network",
+          "at": "2026-10-25T23:07:42.656638+00:00",
+          "error_excerpt": "Unknown command: network\n\n"
+        }
+      ],
+      "result": "passed for the intended functional checks",
+      "closed_at": "2026-10-25T23:07:51.343294+00:00"
+    },
+    {
+      "revision": "baseline",
+      "viewport": "phone",
+      "source_sha": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+      "logs": {
+        "url": "http://127.0.0.1:41481/ui/logs/",
+        "rows": 12,
+        "failures": 11,
+        "successes": 1,
+        "expired": 2,
+        "budget": 1,
+        "valid": 1,
+        "pagination": "Showing 1-12 of 12"
+      },
+      "usage": {
+        "url": "http://127.0.0.1:41481/ui/usage/",
+        "spend": "$0.06",
+        "requests": 9,
+        "successful": 1,
+        "failed": 8,
+        "tokens": 36
+      },
+      "console_404_counts_by_path": {
+        "/ui/litellm-runtime-config.json": 16,
+        "/ui.txt": 1
+      },
+      "expected_unauthenticated_reopen_errors": [
+        {
+          "file": "console-2026-10-25T23-09-41-553Z.log",
+          "path": "/telemetry/ui_events/enabled",
+          "status": 401,
+          "context": "Freshly reopened browser had no session before logging in again"
+        }
+      ],
+      "console_warning_types": {
+        "The width(0) and height(0) of chart should be greater than 0,": 106
+      },
+      "observed_network_requests": [
+        {
+          "method": "GET",
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/litellm/.well-known/litellm-ui-config",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/management/v1/users/me",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/api/plugins",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/health/license",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/user/available_users",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/health/readiness/details",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/team/list",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/sso/get/ui_settings",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/get/ui_settings",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/public/litellm_blog_posts",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/get/user_banner",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/get/ui_theme_settings",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/health/deployment_warnings",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/get/latest_release_info",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/telemetry/settings",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/telemetry/ui_events/enabled",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/user/daily/activity/aggregated/users",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/user/daily/activity/aggregated/keys",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/user/daily/activity/aggregated/users",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/v2/user/info",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/tag/list",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/user/daily/activity/aggregated",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/tag/daily/activity/aggregated",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/gateway/daily/activity",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/gateway/errors/activity",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/user/list",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/customer/list",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/v1/agents",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/tag/summary",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/litellm/.well-known/litellm-ui-config",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/model_group/info",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/sso/get/ui_settings",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/models",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/user/daily/activity/aggregated/model_top_keys",
+          "status": 200
+        }
+      ],
+      "driver_nonzero_commands": [
+        {
+          "command": "run-code",
+          "at": "2026-10-25T23:09:25.707441+00:00",
+          "error_excerpt": "### Error\nError: locator.scrollIntoViewIfNeeded: Error: strict mode violation: getByText('Total Requests', { exact: true }) resolved to 4 elements:\n    1) <div class=\"flex h-4 items-center gap-1.5 text-xs leading-4 text-muted-foreground\">Total Requests</div> a"
+        },
+        {
+          "command": "run-code",
+          "at": "2026-10-25T23:10:16.034089+00:00",
+          "error_excerpt": "### Error\nTimeoutError: locator.innerText: Timeout 30000ms exceeded.\nCall log:\n  - waiting for getByRole('tabpanel', { name: 'Overview', exact: true })\n\n"
+        }
+      ],
+      "result": "passed for the intended functional checks",
+      "closed_at": "2026-10-25T23:11:05.031258+00:00"
+    },
+    {
+      "revision": "fixed",
+      "viewport": "desktop",
+      "source_sha": "ad971a738117785fe3ae1efb87287f6993490227",
+      "logs": {
+        "url": "http://127.0.0.1:41481/ui/logs/",
+        "rows": 4,
+        "failures": 3,
+        "successes": 1,
+        "expired": 2,
+        "budget": 1,
+        "valid": 1,
+        "pagination": "Showing 1-4 of 4"
+      },
+      "usage": {
+        "url": "http://127.0.0.1:41481/ui/usage/",
+        "spend": "$0.06",
+        "requests": 9,
+        "successful": 1,
+        "failed": 8,
+        "tokens": 36
+      },
+      "console_404_counts_by_path": {
+        "/ui/litellm-runtime-config.json": 4,
+        "/ui.txt": 1,
+        "/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt": 3,
+        "/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt": 3,
+        "/ui/api-keys/__next.!KGRhc2hib2FyZCk.api-keys.__PAGE__.txt": 3,
+        "/ui/playground/__next.!KGRhc2hib2FyZCk.playground.__PAGE__.txt": 3,
+        "/ui/models-and-endpoints/__next.!KGRhc2hib2FyZCk.models-and-endpoints.__PAGE__.txt": 3,
+        "/ui/mcp-servers/__next.!KGRhc2hib2FyZCk.mcp-servers.__PAGE__.txt": 3,
+        "/ui/skills/__next.!KGRhc2hib2FyZCk.skills.__PAGE__.txt": 3,
+        "/ui/guardrails/__next.!KGRhc2hib2FyZCk.guardrails.__PAGE__.txt": 3,
+        "/ui/policies/__next.!KGRhc2hib2FyZCk.policies.__PAGE__.txt": 3,
+        "/ui/usage/__next.!KGRhc2hib2FyZCk.usage.__PAGE__.txt": 3,
+        "/ui/model-insights/__next.!KGRhc2hib2FyZCk.model-insights.__PAGE__.txt": 3,
+        "/ui/cost-optimization/__next.!KGRhc2hib2FyZCk.cost-optimization.__PAGE__.txt": 3,
+        "/ui/lens/__next.!KGRhc2hib2FyZCk.lens.__PAGE__.txt": 3,
+        "/ui/logs/__next.!KGRhc2hib2FyZCk.logs.__PAGE__.txt": 3,
+        "/ui/guardrails-monitor/__next.!KGRhc2hib2FyZCk.guardrails-monitor.__PAGE__.txt": 3,
+        "/ui/teams/__next.!KGRhc2hib2FyZCk.teams.__PAGE__.txt": 3,
+        "/ui/users/__next.!KGRhc2hib2FyZCk.users.__PAGE__.txt": 3
+      },
+      "expected_unauthenticated_reopen_errors": [],
+      "console_warning_types": {
+        "Preloaded CSS not used within a few seconds": 5,
+        "The width(0) and height(0) of chart should be greater than 0,": 52
+      },
+      "observed_network_requests": [
+        {
+          "method": "GET",
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/litellm/.well-known/litellm-ui-config",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/litellm/.well-known/litellm-ui-config",
+          "status": 200
+        },
+        {
+          "method": "POST",
+          "path": "/v2/login",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/ui.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/litellm/.well-known/litellm-ui-config",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/management/v1/users/me",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/api/plugins",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/health/license",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/user/available_users",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/health/readiness/details",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/team/list",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/sso/get/ui_settings",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/get/ui_settings",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/public/litellm_blog_posts",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/get/user_banner",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/v2/user/info",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/user/daily/activity/aggregated",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/gateway/daily/activity",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/get/ui_theme_settings",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/health/deployment_warnings",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/get/latest_release_info",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/telemetry/settings",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/telemetry/ui_events/enabled",
+          "status": 200
+        },
+        {
+          "method": "HEAD",
+          "path": "/ui/",
+          "status": 200
+        },
+        {
+          "method": "HEAD",
+          "path": "/ui/home/",
+          "status": 200
+        },
+        {
+          "method": "HEAD",
+          "path": "/ui/api-keys/",
+          "status": 200
+        },
+        {
+          "method": "HEAD",
+          "path": "/ui/playground/",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/litellm/.well-known/litellm-ui-config",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/ui/__next._tree.txt",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/ui/api-keys/__next._tree.txt",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/ui/home/__next._tree.txt",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/ui/playground/__next._tree.txt",
+          "status": 200
+        },
+        {
+          "method": "HEAD",
+          "path": "/ui/models-and-endpoints/",
+          "status": 200
+        },
+        {
+          "method": "HEAD",
+          "path": "/ui/mcp-servers/",
+          "status": 200
+        },
+        {
+          "method": "HEAD",
+          "path": "/ui/skills/",
+          "status": 200
+        },
+        {
+          "method": "HEAD",
+          "path": "/ui/guardrails/",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/ui/models-and-endpoints/__next._tree.txt",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/ui/mcp-servers/__next._tree.txt",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/ui/skills/__next._tree.txt",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/ui/guardrails/__next._tree.txt",
+          "status": 200
+        },
+        {
+          "method": "HEAD",
+          "path": "/ui/policies/",
+          "status": 200
+        },
+        {
+          "method": "HEAD",
+          "path": "/ui/usage/",
+          "status": 200
+        },
+        {
+          "method": "HEAD",
+          "path": "/ui/model-insights/",
+          "status": 200
+        },
+        {
+          "method": "HEAD",
+          "path": "/ui/cost-optimization/",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/ui/policies/__next._tree.txt",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/ui/usage/__next._tree.txt",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/ui/model-insights/__next._tree.txt",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/ui/cost-optimization/__next._tree.txt",
+          "status": 200
+        },
+        {
+          "method": "HEAD",
+          "path": "/ui/logs/",
+          "status": 200
+        },
+        {
+          "method": "HEAD",
+          "path": "/ui/lens/",
+          "status": 200
+        },
+        {
+          "method": "HEAD",
+          "path": "/ui/guardrails-monitor/",
+          "status": 200
+        },
+        {
+          "method": "HEAD",
+          "path": "/ui/teams/",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/ui/logs/__next._tree.txt",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/ui/lens/__next._tree.txt",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/ui/teams/__next._tree.txt",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/ui/guardrails-monitor/__next._tree.txt",
+          "status": 200
+        },
+        {
+          "method": "HEAD",
+          "path": "/ui/users/",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/api-keys/__next.!KGRhc2hib2FyZCk.api-keys.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/users/__next._tree.txt",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/ui/playground/__next.!KGRhc2hib2FyZCk.playground.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/models-and-endpoints/__next.!KGRhc2hib2FyZCk.models-and-endpoints.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/mcp-servers/__next.!KGRhc2hib2FyZCk.mcp-servers.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/skills/__next.!KGRhc2hib2FyZCk.skills.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/guardrails/__next.!KGRhc2hib2FyZCk.guardrails.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/policies/__next.!KGRhc2hib2FyZCk.policies.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/usage/__next.!KGRhc2hib2FyZCk.usage.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/model-insights/__next.!KGRhc2hib2FyZCk.model-insights.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/cost-optimization/__next.!KGRhc2hib2FyZCk.cost-optimization.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/logs/__next.!KGRhc2hib2FyZCk.logs.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/lens/__next.!KGRhc2hib2FyZCk.lens.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/guardrails-monitor/__next.!KGRhc2hib2FyZCk.guardrails-monitor.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/teams/__next.!KGRhc2hib2FyZCk.teams.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/users/__next.!KGRhc2hib2FyZCk.users.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/logs/index.txt",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/v2/model/info",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/spend/logs/ui",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/team/list",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/key/list",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/v2/team/list",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/api-keys/__next.!KGRhc2hib2FyZCk.api-keys.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/playground/__next.!KGRhc2hib2FyZCk.playground.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/models-and-endpoints/__next.!KGRhc2hib2FyZCk.models-and-endpoints.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/mcp-servers/__next.!KGRhc2hib2FyZCk.mcp-servers.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/skills/__next.!KGRhc2hib2FyZCk.skills.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/guardrails/__next.!KGRhc2hib2FyZCk.guardrails.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/policies/__next.!KGRhc2hib2FyZCk.policies.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/usage/__next.!KGRhc2hib2FyZCk.usage.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/model-insights/__next.!KGRhc2hib2FyZCk.model-insights.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/cost-optimization/__next.!KGRhc2hib2FyZCk.cost-optimization.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/logs/__next.!KGRhc2hib2FyZCk.logs.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/lens/__next.!KGRhc2hib2FyZCk.lens.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/guardrails-monitor/__next.!KGRhc2hib2FyZCk.guardrails-monitor.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/teams/__next.!KGRhc2hib2FyZCk.teams.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/users/__next.!KGRhc2hib2FyZCk.users.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/spend/logs/ui/1f1455b6-5ebc-43d6-bc32-03dbf623a1a0",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/api-keys/__next.!KGRhc2hib2FyZCk.api-keys.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/playground/__next.!KGRhc2hib2FyZCk.playground.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/models-and-endpoints/__next.!KGRhc2hib2FyZCk.models-and-endpoints.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/mcp-servers/__next.!KGRhc2hib2FyZCk.mcp-servers.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/skills/__next.!KGRhc2hib2FyZCk.skills.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/guardrails/__next.!KGRhc2hib2FyZCk.guardrails.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/policies/__next.!KGRhc2hib2FyZCk.policies.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/usage/__next.!KGRhc2hib2FyZCk.usage.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/model-insights/__next.!KGRhc2hib2FyZCk.model-insights.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/cost-optimization/__next.!KGRhc2hib2FyZCk.cost-optimization.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/logs/__next.!KGRhc2hib2FyZCk.logs.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/lens/__next.!KGRhc2hib2FyZCk.lens.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/guardrails-monitor/__next.!KGRhc2hib2FyZCk.guardrails-monitor.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/teams/__next.!KGRhc2hib2FyZCk.teams.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/users/__next.!KGRhc2hib2FyZCk.users.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/ui/usage/index.txt",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/user/daily/activity/aggregated/users",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/user/daily/activity/aggregated/keys",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/user/daily/activity/aggregated/users",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/v2/user/info",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/tag/list",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/user/daily/activity/aggregated",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/tag/daily/activity/aggregated",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/gateway/daily/activity",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/gateway/errors/activity",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/team/list",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/model_group/info",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/sso/get/ui_settings",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/user/list",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/customer/list",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/v1/agents",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/tag/summary",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/models",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/user/daily/activity/aggregated/model_top_keys",
+          "status": 200
+        }
+      ],
+      "driver_nonzero_commands": [
+        {
+          "command": "run-code",
+          "at": "2026-10-25T23:13:02.444649+00:00",
+          "error_excerpt": "### Error\nError: Spend\n$0.06\nNo budget set\nTotal Requests\n9\n1 ok\n8 failed\nTotal Tokens\n36\n0 cache read\nView token breakdown\nAvg cost / request\n$0.0150\nAvg latency\n18.1s\n11.1% success rate\nDaily usage\n\nDaily spend by model (top 8, rest grouped as Other)\n\nSpend\n"
+        }
+      ],
+      "result": "passed for the intended functional checks",
+      "closed_at": "2026-10-25T23:13:50.238654+00:00"
+    },
+    {
+      "revision": "fixed",
+      "viewport": "phone",
+      "source_sha": "ad971a738117785fe3ae1efb87287f6993490227",
+      "logs": {
+        "url": "http://127.0.0.1:41481/ui/logs/",
+        "rows": 4,
+        "failures": 3,
+        "successes": 1,
+        "expired": 2,
+        "budget": 1,
+        "valid": 1,
+        "pagination": "Showing 1-4 of 4"
+      },
+      "usage": {
+        "url": "http://127.0.0.1:41481/ui/usage/",
+        "spend": "$0.06",
+        "requests": 9,
+        "successful": 1,
+        "failed": 8,
+        "tokens": 36
+      },
+      "console_404_counts_by_path": {
+        "/ui/litellm-runtime-config.json": 8,
+        "/ui.txt": 1
+      },
+      "expected_unauthenticated_reopen_errors": [],
+      "console_warning_types": {
+        "The width(0) and height(0) of chart should be greater than 0,": 26
+      },
+      "observed_network_requests": [
+        {
+          "method": "GET",
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/litellm/.well-known/litellm-ui-config",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/management/v1/users/me",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/api/plugins",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/health/license",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/user/available_users",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/health/readiness/details",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/team/list",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/sso/get/ui_settings",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/get/ui_settings",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/public/litellm_blog_posts",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/get/user_banner",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/get/ui_theme_settings",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/health/deployment_warnings",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/get/latest_release_info",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/telemetry/settings",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/telemetry/ui_events/enabled",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/user/daily/activity/aggregated/users",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/user/daily/activity/aggregated/keys",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/user/daily/activity/aggregated/users",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/v2/user/info",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/tag/list",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/user/daily/activity/aggregated",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/tag/daily/activity/aggregated",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/gateway/daily/activity",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/gateway/errors/activity",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/user/list",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/customer/list",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/v1/agents",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/tag/summary",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/litellm/.well-known/litellm-ui-config",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/user/daily/activity/aggregated/model_top_keys",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/model_group/info",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/sso/get/ui_settings",
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/models",
+          "status": 200
+        }
+      ],
+      "driver_nonzero_commands": [],
+      "result": "passed for the intended functional checks",
+      "closed_at": "2026-10-25T23:15:36.865469+00:00"
+    }
+  ],
+  "gateway_counter_note": "Usage headline request totals come from gateway counters and remain 9 requests, 1 successful and 8 failed on both revisions. Spend-backed metadata changes from 12 requests, 11 failures and 11 distinct keys to 4 requests, 3 failures and 3 recognized keys",
+  "limitations": [
+    "Existing runtime-config and static-prefetch 404s on main and the fixed build",
+    "Existing chart zero-size and preloaded CSS warnings",
+    "Existing narrow phone request drawer, horizontal overflow and Aria overlay",
+    "Phone workflow uses Chromium emulation, not a physical phone"
+  ],
+  "driver_corrections": [
+    "Initial budget status expectation corrected to the existing HTTP 422 contract before the final matched API runs",
+    "Scoped phone usage scroll locator to Overview after it matched hidden tab panels",
+    "Reopened browser needed a fresh UI login before a supplemental screenshot",
+    "Corrected the fixed Usage headline expectation from 3 to 9 after checking overviewTotals and its gateway counter source",
+    "Corrected CLI video-stop and requests command syntax"
+  ]
+}

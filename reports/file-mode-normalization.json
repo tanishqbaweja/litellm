@@ -1,0 +1,20 @@
+[
+  {
+    "file": "litellm/proxy/hooks/proxy_track_cost_callback.py",
+    "before": "0o755",
+    "after": "0o644",
+    "contents_unchanged": true
+  },
+  {
+    "file": "tests/unit/proxy/hooks/test_proxy_track_cost_callback.py",
+    "before": "0o755",
+    "after": "0o644",
+    "contents_unchanged": true
+  },
+  {
+    "file": "tests/integration/spend/test_expired_ui_session_failure_rows.py",
+    "before": "0o755",
+    "after": "0o644",
+    "contents_unchanged": true
+  }
+]

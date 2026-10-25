@@ -1,0 +1,89 @@
+{
+  "checked_at": "2026-10-25T23:14:48.038816+00:00",
+  "repository": "BerriAI/litellm",
+  "account": "tanishqbaweja",
+  "default_branch": "main",
+  "base": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "head": "ad971a738117785fe3ae1efb87287f6993490227",
+  "issue": {
+    "number": 42689,
+    "title": "[Bug]: Every failed auth with an unknown key writes its own spend rows, so an unauthenticated client decides how large the usage tables grow",
+    "state": "OPEN",
+    "updatedAt": "2026-10-15T02:21:52Z",
+    "assignees": [],
+    "url": "https://github.com/BerriAI/litellm/issues/42689"
+  },
+  "comments": 4,
+  "active_timeline_pr_references": [],
+  "searches": [
+    {
+      "query": "42689",
+      "results": []
+    },
+    {
+      "query": "\"unknown key\" in:title",
+      "results": []
+    },
+    {
+      "query": "\"unknown keys\" in:title",
+      "results": []
+    },
+    {
+      "query": "unauthenticated spend in:title",
+      "results": []
+    },
+    {
+      "query": "\"invalid key\" in:title",
+      "results": [
+        {
+          "number": 41233,
+          "title": "fix(health): openai realtime health check reports healthy with a missing or invalid api key",
+          "updatedAt": "2026-10-21T04:27:31Z",
+          "url": "https://github.com/BerriAI/litellm/pull/41233"
+        }
+      ]
+    },
+    {
+      "query": "\"invalid keys\" in:title",
+      "results": []
+    },
+    {
+      "query": "\"pre-routing\" in:title",
+      "results": [
+        {
+          "number": 28615,
+          "title": "fix(router): call async_pre_routing_hook in non-async routing strategy fallback so complexity_router resolves model before deployment selection",
+          "updatedAt": "2026-10-24T12:52:42Z",
+          "url": "https://github.com/BerriAI/litellm/pull/28615"
+        }
+      ]
+    }
+  ],
+  "adjacent_prs": [
+    {
+      "number": 41233,
+      "title": "fix(health): openai realtime health check reports healthy with a missing or invalid api key",
+      "updatedAt": "2026-10-21T04:27:31Z",
+      "url": "https://github.com/BerriAI/litellm/pull/41233",
+      "files": [
+        "litellm/constants.py",
+        "litellm/llms/openai/realtime/handler.py",
+        "litellm/realtime_api/main.py",
+        "tests/test_litellm/realtime_api/test_main.py"
+      ],
+      "relevant_diffs": []
+    },
+    {
+      "number": 28615,
+      "title": "fix(router): call async_pre_routing_hook in non-async routing strategy fallback so complexity_router resolves model before deployment selection",
+      "updatedAt": "2026-10-24T12:52:42Z",
+      "url": "https://github.com/BerriAI/litellm/pull/28615",
+      "files": [
+        "litellm/llms/dashscope/chat/transformation.py",
+        "litellm/router.py"
+      ],
+      "relevant_diffs": []
+    }
+  ],
+  "new_unreviewed_hits": []
+}

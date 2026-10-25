@@ -1,0 +1,113 @@
+{
+  "head": "ad971a738117785fe3ae1efb87287f6993490227",
+  "gates": {
+    "unit-full": {
+      "phase": "full",
+      "command": [
+        "/opt/litellm-venv/bin/python",
+        "-m",
+        "pytest",
+        "tests/unit/proxy/hooks/test_proxy_track_cost_callback.py",
+        "-q",
+        "--tb=short",
+        "tests/unit/proxy/auth/test_auth_utils.py",
+        "tests/unit/proxy/auth/test_auth_exception_handler.py",
+        "tests/unit/proxy/auth/test_resolvers_exceptions.py",
+        "tests/unit/proxy/db/test_db_spend_update_writer.py",
+        "-n",
+        "4",
+        "--junitxml=/qa/litellm-42689/unit-full.xml"
+      ],
+      "started_at": "2026-10-25T23:03:13.902597+00:00",
+      "head": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+      "returncode": 0,
+      "completed_at": "2026-10-25T23:03:56.248204+00:00"
+    },
+    "integration-green": {
+      "phase": "green",
+      "started_at": "2026-10-25T22:54:07.471599+00:00",
+      "nodes": [
+        "tests/integration/spend/test_expired_ui_session_failure_rows.py"
+      ],
+      "source_head": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+      "services_ready": true,
+      "returncode": 0,
+      "owned_services_cleaned_up": true,
+      "completed_at": "2026-10-25T22:57:11.364907+00:00"
+    },
+    "frontend": {
+      "name": "frontend",
+      "command": [
+        "/opt/contri-node/bin/node",
+        "node_modules/vitest/vitest.mjs",
+        "run",
+        "src/components/logs/request/RequestLogsPanel.test.tsx",
+        "src/components/logs/request/RequestLogsTableColumns.test.tsx",
+        "src/app/(dashboard)/logs/page.integration.test.tsx",
+        "src/app/(dashboard)/usage/_components/hooks/useAggregatedDailyActivity.test.ts",
+        "src/app/(dashboard)/usage/_components/components/overview/UsageStatStrip.integration.test.tsx",
+        "src/app/(dashboard)/usage/_components/components/errors/errorsData.test.ts"
+      ],
+      "started_at": "2026-10-25T22:56:24.820544+00:00",
+      "lock_sha256": "19cae2b0b30c7af66cce6cec5dd98bc5ae919b179cdc0605ebf307e95791a2b2",
+      "dependency_cache": "/qa/litellm-36095/dashboard-deps-linux/node_modules",
+      "dependency_manifests_match": true,
+      "returncode": 0,
+      "completed_at": "2026-10-25T22:57:27.963642+00:00"
+    },
+    "ui-types": {
+      "name": "ui-types",
+      "command": [
+        "/opt/contri-node/bin/node",
+        "node_modules/typescript/bin/tsc",
+        "--project",
+        "tsconfig.production.json"
+      ],
+      "started_at": "2026-10-25T22:57:46.530336+00:00",
+      "lock_sha256": "19cae2b0b30c7af66cce6cec5dd98bc5ae919b179cdc0605ebf307e95791a2b2",
+      "dependency_cache": "/qa/litellm-36095/dashboard-deps-linux/node_modules",
+      "dependency_manifests_match": true,
+      "returncode": 0,
+      "completed_at": "2026-10-25T22:59:16.372737+00:00"
+    },
+    "format": {
+      "name": "format",
+      "command": [
+        "make",
+        "format"
+      ],
+      "started_at": "2026-10-25T22:57:46.508531+00:00",
+      "returncode": 0,
+      "completed_at": "2026-10-25T22:58:52.726715+00:00"
+    },
+    "lint": {
+      "name": "lint",
+      "command": [
+        "make",
+        "lint",
+        "BASE_REF=origin/main",
+        "LINT_JOBS=2"
+      ],
+      "started_at": "2026-10-25T23:03:56.222897+00:00",
+      "returncode": 0,
+      "completed_at": "2026-10-25T23:07:25.742418+00:00"
+    },
+    "committed-format": {
+      "name": "committed-format",
+      "command": [
+        "make",
+        "lint-format-check-changed",
+        "BASE_REF=origin/main",
+        "LINT_DEP_INSTALL=",
+        "LINT_DEP_BASE="
+      ],
+      "started_at": "2026-10-25T23:08:53.008560+00:00",
+      "returncode": 0,
+      "completed_at": "2026-10-25T23:08:54.465133+00:00"
+    }
+  },
+  "unit_summary": "1059 passed, 79 warnings in 30.00s",
+  "integration_summary": "4 passed in 124.75s",
+  "frontend_summary": "106 tests across 6 files passed",
+  "type_gate_note": "Every basedpyright rule is within its ceiling, 105900 existing total diagnostics, not a zero-diagnostic codebase"
+}

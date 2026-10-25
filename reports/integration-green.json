@@ -1,0 +1,12 @@
+{
+  "phase": "green",
+  "started_at": "2026-10-25T22:54:07.471599+00:00",
+  "nodes": [
+    "tests/integration/spend/test_expired_ui_session_failure_rows.py"
+  ],
+  "source_head": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "services_ready": true,
+  "returncode": 0,
+  "owned_services_cleaned_up": true,
+  "completed_at": "2026-10-25T22:57:11.364907+00:00"
+}

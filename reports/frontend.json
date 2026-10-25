@@ -1,0 +1,20 @@
+{
+  "name": "frontend",
+  "command": [
+    "/opt/contri-node/bin/node",
+    "node_modules/vitest/vitest.mjs",
+    "run",
+    "src/components/logs/request/RequestLogsPanel.test.tsx",
+    "src/components/logs/request/RequestLogsTableColumns.test.tsx",
+    "src/app/(dashboard)/logs/page.integration.test.tsx",
+    "src/app/(dashboard)/usage/_components/hooks/useAggregatedDailyActivity.test.ts",
+    "src/app/(dashboard)/usage/_components/components/overview/UsageStatStrip.integration.test.tsx",
+    "src/app/(dashboard)/usage/_components/components/errors/errorsData.test.ts"
+  ],
+  "started_at": "2026-10-25T22:56:24.820544+00:00",
+  "lock_sha256": "19cae2b0b30c7af66cce6cec5dd98bc5ae919b179cdc0605ebf307e95791a2b2",
+  "dependency_cache": "/qa/litellm-36095/dashboard-deps-linux/node_modules",
+  "dependency_manifests_match": true,
+  "returncode": 0,
+  "completed_at": "2026-10-25T22:57:27.963642+00:00"
+}

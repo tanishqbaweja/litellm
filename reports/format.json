@@ -1,0 +1,10 @@
+{
+  "name": "format",
+  "command": [
+    "make",
+    "format"
+  ],
+  "started_at": "2026-10-25T22:57:46.508531+00:00",
+  "returncode": 0,
+  "completed_at": "2026-10-25T22:58:52.726715+00:00"
+}

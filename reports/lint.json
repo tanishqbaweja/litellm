@@ -1,0 +1,12 @@
+{
+  "name": "lint",
+  "command": [
+    "make",
+    "lint",
+    "BASE_REF=origin/main",
+    "LINT_JOBS=2"
+  ],
+  "started_at": "2026-10-25T23:03:56.222897+00:00",
+  "returncode": 0,
+  "completed_at": "2026-10-25T23:07:25.742418+00:00"
+}

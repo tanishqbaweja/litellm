@@ -1,0 +1,67 @@
+{
+  "checked_at": "2026-10-25T23:17:13.416333+00:00",
+  "cases": [
+    {
+      "revision": "baseline",
+      "source_sha": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+      "requests": 18,
+      "unknown_key_rows": {
+        "spend_logs": 8,
+        "daily_user": 8,
+        "daily_team": 8
+      },
+      "recognized_rows": 4,
+      "real_inference_spend": 0.06,
+      "usage": {
+        "user-usage-report": {
+          "total_spend": 0.06,
+          "total_tokens": 36,
+          "total_api_requests": 12,
+          "total_successful_requests": 1,
+          "total_failed_requests": 11,
+          "total_api_keys": 11
+        },
+        "team-usage-report": {
+          "total_spend": 0.06,
+          "total_tokens": 36,
+          "total_api_requests": 12,
+          "total_successful_requests": 1,
+          "total_failed_requests": 11,
+          "total_api_keys": 11
+        }
+      },
+      "owned_resources_cleaned": true
+    },
+    {
+      "revision": "fixed",
+      "source_sha": "ad971a738117785fe3ae1efb87287f6993490227",
+      "requests": 18,
+      "unknown_key_rows": {
+        "spend_logs": 0,
+        "daily_user": 0,
+        "daily_team": 0
+      },
+      "recognized_rows": 4,
+      "real_inference_spend": 0.06,
+      "usage": {
+        "user-usage-report": {
+          "total_spend": 0.06,
+          "total_tokens": 36,
+          "total_api_requests": 4,
+          "total_successful_requests": 1,
+          "total_failed_requests": 3,
+          "total_api_keys": 3
+        },
+        "team-usage-report": {
+          "total_spend": 0.06,
+          "total_tokens": 36,
+          "total_api_requests": 4,
+          "total_successful_requests": 1,
+          "total_failed_requests": 3,
+          "total_api_keys": 3
+        }
+      },
+      "owned_resources_cleaned": true
+    }
+  ]
+}

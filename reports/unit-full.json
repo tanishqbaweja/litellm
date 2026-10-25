@@ -1,0 +1,22 @@
+{
+  "phase": "full",
+  "command": [
+    "/opt/litellm-venv/bin/python",
+    "-m",
+    "pytest",
+    "tests/unit/proxy/hooks/test_proxy_track_cost_callback.py",
+    "-q",
+    "--tb=short",
+    "tests/unit/proxy/auth/test_auth_utils.py",
+    "tests/unit/proxy/auth/test_auth_exception_handler.py",
+    "tests/unit/proxy/auth/test_resolvers_exceptions.py",
+    "tests/unit/proxy/db/test_db_spend_update_writer.py",
+    "-n",
+    "4",
+    "--junitxml=/qa/litellm-42689/unit-full.xml"
+  ],
+  "started_at": "2026-10-25T23:03:13.902597+00:00",
+  "head": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "returncode": 0,
+  "completed_at": "2026-10-25T23:03:56.248204+00:00"
+}

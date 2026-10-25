@@ -1,0 +1,185 @@
+[     415ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/litellm-runtime-config.json:0
+[     417ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/litellm-runtime-config.json:0
+[   12790ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui.txt?login=success&_rsc=bGzRxJDhwgP5L-Pw:0
+[   13200ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/litellm-runtime-config.json:0
+[   13366ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/litellm-runtime-config.json:0
+[   14008ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt?_rsc=4xuApNU1lWNBjMDX:0
+[   14017ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt?_rsc=JuTEVM1QAaaeO6K9:0
+[   14023ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/api-keys/__next.!KGRhc2hib2FyZCk.api-keys.__PAGE__.txt?_rsc=WnvpUqtx2Bjltuyo:0
+[   14025ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/playground/__next.!KGRhc2hib2FyZCk.playground.__PAGE__.txt?_rsc=3S_M4EeFjp0iqtdY:0
+[   14028ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/models-and-endpoints/__next.!KGRhc2hib2FyZCk.models-and-endpoints.__PAGE__.txt?_rsc=Me4xj9hklgCRkewA:0
+[   14037ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/mcp-servers/__next.!KGRhc2hib2FyZCk.mcp-servers.__PAGE__.txt?_rsc=eJGP2L5ou6qC2JS4:0
+[   14038ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/skills/__next.!KGRhc2hib2FyZCk.skills.__PAGE__.txt?_rsc=McRitKJvFxxSjosu:0
+[   14044ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/guardrails/__next.!KGRhc2hib2FyZCk.guardrails.__PAGE__.txt?_rsc=96pmRmX1JnZkXtb8:0
+[   14053ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/usage/__next.!KGRhc2hib2FyZCk.usage.__PAGE__.txt?_rsc=JCZvcln-_r5rcY-q:0
+[   14053ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/policies/__next.!KGRhc2hib2FyZCk.policies.__PAGE__.txt?_rsc=bkMDbZW1IkGvKfYO:0
+[   14058ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/cost-optimization/__next.!KGRhc2hib2FyZCk.cost-optimization.__PAGE__.txt?_rsc=ed9fU9ik7MNO9p4Z:0
+[   14059ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/model-insights/__next.!KGRhc2hib2FyZCk.model-insights.__PAGE__.txt?_rsc=Bj0j42PEOS4vpmMI:0
+[   14068ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/logs/__next.!KGRhc2hib2FyZCk.logs.__PAGE__.txt?_rsc=MPbI5QRpzYeJrRfG:0
+[   14070ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/guardrails-monitor/__next.!KGRhc2hib2FyZCk.guardrails-monitor.__PAGE__.txt?_rsc=mEs18DYJ4-Gge8DU:0
+[   14070ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/lens/__next.!KGRhc2hib2FyZCk.lens.__PAGE__.txt?_rsc=4wy-XzMeywxLlHpa:0
+[   14073ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/teams/__next.!KGRhc2hib2FyZCk.teams.__PAGE__.txt?_rsc=wAMpIEiKmfO1JTWM:0
+[   14081ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/users/__next.!KGRhc2hib2FyZCk.users.__PAGE__.txt?_rsc=1NbL_REczfs1rFuh:0
+[   17707ms] [WARNING] The resource http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/1pbkw-7b5ctl4.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ http://127.0.0.1:41481/ui/?login=success:0
+[   17707ms] [WARNING] The resource http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/3ahnmzq_1dupe.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ http://127.0.0.1:41481/ui/?login=success:0
+[   26814ms] [WARNING] The resource http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/3ahnmzq_1dupe.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ http://127.0.0.1:41481/ui/logs/:0
+[   41752ms] [WARNING] The resource http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/3ahnmzq_1dupe.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ http://127.0.0.1:41481/ui/logs/:0
+[   54771ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt?_rsc=i-T6jopfECZH3CJ3:0
+[   54773ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt?_rsc=-ldr2klRIKX_y0lo:0
+[   54777ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/playground/__next.!KGRhc2hib2FyZCk.playground.__PAGE__.txt?_rsc=QVSRja_5HOIgKZCd:0
+[   54787ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/api-keys/__next.!KGRhc2hib2FyZCk.api-keys.__PAGE__.txt?_rsc=QjxDrBFHjIPLCDsm:0
+[   54795ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/models-and-endpoints/__next.!KGRhc2hib2FyZCk.models-and-endpoints.__PAGE__.txt?_rsc=knYspJF9WWLTJTI4:0
+[   54800ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/mcp-servers/__next.!KGRhc2hib2FyZCk.mcp-servers.__PAGE__.txt?_rsc=2E8foR6qkIdhAmZN:0
+[   54802ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/skills/__next.!KGRhc2hib2FyZCk.skills.__PAGE__.txt?_rsc=dbgmsXKYBt5QSaXh:0
+[   54807ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/guardrails/__next.!KGRhc2hib2FyZCk.guardrails.__PAGE__.txt?_rsc=aSrxILGMg1s3IPbn:0
+[   54816ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/policies/__next.!KGRhc2hib2FyZCk.policies.__PAGE__.txt?_rsc=A_CQUwfUJJyC9zMS:0
+[   54819ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/usage/__next.!KGRhc2hib2FyZCk.usage.__PAGE__.txt?_rsc=GJjgc2NuY-rOhjET:0
+[   54820ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/model-insights/__next.!KGRhc2hib2FyZCk.model-insights.__PAGE__.txt?_rsc=5bh1T1j7RgYc9_4c:0
+[   54854ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/cost-optimization/__next.!KGRhc2hib2FyZCk.cost-optimization.__PAGE__.txt?_rsc=rZFSUPRO0YWO6PhY:0
+[   54865ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/logs/__next.!KGRhc2hib2FyZCk.logs.__PAGE__.txt?_rsc=0lOPu-J5cHHjMmLU:0
+[   54866ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/lens/__next.!KGRhc2hib2FyZCk.lens.__PAGE__.txt?_rsc=tOZIriY4bvyZg715:0
+[   54871ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/teams/__next.!KGRhc2hib2FyZCk.teams.__PAGE__.txt?_rsc=tORZXmPsACHOc2N-:0
+[   54871ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/guardrails-monitor/__next.!KGRhc2hib2FyZCk.guardrails-monitor.__PAGE__.txt?_rsc=xB3vXHGxSQi1y53y:0
+[   54883ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/users/__next.!KGRhc2hib2FyZCk.users.__PAGE__.txt?_rsc=wr3Ae_XaOIsB-Mld:0
+[   57933ms] [WARNING] The resource http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/3ahnmzq_1dupe.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ http://127.0.0.1:41481/ui/logs/?log_id=1ddb2d84-17aa-484b-9150-0219e7e71a3d:0
+[   70769ms] [WARNING] The resource http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/3ahnmzq_1dupe.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ http://127.0.0.1:41481/ui/logs/?log_id=1ddb2d84-17aa-484b-9150-0219e7e71a3d:0
+[   72781ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt?_rsc=i-T6jopfECZH3CJ3:0
+[   72785ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt?_rsc=-ldr2klRIKX_y0lo:0
+[   72786ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/api-keys/__next.!KGRhc2hib2FyZCk.api-keys.__PAGE__.txt?_rsc=QjxDrBFHjIPLCDsm:0
+[   72790ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/playground/__next.!KGRhc2hib2FyZCk.playground.__PAGE__.txt?_rsc=QVSRja_5HOIgKZCd:0
+[   72812ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/models-and-endpoints/__next.!KGRhc2hib2FyZCk.models-and-endpoints.__PAGE__.txt?_rsc=knYspJF9WWLTJTI4:0
+[   72860ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/skills/__next.!KGRhc2hib2FyZCk.skills.__PAGE__.txt?_rsc=dbgmsXKYBt5QSaXh:0
+[   72861ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/guardrails/__next.!KGRhc2hib2FyZCk.guardrails.__PAGE__.txt?_rsc=aSrxILGMg1s3IPbn:0
+[   72862ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/mcp-servers/__next.!KGRhc2hib2FyZCk.mcp-servers.__PAGE__.txt?_rsc=2E8foR6qkIdhAmZN:0
+[   72877ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/policies/__next.!KGRhc2hib2FyZCk.policies.__PAGE__.txt?_rsc=A_CQUwfUJJyC9zMS:0
+[   72882ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/model-insights/__next.!KGRhc2hib2FyZCk.model-insights.__PAGE__.txt?_rsc=5bh1T1j7RgYc9_4c:0
+[   72883ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/usage/__next.!KGRhc2hib2FyZCk.usage.__PAGE__.txt?_rsc=GJjgc2NuY-rOhjET:0
+[   72891ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/cost-optimization/__next.!KGRhc2hib2FyZCk.cost-optimization.__PAGE__.txt?_rsc=rZFSUPRO0YWO6PhY:0
+[   72897ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/logs/__next.!KGRhc2hib2FyZCk.logs.__PAGE__.txt?_rsc=0lOPu-J5cHHjMmLU:0
+[   72901ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/guardrails-monitor/__next.!KGRhc2hib2FyZCk.guardrails-monitor.__PAGE__.txt?_rsc=xB3vXHGxSQi1y53y:0
+[   72903ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/lens/__next.!KGRhc2hib2FyZCk.lens.__PAGE__.txt?_rsc=tOZIriY4bvyZg715:0
+[   72908ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/teams/__next.!KGRhc2hib2FyZCk.teams.__PAGE__.txt?_rsc=tORZXmPsACHOc2N-:0
+[   72910ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/users/__next.!KGRhc2hib2FyZCk.users.__PAGE__.txt?_rsc=wr3Ae_XaOIsB-Mld:0
+[   75961ms] [WARNING] The resource http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/3ahnmzq_1dupe.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ http://127.0.0.1:41481/ui/logs/:0
+[   82889ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   82969ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   83198ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   83216ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   83410ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   83511ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   83570ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   83595ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt?_rsc=D-noQlLGyaNumKmA:0
+[   83597ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt?_rsc=ZnHenWGzSVX0lQCs:0
+[   83598ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/api-keys/__next.!KGRhc2hib2FyZCk.api-keys.__PAGE__.txt?_rsc=_q-Y5eSkk_CwLh5W:0
+[   83600ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/playground/__next.!KGRhc2hib2FyZCk.playground.__PAGE__.txt?_rsc=_T0cbOwDUeflI0nD:0
+[   83664ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   83703ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   83704ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   83704ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   83704ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   83704ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   83705ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   83705ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   83705ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   83705ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   83752ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   83752ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   83752ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   83753ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   83753ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   83753ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   83753ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   83753ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   83753ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   83763ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/skills/__next.!KGRhc2hib2FyZCk.skills.__PAGE__.txt?_rsc=9Kl9JU0HVQkK4Xsu:0
+[   83764ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/mcp-servers/__next.!KGRhc2hib2FyZCk.mcp-servers.__PAGE__.txt?_rsc=EZYi-HX8GXDyO9rw:0
+[   83765ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/models-and-endpoints/__next.!KGRhc2hib2FyZCk.models-and-endpoints.__PAGE__.txt?_rsc=0nryxO446zS5PYgw:0
+[   83766ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/guardrails/__next.!KGRhc2hib2FyZCk.guardrails.__PAGE__.txt?_rsc=Prsobk1u01q_gSKL:0
+[   83782ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/usage/__next.!KGRhc2hib2FyZCk.usage.__PAGE__.txt?_rsc=hHjAD-tm2w9DTHL9:0
+[   83785ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/policies/__next.!KGRhc2hib2FyZCk.policies.__PAGE__.txt?_rsc=0Bf5oSy28fPzufda:0
+[   83787ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/model-insights/__next.!KGRhc2hib2FyZCk.model-insights.__PAGE__.txt?_rsc=lelkt7o6WikX92ti:0
+[   83788ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/cost-optimization/__next.!KGRhc2hib2FyZCk.cost-optimization.__PAGE__.txt?_rsc=V3ezMqUIaxVLYMKy:0
+[   83799ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/logs/__next.!KGRhc2hib2FyZCk.logs.__PAGE__.txt?_rsc=ZMI6j-6Rw0sUmc9b:0
+[   83803ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/lens/__next.!KGRhc2hib2FyZCk.lens.__PAGE__.txt?_rsc=Qn3bbkV3C_CicjDe:0
+[   83805ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/teams/__next.!KGRhc2hib2FyZCk.teams.__PAGE__.txt?_rsc=KTyqYfZ_piisOVzW:0
+[   83807ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/guardrails-monitor/__next.!KGRhc2hib2FyZCk.guardrails-monitor.__PAGE__.txt?_rsc=6-uiamNHuD8RFJEi:0
+[   83814ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/users/__next.!KGRhc2hib2FyZCk.users.__PAGE__.txt?_rsc=Wd-IcTsTh3u3pGXi:0
+[   86865ms] [WARNING] The resource http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/3ahnmzq_1dupe.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ http://127.0.0.1:41481/ui/usage/:0

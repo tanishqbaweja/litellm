@@ -1,0 +1,101 @@
+{
+  "started_at": "2026-10-25T23:00:47.346466+00:00",
+  "original_sha256": "f039efe60d314170c5e3ecc11efdc5e627683bda24ec243585607df2292fb241",
+  "mutations": [
+    {
+      "name": "baseline-control",
+      "baseline_control": true,
+      "returncode": 1,
+      "tests": 14,
+      "errors": 0,
+      "failed_assertions": [
+        "test_unrecognized_keys_write_no_spend_rows_but_recognized_key_failures_remain[malformed-key-/v1/chat/completions]",
+        "test_unrecognized_keys_write_no_spend_rows_but_recognized_key_failures_remain[malformed-key-/v1/models]",
+        "test_unrecognized_keys_write_no_spend_rows_but_recognized_key_failures_remain[unknown-key-/v1/chat/completions]",
+        "test_unrecognized_keys_write_no_spend_rows_but_recognized_key_failures_remain[unknown-key-/v1/models]"
+      ]
+    },
+    {
+      "name": "unknown-keys-admitted",
+      "baseline_control": false,
+      "returncode": 1,
+      "tests": 14,
+      "errors": 0,
+      "failed_assertions": [
+        "test_unrecognized_keys_write_no_spend_rows_but_recognized_key_failures_remain[unknown-key-/v1/chat/completions]",
+        "test_unrecognized_keys_write_no_spend_rows_but_recognized_key_failures_remain[unknown-key-/v1/models]"
+      ]
+    },
+    {
+      "name": "malformed-keys-admitted",
+      "baseline_control": false,
+      "returncode": 1,
+      "tests": 14,
+      "errors": 0,
+      "failed_assertions": [
+        "test_unrecognized_keys_write_no_spend_rows_but_recognized_key_failures_remain[malformed-key-/v1/chat/completions]",
+        "test_unrecognized_keys_write_no_spend_rows_but_recognized_key_failures_remain[malformed-key-/v1/models]"
+      ]
+    },
+    {
+      "name": "both-markers-required",
+      "baseline_control": false,
+      "returncode": 1,
+      "tests": 14,
+      "errors": 0,
+      "failed_assertions": [
+        "test_unrecognized_keys_write_no_spend_rows_but_recognized_key_failures_remain[malformed-key-/v1/chat/completions]",
+        "test_unrecognized_keys_write_no_spend_rows_but_recognized_key_failures_remain[malformed-key-/v1/models]",
+        "test_unrecognized_keys_write_no_spend_rows_but_recognized_key_failures_remain[unknown-key-/v1/chat/completions]",
+        "test_unrecognized_keys_write_no_spend_rows_but_recognized_key_failures_remain[unknown-key-/v1/models]"
+      ]
+    },
+    {
+      "name": "all-failures-dropped",
+      "baseline_control": false,
+      "returncode": 1,
+      "tests": 14,
+      "errors": 0,
+      "failed_assertions": [
+        "test_unrecognized_keys_write_no_spend_rows_but_recognized_key_failures_remain[exhausted-budget-/v1/chat/completions]",
+        "test_unrecognized_keys_write_no_spend_rows_but_recognized_key_failures_remain[exhausted-budget-/v1/models]",
+        "test_unrecognized_keys_write_no_spend_rows_but_recognized_key_failures_remain[expired-key-/v1/chat/completions]",
+        "test_unrecognized_keys_write_no_spend_rows_but_recognized_key_failures_remain[expired-key-/v1/models]",
+        "test_unrecognized_keys_write_no_spend_rows_but_recognized_key_failures_remain[model-permission-/v1/chat/completions]",
+        "test_unrecognized_keys_write_no_spend_rows_but_recognized_key_failures_remain[model-permission-/v1/models]",
+        "test_unrecognized_keys_write_no_spend_rows_but_recognized_key_failures_remain[provider-auth-/v1/chat/completions]",
+        "test_unrecognized_keys_write_no_spend_rows_but_recognized_key_failures_remain[provider-auth-/v1/models]",
+        "test_unrecognized_keys_write_no_spend_rows_but_recognized_key_failures_remain[unmarked-auth-message-/v1/chat/completions]",
+        "test_unrecognized_keys_write_no_spend_rows_but_recognized_key_failures_remain[unmarked-auth-message-/v1/models]"
+      ]
+    },
+    {
+      "name": "all-401s-dropped",
+      "baseline_control": false,
+      "returncode": 1,
+      "tests": 14,
+      "errors": 0,
+      "failed_assertions": [
+        "test_unrecognized_keys_write_no_spend_rows_but_recognized_key_failures_remain[expired-key-/v1/chat/completions]",
+        "test_unrecognized_keys_write_no_spend_rows_but_recognized_key_failures_remain[expired-key-/v1/models]",
+        "test_unrecognized_keys_write_no_spend_rows_but_recognized_key_failures_remain[provider-auth-/v1/chat/completions]",
+        "test_unrecognized_keys_write_no_spend_rows_but_recognized_key_failures_remain[provider-auth-/v1/models]",
+        "test_unrecognized_keys_write_no_spend_rows_but_recognized_key_failures_remain[unmarked-auth-message-/v1/chat/completions]",
+        "test_unrecognized_keys_write_no_spend_rows_but_recognized_key_failures_remain[unmarked-auth-message-/v1/models]"
+      ]
+    },
+    {
+      "name": "message-text-trusted",
+      "baseline_control": false,
+      "returncode": 1,
+      "tests": 14,
+      "errors": 0,
+      "failed_assertions": [
+        "test_unrecognized_keys_write_no_spend_rows_but_recognized_key_failures_remain[unmarked-auth-message-/v1/chat/completions]",
+        "test_unrecognized_keys_write_no_spend_rows_but_recognized_key_failures_remain[unmarked-auth-message-/v1/models]"
+      ]
+    }
+  ],
+  "exact_source_restored": true,
+  "completed_at": "2026-10-25T23:02:16.555016+00:00"
+}

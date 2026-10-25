@@ -1,0 +1,15 @@
+{
+  "name": "ui-types",
+  "command": [
+    "/opt/contri-node/bin/node",
+    "node_modules/typescript/bin/tsc",
+    "--project",
+    "tsconfig.production.json"
+  ],
+  "started_at": "2026-10-25T22:57:46.530336+00:00",
+  "lock_sha256": "19cae2b0b30c7af66cce6cec5dd98bc5ae919b179cdc0605ebf307e95791a2b2",
+  "dependency_cache": "/qa/litellm-36095/dashboard-deps-linux/node_modules",
+  "dependency_manifests_match": true,
+  "returncode": 0,
+  "completed_at": "2026-10-25T22:59:16.372737+00:00"
+}

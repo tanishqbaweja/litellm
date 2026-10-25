@@ -1,0 +1,44 @@
+[33mTesting types with tsc and vue-tsc is an experimental feature.
+Breaking changes might not follow SemVer, please pin Vitest's version when using it.[39m
+
+[1m[30m[46m RUN [49m[39m[22m [36mv4.1.12 [39m[90m/opt/litellm-42689/ui/litellm-dashboard[39m
+
+Importing from "vitest/environments" is deprecated since Vitest 4.1. Please use "vitest/runtime" instead.
+The Vitest environment jsdom-fetch defines the "transformMode". This options was deprecated in Vitest 4 and will be removed in the next major version. Please, use "viteEnvironment" instead.
+Importing from "vitest/environments" is deprecated since Vitest 4.1. Please use "vitest/runtime" instead.
+The Vitest environment jsdom-fetch defines the "transformMode". This options was deprecated in Vitest 4 and will be removed in the next major version. Please, use "viteEnvironment" instead.
+Importing from "vitest/environments" is deprecated since Vitest 4.1. Please use "vitest/runtime" instead.
+The Vitest environment jsdom-fetch defines the "transformMode". This options was deprecated in Vitest 4 and will be removed in the next major version. Please, use "viteEnvironment" instead.
+ [32m✓[39m [30m[45m component [49m[39m src/app/(dashboard)/usage/_components/hooks/useAggregatedDailyActivity.test.ts [2m([22m[2m5 tests[22m[2m)[22m[32m 186[2mms[22m[39m
+Importing from "vitest/environments" is deprecated since Vitest 4.1. Please use "vitest/runtime" instead.
+The Vitest environment jsdom-fetch defines the "transformMode". This options was deprecated in Vitest 4 and will be removed in the next major version. Please, use "viteEnvironment" instead.
+ [32m✓[39m [30m[45m component [49m[39m src/components/logs/request/RequestLogsTableColumns.test.tsx [2m([22m[2m36 tests[22m[2m)[22m[33m 4679[2mms[22m[39m
+     [33m[2m✓[22m[39m renders '-' for zero spend with no tooltip, so hovering never shows a contradictory $0 [33m 378[2mms[22m[39m
+     [33m[2m✓[22m[39m shows the full-precision raw value in the tooltip for a real spend [33m 434[2mms[22m[39m
+     [33m[2m✓[22m[39m shows the user's email instead of the raw id, with both in the tooltip [33m 388[2mms[22m[39m
+     [33m[2m✓[22m[39m shows the email stored in the log metadata when the user list has no entry for that user [33m 378[2mms[22m[39m
+     [33m[2m✓[22m[39m shows the conversation badge and composition even when an MCP call represents the conversation [33m 364[2mms[22m[39m
+     [33m[2m✓[22m[39m rolls partial failures into the status badge instead of reporting blanket Success [33m 366[2mms[22m[39m
+     [33m[2m✓[22m[39m shows only the request id in the cell and the x-litellm-call-id in its tooltip when they differ [33m 365[2mms[22m[39m
+     [33m[2m✓[22m[39m copies the x-litellm-call-id from the tooltip without opening the row [33m 381[2mms[22m[39m
+     [33m[2m✓[22m[39m keeps the plain id tooltip when request id and call id are the same [33m 363[2mms[22m[39m
+     [33m[2m✓[22m[39m keeps the plain id tooltip when the row carries no call id [33m 365[2mms[22m[39m
+Importing from "vitest/environments" is deprecated since Vitest 4.1. Please use "vitest/runtime" instead.
+The Vitest environment jsdom-fetch defines the "transformMode". This options was deprecated in Vitest 4 and will be removed in the next major version. Please, use "viteEnvironment" instead.
+ [32m✓[39m [30m[45m integration [49m[39m src/app/(dashboard)/logs/page.integration.test.tsx [2m([22m[2m4 tests[22m[2m)[22m[33m 633[2mms[22m[39m
+ [32m✓[39m [30m[42m unit [49m[39m src/app/(dashboard)/usage/_components/components/errors/errorsData.test.ts [2m([22m[2m22 tests[22m[2m)[22m[32m 19[2mms[22m[39m
+ [32m✓[39m [30m[45m component [49m[39m src/components/logs/request/RequestLogsPanel.test.tsx [2m([22m[2m37 tests[22m[2m)[22m[33m 6848[2mms[22m[39m
+       [33m[2m✓[22m[39m offers the same page sizes as the other tables [33m 380[2mms[22m[39m
+       [33m[2m✓[22m[39m passes the server keyset cursor when navigating to the next page [33m 459[2mms[22m[39m
+       [33m[2m✓[22m[39m drops the cursor and returns to the first page when a filter changes [33m 604[2mms[22m[39m
+       [33m[2m✓[22m[39m ignores another next click while the next page is still fetching [33m 377[2mms[22m[39m
+       [33m[2m✓[22m[39m still moves to the next page while a live-tail refetch of the current page is in flight [33m 441[2mms[22m[39m
+       [33m[2m✓[22m[39m drops the cursor and returns to the first page when Custom Range is toggled [33m 936[2mms[22m[39m
+ [32m✓[39m [30m[45m integration [49m[39m src/app/(dashboard)/usage/_components/components/overview/UsageStatStrip.integration.test.tsx [2m([22m[2m2 tests[22m[2m)[22m[32m 299[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m6 passed[39m[22m[90m (6)[39m
+[2m      Tests [22m [1m[32m106 passed[39m[22m[90m (106)[39m
+[2mType Errors [22m [2mno errors[22m
+[2m   Start at [22m 22:56:29
+[2m   Duration [22m 58.77s[2m (transform 5.38s, setup 13.77s, import 78.02s, tests 12.66s, environment 41.67s)[22m
+

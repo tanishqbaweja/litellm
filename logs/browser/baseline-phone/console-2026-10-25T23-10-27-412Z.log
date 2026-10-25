@@ -1,0 +1,190 @@
+[      92ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/litellm-runtime-config.json:0
+[      92ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:41481/ui/litellm-runtime-config.json:0
+[   15047ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   15067ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   15074ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   15101ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   15174ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   15193ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   15205ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   15272ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   15324ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   15352ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   15352ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   15352ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   15353ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   15353ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   15353ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   15353ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   15353ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   15353ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   15388ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   15388ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   15388ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   15388ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   15388ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   15389ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   15389ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   15389ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   15389ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   15405ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   15405ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   15405ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   15405ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   15406ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   15406ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   15406ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   15406ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   15408ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   15408ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   15465ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   15465ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   15466ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   15466ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   15466ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   15466ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   15467ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   15467ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   15468ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0
+[   15468ms] [WARNING] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width. @ http://127.0.0.1:41481/litellm-asset-prefix/_next/static/chunks/2aatum0yo4cv8.js:0

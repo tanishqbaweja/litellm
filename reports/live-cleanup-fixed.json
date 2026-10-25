@@ -1,0 +1,27 @@
+{
+  "revision": "fixed",
+  "source": "/opt/litellm-42689",
+  "sha": "ad971a738117785fe3ae1efb87287f6993490227",
+  "source_clean": true,
+  "ui": "/qa/litellm-ui-baseline-47520",
+  "ui_source_sha": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "ui_source_unchanged": true,
+  "port": 41481,
+  "database_name": "qa42689_fixed_dca73de1ba",
+  "started_at": "2026-10-25T23:11:20.552663+00:00",
+  "enterprise_entitlement_override": false,
+  "provider": "Ollama 0.40.11, local Qwen3.5 0.8B through the OpenAI-compatible endpoint",
+  "custom_prices": {
+    "input_cost_per_token": 0.001,
+    "output_cost_per_token": 0.002
+  },
+  "redis_port": 10000,
+  "pid": 64548,
+  "ready_at": "2026-10-25T23:11:47.863178+00:00",
+  "forced_stop": false,
+  "process_reaped": true,
+  "owned_database_dropped": true,
+  "owned_redis_stopped": true,
+  "proxy_port_closed": true,
+  "stopped_at": "2026-10-25T23:15:57.136378+00:00"
+}

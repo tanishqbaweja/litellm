@@ -1,0 +1,6 @@
+collecting ... collected 2 items
+tests/integration/spend/test_expired_ui_session_failure_rows.py::test_unrecognized_keys_do_not_fill_spend_tables[sk-] FAILED [ 50%]
+tests/integration/spend/test_expired_ui_session_failure_rows.py::test_unrecognized_keys_do_not_fill_spend_tables[wordlist-] FAILED [100%]
+tests/integration/spend/test_expired_ui_session_failure_rows.py:158: in test_unrecognized_keys_do_not_fill_spend_tables
+tests/integration/spend/test_expired_ui_session_failure_rows.py:158: in test_unrecognized_keys_do_not_fill_spend_tables
+========================= 2 failed in 66.04s (0:01:06) =========================

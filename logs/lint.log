@@ -1,0 +1,49 @@
+make[1]: Entering directory '/opt/litellm-42689'
+uv sync --inexact --frozen --group proxy-dev --group e2e-dev
+Audited 215 packages in 151ms
+uv run --no-sync python scripts/prisma_generate_if_needed.py
+Prisma client already generated for litellm/proxy/schema.prisma (prisma 0.11.0); skipping prisma generate
+make[2]: Entering directory '/opt/litellm-42689'
+No changed litellm Python files to format-check.
+make[2]: Leaving directory '/opt/litellm-42689'
+make[2]: Entering directory '/opt/litellm-42689'
+uv run --no-sync python scripts/check_mcp_operation_boundary.py
+MCP operation boundary: passed
+cd litellm && uv run --no-sync ruff check . && cd ..
+All checks passed!
+uv run --no-sync ruff check --config ruff-tests.toml tests
+All checks passed!
+make[2]: Leaving directory '/opt/litellm-42689'
+make[2]: Entering directory '/opt/litellm-42689'
+uv run --no-sync python scripts/ruff_strict_gate.py --base "origin/main"
+OK: no strict rule grew past its merge-base count (base origin/main)
+make[2]: Leaving directory '/opt/litellm-42689'
+make[2]: Entering directory '/opt/litellm-42689'
+uv run --no-sync python scripts/type_discipline_gate.py --base "origin/main"
+OK: no LIT rule grew past its merge-base count (base origin/main)
+make[2]: Leaving directory '/opt/litellm-42689'
+make[2]: Entering directory '/opt/litellm-42689'
+uv run --no-sync python scripts/test_quality_gate.py --base "origin/main"
+OK: no TQ rule grew past its merge-base count (base origin/main)
+make[2]: Leaving directory '/opt/litellm-42689'
+make[2]: Entering directory '/opt/litellm-42689'
+uv run --no-sync python scripts/openapi_docs_gate.py --base "origin/main"
+OK: no OA rule grew past its merge-base count (base origin/main)
+make[2]: Leaving directory '/opt/litellm-42689'
+make[2]: Entering directory '/opt/litellm-42689'
+uv run --no-sync basedpyright tests/e2e tests/e2e_harness
+0 errors, 0 warnings, 0 notes
+make[2]: Leaving directory '/opt/litellm-42689'
+make[2]: Entering directory '/opt/litellm-42689'
+cd litellm && uv run --no-sync python ../tests/documentation_tests/test_circular_imports.py && cd ..
+No LiteLLM type hints found.
+make[2]: Leaving directory '/opt/litellm-42689'
+make[2]: Entering directory '/opt/litellm-42689'
+[from litellm import *] OK! no issues!
+make[2]: Leaving directory '/opt/litellm-42689'
+make[2]: Entering directory '/opt/litellm-42689'
+uv run --no-sync python scripts/type_check_gate.py --base "origin/main"
+provisioning .venv-typecheck (first run installs packages and generates the Prisma client; re-runs are near-instant no-ops)
+OK: every basedpyright rule is within its ceiling (105900 errors total, base dddbaa803d6e)
+make[2]: Leaving directory '/opt/litellm-42689'
+make[1]: Leaving directory '/opt/litellm-42689'

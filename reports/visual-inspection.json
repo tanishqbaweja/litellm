@@ -1,0 +1,23 @@
+{
+  "checked_at": "2026-10-25T23:17:13.416333+00:00",
+  "baseline_source_sha": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "fixed_source_sha": "ad971a738117785fe3ae1efb87287f6993490227",
+  "screenshots_inspected": 16,
+  "sampled_video_frames_inspected": 24,
+  "recordings_sampled": 4,
+  "annotated_screenshots_inspected": 4,
+  "method": "Opened every raw screenshot and all four six-frame contact sheets with view_image, then checked all four red-box annotations",
+  "findings": [
+    "Logs change from 12 rows to 4 while keeping the successful call, two expired-key failures and one budget failure",
+    "Budget detail retains HTTP 422 and its failure explanation",
+    "Usage retains spend of $0.06, 36 tokens and gateway counts of 9 requests with 8 failures",
+    "Average cost per spend record changes from $0.0050 to $0.0150",
+    "The existing phone drawer and overflow limitations remain visible in both revisions"
+  ],
+  "not_claimed": [
+    "Full-video frame-by-frame review",
+    "Performance or throughput improvement",
+    "Physical phone support",
+    "Paid provider validation"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "committed-format",
+  "command": [
+    "make",
+    "lint-format-check-changed",
+    "BASE_REF=origin/main",
+    "LINT_DEP_INSTALL=",
+    "LINT_DEP_BASE="
+  ],
+  "started_at": "2026-10-25T23:08:53.008560+00:00",
+  "returncode": 0,
+  "completed_at": "2026-10-25T23:08:54.465133+00:00"
+}

@@ -1,0 +1,536 @@
+{
+  "screenshots": [
+    {
+      "revision": "baseline",
+      "viewport": "desktop",
+      "path": "output/playwright/baseline-desktop/budget-detail.png",
+      "sha256": "6f9a25641bfa309c7d12c98868b54387fb8de378cbfeab339a9587c46e23571b",
+      "dimensions": [
+        1440,
+        900
+      ]
+    },
+    {
+      "revision": "baseline",
+      "viewport": "desktop",
+      "path": "output/playwright/baseline-desktop/logs.png",
+      "sha256": "4a3fe70e6034d98117a2c8276bff8999476251729b1e701ddaf35126a9808b27",
+      "dimensions": [
+        1440,
+        900
+      ]
+    },
+    {
+      "revision": "baseline",
+      "viewport": "desktop",
+      "path": "output/playwright/baseline-desktop/usage.png",
+      "sha256": "4199203c69b116730d3a6b3ac2d3d508dfaec7aaef4e5788f353c1401b79be8b",
+      "dimensions": [
+        1440,
+        900
+      ]
+    },
+    {
+      "revision": "baseline",
+      "viewport": "phone",
+      "path": "output/playwright/baseline-phone/budget-detail-collapsed.png",
+      "sha256": "13f50ee868afd8474a693fba750e994ef80eb91cfdb977b1d46a67956bf916ec",
+      "dimensions": [
+        390,
+        844
+      ]
+    },
+    {
+      "revision": "baseline",
+      "viewport": "phone",
+      "path": "output/playwright/baseline-phone/budget-detail.png",
+      "sha256": "c75ddd93a2713dffcc5b28ebca5bf4630c768625243ddfb332b228509a4fb867",
+      "dimensions": [
+        390,
+        844
+      ]
+    },
+    {
+      "revision": "baseline",
+      "viewport": "phone",
+      "path": "output/playwright/baseline-phone/logs.png",
+      "sha256": "05e204416a517c0d2ab15790577bb3ee6a6d10d9edc08e6341dc36573365edcc",
+      "dimensions": [
+        390,
+        844
+      ]
+    },
+    {
+      "revision": "baseline",
+      "viewport": "phone",
+      "path": "output/playwright/baseline-phone/usage-summary.png",
+      "sha256": "ac9e7b24f28ef8edc6de37a2cbc9b9bc9b98d961edbce92acceb108a422339a4",
+      "dimensions": [
+        390,
+        844
+      ]
+    },
+    {
+      "revision": "baseline",
+      "viewport": "phone",
+      "path": "output/playwright/baseline-phone/usage-top.png",
+      "sha256": "889a22b538165afd7649131a5c8380f502bf96270ca5bfd11b445db79d2812be",
+      "dimensions": [
+        390,
+        844
+      ]
+    },
+    {
+      "revision": "fixed",
+      "viewport": "desktop",
+      "path": "output/playwright/fixed-desktop/budget-detail.png",
+      "sha256": "a030dd08b050ef71c786e67cc64cf9765b7ad4b672d8f51306bb755d5fe0f02c",
+      "dimensions": [
+        1440,
+        900
+      ]
+    },
+    {
+      "revision": "fixed",
+      "viewport": "desktop",
+      "path": "output/playwright/fixed-desktop/logs.png",
+      "sha256": "51235777ef9b9975c2b899d02625cb52aa553b73685712aff50b3897b541aba4",
+      "dimensions": [
+        1440,
+        900
+      ]
+    },
+    {
+      "revision": "fixed",
+      "viewport": "desktop",
+      "path": "output/playwright/fixed-desktop/usage.png",
+      "sha256": "1c2962a8e6c90a3bc0248f722dfa7485c8ccc35f07d67c695daa29aaddac708d",
+      "dimensions": [
+        1440,
+        900
+      ]
+    },
+    {
+      "revision": "fixed",
+      "viewport": "phone",
+      "path": "output/playwright/fixed-phone/budget-detail-collapsed.png",
+      "sha256": "4334da89511be90666e5bfeff9dda3940c10c7c018632906b772404cae1252b2",
+      "dimensions": [
+        390,
+        844
+      ]
+    },
+    {
+      "revision": "fixed",
+      "viewport": "phone",
+      "path": "output/playwright/fixed-phone/budget-detail.png",
+      "sha256": "c577d6daa2ead993b4464dcb93e6638d82dab0fa3e54631ed37854f3568488ab",
+      "dimensions": [
+        390,
+        844
+      ]
+    },
+    {
+      "revision": "fixed",
+      "viewport": "phone",
+      "path": "output/playwright/fixed-phone/logs.png",
+      "sha256": "1a9aa45b42f9c6a7159f8b9f276c5ec76cead710f18bfd026459f627ea28f034",
+      "dimensions": [
+        390,
+        844
+      ]
+    },
+    {
+      "revision": "fixed",
+      "viewport": "phone",
+      "path": "output/playwright/fixed-phone/usage-summary.png",
+      "sha256": "104ecc9b998e81bf2e01efb0b7fb80c50afd3e028ef0e039cb4866ca026b89b1",
+      "dimensions": [
+        390,
+        844
+      ]
+    },
+    {
+      "revision": "fixed",
+      "viewport": "phone",
+      "path": "output/playwright/fixed-phone/usage-top.png",
+      "sha256": "3901a75b422f1b9dba813ea21a85ff18ed11247ea90e16e648cc9497741e7485",
+      "dimensions": [
+        390,
+        844
+      ]
+    }
+  ],
+  "recordings": [
+    {
+      "revision": "baseline",
+      "viewport": "desktop",
+      "path": "output/playwright/baseline-desktop/video-2026-10-25T23-06-21-541Z.webm",
+      "sha256": "9ea40f381de239eaf92a8a66d6877b75f1bd196125e9a4a81d6112cc68b32755",
+      "seconds": 87.16,
+      "stream": {
+        "index": 0,
+        "codec_name": "vp8",
+        "codec_long_name": "On2 VP8",
+        "profile": "0",
+        "codec_type": "video",
+        "codec_tag_string": "[0][0][0][0]",
+        "codec_tag": "0x0000",
+        "width": 800,
+        "height": 500,
+        "coded_width": 800,
+        "coded_height": 500,
+        "closed_captions": 0,
+        "film_grain": 0,
+        "has_b_frames": 0,
+        "sample_aspect_ratio": "1:1",
+        "display_aspect_ratio": "8:5",
+        "pix_fmt": "yuv420p",
+        "level": -99,
+        "chroma_location": "center",
+        "field_order": "progressive",
+        "refs": 1,
+        "r_frame_rate": "25/1",
+        "avg_frame_rate": "25/1",
+        "time_base": "1/1000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0
+        },
+        "tags": {
+          "language": "eng",
+          "ENCODER": "Lavc61.3.100 libvpx",
+          "DURATION": "00:01:27.160000000"
+        }
+      },
+      "sample_times": [
+        3.4863999999999997,
+        17.432,
+        34.864,
+        52.296,
+        69.728,
+        84.5452
+      ],
+      "frames": [
+        "visual-review/baseline-desktop-frame-1.png",
+        "visual-review/baseline-desktop-frame-2.png",
+        "visual-review/baseline-desktop-frame-3.png",
+        "visual-review/baseline-desktop-frame-4.png",
+        "visual-review/baseline-desktop-frame-5.png",
+        "visual-review/baseline-desktop-frame-6.png"
+      ],
+      "contact_sheet": "visual-review/baseline-desktop-video-sheet.png"
+    },
+    {
+      "revision": "baseline",
+      "viewport": "phone",
+      "path": "output/playwright/baseline-phone/workflow.webm",
+      "sha256": "8128241a4fd0303e55f37591566a61807e513b0b6a50493e478752bd6cd3c0c8",
+      "seconds": 40.48,
+      "stream": {
+        "index": 0,
+        "codec_name": "vp8",
+        "codec_long_name": "On2 VP8",
+        "profile": "0",
+        "codec_type": "video",
+        "codec_tag_string": "[0][0][0][0]",
+        "codec_tag": "0x0000",
+        "width": 368,
+        "height": 800,
+        "coded_width": 368,
+        "coded_height": 800,
+        "closed_captions": 0,
+        "film_grain": 0,
+        "has_b_frames": 0,
+        "sample_aspect_ratio": "1:1",
+        "display_aspect_ratio": "23:50",
+        "pix_fmt": "yuv420p",
+        "level": -99,
+        "chroma_location": "center",
+        "field_order": "progressive",
+        "refs": 1,
+        "r_frame_rate": "25/1",
+        "avg_frame_rate": "25/1",
+        "time_base": "1/1000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0
+        },
+        "tags": {
+          "language": "eng",
+          "ENCODER": "Lavc61.3.100 libvpx",
+          "DURATION": "00:00:40.480000000"
+        }
+      },
+      "sample_times": [
+        1.6192,
+        8.096,
+        16.192,
+        24.287999999999997,
+        32.384,
+        39.2656
+      ],
+      "frames": [
+        "visual-review/baseline-phone-frame-1.png",
+        "visual-review/baseline-phone-frame-2.png",
+        "visual-review/baseline-phone-frame-3.png",
+        "visual-review/baseline-phone-frame-4.png",
+        "visual-review/baseline-phone-frame-5.png",
+        "visual-review/baseline-phone-frame-6.png"
+      ],
+      "contact_sheet": "visual-review/baseline-phone-video-sheet.png"
+    },
+    {
+      "revision": "fixed",
+      "viewport": "desktop",
+      "path": "output/playwright/fixed-desktop/workflow.webm",
+      "sha256": "b04960106ceff133966c68b5a7dc4c2f208113aae49ac59c3c6ea8e07668df89",
+      "seconds": 51.64,
+      "stream": {
+        "index": 0,
+        "codec_name": "vp8",
+        "codec_long_name": "On2 VP8",
+        "profile": "0",
+        "codec_type": "video",
+        "codec_tag_string": "[0][0][0][0]",
+        "codec_tag": "0x0000",
+        "width": 800,
+        "height": 500,
+        "coded_width": 800,
+        "coded_height": 500,
+        "closed_captions": 0,
+        "film_grain": 0,
+        "has_b_frames": 0,
+        "sample_aspect_ratio": "1:1",
+        "display_aspect_ratio": "8:5",
+        "pix_fmt": "yuv420p",
+        "level": -99,
+        "chroma_location": "center",
+        "field_order": "progressive",
+        "refs": 1,
+        "r_frame_rate": "25/1",
+        "avg_frame_rate": "25/1",
+        "time_base": "1/1000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0
+        },
+        "tags": {
+          "language": "eng",
+          "ENCODER": "Lavc61.3.100 libvpx",
+          "DURATION": "00:00:51.640000000"
+        }
+      },
+      "sample_times": [
+        2.0656,
+        10.328000000000001,
+        20.656000000000002,
+        30.983999999999998,
+        41.312000000000005,
+        50.0908
+      ],
+      "frames": [
+        "visual-review/fixed-desktop-frame-1.png",
+        "visual-review/fixed-desktop-frame-2.png",
+        "visual-review/fixed-desktop-frame-3.png",
+        "visual-review/fixed-desktop-frame-4.png",
+        "visual-review/fixed-desktop-frame-5.png",
+        "visual-review/fixed-desktop-frame-6.png"
+      ],
+      "contact_sheet": "visual-review/fixed-desktop-video-sheet.png"
+    },
+    {
+      "revision": "fixed",
+      "viewport": "phone",
+      "path": "output/playwright/fixed-phone/workflow.webm",
+      "sha256": "a2c6662f1ea7c06f851ddafc2d0da42e0a50a77eac5eee5b90b85029c954c30d",
+      "seconds": 40.88,
+      "stream": {
+        "index": 0,
+        "codec_name": "vp8",
+        "codec_long_name": "On2 VP8",
+        "profile": "0",
+        "codec_type": "video",
+        "codec_tag_string": "[0][0][0][0]",
+        "codec_tag": "0x0000",
+        "width": 368,
+        "height": 800,
+        "coded_width": 368,
+        "coded_height": 800,
+        "closed_captions": 0,
+        "film_grain": 0,
+        "has_b_frames": 0,
+        "sample_aspect_ratio": "1:1",
+        "display_aspect_ratio": "23:50",
+        "pix_fmt": "yuv420p",
+        "level": -99,
+        "chroma_location": "center",
+        "field_order": "progressive",
+        "refs": 1,
+        "r_frame_rate": "25/1",
+        "avg_frame_rate": "25/1",
+        "time_base": "1/1000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0
+        },
+        "tags": {
+          "language": "eng",
+          "ENCODER": "Lavc61.3.100 libvpx",
+          "DURATION": "00:00:40.880000000"
+        }
+      },
+      "sample_times": [
+        1.6352000000000002,
+        8.176,
+        16.352,
+        24.528000000000002,
+        32.704,
+        39.653600000000004
+      ],
+      "frames": [
+        "visual-review/fixed-phone-frame-1.png",
+        "visual-review/fixed-phone-frame-2.png",
+        "visual-review/fixed-phone-frame-3.png",
+        "visual-review/fixed-phone-frame-4.png",
+        "visual-review/fixed-phone-frame-5.png",
+        "visual-review/fixed-phone-frame-6.png"
+      ],
+      "contact_sheet": "visual-review/fixed-phone-video-sheet.png"
+    }
+  ],
+  "annotated": [
+    {
+      "path": "visual-review/baseline-logs-annotated.png",
+      "source": "output/playwright/baseline-desktop/logs.png",
+      "boxes": [
+        [
+          96,
+          400,
+          1415,
+          658
+        ],
+        [
+          1004,
+          831,
+          1159,
+          869
+        ]
+      ],
+      "sha256": "aeb586e520b90f1ea41b3455b276cb669e6330070c668e68f31b75b6db935cdf"
+    },
+    {
+      "path": "visual-review/baseline-usage-annotated.png",
+      "source": "output/playwright/baseline-desktop/usage.png",
+      "boxes": [
+        [
+          1136,
+          439,
+          1330,
+          497
+        ]
+      ],
+      "sha256": "e560801be1c3baab7a3fb9cec16449f463b5560ebd74bf22c4208757e2d431a6"
+    },
+    {
+      "path": "visual-review/fixed-logs-annotated.png",
+      "source": "output/playwright/fixed-desktop/logs.png",
+      "boxes": [
+        [
+          96,
+          270,
+          1415,
+          400
+        ],
+        [
+          1024,
+          831,
+          1159,
+          869
+        ]
+      ],
+      "sha256": "84e501c3545a76fc2e7d003ac01d3ecf52701b1de23bed4c318c2c11151c1d1d"
+    },
+    {
+      "path": "visual-review/fixed-usage-annotated.png",
+      "source": "output/playwright/fixed-desktop/usage.png",
+      "boxes": [
+        [
+          1136,
+          439,
+          1330,
+          497
+        ]
+      ],
+      "sha256": "8349668bda21a1f049a531873d499f0c9027e111ea4f2a4e5ac03b0467eab3a5"
+    }
+  ]
+}

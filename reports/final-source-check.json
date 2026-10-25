@@ -1,0 +1,19 @@
+{
+  "checked_at": "2026-10-25T23:17:13.416333+00:00",
+  "base": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "head": "ad971a738117785fe3ae1efb87287f6993490227",
+  "branch": "litellm_fix_42689_unknown_key_spend",
+  "committed_at": "2026-10-25T23:08:46.391143+00:00",
+  "files": {
+    "litellm/proxy/hooks/proxy_track_cost_callback.py": "f039efe60d314170c5e3ecc11efdc5e627683bda24ec243585607df2292fb241",
+    "tests/integration/spend/test_expired_ui_session_failure_rows.py": "ebedf90a08eae4decb6325c54002d5d43fab5ac7b1fa1c48e7279b296f13e9a2",
+    "tests/unit/proxy/hooks/test_proxy_track_cost_callback.py": "ca298f3fe2cbbe8a73a80a743eed806d36e87295c6f410e85a175a542b407966"
+  },
+  "host_and_linux_patch_identical": true,
+  "host_and_linux_worktrees_clean": true,
+  "host_clean": true,
+  "linux_clean": true,
+  "ui_unchanged": true,
+  "diff_check": "passed",
+  "reviewed_diff": "Three files, two imports and one early-return condition in production, unit and integration regressions only"
+}

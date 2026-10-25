@@ -1,0 +1,6 @@
+collecting ... collected 4 items
+tests/integration/spend/test_expired_ui_session_failure_rows.py::test_an_expired_dashboard_session_key_writes_no_failure_rows_for_dashboard_info_calls PASSED [ 25%]
+tests/integration/spend/test_expired_ui_session_failure_rows.py::test_an_expired_dashboard_session_key_still_logs_a_failed_llm_call PASSED [ 50%]
+tests/integration/spend/test_expired_ui_session_failure_rows.py::test_unrecognized_keys_do_not_fill_spend_tables[sk-] PASSED [ 75%]
+tests/integration/spend/test_expired_ui_session_failure_rows.py::test_unrecognized_keys_do_not_fill_spend_tables[wordlist-] PASSED [100%]
+======================== 4 passed in 124.75s (0:02:04) =========================
