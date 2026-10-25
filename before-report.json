@@ -1,0 +1,1189 @@
+[
+  {
+    "build": "baseline",
+    "sourceSha": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+    "viewport": {
+      "name": "desktop",
+      "width": 1440,
+      "height": 900,
+      "touch": false
+    },
+    "pageErrors": [],
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ],
+    "httpErrors": [
+      {
+        "path": "/ui/litellm-runtime-config.json",
+        "status": 404
+      },
+      {
+        "path": "/ui/litellm-runtime-config.json",
+        "status": 404
+      },
+      {
+        "path": "/ui.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/litellm-runtime-config.json",
+        "status": 404
+      },
+      {
+        "path": "/ui/litellm-runtime-config.json",
+        "status": 404
+      },
+      {
+        "path": "/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/api-keys/__next.!KGRhc2hib2FyZCk.api-keys.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/playground/__next.!KGRhc2hib2FyZCk.playground.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/models-and-endpoints/__next.!KGRhc2hib2FyZCk.models-and-endpoints.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/skills/__next.!KGRhc2hib2FyZCk.skills.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/mcp-servers/__next.!KGRhc2hib2FyZCk.mcp-servers.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/guardrails/__next.!KGRhc2hib2FyZCk.guardrails.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/policies/__next.!KGRhc2hib2FyZCk.policies.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/usage/__next.!KGRhc2hib2FyZCk.usage.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/model-insights/__next.!KGRhc2hib2FyZCk.model-insights.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/cost-optimization/__next.!KGRhc2hib2FyZCk.cost-optimization.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/logs/__next.!KGRhc2hib2FyZCk.logs.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/litellm-runtime-config.json",
+        "status": 404
+      },
+      {
+        "path": "/ui/litellm-runtime-config.json",
+        "status": 404
+      },
+      {
+        "path": "/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/api-keys/__next.!KGRhc2hib2FyZCk.api-keys.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/playground/__next.!KGRhc2hib2FyZCk.playground.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/models-and-endpoints/__next.!KGRhc2hib2FyZCk.models-and-endpoints.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/skills/__next.!KGRhc2hib2FyZCk.skills.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/mcp-servers/__next.!KGRhc2hib2FyZCk.mcp-servers.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/guardrails/__next.!KGRhc2hib2FyZCk.guardrails.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/policies/__next.!KGRhc2hib2FyZCk.policies.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/usage/__next.!KGRhc2hib2FyZCk.usage.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/model-insights/__next.!KGRhc2hib2FyZCk.model-insights.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/cost-optimization/__next.!KGRhc2hib2FyZCk.cost-optimization.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/logs/__next.!KGRhc2hib2FyZCk.logs.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/lens/__next.!KGRhc2hib2FyZCk.lens.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/guardrails-monitor/__next.!KGRhc2hib2FyZCk.guardrails-monitor.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/teams/__next.!KGRhc2hib2FyZCk.teams.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/users/__next.!KGRhc2hib2FyZCk.users.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/litellm-runtime-config.json",
+        "status": 404
+      },
+      {
+        "path": "/ui/litellm-runtime-config.json",
+        "status": 404
+      },
+      {
+        "path": "/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/api-keys/__next.!KGRhc2hib2FyZCk.api-keys.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/playground/__next.!KGRhc2hib2FyZCk.playground.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/models-and-endpoints/__next.!KGRhc2hib2FyZCk.models-and-endpoints.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/skills/__next.!KGRhc2hib2FyZCk.skills.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/mcp-servers/__next.!KGRhc2hib2FyZCk.mcp-servers.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/guardrails/__next.!KGRhc2hib2FyZCk.guardrails.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/policies/__next.!KGRhc2hib2FyZCk.policies.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/usage/__next.!KGRhc2hib2FyZCk.usage.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/model-insights/__next.!KGRhc2hib2FyZCk.model-insights.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/cost-optimization/__next.!KGRhc2hib2FyZCk.cost-optimization.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/logs/__next.!KGRhc2hib2FyZCk.logs.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/guardrails-monitor/__next.!KGRhc2hib2FyZCk.guardrails-monitor.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/lens/__next.!KGRhc2hib2FyZCk.lens.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/teams/__next.!KGRhc2hib2FyZCk.teams.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/users/__next.!KGRhc2hib2FyZCk.users.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/litellm-runtime-config.json",
+        "status": 404
+      },
+      {
+        "path": "/ui/litellm-runtime-config.json",
+        "status": 404
+      },
+      {
+        "path": "/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/api-keys/__next.!KGRhc2hib2FyZCk.api-keys.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/playground/__next.!KGRhc2hib2FyZCk.playground.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/models-and-endpoints/__next.!KGRhc2hib2FyZCk.models-and-endpoints.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/mcp-servers/__next.!KGRhc2hib2FyZCk.mcp-servers.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/skills/__next.!KGRhc2hib2FyZCk.skills.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/guardrails/__next.!KGRhc2hib2FyZCk.guardrails.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/policies/__next.!KGRhc2hib2FyZCk.policies.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/model-insights/__next.!KGRhc2hib2FyZCk.model-insights.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/usage/__next.!KGRhc2hib2FyZCk.usage.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/logs/__next.!KGRhc2hib2FyZCk.logs.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/cost-optimization/__next.!KGRhc2hib2FyZCk.cost-optimization.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/guardrails-monitor/__next.!KGRhc2hib2FyZCk.guardrails-monitor.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/lens/__next.!KGRhc2hib2FyZCk.lens.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/teams/__next.!KGRhc2hib2FyZCk.teams.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/users/__next.!KGRhc2hib2FyZCk.users.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/litellm-runtime-config.json",
+        "status": 404
+      },
+      {
+        "path": "/ui/litellm-runtime-config.json",
+        "status": 404
+      },
+      {
+        "path": "/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/models-and-endpoints/__next.!KGRhc2hib2FyZCk.models-and-endpoints.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/api-keys/__next.!KGRhc2hib2FyZCk.api-keys.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/playground/__next.!KGRhc2hib2FyZCk.playground.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/mcp-servers/__next.!KGRhc2hib2FyZCk.mcp-servers.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/skills/__next.!KGRhc2hib2FyZCk.skills.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/policies/__next.!KGRhc2hib2FyZCk.policies.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/guardrails/__next.!KGRhc2hib2FyZCk.guardrails.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/model-insights/__next.!KGRhc2hib2FyZCk.model-insights.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/usage/__next.!KGRhc2hib2FyZCk.usage.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/cost-optimization/__next.!KGRhc2hib2FyZCk.cost-optimization.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/logs/__next.!KGRhc2hib2FyZCk.logs.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/lens/__next.!KGRhc2hib2FyZCk.lens.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/guardrails-monitor/__next.!KGRhc2hib2FyZCk.guardrails-monitor.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/teams/__next.!KGRhc2hib2FyZCk.teams.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/users/__next.!KGRhc2hib2FyZCk.users.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/litellm-runtime-config.json",
+        "status": 404
+      },
+      {
+        "path": "/ui/litellm-runtime-config.json",
+        "status": 404
+      },
+      {
+        "path": "/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/api-keys/__next.!KGRhc2hib2FyZCk.api-keys.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/playground/__next.!KGRhc2hib2FyZCk.playground.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/models-and-endpoints/__next.!KGRhc2hib2FyZCk.models-and-endpoints.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/skills/__next.!KGRhc2hib2FyZCk.skills.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/mcp-servers/__next.!KGRhc2hib2FyZCk.mcp-servers.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/guardrails/__next.!KGRhc2hib2FyZCk.guardrails.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/policies/__next.!KGRhc2hib2FyZCk.policies.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/usage/__next.!KGRhc2hib2FyZCk.usage.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/model-insights/__next.!KGRhc2hib2FyZCk.model-insights.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/cost-optimization/__next.!KGRhc2hib2FyZCk.cost-optimization.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/logs/__next.!KGRhc2hib2FyZCk.logs.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/lens/__next.!KGRhc2hib2FyZCk.lens.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/guardrails-monitor/__next.!KGRhc2hib2FyZCk.guardrails-monitor.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/teams/__next.!KGRhc2hib2FyZCk.teams.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/users/__next.!KGRhc2hib2FyZCk.users.__PAGE__.txt",
+        "status": 404
+      }
+    ],
+    "screenshots": {
+      "default": {
+        "window": "desktop-default-window.png",
+        "page": "desktop-default-page.png",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "width": 1448,
+          "height": 985,
+          "windowState": "normal"
+        },
+        "url": "http://127.0.0.1:41475/ui/ui-theme/",
+        "icons": [
+          {
+            "href": "http://127.0.0.1:41475/favicon.ico?favicon.34m4ev7_7ennf.ico",
+            "type": "image/x-icon",
+            "sizes": "48x48",
+            "status": 404,
+            "finalURL": "http://127.0.0.1:41475/favicon.ico?favicon.34m4ev7_7ennf.ico",
+            "contentType": "application/json"
+          },
+          {
+            "href": "http://127.0.0.1:41475/get_favicon",
+            "type": "",
+            "sizes": "",
+            "status": 200,
+            "finalURL": "http://127.0.0.1:41475/get_favicon",
+            "contentType": "image/x-icon"
+          }
+        ]
+      },
+      "custom-saved": {
+        "window": "desktop-custom-saved-window.png",
+        "page": "desktop-custom-saved-page.png",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "width": 1448,
+          "height": 985,
+          "windowState": "normal"
+        },
+        "url": "http://127.0.0.1:41475/ui/ui-theme/",
+        "icons": [
+          {
+            "href": "http://127.0.0.1:51477/favicon.png",
+            "type": "image/x-icon",
+            "sizes": "48x48",
+            "status": 200,
+            "finalURL": "http://127.0.0.1:51477/favicon.png",
+            "contentType": "image/png"
+          },
+          {
+            "href": "http://127.0.0.1:51477/favicon.png",
+            "type": "",
+            "sizes": "",
+            "status": 200,
+            "finalURL": "http://127.0.0.1:51477/favicon.png",
+            "contentType": "image/png"
+          }
+        ]
+      },
+      "custom-reloaded": {
+        "window": "desktop-custom-reloaded-window.png",
+        "page": "desktop-custom-reloaded-page.png",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "width": 1448,
+          "height": 985,
+          "windowState": "normal"
+        },
+        "url": "http://127.0.0.1:41475/ui/ui-theme/",
+        "icons": [
+          {
+            "href": "http://127.0.0.1:51477/favicon.png",
+            "type": "image/x-icon",
+            "sizes": "48x48",
+            "status": 200,
+            "finalURL": "http://127.0.0.1:51477/favicon.png",
+            "contentType": "image/png"
+          },
+          {
+            "href": "http://127.0.0.1:51477/favicon.png",
+            "type": "",
+            "sizes": "",
+            "status": 200,
+            "finalURL": "http://127.0.0.1:51477/favicon.png",
+            "contentType": "image/png"
+          }
+        ]
+      },
+      "custom-navigation": {
+        "window": "desktop-custom-navigation-window.png",
+        "page": "desktop-custom-navigation-page.png",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "width": 1448,
+          "height": 985,
+          "windowState": "normal"
+        },
+        "url": "http://127.0.0.1:41475/ui/home/",
+        "icons": [
+          {
+            "href": "http://127.0.0.1:41475/favicon.ico?favicon.34m4ev7_7ennf.ico",
+            "type": "image/x-icon",
+            "sizes": "48x48",
+            "status": 404,
+            "finalURL": "http://127.0.0.1:41475/favicon.ico?favicon.34m4ev7_7ennf.ico",
+            "contentType": "application/json"
+          },
+          {
+            "href": "http://127.0.0.1:41475/get_favicon",
+            "type": "",
+            "sizes": "",
+            "status": 200,
+            "finalURL": "http://127.0.0.1:51477/favicon.png",
+            "contentType": "image/png"
+          }
+        ]
+      },
+      "updated-saved": {
+        "window": "desktop-updated-saved-window.png",
+        "page": "desktop-updated-saved-page.png",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "width": 1448,
+          "height": 985,
+          "windowState": "normal"
+        },
+        "url": "http://127.0.0.1:41475/ui/ui-theme/",
+        "icons": [
+          {
+            "href": "http://127.0.0.1:51477/favicon-alt.png",
+            "type": "image/x-icon",
+            "sizes": "48x48",
+            "status": 200,
+            "finalURL": "http://127.0.0.1:51477/favicon-alt.png",
+            "contentType": "image/png"
+          },
+          {
+            "href": "http://127.0.0.1:51477/favicon-alt.png",
+            "type": "",
+            "sizes": "",
+            "status": 200,
+            "finalURL": "http://127.0.0.1:51477/favicon-alt.png",
+            "contentType": "image/png"
+          }
+        ]
+      },
+      "updated-navigation": {
+        "window": "desktop-updated-navigation-window.png",
+        "page": "desktop-updated-navigation-page.png",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "width": 1448,
+          "height": 985,
+          "windowState": "normal"
+        },
+        "url": "http://127.0.0.1:41475/ui/home/",
+        "icons": [
+          {
+            "href": "http://127.0.0.1:41475/favicon.ico?favicon.34m4ev7_7ennf.ico",
+            "type": "image/x-icon",
+            "sizes": "48x48",
+            "status": 404,
+            "finalURL": "http://127.0.0.1:41475/favicon.ico?favicon.34m4ev7_7ennf.ico",
+            "contentType": "application/json"
+          },
+          {
+            "href": "http://127.0.0.1:41475/get_favicon",
+            "type": "",
+            "sizes": "",
+            "status": 200,
+            "finalURL": "http://127.0.0.1:51477/favicon-alt.png",
+            "contentType": "image/png"
+          }
+        ]
+      },
+      "default-restored": {
+        "window": "desktop-default-restored-window.png",
+        "page": "desktop-default-restored-page.png",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "width": 1448,
+          "height": 985,
+          "windowState": "normal"
+        },
+        "url": "http://127.0.0.1:41475/ui/ui-theme/",
+        "icons": [
+          {
+            "href": "http://127.0.0.1:41475/favicon.ico?favicon.34m4ev7_7ennf.ico",
+            "type": "image/x-icon",
+            "sizes": "48x48",
+            "status": 404,
+            "finalURL": "http://127.0.0.1:41475/favicon.ico?favicon.34m4ev7_7ennf.ico",
+            "contentType": "application/json"
+          },
+          {
+            "href": "http://127.0.0.1:41475/get_favicon",
+            "type": "",
+            "sizes": "",
+            "status": 200,
+            "finalURL": "http://127.0.0.1:41475/get_favicon",
+            "contentType": "image/x-icon"
+          }
+        ]
+      }
+    },
+    "steps": [
+      "Client navigation restores a broken competing icon URL",
+      "Saving a second URL persists the new favicon setting",
+      "Reset and reload restore the default icon, and the default asset remains exported"
+    ],
+    "result": "pass",
+    "videoExit": 255,
+    "video": "desktop.webm",
+    "restored": 200
+  },
+  {
+    "build": "baseline",
+    "sourceSha": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+    "viewport": {
+      "name": "phone",
+      "width": 390,
+      "height": 844,
+      "touch": true
+    },
+    "pageErrors": [],
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ],
+    "httpErrors": [
+      {
+        "path": "/ui/litellm-runtime-config.json",
+        "status": 404
+      },
+      {
+        "path": "/ui/litellm-runtime-config.json",
+        "status": 404
+      },
+      {
+        "path": "/ui.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/litellm-runtime-config.json",
+        "status": 404
+      },
+      {
+        "path": "/ui/litellm-runtime-config.json",
+        "status": 404
+      },
+      {
+        "path": "/ui/litellm-runtime-config.json",
+        "status": 404
+      },
+      {
+        "path": "/ui/litellm-runtime-config.json",
+        "status": 404
+      },
+      {
+        "path": "/ui/litellm-runtime-config.json",
+        "status": 404
+      },
+      {
+        "path": "/ui/litellm-runtime-config.json",
+        "status": 404
+      },
+      {
+        "path": "/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/api-keys/__next.!KGRhc2hib2FyZCk.api-keys.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/playground/__next.!KGRhc2hib2FyZCk.playground.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/models-and-endpoints/__next.!KGRhc2hib2FyZCk.models-and-endpoints.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/mcp-servers/__next.!KGRhc2hib2FyZCk.mcp-servers.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/skills/__next.!KGRhc2hib2FyZCk.skills.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/guardrails/__next.!KGRhc2hib2FyZCk.guardrails.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/policies/__next.!KGRhc2hib2FyZCk.policies.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/usage/__next.!KGRhc2hib2FyZCk.usage.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/model-insights/__next.!KGRhc2hib2FyZCk.model-insights.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/cost-optimization/__next.!KGRhc2hib2FyZCk.cost-optimization.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/logs/__next.!KGRhc2hib2FyZCk.logs.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/lens/__next.!KGRhc2hib2FyZCk.lens.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/litellm-runtime-config.json",
+        "status": 404
+      },
+      {
+        "path": "/ui/litellm-runtime-config.json",
+        "status": 404
+      },
+      {
+        "path": "/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "path": "/ui/litellm-runtime-config.json",
+        "status": 404
+      },
+      {
+        "path": "/ui/litellm-runtime-config.json",
+        "status": 404
+      },
+      {
+        "path": "/ui/litellm-runtime-config.json",
+        "status": 404
+      },
+      {
+        "path": "/ui/litellm-runtime-config.json",
+        "status": 404
+      }
+    ],
+    "screenshots": {
+      "default": {
+        "window": "phone-default-window.png",
+        "page": "phone-default-page.png",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "width": 500,
+          "height": 929,
+          "windowState": "normal"
+        },
+        "url": "http://127.0.0.1:41475/ui/ui-theme/",
+        "icons": [
+          {
+            "href": "http://127.0.0.1:41475/favicon.ico?favicon.34m4ev7_7ennf.ico",
+            "type": "image/x-icon",
+            "sizes": "48x48",
+            "status": 404,
+            "finalURL": "http://127.0.0.1:41475/favicon.ico?favicon.34m4ev7_7ennf.ico",
+            "contentType": "application/json"
+          },
+          {
+            "href": "http://127.0.0.1:41475/get_favicon",
+            "type": "",
+            "sizes": "",
+            "status": 200,
+            "finalURL": "http://127.0.0.1:41475/get_favicon",
+            "contentType": "image/x-icon"
+          }
+        ]
+      },
+      "custom-saved": {
+        "window": "phone-custom-saved-window.png",
+        "page": "phone-custom-saved-page.png",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "width": 500,
+          "height": 929,
+          "windowState": "normal"
+        },
+        "url": "http://127.0.0.1:41475/ui/ui-theme/",
+        "icons": [
+          {
+            "href": "http://127.0.0.1:51477/favicon.png",
+            "type": "image/x-icon",
+            "sizes": "48x48",
+            "status": 200,
+            "finalURL": "http://127.0.0.1:51477/favicon.png",
+            "contentType": "image/png"
+          },
+          {
+            "href": "http://127.0.0.1:51477/favicon.png",
+            "type": "",
+            "sizes": "",
+            "status": 200,
+            "finalURL": "http://127.0.0.1:51477/favicon.png",
+            "contentType": "image/png"
+          }
+        ]
+      },
+      "custom-reloaded": {
+        "window": "phone-custom-reloaded-window.png",
+        "page": "phone-custom-reloaded-page.png",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "width": 500,
+          "height": 929,
+          "windowState": "normal"
+        },
+        "url": "http://127.0.0.1:41475/ui/ui-theme/",
+        "icons": [
+          {
+            "href": "http://127.0.0.1:51477/favicon.png",
+            "type": "image/x-icon",
+            "sizes": "48x48",
+            "status": 200,
+            "finalURL": "http://127.0.0.1:51477/favicon.png",
+            "contentType": "image/png"
+          },
+          {
+            "href": "http://127.0.0.1:51477/favicon.png",
+            "type": "",
+            "sizes": "",
+            "status": 200,
+            "finalURL": "http://127.0.0.1:51477/favicon.png",
+            "contentType": "image/png"
+          }
+        ]
+      },
+      "custom-navigation": {
+        "window": "phone-custom-navigation-window.png",
+        "page": "phone-custom-navigation-page.png",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "width": 500,
+          "height": 929,
+          "windowState": "normal"
+        },
+        "url": "http://127.0.0.1:41475/ui/home/",
+        "icons": [
+          {
+            "href": "http://127.0.0.1:41475/favicon.ico?favicon.34m4ev7_7ennf.ico",
+            "type": "image/x-icon",
+            "sizes": "48x48",
+            "status": 404,
+            "finalURL": "http://127.0.0.1:41475/favicon.ico?favicon.34m4ev7_7ennf.ico",
+            "contentType": "application/json"
+          },
+          {
+            "href": "http://127.0.0.1:41475/get_favicon",
+            "type": "",
+            "sizes": "",
+            "status": 200,
+            "finalURL": "http://127.0.0.1:51477/favicon.png",
+            "contentType": "image/png"
+          }
+        ]
+      },
+      "updated-saved": {
+        "window": "phone-updated-saved-window.png",
+        "page": "phone-updated-saved-page.png",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "width": 500,
+          "height": 929,
+          "windowState": "normal"
+        },
+        "url": "http://127.0.0.1:41475/ui/ui-theme/",
+        "icons": [
+          {
+            "href": "http://127.0.0.1:51477/favicon-alt.png",
+            "type": "image/x-icon",
+            "sizes": "48x48",
+            "status": 200,
+            "finalURL": "http://127.0.0.1:51477/favicon-alt.png",
+            "contentType": "image/png"
+          },
+          {
+            "href": "http://127.0.0.1:51477/favicon-alt.png",
+            "type": "",
+            "sizes": "",
+            "status": 200,
+            "finalURL": "http://127.0.0.1:51477/favicon-alt.png",
+            "contentType": "image/png"
+          }
+        ]
+      },
+      "updated-navigation": {
+        "window": "phone-updated-navigation-window.png",
+        "page": "phone-updated-navigation-page.png",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "width": 500,
+          "height": 929,
+          "windowState": "normal"
+        },
+        "url": "http://127.0.0.1:41475/ui/home/",
+        "icons": [
+          {
+            "href": "http://127.0.0.1:41475/favicon.ico?favicon.34m4ev7_7ennf.ico",
+            "type": "image/x-icon",
+            "sizes": "48x48",
+            "status": 404,
+            "finalURL": "http://127.0.0.1:41475/favicon.ico?favicon.34m4ev7_7ennf.ico",
+            "contentType": "application/json"
+          },
+          {
+            "href": "http://127.0.0.1:41475/get_favicon",
+            "type": "",
+            "sizes": "",
+            "status": 200,
+            "finalURL": "http://127.0.0.1:51477/favicon-alt.png",
+            "contentType": "image/png"
+          }
+        ]
+      },
+      "default-restored": {
+        "window": "phone-default-restored-window.png",
+        "page": "phone-default-restored-page.png",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "width": 500,
+          "height": 929,
+          "windowState": "normal"
+        },
+        "url": "http://127.0.0.1:41475/ui/ui-theme/",
+        "icons": [
+          {
+            "href": "http://127.0.0.1:41475/favicon.ico?favicon.34m4ev7_7ennf.ico",
+            "type": "image/x-icon",
+            "sizes": "48x48",
+            "status": 404,
+            "finalURL": "http://127.0.0.1:41475/favicon.ico?favicon.34m4ev7_7ennf.ico",
+            "contentType": "application/json"
+          },
+          {
+            "href": "http://127.0.0.1:41475/get_favicon",
+            "type": "",
+            "sizes": "",
+            "status": 200,
+            "finalURL": "http://127.0.0.1:41475/get_favicon",
+            "contentType": "image/x-icon"
+          }
+        ]
+      }
+    },
+    "steps": [
+      "Client navigation restores a broken competing icon URL",
+      "Saving a second URL persists the new favicon setting",
+      "Reset and reload restore the default icon, and the default asset remains exported"
+    ],
+    "result": "pass",
+    "videoExit": 255,
+    "video": "phone.webm",
+    "restored": 200
+  }
+]
