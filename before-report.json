@@ -1,0 +1,186 @@
+[
+  {
+    "build": "baseline",
+    "viewport": {
+      "name": "desktop",
+      "width": 1440,
+      "height": 900,
+      "touch": false
+    },
+    "url": "http://127.0.0.1:41475/ui/router-settings/",
+    "pageErrors": [
+      "Minified React error #31; visit https://react.dev/errors/31?args[]=object%20with%20keys%20%7Bmodel%2C%20api_key%2C%20extra_headers%2C%20reasoning_effort%7D for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+    ],
+    "httpErrors": [
+      {
+        "url": "/ui/litellm-runtime-config.json",
+        "status": 404
+      },
+      {
+        "url": "/ui/litellm-runtime-config.json",
+        "status": 404
+      },
+      {
+        "url": "/ui.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/litellm-runtime-config.json",
+        "status": 404
+      },
+      {
+        "url": "/ui/litellm-runtime-config.json",
+        "status": 404
+      },
+      {
+        "url": "/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/api-keys/__next.!KGRhc2hib2FyZCk.api-keys.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/playground/__next.!KGRhc2hib2FyZCk.playground.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/mcp-servers/__next.!KGRhc2hib2FyZCk.mcp-servers.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/models-and-endpoints/__next.!KGRhc2hib2FyZCk.models-and-endpoints.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/skills/__next.!KGRhc2hib2FyZCk.skills.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/guardrails/__next.!KGRhc2hib2FyZCk.guardrails.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/usage/__next.!KGRhc2hib2FyZCk.usage.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/policies/__next.!KGRhc2hib2FyZCk.policies.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/model-insights/__next.!KGRhc2hib2FyZCk.model-insights.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/cost-optimization/__next.!KGRhc2hib2FyZCk.cost-optimization.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/logs/__next.!KGRhc2hib2FyZCk.logs.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/lens/__next.!KGRhc2hib2FyZCk.lens.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/guardrails-monitor/__next.!KGRhc2hib2FyZCk.guardrails-monitor.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/teams/__next.!KGRhc2hib2FyZCk.teams.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/users/__next.!KGRhc2hib2FyZCk.users.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/litellm-runtime-config.json",
+        "status": 404
+      },
+      {
+        "url": "/ui/litellm-runtime-config.json",
+        "status": 404
+      }
+    ],
+    "steps": [
+      "Opening Router Settings crashes before the Fallbacks tab can be used"
+    ],
+    "screenshots": {
+      "crash": {
+        "path": "desktop-crash.png",
+        "box": {
+          "x": 598.5,
+          "y": 403.5,
+          "width": 243,
+          "height": 32
+        }
+      }
+    },
+    "result": "pass"
+  },
+  {
+    "build": "baseline",
+    "viewport": {
+      "name": "phone",
+      "width": 390,
+      "height": 844,
+      "touch": true
+    },
+    "url": "http://127.0.0.1:41475/ui/router-settings/",
+    "pageErrors": [
+      "Minified React error #31; visit https://react.dev/errors/31?args[]=object%20with%20keys%20%7Bmodel%2C%20api_key%2C%20extra_headers%2C%20reasoning_effort%7D for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+    ],
+    "httpErrors": [
+      {
+        "url": "/ui/litellm-runtime-config.json",
+        "status": 404
+      },
+      {
+        "url": "/ui/litellm-runtime-config.json",
+        "status": 404
+      },
+      {
+        "url": "/ui.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/litellm-runtime-config.json",
+        "status": 404
+      },
+      {
+        "url": "/ui/litellm-runtime-config.json",
+        "status": 404
+      },
+      {
+        "url": "/ui/litellm-runtime-config.json",
+        "status": 404
+      },
+      {
+        "url": "/ui/litellm-runtime-config.json",
+        "status": 404
+      }
+    ],
+    "steps": [
+      "Opening Router Settings crashes before the Fallbacks tab can be used"
+    ],
+    "screenshots": {
+      "crash": {
+        "path": "phone-crash.png",
+        "box": {
+          "x": 73.5,
+          "y": 375.5,
+          "width": 243,
+          "height": 32
+        }
+      }
+    },
+    "result": "pass"
+  }
+]

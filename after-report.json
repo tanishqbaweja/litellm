@@ -1,0 +1,449 @@
+[
+  {
+    "build": "fixed",
+    "viewport": {
+      "name": "desktop",
+      "width": 1440,
+      "height": 900,
+      "touch": false
+    },
+    "url": "http://127.0.0.1:41475/ui/router-settings/",
+    "pageErrors": [],
+    "httpErrors": [
+      {
+        "url": "/ui/litellm-runtime-config.json",
+        "status": 404
+      },
+      {
+        "url": "/ui/litellm-runtime-config.json",
+        "status": 404
+      },
+      {
+        "url": "/ui.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/litellm-runtime-config.json",
+        "status": 404
+      },
+      {
+        "url": "/ui/litellm-runtime-config.json",
+        "status": 404
+      },
+      {
+        "url": "/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/api-keys/__next.!KGRhc2hib2FyZCk.api-keys.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/playground/__next.!KGRhc2hib2FyZCk.playground.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/mcp-servers/__next.!KGRhc2hib2FyZCk.mcp-servers.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/models-and-endpoints/__next.!KGRhc2hib2FyZCk.models-and-endpoints.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/skills/__next.!KGRhc2hib2FyZCk.skills.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/guardrails/__next.!KGRhc2hib2FyZCk.guardrails.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/usage/__next.!KGRhc2hib2FyZCk.usage.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/policies/__next.!KGRhc2hib2FyZCk.policies.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/model-insights/__next.!KGRhc2hib2FyZCk.model-insights.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/cost-optimization/__next.!KGRhc2hib2FyZCk.cost-optimization.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/logs/__next.!KGRhc2hib2FyZCk.logs.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/lens/__next.!KGRhc2hib2FyZCk.lens.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/guardrails-monitor/__next.!KGRhc2hib2FyZCk.guardrails-monitor.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/teams/__next.!KGRhc2hib2FyZCk.teams.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/users/__next.!KGRhc2hib2FyZCk.users.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/litellm-runtime-config.json",
+        "status": 404
+      },
+      {
+        "url": "/ui/litellm-runtime-config.json",
+        "status": 404
+      },
+      {
+        "url": "/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/api-keys/__next.!KGRhc2hib2FyZCk.api-keys.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/playground/__next.!KGRhc2hib2FyZCk.playground.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/models-and-endpoints/__next.!KGRhc2hib2FyZCk.models-and-endpoints.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/mcp-servers/__next.!KGRhc2hib2FyZCk.mcp-servers.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/skills/__next.!KGRhc2hib2FyZCk.skills.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/guardrails/__next.!KGRhc2hib2FyZCk.guardrails.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/policies/__next.!KGRhc2hib2FyZCk.policies.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/usage/__next.!KGRhc2hib2FyZCk.usage.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/model-insights/__next.!KGRhc2hib2FyZCk.model-insights.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/cost-optimization/__next.!KGRhc2hib2FyZCk.cost-optimization.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/logs/__next.!KGRhc2hib2FyZCk.logs.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/lens/__next.!KGRhc2hib2FyZCk.lens.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/guardrails-monitor/__next.!KGRhc2hib2FyZCk.guardrails-monitor.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/teams/__next.!KGRhc2hib2FyZCk.teams.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/users/__next.!KGRhc2hib2FyZCk.users.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/litellm-runtime-config.json",
+        "status": 404
+      },
+      {
+        "url": "/ui/litellm-runtime-config.json",
+        "status": 404
+      },
+      {
+        "url": "/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/models-and-endpoints/__next.!KGRhc2hib2FyZCk.models-and-endpoints.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/playground/__next.!KGRhc2hib2FyZCk.playground.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/api-keys/__next.!KGRhc2hib2FyZCk.api-keys.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/mcp-servers/__next.!KGRhc2hib2FyZCk.mcp-servers.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/guardrails/__next.!KGRhc2hib2FyZCk.guardrails.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/skills/__next.!KGRhc2hib2FyZCk.skills.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/usage/__next.!KGRhc2hib2FyZCk.usage.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/policies/__next.!KGRhc2hib2FyZCk.policies.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/model-insights/__next.!KGRhc2hib2FyZCk.model-insights.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/cost-optimization/__next.!KGRhc2hib2FyZCk.cost-optimization.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/logs/__next.!KGRhc2hib2FyZCk.logs.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/lens/__next.!KGRhc2hib2FyZCk.lens.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/guardrails-monitor/__next.!KGRhc2hib2FyZCk.guardrails-monitor.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/teams/__next.!KGRhc2hib2FyZCk.teams.__PAGE__.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/users/__next.!KGRhc2hib2FyZCk.users.__PAGE__.txt",
+        "status": 404
+      }
+    ],
+    "steps": [
+      "Loadbalancing and mixed fallback chains render without column overlap, override values stay hidden, object editing is disabled",
+      "Saving the ordinary sibling chain preserves the complete override object",
+      "Deleting the sibling preserves the complete override object",
+      "Adding the sibling back preserves the complete override object",
+      "Reloading shows both persisted chains and unchanged override parameters"
+    ],
+    "screenshots": {
+      "loadbalancing": {
+        "path": "desktop-loadbalancing.png",
+        "box": {
+          "x": 315,
+          "y": 75.5,
+          "width": 116.46875,
+          "height": 29
+        }
+      },
+      "fallbacks": {
+        "path": "desktop-fallbacks.png",
+        "box": {
+          "x": 562.046875,
+          "y": 257,
+          "width": 695.734375,
+          "height": 49
+        }
+      },
+      "override-hint": {
+        "path": "desktop-override-hint.png",
+        "box": {
+          "x": 1297.78125,
+          "y": 265.5,
+          "width": 32,
+          "height": 32
+        }
+      },
+      "edit-sibling": {
+        "path": "desktop-edit-sibling.png",
+        "box": {
+          "x": 270,
+          "y": 32,
+          "width": 900,
+          "height": 644
+        }
+      },
+      "sibling-deleted": {
+        "path": "desktop-sibling-deleted.png",
+        "box": {
+          "x": 312,
+          "y": 257,
+          "width": 1096,
+          "height": 48.5
+        }
+      },
+      "add-sibling": {
+        "path": "desktop-add-sibling.png",
+        "box": {
+          "x": 270,
+          "y": 32,
+          "width": 900,
+          "height": 705
+        }
+      },
+      "persisted": {
+        "path": "desktop-persisted.png",
+        "box": {
+          "x": 312,
+          "y": 257,
+          "width": 1096,
+          "height": 49
+        }
+      }
+    },
+    "dimensions": {
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    "result": "pass"
+  },
+  {
+    "build": "fixed",
+    "viewport": {
+      "name": "phone",
+      "width": 390,
+      "height": 844,
+      "touch": true
+    },
+    "url": "http://127.0.0.1:41475/ui/router-settings/",
+    "pageErrors": [],
+    "httpErrors": [
+      {
+        "url": "/ui/litellm-runtime-config.json",
+        "status": 404
+      },
+      {
+        "url": "/ui/litellm-runtime-config.json",
+        "status": 404
+      },
+      {
+        "url": "/ui.txt",
+        "status": 404
+      },
+      {
+        "url": "/ui/litellm-runtime-config.json",
+        "status": 404
+      },
+      {
+        "url": "/ui/litellm-runtime-config.json",
+        "status": 404
+      },
+      {
+        "url": "/ui/litellm-runtime-config.json",
+        "status": 404
+      },
+      {
+        "url": "/ui/litellm-runtime-config.json",
+        "status": 404
+      },
+      {
+        "url": "/ui/litellm-runtime-config.json",
+        "status": 404
+      },
+      {
+        "url": "/ui/litellm-runtime-config.json",
+        "status": 404
+      }
+    ],
+    "steps": [
+      "Loadbalancing and mixed fallback chains render without column overlap, override values stay hidden, object editing is disabled",
+      "Saving the ordinary sibling chain preserves the complete override object",
+      "Deleting the sibling preserves the complete override object",
+      "Adding the sibling back preserves the complete override object",
+      "Reloading shows both persisted chains and unchanged override parameters"
+    ],
+    "screenshots": {
+      "loadbalancing": {
+        "path": "phone-loadbalancing.png",
+        "box": {
+          "x": 35,
+          "y": 75.5,
+          "width": 116.46875,
+          "height": 29
+        }
+      },
+      "fallbacks": {
+        "path": "phone-fallbacks.png",
+        "box": {
+          "x": 122.109375,
+          "y": 257,
+          "width": 236.3125,
+          "height": 149
+        }
+      },
+      "edit-sibling": {
+        "path": "phone-edit-sibling.png",
+        "box": {
+          "x": 16,
+          "y": 32,
+          "width": 358,
+          "height": 728
+        }
+      },
+      "sibling-deleted": {
+        "path": "phone-sibling-deleted.png",
+        "box": {
+          "x": -104,
+          "y": 257,
+          "width": 462.015625,
+          "height": 148.5
+        }
+      },
+      "add-sibling": {
+        "path": "phone-add-sibling.png",
+        "box": {
+          "x": 16,
+          "y": 32,
+          "width": 358,
+          "height": 780
+        }
+      },
+      "persisted": {
+        "path": "phone-persisted.png",
+        "box": {
+          "x": 32,
+          "y": 257,
+          "width": 468.421875,
+          "height": 149
+        }
+      }
+    },
+    "dimensions": {
+      "width": 390,
+      "scrollWidth": 390
+    },
+    "result": "pass"
+  }
+]
