@@ -1,0 +1,486 @@
+{
+  "revision": "fixed",
+  "sourceSha": "0242f0845e76d0045e196a87b2719074e9b2daec",
+  "output": "/qa/litellm-34681/visual-fixed-1792954340390",
+  "startedAt": "2026-10-25T18:52:20.408Z",
+  "viewports": [
+    {
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900
+      },
+      "cases": [
+        {
+          "model": "qa-cache-34681",
+          "phase": "first",
+          "submitMethod": "Send message button",
+          "status": 200,
+          "url": "http://127.0.0.1:41475/chat/completions",
+          "requestBody": {
+            "model": "qa-cache-34681",
+            "litellm_trace_id": "bdb43552-0598-4995-b7bd-a4efbcc1d0d3",
+            "messages": [
+              {
+                "role": "user",
+                "content": "Reply with only: Cache works. Verification reference 6cd67e56-69f"
+              }
+            ],
+            "stream": true,
+            "stream_options": {
+              "include_usage": true
+            }
+          },
+          "responseBody": "data: {\"id\":\"f8500d5e-6094-4a06-8feb-9242103688ed\",\"object\":\"chat.completion.chunk\",\"created\":1792954346,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"role\":\"assistant\",\"content\":\"Cache\"}}]}\n\ndata: {\"id\":\"f96589e3-2d54-4c08-a991-5a1ecb75ecb2\",\"object\":\"chat.completion.chunk\",\"created\":1792954346,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" works\"}}]}\n\ndata: {\"id\":\"2311a8b5-4fd4-4218-9b4f-7d38b84914ca\",\"object\":\"chat.completion.chunk\",\"created\":1792954346,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\".\"}}]}\n\ndata: {\"id\":\"14073abb-9c7b-4d2e-a1ce-538725a22b76\",\"object\":\"chat.completion.chunk\",\"created\":1792954346,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" Verification\"}}]}\n\ndata: {\"id\":\"1d8e569d-2a03-4ed8-a959-2d805efc9454\",\"object\":\"chat.completion.chunk\",\"created\":1792954346,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" reference\"}}]}\n\ndata: {\"id\":\"3887df91-2c0c-4320-ac9a-b923a6229acd\",\"object\":\"chat.completion.chunk\",\"created\":1792954346,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" \"}}]}\n\ndata: {\"id\":\"a5e176a8-0eb3-4a27-a4ee-076526a10c91\",\"object\":\"chat.completion.chunk\",\"created\":1792954346,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"6\"}}]}\n\ndata: {\"id\":\"960d6a16-ab9c-419d-8b99-9791c305893d\",\"object\":\"chat.completion.chunk\",\"created\":1792954346,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"cd\"}}]}\n\ndata: {\"id\":\"1a04f92c-8b60-476e-a378-00d70fdb1018\",\"object\":\"chat.completion.chunk\",\"created\":1792954346,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"6\"}}]}\n\ndata: {\"id\":\"7b6d5d7f-f69d-4b91-a416-0d7f319dc994\",\"object\":\"chat.completion.chunk\",\"created\":1792954346,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"7\"}}]}\n\ndata: {\"id\":\"0f7805e7-a60a-4692-a3c5-c9ff72eaa964\",\"object\":\"chat.completion.chunk\",\"created\":1792954346,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"e\"}}]}\n\ndata: {\"id\":\"af0cb76d-2ab0-4e40-9580-6c92ac5656c1\",\"object\":\"chat.completion.chunk\",\"created\":1792954346,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"5\"}}]}\n\ndata: {\"id\":\"c0db66f4-a9a9-4357-9ba6-1151f8ed59e4\",\"object\":\"chat.completion.chunk\",\"created\":1792954346,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"6\"}}]}\n\ndata: {\"id\":\"97d1a0c4-e8c2-4fd4-a739-957f99b4b3f2\",\"object\":\"chat.completion.chunk\",\"created\":1792954346,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"-\"}}]}\n\ndata: {\"id\":\"af8c9971-cc82-47fd-8dc6-0b3aa721908f\",\"object\":\"chat.completion.chunk\",\"created\":1792954346,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"6\"}}]}\n\ndata: {\"id\":\"3b86ed74-a424-4c7a-88e9-b2a00e7e2a10\",\"object\":\"chat.completion.chunk\",\"created\":1792954346,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"9\"}}]}\n\ndata: {\"id\":\"633241b8-251a-45ed-b5b2-a1edbc1e13cc\",\"object\":\"chat.completion.chunk\",\"created\":1792954346,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"f\"}}]}\n\ndata: {\"id\":\"5adcf16b-d3e7-4ba3-af90-8c5f7358cc97\",\"object\":\"chat.completion.chunk\",\"created\":1792954346,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{},\"finish_reason\":\"stop\"}]}\n\ndata: {\"id\":\"5adcf16b-d3e7-4ba3-af90-8c5f7358cc97\",\"created\":1792954346,\"model\":\"qa-cache-34681\",\"object\":\"chat.completion.chunk\",\"choices\":[],\"usage\":{\"completion_tokens\":18,\"prompt_tokens\":33,\"total_tokens\":51,\"completion_tokens_details\":{\"reasoning_tokens\":0,\"text_tokens\":18},\"cost\":0.00005099999999999999}}\n\ndata: [DONE]\n\n",
+          "screenshot": "desktop-first.png",
+          "generatedContent": "Cache works. Verification reference 6cd67e56-69f",
+          "usage": {
+            "completion_tokens": 18,
+            "prompt_tokens": 33,
+            "total_tokens": 51,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "text_tokens": 18
+            },
+            "cost": 0.00005099999999999999
+          },
+          "headers": {
+            "x-litellm-call-id": "e8b709ff-892a-4dcb-a242-bd64d97c0668"
+          },
+          "visibleResult": "Reply with only: Cache works. Verification reference 6cd67e56-69f qa-cache-34681 Cache works. Verification reference 6cd67e56-69f 0.46s to first token 1.44s total 33 in 18 out $0.000051 Inspect",
+          "conversationBox": {
+            "x": 304,
+            "y": 287,
+            "width": 728,
+            "height": 444
+          },
+          "modelBox": {
+            "x": 339,
+            "y": 740,
+            "width": 135.15625,
+            "height": 24
+          }
+        },
+        {
+          "model": "qa-cache-34681",
+          "phase": "repeat",
+          "submitMethod": "Send message button",
+          "status": 200,
+          "url": "http://127.0.0.1:41475/chat/completions",
+          "requestBody": {
+            "model": "qa-cache-34681",
+            "litellm_trace_id": "3f02b7ca-f992-443a-a298-e2549aaa7468",
+            "messages": [
+              {
+                "role": "user",
+                "content": "Reply with only: Cache works. Verification reference 6cd67e56-69f"
+              }
+            ],
+            "stream": true,
+            "stream_options": {
+              "include_usage": true
+            }
+          },
+          "responseBody": "data: {\"id\":\"f8500d5e-6094-4a06-8feb-9242103688ed\",\"object\":\"chat.completion.chunk\",\"created\":1792954351,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"role\":\"assistant\",\"content\":\"Cache \"}}]}\n\ndata: {\"id\":\"f8500d5e-6094-4a06-8feb-9242103688ed\",\"object\":\"chat.completion.chunk\",\"created\":1792954351,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"works. \"}}]}\n\ndata: {\"id\":\"f8500d5e-6094-4a06-8feb-9242103688ed\",\"object\":\"chat.completion.chunk\",\"created\":1792954351,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"Verification \"}}]}\n\ndata: {\"id\":\"f8500d5e-6094-4a06-8feb-9242103688ed\",\"object\":\"chat.completion.chunk\",\"created\":1792954351,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"reference \"}}]}\n\ndata: {\"id\":\"f8500d5e-6094-4a06-8feb-9242103688ed\",\"object\":\"chat.completion.chunk\",\"created\":1792954351,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"6cd67e56-69f\"}}]}\n\ndata: {\"id\":\"f8500d5e-6094-4a06-8feb-9242103688ed\",\"object\":\"chat.completion.chunk\",\"created\":1792954351,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{},\"finish_reason\":\"stop\"}]}\n\ndata: {\"id\":\"f8500d5e-6094-4a06-8feb-9242103688ed\",\"created\":1792954351,\"model\":\"qa-cache-34681\",\"object\":\"chat.completion.chunk\",\"choices\":[],\"usage\":{\"completion_tokens\":18,\"prompt_tokens\":33,\"total_tokens\":51,\"completion_tokens_details\":{\"reasoning_tokens\":0,\"text_tokens\":18},\"cost\":0.00005099999999999999}}\n\ndata: [DONE]\n\n",
+          "screenshot": "desktop-repeat.png",
+          "generatedContent": "Cache works. Verification reference 6cd67e56-69f",
+          "usage": {
+            "completion_tokens": 18,
+            "prompt_tokens": 33,
+            "total_tokens": 51,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "text_tokens": 18
+            },
+            "cost": 0.00005099999999999999
+          },
+          "headers": {
+            "x-litellm-cache-key": "qa-34681-responses:8ae118b98b41527485fb1f74fbeed7dbb908b4da275616b93f031966371b5969",
+            "x-litellm-call-id": "fc4f0285-b725-4dab-9dd3-39d9d4c1a142",
+            "x-litellm-response-cost": "0.0"
+          },
+          "visibleResult": "Reply with only: Cache works. Verification reference 6cd67e56-69f qa-cache-34681 Cache works. Verification reference 6cd67e56-69f 0.07s to first token 0.09s total 33 in 18 out $0.000051 Cached response Inspect",
+          "conversationBox": {
+            "x": 304,
+            "y": 287,
+            "width": 728,
+            "height": 444
+          },
+          "modelBox": {
+            "x": 339,
+            "y": 740,
+            "width": 135.15625,
+            "height": 24
+          }
+        }
+      ],
+      "pageErrors": [],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      ],
+      "failedResponses": [
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/api-keys/__next.!KGRhc2hib2FyZCk.api-keys.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/playground/__next.!KGRhc2hib2FyZCk.playground.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/models-and-endpoints/__next.!KGRhc2hib2FyZCk.models-and-endpoints.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/mcp-servers/__next.!KGRhc2hib2FyZCk.mcp-servers.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/skills/__next.!KGRhc2hib2FyZCk.skills.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/guardrails/__next.!KGRhc2hib2FyZCk.guardrails.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/policies/__next.!KGRhc2hib2FyZCk.policies.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/usage/__next.!KGRhc2hib2FyZCk.usage.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/model-insights/__next.!KGRhc2hib2FyZCk.model-insights.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/cost-optimization/__next.!KGRhc2hib2FyZCk.cost-optimization.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/logs/__next.!KGRhc2hib2FyZCk.logs.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/lens/__next.!KGRhc2hib2FyZCk.lens.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/guardrails-monitor/__next.!KGRhc2hib2FyZCk.guardrails-monitor.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/teams/__next.!KGRhc2hib2FyZCk.teams.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/users/__next.!KGRhc2hib2FyZCk.users.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/api-keys/__next.!KGRhc2hib2FyZCk.api-keys.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/playground/__next.!KGRhc2hib2FyZCk.playground.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/models-and-endpoints/__next.!KGRhc2hib2FyZCk.models-and-endpoints.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/mcp-servers/__next.!KGRhc2hib2FyZCk.mcp-servers.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/skills/__next.!KGRhc2hib2FyZCk.skills.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/guardrails/__next.!KGRhc2hib2FyZCk.guardrails.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/model-insights/__next.!KGRhc2hib2FyZCk.model-insights.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/policies/__next.!KGRhc2hib2FyZCk.policies.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/usage/__next.!KGRhc2hib2FyZCk.usage.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/cost-optimization/__next.!KGRhc2hib2FyZCk.cost-optimization.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/lens/__next.!KGRhc2hib2FyZCk.lens.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/logs/__next.!KGRhc2hib2FyZCk.logs.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/guardrails-monitor/__next.!KGRhc2hib2FyZCk.guardrails-monitor.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/teams/__next.!KGRhc2hib2FyZCk.teams.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/users/__next.!KGRhc2hib2FyZCk.users.__PAGE__.txt",
+          "status": 404
+        }
+      ],
+      "result": "pass",
+      "video": "raw-video/fb61fd262e4298a821a69e0947890a9f.webm"
+    },
+    {
+      "viewport": {
+        "name": "phone",
+        "width": 390,
+        "height": 844
+      },
+      "cases": [
+        {
+          "model": "qa-cache-34681",
+          "phase": "first",
+          "submitMethod": "Enter in the message field",
+          "status": 200,
+          "url": "http://127.0.0.1:41475/chat/completions",
+          "requestBody": {
+            "model": "qa-cache-34681",
+            "litellm_trace_id": "8a39c30a-16c6-4030-81ee-9fb2522845fd",
+            "messages": [
+              {
+                "role": "user",
+                "content": "Reply with only: Cache works. Verification reference 0e32de6e-45b"
+              }
+            ],
+            "stream": true,
+            "stream_options": {
+              "include_usage": true
+            }
+          },
+          "responseBody": "data: {\"id\":\"faa2c9f1-69a3-491f-a51b-48af55766e01\",\"object\":\"chat.completion.chunk\",\"created\":1792954360,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"role\":\"assistant\",\"content\":\"Cache\"}}]}\n\ndata: {\"id\":\"cecead19-5a49-49f3-86da-c98a81320e13\",\"object\":\"chat.completion.chunk\",\"created\":1792954360,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" works\"}}]}\n\ndata: {\"id\":\"39efd774-a0c3-4cf1-998c-ff9348eb4406\",\"object\":\"chat.completion.chunk\",\"created\":1792954360,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\".\"}}]}\n\ndata: {\"id\":\"300ce889-a26a-4756-84d2-10a1f561da64\",\"object\":\"chat.completion.chunk\",\"created\":1792954360,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" Verification\"}}]}\n\ndata: {\"id\":\"44cc2fb0-9603-47bd-818c-e6c6e53275cc\",\"object\":\"chat.completion.chunk\",\"created\":1792954360,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" reference\"}}]}\n\ndata: {\"id\":\"938bc6f8-977e-46c4-8fd5-d0cda6e66bb5\",\"object\":\"chat.completion.chunk\",\"created\":1792954360,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" \"}}]}\n\ndata: {\"id\":\"3d86560a-4841-47f0-84c8-f408565f5590\",\"object\":\"chat.completion.chunk\",\"created\":1792954360,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"0\"}}]}\n\ndata: {\"id\":\"18e5fcee-7ae1-42d1-b9d3-6896d50510e2\",\"object\":\"chat.completion.chunk\",\"created\":1792954360,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"e\"}}]}\n\ndata: {\"id\":\"74e582c3-798e-4db1-b609-9e7d1522f9fe\",\"object\":\"chat.completion.chunk\",\"created\":1792954360,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"3\"}}]}\n\ndata: {\"id\":\"407c9ca1-9f58-4c0e-8573-8bb1e0f712af\",\"object\":\"chat.completion.chunk\",\"created\":1792954360,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"2\"}}]}\n\ndata: {\"id\":\"fc01d4c2-fd5c-48f9-bd46-6ae9ee532f52\",\"object\":\"chat.completion.chunk\",\"created\":1792954360,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"de\"}}]}\n\ndata: {\"id\":\"dde53373-3dee-4b03-9658-54d37bf8a161\",\"object\":\"chat.completion.chunk\",\"created\":1792954360,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"6\"}}]}\n\ndata: {\"id\":\"6787edef-e2ae-450b-a6c5-ae4c1987be02\",\"object\":\"chat.completion.chunk\",\"created\":1792954360,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"e\"}}]}\n\ndata: {\"id\":\"0662836e-0039-4f89-8744-747512df8595\",\"object\":\"chat.completion.chunk\",\"created\":1792954360,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"-\"}}]}\n\ndata: {\"id\":\"762c033e-bcda-4406-8753-78f1c54b8883\",\"object\":\"chat.completion.chunk\",\"created\":1792954360,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"4\"}}]}\n\ndata: {\"id\":\"2d0b601a-b05a-4a9e-a316-e22f77d42deb\",\"object\":\"chat.completion.chunk\",\"created\":1792954360,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"5\"}}]}\n\ndata: {\"id\":\"8ef9fbbe-975a-4f25-9f56-5a504f2ba4a3\",\"object\":\"chat.completion.chunk\",\"created\":1792954360,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"b\"}}]}\n\ndata: {\"id\":\"4327849b-7ce6-4f16-a8d3-d6a9e16a91b1\",\"object\":\"chat.completion.chunk\",\"created\":1792954360,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{},\"finish_reason\":\"stop\"}]}\n\ndata: {\"id\":\"4327849b-7ce6-4f16-a8d3-d6a9e16a91b1\",\"created\":1792954360,\"model\":\"qa-cache-34681\",\"object\":\"chat.completion.chunk\",\"choices\":[],\"usage\":{\"completion_tokens\":18,\"prompt_tokens\":33,\"total_tokens\":51,\"completion_tokens_details\":{\"reasoning_tokens\":0,\"text_tokens\":18},\"cost\":0.00005099999999999999}}\n\ndata: [DONE]\n\n",
+          "screenshot": "phone-first.png",
+          "generatedContent": "Cache works. Verification reference 0e32de6e-45b",
+          "usage": {
+            "completion_tokens": 18,
+            "prompt_tokens": 33,
+            "total_tokens": 51,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "text_tokens": 18
+            },
+            "cost": 0.00005099999999999999
+          },
+          "headers": {
+            "x-litellm-call-id": "dc40dcba-9ff6-433d-bf3e-b945263b1294"
+          },
+          "visibleResult": "Reply with only: Cache works. Verification reference 0e32de6e-45b qa-cache-34681 Cache works. Verification reference 0e32de6e-45b 0.34s to first token 1.16s total 33 in 18 out $0.000051 Inspect",
+          "conversationBox": {
+            "x": 16,
+            "y": 299,
+            "width": 358,
+            "height": 376
+          },
+          "modelBox": {
+            "x": 51,
+            "y": 684,
+            "width": 135.15625,
+            "height": 24
+          }
+        },
+        {
+          "model": "qa-cache-34681",
+          "phase": "repeat",
+          "submitMethod": "Enter in the message field",
+          "status": 200,
+          "url": "http://127.0.0.1:41475/chat/completions",
+          "requestBody": {
+            "model": "qa-cache-34681",
+            "litellm_trace_id": "2ef3d0fe-811e-48cd-9da0-4bb690b519a0",
+            "messages": [
+              {
+                "role": "user",
+                "content": "Reply with only: Cache works. Verification reference 0e32de6e-45b"
+              }
+            ],
+            "stream": true,
+            "stream_options": {
+              "include_usage": true
+            }
+          },
+          "responseBody": "data: {\"id\":\"faa2c9f1-69a3-491f-a51b-48af55766e01\",\"object\":\"chat.completion.chunk\",\"created\":1792954365,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"role\":\"assistant\",\"content\":\"Cache \"}}]}\n\ndata: {\"id\":\"faa2c9f1-69a3-491f-a51b-48af55766e01\",\"object\":\"chat.completion.chunk\",\"created\":1792954365,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"works. \"}}]}\n\ndata: {\"id\":\"faa2c9f1-69a3-491f-a51b-48af55766e01\",\"object\":\"chat.completion.chunk\",\"created\":1792954365,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"Verification \"}}]}\n\ndata: {\"id\":\"faa2c9f1-69a3-491f-a51b-48af55766e01\",\"object\":\"chat.completion.chunk\",\"created\":1792954365,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"reference \"}}]}\n\ndata: {\"id\":\"faa2c9f1-69a3-491f-a51b-48af55766e01\",\"object\":\"chat.completion.chunk\",\"created\":1792954365,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"0e32de6e-45b\"}}]}\n\ndata: {\"id\":\"faa2c9f1-69a3-491f-a51b-48af55766e01\",\"object\":\"chat.completion.chunk\",\"created\":1792954365,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{},\"finish_reason\":\"stop\"}]}\n\ndata: {\"id\":\"faa2c9f1-69a3-491f-a51b-48af55766e01\",\"created\":1792954365,\"model\":\"qa-cache-34681\",\"object\":\"chat.completion.chunk\",\"choices\":[],\"usage\":{\"completion_tokens\":18,\"prompt_tokens\":33,\"total_tokens\":51,\"completion_tokens_details\":{\"reasoning_tokens\":0,\"text_tokens\":18},\"cost\":0.00005099999999999999}}\n\ndata: [DONE]\n\n",
+          "screenshot": "phone-repeat.png",
+          "generatedContent": "Cache works. Verification reference 0e32de6e-45b",
+          "usage": {
+            "completion_tokens": 18,
+            "prompt_tokens": 33,
+            "total_tokens": 51,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "text_tokens": 18
+            },
+            "cost": 0.00005099999999999999
+          },
+          "headers": {
+            "x-litellm-cache-key": "qa-34681-responses:8f90ac0d4ee7643da594986e19acbbf8d0d8f3bc6236485260d902db786aebed",
+            "x-litellm-call-id": "f0c17c0b-4ecb-4116-a6fe-c31dda5df886",
+            "x-litellm-response-cost": "0.0"
+          },
+          "visibleResult": "Reply with only: Cache works. Verification reference 0e32de6e-45b qa-cache-34681 Cache works. Verification reference 0e32de6e-45b 0.04s to first token 0.06s total 33 in 18 out $0.000051 Cached response Inspect",
+          "conversationBox": {
+            "x": 16,
+            "y": 299,
+            "width": 358,
+            "height": 376
+          },
+          "modelBox": {
+            "x": 51,
+            "y": 684,
+            "width": 135.15625,
+            "height": 24
+          }
+        }
+      ],
+      "pageErrors": [],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      ],
+      "failedResponses": [
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        }
+      ],
+      "result": "pass",
+      "video": "raw-video/a3895592fc808854dbad481119efbcc2.webm"
+    }
+  ],
+  "browser": "145.0.7632.6",
+  "completedAt": "2026-10-25T18:52:50.572Z"
+}

@@ -1,0 +1,374 @@
+{
+  "revision": "fixed",
+  "source_path": "/opt/litellm-34681",
+  "source_sha": "0242f0845e76d0045e196a87b2719074e9b2daec",
+  "started_at": "2026-10-25T18:46:26.528394+00:00",
+  "cases": [
+    {
+      "asynchronous": false,
+      "capacity": 3,
+      "namespace": "qa-34681-fdad9f81c5954aed84ebd3c55070929b",
+      "expiry_seconds": 10,
+      "steps": [
+        {
+          "keys": [
+            "fresh",
+            "expired"
+          ],
+          "result": [
+            null,
+            null
+          ],
+          "redis_mget_commands": 1,
+          "elapsed_seconds": 0.0005
+        },
+        {
+          "keys": [
+            "fresh"
+          ],
+          "result": [
+            null
+          ],
+          "redis_mget_commands": 1,
+          "elapsed_seconds": 10.1085
+        },
+        {
+          "keys": [
+            "filler"
+          ],
+          "result": [
+            null
+          ],
+          "redis_mget_commands": 1,
+          "elapsed_seconds": 10.1089
+        },
+        {
+          "keys": [
+            "expired"
+          ],
+          "result": [
+            null
+          ],
+          "redis_mget_commands": 1,
+          "elapsed_seconds": 10.1093
+        },
+        {
+          "keys": [
+            "expired"
+          ],
+          "result": [
+            null
+          ],
+          "redis_mget_commands": 0,
+          "elapsed_seconds": 10.1095
+        },
+        {
+          "keys": [
+            "fresh"
+          ],
+          "result": [
+            null
+          ],
+          "redis_mget_commands": 0,
+          "elapsed_seconds": 10.11
+        },
+        {
+          "keys": [
+            "new"
+          ],
+          "result": [
+            null
+          ],
+          "redis_mget_commands": 1,
+          "elapsed_seconds": 10.1105
+        },
+        {
+          "keys": [
+            "fresh"
+          ],
+          "result": [
+            null
+          ],
+          "redis_mget_commands": 1,
+          "elapsed_seconds": 10.1109
+        }
+      ],
+      "outcome": "pass"
+    },
+    {
+      "asynchronous": false,
+      "capacity": 4,
+      "namespace": "qa-34681-f3a1e03b5b654043ace163c54afd93ee",
+      "expiry_seconds": 10,
+      "steps": [
+        {
+          "keys": [
+            "fresh",
+            "expired"
+          ],
+          "result": [
+            null,
+            null
+          ],
+          "redis_mget_commands": 1,
+          "elapsed_seconds": 0.0005
+        },
+        {
+          "keys": [
+            "fresh"
+          ],
+          "result": [
+            null
+          ],
+          "redis_mget_commands": 1,
+          "elapsed_seconds": 10.1094
+        },
+        {
+          "keys": [
+            "filler"
+          ],
+          "result": [
+            null
+          ],
+          "redis_mget_commands": 1,
+          "elapsed_seconds": 10.1099
+        },
+        {
+          "keys": [
+            "expired"
+          ],
+          "result": [
+            null
+          ],
+          "redis_mget_commands": 1,
+          "elapsed_seconds": 10.1103
+        },
+        {
+          "keys": [
+            "expired"
+          ],
+          "result": [
+            null
+          ],
+          "redis_mget_commands": 0,
+          "elapsed_seconds": 10.1105
+        },
+        {
+          "keys": [
+            "fresh"
+          ],
+          "result": [
+            null
+          ],
+          "redis_mget_commands": 0,
+          "elapsed_seconds": 10.1107
+        },
+        {
+          "keys": [
+            "new"
+          ],
+          "result": [
+            null
+          ],
+          "redis_mget_commands": 1,
+          "elapsed_seconds": 10.1111
+        },
+        {
+          "keys": [
+            "fresh"
+          ],
+          "result": [
+            null
+          ],
+          "redis_mget_commands": 0,
+          "elapsed_seconds": 10.1115
+        }
+      ],
+      "outcome": "pass"
+    },
+    {
+      "asynchronous": true,
+      "capacity": 3,
+      "namespace": "qa-34681-66e0d1fd14864675b59efd4632108235",
+      "expiry_seconds": 10,
+      "steps": [
+        {
+          "keys": [
+            "fresh",
+            "expired"
+          ],
+          "result": [
+            null,
+            null
+          ],
+          "redis_mget_commands": 1,
+          "elapsed_seconds": 0.0018
+        },
+        {
+          "keys": [
+            "fresh"
+          ],
+          "result": [
+            null
+          ],
+          "redis_mget_commands": 1,
+          "elapsed_seconds": 10.1121
+        },
+        {
+          "keys": [
+            "filler"
+          ],
+          "result": [
+            null
+          ],
+          "redis_mget_commands": 1,
+          "elapsed_seconds": 10.1132
+        },
+        {
+          "keys": [
+            "expired"
+          ],
+          "result": [
+            null
+          ],
+          "redis_mget_commands": 1,
+          "elapsed_seconds": 10.1144
+        },
+        {
+          "keys": [
+            "expired"
+          ],
+          "result": [
+            null
+          ],
+          "redis_mget_commands": 0,
+          "elapsed_seconds": 10.1148
+        },
+        {
+          "keys": [
+            "fresh"
+          ],
+          "result": [
+            null
+          ],
+          "redis_mget_commands": 0,
+          "elapsed_seconds": 10.1153
+        },
+        {
+          "keys": [
+            "new"
+          ],
+          "result": [
+            null
+          ],
+          "redis_mget_commands": 1,
+          "elapsed_seconds": 10.1165
+        },
+        {
+          "keys": [
+            "fresh"
+          ],
+          "result": [
+            null
+          ],
+          "redis_mget_commands": 1,
+          "elapsed_seconds": 10.1173
+        }
+      ],
+      "outcome": "pass"
+    },
+    {
+      "asynchronous": true,
+      "capacity": 4,
+      "namespace": "qa-34681-ddb5a702db3f42a9b2562f9bdd1b20b0",
+      "expiry_seconds": 10,
+      "steps": [
+        {
+          "keys": [
+            "fresh",
+            "expired"
+          ],
+          "result": [
+            null,
+            null
+          ],
+          "redis_mget_commands": 1,
+          "elapsed_seconds": 0.0008
+        },
+        {
+          "keys": [
+            "fresh"
+          ],
+          "result": [
+            null
+          ],
+          "redis_mget_commands": 1,
+          "elapsed_seconds": 10.111
+        },
+        {
+          "keys": [
+            "filler"
+          ],
+          "result": [
+            null
+          ],
+          "redis_mget_commands": 1,
+          "elapsed_seconds": 10.1117
+        },
+        {
+          "keys": [
+            "expired"
+          ],
+          "result": [
+            null
+          ],
+          "redis_mget_commands": 1,
+          "elapsed_seconds": 10.1122
+        },
+        {
+          "keys": [
+            "expired"
+          ],
+          "result": [
+            null
+          ],
+          "redis_mget_commands": 0,
+          "elapsed_seconds": 10.1124
+        },
+        {
+          "keys": [
+            "fresh"
+          ],
+          "result": [
+            null
+          ],
+          "redis_mget_commands": 0,
+          "elapsed_seconds": 10.1125
+        },
+        {
+          "keys": [
+            "new"
+          ],
+          "result": [
+            null
+          ],
+          "redis_mget_commands": 1,
+          "elapsed_seconds": 10.113
+        },
+        {
+          "keys": [
+            "fresh"
+          ],
+          "result": [
+            null
+          ],
+          "redis_mget_commands": 0,
+          "elapsed_seconds": 10.1131
+        }
+      ],
+      "outcome": "pass"
+    }
+  ],
+  "redis_version": "7.4.11",
+  "completed_at": "2026-10-25T18:47:07.036055+00:00"
+}

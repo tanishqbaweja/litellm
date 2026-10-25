@@ -1,0 +1,4 @@
+{"asynchronous": false, "capacity": 3, "redis_mget_commands_by_step": [1, 1, 1, 1, 0, 1, 1, 0]}
+{"asynchronous": false, "capacity": 4, "redis_mget_commands_by_step": [1, 1, 1, 1, 0, 0, 1, 0]}
+{"asynchronous": true, "capacity": 3, "redis_mget_commands_by_step": [1, 1, 1, 1, 0, 1, 1, 0]}
+{"asynchronous": true, "capacity": 4, "redis_mget_commands_by_step": [1, 1, 1, 1, 0, 0, 1, 0]}

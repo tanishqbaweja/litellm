@@ -1,0 +1,22 @@
+FF                                                                       [100%]
+=================================== FAILURES ===================================
+______ test_refreshing_a_full_batch_throttle_preserves_other_keys[False] _______
+tests/unit/caching/test_dual_cache.py:48: in test_refreshing_a_full_batch_throttle_preserves_other_keys
+    assert tuple(call.args[0] if asynchronous else call.kwargs["key_list"] for call in calls) == (
+E   AssertionError: assert (['fresh', 'e...'fresh'], ...) == (['fresh', 'e...'], ['fresh'])
+E
+E     At index 4 diff: ['expired'] != ['new']
+E     Left contains 2 more items, first extra item: ['new']
+E     Use -v to get more diff
+_______ test_refreshing_a_full_batch_throttle_preserves_other_keys[True] _______
+tests/unit/caching/test_dual_cache.py:48: in test_refreshing_a_full_batch_throttle_preserves_other_keys
+    assert tuple(call.args[0] if asynchronous else call.kwargs["key_list"] for call in calls) == (
+E   AssertionError: assert (['fresh', 'e...'fresh'], ...) == (['fresh', 'e...'], ['fresh'])
+E
+E     At index 4 diff: ['expired'] != ['new']
+E     Left contains 2 more items, first extra item: ['new']
+E     Use -v to get more diff
+=========================== short test summary info ============================
+FAILED tests/unit/caching/test_dual_cache.py::test_refreshing_a_full_batch_throttle_preserves_other_keys[False]
+FAILED tests/unit/caching/test_dual_cache.py::test_refreshing_a_full_batch_throttle_preserves_other_keys[True]
+2 failed, 55 deselected in 0.39s

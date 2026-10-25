@@ -1,0 +1,8 @@
+{
+  "base": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "branch": "litellm_fix_34681_throttle_refresh",
+  "redis_image": "redis@sha256:858f009f9709ce576febc734aa78b8f6d624b82571f9ddb6bda4377c833b3499",
+  "redis_version": "7.4.11",
+  "redis_container_id": "fc47581e00f7ec5c9a8c837afe45adc105233d6046e0381cf59748d7f39e2f03",
+  "redis_port": 6386
+}

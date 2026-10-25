@@ -1,0 +1,113 @@
+{
+  "recorded_at": "2026-10-25T18:55:44.938090+00:00",
+  "base_sha": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "fixed_sha": "0242f0845e76d0045e196a87b2719074e9b2daec",
+  "results": {
+    "baseline": {
+      "source_sha": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+      "redis_cases": 4,
+      "proxy_statuses": {
+        "200": 12
+      },
+      "cache_status_counts": {
+        "True": 6,
+        "False": 3,
+        "None": 3
+      },
+      "browser": [
+        {
+          "viewport": "desktop",
+          "cases": 2,
+          "page_errors": 0,
+          "http_status_counts": {
+            "404": 41
+          },
+          "console_errors": 41,
+          "cached_response_badges": [
+            false,
+            true
+          ]
+        },
+        {
+          "viewport": "phone",
+          "cases": 2,
+          "page_errors": 0,
+          "http_status_counts": {
+            "404": 7
+          },
+          "console_errors": 7,
+          "cached_response_badges": [
+            false,
+            true
+          ]
+        }
+      ]
+    },
+    "fixed": {
+      "source_sha": "0242f0845e76d0045e196a87b2719074e9b2daec",
+      "redis_cases": 4,
+      "proxy_statuses": {
+        "200": 12
+      },
+      "cache_status_counts": {
+        "True": 6,
+        "False": 3,
+        "None": 3
+      },
+      "browser": [
+        {
+          "viewport": "desktop",
+          "cases": 2,
+          "page_errors": 0,
+          "http_status_counts": {
+            "404": 41
+          },
+          "console_errors": 41,
+          "cached_response_badges": [
+            false,
+            true
+          ]
+        },
+        {
+          "viewport": "phone",
+          "cases": 2,
+          "page_errors": 0,
+          "http_status_counts": {
+            "404": 7
+          },
+          "console_errors": 7,
+          "cached_response_badges": [
+            false,
+            true
+          ]
+        }
+      ]
+    }
+  },
+  "tests_before": "2 failed, 55 deselected",
+  "tests_after": "770 passed, 64 warnings in 35.29s across nine affected files",
+  "mutations_rejected": 5,
+  "production_formatter": "make format: 2932 files unchanged",
+  "lint": "make lint BASE_REF=origin/main LINT_JOBS=2: exit 0",
+  "type_budget": "105900 existing diagnostics, each rule within its main ceiling",
+  "e2e_types": "0 errors, 0 warnings, 0 notes",
+  "browser": "145.0.7632.6",
+  "playwright": "1.58.1",
+  "postgresql": "16.10",
+  "python": "3.12.13",
+  "ollama": "0.40.11",
+  "redis": "7.4.11",
+  "mocked_live_requests": 0,
+  "unchanged_ui_export_source": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "new_failed_browser_paths": [],
+  "cleanup": "All three owned virtual keys deleted with HTTP 200, including the initial harness exploration, and the owned proxy and Redis container stopped",
+  "limitations": [
+    "The live Redis trace is the fix proof. Model and dashboard runs are compatibility controls, not a UI improvement or production performance benchmark",
+    "Local CPU Qwen3.5-0.8B Q4_0 through Ollama, with no external paid provider request or model-quality claim",
+    "Existing phone layout clips the Send control and navigation, and the assistant overlaps the composer footer. Phone submission used Enter",
+    "The same static-prefetch/runtime-config 404 paths remain: 41 desktop and seven phone responses on each revision. No JavaScript exception or HTTP 5xx occurred",
+    "One existing real-time TTL test failed in the first broad run, then passed unchanged in isolation and in full runs on both main and the fix. The failure was not reproduced on main",
+    "An initial API harness expected six explicit False cache flags. Actual main records three False and three None on first requests, plus six True repeats. The final harness records these separately and does not relabel None as a proven miss",
+    "Configured dashboard costs are local test pricing, not provider invoices"
+  ]
+}

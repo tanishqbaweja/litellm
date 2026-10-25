@@ -1,0 +1,11 @@
+[
+  "tests/unit/caching/test_dual_cache.py",
+  "tests/unit/caching/test_redis_batch.py",
+  "tests/unit/caching/test_in_memory_cache.py",
+  "tests/unit/caching/test_request_redis_batch_pre_call.py",
+  "tests/unit/caching/test_request_redis_batch_post_call.py",
+  "tests/unit/proxy/auth/test_auth_checks_object_access_and_lookup.py",
+  "tests/unit/proxy/auth/test_auth_hot_path_network_requests.py",
+  "tests/unit/proxy/auth/test_object_permission_loading.py",
+  "tests/unit/proxy/utils/proxy_logging/test_module_helpers.py"
+]

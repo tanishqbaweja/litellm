@@ -1,0 +1,35 @@
+model_list:
+  - model_name: qa-cache-34681
+    litellm_params:
+      model: ollama_chat/qa-qwen3.5-0.8b
+      api_base: http://127.0.0.1:11434
+      reasoning_effort: none
+      max_tokens: 48
+      num_ctx: 1024
+      num_thread: 4
+      temperature: 0
+      input_cost_per_token: 0.000001
+      output_cost_per_token: 0.000001
+
+general_settings:
+  master_key: os.environ/LITELLM_MASTER_KEY
+  database_url: os.environ/DATABASE_URL
+  store_model_in_db: true
+  proxy_batch_write_at: 1
+
+litellm_settings:
+  api_base: null
+  store_prompts_in_spend_logs: true
+  cache: true
+  cache_params:
+    type: redis
+    host: 127.0.0.1
+    port: 6386
+    namespace: qa-34681-responses
+    ttl: 600
+
+router_settings:
+  redis_host: 127.0.0.1
+  redis_port: 6386
+  num_retries: 0
+  disable_cooldowns: true

@@ -1,0 +1,51 @@
+........................................................................ [  9%]
+........................................................................ [ 18%]
+........................................................................ [ 28%]
+........................................................................ [ 37%]
+........................................................................ [ 46%]
+........................................................................ [ 56%]
+............F........................................................... [ 65%]
+........................................................................ [ 74%]
+........................................................................ [ 84%]
+........................................................................ [ 93%]
+..................................................                       [100%]
+=================================== FAILURES ===================================
+___________________________ test_in_memory_cache_ttl ___________________________
+tests/unit/caching/test_in_memory_cache.py:143: in test_in_memory_cache_ttl
+    assert new_ttl_time is None
+E   assert 1792953570.4977746 is None
+=============================== warnings summary ===============================
+tests/unit/caching/test_request_redis_batch_pre_call.py::test_a_cooldown_recorded_locally_after_the_prefetch_left_still_excludes_its_deployment
+tests/unit/caching/test_request_redis_batch_post_call.py::test_the_success_handler_closes_the_post_call_batch_after_the_last_callback
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'index' on TypedDict class 'ChatCompletionThinkingBlock' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/caching/test_request_redis_batch_pre_call.py::test_a_cooldown_recorded_locally_after_the_prefetch_left_still_excludes_its_deployment
+tests/unit/caching/test_request_redis_batch_post_call.py::test_the_success_handler_closes_the_post_call_batch_after_the_last_callback
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'index' on TypedDict class 'ChatCompletionRedactedThinkingBlock' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/caching/test_request_redis_batch_pre_call.py::test_a_cooldown_recorded_locally_after_the_prefetch_left_still_excludes_its_deployment
+tests/unit/caching/test_request_redis_batch_post_call.py::test_the_success_handler_closes_the_post_call_batch_after_the_last_callback
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'summary' on TypedDict class 'ChatCompletionReasoningItem' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/proxy/auth/test_auth_checks_object_access_and_lookup.py::test_access_group_model_fallback_uses_the_injected_database[key]
+tests/unit/proxy/auth/test_auth_checks_object_access_and_lookup.py::test_access_group_model_fallback_uses_the_injected_database[team]
+tests/unit/proxy/auth/test_auth_checks_object_access_and_lookup.py::test_authoritative_access_group_reads_writer_despite_stale_allow_cache[False]
+tests/unit/proxy/auth/test_auth_checks_object_access_and_lookup.py::test_authoritative_access_group_reads_writer_despite_stale_allow_cache[True]
+  /opt/litellm-34681/litellm/proxy/auth/auth_checks.py:3755: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.13/migration/
+    _response: Final = LiteLLM_AccessGroupTable.model_validate(response.dict())
+
+tests/unit/proxy/auth/test_auth_checks_object_access_and_lookup.py: 53 warnings
+  /opt/litellm-34681/litellm/proxy/auth/auth_checks.py:4400: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.13/migration/
+    _perm_obj: Final = LiteLLM_ObjectPermissionTable.model_validate(response.dict())
+
+tests/unit/proxy/auth/test_auth_checks_object_access_and_lookup.py::test_authoritative_team_permission_outage_cannot_drop_the_teams_restrictions
+  /opt/litellm-34681/litellm/proxy/auth/auth_checks.py:3557: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.13/migration/
+    _response: Final = LiteLLM_TeamTableCachedObj.model_validate(response.dict())
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/unit/caching/test_in_memory_cache.py::test_in_memory_cache_ttl
+1 failed, 769 passed, 64 warnings in 35.89s

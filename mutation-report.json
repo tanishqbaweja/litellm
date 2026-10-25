@@ -1,0 +1,32 @@
+{
+  "started_at": "2026-10-25T18:38:41.780269+00:00",
+  "mutations": [
+    {
+      "name": "evict-on-refresh",
+      "returncode": 1,
+      "failed_cases": 2
+    },
+    {
+      "name": "never-evict-new-keys",
+      "returncode": 1,
+      "failed_cases": 2
+    },
+    {
+      "name": "evict-newest",
+      "returncode": 1,
+      "failed_cases": 2
+    },
+    {
+      "name": "allow-one-entry-over-capacity",
+      "returncode": 1,
+      "failed_cases": 2
+    },
+    {
+      "name": "do-not-refresh-existing-timestamps",
+      "returncode": 1,
+      "failed_cases": 2
+    }
+  ],
+  "source_restored_exactly": true,
+  "restored_sha256": "139e58a3e2a74aa340804efdb524078d38d00d459ed464e0fb9af24d65426732"
+}

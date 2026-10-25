@@ -1,0 +1,13 @@
+{"endpoint": "/v1/chat/completions", "stream": false, "repeat": 0, "status": 200, "content": "Cache works. Verification reference 06ede20a31d6"}
+{"endpoint": "/v1/chat/completions", "stream": false, "repeat": 1, "status": 200, "content": "Cache works. Verification reference 06ede20a31d6"}
+{"endpoint": "/v1/chat/completions", "stream": true, "repeat": 0, "status": 200, "content": "Cache works. Verification reference c90392077032"}
+{"endpoint": "/v1/chat/completions", "stream": true, "repeat": 1, "status": 200, "content": "Cache works. Verification reference c90392077032"}
+{"endpoint": "/v1/responses", "stream": false, "repeat": 0, "status": 200, "content": "Cache works. Verification reference 1249f31e267b"}
+{"endpoint": "/v1/responses", "stream": false, "repeat": 1, "status": 200, "content": "Cache works. Verification reference 1249f31e267b"}
+{"endpoint": "/v1/responses", "stream": true, "repeat": 0, "status": 200, "content": "Cache works. Verification reference 341320106c86"}
+{"endpoint": "/v1/responses", "stream": true, "repeat": 1, "status": 200, "content": "Cache works. Verification reference 341320106c86"}
+{"endpoint": "/v1/messages", "stream": false, "repeat": 0, "status": 200, "content": "Cache works. Verification reference 1ed3377019e3"}
+{"endpoint": "/v1/messages", "stream": false, "repeat": 1, "status": 200, "content": "Cache works. Verification reference 1ed3377019e3"}
+{"endpoint": "/v1/messages", "stream": true, "repeat": 0, "status": 200, "content": "Cache works. Verification reference 4ac32d9311a4"}
+{"endpoint": "/v1/messages", "stream": true, "repeat": 1, "status": 200, "content": "Cache works. Verification reference 4ac32d9311a4"}
+{"calls": 12, "cache_status_counts": {"True": 6, "False": 3, "None": 3}}

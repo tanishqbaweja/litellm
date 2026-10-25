@@ -1,0 +1,131 @@
+{
+  "reviewed_at": "2026-10-25T18:54:19.267392+00:00",
+  "reviewer": "Codex visual inspection",
+  "observations": [
+    "All eight raw screenshots and eight red-box annotations were inspected",
+    "Eight evenly sampled frames from each of four recordings were inspected, not every video frame",
+    "Both revisions display a real generated response first and the Cached response badge after repeating the same prompt in a new chat",
+    "Desktop Trace shows the configured Ollama API base and zero retries and fallbacks",
+    "The existing phone layout clips the Send control and parts of the navigation, while the assistant overlaps the composer footer",
+    "Phone submission used Enter in the message field, and the complete generated answer and cache badge remained visible",
+    "Final screenshots were captured after chat-history toasts cleared, while recordings retain loading, streaming, model selection and transient toasts",
+    "No password or token is visible in the inspected images and sampled frames, and the browser harness checks that the login password input is masked",
+    "The dashboard is a compatibility check for this backend fix and shows no new visual behavior"
+  ],
+  "screenshots": [
+    {
+      "file": "before/desktop-first.png",
+      "sha256": "2a1a40f39dbdcb1eff72afba395e2e25f47f270e7263f446f2b2a285cd2f93cf",
+      "annotation": "before/desktop-first-annotated.png",
+      "annotation_sha256": "983ab1bf8c2fe57385af38b9e225309cedabe9bf4f0818272ec2b2b7ba4f5690"
+    },
+    {
+      "file": "before/desktop-repeat.png",
+      "sha256": "da1d2cbd727df75f01bd9b9549e39c7197021a2e2b7b2a132849df635d083fa9",
+      "annotation": "before/desktop-repeat-annotated.png",
+      "annotation_sha256": "07cd7be35f2b2c120f3ce42ff25fb1c9d1558c71e1bdabdd6ecae8b7d1ee63ff"
+    },
+    {
+      "file": "before/phone-first.png",
+      "sha256": "ecdb6dd54b20911c4717bf6925dc228c1f22d0e68d17445a7fdcab7df2ee10f1",
+      "annotation": "before/phone-first-annotated.png",
+      "annotation_sha256": "3d211de801d9be9c32c559bbafe2abecb46bb6b5ee684a22e1ac63952dc11c37"
+    },
+    {
+      "file": "before/phone-repeat.png",
+      "sha256": "f02a925dda2d6fd3832a215f6674c768a3278bc35780f100c9792f9f5ab1d6c4",
+      "annotation": "before/phone-repeat-annotated.png",
+      "annotation_sha256": "75205f3bb578d9d55f98f1e64cd13210ca91f3a792bed601a0b1fabccc9e45bb"
+    },
+    {
+      "file": "after/desktop-first.png",
+      "sha256": "b3a9e240bf537f64677a1f0ae72a6d6aee5df4fe76d41a8161b3429335e48283",
+      "annotation": "after/desktop-first-annotated.png",
+      "annotation_sha256": "b6c5488f1213be512fad637088e17e6ec271c1d0cbe8df2e07952f36df10dc4c"
+    },
+    {
+      "file": "after/desktop-repeat.png",
+      "sha256": "bdc23d338b17a27838d8295196c062b8971f0a88afd014a243bba27145c362c4",
+      "annotation": "after/desktop-repeat-annotated.png",
+      "annotation_sha256": "40fea51e138443a7a583b394bcebdb0daf27f7e674f6a07f7589523b80df6df5"
+    },
+    {
+      "file": "after/phone-first.png",
+      "sha256": "eb4442b2cb640ee611bc7f038dbd584f03cf13f3d2a9d5a5c90a897082fd865e",
+      "annotation": "after/phone-first-annotated.png",
+      "annotation_sha256": "e6e17db277d4c19163d26bd1c2bc18aea6a5aaf499e0040e680f88d25096ef6d"
+    },
+    {
+      "file": "after/phone-repeat.png",
+      "sha256": "7e0a0320539b74ae380bffe76402450f0fe78bf602b08ad58b6343e572b2d2d8",
+      "annotation": "after/phone-repeat-annotated.png",
+      "annotation_sha256": "5e39bb899170aaba4a47a8ec21fde2a650309de0849628a5d0d558214c50104b"
+    }
+  ],
+  "recordings": [
+    {
+      "file": "before/desktop.webm",
+      "sha256": "36cec3ddad210074f214596ebe52303a49c64f8bddde8e7a45e054a2f5ebb2d6",
+      "duration_seconds": 14.52,
+      "sampled_frames_visually_reviewed": 8,
+      "frame_contacts": [
+        {
+          "file": "visual-review/baseline-desktop-video-1.png",
+          "sha256": "331f74db2ab9a2808c7b2f362530f172337652baa886d299e289bca8b271ca64"
+        },
+        {
+          "file": "visual-review/baseline-desktop-video-2.png",
+          "sha256": "654f02bbddb82914ba82a67332ad7d6b691a6a3f38f5d34dc7aaadb3244801e5"
+        }
+      ]
+    },
+    {
+      "file": "before/phone.webm",
+      "sha256": "0e80d589c3e00b5afb5dd5bc3fa17aabfca5cff47c907c6e53013eb15677f8de",
+      "duration_seconds": 13.84,
+      "sampled_frames_visually_reviewed": 8,
+      "frame_contacts": [
+        {
+          "file": "visual-review/baseline-phone-video-1.png",
+          "sha256": "bd1304d6dfea26e6e4d3e64acf72a6472fb38484d373397aa48dfea922f2ef1a"
+        },
+        {
+          "file": "visual-review/baseline-phone-video-2.png",
+          "sha256": "a67ce18a4f08013ed0dd0903f4d61d0bad37197d9dc14c438180993e0268f789"
+        }
+      ]
+    },
+    {
+      "file": "after/desktop.webm",
+      "sha256": "05043e8fbe576fa3c69e389a7284b3bc1e14a6e346bb13ed04f8f8e694fb2806",
+      "duration_seconds": 16.12,
+      "sampled_frames_visually_reviewed": 8,
+      "frame_contacts": [
+        {
+          "file": "visual-review/fixed-desktop-video-1.png",
+          "sha256": "b358248bc9fcd5d6ccc9883e337cd671d1ab9a2e9d78e5f2725e87694428bd3f"
+        },
+        {
+          "file": "visual-review/fixed-desktop-video-2.png",
+          "sha256": "f18fa949a01745798eb52b9d23524aa831f9c37a4e89ab42914488dcc6140804"
+        }
+      ]
+    },
+    {
+      "file": "after/phone.webm",
+      "sha256": "c47c2cd3da6aa92e8646080e87f061411a2ca36290e2fe912d42d7bdafa45f4a",
+      "duration_seconds": 14.12,
+      "sampled_frames_visually_reviewed": 8,
+      "frame_contacts": [
+        {
+          "file": "visual-review/fixed-phone-video-1.png",
+          "sha256": "92247860e45e1e05218171205ce7a3a83fc0b36175877bbd50a605033ad9e1c6"
+        },
+        {
+          "file": "visual-review/fixed-phone-video-2.png",
+          "sha256": "305e27ff71d7db74d44b316063f36d4ce5cf5c3e53506f64bea51ec80afcf1a3"
+        }
+      ]
+    }
+  ]
+}

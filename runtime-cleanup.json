@@ -1,0 +1,7 @@
+{
+  "stopped_at": "2026-10-25T18:53:14.921968+00:00",
+  "owned_redis_container": "fc47581e00f7ec5c9a8c837afe45adc105233d6046e0381cf59748d7f39e2f03",
+  "redis_status": "exited",
+  "proxy": "Stopped after validating its exact command line",
+  "keys": "All three owned virtual keys deleted with HTTP 200, including the initial harness exploration"
+}

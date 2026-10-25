@@ -1,0 +1,558 @@
+{
+  "revision": "fixed",
+  "source_sha": "0242f0845e76d0045e196a87b2719074e9b2daec",
+  "started_at": "2026-10-25T18:51:24.488432+00:00",
+  "cases": [
+    {
+      "endpoint": "/v1/chat/completions",
+      "stream": false,
+      "repeat": 0,
+      "status": 200,
+      "request_body": {
+        "model": "qa-cache-34681",
+        "stream": false,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Reply with only: Cache works. Verification reference 06ede20a31d6"
+          }
+        ],
+        "max_tokens": 48
+      },
+      "response_body": {
+        "id": "chatcmpl-931e6a5f-98de-4824-8f8c-6db2a81bf7cb",
+        "created": 1792954303,
+        "model": "qa-cache-34681",
+        "object": "chat.completion",
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "message": {
+              "content": "Cache works. Verification reference 06ede20a31d6",
+              "role": "assistant"
+            }
+          }
+        ],
+        "usage": {
+          "completion_tokens": 17,
+          "prompt_tokens": 32,
+          "total_tokens": 49
+        }
+      },
+      "headers": {
+        "x-litellm-call-id": "e68024c2-2674-4049-8539-955a8bca30d3",
+        "x-litellm-response-cost": "4.9e-05"
+      },
+      "generated_content": "Cache works. Verification reference 06ede20a31d6"
+    },
+    {
+      "endpoint": "/v1/chat/completions",
+      "stream": false,
+      "repeat": 1,
+      "status": 200,
+      "request_body": {
+        "model": "qa-cache-34681",
+        "stream": false,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Reply with only: Cache works. Verification reference 06ede20a31d6"
+          }
+        ],
+        "max_tokens": 48
+      },
+      "response_body": {
+        "id": "chatcmpl-931e6a5f-98de-4824-8f8c-6db2a81bf7cb",
+        "created": 1792954303,
+        "model": "qa-cache-34681",
+        "object": "chat.completion",
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "message": {
+              "content": "Cache works. Verification reference 06ede20a31d6",
+              "role": "assistant"
+            },
+            "provider_specific_fields": {}
+          }
+        ],
+        "usage": {
+          "completion_tokens": 17,
+          "prompt_tokens": 32,
+          "total_tokens": 49
+        }
+      },
+      "headers": {
+        "x-litellm-call-id": "59c6aa49-6a34-4c59-89e6-d54d2bd210f2",
+        "x-litellm-cache-key": "qa-34681-responses:79e72967702a99d51990e559fe5dff6f1aa751fcf81d6c2ea190b9d5b33b6b94",
+        "x-litellm-response-cost": "0.0"
+      },
+      "generated_content": "Cache works. Verification reference 06ede20a31d6"
+    },
+    {
+      "endpoint": "/v1/chat/completions",
+      "stream": true,
+      "repeat": 0,
+      "status": 200,
+      "request_body": {
+        "model": "qa-cache-34681",
+        "stream": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Reply with only: Cache works. Verification reference c90392077032"
+          }
+        ],
+        "max_tokens": 48
+      },
+      "response_body": "data: {\"id\":\"7f0e274b-429a-45b2-94f9-9ab5ac3a01b5\",\"object\":\"chat.completion.chunk\",\"created\":1792954303,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"role\":\"assistant\",\"content\":\"Cache\"}}]}\n\ndata: {\"id\":\"d3d7f973-68c5-401e-92a1-1482c8f80605\",\"object\":\"chat.completion.chunk\",\"created\":1792954303,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" works\"}}]}\n\ndata: {\"id\":\"e2b83037-7fcd-40d1-8a6c-e9bc3752ce36\",\"object\":\"chat.completion.chunk\",\"created\":1792954303,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\".\"}}]}\n\ndata: {\"id\":\"0f6dadbd-a2f8-445d-a955-b1cdebfdfe43\",\"object\":\"chat.completion.chunk\",\"created\":1792954303,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" Verification\"}}]}\n\ndata: {\"id\":\"35649970-1417-492f-a509-de1d7d479a35\",\"object\":\"chat.completion.chunk\",\"created\":1792954303,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" reference\"}}]}\n\ndata: {\"id\":\"0689b15d-0026-45ef-a48b-240a3641a23b\",\"object\":\"chat.completion.chunk\",\"created\":1792954303,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" c\"}}]}\n\ndata: {\"id\":\"987dab2c-226a-46be-a3c1-47f2c7b1d12d\",\"object\":\"chat.completion.chunk\",\"created\":1792954303,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"9\"}}]}\n\ndata: {\"id\":\"d9c499d4-3d46-4297-bc2b-a826097d0a20\",\"object\":\"chat.completion.chunk\",\"created\":1792954303,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"0\"}}]}\n\ndata: {\"id\":\"d01fbecc-10fd-4cf7-8ae3-3add02272c58\",\"object\":\"chat.completion.chunk\",\"created\":1792954303,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"3\"}}]}\n\ndata: {\"id\":\"e33bdd64-aba7-451b-8315-0a1849bbc7c6\",\"object\":\"chat.completion.chunk\",\"created\":1792954303,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"9\"}}]}\n\ndata: {\"id\":\"a417e746-95d2-48ce-b2f8-f0729206d518\",\"object\":\"chat.completion.chunk\",\"created\":1792954303,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"2\"}}]}\n\ndata: {\"id\":\"2ad7498c-e2cf-4d31-ad67-144ad8c6203e\",\"object\":\"chat.completion.chunk\",\"created\":1792954303,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"0\"}}]}\n\ndata: {\"id\":\"574246dc-b505-4803-b7f4-b55b51556f96\",\"object\":\"chat.completion.chunk\",\"created\":1792954303,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"7\"}}]}\n\ndata: {\"id\":\"a3815fa4-ea4d-46a9-8e0c-0bebf39cbe75\",\"object\":\"chat.completion.chunk\",\"created\":1792954303,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"7\"}}]}\n\ndata: {\"id\":\"4833ddb4-5399-417d-944f-a74604cfdc12\",\"object\":\"chat.completion.chunk\",\"created\":1792954303,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"0\"}}]}\n\ndata: {\"id\":\"9c970cc7-43e7-4a36-9d5c-2317e0a42bcd\",\"object\":\"chat.completion.chunk\",\"created\":1792954303,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"3\"}}]}\n\ndata: {\"id\":\"a2fe3627-2a86-4092-8149-838e6159fae3\",\"object\":\"chat.completion.chunk\",\"created\":1792954303,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"2\"}}]}\n\ndata: {\"id\":\"493d9564-606c-4a95-a4a5-02b3a58b7dba\",\"object\":\"chat.completion.chunk\",\"created\":1792954303,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{},\"finish_reason\":\"stop\"}]}\n\ndata: [DONE]\n\n",
+      "headers": {
+        "x-litellm-call-id": "b3a5f8cc-d604-4d30-bb98-69e90a1cd909"
+      },
+      "generated_content": "Cache works. Verification reference c90392077032"
+    },
+    {
+      "endpoint": "/v1/chat/completions",
+      "stream": true,
+      "repeat": 1,
+      "status": 200,
+      "request_body": {
+        "model": "qa-cache-34681",
+        "stream": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Reply with only: Cache works. Verification reference c90392077032"
+          }
+        ],
+        "max_tokens": 48
+      },
+      "response_body": "data: {\"id\":\"7f0e274b-429a-45b2-94f9-9ab5ac3a01b5\",\"object\":\"chat.completion.chunk\",\"created\":1792954304,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"role\":\"assistant\",\"content\":\"Cache \"}}]}\n\ndata: {\"id\":\"7f0e274b-429a-45b2-94f9-9ab5ac3a01b5\",\"object\":\"chat.completion.chunk\",\"created\":1792954304,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"works. \"}}]}\n\ndata: {\"id\":\"7f0e274b-429a-45b2-94f9-9ab5ac3a01b5\",\"object\":\"chat.completion.chunk\",\"created\":1792954304,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"Verification \"}}]}\n\ndata: {\"id\":\"7f0e274b-429a-45b2-94f9-9ab5ac3a01b5\",\"object\":\"chat.completion.chunk\",\"created\":1792954304,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"reference \"}}]}\n\ndata: {\"id\":\"7f0e274b-429a-45b2-94f9-9ab5ac3a01b5\",\"object\":\"chat.completion.chunk\",\"created\":1792954304,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"c90392077032\"}}]}\n\ndata: {\"id\":\"7f0e274b-429a-45b2-94f9-9ab5ac3a01b5\",\"object\":\"chat.completion.chunk\",\"created\":1792954304,\"model\":\"qa-cache-34681\",\"choices\":[{\"index\":0,\"delta\":{},\"finish_reason\":\"stop\"}]}\n\ndata: [DONE]\n\n",
+      "headers": {
+        "x-litellm-call-id": "6215aece-cc2f-4d41-ad08-f8da68f50f99",
+        "x-litellm-cache-key": "qa-34681-responses:2237c83d35c33968964a5d667fe26c5ebaf3a94fc718d8bed989e634b02b5251",
+        "x-litellm-response-cost": "0.0"
+      },
+      "generated_content": "Cache works. Verification reference c90392077032"
+    },
+    {
+      "endpoint": "/v1/responses",
+      "stream": false,
+      "repeat": 0,
+      "status": 200,
+      "request_body": {
+        "model": "qa-cache-34681",
+        "stream": false,
+        "input": "Reply with only: Cache works. Verification reference 1249f31e267b",
+        "max_output_tokens": 48
+      },
+      "response_body": {
+        "id": "resp_qlkfNoAKtkb9ayF3ZSO9q7viPIYj8H43aZrXc5ZiAf1xsAxxpFcO9lQlHG8zpIpS72ZEoG6mlJDWjulkXX6gvQMU1JXRONXR7hTPG-H2AolO0cANnrTt3P34Rxzi_o0ASv_RtT7GoPRGXuNZOQqUY0ZxCgpHTTZuADm_Qaktf1H6fwkxmZIsbye5pCzZUI-0xRbwshC9G6ARIKcBzypmAI46weqd1deVhOyqu9YysjNYJfg6s4sdfa44QM7MOhu-NcERCwZmL7Y4T573W5n3iME2P-pn7GV1AOu0lxGzDsD0c9c9CT4JiyX8zkD_4mLqLThku7s05zmd40gx-zCQ3BRkJzUNOEu09brBUPDe5wFmkVqg82-1JCEhVahPEvlEdQlzEP6txAi1UrF_FG8yQ5NvkGfJrrdqQ3Xl48fzeh107yfQOA5hOuCvGg==",
+        "created_at": 1792954305,
+        "error": null,
+        "incomplete_details": null,
+        "instructions": null,
+        "metadata": {},
+        "model": "qa-cache-34681",
+        "object": "response",
+        "output": [
+          {
+            "type": "message",
+            "id": "msg_fb160ddf-178a-4870-a957-32f0c2df3a0a",
+            "status": "completed",
+            "role": "assistant",
+            "content": [
+              {
+                "type": "output_text",
+                "text": "Cache works. Verification reference 1249f31e267b",
+                "annotations": []
+              }
+            ],
+            "phase": null
+          }
+        ],
+        "parallel_tool_calls": false,
+        "temperature": 0.0,
+        "tool_choice": "auto",
+        "tools": [],
+        "top_p": null,
+        "max_output_tokens": 48,
+        "previous_response_id": null,
+        "reasoning": {
+          "effort": "none"
+        },
+        "status": "completed",
+        "text": {},
+        "truncation": null,
+        "usage": {
+          "input_tokens": 34,
+          "input_tokens_details": null,
+          "output_tokens": 19,
+          "output_tokens_details": null,
+          "total_tokens": 53,
+          "cost": null
+        },
+        "user": null,
+        "store": null
+      },
+      "headers": {
+        "x-litellm-call-id": "8bfdb1a9-38a6-4d68-8fa6-ff04467bb8ef",
+        "x-litellm-response-cost": "5.3e-05"
+      },
+      "generated_content": "Cache works. Verification reference 1249f31e267b"
+    },
+    {
+      "endpoint": "/v1/responses",
+      "stream": false,
+      "repeat": 1,
+      "status": 200,
+      "request_body": {
+        "model": "qa-cache-34681",
+        "stream": false,
+        "input": "Reply with only: Cache works. Verification reference 1249f31e267b",
+        "max_output_tokens": 48
+      },
+      "response_body": {
+        "id": "resp_8ATHJX3gKjaeQ4AGGWKKKoxy-2WsVdoiuO2sm7XxAhawEnjQZzB-hyzAHS0wXNqXUT67XHkz60EKZiiRwYiTjrRbPPmXEeo-37kmXtb1POvoRYMFzshQ145VF2o0uxhyHtu37bxfjlupymwFhAzngKwKUSmEGly0MJyKqykw6NSFHyCiEM_wuBEZXuofurYns2QVZ_5p-pURbOFG0SqdRQlNiwphu2CKRNhn-8ly6Jnt6mu7EgdIKMULonDyBczzL1ms0kOaF2_-vhW4Y7Pp4P1V-O4wSiy_BbaUA7JxUYQ3Gryua9GpMc5P7ATXSo-NSbHt3BwZAovmdurM0hofpyu0LjOHhyIkWXxXzxG1MLKmQCiohzyrRV2e5ACO_W4JGgJ44REBqsKNSpwPJwjVHJIK8_jK5YZueRS9rb_Jxa_veTNU27WIn0IyXA==",
+        "created_at": 1792954305,
+        "error": null,
+        "incomplete_details": null,
+        "instructions": null,
+        "metadata": {},
+        "model": "qa-cache-34681",
+        "object": "response",
+        "output": [
+          {
+            "id": "msg_fb160ddf-178a-4870-a957-32f0c2df3a0a",
+            "content": [
+              {
+                "annotations": [],
+                "text": "Cache works. Verification reference 1249f31e267b",
+                "type": "output_text",
+                "logprobs": null
+              }
+            ],
+            "role": "assistant",
+            "status": "completed",
+            "type": "message",
+            "phase": null
+          }
+        ],
+        "parallel_tool_calls": false,
+        "temperature": 0.0,
+        "tool_choice": "auto",
+        "tools": [],
+        "top_p": null,
+        "max_output_tokens": 48,
+        "previous_response_id": null,
+        "reasoning": {
+          "effort": "none"
+        },
+        "status": "completed",
+        "text": {},
+        "truncation": null,
+        "usage": {
+          "input_tokens": 34,
+          "input_tokens_details": null,
+          "output_tokens": 19,
+          "output_tokens_details": null,
+          "total_tokens": 53,
+          "cost": null
+        },
+        "user": null,
+        "store": null
+      },
+      "headers": {
+        "x-litellm-call-id": "2f51f28e-18f1-4549-b30a-cf5148084c4c",
+        "x-litellm-cache-key": "qa-34681-responses:8fe1aeaec974611425c9e82f6cb06d95a59abb9abdb0f90e0249731d50554ea3",
+        "x-litellm-response-cost": "0.0"
+      },
+      "generated_content": "Cache works. Verification reference 1249f31e267b"
+    },
+    {
+      "endpoint": "/v1/responses",
+      "stream": true,
+      "repeat": 0,
+      "status": 200,
+      "request_body": {
+        "model": "qa-cache-34681",
+        "stream": true,
+        "input": "Reply with only: Cache works. Verification reference 341320106c86",
+        "max_output_tokens": 48
+      },
+      "response_body": "data: {\"type\":\"response.created\",\"response\":{\"id\":\"resp_LxJEhDKigS4casG9lEXbhPHc1tdwLux6sEIk6--2c64xn4P7AtL4Uv9LTxEEopsmmTICXjqBAxfCh4-2vZFjdP_Tq9-PXlzZqp6v28moBW6iuwaqfXEkL0QpJ8Yd3YY5K-f5QxdSQnNbQR_QnTJKC6kB5TBfZxVcks-dHFjKhIak1YZMXsLlzOcMpTR-j6qbiqZAK1-sfXaNbG9hCn8bmwuvttwaD0W7WSAKU5iJO2HNDtKdsAizHUfK8bjY5QgX0TWHI8uK8c-VdAlfyCoiz3u5u0im1y1vkscd0W2YHdJYxe-NmoMjVJ1OhH9Ol4qlnQ9phqqO1fr97WjAfuFThTLcxvQi-50SmNND4ecVPKXnouNd61ES1pPwmCVmc05uX289QkU-Wz1VuXBI8PtUfwXXAGF68yMm0hM-LDE4iQ==\",\"created_at\":1792954305,\"model\":\"qa-cache-34681\",\"object\":\"response\",\"output\":[],\"parallel_tool_calls\":true,\"temperature\":0.0,\"tool_choice\":\"auto\",\"tools\":[],\"top_p\":1.0,\"reasoning\":{\"effort\":null,\"summary\":null},\"status\":\"in_progress\",\"store\":true},\"model\":\"qa-cache-34681\"}\n\ndata: {\"type\":\"response.in_progress\",\"response\":{\"id\":\"resp_LxJEhDKigS4casG9lEXbhPHc1tdwLux6sEIk6--2c64xn4P7AtL4Uv9LTxEEopsmmTICXjqBAxfCh4-2vZFjdP_Tq9-PXlzZqp6v28moBW6iuwaqfXEkL0QpJ8Yd3YY5K-f5QxdSQnNbQR_QnTJKC6kB5TBfZxVcks-dHFjKhIak1YZMXsLlzOcMpTR-j6qbiqZAK1-sfXaNbG9hCn8bmwuvttwaD0W7WSAKU5iJO2HNDtKdsAizHUfK8bjY5QgX0TWHI8uK8c-VdAlfyCoiz3u5u0im1y1vkscd0W2YHdJYxe-NmoMjVJ1OhH9Ol4qlnQ9phqqO1fr97WjAfuFThTLcxvQi-50SmNND4ecVPKXnouNd61ES1pPwmCVmc05uX289QkU-Wz1VuXBI8PtUfwXXAGF68yMm0hM-LDE4iQ==\",\"created_at\":1792954305,\"model\":\"qa-cache-34681\",\"object\":\"response\",\"output\":[],\"parallel_tool_calls\":true,\"temperature\":0.0,\"tool_choice\":\"auto\",\"tools\":[],\"top_p\":1.0,\"reasoning\":{\"effort\":null,\"summary\":null},\"status\":\"in_progress\",\"store\":true},\"model\":\"qa-cache-34681\"}\n\ndata: {\"type\":\"response.output_item.added\",\"output_index\":0,\"item\":{\"id\":\"msg_68e20724-b70b-4007-b9e0-9b413adaca5c\",\"type\":\"message\",\"role\":\"assistant\",\"status\":\"in_progress\",\"content\":[]},\"model\":\"qa-cache-34681\"}\n\ndata: {\"type\":\"response.content_part.added\",\"item_id\":\"msg_68e20724-b70b-4007-b9e0-9b413adaca5c\",\"output_index\":0,\"content_index\":0,\"part\":{\"type\":\"output_text\",\"text\":\"\",\"annotations\":[]},\"model\":\"qa-cache-34681\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_68e20724-b70b-4007-b9e0-9b413adaca5c\",\"output_index\":0,\"content_index\":0,\"delta\":\"Cache\",\"model\":\"qa-cache-34681\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_68e20724-b70b-4007-b9e0-9b413adaca5c\",\"output_index\":0,\"content_index\":0,\"delta\":\" works\",\"model\":\"qa-cache-34681\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_68e20724-b70b-4007-b9e0-9b413adaca5c\",\"output_index\":0,\"content_index\":0,\"delta\":\".\",\"model\":\"qa-cache-34681\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_68e20724-b70b-4007-b9e0-9b413adaca5c\",\"output_index\":0,\"content_index\":0,\"delta\":\" Verification\",\"model\":\"qa-cache-34681\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_68e20724-b70b-4007-b9e0-9b413adaca5c\",\"output_index\":0,\"content_index\":0,\"delta\":\" reference\",\"model\":\"qa-cache-34681\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_68e20724-b70b-4007-b9e0-9b413adaca5c\",\"output_index\":0,\"content_index\":0,\"delta\":\" \",\"model\":\"qa-cache-34681\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_68e20724-b70b-4007-b9e0-9b413adaca5c\",\"output_index\":0,\"content_index\":0,\"delta\":\"3\",\"model\":\"qa-cache-34681\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_68e20724-b70b-4007-b9e0-9b413adaca5c\",\"output_index\":0,\"content_index\":0,\"delta\":\"4\",\"model\":\"qa-cache-34681\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_68e20724-b70b-4007-b9e0-9b413adaca5c\",\"output_index\":0,\"content_index\":0,\"delta\":\"1\",\"model\":\"qa-cache-34681\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_68e20724-b70b-4007-b9e0-9b413adaca5c\",\"output_index\":0,\"content_index\":0,\"delta\":\"3\",\"model\":\"qa-cache-34681\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_68e20724-b70b-4007-b9e0-9b413adaca5c\",\"output_index\":0,\"content_index\":0,\"delta\":\"2\",\"model\":\"qa-cache-34681\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_68e20724-b70b-4007-b9e0-9b413adaca5c\",\"output_index\":0,\"content_index\":0,\"delta\":\"0\",\"model\":\"qa-cache-34681\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_68e20724-b70b-4007-b9e0-9b413adaca5c\",\"output_index\":0,\"content_index\":0,\"delta\":\"1\",\"model\":\"qa-cache-34681\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_68e20724-b70b-4007-b9e0-9b413adaca5c\",\"output_index\":0,\"content_index\":0,\"delta\":\"0\",\"model\":\"qa-cache-34681\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_68e20724-b70b-4007-b9e0-9b413adaca5c\",\"output_index\":0,\"content_index\":0,\"delta\":\"6\",\"model\":\"qa-cache-34681\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_68e20724-b70b-4007-b9e0-9b413adaca5c\",\"output_index\":0,\"content_index\":0,\"delta\":\"c\",\"model\":\"qa-cache-34681\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_68e20724-b70b-4007-b9e0-9b413adaca5c\",\"output_index\":0,\"content_index\":0,\"delta\":\"8\",\"model\":\"qa-cache-34681\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_68e20724-b70b-4007-b9e0-9b413adaca5c\",\"output_index\":0,\"content_index\":0,\"delta\":\"6\",\"model\":\"qa-cache-34681\"}\n\ndata: {\"type\":\"response.output_text.done\",\"item_id\":\"msg_68e20724-b70b-4007-b9e0-9b413adaca5c\",\"output_index\":0,\"content_index\":0,\"text\":\"Cache works. Verification reference 341320106c86\",\"model\":\"qa-cache-34681\"}\n\ndata: {\"type\":\"response.content_part.done\",\"item_id\":\"msg_68e20724-b70b-4007-b9e0-9b413adaca5c\",\"output_index\":0,\"content_index\":0,\"part\":{\"type\":\"output_text\",\"text\":\"Cache works. Verification reference 341320106c86\",\"annotations\":[]},\"model\":\"qa-cache-34681\"}\n\ndata: {\"type\":\"response.output_item.done\",\"output_index\":0,\"sequence_number\":1,\"item\":{\"id\":\"msg_68e20724-b70b-4007-b9e0-9b413adaca5c\",\"status\":\"completed\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"output_text\",\"text\":\"Cache works. Verification reference 341320106c86\",\"annotations\":[]}]},\"model\":\"qa-cache-34681\"}\n\ndata: {\"type\":\"response.completed\",\"response\":{\"id\":\"resp_LxJEhDKigS4casG9lEXbhPHc1tdwLux6sEIk6--2c64xn4P7AtL4Uv9LTxEEopsmmTICXjqBAxfCh4-2vZFjdP_Tq9-PXlzZqp6v28moBW6iuwaqfXEkL0QpJ8Yd3YY5K-f5QxdSQnNbQR_QnTJKC6kB5TBfZxVcks-dHFjKhIak1YZMXsLlzOcMpTR-j6qbiqZAK1-sfXaNbG9hCn8bmwuvttwaD0W7WSAKU5iJO2HNDtKdsAizHUfK8bjY5QgX0TWHI8uK8c-VdAlfyCoiz3u5u0im1y1vkscd0W2YHdJYxe-NmoMjVJ1OhH9Ol4qlnQ9phqqO1fr97WjAfuFThTLcxvQi-50SmNND4ecVPKXnouNd61ES1pPwmCVmc05uX289QkU-Wz1VuXBI8PtUfwXXAGF68yMm0hM-LDE4iQ==\",\"created_at\":1792954305,\"metadata\":{},\"model\":\"qa-cache-34681\",\"object\":\"response\",\"output\":[{\"type\":\"message\",\"id\":\"msg_68e20724-b70b-4007-b9e0-9b413adaca5c\",\"status\":\"completed\",\"role\":\"assistant\",\"content\":[{\"type\":\"output_text\",\"text\":\"Cache works. Verification reference 341320106c86\",\"annotations\":[]}]}],\"parallel_tool_calls\":false,\"temperature\":0.0,\"tool_choice\":\"auto\",\"tools\":[],\"max_output_tokens\":48,\"reasoning\":{\"effort\":\"none\"},\"status\":\"completed\",\"text\":{},\"usage\":{\"input_tokens\":34,\"output_tokens\":19,\"output_tokens_details\":{\"reasoning_tokens\":0,\"text_tokens\":19},\"total_tokens\":53,\"cost\":0.000053}},\"model\":\"qa-cache-34681\"}\n\ndata: [DONE]\n\n",
+      "headers": {
+        "x-litellm-call-id": "7e6f2c5e-e3e1-4c43-899b-a20ff4327ebd"
+      },
+      "generated_content": "Cache works. Verification reference 341320106c86"
+    },
+    {
+      "endpoint": "/v1/responses",
+      "stream": true,
+      "repeat": 1,
+      "status": 200,
+      "request_body": {
+        "model": "qa-cache-34681",
+        "stream": true,
+        "input": "Reply with only: Cache works. Verification reference 341320106c86",
+        "max_output_tokens": 48
+      },
+      "response_body": "data: {\"type\":\"response.created\",\"response\":{\"id\":\"resp_5Cw_Gt_cFNz92JgTTAyr5VyeyYtoWS0_97u3SncjoRU3EvA8VYVwtKlEJ58fOxip52Tg4tnfEZ0d2wmJkd7vhom-jtSpbL1EEDGzoBs5sgZaN5KaScyoSgUDQLXO6NJ1duLB6NJHvT7Pdl-F9__XG4R0WKHBEZLIu5t815FGjeTacMk99TFfbPvCTbCY9Vb_ZPWLjuv6wG5QSJpalN7UVn09NUKxBV42HVyH3h7gnoFNv9LESev01gq8D4Xp-VAp0GSma7pQnhCnzjIX1JK3QGzgV8s88bVn-pI20K7Ma-rLUJEPOOeSsOj9DVV0BBV53n4YyYs1XqQXhuHPlhl5r20LbWuegcAqfDUHjv_HLTWZnhNks2cA2SRfLlcrArR6R2RctlkRs0DrGUzY_fsOYJCEsKld7KI3UG8PUava9A==\",\"created_at\":1792954306,\"model\":\"qa-cache-34681\",\"object\":\"response\",\"output\":[],\"parallel_tool_calls\":true,\"temperature\":0.0,\"tool_choice\":\"auto\",\"tools\":[],\"top_p\":1.0,\"reasoning\":{\"effort\":null,\"summary\":null},\"status\":\"in_progress\",\"store\":true},\"model\":\"qa-cache-34681\"}\n\ndata: {\"type\":\"response.in_progress\",\"response\":{\"id\":\"resp_5Cw_Gt_cFNz92JgTTAyr5VyeyYtoWS0_97u3SncjoRU3EvA8VYVwtKlEJ58fOxip52Tg4tnfEZ0d2wmJkd7vhom-jtSpbL1EEDGzoBs5sgZaN5KaScyoSgUDQLXO6NJ1duLB6NJHvT7Pdl-F9__XG4R0WKHBEZLIu5t815FGjeTacMk99TFfbPvCTbCY9Vb_ZPWLjuv6wG5QSJpalN7UVn09NUKxBV42HVyH3h7gnoFNv9LESev01gq8D4Xp-VAp0GSma7pQnhCnzjIX1JK3QGzgV8s88bVn-pI20K7Ma-rLUJEPOOeSsOj9DVV0BBV53n4YyYs1XqQXhuHPlhl5r20LbWuegcAqfDUHjv_HLTWZnhNks2cA2SRfLlcrArR6R2RctlkRs0DrGUzY_fsOYJCEsKld7KI3UG8PUava9A==\",\"created_at\":1792954306,\"model\":\"qa-cache-34681\",\"object\":\"response\",\"output\":[],\"parallel_tool_calls\":true,\"temperature\":0.0,\"tool_choice\":\"auto\",\"tools\":[],\"top_p\":1.0,\"reasoning\":{\"effort\":null,\"summary\":null},\"status\":\"in_progress\",\"store\":true},\"model\":\"qa-cache-34681\"}\n\ndata: {\"type\":\"response.output_item.added\",\"output_index\":0,\"item\":{\"id\":\"msg_41f1318b-1383-4599-b725-bf886800bafd\",\"type\":\"message\",\"role\":\"assistant\",\"status\":\"in_progress\",\"content\":[]},\"model\":\"qa-cache-34681\"}\n\ndata: {\"type\":\"response.content_part.added\",\"item_id\":\"msg_41f1318b-1383-4599-b725-bf886800bafd\",\"output_index\":0,\"content_index\":0,\"part\":{\"type\":\"output_text\",\"text\":\"\",\"annotations\":[]},\"model\":\"qa-cache-34681\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_41f1318b-1383-4599-b725-bf886800bafd\",\"output_index\":0,\"content_index\":0,\"delta\":\"Cache \",\"model\":\"qa-cache-34681\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_41f1318b-1383-4599-b725-bf886800bafd\",\"output_index\":0,\"content_index\":0,\"delta\":\"works. \",\"model\":\"qa-cache-34681\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_41f1318b-1383-4599-b725-bf886800bafd\",\"output_index\":0,\"content_index\":0,\"delta\":\"Verification \",\"model\":\"qa-cache-34681\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_41f1318b-1383-4599-b725-bf886800bafd\",\"output_index\":0,\"content_index\":0,\"delta\":\"reference \",\"model\":\"qa-cache-34681\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_41f1318b-1383-4599-b725-bf886800bafd\",\"output_index\":0,\"content_index\":0,\"delta\":\"341320106c86\",\"model\":\"qa-cache-34681\"}\n\ndata: {\"type\":\"response.output_text.done\",\"item_id\":\"msg_41f1318b-1383-4599-b725-bf886800bafd\",\"output_index\":0,\"content_index\":0,\"text\":\"Cache works. Verification reference 341320106c86\",\"model\":\"qa-cache-34681\"}\n\ndata: {\"type\":\"response.content_part.done\",\"item_id\":\"msg_41f1318b-1383-4599-b725-bf886800bafd\",\"output_index\":0,\"content_index\":0,\"part\":{\"type\":\"output_text\",\"text\":\"Cache works. Verification reference 341320106c86\",\"annotations\":[]},\"model\":\"qa-cache-34681\"}\n\ndata: {\"type\":\"response.output_item.done\",\"output_index\":0,\"sequence_number\":1,\"item\":{\"id\":\"msg_41f1318b-1383-4599-b725-bf886800bafd\",\"status\":\"completed\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"output_text\",\"text\":\"Cache works. Verification reference 341320106c86\",\"annotations\":[]}]},\"model\":\"qa-cache-34681\"}\n\ndata: {\"type\":\"response.completed\",\"response\":{\"id\":\"resp_5Cw_Gt_cFNz92JgTTAyr5VyeyYtoWS0_97u3SncjoRU3EvA8VYVwtKlEJ58fOxip52Tg4tnfEZ0d2wmJkd7vhom-jtSpbL1EEDGzoBs5sgZaN5KaScyoSgUDQLXO6NJ1duLB6NJHvT7Pdl-F9__XG4R0WKHBEZLIu5t815FGjeTacMk99TFfbPvCTbCY9Vb_ZPWLjuv6wG5QSJpalN7UVn09NUKxBV42HVyH3h7gnoFNv9LESev01gq8D4Xp-VAp0GSma7pQnhCnzjIX1JK3QGzgV8s88bVn-pI20K7Ma-rLUJEPOOeSsOj9DVV0BBV53n4YyYs1XqQXhuHPlhl5r20LbWuegcAqfDUHjv_HLTWZnhNks2cA2SRfLlcrArR6R2RctlkRs0DrGUzY_fsOYJCEsKld7KI3UG8PUava9A==\",\"created_at\":1792954306,\"metadata\":{},\"model\":\"qa-cache-34681\",\"object\":\"response\",\"output\":[{\"type\":\"message\",\"id\":\"msg_41f1318b-1383-4599-b725-bf886800bafd\",\"status\":\"completed\",\"role\":\"assistant\",\"content\":[{\"type\":\"output_text\",\"text\":\"Cache works. Verification reference 341320106c86\",\"annotations\":[]}]}],\"parallel_tool_calls\":false,\"temperature\":0.0,\"tool_choice\":\"auto\",\"tools\":[],\"max_output_tokens\":48,\"reasoning\":{\"effort\":\"none\"},\"status\":\"completed\",\"text\":{},\"usage\":{\"input_tokens\":34,\"output_tokens\":19,\"output_tokens_details\":{\"reasoning_tokens\":0,\"text_tokens\":19},\"total_tokens\":53,\"cost\":0.000053}},\"model\":\"qa-cache-34681\"}\n\ndata: [DONE]\n\n",
+      "headers": {
+        "x-litellm-call-id": "829dc407-ebe9-4ac1-9106-b155d0483d3e"
+      },
+      "generated_content": "Cache works. Verification reference 341320106c86"
+    },
+    {
+      "endpoint": "/v1/messages",
+      "stream": false,
+      "repeat": 0,
+      "status": 200,
+      "request_body": {
+        "model": "qa-cache-34681",
+        "stream": false,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Reply with only: Cache works. Verification reference 1ed3377019e3"
+          }
+        ],
+        "max_tokens": 48
+      },
+      "response_body": {
+        "id": "chatcmpl-66d89902-4046-4a56-9c6a-0556ac4bc6fb",
+        "type": "message",
+        "role": "assistant",
+        "model": "qa-cache-34681",
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 33,
+          "output_tokens": 18
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "Cache works. Verification reference 1ed3377019e3"
+          }
+        ],
+        "stop_reason": "end_turn",
+        "stop_details": null
+      },
+      "headers": {
+        "x-litellm-call-id": "bbe2f30f-4c43-49d6-86ec-7a071087c0f5",
+        "x-litellm-response-cost": "5.099999999999999e-05"
+      },
+      "generated_content": "Cache works. Verification reference 1ed3377019e3"
+    },
+    {
+      "endpoint": "/v1/messages",
+      "stream": false,
+      "repeat": 1,
+      "status": 200,
+      "request_body": {
+        "model": "qa-cache-34681",
+        "stream": false,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Reply with only: Cache works. Verification reference 1ed3377019e3"
+          }
+        ],
+        "max_tokens": 48
+      },
+      "response_body": {
+        "id": "chatcmpl-66d89902-4046-4a56-9c6a-0556ac4bc6fb",
+        "type": "message",
+        "role": "assistant",
+        "model": "qa-cache-34681",
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 33,
+          "output_tokens": 18
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "Cache works. Verification reference 1ed3377019e3"
+          }
+        ],
+        "stop_reason": "end_turn",
+        "stop_details": null
+      },
+      "headers": {
+        "x-litellm-call-id": "6b53d09f-9005-4600-89cf-930ff716a9ac",
+        "x-litellm-cache-key": "qa-34681-responses:a25c0fbbec5376275638fd681d13a16dea57bf383113bce55233398b7b9c5d1e",
+        "x-litellm-response-cost": "0.0"
+      },
+      "generated_content": "Cache works. Verification reference 1ed3377019e3"
+    },
+    {
+      "endpoint": "/v1/messages",
+      "stream": true,
+      "repeat": 0,
+      "status": 200,
+      "request_body": {
+        "model": "qa-cache-34681",
+        "stream": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Reply with only: Cache works. Verification reference 4ac32d9311a4"
+          }
+        ],
+        "max_tokens": 48
+      },
+      "response_body": "event: message_start\ndata: {\"type\":\"message_start\",\"message\":{\"id\":\"msg_0c187cb6-2cfd-4a77-9031-07de5043132e\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[],\"model\":\"qa-cache-34681\",\"stop_reason\":null,\"stop_sequence\":null,\"usage\":{\"input_tokens\":0,\"output_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0}}}\n\nevent: content_block_start\ndata: {\"type\": \"content_block_start\", \"index\": 0, \"content_block\": {\"type\": \"text\", \"text\": \"\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"Cache\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \" works\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \".\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \" Verification\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \" reference\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \" \"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"4\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"ac\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"3\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"2\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"d\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"9\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"3\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"1\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"1\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"a\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"4\"}}\n\nevent: content_block_stop\ndata: {\"type\": \"content_block_stop\", \"index\": 0}\n\nevent: message_delta\ndata: {\"type\": \"message_delta\", \"delta\": {\"stop_reason\": \"end_turn\"}, \"usage\": {\"input_tokens\": 33, \"output_tokens\": 18}}\n\nevent: message_stop\ndata: {\"type\": \"message_stop\"}\n\n",
+      "headers": {
+        "x-litellm-call-id": "f3a8c8c6-cf0a-4074-903e-36c1b6d2a5f2"
+      },
+      "generated_content": "Cache works. Verification reference 4ac32d9311a4"
+    },
+    {
+      "endpoint": "/v1/messages",
+      "stream": true,
+      "repeat": 1,
+      "status": 200,
+      "request_body": {
+        "model": "qa-cache-34681",
+        "stream": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Reply with only: Cache works. Verification reference 4ac32d9311a4"
+          }
+        ],
+        "max_tokens": 48
+      },
+      "response_body": "event: message_start\ndata: {\"type\":\"message_start\",\"message\":{\"id\":\"msg_0c187cb6-2cfd-4a77-9031-07de5043132e\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[],\"model\":\"qa-cache-34681\",\"stop_reason\":null,\"stop_sequence\":null,\"usage\":{\"input_tokens\":0,\"output_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0}}}\n\nevent: content_block_start\ndata: {\"type\": \"content_block_start\", \"index\": 0, \"content_block\": {\"type\": \"text\", \"text\": \"\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"Cache\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \" works\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \".\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \" Verification\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \" reference\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \" \"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"4\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"ac\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"3\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"2\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"d\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"9\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"3\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"1\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"1\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"a\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"4\"}}\n\nevent: content_block_stop\ndata: {\"type\": \"content_block_stop\", \"index\": 0}\n\nevent: message_delta\ndata: {\"type\": \"message_delta\", \"delta\": {\"stop_reason\": \"end_turn\"}, \"usage\": {\"input_tokens\": 33, \"output_tokens\": 18}}\n\nevent: message_stop\ndata: {\"type\": \"message_stop\"}\n\n",
+      "headers": {
+        "x-litellm-call-id": "d9cd7181-8447-4f55-b453-123b606a7c86",
+        "x-litellm-cache-key": "qa-34681-responses:283a4f6fbeaabe7ee79c13845f7eda4ce5503dc918b48f7ce67ebb9b6552efa6",
+        "x-litellm-response-cost": "0.0"
+      },
+      "generated_content": "Cache works. Verification reference 4ac32d9311a4"
+    }
+  ],
+  "alias": "qa-cache-34681-fixed-47668a",
+  "spend_rows": [
+    {
+      "request_id": "msg_0c187cb6-2cfd-4a77-9031-07de5043132e_cache_hit1792954307.598498",
+      "call_type": "anthropic_messages",
+      "cache_hit": "True",
+      "cache_key": "qa-34681-responses:283a4f6fbeaabe7ee79c13845f7eda4ce5503dc918b48f7ce67ebb9b6552efa6",
+      "model": "ollama_chat/qa-qwen3.5-0.8b",
+      "prompt_tokens": 33,
+      "completion_tokens": 18
+    },
+    {
+      "request_id": "msg_0c187cb6-2cfd-4a77-9031-07de5043132e",
+      "call_type": "anthropic_messages",
+      "cache_hit": "False",
+      "cache_key": "qa-34681-responses:5a373c1331f440319bcce8408718bcc593a940366a5e524ab950cdfcf162bc2a",
+      "model": "ollama_chat/qa-qwen3.5-0.8b",
+      "prompt_tokens": 33,
+      "completion_tokens": 18
+    },
+    {
+      "request_id": "chatcmpl-66d89902-4046-4a56-9c6a-0556ac4bc6fb_cache_hit1792954306.912194",
+      "call_type": "anthropic_messages",
+      "cache_hit": "True",
+      "cache_key": "qa-34681-responses:a25c0fbbec5376275638fd681d13a16dea57bf383113bce55233398b7b9c5d1e",
+      "model": "ollama_chat/qa-qwen3.5-0.8b",
+      "prompt_tokens": 33,
+      "completion_tokens": 18
+    },
+    {
+      "request_id": "chatcmpl-66d89902-4046-4a56-9c6a-0556ac4bc6fb",
+      "call_type": "anthropic_messages",
+      "cache_hit": "None",
+      "cache_key": "qa-34681-responses:0a5079bddaaf83c69509b3e9f394cca63ac50339bbb88b9a70795833f9b84e2a",
+      "model": "ollama_chat/qa-qwen3.5-0.8b",
+      "prompt_tokens": 33,
+      "completion_tokens": 18
+    },
+    {
+      "request_id": "3d9d3d58-952a-498f-af4d-5d10a38db34f_cache_hit1792954306.1867945",
+      "call_type": "aresponses",
+      "cache_hit": "True",
+      "cache_key": "qa-34681-responses:505e33a2a5a8c6830a34245fceec2d6ec25750283fd09b62d665195f7162ee6a",
+      "model": "ollama_chat/qa-qwen3.5-0.8b",
+      "prompt_tokens": 34,
+      "completion_tokens": 19
+    },
+    {
+      "request_id": "3d9d3d58-952a-498f-af4d-5d10a38db34f",
+      "call_type": "aresponses",
+      "cache_hit": "False",
+      "cache_key": "qa-34681-responses:3b24f545188938090fd089a011af534054d631456eb82f0d4145ec7f74134f0a",
+      "model": "ollama_chat/qa-qwen3.5-0.8b",
+      "prompt_tokens": 34,
+      "completion_tokens": 19
+    },
+    {
+      "request_id": "resp_8ATHJX3gKjaeQ4AGGWKKKoxy-2WsVdoiuO2sm7XxAhawEnjQZzB-hyzAHS0wXNqXUT67XHkz60EKZiiRwYiTjrRbPPmXEeo-37kmXtb1POvoRYMFzshQ145VF2o0uxhyHtu37bxfjlupymwFhAzngKwKUSmEGly0MJyKqykw6NSFHyCiEM_wuBEZXuofurYns2QVZ_5p-pURbOFG0SqdRQlNiwphu2CKRNhn-8ly6Jnt6mu7EgdIKMULonDyBczzL1ms0kOaF2_-vhW4Y7Pp4P1V-O4wSiy_BbaUA7JxUYQ3Gryua9GpMc5P7ATXSo-NSbHt3BwZAovmdurM0hofpyu0LjOHhyIkWXxXzxG1MLKmQCiohzyrRV2e5ACO_W4JGgJ44REBqsKNSpwPJwjVHJIK8_jK5YZueRS9rb_Jxa_veTNU27WIn0IyXA==_cache_hit1792954305.3525908",
+      "call_type": "aresponses",
+      "cache_hit": "True",
+      "cache_key": "qa-34681-responses:8fe1aeaec974611425c9e82f6cb06d95a59abb9abdb0f90e0249731d50554ea3",
+      "model": "ollama_chat/qa-qwen3.5-0.8b",
+      "prompt_tokens": 34,
+      "completion_tokens": 19
+    },
+    {
+      "request_id": "chatcmpl-3f76aec3-7eb8-4909-83bf-88b59643b86d",
+      "call_type": "aresponses",
+      "cache_hit": "None",
+      "cache_key": "qa-34681-responses:5c78b2778414a0d38ce65eff6df722d47bfe269eda841c3c0672239fd0335208",
+      "model": "ollama_chat/qa-qwen3.5-0.8b",
+      "prompt_tokens": 34,
+      "completion_tokens": 19
+    },
+    {
+      "request_id": "7f0e274b-429a-45b2-94f9-9ab5ac3a01b5_cache_hit1792954304.4176314",
+      "call_type": "acompletion",
+      "cache_hit": "True",
+      "cache_key": "qa-34681-responses:2237c83d35c33968964a5d667fe26c5ebaf3a94fc718d8bed989e634b02b5251",
+      "model": "ollama_chat/qa-qwen3.5-0.8b",
+      "prompt_tokens": 33,
+      "completion_tokens": 18
+    },
+    {
+      "request_id": "7f0e274b-429a-45b2-94f9-9ab5ac3a01b5",
+      "call_type": "acompletion",
+      "cache_hit": "False",
+      "cache_key": "qa-34681-responses:893b6ec4498e81b196efa37c1908f8f518e8b2e5f81b404a8f37b736f27c8c2d",
+      "model": "ollama_chat/qa-qwen3.5-0.8b",
+      "prompt_tokens": 33,
+      "completion_tokens": 18
+    },
+    {
+      "request_id": "chatcmpl-931e6a5f-98de-4824-8f8c-6db2a81bf7cb_cache_hit1792954303.677107",
+      "call_type": "acompletion",
+      "cache_hit": "True",
+      "cache_key": "qa-34681-responses:79e72967702a99d51990e559fe5dff6f1aa751fcf81d6c2ea190b9d5b33b6b94",
+      "model": "ollama_chat/qa-qwen3.5-0.8b",
+      "prompt_tokens": 32,
+      "completion_tokens": 17
+    },
+    {
+      "request_id": "chatcmpl-931e6a5f-98de-4824-8f8c-6db2a81bf7cb",
+      "call_type": "acompletion",
+      "cache_hit": "None",
+      "cache_key": "qa-34681-responses:d016b42bf66dbd6d196d08851e6023bae52239266336cf23f2fa70e97d1ccfff",
+      "model": "ollama_chat/qa-qwen3.5-0.8b",
+      "prompt_tokens": 32,
+      "completion_tokens": 17
+    }
+  ],
+  "cache_hits": 6,
+  "explicit_cache_misses": 3,
+  "unspecified_cache_status": 3,
+  "cache_status_counts": {
+    "True": 6,
+    "False": 3,
+    "None": 3
+  },
+  "completed_at": "2026-10-25T18:51:49.668441+00:00"
+}
