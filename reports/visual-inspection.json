@@ -1,0 +1,19 @@
+{
+  "inspected_at": "2026-10-25T22:21:36.394055+00:00",
+  "baseline_source_sha": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "fixed_source_sha": "8c0fe877b9bbfa0a6934d8ec9373fcaf029a2082",
+  "screenshots_inspected": 28,
+  "recordings_sampled": 4,
+  "sampled_video_frames_inspected": 32,
+  "method": "Viewed every screenshot and eight evenly spaced frames per recording through contact sheets in the image viewer, with full-size checks of the edited fields",
+  "observations": [
+    "Both revisions visibly preserve 0.01 after reload, show 0.117 spend, preserve the raised 1000 soft budget, and remove the deleted key",
+    "The desktop forms have readable fields and usable Save/Cancel controls",
+    "Phone touch flows complete, with the same pre-existing header date wrapping, horizontal overflow/clipping and floating Aria control on both revisions",
+    "No page exceptions or HTTP 5xx responses were recorded, static/runtime-config 404s and their console errors are retained in the browser comparison",
+    "One-time credential reveal panels were masked during recording and all created keys were deleted",
+    "Only the latest complete baseline and committed-tip workflows are published, earlier harness corrections and screenshot-framing runs remain archived locally"
+  ],
+  "hosted_slack_tested": false,
+  "paid_provider_tested": false
+}

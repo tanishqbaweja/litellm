@@ -1,0 +1,17 @@
+{
+  "name": "frontend",
+  "command": [
+    "/opt/contri-node/bin/node",
+    "node_modules/vitest/vitest.mjs",
+    "run",
+    "src/components/organisms/create_key_button.integration.test.tsx",
+    "src/components/organisms/create_key_button.test.tsx",
+    "src/components/templates/keyEditFormValues.test.ts",
+    "src/components/templates/key_edit_view.integration.test.tsx",
+    "src/components/templates/key_info_view.budget_display.test.tsx",
+    "src/components/templates/key_info_view.test.tsx"
+  ],
+  "started_at": "2026-10-25T21:55:20.510225+00:00",
+  "returncode": 0,
+  "completed_at": "2026-10-25T21:56:57.575557+00:00"
+}

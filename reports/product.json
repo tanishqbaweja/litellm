@@ -1,0 +1,19 @@
+{
+  "base": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "head": "8c0fe877b9bbfa0a6934d8ec9373fcaf029a2082",
+  "branch": "litellm_fix_35800_soft_budget_spend",
+  "files": [
+    "litellm/proxy/auth/auth_checks.py",
+    "tests/integration/spend/test_key_budget_lockout.py",
+    "tests/unit/proxy/auth/test_auth_checks.py"
+  ],
+  "created_at": "2026-10-25T22:11:44.716303+00:00",
+  "reviewed_diff_sha256": "4c29d41f546a13140eaf97643e8a478adbad3907f7f3966ac0097927d1767880",
+  "file_sha256": {
+    "litellm/proxy/auth/auth_checks.py": "145693d9bfcda18ecedd9c732f62d6ef9d0b963b21638c9c537ea235e01a7e51",
+    "tests/unit/proxy/auth/test_auth_checks.py": "f5ca063359e8d387b1960ba4152c5ff082b3b46d8242e88aaea14d0ff68517b5",
+    "tests/integration/spend/test_key_budget_lockout.py": "5e9a33668eb88035c98bd5b46cb949fab165667f20355b7e5d92345153946c2c"
+  },
+  "precommit_checks_ran_on_working_tree": true,
+  "unit_test_formatting_only_cleanup_ast_identical": true
+}

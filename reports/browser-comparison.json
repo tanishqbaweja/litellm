@@ -1,0 +1,198 @@
+{
+  "base": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "head": "8c0fe877b9bbfa0a6934d8ec9373fcaf029a2082",
+  "api": {
+    "baseline": [
+      {
+        "case": "crossed-by-request",
+        "final_spend": 0.105,
+        "alerts": 0,
+        "inference_responses": [
+          200,
+          200,
+          200
+        ]
+      },
+      {
+        "case": "already-crossed",
+        "final_spend": 1.07,
+        "alerts": 1,
+        "inference_responses": [
+          200,
+          200
+        ]
+      },
+      {
+        "case": "below-budget",
+        "final_spend": 0.102,
+        "alerts": 0,
+        "inference_responses": [
+          200,
+          200,
+          200
+        ]
+      },
+      {
+        "case": "no-soft-budget",
+        "final_spend": 0.07200000000000001,
+        "alerts": 0,
+        "inference_responses": [
+          200,
+          200
+        ]
+      }
+    ],
+    "fixed": [
+      {
+        "case": "crossed-by-request",
+        "final_spend": 0.105,
+        "alerts": 1,
+        "inference_responses": [
+          200,
+          200,
+          200
+        ]
+      },
+      {
+        "case": "already-crossed",
+        "final_spend": 1.07,
+        "alerts": 1,
+        "inference_responses": [
+          200,
+          200
+        ]
+      },
+      {
+        "case": "below-budget",
+        "final_spend": 0.102,
+        "alerts": 0,
+        "inference_responses": [
+          200,
+          200,
+          200
+        ]
+      },
+      {
+        "case": "no-soft-budget",
+        "final_spend": 0.07200000000000001,
+        "alerts": 0,
+        "inference_responses": [
+          200,
+          200
+        ]
+      }
+    ]
+  },
+  "browser": {
+    "baseline": [
+      {
+        "viewport": {
+          "name": "desktop",
+          "width": 1440,
+          "height": 900
+        },
+        "steps": 7,
+        "mutations": 4,
+        "alerts": 0,
+        "revoked_key_status": 401,
+        "page_errors": [],
+        "console_errors": 98,
+        "http_404_count": 98,
+        "failed_response_paths": [
+          "/ui.txt",
+          "/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt",
+          "/ui/api-keys/__next.!KGRhc2hib2FyZCk.api-keys.__PAGE__.txt",
+          "/ui/cost-optimization/__next.!KGRhc2hib2FyZCk.cost-optimization.__PAGE__.txt",
+          "/ui/guardrails-monitor/__next.!KGRhc2hib2FyZCk.guardrails-monitor.__PAGE__.txt",
+          "/ui/guardrails/__next.!KGRhc2hib2FyZCk.guardrails.__PAGE__.txt",
+          "/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt",
+          "/ui/lens/__next.!KGRhc2hib2FyZCk.lens.__PAGE__.txt",
+          "/ui/litellm-runtime-config.json",
+          "/ui/logs/__next.!KGRhc2hib2FyZCk.logs.__PAGE__.txt",
+          "/ui/mcp-servers/__next.!KGRhc2hib2FyZCk.mcp-servers.__PAGE__.txt",
+          "/ui/model-insights/__next.!KGRhc2hib2FyZCk.model-insights.__PAGE__.txt",
+          "/ui/models-and-endpoints/__next.!KGRhc2hib2FyZCk.models-and-endpoints.__PAGE__.txt",
+          "/ui/playground/__next.!KGRhc2hib2FyZCk.playground.__PAGE__.txt",
+          "/ui/policies/__next.!KGRhc2hib2FyZCk.policies.__PAGE__.txt",
+          "/ui/skills/__next.!KGRhc2hib2FyZCk.skills.__PAGE__.txt",
+          "/ui/teams/__next.!KGRhc2hib2FyZCk.teams.__PAGE__.txt",
+          "/ui/usage/__next.!KGRhc2hib2FyZCk.usage.__PAGE__.txt",
+          "/ui/users/__next.!KGRhc2hib2FyZCk.users.__PAGE__.txt"
+        ]
+      },
+      {
+        "viewport": {
+          "name": "phone",
+          "width": 390,
+          "height": 844
+        },
+        "steps": 7,
+        "mutations": 4,
+        "alerts": 0,
+        "revoked_key_status": 401,
+        "page_errors": [],
+        "console_errors": 13,
+        "http_404_count": 13,
+        "failed_response_paths": [
+          "/ui.txt",
+          "/ui/litellm-runtime-config.json"
+        ]
+      }
+    ],
+    "fixed": [
+      {
+        "viewport": {
+          "name": "desktop",
+          "width": 1440,
+          "height": 900
+        },
+        "steps": 7,
+        "mutations": 4,
+        "alerts": 1,
+        "revoked_key_status": 401,
+        "page_errors": [],
+        "console_errors": 81,
+        "http_404_count": 81,
+        "failed_response_paths": [
+          "/ui.txt",
+          "/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt",
+          "/ui/api-keys/__next.!KGRhc2hib2FyZCk.api-keys.__PAGE__.txt",
+          "/ui/cost-optimization/__next.!KGRhc2hib2FyZCk.cost-optimization.__PAGE__.txt",
+          "/ui/guardrails-monitor/__next.!KGRhc2hib2FyZCk.guardrails-monitor.__PAGE__.txt",
+          "/ui/guardrails/__next.!KGRhc2hib2FyZCk.guardrails.__PAGE__.txt",
+          "/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt",
+          "/ui/lens/__next.!KGRhc2hib2FyZCk.lens.__PAGE__.txt",
+          "/ui/litellm-runtime-config.json",
+          "/ui/logs/__next.!KGRhc2hib2FyZCk.logs.__PAGE__.txt",
+          "/ui/mcp-servers/__next.!KGRhc2hib2FyZCk.mcp-servers.__PAGE__.txt",
+          "/ui/model-insights/__next.!KGRhc2hib2FyZCk.model-insights.__PAGE__.txt",
+          "/ui/models-and-endpoints/__next.!KGRhc2hib2FyZCk.models-and-endpoints.__PAGE__.txt",
+          "/ui/playground/__next.!KGRhc2hib2FyZCk.playground.__PAGE__.txt",
+          "/ui/policies/__next.!KGRhc2hib2FyZCk.policies.__PAGE__.txt",
+          "/ui/skills/__next.!KGRhc2hib2FyZCk.skills.__PAGE__.txt",
+          "/ui/teams/__next.!KGRhc2hib2FyZCk.teams.__PAGE__.txt",
+          "/ui/usage/__next.!KGRhc2hib2FyZCk.usage.__PAGE__.txt",
+          "/ui/users/__next.!KGRhc2hib2FyZCk.users.__PAGE__.txt"
+        ]
+      },
+      {
+        "viewport": {
+          "name": "phone",
+          "width": 390,
+          "height": 844
+        },
+        "steps": 7,
+        "mutations": 4,
+        "alerts": 1,
+        "revoked_key_status": 401,
+        "page_errors": [],
+        "console_errors": 13,
+        "http_404_count": 13,
+        "failed_response_paths": [
+          "/ui.txt",
+          "/ui/litellm-runtime-config.json"
+        ]
+      }
+    ]
+  }
+}

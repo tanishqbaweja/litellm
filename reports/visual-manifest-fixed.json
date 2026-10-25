@@ -1,0 +1,112 @@
+{
+  "revision": "fixed",
+  "raw_screenshots": [
+    {
+      "path": "output/playwright/visual-fixed-1792966750853/desktop-create-form.png",
+      "sha256": "a4cb03d7f641c000013befd760890d82d8f8ed63f14a3da9994da75cfcc7dd32"
+    },
+    {
+      "path": "output/playwright/visual-fixed-1792966750853/desktop-set-soft-budget.png",
+      "sha256": "a7e318446a90daddb3eb526842e26862f2eda5360537501e6a9a73530b96ebce"
+    },
+    {
+      "path": "output/playwright/visual-fixed-1792966750853/desktop-soft-budget-persisted.png",
+      "sha256": "0d19ad8b57b42b1cf8b0dd6b776eb5b0ef1467c10cec9f85461929e64e9c2432"
+    },
+    {
+      "path": "output/playwright/visual-fixed-1792966750853/desktop-spend-crossed.png",
+      "sha256": "d95399cb80c0b39a61270ceeceafdbf8493754977b2f2a990c9167ce432feefd"
+    },
+    {
+      "path": "output/playwright/visual-fixed-1792966750853/desktop-raise-soft-budget.png",
+      "sha256": "b2daad67c86b0d1c852bbd6febb1f20476c91f5f5de1608bef979ce261e7f2f8"
+    },
+    {
+      "path": "output/playwright/visual-fixed-1792966750853/desktop-raised-budget-persisted.png",
+      "sha256": "ee6b301cf092b0605dd227d4b52600d5b1bc5f5700ab770a89bf3dc078715a96"
+    },
+    {
+      "path": "output/playwright/visual-fixed-1792966750853/desktop-deleted-key.png",
+      "sha256": "6e2e24f6ab4de60a0105a283ae600cc888b3904d8c534e297e262e10393bead3"
+    },
+    {
+      "path": "output/playwright/visual-fixed-1792966750853/phone-create-form.png",
+      "sha256": "0620b0be69cc19f0c356f7d8a7714da4c8cefb5d650c3985ab32baa069346d65"
+    },
+    {
+      "path": "output/playwright/visual-fixed-1792966750853/phone-set-soft-budget.png",
+      "sha256": "2a5aa1ec5b61bebefa90ab761859a7323d140c6f0113bd28a6959116f56bd84e"
+    },
+    {
+      "path": "output/playwright/visual-fixed-1792966750853/phone-soft-budget-persisted.png",
+      "sha256": "c081ed68b00b15ff32b4c111f7936ca0cb2bf6b52caef470dcd4483d237634a0"
+    },
+    {
+      "path": "output/playwright/visual-fixed-1792966750853/phone-spend-crossed.png",
+      "sha256": "321110866373e8e8f10f92e7dddf7d39c59e29ff83c811602f9bc67abea8de9a"
+    },
+    {
+      "path": "output/playwright/visual-fixed-1792966750853/phone-raise-soft-budget.png",
+      "sha256": "2057994a39de817891f29832b3553fa0b6d4a9d1925026128be09cfb24af5765"
+    },
+    {
+      "path": "output/playwright/visual-fixed-1792966750853/phone-raised-budget-persisted.png",
+      "sha256": "e98e1cd3f6742fc6da601644a0dcf16311ecaac1c66481734acfb7abe0a03d27"
+    },
+    {
+      "path": "output/playwright/visual-fixed-1792966750853/phone-deleted-key.png",
+      "sha256": "ad08bfd6063dfd719bcf8dbff2cc16f2df6af1dd141bf0e6e09ab3cc77ddeb5b"
+    }
+  ],
+  "screenshot_contact_sheets": [
+    "visual-review-final/fixed-desktop-screenshots-1.png",
+    "visual-review-final/fixed-desktop-screenshots-2.png",
+    "visual-review-final/fixed-phone-screenshots-1.png",
+    "visual-review-final/fixed-phone-screenshots-2.png"
+  ],
+  "recordings": [
+    {
+      "revision": "fixed",
+      "source_sha": "8c0fe877b9bbfa0a6934d8ec9373fcaf029a2082",
+      "viewport": "desktop",
+      "video": "output/playwright/visual-fixed-1792966750853/desktop.webm",
+      "duration_seconds": 40.96,
+      "sampled_frames": [
+        "visual-review-final/fixed-desktop-frame-1-2.56s.png",
+        "visual-review-final/fixed-desktop-frame-2-7.68s.png",
+        "visual-review-final/fixed-desktop-frame-3-12.80s.png",
+        "visual-review-final/fixed-desktop-frame-4-17.92s.png",
+        "visual-review-final/fixed-desktop-frame-5-23.04s.png",
+        "visual-review-final/fixed-desktop-frame-6-28.16s.png",
+        "visual-review-final/fixed-desktop-frame-7-33.28s.png",
+        "visual-review-final/fixed-desktop-frame-8-38.40s.png"
+      ],
+      "contact_sheets": [
+        "visual-review-final/fixed-desktop-video-1.png",
+        "visual-review-final/fixed-desktop-video-2.png"
+      ]
+    },
+    {
+      "revision": "fixed",
+      "source_sha": "8c0fe877b9bbfa0a6934d8ec9373fcaf029a2082",
+      "viewport": "phone",
+      "video": "output/playwright/visual-fixed-1792966750853/phone.webm",
+      "duration_seconds": 36.04,
+      "sampled_frames": [
+        "visual-review-final/fixed-phone-frame-1-2.25s.png",
+        "visual-review-final/fixed-phone-frame-2-6.76s.png",
+        "visual-review-final/fixed-phone-frame-3-11.26s.png",
+        "visual-review-final/fixed-phone-frame-4-15.77s.png",
+        "visual-review-final/fixed-phone-frame-5-20.27s.png",
+        "visual-review-final/fixed-phone-frame-6-24.78s.png",
+        "visual-review-final/fixed-phone-frame-7-29.28s.png",
+        "visual-review-final/fixed-phone-frame-8-33.79s.png"
+      ],
+      "contact_sheets": [
+        "visual-review-final/fixed-phone-video-1.png",
+        "visual-review-final/fixed-phone-video-2.png"
+      ]
+    }
+  ],
+  "source_sha": "8c0fe877b9bbfa0a6934d8ec9373fcaf029a2082"
+}

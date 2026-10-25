@@ -1,0 +1,19 @@
+{
+  "phase": "green",
+  "command": [
+    "/opt/litellm-venv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "--tb=short",
+    "tests/unit/proxy/auth/test_auth_checks.py",
+    "tests/unit/proxy/auth/test_auth_checks_object_access_and_lookup.py",
+    "tests/unit/proxy/proxy_server/test_spend_counters.py",
+    "tests/unit/integrations/SlackAlerting/test_slack_alerting.py"
+  ],
+  "started_at": "2026-10-25T21:59:09.166530+00:00",
+  "source_head": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "source_sha256": "145693d9bfcda18ecedd9c732f62d6ef9d0b963b21638c9c537ea235e01a7e51",
+  "returncode": 0,
+  "completed_at": "2026-10-25T22:00:31.284756+00:00"
+}

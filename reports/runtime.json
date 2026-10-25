@@ -1,0 +1,20 @@
+{
+  "created_at": "2026-10-25T21:50:59.998320+00:00",
+  "base": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "default_branch": "main",
+  "branch": "litellm_fix_35800_soft_budget_spend",
+  "issue": {
+    "assignees": [],
+    "number": 35800,
+    "state": "OPEN",
+    "title": "[Bug]: Standalone virtual-key soft_budget alert is not sent to Slack",
+    "updatedAt": "2026-10-24T02:53:10Z",
+    "url": "https://github.com/BerriAI/litellm/issues/35800"
+  },
+  "exact_open_prs": [],
+  "scope": "Read current key spend for soft-budget alerts instead of the stale auth object",
+  "overlap_review": {
+    "45581": "Concurrent cooldown claims and retry release inside SlackAlerting, not the auth spend read",
+    "35150": "Spend-counter lock lifetime under registry pressure, not the auth spend read"
+  }
+}

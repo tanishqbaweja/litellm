@@ -1,0 +1,83 @@
+{
+  "revision": "fixed",
+  "sha": "8c0fe877b9bbfa0a6934d8ec9373fcaf029a2082",
+  "checked_at": "2026-10-25T22:20:52.858502+00:00",
+  "requests": [
+    {
+      "case": "api-crossed-by-request",
+      "command": "curl -sS --max-time 10 'http://127.0.0.1:41480/messages?alias=qa35800-api-crossed-by-request'",
+      "response": {
+        "count": 1,
+        "messages": [
+          {
+            "received_at": "2026-10-25T22:19:10.144649+00:00",
+            "body": {
+              "text": "Alert type: `budget_alerts`\nLevel: `High`\nTimestamp: `22:19:05`\n\nMessage: Soft Budget Crossed: Total Soft Budget:`0.01`\n\n*spend:* `0.035`\n*soft_budget:* `0.01`\n*key_alias:* `qa35800-api-crossed-by-request`\n*event_group:* `key`\n\n\nProxy URL: `http://127.0.0.1:41479`"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "case": "api-already-crossed",
+      "command": "curl -sS --max-time 10 'http://127.0.0.1:41480/messages?alias=qa35800-api-already-crossed'",
+      "response": {
+        "count": 1,
+        "messages": [
+          {
+            "received_at": "2026-10-25T22:19:10.144860+00:00",
+            "body": {
+              "text": "Alert type: `budget_alerts`\nLevel: `High`\nTimestamp: `22:19:06`\n\nMessage: Soft Budget Crossed: Total Soft Budget:`0.01`\n\n*spend:* `1.0`\n*soft_budget:* `0.01`\n*key_alias:* `qa35800-api-already-crossed`\n*event_group:* `key`\n\n\nProxy URL: `http://127.0.0.1:41479`"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "case": "api-below-budget",
+      "command": "curl -sS --max-time 10 'http://127.0.0.1:41480/messages?alias=qa35800-api-below-budget'",
+      "response": {
+        "count": 0,
+        "messages": []
+      }
+    },
+    {
+      "case": "api-no-soft-budget",
+      "command": "curl -sS --max-time 10 'http://127.0.0.1:41480/messages?alias=qa35800-api-no-soft-budget'",
+      "response": {
+        "count": 0,
+        "messages": []
+      }
+    },
+    {
+      "case": "desktop",
+      "command": "curl -sS --max-time 10 'http://127.0.0.1:41480/messages?alias=qa35800-desktop'",
+      "response": {
+        "count": 1,
+        "messages": [
+          {
+            "received_at": "2026-10-25T22:19:25.149946+00:00",
+            "body": {
+              "text": "Alert type: `budget_alerts`\nLevel: `High`\nTimestamp: `22:19:24`\n\nMessage: Soft Budget Crossed: Total Soft Budget:`0.01`\n\n*spend:* `0.039`\n*soft_budget:* `0.01`\n*user_id:* `default_user_id`\n*key_alias:* `qa35800-desktop`\n*event_group:* `key`\n\n\nProxy URL: `http://127.0.0.1:41479`"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "case": "phone",
+      "command": "curl -sS --max-time 10 'http://127.0.0.1:41480/messages?alias=qa35800-phone'",
+      "response": {
+        "count": 1,
+        "messages": [
+          {
+            "received_at": "2026-10-25T22:20:00.154146+00:00",
+            "body": {
+              "text": "Alert type: `budget_alerts`\nLevel: `High`\nTimestamp: `22:20:00`\n\nMessage: Soft Budget Crossed: Total Soft Budget:`0.01`\n\n*spend:* `0.039`\n*soft_budget:* `0.01`\n*user_id:* `default_user_id`\n*key_alias:* `qa35800-phone`\n*event_group:* `key`\n\n\nProxy URL: `http://127.0.0.1:41479`"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

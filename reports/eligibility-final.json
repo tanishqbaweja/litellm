@@ -1,0 +1,571 @@
+{
+  "checked_at": "2026-10-25T22:20:31.625921+00:00",
+  "repository": "BerriAI/litellm",
+  "account": "tanishqbaweja",
+  "default_branch": "main",
+  "base": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "head": "8c0fe877b9bbfa0a6934d8ec9373fcaf029a2082",
+  "issue": {
+    "number": 35800,
+    "title": "[Bug]: Standalone virtual-key soft_budget alert is not sent to Slack",
+    "state": "OPEN",
+    "updatedAt": "2026-10-24T02:53:10Z",
+    "assignees": [],
+    "url": "https://github.com/BerriAI/litellm/issues/35800"
+  },
+  "comments": 2,
+  "active_timeline_pr_references": [],
+  "searches": [
+    {
+      "query": "35800",
+      "results": []
+    },
+    {
+      "query": "virtual_key_soft_budget_check",
+      "results": []
+    },
+    {
+      "query": "\"soft budget\" stale",
+      "results": [
+        {
+          "number": 47551,
+          "title": "feat(proxy): support YAML model group budgets and deployment attribution",
+          "updatedAt": "2026-10-21T08:02:24Z",
+          "url": "https://github.com/BerriAI/litellm/pull/47551"
+        },
+        {
+          "number": 48354,
+          "title": "fix(proxy): clear model budget limits on explicit null",
+          "updatedAt": "2026-10-25T22:03:03Z",
+          "url": "https://github.com/BerriAI/litellm/pull/48354"
+        },
+        {
+          "number": 47693,
+          "title": "feat(proxy): per-provider and per-model rpm/tpm requirements for enforce_project_model_quota",
+          "updatedAt": "2026-10-21T09:13:04Z",
+          "url": "https://github.com/BerriAI/litellm/pull/47693"
+        },
+        {
+          "number": 47661,
+          "title": "fix(batches): stop unbillable batches from blocking file deletes and new-batch polling",
+          "updatedAt": "2026-10-21T04:47:27Z",
+          "url": "https://github.com/BerriAI/litellm/pull/47661"
+        },
+        {
+          "number": 41027,
+          "title": "fix(spend): keep a baseline's free cache reads free when pricing autorouter savings",
+          "updatedAt": "2026-10-13T18:56:45Z",
+          "url": "https://github.com/BerriAI/litellm/pull/41027"
+        },
+        {
+          "number": 38209,
+          "title": "fix: preserve SSO client secret on partial settings update",
+          "updatedAt": "2026-10-13T18:23:01Z",
+          "url": "https://github.com/BerriAI/litellm/pull/38209"
+        },
+        {
+          "number": 40010,
+          "title": "fix: check the model in every OpenAI websocket passthrough frame",
+          "updatedAt": "2026-10-14T18:18:07Z",
+          "url": "https://github.com/BerriAI/litellm/pull/40010"
+        },
+        {
+          "number": 35150,
+          "title": "fix(proxy): preserve spend adjustments under lock registry pressure",
+          "updatedAt": "2026-10-13T17:56:10Z",
+          "url": "https://github.com/BerriAI/litellm/pull/35150"
+        },
+        {
+          "number": 34717,
+          "title": "feat(prometheus): add call_type label to request lifecycle metrics",
+          "updatedAt": "2026-10-13T17:52:46Z",
+          "url": "https://github.com/BerriAI/litellm/pull/34717"
+        },
+        {
+          "number": 35814,
+          "title": "fix(proxy): dedupe budget alert emails across replicas without redis",
+          "updatedAt": "2026-09-23T15:17:44Z",
+          "url": "https://github.com/BerriAI/litellm/pull/35814"
+        },
+        {
+          "number": 41105,
+          "title": "fix(proxy): resolve team callbacks when key logging is empty and report GCS flush failures",
+          "updatedAt": "2026-10-13T18:57:42Z",
+          "url": "https://github.com/BerriAI/litellm/pull/41105"
+        }
+      ]
+    },
+    {
+      "query": "soft_budget cache",
+      "results": [
+        {
+          "number": 45581,
+          "title": "fix(alerting): send one budget alert when concurrent checks hit the same budget event",
+          "updatedAt": "2026-10-09T12:00:04Z",
+          "url": "https://github.com/BerriAI/litellm/pull/45581"
+        },
+        {
+          "number": 41027,
+          "title": "fix(spend): keep a baseline's free cache reads free when pricing autorouter savings",
+          "updatedAt": "2026-10-13T18:56:45Z",
+          "url": "https://github.com/BerriAI/litellm/pull/41027"
+        },
+        {
+          "number": 32409,
+          "title": "test(e2e): fill management P0 coverage gaps and reconcile registry markers",
+          "updatedAt": "2026-10-13T17:38:18Z",
+          "url": "https://github.com/BerriAI/litellm/pull/32409"
+        },
+        {
+          "number": 41019,
+          "title": "fix(ci): unbreak Postgres tests, TQ003 gate, and UI types sync on litellm_internal_staging",
+          "updatedAt": "2026-09-23T14:34:42Z",
+          "url": "https://github.com/BerriAI/litellm/pull/41019"
+        },
+        {
+          "number": 47693,
+          "title": "feat(proxy): per-provider and per-model rpm/tpm requirements for enforce_project_model_quota",
+          "updatedAt": "2026-10-21T09:13:04Z",
+          "url": "https://github.com/BerriAI/litellm/pull/47693"
+        },
+        {
+          "number": 39681,
+          "title": "feat(ui): create a model access group from the budgets tab",
+          "updatedAt": "2026-10-13T18:42:40Z",
+          "url": "https://github.com/BerriAI/litellm/pull/39681"
+        },
+        {
+          "number": 36354,
+          "title": "fix: don't raise KeyError: 'token' on budget alerts for JWT-authenticated requests",
+          "updatedAt": "2026-10-24T17:36:48Z",
+          "url": "https://github.com/BerriAI/litellm/pull/36354"
+        },
+        {
+          "number": 35150,
+          "title": "fix(proxy): preserve spend adjustments under lock registry pressure",
+          "updatedAt": "2026-10-13T17:56:10Z",
+          "url": "https://github.com/BerriAI/litellm/pull/35150"
+        },
+        {
+          "number": 40010,
+          "title": "fix: check the model in every OpenAI websocket passthrough frame",
+          "updatedAt": "2026-10-14T18:18:07Z",
+          "url": "https://github.com/BerriAI/litellm/pull/40010"
+        },
+        {
+          "number": 34717,
+          "title": "feat(prometheus): add call_type label to request lifecycle metrics",
+          "updatedAt": "2026-10-13T17:52:46Z",
+          "url": "https://github.com/BerriAI/litellm/pull/34717"
+        },
+        {
+          "number": 36075,
+          "title": "feat: add Opper provider",
+          "updatedAt": "2026-10-13T18:03:56Z",
+          "url": "https://github.com/BerriAI/litellm/pull/36075"
+        },
+        {
+          "number": 38209,
+          "title": "fix: preserve SSO client secret on partial settings update",
+          "updatedAt": "2026-10-13T18:23:01Z",
+          "url": "https://github.com/BerriAI/litellm/pull/38209"
+        },
+        {
+          "number": 41105,
+          "title": "fix(proxy): resolve team callbacks when key logging is empty and report GCS flush failures",
+          "updatedAt": "2026-10-13T18:57:42Z",
+          "url": "https://github.com/BerriAI/litellm/pull/41105"
+        }
+      ]
+    }
+  ],
+  "adjacent_prs": [
+    {
+      "number": 47551,
+      "title": "feat(proxy): support YAML model group budgets and deployment attribution",
+      "updatedAt": "2026-10-21T08:02:24Z",
+      "url": "https://github.com/BerriAI/litellm/pull/47551",
+      "files": [
+        "cookbook/model_access_group_budgets/README.md",
+        "litellm/proxy/auth/auth_checks.py",
+        "litellm/proxy/db/db_spend_update_writer.py",
+        "litellm/proxy/hooks/proxy_track_cost_callback.py",
+        "litellm/proxy/management_endpoints/model_access_group_management_endpoints.py",
+        "litellm/proxy/management_helpers/utils.py",
+        "litellm/types/proxy/model_access_group_budget.py",
+        "litellm/types/router.py",
+        "tests/integration/authorization/test_access_group_budget.py",
+        "tests/unit/proxy/auth/test_model_access_group_budgets.py",
+        "tests/unit/proxy/db/test_model_access_group_spend.py",
+        "tests/unit/proxy/hooks/test_proxy_track_cost_callback.py",
+        "tests/unit/proxy/management_endpoints/test_access_group_management.py",
+        "tests/unit/proxy/test_budget_reservation.py",
+        "ui/litellm-dashboard/src/lib/http/schema.d.ts"
+      ],
+      "relevant_diffs": [
+        {
+          "sha": "d32d33cf411749dc081c5219d10eb2f20f177c8f",
+          "filename": "litellm/proxy/auth/auth_checks.py",
+          "status": "modified",
+          "additions": 9,
+          "deletions": 0,
+          "changes": 9,
+          "blob_url": "https://github.com/BerriAI/litellm/blob/ae79d48cffbb9c3a6f30191bb0f2a36504968c0a/litellm%2Fproxy%2Fauth%2Fauth_checks.py",
+          "raw_url": "https://github.com/BerriAI/litellm/raw/ae79d48cffbb9c3a6f30191bb0f2a36504968c0a/litellm%2Fproxy%2Fauth%2Fauth_checks.py",
+          "contents_url": "https://api.github.com/repos/BerriAI/litellm/contents/litellm%2Fproxy%2Fauth%2Fauth_checks.py?ref=ae79d48cffbb9c3a6f30191bb0f2a36504968c0a",
+          "patch": "@@ -15,6 +15,7 @@\n import time\n from collections.abc import Awaitable, Callable, Iterator, Mapping, Sequence\n from dataclasses import dataclass\n+from datetime import datetime\n from functools import partial\n from itertools import chain\n from types import MappingProxyType\n@@ -356,6 +357,12 @@ def _end_user_table(repo: _PrismaTableHolder[_PrismaEndUserRow]) -> _PrismaAuthT\n \n \n class _PrismaMaxBudgetRow(Protocol):\n+    @property\n+    def soft_budget(self) -> float | None: ...\n+\n+    @property\n+    def budget_reset_at(self) -> datetime | None: ...\n+\n     @property\n     def max_budget(self) -> float | None: ...\n \n@@ -2419,6 +2426,8 @@ def _model_access_group_budget(row: _PrismaModelAccessGroupBudgetRow) -> ModelAc\n         access_group_name=row.access_group_name,\n         spend=row.spend or 0.0,\n         max_budget=None if budget_table is None else budget_table.max_budget,\n+        soft_budget=None if budget_table is None else budget_table.soft_budget,\n+        budget_reset_at=None if budget_table is None else budget_table.budget_reset_at,\n     )\n \n "
+        }
+      ]
+    },
+    {
+      "number": 48354,
+      "title": "fix(proxy): clear model budget limits on explicit null",
+      "updatedAt": "2026-10-25T22:03:03Z",
+      "url": "https://github.com/BerriAI/litellm/pull/48354",
+      "files": [
+        "litellm/proxy/management_endpoints/budget_management_endpoints.py",
+        "tests/integration/management/test_budget_updates.py",
+        "tests/unit/proxy/management_endpoints/test_budget_endpoints.py",
+        "ui/litellm-dashboard/src/lib/http/schema.d.ts"
+      ],
+      "relevant_diffs": []
+    },
+    {
+      "number": 47693,
+      "title": "feat(proxy): per-provider and per-model rpm/tpm requirements for enforce_project_model_quota",
+      "updatedAt": "2026-10-21T09:13:04Z",
+      "url": "https://github.com/BerriAI/litellm/pull/47693",
+      "files": [
+        "enterprise/litellm_enterprise/proxy/management_endpoints/project_endpoints.py",
+        "enterprise/litellm_enterprise/proxy/management_endpoints/project_model_quota.py",
+        "litellm/proxy/management_endpoints/model_management_endpoints.py",
+        "litellm/proxy/management_helpers/model_quota_policy.py",
+        "tests/unit/enterprise/proxy/management_endpoints/test_project_endpoints_prisma.py",
+        "tests/unit/proxy/management_endpoints/test_model_management_endpoints.py"
+      ],
+      "relevant_diffs": []
+    },
+    {
+      "number": 47661,
+      "title": "fix(batches): stop unbillable batches from blocking file deletes and new-batch polling",
+      "updatedAt": "2026-10-21T04:47:27Z",
+      "url": "https://github.com/BerriAI/litellm/pull/47661",
+      "files": [
+        "enterprise/litellm_enterprise/proxy/common_utils/check_batch_cost.py",
+        "enterprise/litellm_enterprise/proxy/hooks/managed_files.py",
+        "tests/unit/enterprise/proxy/test_file_deletion_blocking.py",
+        "tests/unit/proxy/common_utils/test_check_batch_cost.py"
+      ],
+      "relevant_diffs": []
+    },
+    {
+      "number": 41027,
+      "title": "fix(spend): keep a baseline's free cache reads free when pricing autorouter savings",
+      "updatedAt": "2026-10-13T18:56:45Z",
+      "url": "https://github.com/BerriAI/litellm/pull/41027",
+      "files": [
+        "litellm/proxy/spend_tracking/savings.py",
+        "tests/test_litellm/proxy/spend_tracking/test_savings.py"
+      ],
+      "relevant_diffs": []
+    },
+    {
+      "number": 38209,
+      "title": "fix: preserve SSO client secret on partial settings update",
+      "updatedAt": "2026-10-13T18:23:01Z",
+      "url": "https://github.com/BerriAI/litellm/pull/38209",
+      "files": [
+        "litellm/proxy/ui_crud_endpoints/proxy_setting_endpoints.py",
+        "tests/proxy_behavior/auth/test_auth_object_prefetch.py",
+        "tests/test_litellm/proxy/ui_crud_endpoints/test_proxy_setting_endpoints.py",
+        "tests/test_litellm/proxy/ui_crud_endpoints/test_sso_secret_backfill.py",
+        "ui/litellm-dashboard/src/lib/http/schema.d.ts"
+      ],
+      "relevant_diffs": []
+    },
+    {
+      "number": 40010,
+      "title": "fix: check the model in every OpenAI websocket passthrough frame",
+      "updatedAt": "2026-10-14T18:18:07Z",
+      "url": "https://github.com/BerriAI/litellm/pull/40010",
+      "files": [
+        "basedpyright-code-budget.json",
+        "litellm/proxy/auth/auth_checks.py",
+        "litellm/proxy/pass_through_endpoints/llm_passthrough_endpoints.py",
+        "litellm/proxy/pass_through_endpoints/llm_provider_handlers/openai_websocket_passthrough_logging_handler.py",
+        "litellm/proxy/pass_through_endpoints/pass_through_endpoints.py",
+        "litellm/proxy/pass_through_endpoints/success_handler.py",
+        "test-quality-budget.json",
+        "tests/test_litellm/proxy/auth/test_auth_checks.py",
+        "tests/test_litellm/proxy/auth/test_model_access_group_budgets.py",
+        "tests/test_litellm/proxy/pass_through_endpoints/llm_provider_handlers/test_openai_websocket_passthrough_logging_handler.py",
+        "tests/test_litellm/proxy/pass_through_endpoints/test_pass_through_endpoints.py",
+        "tests/test_litellm/proxy/pass_through_endpoints/test_success_handler.py",
+        "tests/test_litellm/proxy/test_openai_ws_passthrough_routes.py"
+      ],
+      "relevant_diffs": [
+        {
+          "sha": "3ab2cc545581cb6f98340b1df66561aa7fedde7c",
+          "filename": "litellm/proxy/auth/auth_checks.py",
+          "status": "modified",
+          "additions": 104,
+          "deletions": 73,
+          "changes": 177,
+          "blob_url": "https://github.com/BerriAI/litellm/blob/a0d81e006483fa17ab6a500c5dedb57b46e49b26/litellm%2Fproxy%2Fauth%2Fauth_checks.py",
+          "raw_url": "https://github.com/BerriAI/litellm/raw/a0d81e006483fa17ab6a500c5dedb57b46e49b26/litellm%2Fproxy%2Fauth%2Fauth_checks.py",
+          "contents_url": "https://api.github.com/repos/BerriAI/litellm/contents/litellm%2Fproxy%2Fauth%2Fauth_checks.py?ref=a0d81e006483fa17ab6a500c5dedb57b46e49b26",
+          "patch": "@@ -4164,79 +4164,6 @@ async def _granted_model_lists(\n     )\n \n \n-async def _user_object_or_none(\n-    valid_token: UserAPIKeyAuth,\n-    prisma_client: PrismaClient,\n-    user_api_key_cache: UserApiKeyCache,\n-    proxy_logging_obj: ProxyLogging,\n-) -> LiteLLM_UserTable | None:\n-    try:\n-        return await get_user_object(\n-            user_id=valid_token.user_id,\n-            prisma_client=prisma_client,\n-            user_api_key_cache=user_api_key_cache,\n-            user_id_upsert=False,\n-            proxy_logging_obj=proxy_logging_obj,\n-        )\n-    except UserNotFoundError:\n-        return None\n-\n-\n-async def enforced_model_allowlists(\n-    valid_token: UserAPIKeyAuth,\n-    prisma_client: PrismaClient | None,\n-    user_api_key_cache: UserApiKeyCache,\n-    proxy_logging_obj: ProxyLogging,\n-) -> tuple[Sequence[str], ...]:\n-    \"\"\"One model allowlist per level that ``common_checks`` enforces on a request from this identity.\"\"\"\n-    key_models: Final = _resolve_key_models_for_auth_check(valid_token=valid_token)\n-    if prisma_client is None:\n-        return (key_models, tuple(valid_token.team_models or ()))\n-    team_object: Final = (\n-        None\n-        if valid_token.team_id is None\n-        else await get_team_object(\n-            team_id=valid_token.team_id,\n-            prisma_client=prisma_client,\n-            user_api_key_cache=user_api_key_cache,\n-            proxy_logging_obj=proxy_logging_obj,\n-        )\n-    )\n-    user_object: Final = (\n-        None\n-        if team_object is not None\n-        else await _user_object_or_none(\n-            valid_token=valid_token,\n-            prisma_client=prisma_client,\n-            user_api_key_cache=user_api_key_cache,\n-            proxy_logging_obj=proxy_logging_obj,\n-        )\n-    )\n-    project_object: Final = (\n-        None\n-        if valid_token.project_id is None\n-        else await get_project_object(\n-            project_id=valid_token.project_id,\n-            prisma_client=prisma_client,\n-            user_api_key_cache=user_api_key_cache,\n-            proxy_logging_obj=proxy_logging_obj,\n-        )\n-    )\n-    return (\n-        key_models,\n-        team_object.models if team_object is not None else (),\n-        await _team_member_granted_models(\n-            valid_token=valid_token,\n-            team_object=team_object,\n-            prisma_client=prisma_client,\n-            user_api_key_cache=user_api_key_cache,\n-            proxy_logging_obj=proxy_logging_obj,\n-        ),\n-        user_object.models if user_object is not None else (),\n-        project_object.models if project_object is not None else (),\n-    )\n-\n-\n async def collect_matched_model_access_groups(\n     model: str | Sequence[str] | None,\n     valid_token: UserAPIKeyAuth | None,\n@@ -4471,6 +4398,110 @@ async def can_key_call_resolved_model(\n             )\n \n \n+async def can_personal_user_call_model(\n+    model: str,\n+    valid_token: UserAPIKeyAuth,\n+    llm_router: Router | None,\n+) -> None:\n+    \"\"\"Apply the personal user's model allowlist, the check ``common_checks`` runs for a key with no team.\"\"\"\n+    from litellm.proxy.proxy_server import (\n+        prisma_client,\n+        proxy_logging_obj,\n+        user_api_key_cache,\n+    )\n+\n+    if valid_token.team_id is not None or valid_token.user_id is None or prisma_client is None:\n+        return\n+    try:\n+        user_object: Final = await get_user_object(\n+            user_id=valid_token.user_id,\n+            prisma_client=prisma_client,\n+            user_api_key_cache=user_api_key_cache,\n+            user_id_upsert=False,\n+            parent_otel_span=valid_token.parent_otel_span,\n+            proxy_logging_obj=proxy_logging_obj,\n+        )\n+    except UserNotFoundError:\n+        return\n+    if user_object is None:\n+        return\n+    await can_user_call_model(model=model, llm_router=llm_router, user_object=user_object)\n+\n+\n+async def _matching_team_object(\n+    valid_token: UserAPIKeyAuth,\n+    prisma_client: PrismaClient,\n+    user_api_key_cache: UserApiKeyCache,\n+    proxy_logging_obj: ProxyLogging,\n+) -> LiteLLM_TeamTableCachedObj | None:\n+    if valid_token.team_id is None:\n+        return None\n+    try:\n+        return await get_team_object(\n+            team_id=valid_token.team_id,\n+            prisma_client=prisma_client,\n+            user_api_key_cache=user_api_key_cache,\n+            parent_otel_span=valid_token.parent_otel_span,\n+            proxy_logging_obj=proxy_logging_obj,\n+        )\n+    except Exception as e:  # noqa: BLE001  # fail-safe: a team we cannot read grants no group, it never breaks auth\n+        verbose_proxy_logger.debug(\"model access group attribution could not read the team: %s\", e)\n+        return None\n+\n+\n+async def enforce_model_access_group_budget(\n+    model: str,\n+    valid_token: UserAPIKeyAuth,\n+    llm_router: Router | None,\n+) -> None:\n+    \"\"\"Attribute this model to the budgeted access groups that authorize it and refuse an exhausted one.\n+\n+    The pair ``common_checks`` runs for every HTTP request, for callers that reach a model only\n+    through a group: the stamp is what the spend writer charges afterwards, and the check is what\n+    stops a group whose budget is already gone.\n+\n+    Raises:\n+        BudgetExceededError if a group that authorized this model is over its max budget.\n+    \"\"\"\n+    from litellm.proxy.proxy_server import (\n+        prisma_client,\n+        proxy_logging_obj,\n+        user_api_key_cache,\n+    )\n+\n+    if prisma_client is None:\n+        return\n+    matched: Final = await stamp_matched_model_access_groups(\n+        model=model,\n+        valid_token=valid_token,\n+        team_object=await _matching_team_object(\n+            valid_token=valid_token,\n+            prisma_client=prisma_client,\n+            user_api_key_cache=user_api_key_cache,\n+            proxy_logging_obj=proxy_logging_obj,\n+        ),\n+        project_object=(\n+            None\n+            if valid_token.project_id is None\n+            else await get_project_object(\n+                project_id=valid_token.project_id,\n+                prisma_client=prisma_client,\n+                user_api_key_cache=user_api_key_cache,\n+                proxy_logging_obj=proxy_logging_obj,\n+            )\n+        ),\n+        llm_router=llm_router,\n+        prisma_client=prisma_client,\n+        user_api_key_cache=user_api_key_cache,\n+        proxy_logging_obj=proxy_logging_obj,\n+    )\n+    await _model_access_group_max_budget_check(\n+        matched_model_access_groups=matched,\n+        prisma_client=prisma_client,\n+        user_api_key_cache=user_api_key_cache,\n+    )\n+\n+\n def can_org_access_model(\n     model: str,\n     org_object: LiteLLM_OrganizationTable | None,"
+        }
+      ]
+    },
+    {
+      "number": 35150,
+      "title": "fix(proxy): preserve spend adjustments under lock registry pressure",
+      "updatedAt": "2026-10-13T17:56:10Z",
+      "url": "https://github.com/BerriAI/litellm/pull/35150",
+      "files": [
+        "litellm/proxy/db/spend_counter_reseed.py",
+        "tests/test_litellm/proxy/db/test_spend_counter_reseed.py",
+        "tests/test_litellm/proxy/test_proxy_server.py",
+        "ui/litellm-dashboard/src/lib/http/schema.d.ts"
+      ],
+      "relevant_diffs": []
+    },
+    {
+      "number": 34717,
+      "title": "feat(prometheus): add call_type label to request lifecycle metrics",
+      "updatedAt": "2026-10-13T17:52:46Z",
+      "url": "https://github.com/BerriAI/litellm/pull/34717",
+      "files": [
+        "litellm/integrations/prometheus.py",
+        "litellm/types/integrations/prometheus.py",
+        "tests/test_litellm/integrations/test_prometheus_labels.py",
+        "tests/unit/enterprise/enterprise_callbacks/test_prometheus_logging_callbacks.py"
+      ],
+      "relevant_diffs": []
+    },
+    {
+      "number": 35814,
+      "title": "fix(proxy): dedupe budget alert emails across replicas without redis",
+      "updatedAt": "2026-09-23T15:17:44Z",
+      "url": "https://github.com/BerriAI/litellm/pull/35814",
+      "files": [
+        "enterprise/litellm_enterprise/enterprise_callbacks/send_emails/base_email.py",
+        "litellm-proxy-extras/litellm_proxy_extras/migrations/20260804000000_add_budget_alert_sent/migration.sql",
+        "litellm-proxy-extras/litellm_proxy_extras/schema.prisma",
+        "litellm/constants.py",
+        "litellm/integrations/SlackAlerting/slack_alerting.py",
+        "litellm/proxy/_types.py",
+        "litellm/proxy/auth/auth_checks.py",
+        "litellm/proxy/db/budget_alert_claim.py",
+        "litellm/proxy/db/exception_handler.py",
+        "litellm/proxy/schema.prisma",
+        "schema.prisma",
+        "tests/test_litellm/enterprise/enterprise_callbacks/send_emails/test_base_email.py",
+        "tests/test_litellm/proxy/auth/test_auth_checks.py",
+        "tests/test_litellm/proxy/db/test_exception_handler.py"
+      ],
+      "relevant_diffs": [
+        {
+          "sha": "7253cab2144c844b63cce26ebb057a562a6f398b",
+          "filename": "litellm/integrations/SlackAlerting/slack_alerting.py",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1,
+          "blob_url": "https://github.com/BerriAI/litellm/blob/e01a05472ef0bc52a95ea3c5267f57d02c651775/litellm%2Fintegrations%2FSlackAlerting%2Fslack_alerting.py",
+          "raw_url": "https://github.com/BerriAI/litellm/raw/e01a05472ef0bc52a95ea3c5267f57d02c651775/litellm%2Fintegrations%2FSlackAlerting%2Fslack_alerting.py",
+          "contents_url": "https://api.github.com/repos/BerriAI/litellm/contents/litellm%2Fintegrations%2FSlackAlerting%2Fslack_alerting.py?ref=e01a05472ef0bc52a95ea3c5267f57d02c651775",
+          "patch": "@@ -631,6 +631,7 @@ def _get_user_info_str(self, user_info: CallInfo) -> str:\n         \"\"\"\n         _all_fields_as_dict: Final = user_info.model_dump(exclude_none=True)\n         _all_fields_as_dict.pop(\"token\")\n+        _all_fields_as_dict.pop(\"budget_reset_at\", None)\n         msg = \"\"\n         for k, v in _all_fields_as_dict.items():\n             if isinstance(v, Litellm_EntityType):"
+        },
+        {
+          "sha": "5fa2dece9753e0e9042f3f2a1f009befe111d42e",
+          "filename": "litellm/proxy/auth/auth_checks.py",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 0,
+          "changes": 2,
+          "blob_url": "https://github.com/BerriAI/litellm/blob/e01a05472ef0bc52a95ea3c5267f57d02c651775/litellm%2Fproxy%2Fauth%2Fauth_checks.py",
+          "raw_url": "https://github.com/BerriAI/litellm/raw/e01a05472ef0bc52a95ea3c5267f57d02c651775/litellm%2Fproxy%2Fauth%2Fauth_checks.py",
+          "contents_url": "https://api.github.com/repos/BerriAI/litellm/contents/litellm%2Fproxy%2Fauth%2Fauth_checks.py?ref=e01a05472ef0bc52a95ea3c5267f57d02c651775",
+          "patch": "@@ -3845,6 +3845,7 @@ async def _virtual_key_max_budget_alert_check(\n                 key_alias=valid_token.key_alias,\n                 event_group=Litellm_EntityType.KEY,\n                 max_budget_alert_emails=alert_email_config,\n+                budget_reset_at=valid_token.budget_reset_at,\n             )\n             asyncio.create_task(\n                 proxy_logging_obj.budget_alerts(\n@@ -3876,6 +3877,7 @@ async def _virtual_key_max_budget_alert_check(\n                     user_email=owner_email,\n                     key_alias=valid_token.key_alias,\n                     event_group=Litellm_EntityType.KEY,\n+                    budget_reset_at=valid_token.budget_reset_at,\n                 )\n \n                 asyncio.create_task("
+        }
+      ]
+    },
+    {
+      "number": 41105,
+      "title": "fix(proxy): resolve team callbacks when key logging is empty and report GCS flush failures",
+      "updatedAt": "2026-10-13T18:57:42Z",
+      "url": "https://github.com/BerriAI/litellm/pull/41105",
+      "files": [
+        "litellm/integrations/gcs_bucket/gcs_bucket.py",
+        "litellm/proxy/_types.py",
+        "litellm/proxy/litellm_pre_call_utils.py",
+        "litellm/proxy/management_endpoints/key_management_endpoints.py",
+        "litellm/types/integrations/gcs_bucket.py",
+        "tests/test_litellm/integrations/gcs_bucket/test_gcs_bucket.py",
+        "tests/test_litellm/integrations/otel/test_otel_v2_destinations.py",
+        "tests/test_litellm/proxy/management_endpoints/test_key_management_endpoints.py",
+        "tests/test_litellm/proxy/test_litellm_pre_call_utils.py",
+        "ui/litellm-dashboard/src/lib/http/schema.d.ts"
+      ],
+      "relevant_diffs": []
+    },
+    {
+      "number": 45581,
+      "title": "fix(alerting): send one budget alert when concurrent checks hit the same budget event",
+      "updatedAt": "2026-10-09T12:00:04Z",
+      "url": "https://github.com/BerriAI/litellm/pull/45581",
+      "files": [
+        "litellm/integrations/SlackAlerting/slack_alerting.py",
+        "tests/unit/integrations/SlackAlerting/test_slack_alerting.py"
+      ],
+      "relevant_diffs": [
+        {
+          "sha": "9639e1c79238e38f85bbe22835e6afac0b8d5daf",
+          "filename": "litellm/integrations/SlackAlerting/slack_alerting.py",
+          "status": "modified",
+          "additions": 18,
+          "deletions": 12,
+          "changes": 30,
+          "blob_url": "https://github.com/BerriAI/litellm/blob/a564b600f25ca59244467282a5829b3ce446c1c9/litellm%2Fintegrations%2FSlackAlerting%2Fslack_alerting.py",
+          "raw_url": "https://github.com/BerriAI/litellm/raw/a564b600f25ca59244467282a5829b3ce446c1c9/litellm%2Fintegrations%2FSlackAlerting%2Fslack_alerting.py",
+          "contents_url": "https://api.github.com/repos/BerriAI/litellm/contents/litellm%2Fintegrations%2FSlackAlerting%2Fslack_alerting.py?ref=a564b600f25ca59244467282a5829b3ce446c1c9",
+          "patch": "@@ -592,6 +592,13 @@ async def budget_alerts(\n             _cache_key: Final = f\"budget_alerts:{event}:{_id}\"\n             result: Final = await _cache.async_get_cache(key=_cache_key)\n             if result is None:\n+                claim_count: Final = await _cache.async_increment_cache(\n+                    key=_cache_key,\n+                    value=1,\n+                    ttl=self.alerting_args.budget_alert_ttl,\n+                )\n+                if claim_count is not None and claim_count > 1:\n+                    return\n                 webhook_event = WebhookEvent(\n                     event=event,\n                     event_message=event_message,\n@@ -612,18 +619,17 @@ async def budget_alerts(\n                     alert_emails=user_info.alert_emails,\n                     max_budget_alert_emails=user_info.max_budget_alert_emails,\n                 )\n-                await self.send_alert(\n-                    message=event_message + \"\\n\\n\" + user_info_str,\n-                    level=\"High\",\n-                    alert_type=AlertType.budget_alerts,\n-                    user_info=webhook_event,\n-                    alerting_metadata={},\n-                )\n-                await _cache.async_set_cache(\n-                    key=_cache_key,\n-                    value=\"SENT\",\n-                    ttl=self.alerting_args.budget_alert_ttl,\n-                )\n+                try:\n+                    await self.send_alert(\n+                        message=event_message + \"\\n\\n\" + user_info_str,\n+                        level=\"High\",\n+                        alert_type=AlertType.budget_alerts,\n+                        user_info=webhook_event,\n+                        alerting_metadata={},\n+                    )\n+                except Exception:\n+                    await _cache.async_delete_cache(key=_cache_key)\n+                    raise\n \n             return\n         return"
+        }
+      ]
+    },
+    {
+      "number": 32409,
+      "title": "test(e2e): fill management P0 coverage gaps and reconcile registry markers",
+      "updatedAt": "2026-10-13T17:38:18Z",
+      "url": "https://github.com/BerriAI/litellm/pull/32409",
+      "files": [
+        "tests/e2e/management/management_client.py",
+        "tests/e2e/management/test_management_e2e.py",
+        "tests/e2e/models.py"
+      ],
+      "relevant_diffs": []
+    },
+    {
+      "number": 41019,
+      "title": "fix(ci): unbreak Postgres tests, TQ003 gate, and UI types sync on litellm_internal_staging",
+      "updatedAt": "2026-09-23T14:34:42Z",
+      "url": "https://github.com/BerriAI/litellm/pull/41019",
+      "files": [
+        "tests/proxy_behavior/auth/test_auth_object_prefetch.py",
+        "tests/test_litellm/llms/anthropic/experimental_pass_through/adapters/test_streaming_iterator_mid_stream_error.py",
+        "ui/litellm-dashboard/src/lib/http/schema.d.ts"
+      ],
+      "relevant_diffs": []
+    },
+    {
+      "number": 39681,
+      "title": "feat(ui): create a model access group from the budgets tab",
+      "updatedAt": "2026-10-13T18:42:40Z",
+      "url": "https://github.com/BerriAI/litellm/pull/39681",
+      "files": [
+        "ui/litellm-dashboard/src/app/(dashboard)/hooks/modelAccessGroups/useCreateModelAccessGroup.ts",
+        "ui/litellm-dashboard/src/app/(dashboard)/hooks/models/useModels.test.ts",
+        "ui/litellm-dashboard/src/app/(dashboard)/hooks/models/useModels.ts",
+        "ui/litellm-dashboard/src/app/(dashboard)/models-and-endpoints/components/AccessGroupBudgetModal.tsx",
+        "ui/litellm-dashboard/src/app/(dashboard)/models-and-endpoints/components/CreateAccessGroupModal.tsx",
+        "ui/litellm-dashboard/src/app/(dashboard)/models-and-endpoints/components/LabelWithHint.tsx",
+        "ui/litellm-dashboard/src/app/(dashboard)/models-and-endpoints/components/createAccessGroupSchema.test.ts",
+        "ui/litellm-dashboard/src/app/(dashboard)/models-and-endpoints/components/createAccessGroupSchema.ts",
+        "ui/litellm-dashboard/src/app/(dashboard)/models-and-endpoints/panels/AccessGroupBudgetsPanel.integration.test.tsx",
+        "ui/litellm-dashboard/src/app/(dashboard)/models-and-endpoints/panels/AccessGroupBudgetsPanel.tsx"
+      ],
+      "relevant_diffs": []
+    },
+    {
+      "number": 36354,
+      "title": "fix: don't raise KeyError: 'token' on budget alerts for JWT-authenticated requests",
+      "updatedAt": "2026-10-24T17:36:48Z",
+      "url": "https://github.com/BerriAI/litellm/pull/36354",
+      "files": [
+        "CLAUDE.md",
+        "enterprise/litellm_enterprise/proxy/common_utils/check_batch_cost.py",
+        "enterprise/litellm_enterprise/proxy/hooks/managed_files.py",
+        "litellm-proxy-extras/litellm_proxy_extras/migrations/20260730000000_add_api_key_and_request_tags_to_managed_object_table/migration.sql",
+        "litellm-proxy-extras/litellm_proxy_extras/schema.prisma",
+        "litellm/integrations/SlackAlerting/slack_alerting.py",
+        "litellm/proxy/hooks/proxy_track_cost_callback.py",
+        "litellm/proxy/management_endpoints/management_v1/common.py",
+        "litellm/proxy/openai_files_endpoints/storage_backend_service.py",
+        "litellm/proxy/pass_through_endpoints/llm_provider_handlers/vertex_passthrough_logging_handler.py",
+        "litellm/proxy/schema.prisma",
+        "litellm/proxy/utils.py",
+        "schema.prisma",
+        "tests/enterprise/litellm_enterprise/proxy/hooks/test_managed_files.py",
+        "tests/proxy_unit_tests/test_check_batch_cost.py",
+        "tests/test_litellm/enterprise/proxy/test_batch_update_db_managed_output_file_id.py",
+        "tests/test_litellm/enterprise/proxy/test_managed_files_hook.py",
+        "tests/test_litellm/integrations/SlackAlerting/test_slack_alerting_user_info_str.py",
+        "tests/test_litellm/proxy/hooks/test_proxy_track_cost_callback.py",
+        "tests/test_litellm/proxy/management_endpoints/management_v1/test_common.py",
+        "tests/test_litellm/proxy/openai_files_endpoint/test_storage_backend_service.py",
+        "tests/test_litellm/proxy/pass_through_endpoints/test_vertex_ai_batch_passthrough.py",
+        "tests/test_litellm/proxy/utils/proxy_logging/test_lifecycle.py"
+      ],
+      "relevant_diffs": [
+        {
+          "sha": "a6fd73805422ff3bbb0e1171413df0ec2b3f7979",
+          "filename": "litellm/integrations/SlackAlerting/slack_alerting.py",
+          "status": "modified",
+          "additions": 4,
+          "deletions": 1,
+          "changes": 5,
+          "blob_url": "https://github.com/BerriAI/litellm/blob/b1fd01c0a1ee2a19c421001889d7c0a615b966d5/litellm%2Fintegrations%2FSlackAlerting%2Fslack_alerting.py",
+          "raw_url": "https://github.com/BerriAI/litellm/raw/b1fd01c0a1ee2a19c421001889d7c0a615b966d5/litellm%2Fintegrations%2FSlackAlerting%2Fslack_alerting.py",
+          "contents_url": "https://api.github.com/repos/BerriAI/litellm/contents/litellm%2Fintegrations%2FSlackAlerting%2Fslack_alerting.py?ref=b1fd01c0a1ee2a19c421001889d7c0a615b966d5",
+          "patch": "@@ -630,7 +630,10 @@ def _get_user_info_str(self, user_info: CallInfo) -> str:\n         Create a standard message for a budget alert\n         \"\"\"\n         _all_fields_as_dict: Final = user_info.model_dump(exclude_none=True)\n-        _all_fields_as_dict.pop(\"token\")\n+        # CallInfo.token is Optional and exclude_none=True drops it when unset, so\n+        # this must tolerate its absence. It is unset for JWT-authenticated\n+        # requests, where UserAPIKeyAuth is built without a token.\n+        _all_fields_as_dict.pop(\"token\", None)\n         msg = \"\"\n         for k, v in _all_fields_as_dict.items():\n             if isinstance(v, Litellm_EntityType):"
+        }
+      ]
+    },
+    {
+      "number": 36075,
+      "title": "feat: add Opper provider",
+      "updatedAt": "2026-10-13T18:03:56Z",
+      "url": "https://github.com/BerriAI/litellm/pull/36075",
+      "files": [
+        "litellm/__init__.py",
+        "litellm/_lazy_imports_registry.py",
+        "litellm/constants.py",
+        "litellm/exceptions.py",
+        "litellm/litellm_core_utils/get_llm_provider_logic.py",
+        "litellm/litellm_core_utils/get_supported_openai_params.py",
+        "litellm/litellm_core_utils/streaming_handler.py",
+        "litellm/llms/opper/__init__.py",
+        "litellm/llms/opper/chat/__init__.py",
+        "litellm/llms/opper/chat/transformation.py",
+        "litellm/llms/opper/common_utils.py",
+        "litellm/main.py",
+        "litellm/proxy/public_endpoints/provider_create_fields.json",
+        "litellm/types/utils.py",
+        "litellm/utils.py",
+        "provider_endpoints_support.json",
+        "tests/test_litellm/llms/opper/test_opper.py",
+        "tests/test_litellm/test_utils.py",
+        "ui/litellm-dashboard/public/assets/logos/opper.svg",
+        "ui/litellm-dashboard/src/components/provider_info_helpers.test.tsx",
+        "ui/litellm-dashboard/src/components/provider_info_helpers.tsx",
+        "ui/litellm-dashboard/src/lib/http/schema.d.ts"
+      ],
+      "relevant_diffs": []
+    }
+  ],
+  "new_unreviewed_hits": [],
+  "overlap_review": {
+    "47551": "Adds soft-budget metadata to model-access-group rows, not virtual-key spend checks",
+    "40010": "Changes model allowlists and websocket model-access-group checks, not virtual-key soft-budget spend",
+    "35814": "Propagates budget reset timestamps for max-budget email deduplication and omits them from Slack text",
+    "45581": "Claims concurrent alert cooldowns inside SlackAlerting, leaving the stale auth spend comparison unchanged",
+    "36354": "Handles an absent token while formatting JWT budget alerts, not spend selection"
+  },
+  "additional_scope_notes": {
+    "35150": "Spend-counter reseed lock registry lifetime, previously inspected as a separate cause",
+    "41105": "Callback resolution and GCS flush failures, changed paths exclude the spend reader and soft-budget auth check"
+  },
+  "overlap_review_completed_at": "2026-10-25T22:21:36.394055+00:00"
+}

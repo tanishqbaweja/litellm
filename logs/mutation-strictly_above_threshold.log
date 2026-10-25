@@ -1,0 +1,12 @@
+...F...                                                                  [100%]
+=================================== FAILURES ===================================
+_ test_soft_budget_alert_uses_current_spend_without_blocking_requests[0.0-50.0-50.0-50.0] _
+tests/unit/proxy/auth/test_auth_checks.py:1147: in test_soft_budget_alert_uses_current_spend_without_blocking_requests
+    assert [json.loads(request.content) for request in received] == expected
+E   AssertionError: assert [] == [{'alert_emai...: 'key', ...}]
+E     
+E     Right contains one more item: {'alert_emails': None, 'customer_id': None, 'event': 'soft_budget_crossed', 'event_group': 'key', ...}
+E     Use -v to get more diff
+=========================== short test summary info ============================
+FAILED tests/unit/proxy/auth/test_auth_checks.py::test_soft_budget_alert_uses_current_spend_without_blocking_requests[0.0-50.0-50.0-50.0]
+1 failed, 6 passed, 150 deselected in 0.53s

@@ -1,0 +1,61 @@
+{
+  "started_at": "2026-10-25T22:03:44.557831+00:00",
+  "original_sha256": "145693d9bfcda18ecedd9c732f62d6ef9d0b963b21638c9c537ea235e01a7e51",
+  "command": [
+    "/opt/litellm-venv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "--tb=short",
+    "tests/unit/proxy/auth/test_auth_checks.py",
+    "-k",
+    "soft_budget_alert_uses_current_spend_without_blocking_requests"
+  ],
+  "mutations": [
+    {
+      "name": "stale_auth_spend",
+      "returncode": 1,
+      "failed_tests": 4,
+      "mutant_sha256": "2ce94f7208c4859b6c097eab409ef68e43cd9792975e9026bb4138a2d958b1d2"
+    },
+    {
+      "name": "stale_alert_payload",
+      "returncode": 1,
+      "failed_tests": 2,
+      "mutant_sha256": "2e247519e881ba412aa4cd17bfd1f4f1379118b083182b9233b226552b159cd4"
+    },
+    {
+      "name": "strictly_above_threshold",
+      "returncode": 1,
+      "failed_tests": 1,
+      "mutant_sha256": "e1822c4d9b9fc23f0a8d95ab23a1d5e8c359d80b6131c207f73772ad5a325008"
+    },
+    {
+      "name": "wrong_counter_prefix",
+      "returncode": 1,
+      "failed_tests": 4,
+      "mutant_sha256": "d11c8feac458bd3e583ff429fee891d4b5657fb1737b848071d92e249ebc3bf7"
+    },
+    {
+      "name": "discard_cold_fallback",
+      "returncode": 1,
+      "failed_tests": 1,
+      "mutant_sha256": "ec2b0f9d367bd235334477fa092b107fd01ab7667e3d65c5dcc3853b5adc7507"
+    },
+    {
+      "name": "enforce_warning_as_limit",
+      "returncode": 1,
+      "failed_tests": 2,
+      "mutant_sha256": "beda5a81f2874f1b5cddfa8df2e7a45cc7d32fd76757ed2d92cefa87d2442cb0"
+    },
+    {
+      "name": "enable_zero_threshold",
+      "returncode": 1,
+      "failed_tests": 1,
+      "mutant_sha256": "362fa177e80d67e4a7504513a79e8e8f6768b870924e497cac5c56b15656cb14"
+    }
+  ],
+  "restored_exactly": true,
+  "completed_at": "2026-10-25T22:05:20.025871+00:00",
+  "restored_returncode": 0
+}

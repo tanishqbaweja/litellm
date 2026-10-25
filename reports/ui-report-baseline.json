@@ -1,0 +1,1883 @@
+{
+  "revision": "baseline",
+  "sourceSha": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "uiSourceSha": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "uiSourceUnchanged": true,
+  "output": "/qa/litellm-35800/output/playwright/visual-baseline-1792966611902",
+  "startedAt": "2026-10-25T22:16:51.917Z",
+  "provider": "Local real Qwen3.5 0.8B inference through Ollama",
+  "hostedSlackNotTested": true,
+  "credentialRevealPanelMasked": true,
+  "viewports": [
+    {
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900
+      },
+      "alias": "qa35800-desktop",
+      "startedAt": "2026-10-25T22:16:52.158Z",
+      "steps": [
+        {
+          "name": "create-form",
+          "screenshot": "desktop-create-form.png",
+          "at": "2026-10-25T22:16:55.883Z"
+        },
+        {
+          "name": "set-soft-budget",
+          "screenshot": "desktop-set-soft-budget.png",
+          "at": "2026-10-25T22:16:57.693Z"
+        },
+        {
+          "name": "soft-budget-persisted",
+          "screenshot": "desktop-soft-budget-persisted.png",
+          "at": "2026-10-25T22:16:59.320Z"
+        },
+        {
+          "name": "spend-crossed",
+          "screenshot": "desktop-spend-crossed.png",
+          "at": "2026-10-25T22:17:28.308Z"
+        },
+        {
+          "name": "raise-soft-budget",
+          "screenshot": "desktop-raise-soft-budget.png",
+          "at": "2026-10-25T22:17:29.450Z"
+        },
+        {
+          "name": "raised-budget-persisted",
+          "screenshot": "desktop-raised-budget-persisted.png",
+          "at": "2026-10-25T22:17:31.045Z"
+        },
+        {
+          "name": "deleted-key",
+          "screenshot": "desktop-deleted-key.png",
+          "at": "2026-10-25T22:17:32.402Z"
+        }
+      ],
+      "mutations": [
+        {
+          "path": "/key/generate",
+          "status": 200,
+          "request": {
+            "user_id": "default_user_id",
+            "team_id": null,
+            "key_alias": "qa35800-desktop",
+            "models": [],
+            "key_type": "llm_api",
+            "duration": null,
+            "metadata": {}
+          },
+          "response": {
+            "key_alias": "qa35800-desktop",
+            "duration": null,
+            "models": [],
+            "spend": 0,
+            "max_budget": null,
+            "user_id": "default_user_id",
+            "team_id": null,
+            "agent_id": null,
+            "max_parallel_requests": null,
+            "metadata": {},
+            "tpm_limit": null,
+            "rpm_limit": null,
+            "budget_duration": null,
+            "budget_limits": null,
+            "allowed_cache_controls": [],
+            "config": {},
+            "permissions": {},
+            "model_max_budget": {},
+            "budget_fallbacks": {},
+            "model_rpm_limit": null,
+            "model_tpm_limit": null,
+            "mcp_rpm_limit": null,
+            "tag_rpm_limit": null,
+            "guardrails": null,
+            "policies": null,
+            "prompts": null,
+            "blocked": null,
+            "aliases": {},
+            "object_permission": null,
+            "key": "<QA_KEY>",
+            "tpd_limit": null,
+            "default_estimated_output_tokens": null,
+            "default_estimated_output_tokens_per_model": null,
+            "budget_id": null,
+            "end_user_budget_id": null,
+            "tags": null,
+            "disable_global_guardrails": null,
+            "enable_prompt_caching": null,
+            "throttle_on_budget_exceeded": null,
+            "enforced_params": null,
+            "allowed_routes": [
+              "llm_api_routes"
+            ],
+            "allowed_passthrough_routes": null,
+            "denied_passthrough_routes": null,
+            "allowed_vector_store_indexes": null,
+            "rpm_limit_type": null,
+            "tpm_limit_type": null,
+            "router_settings": {
+              "routing_strategy_args": null,
+              "routing_strategy": null,
+              "routing_groups": null,
+              "retry_policy": null,
+              "model_group_retry_policy": null,
+              "model_group_affinity_config": null,
+              "allowed_fails": null,
+              "cooldown_time": null,
+              "num_retries": null,
+              "timeout": null,
+              "max_retries": null,
+              "retry_after": null,
+              "fallbacks": null,
+              "context_window_fallbacks": null,
+              "model_group_alias": {},
+              "enable_tag_filtering": null,
+              "weights": null,
+              "tag_routing_prefix": null,
+              "optional_pre_call_checks": null,
+              "fallback_on_unsupported_params": null
+            },
+            "access_group_ids": [],
+            "key_name": "sk-...dHBg",
+            "key_type": "llm_api",
+            "expires": null,
+            "token_id": "edc51dc8b569cbd16bc80e764055ff237c30ee5188ea00da83277efebb0249a9",
+            "organization_id": null,
+            "project_id": null,
+            "litellm_budget_table": null,
+            "token": "<QA_KEY>",
+            "created_by": "default_user_id",
+            "updated_by": "default_user_id",
+            "created_at": "2026-10-25T22:16:55.951000Z",
+            "updated_at": "2026-10-25T22:16:55.951000Z"
+          }
+        },
+        {
+          "path": "/key/update",
+          "status": 200,
+          "request": {
+            "key_alias": "qa35800-desktop",
+            "models": [],
+            "max_budget": null,
+            "soft_budget": 0.01,
+            "budget_duration": null,
+            "tpm_limit": null,
+            "tpm_limit_type": null,
+            "rpm_limit": null,
+            "rpm_limit_type": null,
+            "tpd_limit": null,
+            "throttle_on_budget_exceeded": false,
+            "enable_prompt_caching": false,
+            "max_parallel_requests": null,
+            "access_group_ids": [],
+            "team_id": null,
+            "metadata": {},
+            "duration": null,
+            "token": "<QA_KEY>",
+            "disabled_callbacks": [],
+            "auto_rotate": false,
+            "rotation_interval": null,
+            "tag_rpm_limit": {},
+            "key": "<QA_KEY>",
+            "object_permission": {
+              "vector_stores": [],
+              "mcp_servers": [],
+              "mcp_access_groups": [],
+              "mcp_toolsets": [],
+              "mcp_tool_permissions": {},
+              "agents": [],
+              "agent_access_groups": [],
+              "skills": []
+            }
+          },
+          "response": {
+            "key": "<QA_KEY>",
+            "token": "<QA_KEY>",
+            "key_name": "sk-...dHBg",
+            "key_alias": "qa35800-desktop",
+            "soft_budget_cooldown": false,
+            "spend": 0,
+            "total_spend": 0,
+            "expires": null,
+            "models": [],
+            "aliases": {},
+            "config": {},
+            "router_settings": {},
+            "user_id": "default_user_id",
+            "team_id": null,
+            "agent_id": null,
+            "project_id": null,
+            "permissions": {},
+            "max_parallel_requests": null,
+            "metadata": {
+              "tag_rpm_limit": {},
+              "enable_prompt_caching": false,
+              "throttle_on_budget_exceeded": false
+            },
+            "blocked": null,
+            "tpm_limit": null,
+            "rpm_limit": null,
+            "tpd_limit": null,
+            "max_budget": null,
+            "budget_duration": null,
+            "budget_reset_at": null,
+            "allowed_cache_controls": [],
+            "allowed_routes": [
+              "llm_api_routes"
+            ],
+            "key_type": "llm_api",
+            "policies": [],
+            "access_group_ids": [],
+            "model_spend": {},
+            "model_max_budget": {},
+            "budget_fallbacks": {},
+            "budget_id": "3f9b6deb-c880-4226-a673-e946e82f617b",
+            "organization_id": null,
+            "object_permission_id": "43a3019f-a7e4-47db-9bea-de6b423205b8",
+            "created_at": "2026-10-25T22:16:55.951000+00:00",
+            "created_by": "default_user_id",
+            "updated_at": "2026-10-25T22:16:57.771000+00:00",
+            "updated_by": "default_user_id",
+            "settings_updated_at": "2026-10-25T22:16:57.774000+00:00",
+            "last_active": null,
+            "rotation_count": 0,
+            "auto_rotate": false,
+            "rotation_interval": null,
+            "last_rotation_at": null,
+            "key_rotation_at": null,
+            "budget_limits": null,
+            "litellm_budget_table": null,
+            "litellm_organization_table": null,
+            "litellm_project_table": null,
+            "object_permission": {
+              "object_permission_id": "43a3019f-a7e4-47db-9bea-de6b423205b8",
+              "mcp_servers": [],
+              "mcp_access_groups": [],
+              "mcp_tool_permissions": {},
+              "vector_stores": [],
+              "agents": [],
+              "agent_access_groups": [],
+              "models": [],
+              "blocked_tools": [],
+              "mcp_toolsets": [],
+              "search_tools": [],
+              "mcp_tool_search_enabled": null,
+              "skills": [],
+              "teams": null,
+              "projects": null,
+              "verification_tokens": null,
+              "organizations": null,
+              "users": null,
+              "end_users": null,
+              "agents_table": null
+            },
+            "jwt_key_mappings": null
+          }
+        },
+        {
+          "path": "/key/update",
+          "status": 200,
+          "request": {
+            "key_alias": "qa35800-desktop",
+            "models": [],
+            "max_budget": null,
+            "soft_budget": 1000,
+            "budget_duration": null,
+            "tpm_limit": null,
+            "tpm_limit_type": null,
+            "rpm_limit": null,
+            "rpm_limit_type": null,
+            "tpd_limit": null,
+            "throttle_on_budget_exceeded": false,
+            "enable_prompt_caching": false,
+            "max_parallel_requests": null,
+            "access_group_ids": [],
+            "team_id": null,
+            "metadata": {
+              "tag_rpm_limit": {},
+              "enable_prompt_caching": false,
+              "throttle_on_budget_exceeded": false
+            },
+            "duration": null,
+            "token": "<QA_KEY>",
+            "disabled_callbacks": [],
+            "auto_rotate": false,
+            "rotation_interval": null,
+            "tag_rpm_limit": {},
+            "key": "<QA_KEY>",
+            "object_permission": {
+              "object_permission_id": "43a3019f-a7e4-47db-9bea-de6b423205b8",
+              "mcp_servers": [],
+              "mcp_access_groups": [],
+              "mcp_tool_permissions": {},
+              "vector_stores": [],
+              "agents": [],
+              "agent_access_groups": [],
+              "models": [],
+              "mcp_toolsets": [],
+              "blocked_tools": [],
+              "search_tools": [],
+              "mcp_tool_search_enabled": null,
+              "skills": []
+            }
+          },
+          "response": {
+            "key": "<QA_KEY>",
+            "token": "<QA_KEY>",
+            "key_name": "sk-...dHBg",
+            "key_alias": "qa35800-desktop",
+            "soft_budget_cooldown": false,
+            "spend": 0.117,
+            "total_spend": 0.117,
+            "expires": null,
+            "models": [],
+            "aliases": {},
+            "config": {},
+            "router_settings": {},
+            "user_id": "default_user_id",
+            "team_id": null,
+            "agent_id": null,
+            "project_id": null,
+            "permissions": {},
+            "max_parallel_requests": null,
+            "metadata": {
+              "tag_rpm_limit": {},
+              "enable_prompt_caching": false,
+              "throttle_on_budget_exceeded": false
+            },
+            "blocked": null,
+            "tpm_limit": null,
+            "rpm_limit": null,
+            "tpd_limit": null,
+            "max_budget": null,
+            "budget_duration": null,
+            "budget_reset_at": null,
+            "allowed_cache_controls": [],
+            "allowed_routes": [
+              "llm_api_routes"
+            ],
+            "key_type": "llm_api",
+            "policies": [],
+            "access_group_ids": [],
+            "model_spend": {},
+            "model_max_budget": {},
+            "budget_fallbacks": {},
+            "budget_id": "3f9b6deb-c880-4226-a673-e946e82f617b",
+            "organization_id": null,
+            "object_permission_id": "43a3019f-a7e4-47db-9bea-de6b423205b8",
+            "created_at": "2026-10-25T22:16:55.951000+00:00",
+            "created_by": "default_user_id",
+            "updated_at": "2026-10-25T22:17:29.532000+00:00",
+            "updated_by": "default_user_id",
+            "settings_updated_at": "2026-10-25T22:17:29.535000+00:00",
+            "last_active": "2026-10-25T22:17:10.197000+00:00",
+            "rotation_count": 0,
+            "auto_rotate": false,
+            "rotation_interval": null,
+            "last_rotation_at": null,
+            "key_rotation_at": null,
+            "budget_limits": null,
+            "litellm_budget_table": null,
+            "litellm_organization_table": null,
+            "litellm_project_table": null,
+            "object_permission": {
+              "object_permission_id": "43a3019f-a7e4-47db-9bea-de6b423205b8",
+              "mcp_servers": [],
+              "mcp_access_groups": [],
+              "mcp_tool_permissions": {},
+              "vector_stores": [],
+              "agents": [],
+              "agent_access_groups": [],
+              "models": [],
+              "blocked_tools": [],
+              "mcp_toolsets": [],
+              "search_tools": [],
+              "mcp_tool_search_enabled": null,
+              "skills": [],
+              "teams": null,
+              "projects": null,
+              "verification_tokens": null,
+              "organizations": null,
+              "users": null,
+              "end_users": null,
+              "agents_table": null
+            },
+            "jwt_key_mappings": null
+          }
+        },
+        {
+          "path": "/key/delete",
+          "status": 200,
+          "request": {
+            "keys": [
+              "edc51dc8b569cbd16bc80e764055ff237c30ee5188ea00da83277efebb0249a9"
+            ]
+          },
+          "response": {
+            "deleted_keys": [
+              "edc51dc8b569cbd16bc80e764055ff237c30ee5188ea00da83277efebb0249a9"
+            ]
+          }
+        }
+      ],
+      "readbacks": [
+        {
+          "alias": "qa35800-desktop",
+          "spend": 0,
+          "softBudget": null,
+          "maxBudget": null,
+          "teamId": null,
+          "models": [],
+          "rpmLimit": null,
+          "tpmLimit": null
+        },
+        {
+          "alias": "qa35800-desktop",
+          "spend": 0,
+          "softBudget": 0.01,
+          "maxBudget": null,
+          "teamId": null,
+          "models": [],
+          "rpmLimit": null,
+          "tpmLimit": null
+        },
+        {
+          "alias": "qa35800-desktop",
+          "spend": 0,
+          "softBudget": 0.01,
+          "maxBudget": null,
+          "teamId": null,
+          "models": [],
+          "rpmLimit": null,
+          "tpmLimit": null
+        },
+        {
+          "alias": "qa35800-desktop",
+          "spend": 0,
+          "softBudget": 0.01,
+          "maxBudget": null,
+          "teamId": null,
+          "models": [],
+          "rpmLimit": null,
+          "tpmLimit": null
+        },
+        {
+          "alias": "qa35800-desktop",
+          "spend": 0,
+          "softBudget": 0.01,
+          "maxBudget": null,
+          "teamId": null,
+          "models": [],
+          "rpmLimit": null,
+          "tpmLimit": null
+        },
+        {
+          "alias": "qa35800-desktop",
+          "spend": 0,
+          "softBudget": 0.01,
+          "maxBudget": null,
+          "teamId": null,
+          "models": [],
+          "rpmLimit": null,
+          "tpmLimit": null
+        },
+        {
+          "alias": "qa35800-desktop",
+          "spend": 0,
+          "softBudget": 0.01,
+          "maxBudget": null,
+          "teamId": null,
+          "models": [],
+          "rpmLimit": null,
+          "tpmLimit": null
+        },
+        {
+          "alias": "qa35800-desktop",
+          "spend": 0,
+          "softBudget": 0.01,
+          "maxBudget": null,
+          "teamId": null,
+          "models": [],
+          "rpmLimit": null,
+          "tpmLimit": null
+        },
+        {
+          "alias": "qa35800-desktop",
+          "spend": 0,
+          "softBudget": 0.01,
+          "maxBudget": null,
+          "teamId": null,
+          "models": [],
+          "rpmLimit": null,
+          "tpmLimit": null
+        },
+        {
+          "alias": "qa35800-desktop",
+          "spend": 0.039,
+          "softBudget": 0.01,
+          "maxBudget": null,
+          "teamId": null,
+          "models": [],
+          "rpmLimit": null,
+          "tpmLimit": null
+        },
+        {
+          "alias": "qa35800-desktop",
+          "spend": 0.039,
+          "softBudget": 0.01,
+          "maxBudget": null,
+          "teamId": null,
+          "models": [],
+          "rpmLimit": null,
+          "tpmLimit": null
+        },
+        {
+          "alias": "qa35800-desktop",
+          "spend": 0.039,
+          "softBudget": 0.01,
+          "maxBudget": null,
+          "teamId": null,
+          "models": [],
+          "rpmLimit": null,
+          "tpmLimit": null
+        },
+        {
+          "alias": "qa35800-desktop",
+          "spend": 0.039,
+          "softBudget": 0.01,
+          "maxBudget": null,
+          "teamId": null,
+          "models": [],
+          "rpmLimit": null,
+          "tpmLimit": null
+        },
+        {
+          "alias": "qa35800-desktop",
+          "spend": 0.039,
+          "softBudget": 0.01,
+          "maxBudget": null,
+          "teamId": null,
+          "models": [],
+          "rpmLimit": null,
+          "tpmLimit": null
+        },
+        {
+          "alias": "qa35800-desktop",
+          "spend": 0.039,
+          "softBudget": 0.01,
+          "maxBudget": null,
+          "teamId": null,
+          "models": [],
+          "rpmLimit": null,
+          "tpmLimit": null
+        },
+        {
+          "alias": "qa35800-desktop",
+          "spend": 0.039,
+          "softBudget": 0.01,
+          "maxBudget": null,
+          "teamId": null,
+          "models": [],
+          "rpmLimit": null,
+          "tpmLimit": null
+        },
+        {
+          "alias": "qa35800-desktop",
+          "spend": 0.039,
+          "softBudget": 0.01,
+          "maxBudget": null,
+          "teamId": null,
+          "models": [],
+          "rpmLimit": null,
+          "tpmLimit": null
+        },
+        {
+          "alias": "qa35800-desktop",
+          "spend": 0.039,
+          "softBudget": 0.01,
+          "maxBudget": null,
+          "teamId": null,
+          "models": [],
+          "rpmLimit": null,
+          "tpmLimit": null
+        },
+        {
+          "alias": "qa35800-desktop",
+          "spend": 0.117,
+          "softBudget": 0.01,
+          "maxBudget": null,
+          "teamId": null,
+          "models": [],
+          "rpmLimit": null,
+          "tpmLimit": null
+        },
+        {
+          "alias": "qa35800-desktop",
+          "spend": 0.117,
+          "softBudget": 0.01,
+          "maxBudget": null,
+          "teamId": null,
+          "models": [],
+          "rpmLimit": null,
+          "tpmLimit": null
+        },
+        {
+          "alias": "qa35800-desktop",
+          "spend": 0.117,
+          "softBudget": 1000,
+          "maxBudget": null,
+          "teamId": null,
+          "models": [],
+          "rpmLimit": null,
+          "tpmLimit": null
+        }
+      ],
+      "inferenceCalls": [
+        {
+          "status": 200,
+          "usage": {
+            "completion_tokens": 8,
+            "prompt_tokens": 23,
+            "total_tokens": 31,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "cost": 0.039
+        },
+        {
+          "status": 200,
+          "usage": {
+            "completion_tokens": 8,
+            "prompt_tokens": 23,
+            "total_tokens": 31,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "cost": 0.039
+        },
+        {
+          "status": 200,
+          "usage": {
+            "completion_tokens": 8,
+            "prompt_tokens": 23,
+            "total_tokens": 31,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "cost": 0.039
+        }
+      ],
+      "pageErrors": [],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      ],
+      "failedResponses": [
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/api-keys/__next.!KGRhc2hib2FyZCk.api-keys.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/playground/__next.!KGRhc2hib2FyZCk.playground.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/models-and-endpoints/__next.!KGRhc2hib2FyZCk.models-and-endpoints.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/mcp-servers/__next.!KGRhc2hib2FyZCk.mcp-servers.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/skills/__next.!KGRhc2hib2FyZCk.skills.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/guardrails/__next.!KGRhc2hib2FyZCk.guardrails.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/policies/__next.!KGRhc2hib2FyZCk.policies.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/usage/__next.!KGRhc2hib2FyZCk.usage.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/model-insights/__next.!KGRhc2hib2FyZCk.model-insights.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/cost-optimization/__next.!KGRhc2hib2FyZCk.cost-optimization.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/logs/__next.!KGRhc2hib2FyZCk.logs.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/lens/__next.!KGRhc2hib2FyZCk.lens.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/guardrails-monitor/__next.!KGRhc2hib2FyZCk.guardrails-monitor.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/teams/__next.!KGRhc2hib2FyZCk.teams.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/users/__next.!KGRhc2hib2FyZCk.users.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/api-keys/__next.!KGRhc2hib2FyZCk.api-keys.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/playground/__next.!KGRhc2hib2FyZCk.playground.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/mcp-servers/__next.!KGRhc2hib2FyZCk.mcp-servers.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/skills/__next.!KGRhc2hib2FyZCk.skills.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/models-and-endpoints/__next.!KGRhc2hib2FyZCk.models-and-endpoints.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/guardrails/__next.!KGRhc2hib2FyZCk.guardrails.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/policies/__next.!KGRhc2hib2FyZCk.policies.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/usage/__next.!KGRhc2hib2FyZCk.usage.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/model-insights/__next.!KGRhc2hib2FyZCk.model-insights.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/cost-optimization/__next.!KGRhc2hib2FyZCk.cost-optimization.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/logs/__next.!KGRhc2hib2FyZCk.logs.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/lens/__next.!KGRhc2hib2FyZCk.lens.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/guardrails-monitor/__next.!KGRhc2hib2FyZCk.guardrails-monitor.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/teams/__next.!KGRhc2hib2FyZCk.teams.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/users/__next.!KGRhc2hib2FyZCk.users.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/api-keys/__next.!KGRhc2hib2FyZCk.api-keys.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/models-and-endpoints/__next.!KGRhc2hib2FyZCk.models-and-endpoints.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/playground/__next.!KGRhc2hib2FyZCk.playground.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/skills/__next.!KGRhc2hib2FyZCk.skills.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/mcp-servers/__next.!KGRhc2hib2FyZCk.mcp-servers.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/guardrails/__next.!KGRhc2hib2FyZCk.guardrails.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/policies/__next.!KGRhc2hib2FyZCk.policies.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/usage/__next.!KGRhc2hib2FyZCk.usage.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/cost-optimization/__next.!KGRhc2hib2FyZCk.cost-optimization.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/logs/__next.!KGRhc2hib2FyZCk.logs.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/model-insights/__next.!KGRhc2hib2FyZCk.model-insights.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/users/__next.!KGRhc2hib2FyZCk.users.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/guardrails-monitor/__next.!KGRhc2hib2FyZCk.guardrails-monitor.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/lens/__next.!KGRhc2hib2FyZCk.lens.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/teams/__next.!KGRhc2hib2FyZCk.teams.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/api-keys/__next.!KGRhc2hib2FyZCk.api-keys.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/playground/__next.!KGRhc2hib2FyZCk.playground.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/models-and-endpoints/__next.!KGRhc2hib2FyZCk.models-and-endpoints.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/mcp-servers/__next.!KGRhc2hib2FyZCk.mcp-servers.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/skills/__next.!KGRhc2hib2FyZCk.skills.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/guardrails/__next.!KGRhc2hib2FyZCk.guardrails.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/policies/__next.!KGRhc2hib2FyZCk.policies.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/usage/__next.!KGRhc2hib2FyZCk.usage.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/model-insights/__next.!KGRhc2hib2FyZCk.model-insights.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/logs/__next.!KGRhc2hib2FyZCk.logs.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/cost-optimization/__next.!KGRhc2hib2FyZCk.cost-optimization.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/lens/__next.!KGRhc2hib2FyZCk.lens.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/guardrails-monitor/__next.!KGRhc2hib2FyZCk.guardrails-monitor.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/teams/__next.!KGRhc2hib2FyZCk.teams.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/users/__next.!KGRhc2hib2FyZCk.users.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/api-keys/__next.!KGRhc2hib2FyZCk.api-keys.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/playground/__next.!KGRhc2hib2FyZCk.playground.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/models-and-endpoints/__next.!KGRhc2hib2FyZCk.models-and-endpoints.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/skills/__next.!KGRhc2hib2FyZCk.skills.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/mcp-servers/__next.!KGRhc2hib2FyZCk.mcp-servers.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/policies/__next.!KGRhc2hib2FyZCk.policies.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/guardrails/__next.!KGRhc2hib2FyZCk.guardrails.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/usage/__next.!KGRhc2hib2FyZCk.usage.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/model-insights/__next.!KGRhc2hib2FyZCk.model-insights.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/cost-optimization/__next.!KGRhc2hib2FyZCk.cost-optimization.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/lens/__next.!KGRhc2hib2FyZCk.lens.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/logs/__next.!KGRhc2hib2FyZCk.logs.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/guardrails-monitor/__next.!KGRhc2hib2FyZCk.guardrails-monitor.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/teams/__next.!KGRhc2hib2FyZCk.teams.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/users/__next.!KGRhc2hib2FyZCk.users.__PAGE__.txt",
+          "status": 404
+        }
+      ],
+      "alerts": {
+        "count": 0,
+        "messages": []
+      },
+      "revokedKeyStatus": 401,
+      "result": "passed",
+      "completedAt": "2026-10-25T22:17:32.430Z",
+      "video": "/qa/litellm-35800/output/playwright/visual-baseline-1792966611902/desktop.webm"
+    },
+    {
+      "viewport": {
+        "name": "phone",
+        "width": 390,
+        "height": 844
+      },
+      "alias": "qa35800-phone",
+      "startedAt": "2026-10-25T22:17:32.730Z",
+      "steps": [
+        {
+          "name": "create-form",
+          "screenshot": "phone-create-form.png",
+          "at": "2026-10-25T22:17:35.278Z"
+        },
+        {
+          "name": "set-soft-budget",
+          "screenshot": "phone-set-soft-budget.png",
+          "at": "2026-10-25T22:17:36.823Z"
+        },
+        {
+          "name": "soft-budget-persisted",
+          "screenshot": "phone-soft-budget-persisted.png",
+          "at": "2026-10-25T22:17:38.392Z"
+        },
+        {
+          "name": "spend-crossed",
+          "screenshot": "phone-spend-crossed.png",
+          "at": "2026-10-25T22:18:03.676Z"
+        },
+        {
+          "name": "raise-soft-budget",
+          "screenshot": "phone-raise-soft-budget.png",
+          "at": "2026-10-25T22:18:04.671Z"
+        },
+        {
+          "name": "raised-budget-persisted",
+          "screenshot": "phone-raised-budget-persisted.png",
+          "at": "2026-10-25T22:18:06.122Z"
+        },
+        {
+          "name": "deleted-key",
+          "screenshot": "phone-deleted-key.png",
+          "at": "2026-10-25T22:18:07.438Z"
+        }
+      ],
+      "mutations": [
+        {
+          "path": "/key/generate",
+          "status": 200,
+          "request": {
+            "user_id": "default_user_id",
+            "team_id": null,
+            "key_alias": "qa35800-phone",
+            "models": [],
+            "key_type": "llm_api",
+            "duration": null,
+            "metadata": {}
+          },
+          "response": {
+            "key_alias": "qa35800-phone",
+            "duration": null,
+            "models": [],
+            "spend": 0,
+            "max_budget": null,
+            "user_id": "default_user_id",
+            "team_id": null,
+            "agent_id": null,
+            "max_parallel_requests": null,
+            "metadata": {},
+            "tpm_limit": null,
+            "rpm_limit": null,
+            "budget_duration": null,
+            "budget_limits": null,
+            "allowed_cache_controls": [],
+            "config": {},
+            "permissions": {},
+            "model_max_budget": {},
+            "budget_fallbacks": {},
+            "model_rpm_limit": null,
+            "model_tpm_limit": null,
+            "mcp_rpm_limit": null,
+            "tag_rpm_limit": null,
+            "guardrails": null,
+            "policies": null,
+            "prompts": null,
+            "blocked": null,
+            "aliases": {},
+            "object_permission": null,
+            "key": "<QA_KEY>",
+            "tpd_limit": null,
+            "default_estimated_output_tokens": null,
+            "default_estimated_output_tokens_per_model": null,
+            "budget_id": null,
+            "end_user_budget_id": null,
+            "tags": null,
+            "disable_global_guardrails": null,
+            "enable_prompt_caching": null,
+            "throttle_on_budget_exceeded": null,
+            "enforced_params": null,
+            "allowed_routes": [
+              "llm_api_routes"
+            ],
+            "allowed_passthrough_routes": null,
+            "denied_passthrough_routes": null,
+            "allowed_vector_store_indexes": null,
+            "rpm_limit_type": null,
+            "tpm_limit_type": null,
+            "router_settings": {
+              "routing_strategy_args": null,
+              "routing_strategy": null,
+              "routing_groups": null,
+              "retry_policy": null,
+              "model_group_retry_policy": null,
+              "model_group_affinity_config": null,
+              "allowed_fails": null,
+              "cooldown_time": null,
+              "num_retries": null,
+              "timeout": null,
+              "max_retries": null,
+              "retry_after": null,
+              "fallbacks": null,
+              "context_window_fallbacks": null,
+              "model_group_alias": {},
+              "enable_tag_filtering": null,
+              "weights": null,
+              "tag_routing_prefix": null,
+              "optional_pre_call_checks": null,
+              "fallback_on_unsupported_params": null
+            },
+            "access_group_ids": [],
+            "key_name": "sk-...KaAg",
+            "key_type": "llm_api",
+            "expires": null,
+            "token_id": "7626c1b504e004bae529f0bcf5b18fc830b04c06182d400d390046d4950c8f2b",
+            "organization_id": null,
+            "project_id": null,
+            "litellm_budget_table": null,
+            "token": "<QA_KEY>",
+            "created_by": "default_user_id",
+            "updated_by": "default_user_id",
+            "created_at": "2026-10-25T22:17:35.348000Z",
+            "updated_at": "2026-10-25T22:17:35.348000Z"
+          }
+        },
+        {
+          "path": "/key/update",
+          "status": 200,
+          "request": {
+            "key_alias": "qa35800-phone",
+            "models": [],
+            "max_budget": null,
+            "soft_budget": 0.01,
+            "budget_duration": null,
+            "tpm_limit": null,
+            "tpm_limit_type": null,
+            "rpm_limit": null,
+            "rpm_limit_type": null,
+            "tpd_limit": null,
+            "throttle_on_budget_exceeded": false,
+            "enable_prompt_caching": false,
+            "max_parallel_requests": null,
+            "access_group_ids": [],
+            "team_id": null,
+            "metadata": {},
+            "duration": null,
+            "token": "<QA_KEY>",
+            "disabled_callbacks": [],
+            "auto_rotate": false,
+            "rotation_interval": null,
+            "tag_rpm_limit": {},
+            "key": "<QA_KEY>",
+            "object_permission": {
+              "vector_stores": [],
+              "mcp_servers": [],
+              "mcp_access_groups": [],
+              "mcp_toolsets": [],
+              "mcp_tool_permissions": {},
+              "agents": [],
+              "agent_access_groups": [],
+              "skills": []
+            }
+          },
+          "response": {
+            "key": "<QA_KEY>",
+            "token": "<QA_KEY>",
+            "key_name": "sk-...KaAg",
+            "key_alias": "qa35800-phone",
+            "soft_budget_cooldown": false,
+            "spend": 0,
+            "total_spend": 0,
+            "expires": null,
+            "models": [],
+            "aliases": {},
+            "config": {},
+            "router_settings": {},
+            "user_id": "default_user_id",
+            "team_id": null,
+            "agent_id": null,
+            "project_id": null,
+            "permissions": {},
+            "max_parallel_requests": null,
+            "metadata": {
+              "tag_rpm_limit": {},
+              "enable_prompt_caching": false,
+              "throttle_on_budget_exceeded": false
+            },
+            "blocked": null,
+            "tpm_limit": null,
+            "rpm_limit": null,
+            "tpd_limit": null,
+            "max_budget": null,
+            "budget_duration": null,
+            "budget_reset_at": null,
+            "allowed_cache_controls": [],
+            "allowed_routes": [
+              "llm_api_routes"
+            ],
+            "key_type": "llm_api",
+            "policies": [],
+            "access_group_ids": [],
+            "model_spend": {},
+            "model_max_budget": {},
+            "budget_fallbacks": {},
+            "budget_id": "5f91eb46-abce-430b-b9be-63046b4e1971",
+            "organization_id": null,
+            "object_permission_id": "96ad54da-fb65-406e-962f-b8adc537ba5a",
+            "created_at": "2026-10-25T22:17:35.348000+00:00",
+            "created_by": "default_user_id",
+            "updated_at": "2026-10-25T22:17:36.907000+00:00",
+            "updated_by": "default_user_id",
+            "settings_updated_at": "2026-10-25T22:17:36.910000+00:00",
+            "last_active": null,
+            "rotation_count": 0,
+            "auto_rotate": false,
+            "rotation_interval": null,
+            "last_rotation_at": null,
+            "key_rotation_at": null,
+            "budget_limits": null,
+            "litellm_budget_table": null,
+            "litellm_organization_table": null,
+            "litellm_project_table": null,
+            "object_permission": {
+              "object_permission_id": "96ad54da-fb65-406e-962f-b8adc537ba5a",
+              "mcp_servers": [],
+              "mcp_access_groups": [],
+              "mcp_tool_permissions": {},
+              "vector_stores": [],
+              "agents": [],
+              "agent_access_groups": [],
+              "models": [],
+              "blocked_tools": [],
+              "mcp_toolsets": [],
+              "search_tools": [],
+              "mcp_tool_search_enabled": null,
+              "skills": [],
+              "teams": null,
+              "projects": null,
+              "verification_tokens": null,
+              "organizations": null,
+              "users": null,
+              "end_users": null,
+              "agents_table": null
+            },
+            "jwt_key_mappings": null
+          }
+        },
+        {
+          "path": "/key/update",
+          "status": 200,
+          "request": {
+            "key_alias": "qa35800-phone",
+            "models": [],
+            "max_budget": null,
+            "soft_budget": 1000,
+            "budget_duration": null,
+            "tpm_limit": null,
+            "tpm_limit_type": null,
+            "rpm_limit": null,
+            "rpm_limit_type": null,
+            "tpd_limit": null,
+            "throttle_on_budget_exceeded": false,
+            "enable_prompt_caching": false,
+            "max_parallel_requests": null,
+            "access_group_ids": [],
+            "team_id": null,
+            "metadata": {
+              "tag_rpm_limit": {},
+              "enable_prompt_caching": false,
+              "throttle_on_budget_exceeded": false
+            },
+            "duration": null,
+            "token": "<QA_KEY>",
+            "disabled_callbacks": [],
+            "auto_rotate": false,
+            "rotation_interval": null,
+            "tag_rpm_limit": {},
+            "key": "<QA_KEY>",
+            "object_permission": {
+              "object_permission_id": "96ad54da-fb65-406e-962f-b8adc537ba5a",
+              "mcp_servers": [],
+              "mcp_access_groups": [],
+              "mcp_tool_permissions": {},
+              "vector_stores": [],
+              "agents": [],
+              "agent_access_groups": [],
+              "models": [],
+              "mcp_toolsets": [],
+              "blocked_tools": [],
+              "search_tools": [],
+              "mcp_tool_search_enabled": null,
+              "skills": []
+            }
+          },
+          "response": {
+            "key": "<QA_KEY>",
+            "token": "<QA_KEY>",
+            "key_name": "sk-...KaAg",
+            "key_alias": "qa35800-phone",
+            "soft_budget_cooldown": false,
+            "spend": 0.117,
+            "total_spend": 0.117,
+            "expires": null,
+            "models": [],
+            "aliases": {},
+            "config": {},
+            "router_settings": {},
+            "user_id": "default_user_id",
+            "team_id": null,
+            "agent_id": null,
+            "project_id": null,
+            "permissions": {},
+            "max_parallel_requests": null,
+            "metadata": {
+              "tag_rpm_limit": {},
+              "enable_prompt_caching": false,
+              "throttle_on_budget_exceeded": false
+            },
+            "blocked": null,
+            "tpm_limit": null,
+            "rpm_limit": null,
+            "tpd_limit": null,
+            "max_budget": null,
+            "budget_duration": null,
+            "budget_reset_at": null,
+            "allowed_cache_controls": [],
+            "allowed_routes": [
+              "llm_api_routes"
+            ],
+            "key_type": "llm_api",
+            "policies": [],
+            "access_group_ids": [],
+            "model_spend": {},
+            "model_max_budget": {},
+            "budget_fallbacks": {},
+            "budget_id": "5f91eb46-abce-430b-b9be-63046b4e1971",
+            "organization_id": null,
+            "object_permission_id": "96ad54da-fb65-406e-962f-b8adc537ba5a",
+            "created_at": "2026-10-25T22:17:35.348000+00:00",
+            "created_by": "default_user_id",
+            "updated_at": "2026-10-25T22:18:04.752000+00:00",
+            "updated_by": "default_user_id",
+            "settings_updated_at": "2026-10-25T22:18:04.755000+00:00",
+            "last_active": "2026-10-25T22:17:46.198000+00:00",
+            "rotation_count": 0,
+            "auto_rotate": false,
+            "rotation_interval": null,
+            "last_rotation_at": null,
+            "key_rotation_at": null,
+            "budget_limits": null,
+            "litellm_budget_table": null,
+            "litellm_organization_table": null,
+            "litellm_project_table": null,
+            "object_permission": {
+              "object_permission_id": "96ad54da-fb65-406e-962f-b8adc537ba5a",
+              "mcp_servers": [],
+              "mcp_access_groups": [],
+              "mcp_tool_permissions": {},
+              "vector_stores": [],
+              "agents": [],
+              "agent_access_groups": [],
+              "models": [],
+              "blocked_tools": [],
+              "mcp_toolsets": [],
+              "search_tools": [],
+              "mcp_tool_search_enabled": null,
+              "skills": [],
+              "teams": null,
+              "projects": null,
+              "verification_tokens": null,
+              "organizations": null,
+              "users": null,
+              "end_users": null,
+              "agents_table": null
+            },
+            "jwt_key_mappings": null
+          }
+        },
+        {
+          "path": "/key/delete",
+          "status": 200,
+          "request": {
+            "keys": [
+              "7626c1b504e004bae529f0bcf5b18fc830b04c06182d400d390046d4950c8f2b"
+            ]
+          },
+          "response": {
+            "deleted_keys": [
+              "7626c1b504e004bae529f0bcf5b18fc830b04c06182d400d390046d4950c8f2b"
+            ]
+          }
+        }
+      ],
+      "readbacks": [
+        {
+          "alias": "qa35800-phone",
+          "spend": 0,
+          "softBudget": null,
+          "maxBudget": null,
+          "teamId": null,
+          "models": [],
+          "rpmLimit": null,
+          "tpmLimit": null
+        },
+        {
+          "alias": "qa35800-phone",
+          "spend": 0,
+          "softBudget": 0.01,
+          "maxBudget": null,
+          "teamId": null,
+          "models": [],
+          "rpmLimit": null,
+          "tpmLimit": null
+        },
+        {
+          "alias": "qa35800-phone",
+          "spend": 0,
+          "softBudget": 0.01,
+          "maxBudget": null,
+          "teamId": null,
+          "models": [],
+          "rpmLimit": null,
+          "tpmLimit": null
+        },
+        {
+          "alias": "qa35800-phone",
+          "spend": 0,
+          "softBudget": 0.01,
+          "maxBudget": null,
+          "teamId": null,
+          "models": [],
+          "rpmLimit": null,
+          "tpmLimit": null
+        },
+        {
+          "alias": "qa35800-phone",
+          "spend": 0,
+          "softBudget": 0.01,
+          "maxBudget": null,
+          "teamId": null,
+          "models": [],
+          "rpmLimit": null,
+          "tpmLimit": null
+        },
+        {
+          "alias": "qa35800-phone",
+          "spend": 0.039,
+          "softBudget": 0.01,
+          "maxBudget": null,
+          "teamId": null,
+          "models": [],
+          "rpmLimit": null,
+          "tpmLimit": null
+        },
+        {
+          "alias": "qa35800-phone",
+          "spend": 0.039,
+          "softBudget": 0.01,
+          "maxBudget": null,
+          "teamId": null,
+          "models": [],
+          "rpmLimit": null,
+          "tpmLimit": null
+        },
+        {
+          "alias": "qa35800-phone",
+          "spend": 0.039,
+          "softBudget": 0.01,
+          "maxBudget": null,
+          "teamId": null,
+          "models": [],
+          "rpmLimit": null,
+          "tpmLimit": null
+        },
+        {
+          "alias": "qa35800-phone",
+          "spend": 0.039,
+          "softBudget": 0.01,
+          "maxBudget": null,
+          "teamId": null,
+          "models": [],
+          "rpmLimit": null,
+          "tpmLimit": null
+        },
+        {
+          "alias": "qa35800-phone",
+          "spend": 0.039,
+          "softBudget": 0.01,
+          "maxBudget": null,
+          "teamId": null,
+          "models": [],
+          "rpmLimit": null,
+          "tpmLimit": null
+        },
+        {
+          "alias": "qa35800-phone",
+          "spend": 0.039,
+          "softBudget": 0.01,
+          "maxBudget": null,
+          "teamId": null,
+          "models": [],
+          "rpmLimit": null,
+          "tpmLimit": null
+        },
+        {
+          "alias": "qa35800-phone",
+          "spend": 0.039,
+          "softBudget": 0.01,
+          "maxBudget": null,
+          "teamId": null,
+          "models": [],
+          "rpmLimit": null,
+          "tpmLimit": null
+        },
+        {
+          "alias": "qa35800-phone",
+          "spend": 0.039,
+          "softBudget": 0.01,
+          "maxBudget": null,
+          "teamId": null,
+          "models": [],
+          "rpmLimit": null,
+          "tpmLimit": null
+        },
+        {
+          "alias": "qa35800-phone",
+          "spend": 0.039,
+          "softBudget": 0.01,
+          "maxBudget": null,
+          "teamId": null,
+          "models": [],
+          "rpmLimit": null,
+          "tpmLimit": null
+        },
+        {
+          "alias": "qa35800-phone",
+          "spend": 0.117,
+          "softBudget": 0.01,
+          "maxBudget": null,
+          "teamId": null,
+          "models": [],
+          "rpmLimit": null,
+          "tpmLimit": null
+        },
+        {
+          "alias": "qa35800-phone",
+          "spend": 0.117,
+          "softBudget": 0.01,
+          "maxBudget": null,
+          "teamId": null,
+          "models": [],
+          "rpmLimit": null,
+          "tpmLimit": null
+        },
+        {
+          "alias": "qa35800-phone",
+          "spend": 0.117,
+          "softBudget": 1000,
+          "maxBudget": null,
+          "teamId": null,
+          "models": [],
+          "rpmLimit": null,
+          "tpmLimit": null
+        }
+      ],
+      "inferenceCalls": [
+        {
+          "status": 200,
+          "usage": {
+            "completion_tokens": 8,
+            "prompt_tokens": 23,
+            "total_tokens": 31,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "cost": 0.039
+        },
+        {
+          "status": 200,
+          "usage": {
+            "completion_tokens": 8,
+            "prompt_tokens": 23,
+            "total_tokens": 31,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "cost": 0.039
+        },
+        {
+          "status": 200,
+          "usage": {
+            "completion_tokens": 8,
+            "prompt_tokens": 23,
+            "total_tokens": 31,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "cost": 0.039
+        }
+      ],
+      "pageErrors": [],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      ],
+      "failedResponses": [
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        }
+      ],
+      "alerts": {
+        "count": 0,
+        "messages": []
+      },
+      "revokedKeyStatus": 401,
+      "result": "passed",
+      "completedAt": "2026-10-25T22:18:07.451Z",
+      "video": "/qa/litellm-35800/output/playwright/visual-baseline-1792966611902/phone.webm"
+    }
+  ],
+  "browser": "145.0.7632.6",
+  "result": "passed",
+  "completedAt": "2026-10-25T22:18:07.713Z"
+}

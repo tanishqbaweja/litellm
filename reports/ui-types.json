@@ -1,0 +1,12 @@
+{
+  "name": "ui-types",
+  "command": [
+    "/opt/contri-node/bin/node",
+    "node_modules/typescript/bin/tsc",
+    "--project",
+    "tsconfig.production.json"
+  ],
+  "started_at": "2026-10-25T21:57:38.204876+00:00",
+  "returncode": 0,
+  "completed_at": "2026-10-25T21:58:48.482203+00:00"
+}

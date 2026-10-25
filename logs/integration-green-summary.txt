@@ -1,0 +1,5 @@
+collecting ... collected 3 items
+tests/integration/spend/test_key_budget_lockout.py::test_soft_budget_alert_reads_spend_from_another_proxy PASSED [ 33%]
+tests/integration/spend/test_key_budget_lockout.py::test_an_exhausted_key_is_refused_inference_but_can_still_read_its_own_info PASSED [ 66%]
+tests/integration/spend/test_key_budget_lockout.py::test_raising_a_spent_keys_budget_restores_serving PASSED [100%]
+============================== 3 passed in 28.06s ==============================

@@ -1,0 +1,1856 @@
+{
+  "revision": "baseline",
+  "sha": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "started_at": "2026-10-25T22:16:45.031462+00:00",
+  "local_real_inference": true,
+  "hosted_slack_not_tested": true,
+  "requests": [
+    {
+      "label": "create-crossed-by-request",
+      "command": "curl -sS --max-time 120 -X POST http://127.0.0.1:41479/key/generate -H \"Authorization: Bearer $MASTER_KEY\" -H 'Content-Type: application/json' --data-raw '{\"key_alias\": \"qa35800-api-crossed-by-request\", \"models\": [\"qa-alert-model\"], \"soft_budget\": 0.01, \"spend\": 0.0}' -w '\nCURL_HTTP_STATUS:%{http_code}\n'",
+      "status": 200,
+      "response": {
+        "key_alias": "qa35800-api-crossed-by-request",
+        "duration": null,
+        "models": [
+          "qa-alert-model"
+        ],
+        "spend": 0.0,
+        "max_budget": null,
+        "user_id": null,
+        "team_id": null,
+        "agent_id": null,
+        "max_parallel_requests": null,
+        "metadata": {},
+        "tpm_limit": null,
+        "rpm_limit": null,
+        "budget_duration": null,
+        "budget_limits": null,
+        "allowed_cache_controls": [],
+        "config": {},
+        "permissions": {},
+        "model_max_budget": {},
+        "budget_fallbacks": {},
+        "model_rpm_limit": null,
+        "model_tpm_limit": null,
+        "mcp_rpm_limit": null,
+        "tag_rpm_limit": null,
+        "guardrails": null,
+        "policies": null,
+        "prompts": null,
+        "blocked": null,
+        "aliases": {},
+        "object_permission": null,
+        "key": "<QA_KEY>",
+        "tpd_limit": null,
+        "default_estimated_output_tokens": null,
+        "default_estimated_output_tokens_per_model": null,
+        "budget_id": "3ba9e7db-5233-49db-a0f5-90d0dbe35ea4",
+        "end_user_budget_id": null,
+        "tags": null,
+        "disable_global_guardrails": null,
+        "enable_prompt_caching": null,
+        "throttle_on_budget_exceeded": null,
+        "enforced_params": null,
+        "allowed_routes": [],
+        "allowed_passthrough_routes": null,
+        "denied_passthrough_routes": null,
+        "allowed_vector_store_indexes": null,
+        "rpm_limit_type": null,
+        "tpm_limit_type": null,
+        "router_settings": {
+          "routing_strategy_args": null,
+          "routing_strategy": null,
+          "routing_groups": null,
+          "retry_policy": null,
+          "model_group_retry_policy": null,
+          "model_group_affinity_config": null,
+          "allowed_fails": null,
+          "cooldown_time": null,
+          "num_retries": null,
+          "timeout": null,
+          "max_retries": null,
+          "retry_after": null,
+          "fallbacks": null,
+          "context_window_fallbacks": null,
+          "model_group_alias": {},
+          "enable_tag_filtering": null,
+          "weights": null,
+          "tag_routing_prefix": null,
+          "optional_pre_call_checks": null,
+          "fallback_on_unsupported_params": null
+        },
+        "access_group_ids": [],
+        "key_name": "sk-...Mv4w",
+        "key_type": "default",
+        "expires": null,
+        "token_id": "<QA_KEY_HASH>",
+        "organization_id": null,
+        "project_id": null,
+        "litellm_budget_table": {
+          "budget_id": "3ba9e7db-5233-49db-a0f5-90d0dbe35ea4",
+          "max_budget": null,
+          "soft_budget": 0.01,
+          "max_parallel_requests": null,
+          "tpm_limit": null,
+          "rpm_limit": null,
+          "tpd_limit": null,
+          "model_max_budget": {},
+          "budget_duration": null,
+          "budget_reset_at": null,
+          "allowed_models": [],
+          "temp_budget_increase": null,
+          "temp_budget_expiry": null,
+          "created_at": "2026-10-25T22:16:45.114000Z",
+          "created_by": "default_user_id",
+          "updated_at": "2026-10-25T22:16:45.114000Z",
+          "updated_by": "default_user_id",
+          "organization": null,
+          "projects": null,
+          "keys": null,
+          "end_users": null,
+          "tags": null,
+          "model_access_groups": null,
+          "team_membership": null,
+          "organization_membership": null
+        },
+        "token": "<QA_KEY>",
+        "created_by": "default_user_id",
+        "updated_by": "default_user_id",
+        "created_at": "2026-10-25T22:16:45.125000Z",
+        "updated_at": "2026-10-25T22:16:45.125000Z"
+      }
+    },
+    {
+      "label": "key-info",
+      "command": "curl -sS --max-time 120 -X GET http://127.0.0.1:41479/key/info -H \"Authorization: Bearer $MASTER_KEY\" -H 'Content-Type: application/json' --get --data-urlencode \"key=$VIRTUAL_KEY\" -w '\nCURL_HTTP_STATUS:%{http_code}\n'",
+      "status": 200,
+      "response": {
+        "key": "<QA_KEY>",
+        "info": {
+          "key_name": "sk-...Mv4w",
+          "key_alias": "qa35800-api-crossed-by-request",
+          "soft_budget_cooldown": false,
+          "spend": 0.0,
+          "total_spend": 0.0,
+          "expires": null,
+          "models": [
+            "qa-alert-model"
+          ],
+          "aliases": {},
+          "config": {},
+          "router_settings": {},
+          "user_id": null,
+          "team_id": null,
+          "agent_id": null,
+          "project_id": null,
+          "permissions": {},
+          "max_parallel_requests": null,
+          "metadata": {},
+          "blocked": null,
+          "tpm_limit": null,
+          "rpm_limit": null,
+          "tpd_limit": null,
+          "max_budget": null,
+          "budget_duration": null,
+          "budget_reset_at": null,
+          "allowed_cache_controls": [],
+          "allowed_routes": [],
+          "key_type": "default",
+          "policies": [],
+          "access_group_ids": [],
+          "model_spend": {},
+          "model_max_budget": {},
+          "budget_fallbacks": {},
+          "budget_id": "3ba9e7db-5233-49db-a0f5-90d0dbe35ea4",
+          "organization_id": null,
+          "object_permission_id": null,
+          "created_at": "2026-10-25T22:16:45.125000+00:00",
+          "created_by": "default_user_id",
+          "updated_at": "2026-10-25T22:16:45.125000+00:00",
+          "updated_by": "default_user_id",
+          "settings_updated_at": null,
+          "last_active": null,
+          "rotation_count": 0,
+          "auto_rotate": false,
+          "rotation_interval": null,
+          "last_rotation_at": null,
+          "key_rotation_at": null,
+          "budget_limits": null,
+          "litellm_budget_table": {
+            "budget_id": "3ba9e7db-5233-49db-a0f5-90d0dbe35ea4",
+            "max_budget": null,
+            "soft_budget": 0.01,
+            "max_parallel_requests": null,
+            "tpm_limit": null,
+            "rpm_limit": null,
+            "tpd_limit": null,
+            "model_max_budget": {},
+            "budget_duration": null,
+            "budget_reset_at": null,
+            "allowed_models": [],
+            "temp_budget_increase": null,
+            "temp_budget_expiry": null,
+            "created_at": "2026-10-25T22:16:45.114000+00:00",
+            "created_by": "default_user_id",
+            "updated_at": "2026-10-25T22:16:45.114000+00:00",
+            "updated_by": "default_user_id",
+            "organization": null,
+            "projects": null,
+            "keys": null,
+            "end_users": null,
+            "tags": null,
+            "model_access_groups": null,
+            "team_membership": null,
+            "organization_membership": null
+          },
+          "litellm_organization_table": null,
+          "litellm_project_table": null,
+          "object_permission": null,
+          "jwt_key_mappings": null,
+          "status": "active"
+        }
+      }
+    },
+    {
+      "label": "crossed-by-request-chat-1",
+      "command": "curl -sS --max-time 120 -X POST http://127.0.0.1:41479/v1/chat/completions -H \"Authorization: Bearer $VIRTUAL_KEY\" -H 'Content-Type: application/json' --data-raw '{\"model\": \"qa-alert-model\", \"messages\": [{\"role\": \"user\", \"content\": \"Say hi. crossed-by-request call 1\"}], \"max_tokens\": 8, \"cache\": {\"no-cache\": true}}' -w '\nCURL_HTTP_STATUS:%{http_code}\n'",
+      "status": 200,
+      "response": {
+        "id": "chatcmpl-d18117a5-e819-4c45-be56-d85d62fb70d5",
+        "created": 1792966605,
+        "model": "qa-alert-model",
+        "object": "chat.completion",
+        "system_fingerprint": "fp_ollama",
+        "choices": [
+          {
+            "finish_reason": "length",
+            "index": 0,
+            "message": {
+              "content": "",
+              "role": "assistant",
+              "reasoning_content": "Thinking Process:\n\n1.  **",
+              "provider_specific_fields": {
+                "reasoning": "Thinking Process:\n\n1.  **"
+              }
+            },
+            "provider_specific_fields": {}
+          }
+        ],
+        "usage": {
+          "completion_tokens": 8,
+          "prompt_tokens": 19,
+          "total_tokens": 27,
+          "prompt_tokens_details": {
+            "cached_tokens": 15
+          }
+        },
+        "provider_specific_fields": {
+          "original_response_id": "chatcmpl-989"
+        }
+      }
+    },
+    {
+      "label": "key-info",
+      "command": "curl -sS --max-time 120 -X GET http://127.0.0.1:41479/key/info -H \"Authorization: Bearer $MASTER_KEY\" -H 'Content-Type: application/json' --get --data-urlencode \"key=$VIRTUAL_KEY\" -w '\nCURL_HTTP_STATUS:%{http_code}\n'",
+      "status": 200,
+      "response": {
+        "key": "<QA_KEY>",
+        "info": {
+          "key_name": "sk-...Mv4w",
+          "key_alias": "qa35800-api-crossed-by-request",
+          "soft_budget_cooldown": false,
+          "spend": 0.035,
+          "total_spend": 0.035,
+          "expires": null,
+          "models": [
+            "qa-alert-model"
+          ],
+          "aliases": {},
+          "config": {},
+          "router_settings": {},
+          "user_id": null,
+          "team_id": null,
+          "agent_id": null,
+          "project_id": null,
+          "permissions": {},
+          "max_parallel_requests": null,
+          "metadata": {},
+          "blocked": null,
+          "tpm_limit": null,
+          "rpm_limit": null,
+          "tpd_limit": null,
+          "max_budget": null,
+          "budget_duration": null,
+          "budget_reset_at": null,
+          "allowed_cache_controls": [],
+          "allowed_routes": [],
+          "key_type": "default",
+          "policies": [],
+          "access_group_ids": [],
+          "model_spend": {},
+          "model_max_budget": {},
+          "budget_fallbacks": {},
+          "budget_id": "3ba9e7db-5233-49db-a0f5-90d0dbe35ea4",
+          "organization_id": null,
+          "object_permission_id": null,
+          "created_at": "2026-10-25T22:16:45.125000+00:00",
+          "created_by": "default_user_id",
+          "updated_at": "2026-10-25T22:16:46.187000+00:00",
+          "updated_by": "default_user_id",
+          "settings_updated_at": null,
+          "last_active": "2026-10-25T22:16:46.189000+00:00",
+          "rotation_count": 0,
+          "auto_rotate": false,
+          "rotation_interval": null,
+          "last_rotation_at": null,
+          "key_rotation_at": null,
+          "budget_limits": null,
+          "litellm_budget_table": {
+            "budget_id": "3ba9e7db-5233-49db-a0f5-90d0dbe35ea4",
+            "max_budget": null,
+            "soft_budget": 0.01,
+            "max_parallel_requests": null,
+            "tpm_limit": null,
+            "rpm_limit": null,
+            "tpd_limit": null,
+            "model_max_budget": {},
+            "budget_duration": null,
+            "budget_reset_at": null,
+            "allowed_models": [],
+            "temp_budget_increase": null,
+            "temp_budget_expiry": null,
+            "created_at": "2026-10-25T22:16:45.114000+00:00",
+            "created_by": "default_user_id",
+            "updated_at": "2026-10-25T22:16:45.114000+00:00",
+            "updated_by": "default_user_id",
+            "organization": null,
+            "projects": null,
+            "keys": null,
+            "end_users": null,
+            "tags": null,
+            "model_access_groups": null,
+            "team_membership": null,
+            "organization_membership": null
+          },
+          "litellm_organization_table": null,
+          "litellm_project_table": null,
+          "object_permission": null,
+          "jwt_key_mappings": null,
+          "status": "active"
+        }
+      }
+    },
+    {
+      "label": "crossed-by-request-chat-2",
+      "command": "curl -sS --max-time 120 -X POST http://127.0.0.1:41479/v1/chat/completions -H \"Authorization: Bearer $VIRTUAL_KEY\" -H 'Content-Type: application/json' --data-raw '{\"model\": \"qa-alert-model\", \"messages\": [{\"role\": \"user\", \"content\": \"Say hi. crossed-by-request call 2\"}], \"max_tokens\": 8, \"cache\": {\"no-cache\": true}}' -w '\nCURL_HTTP_STATUS:%{http_code}\n'",
+      "status": 200,
+      "response": {
+        "id": "chatcmpl-a1288f8d-9b91-454f-a275-4601928ead0e",
+        "created": 1792966606,
+        "model": "qa-alert-model",
+        "object": "chat.completion",
+        "system_fingerprint": "fp_ollama",
+        "choices": [
+          {
+            "finish_reason": "length",
+            "index": 0,
+            "message": {
+              "content": "",
+              "role": "assistant",
+              "reasoning_content": "Okay, the user greeted me with \"",
+              "provider_specific_fields": {
+                "reasoning": "Okay, the user greeted me with \""
+              }
+            },
+            "provider_specific_fields": {}
+          }
+        ],
+        "usage": {
+          "completion_tokens": 8,
+          "prompt_tokens": 19,
+          "total_tokens": 27,
+          "prompt_tokens_details": {
+            "cached_tokens": 15
+          }
+        },
+        "provider_specific_fields": {
+          "original_response_id": "chatcmpl-731"
+        }
+      }
+    },
+    {
+      "label": "crossed-by-request-chat-3",
+      "command": "curl -sS --max-time 120 -X POST http://127.0.0.1:41479/v1/chat/completions -H \"Authorization: Bearer $VIRTUAL_KEY\" -H 'Content-Type: application/json' --data-raw '{\"model\": \"qa-alert-model\", \"messages\": [{\"role\": \"user\", \"content\": \"Say hi. crossed-by-request call 3\"}], \"max_tokens\": 8, \"cache\": {\"no-cache\": true}}' -w '\nCURL_HTTP_STATUS:%{http_code}\n'",
+      "status": 200,
+      "response": {
+        "id": "chatcmpl-1b876dbb-dd8f-4ed5-a0f0-d592e8586800",
+        "created": 1792966606,
+        "model": "qa-alert-model",
+        "object": "chat.completion",
+        "system_fingerprint": "fp_ollama",
+        "choices": [
+          {
+            "finish_reason": "length",
+            "index": 0,
+            "message": {
+              "content": "",
+              "role": "assistant",
+              "reasoning_content": "Thinking Process:\n\n1. **An",
+              "provider_specific_fields": {
+                "reasoning": "Thinking Process:\n\n1. **An"
+              }
+            },
+            "provider_specific_fields": {}
+          }
+        ],
+        "usage": {
+          "completion_tokens": 8,
+          "prompt_tokens": 19,
+          "total_tokens": 27,
+          "prompt_tokens_details": {
+            "cached_tokens": 15
+          }
+        },
+        "provider_specific_fields": {
+          "original_response_id": "chatcmpl-138"
+        }
+      }
+    },
+    {
+      "label": "create-already-crossed",
+      "command": "curl -sS --max-time 120 -X POST http://127.0.0.1:41479/key/generate -H \"Authorization: Bearer $MASTER_KEY\" -H 'Content-Type: application/json' --data-raw '{\"key_alias\": \"qa35800-api-already-crossed\", \"models\": [\"qa-alert-model\"], \"soft_budget\": 0.01, \"spend\": 1.0}' -w '\nCURL_HTTP_STATUS:%{http_code}\n'",
+      "status": 200,
+      "response": {
+        "key_alias": "qa35800-api-already-crossed",
+        "duration": null,
+        "models": [
+          "qa-alert-model"
+        ],
+        "spend": 1.0,
+        "max_budget": null,
+        "user_id": null,
+        "team_id": null,
+        "agent_id": null,
+        "max_parallel_requests": null,
+        "metadata": {},
+        "tpm_limit": null,
+        "rpm_limit": null,
+        "budget_duration": null,
+        "budget_limits": null,
+        "allowed_cache_controls": [],
+        "config": {},
+        "permissions": {},
+        "model_max_budget": {},
+        "budget_fallbacks": {},
+        "model_rpm_limit": null,
+        "model_tpm_limit": null,
+        "mcp_rpm_limit": null,
+        "tag_rpm_limit": null,
+        "guardrails": null,
+        "policies": null,
+        "prompts": null,
+        "blocked": null,
+        "aliases": {},
+        "object_permission": null,
+        "key": "<QA_KEY>",
+        "tpd_limit": null,
+        "default_estimated_output_tokens": null,
+        "default_estimated_output_tokens_per_model": null,
+        "budget_id": "324a5cf7-abaf-4be6-9fd0-ea14276ac791",
+        "end_user_budget_id": null,
+        "tags": null,
+        "disable_global_guardrails": null,
+        "enable_prompt_caching": null,
+        "throttle_on_budget_exceeded": null,
+        "enforced_params": null,
+        "allowed_routes": [],
+        "allowed_passthrough_routes": null,
+        "denied_passthrough_routes": null,
+        "allowed_vector_store_indexes": null,
+        "rpm_limit_type": null,
+        "tpm_limit_type": null,
+        "router_settings": {
+          "routing_strategy_args": null,
+          "routing_strategy": null,
+          "routing_groups": null,
+          "retry_policy": null,
+          "model_group_retry_policy": null,
+          "model_group_affinity_config": null,
+          "allowed_fails": null,
+          "cooldown_time": null,
+          "num_retries": null,
+          "timeout": null,
+          "max_retries": null,
+          "retry_after": null,
+          "fallbacks": null,
+          "context_window_fallbacks": null,
+          "model_group_alias": {},
+          "enable_tag_filtering": null,
+          "weights": null,
+          "tag_routing_prefix": null,
+          "optional_pre_call_checks": null,
+          "fallback_on_unsupported_params": null
+        },
+        "access_group_ids": [],
+        "key_name": "sk-...Ddsw",
+        "key_type": "default",
+        "expires": null,
+        "token_id": "<QA_KEY_HASH>",
+        "organization_id": null,
+        "project_id": null,
+        "litellm_budget_table": {
+          "budget_id": "324a5cf7-abaf-4be6-9fd0-ea14276ac791",
+          "max_budget": null,
+          "soft_budget": 0.01,
+          "max_parallel_requests": null,
+          "tpm_limit": null,
+          "rpm_limit": null,
+          "tpd_limit": null,
+          "model_max_budget": {},
+          "budget_duration": null,
+          "budget_reset_at": null,
+          "allowed_models": [],
+          "temp_budget_increase": null,
+          "temp_budget_expiry": null,
+          "created_at": "2026-10-25T22:16:46.945000Z",
+          "created_by": "default_user_id",
+          "updated_at": "2026-10-25T22:16:46.945000Z",
+          "updated_by": "default_user_id",
+          "organization": null,
+          "projects": null,
+          "keys": null,
+          "end_users": null,
+          "tags": null,
+          "model_access_groups": null,
+          "team_membership": null,
+          "organization_membership": null
+        },
+        "token": "<QA_KEY>",
+        "created_by": "default_user_id",
+        "updated_by": "default_user_id",
+        "created_at": "2026-10-25T22:16:46.955000Z",
+        "updated_at": "2026-10-25T22:16:46.955000Z"
+      }
+    },
+    {
+      "label": "key-info",
+      "command": "curl -sS --max-time 120 -X GET http://127.0.0.1:41479/key/info -H \"Authorization: Bearer $MASTER_KEY\" -H 'Content-Type: application/json' --get --data-urlencode \"key=$VIRTUAL_KEY\" -w '\nCURL_HTTP_STATUS:%{http_code}\n'",
+      "status": 200,
+      "response": {
+        "key": "<QA_KEY>",
+        "info": {
+          "key_name": "sk-...Ddsw",
+          "key_alias": "qa35800-api-already-crossed",
+          "soft_budget_cooldown": false,
+          "spend": 1.0,
+          "total_spend": 0.0,
+          "expires": null,
+          "models": [
+            "qa-alert-model"
+          ],
+          "aliases": {},
+          "config": {},
+          "router_settings": {},
+          "user_id": null,
+          "team_id": null,
+          "agent_id": null,
+          "project_id": null,
+          "permissions": {},
+          "max_parallel_requests": null,
+          "metadata": {},
+          "blocked": null,
+          "tpm_limit": null,
+          "rpm_limit": null,
+          "tpd_limit": null,
+          "max_budget": null,
+          "budget_duration": null,
+          "budget_reset_at": null,
+          "allowed_cache_controls": [],
+          "allowed_routes": [],
+          "key_type": "default",
+          "policies": [],
+          "access_group_ids": [],
+          "model_spend": {},
+          "model_max_budget": {},
+          "budget_fallbacks": {},
+          "budget_id": "324a5cf7-abaf-4be6-9fd0-ea14276ac791",
+          "organization_id": null,
+          "object_permission_id": null,
+          "created_at": "2026-10-25T22:16:46.955000+00:00",
+          "created_by": "default_user_id",
+          "updated_at": "2026-10-25T22:16:46.955000+00:00",
+          "updated_by": "default_user_id",
+          "settings_updated_at": null,
+          "last_active": null,
+          "rotation_count": 0,
+          "auto_rotate": false,
+          "rotation_interval": null,
+          "last_rotation_at": null,
+          "key_rotation_at": null,
+          "budget_limits": null,
+          "litellm_budget_table": {
+            "budget_id": "324a5cf7-abaf-4be6-9fd0-ea14276ac791",
+            "max_budget": null,
+            "soft_budget": 0.01,
+            "max_parallel_requests": null,
+            "tpm_limit": null,
+            "rpm_limit": null,
+            "tpd_limit": null,
+            "model_max_budget": {},
+            "budget_duration": null,
+            "budget_reset_at": null,
+            "allowed_models": [],
+            "temp_budget_increase": null,
+            "temp_budget_expiry": null,
+            "created_at": "2026-10-25T22:16:46.945000+00:00",
+            "created_by": "default_user_id",
+            "updated_at": "2026-10-25T22:16:46.945000+00:00",
+            "updated_by": "default_user_id",
+            "organization": null,
+            "projects": null,
+            "keys": null,
+            "end_users": null,
+            "tags": null,
+            "model_access_groups": null,
+            "team_membership": null,
+            "organization_membership": null
+          },
+          "litellm_organization_table": null,
+          "litellm_project_table": null,
+          "object_permission": null,
+          "jwt_key_mappings": null,
+          "status": "active"
+        }
+      }
+    },
+    {
+      "label": "already-crossed-chat-1",
+      "command": "curl -sS --max-time 120 -X POST http://127.0.0.1:41479/v1/chat/completions -H \"Authorization: Bearer $VIRTUAL_KEY\" -H 'Content-Type: application/json' --data-raw '{\"model\": \"qa-alert-model\", \"messages\": [{\"role\": \"user\", \"content\": \"Say hi. already-crossed call 1\"}], \"max_tokens\": 8, \"cache\": {\"no-cache\": true}}' -w '\nCURL_HTTP_STATUS:%{http_code}\n'",
+      "status": 200,
+      "response": {
+        "id": "chatcmpl-fa8e8c7f-da1a-4d18-a627-7e8fa57edb11",
+        "created": 1792966607,
+        "model": "qa-alert-model",
+        "object": "chat.completion",
+        "system_fingerprint": "fp_ollama",
+        "choices": [
+          {
+            "finish_reason": "length",
+            "index": 0,
+            "message": {
+              "content": "",
+              "role": "assistant",
+              "reasoning_content": "Thinking process:\n\n1.  **",
+              "provider_specific_fields": {
+                "reasoning": "Thinking process:\n\n1.  **"
+              }
+            },
+            "provider_specific_fields": {}
+          }
+        ],
+        "usage": {
+          "completion_tokens": 8,
+          "prompt_tokens": 19,
+          "total_tokens": 27,
+          "prompt_tokens_details": {
+            "cached_tokens": 15
+          }
+        },
+        "provider_specific_fields": {
+          "original_response_id": "chatcmpl-220"
+        }
+      }
+    },
+    {
+      "label": "already-crossed-chat-2",
+      "command": "curl -sS --max-time 120 -X POST http://127.0.0.1:41479/v1/chat/completions -H \"Authorization: Bearer $VIRTUAL_KEY\" -H 'Content-Type: application/json' --data-raw '{\"model\": \"qa-alert-model\", \"messages\": [{\"role\": \"user\", \"content\": \"Say hi. already-crossed call 2\"}], \"max_tokens\": 8, \"cache\": {\"no-cache\": true}}' -w '\nCURL_HTTP_STATUS:%{http_code}\n'",
+      "status": 200,
+      "response": {
+        "id": "chatcmpl-5658e8af-8f2c-4e14-ac93-f32f4ce43b8f",
+        "created": 1792966607,
+        "model": "qa-alert-model",
+        "object": "chat.completion",
+        "system_fingerprint": "fp_ollama",
+        "choices": [
+          {
+            "finish_reason": "length",
+            "index": 0,
+            "message": {
+              "content": "",
+              "role": "assistant",
+              "reasoning_content": "Thinking Process:\n\n1.  **",
+              "provider_specific_fields": {
+                "reasoning": "Thinking Process:\n\n1.  **"
+              }
+            },
+            "provider_specific_fields": {}
+          }
+        ],
+        "usage": {
+          "completion_tokens": 8,
+          "prompt_tokens": 19,
+          "total_tokens": 27,
+          "prompt_tokens_details": {
+            "cached_tokens": 15
+          }
+        },
+        "provider_specific_fields": {
+          "original_response_id": "chatcmpl-165"
+        }
+      }
+    },
+    {
+      "label": "create-below-budget",
+      "command": "curl -sS --max-time 120 -X POST http://127.0.0.1:41479/key/generate -H \"Authorization: Bearer $MASTER_KEY\" -H 'Content-Type: application/json' --data-raw '{\"key_alias\": \"qa35800-api-below-budget\", \"models\": [\"qa-alert-model\"], \"soft_budget\": 1000.0, \"spend\": 0.0}' -w '\nCURL_HTTP_STATUS:%{http_code}\n'",
+      "status": 200,
+      "response": {
+        "key_alias": "qa35800-api-below-budget",
+        "duration": null,
+        "models": [
+          "qa-alert-model"
+        ],
+        "spend": 0.0,
+        "max_budget": null,
+        "user_id": null,
+        "team_id": null,
+        "agent_id": null,
+        "max_parallel_requests": null,
+        "metadata": {},
+        "tpm_limit": null,
+        "rpm_limit": null,
+        "budget_duration": null,
+        "budget_limits": null,
+        "allowed_cache_controls": [],
+        "config": {},
+        "permissions": {},
+        "model_max_budget": {},
+        "budget_fallbacks": {},
+        "model_rpm_limit": null,
+        "model_tpm_limit": null,
+        "mcp_rpm_limit": null,
+        "tag_rpm_limit": null,
+        "guardrails": null,
+        "policies": null,
+        "prompts": null,
+        "blocked": null,
+        "aliases": {},
+        "object_permission": null,
+        "key": "<QA_KEY>",
+        "tpd_limit": null,
+        "default_estimated_output_tokens": null,
+        "default_estimated_output_tokens_per_model": null,
+        "budget_id": "94fcbef1-442b-495a-afff-8b09d477ed98",
+        "end_user_budget_id": null,
+        "tags": null,
+        "disable_global_guardrails": null,
+        "enable_prompt_caching": null,
+        "throttle_on_budget_exceeded": null,
+        "enforced_params": null,
+        "allowed_routes": [],
+        "allowed_passthrough_routes": null,
+        "denied_passthrough_routes": null,
+        "allowed_vector_store_indexes": null,
+        "rpm_limit_type": null,
+        "tpm_limit_type": null,
+        "router_settings": {
+          "routing_strategy_args": null,
+          "routing_strategy": null,
+          "routing_groups": null,
+          "retry_policy": null,
+          "model_group_retry_policy": null,
+          "model_group_affinity_config": null,
+          "allowed_fails": null,
+          "cooldown_time": null,
+          "num_retries": null,
+          "timeout": null,
+          "max_retries": null,
+          "retry_after": null,
+          "fallbacks": null,
+          "context_window_fallbacks": null,
+          "model_group_alias": {},
+          "enable_tag_filtering": null,
+          "weights": null,
+          "tag_routing_prefix": null,
+          "optional_pre_call_checks": null,
+          "fallback_on_unsupported_params": null
+        },
+        "access_group_ids": [],
+        "key_name": "sk-...EpUg",
+        "key_type": "default",
+        "expires": null,
+        "token_id": "<QA_KEY_HASH>",
+        "organization_id": null,
+        "project_id": null,
+        "litellm_budget_table": {
+          "budget_id": "94fcbef1-442b-495a-afff-8b09d477ed98",
+          "max_budget": null,
+          "soft_budget": 1000.0,
+          "max_parallel_requests": null,
+          "tpm_limit": null,
+          "rpm_limit": null,
+          "tpd_limit": null,
+          "model_max_budget": {},
+          "budget_duration": null,
+          "budget_reset_at": null,
+          "allowed_models": [],
+          "temp_budget_increase": null,
+          "temp_budget_expiry": null,
+          "created_at": "2026-10-25T22:16:47.569000Z",
+          "created_by": "default_user_id",
+          "updated_at": "2026-10-25T22:16:47.569000Z",
+          "updated_by": "default_user_id",
+          "organization": null,
+          "projects": null,
+          "keys": null,
+          "end_users": null,
+          "tags": null,
+          "model_access_groups": null,
+          "team_membership": null,
+          "organization_membership": null
+        },
+        "token": "<QA_KEY>",
+        "created_by": "default_user_id",
+        "updated_by": "default_user_id",
+        "created_at": "2026-10-25T22:16:47.581000Z",
+        "updated_at": "2026-10-25T22:16:47.581000Z"
+      }
+    },
+    {
+      "label": "key-info",
+      "command": "curl -sS --max-time 120 -X GET http://127.0.0.1:41479/key/info -H \"Authorization: Bearer $MASTER_KEY\" -H 'Content-Type: application/json' --get --data-urlencode \"key=$VIRTUAL_KEY\" -w '\nCURL_HTTP_STATUS:%{http_code}\n'",
+      "status": 200,
+      "response": {
+        "key": "<QA_KEY>",
+        "info": {
+          "key_name": "sk-...EpUg",
+          "key_alias": "qa35800-api-below-budget",
+          "soft_budget_cooldown": false,
+          "spend": 0.0,
+          "total_spend": 0.0,
+          "expires": null,
+          "models": [
+            "qa-alert-model"
+          ],
+          "aliases": {},
+          "config": {},
+          "router_settings": {},
+          "user_id": null,
+          "team_id": null,
+          "agent_id": null,
+          "project_id": null,
+          "permissions": {},
+          "max_parallel_requests": null,
+          "metadata": {},
+          "blocked": null,
+          "tpm_limit": null,
+          "rpm_limit": null,
+          "tpd_limit": null,
+          "max_budget": null,
+          "budget_duration": null,
+          "budget_reset_at": null,
+          "allowed_cache_controls": [],
+          "allowed_routes": [],
+          "key_type": "default",
+          "policies": [],
+          "access_group_ids": [],
+          "model_spend": {},
+          "model_max_budget": {},
+          "budget_fallbacks": {},
+          "budget_id": "94fcbef1-442b-495a-afff-8b09d477ed98",
+          "organization_id": null,
+          "object_permission_id": null,
+          "created_at": "2026-10-25T22:16:47.581000+00:00",
+          "created_by": "default_user_id",
+          "updated_at": "2026-10-25T22:16:47.581000+00:00",
+          "updated_by": "default_user_id",
+          "settings_updated_at": null,
+          "last_active": null,
+          "rotation_count": 0,
+          "auto_rotate": false,
+          "rotation_interval": null,
+          "last_rotation_at": null,
+          "key_rotation_at": null,
+          "budget_limits": null,
+          "litellm_budget_table": {
+            "budget_id": "94fcbef1-442b-495a-afff-8b09d477ed98",
+            "max_budget": null,
+            "soft_budget": 1000.0,
+            "max_parallel_requests": null,
+            "tpm_limit": null,
+            "rpm_limit": null,
+            "tpd_limit": null,
+            "model_max_budget": {},
+            "budget_duration": null,
+            "budget_reset_at": null,
+            "allowed_models": [],
+            "temp_budget_increase": null,
+            "temp_budget_expiry": null,
+            "created_at": "2026-10-25T22:16:47.569000+00:00",
+            "created_by": "default_user_id",
+            "updated_at": "2026-10-25T22:16:47.569000+00:00",
+            "updated_by": "default_user_id",
+            "organization": null,
+            "projects": null,
+            "keys": null,
+            "end_users": null,
+            "tags": null,
+            "model_access_groups": null,
+            "team_membership": null,
+            "organization_membership": null
+          },
+          "litellm_organization_table": null,
+          "litellm_project_table": null,
+          "object_permission": null,
+          "jwt_key_mappings": null,
+          "status": "active"
+        }
+      }
+    },
+    {
+      "label": "below-budget-chat-1",
+      "command": "curl -sS --max-time 120 -X POST http://127.0.0.1:41479/v1/chat/completions -H \"Authorization: Bearer $VIRTUAL_KEY\" -H 'Content-Type: application/json' --data-raw '{\"model\": \"qa-alert-model\", \"messages\": [{\"role\": \"user\", \"content\": \"Say hi. below-budget call 1\"}], \"max_tokens\": 8, \"cache\": {\"no-cache\": true}}' -w '\nCURL_HTTP_STATUS:%{http_code}\n'",
+      "status": 200,
+      "response": {
+        "id": "chatcmpl-cdf14e99-446a-4726-abb6-54a4582af6a5",
+        "created": 1792966607,
+        "model": "qa-alert-model",
+        "object": "chat.completion",
+        "system_fingerprint": "fp_ollama",
+        "choices": [
+          {
+            "finish_reason": "length",
+            "index": 0,
+            "message": {
+              "content": "",
+              "role": "assistant",
+              "reasoning_content": "Here's a thinking process that will lead",
+              "provider_specific_fields": {
+                "reasoning": "Here's a thinking process that will lead"
+              }
+            },
+            "provider_specific_fields": {}
+          }
+        ],
+        "usage": {
+          "completion_tokens": 8,
+          "prompt_tokens": 18,
+          "total_tokens": 26,
+          "prompt_tokens_details": {
+            "cached_tokens": 14
+          }
+        },
+        "provider_specific_fields": {
+          "original_response_id": "chatcmpl-937"
+        }
+      }
+    },
+    {
+      "label": "below-budget-chat-2",
+      "command": "curl -sS --max-time 120 -X POST http://127.0.0.1:41479/v1/chat/completions -H \"Authorization: Bearer $VIRTUAL_KEY\" -H 'Content-Type: application/json' --data-raw '{\"model\": \"qa-alert-model\", \"messages\": [{\"role\": \"user\", \"content\": \"Say hi. below-budget call 2\"}], \"max_tokens\": 8, \"cache\": {\"no-cache\": true}}' -w '\nCURL_HTTP_STATUS:%{http_code}\n'",
+      "status": 200,
+      "response": {
+        "id": "chatcmpl-99292918-8a35-4a9b-9e51-53b8611cca20",
+        "created": 1792966608,
+        "model": "qa-alert-model",
+        "object": "chat.completion",
+        "system_fingerprint": "fp_ollama",
+        "choices": [
+          {
+            "finish_reason": "length",
+            "index": 0,
+            "message": {
+              "content": "",
+              "role": "assistant",
+              "reasoning_content": "The user is requesting a greeting, but",
+              "provider_specific_fields": {
+                "reasoning": "The user is requesting a greeting, but"
+              }
+            },
+            "provider_specific_fields": {}
+          }
+        ],
+        "usage": {
+          "completion_tokens": 8,
+          "prompt_tokens": 18,
+          "total_tokens": 26,
+          "prompt_tokens_details": {
+            "cached_tokens": 14
+          }
+        },
+        "provider_specific_fields": {
+          "original_response_id": "chatcmpl-926"
+        }
+      }
+    },
+    {
+      "label": "below-budget-chat-3",
+      "command": "curl -sS --max-time 120 -X POST http://127.0.0.1:41479/v1/chat/completions -H \"Authorization: Bearer $VIRTUAL_KEY\" -H 'Content-Type: application/json' --data-raw '{\"model\": \"qa-alert-model\", \"messages\": [{\"role\": \"user\", \"content\": \"Say hi. below-budget call 3\"}], \"max_tokens\": 8, \"cache\": {\"no-cache\": true}}' -w '\nCURL_HTTP_STATUS:%{http_code}\n'",
+      "status": 200,
+      "response": {
+        "id": "chatcmpl-2e121ae0-aa5d-40a8-8baa-040f793d6d2a",
+        "created": 1792966608,
+        "model": "qa-alert-model",
+        "object": "chat.completion",
+        "system_fingerprint": "fp_ollama",
+        "choices": [
+          {
+            "finish_reason": "length",
+            "index": 0,
+            "message": {
+              "content": "",
+              "role": "assistant",
+              "reasoning_content": "Thinking Process:\n\n1.  **",
+              "provider_specific_fields": {
+                "reasoning": "Thinking Process:\n\n1.  **"
+              }
+            },
+            "provider_specific_fields": {}
+          }
+        ],
+        "usage": {
+          "completion_tokens": 8,
+          "prompt_tokens": 18,
+          "total_tokens": 26,
+          "prompt_tokens_details": {
+            "cached_tokens": 14
+          }
+        },
+        "provider_specific_fields": {
+          "original_response_id": "chatcmpl-454"
+        }
+      }
+    },
+    {
+      "label": "create-no-soft-budget",
+      "command": "curl -sS --max-time 120 -X POST http://127.0.0.1:41479/key/generate -H \"Authorization: Bearer $MASTER_KEY\" -H 'Content-Type: application/json' --data-raw '{\"key_alias\": \"qa35800-api-no-soft-budget\", \"models\": [\"qa-alert-model\"], \"soft_budget\": null, \"spend\": 0.0}' -w '\nCURL_HTTP_STATUS:%{http_code}\n'",
+      "status": 200,
+      "response": {
+        "key_alias": "qa35800-api-no-soft-budget",
+        "duration": null,
+        "models": [
+          "qa-alert-model"
+        ],
+        "spend": 0.0,
+        "max_budget": null,
+        "user_id": null,
+        "team_id": null,
+        "agent_id": null,
+        "max_parallel_requests": null,
+        "metadata": {},
+        "tpm_limit": null,
+        "rpm_limit": null,
+        "budget_duration": null,
+        "budget_limits": null,
+        "allowed_cache_controls": [],
+        "config": {},
+        "permissions": {},
+        "model_max_budget": {},
+        "budget_fallbacks": {},
+        "model_rpm_limit": null,
+        "model_tpm_limit": null,
+        "mcp_rpm_limit": null,
+        "tag_rpm_limit": null,
+        "guardrails": null,
+        "policies": null,
+        "prompts": null,
+        "blocked": null,
+        "aliases": {},
+        "object_permission": null,
+        "key": "<QA_KEY>",
+        "tpd_limit": null,
+        "default_estimated_output_tokens": null,
+        "default_estimated_output_tokens_per_model": null,
+        "budget_id": null,
+        "end_user_budget_id": null,
+        "tags": null,
+        "disable_global_guardrails": null,
+        "enable_prompt_caching": null,
+        "throttle_on_budget_exceeded": null,
+        "enforced_params": null,
+        "allowed_routes": [],
+        "allowed_passthrough_routes": null,
+        "denied_passthrough_routes": null,
+        "allowed_vector_store_indexes": null,
+        "rpm_limit_type": null,
+        "tpm_limit_type": null,
+        "router_settings": {
+          "routing_strategy_args": null,
+          "routing_strategy": null,
+          "routing_groups": null,
+          "retry_policy": null,
+          "model_group_retry_policy": null,
+          "model_group_affinity_config": null,
+          "allowed_fails": null,
+          "cooldown_time": null,
+          "num_retries": null,
+          "timeout": null,
+          "max_retries": null,
+          "retry_after": null,
+          "fallbacks": null,
+          "context_window_fallbacks": null,
+          "model_group_alias": {},
+          "enable_tag_filtering": null,
+          "weights": null,
+          "tag_routing_prefix": null,
+          "optional_pre_call_checks": null,
+          "fallback_on_unsupported_params": null
+        },
+        "access_group_ids": [],
+        "key_name": "sk-...gQeg",
+        "key_type": "default",
+        "expires": null,
+        "token_id": "<QA_KEY_HASH>",
+        "organization_id": null,
+        "project_id": null,
+        "litellm_budget_table": null,
+        "token": "<QA_KEY>",
+        "created_by": "default_user_id",
+        "updated_by": "default_user_id",
+        "created_at": "2026-10-25T22:16:48.556000Z",
+        "updated_at": "2026-10-25T22:16:48.556000Z"
+      }
+    },
+    {
+      "label": "key-info",
+      "command": "curl -sS --max-time 120 -X GET http://127.0.0.1:41479/key/info -H \"Authorization: Bearer $MASTER_KEY\" -H 'Content-Type: application/json' --get --data-urlencode \"key=$VIRTUAL_KEY\" -w '\nCURL_HTTP_STATUS:%{http_code}\n'",
+      "status": 200,
+      "response": {
+        "key": "<QA_KEY>",
+        "info": {
+          "key_name": "sk-...gQeg",
+          "key_alias": "qa35800-api-no-soft-budget",
+          "soft_budget_cooldown": false,
+          "spend": 0.0,
+          "total_spend": 0.0,
+          "expires": null,
+          "models": [
+            "qa-alert-model"
+          ],
+          "aliases": {},
+          "config": {},
+          "router_settings": {},
+          "user_id": null,
+          "team_id": null,
+          "agent_id": null,
+          "project_id": null,
+          "permissions": {},
+          "max_parallel_requests": null,
+          "metadata": {},
+          "blocked": null,
+          "tpm_limit": null,
+          "rpm_limit": null,
+          "tpd_limit": null,
+          "max_budget": null,
+          "budget_duration": null,
+          "budget_reset_at": null,
+          "allowed_cache_controls": [],
+          "allowed_routes": [],
+          "key_type": "default",
+          "policies": [],
+          "access_group_ids": [],
+          "model_spend": {},
+          "model_max_budget": {},
+          "budget_fallbacks": {},
+          "budget_id": null,
+          "organization_id": null,
+          "object_permission_id": null,
+          "created_at": "2026-10-25T22:16:48.556000+00:00",
+          "created_by": "default_user_id",
+          "updated_at": "2026-10-25T22:16:48.556000+00:00",
+          "updated_by": "default_user_id",
+          "settings_updated_at": null,
+          "last_active": null,
+          "rotation_count": 0,
+          "auto_rotate": false,
+          "rotation_interval": null,
+          "last_rotation_at": null,
+          "key_rotation_at": null,
+          "budget_limits": null,
+          "litellm_budget_table": null,
+          "litellm_organization_table": null,
+          "litellm_project_table": null,
+          "object_permission": null,
+          "jwt_key_mappings": null,
+          "status": "active"
+        }
+      }
+    },
+    {
+      "label": "no-soft-budget-chat-1",
+      "command": "curl -sS --max-time 120 -X POST http://127.0.0.1:41479/v1/chat/completions -H \"Authorization: Bearer $VIRTUAL_KEY\" -H 'Content-Type: application/json' --data-raw '{\"model\": \"qa-alert-model\", \"messages\": [{\"role\": \"user\", \"content\": \"Say hi. no-soft-budget call 1\"}], \"max_tokens\": 8, \"cache\": {\"no-cache\": true}}' -w '\nCURL_HTTP_STATUS:%{http_code}\n'",
+      "status": 200,
+      "response": {
+        "id": "chatcmpl-e0f3ea16-e720-441d-8bab-f83e44e3fd41",
+        "created": 1792966608,
+        "model": "qa-alert-model",
+        "object": "chat.completion",
+        "system_fingerprint": "fp_ollama",
+        "choices": [
+          {
+            "finish_reason": "length",
+            "index": 0,
+            "message": {
+              "content": "",
+              "role": "assistant",
+              "reasoning_content": "Thinking Process:\n\n1.  **",
+              "provider_specific_fields": {
+                "reasoning": "Thinking Process:\n\n1.  **"
+              }
+            },
+            "provider_specific_fields": {}
+          }
+        ],
+        "usage": {
+          "completion_tokens": 8,
+          "prompt_tokens": 20,
+          "total_tokens": 28,
+          "prompt_tokens_details": {
+            "cached_tokens": 16
+          }
+        },
+        "provider_specific_fields": {
+          "original_response_id": "chatcmpl-335"
+        }
+      }
+    },
+    {
+      "label": "no-soft-budget-chat-2",
+      "command": "curl -sS --max-time 120 -X POST http://127.0.0.1:41479/v1/chat/completions -H \"Authorization: Bearer $VIRTUAL_KEY\" -H 'Content-Type: application/json' --data-raw '{\"model\": \"qa-alert-model\", \"messages\": [{\"role\": \"user\", \"content\": \"Say hi. no-soft-budget call 2\"}], \"max_tokens\": 8, \"cache\": {\"no-cache\": true}}' -w '\nCURL_HTTP_STATUS:%{http_code}\n'",
+      "status": 200,
+      "response": {
+        "id": "chatcmpl-ca58bbbb-ff33-4d2d-9fee-353e3ae50d8c",
+        "created": 1792966609,
+        "model": "qa-alert-model",
+        "object": "chat.completion",
+        "system_fingerprint": "fp_ollama",
+        "choices": [
+          {
+            "finish_reason": "length",
+            "index": 0,
+            "message": {
+              "content": "",
+              "role": "assistant",
+              "reasoning_content": "The user is asking for a call for",
+              "provider_specific_fields": {
+                "reasoning": "The user is asking for a call for"
+              }
+            },
+            "provider_specific_fields": {}
+          }
+        ],
+        "usage": {
+          "completion_tokens": 8,
+          "prompt_tokens": 20,
+          "total_tokens": 28,
+          "prompt_tokens_details": {
+            "cached_tokens": 16
+          }
+        },
+        "provider_specific_fields": {
+          "original_response_id": "chatcmpl-758"
+        }
+      }
+    },
+    {
+      "label": "key-info",
+      "command": "curl -sS --max-time 120 -X GET http://127.0.0.1:41479/key/info -H \"Authorization: Bearer $MASTER_KEY\" -H 'Content-Type: application/json' --get --data-urlencode \"key=$VIRTUAL_KEY\" -w '\nCURL_HTTP_STATUS:%{http_code}\n'",
+      "status": 200,
+      "response": {
+        "key": "<QA_KEY>",
+        "info": {
+          "key_name": "sk-...Mv4w",
+          "key_alias": "qa35800-api-crossed-by-request",
+          "soft_budget_cooldown": false,
+          "spend": 0.105,
+          "total_spend": 0.105,
+          "expires": null,
+          "models": [
+            "qa-alert-model"
+          ],
+          "aliases": {},
+          "config": {},
+          "router_settings": {},
+          "user_id": null,
+          "team_id": null,
+          "agent_id": null,
+          "project_id": null,
+          "permissions": {},
+          "max_parallel_requests": null,
+          "metadata": {},
+          "blocked": null,
+          "tpm_limit": null,
+          "rpm_limit": null,
+          "tpd_limit": null,
+          "max_budget": null,
+          "budget_duration": null,
+          "budget_reset_at": null,
+          "allowed_cache_controls": [],
+          "allowed_routes": [],
+          "key_type": "default",
+          "policies": [],
+          "access_group_ids": [],
+          "model_spend": {},
+          "model_max_budget": {},
+          "budget_fallbacks": {},
+          "budget_id": "3ba9e7db-5233-49db-a0f5-90d0dbe35ea4",
+          "organization_id": null,
+          "object_permission_id": null,
+          "created_at": "2026-10-25T22:16:45.125000+00:00",
+          "created_by": "default_user_id",
+          "updated_at": "2026-10-25T22:16:52.189000+00:00",
+          "updated_by": "default_user_id",
+          "settings_updated_at": null,
+          "last_active": "2026-10-25T22:16:52.192000+00:00",
+          "rotation_count": 0,
+          "auto_rotate": false,
+          "rotation_interval": null,
+          "last_rotation_at": null,
+          "key_rotation_at": null,
+          "budget_limits": null,
+          "litellm_budget_table": {
+            "budget_id": "3ba9e7db-5233-49db-a0f5-90d0dbe35ea4",
+            "max_budget": null,
+            "soft_budget": 0.01,
+            "max_parallel_requests": null,
+            "tpm_limit": null,
+            "rpm_limit": null,
+            "tpd_limit": null,
+            "model_max_budget": {},
+            "budget_duration": null,
+            "budget_reset_at": null,
+            "allowed_models": [],
+            "temp_budget_increase": null,
+            "temp_budget_expiry": null,
+            "created_at": "2026-10-25T22:16:45.114000+00:00",
+            "created_by": "default_user_id",
+            "updated_at": "2026-10-25T22:16:45.114000+00:00",
+            "updated_by": "default_user_id",
+            "organization": null,
+            "projects": null,
+            "keys": null,
+            "end_users": null,
+            "tags": null,
+            "model_access_groups": null,
+            "team_membership": null,
+            "organization_membership": null
+          },
+          "litellm_organization_table": null,
+          "litellm_project_table": null,
+          "object_permission": null,
+          "jwt_key_mappings": null,
+          "status": "active"
+        }
+      }
+    },
+    {
+      "label": "key-info",
+      "command": "curl -sS --max-time 120 -X GET http://127.0.0.1:41479/key/info -H \"Authorization: Bearer $MASTER_KEY\" -H 'Content-Type: application/json' --get --data-urlencode \"key=$VIRTUAL_KEY\" -w '\nCURL_HTTP_STATUS:%{http_code}\n'",
+      "status": 200,
+      "response": {
+        "key": "<QA_KEY>",
+        "info": {
+          "key_name": "sk-...Ddsw",
+          "key_alias": "qa35800-api-already-crossed",
+          "soft_budget_cooldown": false,
+          "spend": 1.07,
+          "total_spend": 0.07,
+          "expires": null,
+          "models": [
+            "qa-alert-model"
+          ],
+          "aliases": {},
+          "config": {},
+          "router_settings": {},
+          "user_id": null,
+          "team_id": null,
+          "agent_id": null,
+          "project_id": null,
+          "permissions": {},
+          "max_parallel_requests": null,
+          "metadata": {},
+          "blocked": null,
+          "tpm_limit": null,
+          "rpm_limit": null,
+          "tpd_limit": null,
+          "max_budget": null,
+          "budget_duration": null,
+          "budget_reset_at": null,
+          "allowed_cache_controls": [],
+          "allowed_routes": [],
+          "key_type": "default",
+          "policies": [],
+          "access_group_ids": [],
+          "model_spend": {},
+          "model_max_budget": {},
+          "budget_fallbacks": {},
+          "budget_id": "324a5cf7-abaf-4be6-9fd0-ea14276ac791",
+          "organization_id": null,
+          "object_permission_id": null,
+          "created_at": "2026-10-25T22:16:46.955000+00:00",
+          "created_by": "default_user_id",
+          "updated_at": "2026-10-25T22:16:52.189000+00:00",
+          "updated_by": "default_user_id",
+          "settings_updated_at": null,
+          "last_active": "2026-10-25T22:16:52.192000+00:00",
+          "rotation_count": 0,
+          "auto_rotate": false,
+          "rotation_interval": null,
+          "last_rotation_at": null,
+          "key_rotation_at": null,
+          "budget_limits": null,
+          "litellm_budget_table": {
+            "budget_id": "324a5cf7-abaf-4be6-9fd0-ea14276ac791",
+            "max_budget": null,
+            "soft_budget": 0.01,
+            "max_parallel_requests": null,
+            "tpm_limit": null,
+            "rpm_limit": null,
+            "tpd_limit": null,
+            "model_max_budget": {},
+            "budget_duration": null,
+            "budget_reset_at": null,
+            "allowed_models": [],
+            "temp_budget_increase": null,
+            "temp_budget_expiry": null,
+            "created_at": "2026-10-25T22:16:46.945000+00:00",
+            "created_by": "default_user_id",
+            "updated_at": "2026-10-25T22:16:46.945000+00:00",
+            "updated_by": "default_user_id",
+            "organization": null,
+            "projects": null,
+            "keys": null,
+            "end_users": null,
+            "tags": null,
+            "model_access_groups": null,
+            "team_membership": null,
+            "organization_membership": null
+          },
+          "litellm_organization_table": null,
+          "litellm_project_table": null,
+          "object_permission": null,
+          "jwt_key_mappings": null,
+          "status": "active"
+        }
+      }
+    },
+    {
+      "label": "key-info",
+      "command": "curl -sS --max-time 120 -X GET http://127.0.0.1:41479/key/info -H \"Authorization: Bearer $MASTER_KEY\" -H 'Content-Type: application/json' --get --data-urlencode \"key=$VIRTUAL_KEY\" -w '\nCURL_HTTP_STATUS:%{http_code}\n'",
+      "status": 200,
+      "response": {
+        "key": "<QA_KEY>",
+        "info": {
+          "key_name": "sk-...EpUg",
+          "key_alias": "qa35800-api-below-budget",
+          "soft_budget_cooldown": false,
+          "spend": 0.102,
+          "total_spend": 0.102,
+          "expires": null,
+          "models": [
+            "qa-alert-model"
+          ],
+          "aliases": {},
+          "config": {},
+          "router_settings": {},
+          "user_id": null,
+          "team_id": null,
+          "agent_id": null,
+          "project_id": null,
+          "permissions": {},
+          "max_parallel_requests": null,
+          "metadata": {},
+          "blocked": null,
+          "tpm_limit": null,
+          "rpm_limit": null,
+          "tpd_limit": null,
+          "max_budget": null,
+          "budget_duration": null,
+          "budget_reset_at": null,
+          "allowed_cache_controls": [],
+          "allowed_routes": [],
+          "key_type": "default",
+          "policies": [],
+          "access_group_ids": [],
+          "model_spend": {},
+          "model_max_budget": {},
+          "budget_fallbacks": {},
+          "budget_id": "94fcbef1-442b-495a-afff-8b09d477ed98",
+          "organization_id": null,
+          "object_permission_id": null,
+          "created_at": "2026-10-25T22:16:47.581000+00:00",
+          "created_by": "default_user_id",
+          "updated_at": "2026-10-25T22:16:52.189000+00:00",
+          "updated_by": "default_user_id",
+          "settings_updated_at": null,
+          "last_active": "2026-10-25T22:16:52.192000+00:00",
+          "rotation_count": 0,
+          "auto_rotate": false,
+          "rotation_interval": null,
+          "last_rotation_at": null,
+          "key_rotation_at": null,
+          "budget_limits": null,
+          "litellm_budget_table": {
+            "budget_id": "94fcbef1-442b-495a-afff-8b09d477ed98",
+            "max_budget": null,
+            "soft_budget": 1000.0,
+            "max_parallel_requests": null,
+            "tpm_limit": null,
+            "rpm_limit": null,
+            "tpd_limit": null,
+            "model_max_budget": {},
+            "budget_duration": null,
+            "budget_reset_at": null,
+            "allowed_models": [],
+            "temp_budget_increase": null,
+            "temp_budget_expiry": null,
+            "created_at": "2026-10-25T22:16:47.569000+00:00",
+            "created_by": "default_user_id",
+            "updated_at": "2026-10-25T22:16:47.569000+00:00",
+            "updated_by": "default_user_id",
+            "organization": null,
+            "projects": null,
+            "keys": null,
+            "end_users": null,
+            "tags": null,
+            "model_access_groups": null,
+            "team_membership": null,
+            "organization_membership": null
+          },
+          "litellm_organization_table": null,
+          "litellm_project_table": null,
+          "object_permission": null,
+          "jwt_key_mappings": null,
+          "status": "active"
+        }
+      }
+    },
+    {
+      "label": "key-info",
+      "command": "curl -sS --max-time 120 -X GET http://127.0.0.1:41479/key/info -H \"Authorization: Bearer $MASTER_KEY\" -H 'Content-Type: application/json' --get --data-urlencode \"key=$VIRTUAL_KEY\" -w '\nCURL_HTTP_STATUS:%{http_code}\n'",
+      "status": 200,
+      "response": {
+        "key": "<QA_KEY>",
+        "info": {
+          "key_name": "sk-...gQeg",
+          "key_alias": "qa35800-api-no-soft-budget",
+          "soft_budget_cooldown": false,
+          "spend": 0.07200000000000001,
+          "total_spend": 0.07200000000000001,
+          "expires": null,
+          "models": [
+            "qa-alert-model"
+          ],
+          "aliases": {},
+          "config": {},
+          "router_settings": {},
+          "user_id": null,
+          "team_id": null,
+          "agent_id": null,
+          "project_id": null,
+          "permissions": {},
+          "max_parallel_requests": null,
+          "metadata": {},
+          "blocked": null,
+          "tpm_limit": null,
+          "rpm_limit": null,
+          "tpd_limit": null,
+          "max_budget": null,
+          "budget_duration": null,
+          "budget_reset_at": null,
+          "allowed_cache_controls": [],
+          "allowed_routes": [],
+          "key_type": "default",
+          "policies": [],
+          "access_group_ids": [],
+          "model_spend": {},
+          "model_max_budget": {},
+          "budget_fallbacks": {},
+          "budget_id": null,
+          "organization_id": null,
+          "object_permission_id": null,
+          "created_at": "2026-10-25T22:16:48.556000+00:00",
+          "created_by": "default_user_id",
+          "updated_at": "2026-10-25T22:16:52.189000+00:00",
+          "updated_by": "default_user_id",
+          "settings_updated_at": null,
+          "last_active": "2026-10-25T22:16:52.192000+00:00",
+          "rotation_count": 0,
+          "auto_rotate": false,
+          "rotation_interval": null,
+          "last_rotation_at": null,
+          "key_rotation_at": null,
+          "budget_limits": null,
+          "litellm_budget_table": null,
+          "litellm_organization_table": null,
+          "litellm_project_table": null,
+          "object_permission": null,
+          "jwt_key_mappings": null,
+          "status": "active"
+        }
+      }
+    },
+    {
+      "label": "delete-owned-key",
+      "command": "curl -sS --max-time 120 -X POST http://127.0.0.1:41479/key/delete -H \"Authorization: Bearer $MASTER_KEY\" -H 'Content-Type: application/json' --data-raw '{\"keys\": [\"$VIRTUAL_KEY\"]}' -w '\nCURL_HTTP_STATUS:%{http_code}\n'",
+      "status": 200,
+      "response": {
+        "deleted_keys": [
+          "$VIRTUAL_KEY"
+        ]
+      }
+    },
+    {
+      "label": "delete-owned-key",
+      "command": "curl -sS --max-time 120 -X POST http://127.0.0.1:41479/key/delete -H \"Authorization: Bearer $MASTER_KEY\" -H 'Content-Type: application/json' --data-raw '{\"keys\": [\"$VIRTUAL_KEY\"]}' -w '\nCURL_HTTP_STATUS:%{http_code}\n'",
+      "status": 200,
+      "response": {
+        "deleted_keys": [
+          "$VIRTUAL_KEY"
+        ]
+      }
+    },
+    {
+      "label": "delete-owned-key",
+      "command": "curl -sS --max-time 120 -X POST http://127.0.0.1:41479/key/delete -H \"Authorization: Bearer $MASTER_KEY\" -H 'Content-Type: application/json' --data-raw '{\"keys\": [\"$VIRTUAL_KEY\"]}' -w '\nCURL_HTTP_STATUS:%{http_code}\n'",
+      "status": 200,
+      "response": {
+        "deleted_keys": [
+          "$VIRTUAL_KEY"
+        ]
+      }
+    },
+    {
+      "label": "delete-owned-key",
+      "command": "curl -sS --max-time 120 -X POST http://127.0.0.1:41479/key/delete -H \"Authorization: Bearer $MASTER_KEY\" -H 'Content-Type: application/json' --data-raw '{\"keys\": [\"$VIRTUAL_KEY\"]}' -w '\nCURL_HTTP_STATUS:%{http_code}\n'",
+      "status": 200,
+      "response": {
+        "deleted_keys": [
+          "$VIRTUAL_KEY"
+        ]
+      }
+    }
+  ],
+  "cases": [
+    {
+      "label": "crossed-by-request",
+      "alias": "qa35800-api-crossed-by-request",
+      "before": {
+        "spend": 0.0,
+        "soft_budget": 0.01,
+        "team_id": null,
+        "max_budget": null
+      },
+      "calls": [
+        {
+          "status": 200,
+          "usage": {
+            "completion_tokens": 8,
+            "prompt_tokens": 19,
+            "total_tokens": 27,
+            "prompt_tokens_details": {
+              "cached_tokens": 15
+            }
+          }
+        },
+        {
+          "status": 200,
+          "usage": {
+            "completion_tokens": 8,
+            "prompt_tokens": 19,
+            "total_tokens": 27,
+            "prompt_tokens_details": {
+              "cached_tokens": 15
+            }
+          }
+        },
+        {
+          "status": 200,
+          "usage": {
+            "completion_tokens": 8,
+            "prompt_tokens": 19,
+            "total_tokens": 27,
+            "prompt_tokens_details": {
+              "cached_tokens": 15
+            }
+          }
+        }
+      ],
+      "after_first_persisted": {
+        "spend": 0.035,
+        "soft_budget": 0.01,
+        "team_id": null,
+        "max_budget": null
+      },
+      "after": {
+        "spend": 0.105,
+        "soft_budget": 0.01,
+        "team_id": null,
+        "max_budget": null
+      },
+      "alerts": {
+        "count": 0,
+        "messages": []
+      }
+    },
+    {
+      "label": "already-crossed",
+      "alias": "qa35800-api-already-crossed",
+      "before": {
+        "spend": 1.0,
+        "soft_budget": 0.01,
+        "team_id": null,
+        "max_budget": null
+      },
+      "calls": [
+        {
+          "status": 200,
+          "usage": {
+            "completion_tokens": 8,
+            "prompt_tokens": 19,
+            "total_tokens": 27,
+            "prompt_tokens_details": {
+              "cached_tokens": 15
+            }
+          }
+        },
+        {
+          "status": 200,
+          "usage": {
+            "completion_tokens": 8,
+            "prompt_tokens": 19,
+            "total_tokens": 27,
+            "prompt_tokens_details": {
+              "cached_tokens": 15
+            }
+          }
+        }
+      ],
+      "after": {
+        "spend": 1.07,
+        "soft_budget": 0.01,
+        "team_id": null,
+        "max_budget": null
+      },
+      "alerts": {
+        "count": 1,
+        "messages": [
+          {
+            "received_at": "2026-10-25T22:16:50.020167+00:00",
+            "body": {
+              "text": "Alert type: `budget_alerts`\nLevel: `High`\nTimestamp: `22:16:46`\n\nMessage: Soft Budget Crossed: Total Soft Budget:`0.01`\n\n*spend:* `1.0`\n*soft_budget:* `0.01`\n*key_alias:* `qa35800-api-already-crossed`\n*event_group:* `key`\n\n\nProxy URL: `http://127.0.0.1:41479`"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "label": "below-budget",
+      "alias": "qa35800-api-below-budget",
+      "before": {
+        "spend": 0.0,
+        "soft_budget": 1000.0,
+        "team_id": null,
+        "max_budget": null
+      },
+      "calls": [
+        {
+          "status": 200,
+          "usage": {
+            "completion_tokens": 8,
+            "prompt_tokens": 18,
+            "total_tokens": 26,
+            "prompt_tokens_details": {
+              "cached_tokens": 14
+            }
+          }
+        },
+        {
+          "status": 200,
+          "usage": {
+            "completion_tokens": 8,
+            "prompt_tokens": 18,
+            "total_tokens": 26,
+            "prompt_tokens_details": {
+              "cached_tokens": 14
+            }
+          }
+        },
+        {
+          "status": 200,
+          "usage": {
+            "completion_tokens": 8,
+            "prompt_tokens": 18,
+            "total_tokens": 26,
+            "prompt_tokens_details": {
+              "cached_tokens": 14
+            }
+          }
+        }
+      ],
+      "after": {
+        "spend": 0.102,
+        "soft_budget": 1000.0,
+        "team_id": null,
+        "max_budget": null
+      },
+      "alerts": {
+        "count": 0,
+        "messages": []
+      }
+    },
+    {
+      "label": "no-soft-budget",
+      "alias": "qa35800-api-no-soft-budget",
+      "before": {
+        "spend": 0.0,
+        "soft_budget": null,
+        "team_id": null,
+        "max_budget": null
+      },
+      "calls": [
+        {
+          "status": 200,
+          "usage": {
+            "completion_tokens": 8,
+            "prompt_tokens": 20,
+            "total_tokens": 28,
+            "prompt_tokens_details": {
+              "cached_tokens": 16
+            }
+          }
+        },
+        {
+          "status": 200,
+          "usage": {
+            "completion_tokens": 8,
+            "prompt_tokens": 20,
+            "total_tokens": 28,
+            "prompt_tokens_details": {
+              "cached_tokens": 16
+            }
+          }
+        }
+      ],
+      "after": {
+        "spend": 0.07200000000000001,
+        "soft_budget": null,
+        "team_id": null,
+        "max_budget": null
+      },
+      "alerts": {
+        "count": 0,
+        "messages": []
+      }
+    }
+  ],
+  "poll_curl_requests": 4,
+  "result": "passed",
+  "cleanup": [
+    200,
+    200,
+    200,
+    200
+  ],
+  "completed_at": "2026-10-25T22:17:05.740727+00:00"
+}

@@ -1,0 +1,4 @@
+collecting ... collected 1 item
+tests/integration/spend/test_key_budget_lockout.py::test_soft_budget_alert_reads_spend_from_another_proxy FAILED [100%]
+tests/integration/spend/test_key_budget_lockout.py:246: in test_soft_budget_alert_reads_spend_from_another_proxy
+========================= 1 failed in 70.34s (0:01:10) =========================

@@ -1,0 +1,42 @@
+.F.FFF...........                                                        [100%]
+=================================== FAILURES ===================================
+_ test_soft_budget_alert_uses_current_spend_without_blocking_requests[0.0-100.0-50.0-100.0] _
+tests/unit/proxy/auth/test_auth_checks.py:1126: in test_soft_budget_alert_uses_current_spend_without_blocking_requests
+    assert [json.loads(request.content) for request in received] == expected
+E   AssertionError: assert [] == [{'alert_emai...: 'key', ...}]
+E     
+E     Right contains one more item: {'alert_emails': None, 'customer_id': None, 'event': 'soft_budget_crossed', 'event_group': 'key', ...}
+E     Use -v to get more diff
+_ test_soft_budget_alert_uses_current_spend_without_blocking_requests[0.0-50.0-50.0-50.0] _
+tests/unit/proxy/auth/test_auth_checks.py:1126: in test_soft_budget_alert_uses_current_spend_without_blocking_requests
+    assert [json.loads(request.content) for request in received] == expected
+E   AssertionError: assert [] == [{'alert_emai...: 'key', ...}]
+E     
+E     Right contains one more item: {'alert_emails': None, 'customer_id': None, 'event': 'soft_budget_crossed', 'event_group': 'key', ...}
+E     Use -v to get more diff
+_ test_soft_budget_alert_uses_current_spend_without_blocking_requests[100.0-0.0-50.0-None] _
+tests/unit/proxy/auth/test_auth_checks.py:1126: in test_soft_budget_alert_uses_current_spend_without_blocking_requests
+    assert [json.loads(request.content) for request in received] == expected
+E   AssertionError: assert [{'alert_emai...: 'key', ...}] == []
+E     
+E     Left contains one more item: {'alert_emails': None, 'customer_id': None, 'event': 'soft_budget_crossed', 'event_group': 'key', ...}
+E     Use -v to get more diff
+_ test_soft_budget_alert_uses_current_spend_without_blocking_requests[100.0-25.0-50.0-None] _
+tests/unit/proxy/auth/test_auth_checks.py:1126: in test_soft_budget_alert_uses_current_spend_without_blocking_requests
+    assert [json.loads(request.content) for request in received] == expected
+E   AssertionError: assert [{'alert_emai...: 'key', ...}] == []
+E     
+E     Left contains one more item: {'alert_emails': None, 'customer_id': None, 'event': 'soft_budget_crossed', 'event_group': 'key', ...}
+E     Use -v to get more diff
+=============================== warnings summary ===============================
+../litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'text' on TypedDict class '_SlackWebhookBody' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/unit/proxy/auth/test_auth_checks.py::test_soft_budget_alert_uses_current_spend_without_blocking_requests[0.0-100.0-50.0-100.0]
+FAILED tests/unit/proxy/auth/test_auth_checks.py::test_soft_budget_alert_uses_current_spend_without_blocking_requests[0.0-50.0-50.0-50.0]
+FAILED tests/unit/proxy/auth/test_auth_checks.py::test_soft_budget_alert_uses_current_spend_without_blocking_requests[100.0-0.0-50.0-None]
+FAILED tests/unit/proxy/auth/test_auth_checks.py::test_soft_budget_alert_uses_current_spend_without_blocking_requests[100.0-25.0-50.0-None]
+4 failed, 13 passed, 875 deselected, 1 warning in 3.24s

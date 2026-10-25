@@ -1,0 +1,24 @@
+{
+  "revision": "fixed",
+  "source": "/opt/litellm-35800",
+  "sha": "8c0fe877b9bbfa0a6934d8ec9373fcaf029a2082",
+  "source_clean": true,
+  "ui": "/qa/litellm-ui-baseline-47520",
+  "ui_source_sha": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "ui_source_unchanged": true,
+  "port": 41479,
+  "receiver_port": 41480,
+  "database_name": "qa35800_fixed_bf6a89027d",
+  "started_at": "2026-10-25T22:18:30.006435+00:00",
+  "enterprise_entitlement_override": false,
+  "local_receiver_only": true,
+  "hosted_slack_not_tested": true,
+  "provider": "Ollama 0.40.11, local Qwen3.5 0.8B through the OpenAI-compatible endpoint",
+  "custom_prices": {
+    "input_cost_per_token": 0.001,
+    "output_cost_per_token": 0.002
+  },
+  "redis_port": 10001,
+  "pid": 54977,
+  "ready_at": "2026-10-25T22:18:50.684149+00:00"
+}

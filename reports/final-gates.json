@@ -1,0 +1,27 @@
+{
+  "recorded_at": "2026-10-25T22:13:25.732002+00:00",
+  "source_sha": "8c0fe877b9bbfa0a6934d8ec9373fcaf029a2082",
+  "make_format": {
+    "returncode": 0,
+    "production_files_unchanged": 2932,
+    "observed_tool_session": 13962
+  },
+  "committed_format_check": {
+    "command": "make lint-format-check-changed BASE_REF=origin/main LINT_DEP_INSTALL= LINT_DEP_BASE=",
+    "returncode": 0,
+    "stdout": "1 file already formatted",
+    "observed_tool_chunk": "827241"
+  },
+  "lint": {
+    "returncode": 0,
+    "log": "lint.log"
+  },
+  "test_format_cleanup": {
+    "completed_at": "2026-10-25T22:10:47.251286+00:00",
+    "path": "tests/unit/proxy/auth/test_auth_checks.py",
+    "before_sha256": "dd81d8ef3d3d153c8ad44a8103d79e9a7540e582cd534757836a2c6a4bfb507f",
+    "after_sha256": "f5ca063359e8d387b1960ba4152c5ff082b3b46d8242e88aaea14d0ff68517b5",
+    "ast_identical": true,
+    "reason": "Restore formatting of existing tests outside the added regression"
+  }
+}

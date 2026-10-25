@@ -1,0 +1,2725 @@
+[33mTesting types with tsc and vue-tsc is an experimental feature.
+Breaking changes might not follow SemVer, please pin Vitest's version when using it.[39m
+
+[1m[30m[46m RUN [49m[39m[22m [36mv4.1.12 [39m[90m/opt/litellm-35800/ui/litellm-dashboard[39m
+
+Importing from "vitest/environments" is deprecated since Vitest 4.1. Please use "vitest/runtime" instead.
+Importing from "vitest/environments" is deprecated since Vitest 4.1. Please use "vitest/runtime" instead.
+The Vitest environment jsdom-fetch defines the "transformMode". This options was deprecated in Vitest 4 and will be removed in the next major version. Please, use "viteEnvironment" instead.
+The Vitest environment jsdom-fetch defines the "transformMode". This options was deprecated in Vitest 4 and will be removed in the next major version. Please, use "viteEnvironment" instead.
+Importing from "vitest/environments" is deprecated since Vitest 4.1. Please use "vitest/runtime" instead.
+The Vitest environment jsdom-fetch defines the "transformMode". This options was deprecated in Vitest 4 and will be removed in the next major version. Please, use "viteEnvironment" instead.
+[90mstderr[2m | src/components/organisms/create_key_button.test.tsx[2m > [22m[2mfetchTeamModels[2m > [22m[2mswallows a failed lookup and returns an empty list
+[22m[39mError fetching user models: Error: proxy down
+    at [90m/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/organisms/create_key_button.test.tsx:38:53
+    at file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4m@vitest/runner[24m/dist/chunk-artifact.js:302:11
+    at file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4m@vitest/runner[24m/dist/chunk-artifact.js:1903:26
+    at file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4m@vitest/runner[24m/dist/chunk-artifact.js:2326:20
+    at new Promise (<anonymous>)
+    at runWithCancel (file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4m@vitest/runner[24m/dist/chunk-artifact.js:2323:10)
+    at file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4m@vitest/runner[24m/dist/chunk-artifact.js:2305:20
+    at new Promise (<anonymous>)
+    at runWithTimeout (file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4m@vitest/runner[24m/dist/chunk-artifact.js:2272:10)
+    at file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4m@vitest/runner[24m/dist/chunk-artifact.js:2956:64
+
+[90mstderr[2m | src/components/organisms/create_key_button.test.tsx[2m > [22m[2mfetchUserModels[2m > [22m[2mleaves the setter untouched when the lookup fails
+[22m[39mError fetching user models: Error: proxy down
+    at [90m/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/organisms/create_key_button.test.tsx:60:53
+    at file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4m@vitest/runner[24m/dist/chunk-artifact.js:302:11
+    at file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4m@vitest/runner[24m/dist/chunk-artifact.js:1903:26
+    at file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4m@vitest/runner[24m/dist/chunk-artifact.js:2326:20
+    at new Promise (<anonymous>)
+    at runWithCancel (file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4m@vitest/runner[24m/dist/chunk-artifact.js:2323:10)
+    at file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4m@vitest/runner[24m/dist/chunk-artifact.js:2305:20
+    at new Promise (<anonymous>)
+    at runWithTimeout (file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4m@vitest/runner[24m/dist/chunk-artifact.js:2272:10)
+    at file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4m@vitest/runner[24m/dist/chunk-artifact.js:2956:64
+
+ [32m✓[39m [30m[45m component [49m[39m src/components/organisms/create_key_button.test.tsx [2m([22m[2m7 tests[22m[2m)[22m[32m 10[2mms[22m[39m
+Importing from "vitest/environments" is deprecated since Vitest 4.1. Please use "vitest/runtime" instead.
+The Vitest environment jsdom-fetch defines the "transformMode". This options was deprecated in Vitest 4 and will be removed in the next major version. Please, use "viteEnvironment" instead.
+[90mstderr[2m | src/components/templates/key_info_view.test.tsx[2m > [22m[2mKeyInfoView[2m > [22m[2mpremium metadata payload normalization[2m > [22m[2mshould drop an empty policies field when the key previously had no policies
+[22m[39mAn update to KeyInfoView inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+An update to KeyInfoView inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+
+[90mstderr[2m | src/components/templates/key_info_view.test.tsx[2m > [22m[2mKeyInfoView[2m > [22m[2mpremium metadata payload normalization[2m > [22m[2mshould keep an empty policies field when the key previously had policies set
+[22m[39mAn update to KeyInfoView inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+An update to KeyInfoView inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+
+[90mstderr[2m | src/components/templates/key_info_view.test.tsx[2m > [22m[2mKeyInfoView[2m > [22m[2mpremium metadata payload normalization[2m > [22m[2mshould keep an empty policies field when the previous value lives only at the top level of keyData
+[22m[39mAn update to KeyInfoView inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+An update to KeyInfoView inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+
+[90mstderr[2m | src/components/templates/key_info_view.test.tsx[2m > [22m[2mKeyInfoView[2m > [22m[2mpremium metadata payload normalization[2m > [22m[2mputs the key identifier and an explicit null max_budget on the wire when the edit view hands over a cleared budget
+[22m[39mAn update to KeyInfoView inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+An update to KeyInfoView inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+
+[90mstderr[2m | src/components/templates/key_info_view.test.tsx[2m > [22m[2mKeyInfoView[2m > [22m[2mMCP tool permissions on save[2m > [22m[2mdrops the allowlist of every deselected server instead of leaving it entitled
+[22m[39mError fetching MCP servers: Error: [vitest] No "fetchMCPServers" export is defined on the "../networking" mock. Did you forget to return it from "vi.mock"?
+If you need to partially mock a module, you can use "importOriginal" helper inside:
+
+    at VitestMocker.createError (file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4mvitest[24m/dist/chunks/startVitestModuleRunner.DB-7oCpn.js:62:17)
+    at Object.get (file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4mvitest[24m/dist/chunks/startVitestModuleRunner.DB-7oCpn.js:327:16)
+    at fetchMCPServerDetails [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/permissions/MCPServerPermissions.tsx:68:34[90m)[39m
+    at [90m/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/permissions/MCPServerPermissions.tsx:79:5
+    at Object.react_stack_bottom_frame (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:25989:20)
+    at runWithFiberInDEV (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:874:13)
+    at commitHookEffectListMount (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:13249:29)
+    at commitHookPassiveMountEffects (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:13336:11)
+    at commitPassiveMountOnFiber (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:15484:13)
+    at recursivelyTraversePassiveMountEffects (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:15439:11) {
+  codeFrame: [32m'vi.mock(import("../networking"), async (importOriginal) => {\n'[39m +
+    [32m'  const actual = await importOriginal()\n'[39m +
+    [32m'  return {\n'[39m +
+    [32m'    ...actual,\n'[39m +
+    [32m'    // your mocked methods\n'[39m +
+    [32m'  }\n'[39m +
+    [32m'})'[39m
+}
+Error fetching MCP servers: Error: [vitest] No "fetchMCPServers" export is defined on the "../networking" mock. Did you forget to return it from "vi.mock"?
+If you need to partially mock a module, you can use "importOriginal" helper inside:
+
+    at VitestMocker.createError (file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4mvitest[24m/dist/chunks/startVitestModuleRunner.DB-7oCpn.js:62:17)
+    at Object.get (file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4mvitest[24m/dist/chunks/startVitestModuleRunner.DB-7oCpn.js:327:16)
+    at fetchMCPServerDetails [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/permissions/MCPServerPermissions.tsx:68:34[90m)[39m
+    at [90m/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/permissions/MCPServerPermissions.tsx:79:5
+    at Object.react_stack_bottom_frame (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:25989:20)
+    at runWithFiberInDEV (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:874:13)
+    at commitHookEffectListMount (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:13249:29)
+    at commitHookPassiveMountEffects (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:13336:11)
+    at commitPassiveMountOnFiber (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:15484:13)
+    at recursivelyTraversePassiveMountEffects (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:15439:11) {
+  codeFrame: [32m'vi.mock(import("../networking"), async (importOriginal) => {\n'[39m +
+    [32m'  const actual = await importOriginal()\n'[39m +
+    [32m'  return {\n'[39m +
+    [32m'    ...actual,\n'[39m +
+    [32m'    // your mocked methods\n'[39m +
+    [32m'  }\n'[39m +
+    [32m'})'[39m
+}
+
+[90mstderr[2m | src/components/templates/key_info_view.test.tsx[2m > [22m[2mKeyInfoView[2m > [22m[2mMCP tool permissions on save[2m > [22m[2mdrops the allowlist of every deselected server instead of leaving it entitled
+[22m[39mAn update to KeyInfoView inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+An update to KeyInfoView inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+
+[90mstderr[2m | src/components/templates/key_info_view.test.tsx[2m > [22m[2mKeyInfoView[2m > [22m[2mMCP tool permissions on save[2m > [22m[2mdrops only the deselected server and keeps the one still granted
+[22m[39mError fetching MCP servers: Error: [vitest] No "fetchMCPServers" export is defined on the "../networking" mock. Did you forget to return it from "vi.mock"?
+If you need to partially mock a module, you can use "importOriginal" helper inside:
+
+    at VitestMocker.createError (file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4mvitest[24m/dist/chunks/startVitestModuleRunner.DB-7oCpn.js:62:17)
+    at Object.get (file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4mvitest[24m/dist/chunks/startVitestModuleRunner.DB-7oCpn.js:327:16)
+    at fetchMCPServerDetails [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/permissions/MCPServerPermissions.tsx:68:34[90m)[39m
+    at [90m/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/permissions/MCPServerPermissions.tsx:79:5
+    at Object.react_stack_bottom_frame (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:25989:20)
+    at runWithFiberInDEV (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:874:13)
+    at commitHookEffectListMount (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:13249:29)
+    at commitHookPassiveMountEffects (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:13336:11)
+    at commitPassiveMountOnFiber (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:15484:13)
+    at recursivelyTraversePassiveMountEffects (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:15439:11) {
+  codeFrame: [32m'vi.mock(import("../networking"), async (importOriginal) => {\n'[39m +
+    [32m'  const actual = await importOriginal()\n'[39m +
+    [32m'  return {\n'[39m +
+    [32m'    ...actual,\n'[39m +
+    [32m'    // your mocked methods\n'[39m +
+    [32m'  }\n'[39m +
+    [32m'})'[39m
+}
+Error fetching MCP servers: Error: [vitest] No "fetchMCPServers" export is defined on the "../networking" mock. Did you forget to return it from "vi.mock"?
+If you need to partially mock a module, you can use "importOriginal" helper inside:
+
+    at VitestMocker.createError (file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4mvitest[24m/dist/chunks/startVitestModuleRunner.DB-7oCpn.js:62:17)
+    at Object.get (file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4mvitest[24m/dist/chunks/startVitestModuleRunner.DB-7oCpn.js:327:16)
+    at fetchMCPServerDetails [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/permissions/MCPServerPermissions.tsx:68:34[90m)[39m
+    at [90m/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/permissions/MCPServerPermissions.tsx:79:5
+    at Object.react_stack_bottom_frame (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:25989:20)
+    at runWithFiberInDEV (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:874:13)
+    at commitHookEffectListMount (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:13249:29)
+    at commitHookPassiveMountEffects (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:13336:11)
+    at commitPassiveMountOnFiber (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:15484:13)
+    at recursivelyTraversePassiveMountEffects (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:15439:11) {
+  codeFrame: [32m'vi.mock(import("../networking"), async (importOriginal) => {\n'[39m +
+    [32m'  const actual = await importOriginal()\n'[39m +
+    [32m'  return {\n'[39m +
+    [32m'    ...actual,\n'[39m +
+    [32m'    // your mocked methods\n'[39m +
+    [32m'  }\n'[39m +
+    [32m'})'[39m
+}
+
+[90mstderr[2m | src/components/templates/key_info_view.test.tsx[2m > [22m[2mKeyInfoView[2m > [22m[2mMCP tool permissions on save[2m > [22m[2mdrops only the deselected server and keeps the one still granted
+[22m[39mAn update to KeyInfoView inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+An update to KeyInfoView inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+
+[90mstderr[2m | src/components/templates/key_info_view.test.tsx[2m > [22m[2mKeyInfoView[2m > [22m[2mMCP tool permissions on save[2m > [22m[2mkeeps an allowlist whose server is reachable through a retained access group
+[22m[39mError fetching MCP servers: Error: [vitest] No "fetchMCPServers" export is defined on the "../networking" mock. Did you forget to return it from "vi.mock"?
+If you need to partially mock a module, you can use "importOriginal" helper inside:
+
+    at VitestMocker.createError (file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4mvitest[24m/dist/chunks/startVitestModuleRunner.DB-7oCpn.js:62:17)
+    at Object.get (file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4mvitest[24m/dist/chunks/startVitestModuleRunner.DB-7oCpn.js:327:16)
+    at fetchMCPServerDetails [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/permissions/MCPServerPermissions.tsx:68:34[90m)[39m
+    at [90m/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/permissions/MCPServerPermissions.tsx:79:5
+    at Object.react_stack_bottom_frame (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:25989:20)
+    at runWithFiberInDEV (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:874:13)
+    at commitHookEffectListMount (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:13249:29)
+    at commitHookPassiveMountEffects (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:13336:11)
+    at commitPassiveMountOnFiber (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:15484:13)
+    at recursivelyTraversePassiveMountEffects (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:15439:11) {
+  codeFrame: [32m'vi.mock(import("../networking"), async (importOriginal) => {\n'[39m +
+    [32m'  const actual = await importOriginal()\n'[39m +
+    [32m'  return {\n'[39m +
+    [32m'    ...actual,\n'[39m +
+    [32m'    // your mocked methods\n'[39m +
+    [32m'  }\n'[39m +
+    [32m'})'[39m
+}
+Error fetching MCP servers: Error: [vitest] No "fetchMCPServers" export is defined on the "../networking" mock. Did you forget to return it from "vi.mock"?
+If you need to partially mock a module, you can use "importOriginal" helper inside:
+
+    at VitestMocker.createError (file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4mvitest[24m/dist/chunks/startVitestModuleRunner.DB-7oCpn.js:62:17)
+    at Object.get (file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4mvitest[24m/dist/chunks/startVitestModuleRunner.DB-7oCpn.js:327:16)
+    at fetchMCPServerDetails [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/permissions/MCPServerPermissions.tsx:68:34[90m)[39m
+    at [90m/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/permissions/MCPServerPermissions.tsx:79:5
+    at Object.react_stack_bottom_frame (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:25989:20)
+    at runWithFiberInDEV (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:874:13)
+    at commitHookEffectListMount (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:13249:29)
+    at commitHookPassiveMountEffects (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:13336:11)
+    at commitPassiveMountOnFiber (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:15484:13)
+    at recursivelyTraversePassiveMountEffects (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:15439:11) {
+  codeFrame: [32m'vi.mock(import("../networking"), async (importOriginal) => {\n'[39m +
+    [32m'  const actual = await importOriginal()\n'[39m +
+    [32m'  return {\n'[39m +
+    [32m'    ...actual,\n'[39m +
+    [32m'    // your mocked methods\n'[39m +
+    [32m'  }\n'[39m +
+    [32m'})'[39m
+}
+
+[90mstderr[2m | src/components/templates/key_info_view.test.tsx[2m > [22m[2mKeyInfoView[2m > [22m[2mMCP tool permissions on save[2m > [22m[2mkeeps an allowlist whose server is reachable through a retained access group
+[22m[39mAn update to KeyInfoView inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+An update to KeyInfoView inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+
+[90mstderr[2m | src/components/templates/key_info_view.test.tsx[2m > [22m[2mKeyInfoView[2m > [22m[2mMCP tool permissions on save[2m > [22m[2mdrops an allowlist the retained access group does not reach
+[22m[39mError fetching MCP servers: Error: [vitest] No "fetchMCPServers" export is defined on the "../networking" mock. Did you forget to return it from "vi.mock"?
+If you need to partially mock a module, you can use "importOriginal" helper inside:
+
+    at VitestMocker.createError (file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4mvitest[24m/dist/chunks/startVitestModuleRunner.DB-7oCpn.js:62:17)
+    at Object.get (file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4mvitest[24m/dist/chunks/startVitestModuleRunner.DB-7oCpn.js:327:16)
+    at fetchMCPServerDetails [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/permissions/MCPServerPermissions.tsx:68:34[90m)[39m
+    at [90m/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/permissions/MCPServerPermissions.tsx:79:5
+    at Object.react_stack_bottom_frame (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:25989:20)
+    at runWithFiberInDEV (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:874:13)
+    at commitHookEffectListMount (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:13249:29)
+    at commitHookPassiveMountEffects (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:13336:11)
+    at commitPassiveMountOnFiber (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:15484:13)
+    at recursivelyTraversePassiveMountEffects (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:15439:11) {
+  codeFrame: [32m'vi.mock(import("../networking"), async (importOriginal) => {\n'[39m +
+    [32m'  const actual = await importOriginal()\n'[39m +
+    [32m'  return {\n'[39m +
+    [32m'    ...actual,\n'[39m +
+    [32m'    // your mocked methods\n'[39m +
+    [32m'  }\n'[39m +
+    [32m'})'[39m
+}
+Error fetching MCP servers: Error: [vitest] No "fetchMCPServers" export is defined on the "../networking" mock. Did you forget to return it from "vi.mock"?
+If you need to partially mock a module, you can use "importOriginal" helper inside:
+
+    at VitestMocker.createError (file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4mvitest[24m/dist/chunks/startVitestModuleRunner.DB-7oCpn.js:62:17)
+    at Object.get (file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4mvitest[24m/dist/chunks/startVitestModuleRunner.DB-7oCpn.js:327:16)
+    at fetchMCPServerDetails [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/permissions/MCPServerPermissions.tsx:68:34[90m)[39m
+    at [90m/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/permissions/MCPServerPermissions.tsx:79:5
+    at Object.react_stack_bottom_frame (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:25989:20)
+    at runWithFiberInDEV (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:874:13)
+    at commitHookEffectListMount (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:13249:29)
+    at commitHookPassiveMountEffects (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:13336:11)
+    at commitPassiveMountOnFiber (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:15484:13)
+    at recursivelyTraversePassiveMountEffects (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:15439:11) {
+  codeFrame: [32m'vi.mock(import("../networking"), async (importOriginal) => {\n'[39m +
+    [32m'  const actual = await importOriginal()\n'[39m +
+    [32m'  return {\n'[39m +
+    [32m'    ...actual,\n'[39m +
+    [32m'    // your mocked methods\n'[39m +
+    [32m'  }\n'[39m +
+    [32m'})'[39m
+}
+
+[90mstderr[2m | src/components/templates/key_info_view.test.tsx[2m > [22m[2mKeyInfoView[2m > [22m[2mMCP tool permissions on save[2m > [22m[2mdrops an allowlist the retained access group does not reach
+[22m[39mAn update to KeyInfoView inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+An update to KeyInfoView inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+
+[90mstderr[2m | src/components/templates/key_info_view.test.tsx[2m > [22m[2mKeyInfoView[2m > [22m[2mMCP tool permissions on save[2m > [22m[2mdrops an allowlist the retained toolset does not cover
+[22m[39mError fetching MCP servers: Error: [vitest] No "fetchMCPServers" export is defined on the "../networking" mock. Did you forget to return it from "vi.mock"?
+If you need to partially mock a module, you can use "importOriginal" helper inside:
+
+    at VitestMocker.createError (file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4mvitest[24m/dist/chunks/startVitestModuleRunner.DB-7oCpn.js:62:17)
+    at Object.get (file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4mvitest[24m/dist/chunks/startVitestModuleRunner.DB-7oCpn.js:327:16)
+    at fetchMCPServerDetails [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/permissions/MCPServerPermissions.tsx:68:34[90m)[39m
+    at [90m/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/permissions/MCPServerPermissions.tsx:79:5
+    at Object.react_stack_bottom_frame (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:25989:20)
+    at runWithFiberInDEV (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:874:13)
+    at commitHookEffectListMount (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:13249:29)
+    at commitHookPassiveMountEffects (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:13336:11)
+    at commitPassiveMountOnFiber (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:15484:13)
+    at recursivelyTraversePassiveMountEffects (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:15439:11) {
+  codeFrame: [32m'vi.mock(import("../networking"), async (importOriginal) => {\n'[39m +
+    [32m'  const actual = await importOriginal()\n'[39m +
+    [32m'  return {\n'[39m +
+    [32m'    ...actual,\n'[39m +
+    [32m'    // your mocked methods\n'[39m +
+    [32m'  }\n'[39m +
+    [32m'})'[39m
+}
+Error fetching MCP servers: Error: [vitest] No "fetchMCPServers" export is defined on the "../networking" mock. Did you forget to return it from "vi.mock"?
+If you need to partially mock a module, you can use "importOriginal" helper inside:
+
+    at VitestMocker.createError (file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4mvitest[24m/dist/chunks/startVitestModuleRunner.DB-7oCpn.js:62:17)
+    at Object.get (file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4mvitest[24m/dist/chunks/startVitestModuleRunner.DB-7oCpn.js:327:16)
+    at fetchMCPServerDetails [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/permissions/MCPServerPermissions.tsx:68:34[90m)[39m
+    at [90m/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/permissions/MCPServerPermissions.tsx:79:5
+    at Object.react_stack_bottom_frame (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:25989:20)
+    at runWithFiberInDEV (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:874:13)
+    at commitHookEffectListMount (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:13249:29)
+    at commitHookPassiveMountEffects (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:13336:11)
+    at commitPassiveMountOnFiber (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:15484:13)
+    at recursivelyTraversePassiveMountEffects (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:15439:11) {
+  codeFrame: [32m'vi.mock(import("../networking"), async (importOriginal) => {\n'[39m +
+    [32m'  const actual = await importOriginal()\n'[39m +
+    [32m'  return {\n'[39m +
+    [32m'    ...actual,\n'[39m +
+    [32m'    // your mocked methods\n'[39m +
+    [32m'  }\n'[39m +
+    [32m'})'[39m
+}
+
+[90mstderr[2m | src/components/templates/key_info_view.test.tsx[2m > [22m[2mKeyInfoView[2m > [22m[2mMCP tool permissions on save[2m > [22m[2mdrops an allowlist the retained toolset does not cover
+[22m[39mAn update to KeyInfoView inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+An update to KeyInfoView inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+
+[90mstderr[2m | src/components/templates/key_info_view.test.tsx[2m > [22m[2mKeyInfoView[2m > [22m[2mMCP tool permissions on save[2m > [22m[2mrefuses to save a permission change while a selected toolset is unresolvable
+[22m[39mError fetching MCP servers: Error: [vitest] No "fetchMCPServers" export is defined on the "../networking" mock. Did you forget to return it from "vi.mock"?
+If you need to partially mock a module, you can use "importOriginal" helper inside:
+
+    at VitestMocker.createError (file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4mvitest[24m/dist/chunks/startVitestModuleRunner.DB-7oCpn.js:62:17)
+    at Object.get (file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4mvitest[24m/dist/chunks/startVitestModuleRunner.DB-7oCpn.js:327:16)
+    at fetchMCPServerDetails [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/permissions/MCPServerPermissions.tsx:68:34[90m)[39m
+    at [90m/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/permissions/MCPServerPermissions.tsx:79:5
+    at Object.react_stack_bottom_frame (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:25989:20)
+    at runWithFiberInDEV (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:874:13)
+    at commitHookEffectListMount (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:13249:29)
+    at commitHookPassiveMountEffects (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:13336:11)
+    at commitPassiveMountOnFiber (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:15484:13)
+    at recursivelyTraversePassiveMountEffects (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:15439:11) {
+  codeFrame: [32m'vi.mock(import("../networking"), async (importOriginal) => {\n'[39m +
+    [32m'  const actual = await importOriginal()\n'[39m +
+    [32m'  return {\n'[39m +
+    [32m'    ...actual,\n'[39m +
+    [32m'    // your mocked methods\n'[39m +
+    [32m'  }\n'[39m +
+    [32m'})'[39m
+}
+Error fetching MCP servers: Error: [vitest] No "fetchMCPServers" export is defined on the "../networking" mock. Did you forget to return it from "vi.mock"?
+If you need to partially mock a module, you can use "importOriginal" helper inside:
+
+    at VitestMocker.createError (file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4mvitest[24m/dist/chunks/startVitestModuleRunner.DB-7oCpn.js:62:17)
+    at Object.get (file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4mvitest[24m/dist/chunks/startVitestModuleRunner.DB-7oCpn.js:327:16)
+    at fetchMCPServerDetails [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/permissions/MCPServerPermissions.tsx:68:34[90m)[39m
+    at [90m/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/permissions/MCPServerPermissions.tsx:79:5
+    at Object.react_stack_bottom_frame (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:25989:20)
+    at runWithFiberInDEV (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:874:13)
+    at commitHookEffectListMount (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:13249:29)
+    at commitHookPassiveMountEffects (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:13336:11)
+    at commitPassiveMountOnFiber (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:15484:13)
+    at recursivelyTraversePassiveMountEffects (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:15439:11) {
+  codeFrame: [32m'vi.mock(import("../networking"), async (importOriginal) => {\n'[39m +
+    [32m'  const actual = await importOriginal()\n'[39m +
+    [32m'  return {\n'[39m +
+    [32m'    ...actual,\n'[39m +
+    [32m'    // your mocked methods\n'[39m +
+    [32m'  }\n'[39m +
+    [32m'})'[39m
+}
+
+[90mstderr[2m | src/components/templates/key_info_view.test.tsx[2m > [22m[2mKeyInfoView[2m > [22m[2mMCP tool permissions on save[2m > [22m[2mresolves a name-keyed allowlist against the server catalog
+[22m[39mError fetching MCP servers: Error: [vitest] No "fetchMCPServers" export is defined on the "../networking" mock. Did you forget to return it from "vi.mock"?
+If you need to partially mock a module, you can use "importOriginal" helper inside:
+
+    at VitestMocker.createError (file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4mvitest[24m/dist/chunks/startVitestModuleRunner.DB-7oCpn.js:62:17)
+    at Object.get (file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4mvitest[24m/dist/chunks/startVitestModuleRunner.DB-7oCpn.js:327:16)
+    at fetchMCPServerDetails [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/permissions/MCPServerPermissions.tsx:68:34[90m)[39m
+    at [90m/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/permissions/MCPServerPermissions.tsx:79:5
+    at Object.react_stack_bottom_frame (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:25989:20)
+    at runWithFiberInDEV (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:874:13)
+    at commitHookEffectListMount (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:13249:29)
+    at commitHookPassiveMountEffects (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:13336:11)
+    at commitPassiveMountOnFiber (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:15484:13)
+    at recursivelyTraversePassiveMountEffects (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:15439:11) {
+  codeFrame: [32m'vi.mock(import("../networking"), async (importOriginal) => {\n'[39m +
+    [32m'  const actual = await importOriginal()\n'[39m +
+    [32m'  return {\n'[39m +
+    [32m'    ...actual,\n'[39m +
+    [32m'    // your mocked methods\n'[39m +
+    [32m'  }\n'[39m +
+    [32m'})'[39m
+}
+Error fetching MCP servers: Error: [vitest] No "fetchMCPServers" export is defined on the "../networking" mock. Did you forget to return it from "vi.mock"?
+If you need to partially mock a module, you can use "importOriginal" helper inside:
+
+    at VitestMocker.createError (file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4mvitest[24m/dist/chunks/startVitestModuleRunner.DB-7oCpn.js:62:17)
+    at Object.get (file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4mvitest[24m/dist/chunks/startVitestModuleRunner.DB-7oCpn.js:327:16)
+    at fetchMCPServerDetails [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/permissions/MCPServerPermissions.tsx:68:34[90m)[39m
+    at [90m/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/permissions/MCPServerPermissions.tsx:79:5
+    at Object.react_stack_bottom_frame (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:25989:20)
+    at runWithFiberInDEV (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:874:13)
+    at commitHookEffectListMount (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:13249:29)
+    at commitHookPassiveMountEffects (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:13336:11)
+    at commitPassiveMountOnFiber (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:15484:13)
+    at recursivelyTraversePassiveMountEffects (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:15439:11) {
+  codeFrame: [32m'vi.mock(import("../networking"), async (importOriginal) => {\n'[39m +
+    [32m'  const actual = await importOriginal()\n'[39m +
+    [32m'  return {\n'[39m +
+    [32m'    ...actual,\n'[39m +
+    [32m'    // your mocked methods\n'[39m +
+    [32m'  }\n'[39m +
+    [32m'})'[39m
+}
+
+[90mstderr[2m | src/components/templates/key_info_view.test.tsx[2m > [22m[2mKeyInfoView[2m > [22m[2mMCP tool permissions on save[2m > [22m[2mresolves a name-keyed allowlist against the server catalog
+[22m[39mAn update to KeyInfoView inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+An update to KeyInfoView inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+
+[90mstderr[2m | src/components/templates/key_info_view.test.tsx[2m > [22m[2mKeyInfoView[2m > [22m[2mMCP tool permissions on save[2m > [22m[2mclears every allowlist when the admin picks the no-MCP-servers sentinel
+[22m[39mError fetching MCP servers: Error: [vitest] No "fetchMCPServers" export is defined on the "../networking" mock. Did you forget to return it from "vi.mock"?
+If you need to partially mock a module, you can use "importOriginal" helper inside:
+
+    at VitestMocker.createError (file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4mvitest[24m/dist/chunks/startVitestModuleRunner.DB-7oCpn.js:62:17)
+    at Object.get (file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4mvitest[24m/dist/chunks/startVitestModuleRunner.DB-7oCpn.js:327:16)
+    at fetchMCPServerDetails [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/permissions/MCPServerPermissions.tsx:68:34[90m)[39m
+    at [90m/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/permissions/MCPServerPermissions.tsx:79:5
+    at Object.react_stack_bottom_frame (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:25989:20)
+    at runWithFiberInDEV (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:874:13)
+    at commitHookEffectListMount (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:13249:29)
+    at commitHookPassiveMountEffects (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:13336:11)
+    at commitPassiveMountOnFiber (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:15484:13)
+    at recursivelyTraversePassiveMountEffects (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:15439:11) {
+  codeFrame: [32m'vi.mock(import("../networking"), async (importOriginal) => {\n'[39m +
+    [32m'  const actual = await importOriginal()\n'[39m +
+    [32m'  return {\n'[39m +
+    [32m'    ...actual,\n'[39m +
+    [32m'    // your mocked methods\n'[39m +
+    [32m'  }\n'[39m +
+    [32m'})'[39m
+}
+Error fetching MCP servers: Error: [vitest] No "fetchMCPServers" export is defined on the "../networking" mock. Did you forget to return it from "vi.mock"?
+If you need to partially mock a module, you can use "importOriginal" helper inside:
+
+    at VitestMocker.createError (file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4mvitest[24m/dist/chunks/startVitestModuleRunner.DB-7oCpn.js:62:17)
+    at Object.get (file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4mvitest[24m/dist/chunks/startVitestModuleRunner.DB-7oCpn.js:327:16)
+    at fetchMCPServerDetails [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/permissions/MCPServerPermissions.tsx:68:34[90m)[39m
+    at [90m/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/permissions/MCPServerPermissions.tsx:79:5
+    at Object.react_stack_bottom_frame (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:25989:20)
+    at runWithFiberInDEV (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:874:13)
+    at commitHookEffectListMount (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:13249:29)
+    at commitHookPassiveMountEffects (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:13336:11)
+    at commitPassiveMountOnFiber (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:15484:13)
+    at recursivelyTraversePassiveMountEffects (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:15439:11) {
+  codeFrame: [32m'vi.mock(import("../networking"), async (importOriginal) => {\n'[39m +
+    [32m'  const actual = await importOriginal()\n'[39m +
+    [32m'  return {\n'[39m +
+    [32m'    ...actual,\n'[39m +
+    [32m'    // your mocked methods\n'[39m +
+    [32m'  }\n'[39m +
+    [32m'})'[39m
+}
+
+[90mstderr[2m | src/components/templates/key_info_view.test.tsx[2m > [22m[2mKeyInfoView[2m > [22m[2mMCP tool permissions on save[2m > [22m[2mclears every allowlist when the admin picks the no-MCP-servers sentinel
+[22m[39mAn update to KeyInfoView inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+An update to KeyInfoView inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+
+[90mstderr[2m | src/components/templates/key_info_view.test.tsx[2m > [22m[2mKeyInfoView[2m > [22m[2mMCP tool permissions on save[2m > [22m[2mkeeps every allowlist when the admin grants all proxy servers
+[22m[39mError fetching MCP servers: Error: [vitest] No "fetchMCPServers" export is defined on the "../networking" mock. Did you forget to return it from "vi.mock"?
+If you need to partially mock a module, you can use "importOriginal" helper inside:
+
+    at VitestMocker.createError (file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4mvitest[24m/dist/chunks/startVitestModuleRunner.DB-7oCpn.js:62:17)
+    at Object.get (file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4mvitest[24m/dist/chunks/startVitestModuleRunner.DB-7oCpn.js:327:16)
+    at fetchMCPServerDetails [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/permissions/MCPServerPermissions.tsx:68:34[90m)[39m
+    at [90m/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/permissions/MCPServerPermissions.tsx:79:5
+    at Object.react_stack_bottom_frame (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:25989:20)
+    at runWithFiberInDEV (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:874:13)
+    at commitHookEffectListMount (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:13249:29)
+    at commitHookPassiveMountEffects (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:13336:11)
+    at commitPassiveMountOnFiber (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:15484:13)
+    at recursivelyTraversePassiveMountEffects (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:15439:11) {
+  codeFrame: [32m'vi.mock(import("../networking"), async (importOriginal) => {\n'[39m +
+    [32m'  const actual = await importOriginal()\n'[39m +
+    [32m'  return {\n'[39m +
+    [32m'    ...actual,\n'[39m +
+    [32m'    // your mocked methods\n'[39m +
+    [32m'  }\n'[39m +
+    [32m'})'[39m
+}
+Error fetching MCP servers: Error: [vitest] No "fetchMCPServers" export is defined on the "../networking" mock. Did you forget to return it from "vi.mock"?
+If you need to partially mock a module, you can use "importOriginal" helper inside:
+
+    at VitestMocker.createError (file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4mvitest[24m/dist/chunks/startVitestModuleRunner.DB-7oCpn.js:62:17)
+    at Object.get (file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4mvitest[24m/dist/chunks/startVitestModuleRunner.DB-7oCpn.js:327:16)
+    at fetchMCPServerDetails [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/permissions/MCPServerPermissions.tsx:68:34[90m)[39m
+    at [90m/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/permissions/MCPServerPermissions.tsx:79:5
+    at Object.react_stack_bottom_frame (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:25989:20)
+    at runWithFiberInDEV (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:874:13)
+    at commitHookEffectListMount (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:13249:29)
+    at commitHookPassiveMountEffects (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:13336:11)
+    at commitPassiveMountOnFiber (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:15484:13)
+    at recursivelyTraversePassiveMountEffects (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:15439:11) {
+  codeFrame: [32m'vi.mock(import("../networking"), async (importOriginal) => {\n'[39m +
+    [32m'  const actual = await importOriginal()\n'[39m +
+    [32m'  return {\n'[39m +
+    [32m'    ...actual,\n'[39m +
+    [32m'    // your mocked methods\n'[39m +
+    [32m'  }\n'[39m +
+    [32m'})'[39m
+}
+
+[90mstderr[2m | src/components/templates/key_info_view.test.tsx[2m > [22m[2mKeyInfoView[2m > [22m[2mMCP tool permissions on save[2m > [22m[2mkeeps every allowlist when the admin grants all proxy servers
+[22m[39mAn update to KeyInfoView inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+An update to KeyInfoView inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+
+[90mstderr[2m | src/components/templates/key_info_view.test.tsx[2m > [22m[2mKeyInfoView[2m > [22m[2mMCP tool permissions on save[2m > [22m[2mrefuses to save a permission change it cannot compute without the server catalog
+[22m[39mError fetching MCP servers: Error: [vitest] No "fetchMCPServers" export is defined on the "../networking" mock. Did you forget to return it from "vi.mock"?
+If you need to partially mock a module, you can use "importOriginal" helper inside:
+
+    at VitestMocker.createError (file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4mvitest[24m/dist/chunks/startVitestModuleRunner.DB-7oCpn.js:62:17)
+    at Object.get (file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4mvitest[24m/dist/chunks/startVitestModuleRunner.DB-7oCpn.js:327:16)
+    at fetchMCPServerDetails [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/permissions/MCPServerPermissions.tsx:68:34[90m)[39m
+    at [90m/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/permissions/MCPServerPermissions.tsx:79:5
+    at Object.react_stack_bottom_frame (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:25989:20)
+    at runWithFiberInDEV (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:874:13)
+    at commitHookEffectListMount (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:13249:29)
+    at commitHookPassiveMountEffects (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:13336:11)
+    at commitPassiveMountOnFiber (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:15484:13)
+    at recursivelyTraversePassiveMountEffects (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:15439:11) {
+  codeFrame: [32m'vi.mock(import("../networking"), async (importOriginal) => {\n'[39m +
+    [32m'  const actual = await importOriginal()\n'[39m +
+    [32m'  return {\n'[39m +
+    [32m'    ...actual,\n'[39m +
+    [32m'    // your mocked methods\n'[39m +
+    [32m'  }\n'[39m +
+    [32m'})'[39m
+}
+Error fetching MCP servers: Error: [vitest] No "fetchMCPServers" export is defined on the "../networking" mock. Did you forget to return it from "vi.mock"?
+If you need to partially mock a module, you can use "importOriginal" helper inside:
+
+    at VitestMocker.createError (file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4mvitest[24m/dist/chunks/startVitestModuleRunner.DB-7oCpn.js:62:17)
+    at Object.get (file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4mvitest[24m/dist/chunks/startVitestModuleRunner.DB-7oCpn.js:327:16)
+    at fetchMCPServerDetails [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/permissions/MCPServerPermissions.tsx:68:34[90m)[39m
+    at [90m/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/permissions/MCPServerPermissions.tsx:79:5
+    at Object.react_stack_bottom_frame (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:25989:20)
+    at runWithFiberInDEV (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:874:13)
+    at commitHookEffectListMount (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:13249:29)
+    at commitHookPassiveMountEffects (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:13336:11)
+    at commitPassiveMountOnFiber (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:15484:13)
+    at recursivelyTraversePassiveMountEffects (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:15439:11) {
+  codeFrame: [32m'vi.mock(import("../networking"), async (importOriginal) => {\n'[39m +
+    [32m'  const actual = await importOriginal()\n'[39m +
+    [32m'  return {\n'[39m +
+    [32m'    ...actual,\n'[39m +
+    [32m'    // your mocked methods\n'[39m +
+    [32m'  }\n'[39m +
+    [32m'})'[39m
+}
+
+[90mstderr[2m | src/components/templates/key_info_view.test.tsx[2m > [22m[2mKeyInfoView[2m > [22m[2mMCP tool permissions on save[2m > [22m[2mpreserves a vector-store edit made in the same save
+[22m[39mError fetching MCP servers: Error: [vitest] No "fetchMCPServers" export is defined on the "../networking" mock. Did you forget to return it from "vi.mock"?
+If you need to partially mock a module, you can use "importOriginal" helper inside:
+
+    at VitestMocker.createError (file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4mvitest[24m/dist/chunks/startVitestModuleRunner.DB-7oCpn.js:62:17)
+    at Object.get (file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4mvitest[24m/dist/chunks/startVitestModuleRunner.DB-7oCpn.js:327:16)
+    at fetchMCPServerDetails [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/permissions/MCPServerPermissions.tsx:68:34[90m)[39m
+    at [90m/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/permissions/MCPServerPermissions.tsx:79:5
+    at Object.react_stack_bottom_frame (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:25989:20)
+    at runWithFiberInDEV (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:874:13)
+    at commitHookEffectListMount (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:13249:29)
+    at commitHookPassiveMountEffects (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:13336:11)
+    at commitPassiveMountOnFiber (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:15484:13)
+    at recursivelyTraversePassiveMountEffects (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:15439:11) {
+  codeFrame: [32m'vi.mock(import("../networking"), async (importOriginal) => {\n'[39m +
+    [32m'  const actual = await importOriginal()\n'[39m +
+    [32m'  return {\n'[39m +
+    [32m'    ...actual,\n'[39m +
+    [32m'    // your mocked methods\n'[39m +
+    [32m'  }\n'[39m +
+    [32m'})'[39m
+}
+Error fetching MCP servers: Error: [vitest] No "fetchMCPServers" export is defined on the "../networking" mock. Did you forget to return it from "vi.mock"?
+If you need to partially mock a module, you can use "importOriginal" helper inside:
+
+    at VitestMocker.createError (file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4mvitest[24m/dist/chunks/startVitestModuleRunner.DB-7oCpn.js:62:17)
+    at Object.get (file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4mvitest[24m/dist/chunks/startVitestModuleRunner.DB-7oCpn.js:327:16)
+    at fetchMCPServerDetails [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/permissions/MCPServerPermissions.tsx:68:34[90m)[39m
+    at [90m/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/permissions/MCPServerPermissions.tsx:79:5
+    at Object.react_stack_bottom_frame (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:25989:20)
+    at runWithFiberInDEV (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:874:13)
+    at commitHookEffectListMount (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:13249:29)
+    at commitHookPassiveMountEffects (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:13336:11)
+    at commitPassiveMountOnFiber (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:15484:13)
+    at recursivelyTraversePassiveMountEffects (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact-dom[24m/cjs/react-dom-client.development.js:15439:11) {
+  codeFrame: [32m'vi.mock(import("../networking"), async (importOriginal) => {\n'[39m +
+    [32m'  const actual = await importOriginal()\n'[39m +
+    [32m'  return {\n'[39m +
+    [32m'    ...actual,\n'[39m +
+    [32m'    // your mocked methods\n'[39m +
+    [32m'  }\n'[39m +
+    [32m'})'[39m
+}
+
+[90mstderr[2m | src/components/templates/key_info_view.test.tsx[2m > [22m[2mKeyInfoView[2m > [22m[2mMCP tool permissions on save[2m > [22m[2mpreserves a vector-store edit made in the same save
+[22m[39mAn update to KeyInfoView inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+An update to KeyInfoView inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+
+ [32m✓[39m [30m[45m component [49m[39m src/components/templates/key_info_view.test.tsx [2m([22m[2m62 tests[22m[2m)[22m[33m 3938[2mms[22m[39m
+Importing from "vitest/environments" is deprecated since Vitest 4.1. Please use "vitest/runtime" instead.
+The Vitest environment jsdom-fetch defines the "transformMode". This options was deprecated in Vitest 4 and will be removed in the next major version. Please, use "viteEnvironment" instead.
+ [32m✓[39m [30m[45m component [49m[39m src/components/templates/key_info_view.budget_display.test.tsx [2m([22m[2m14 tests[22m[2m)[22m[33m 1335[2mms[22m[39m
+ [32m✓[39m [30m[42m unit [49m[39m src/components/templates/keyEditFormValues.test.ts [2m([22m[2m9 tests[22m[2m)[22m[32m 9[2mms[22m[39m
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mrouter settings[2m > [22m[2mshould submit edited fallbacks alongside routing fields the editor cannot show
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mrouter settings[2m > [22m[2mshould submit cleared router settings so removing every fallback is persisted
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mshould render tags
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mshould not render tags in metadata textarea
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mpolicy and prompt fields[2m > [22m[2mlocks the prompts control for a non-premium admin so an unsavable value cannot be entered
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mpolicy and prompt fields[2m > [22m[2mleaves the prompts control usable for a premium admin
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mpolicy and prompt fields[2m > [22m[2mlists a prompt existing in several environments once in the dropdown
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mshould call onCancel without submitting the form when cancel button is clicked
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mshould display models select field
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mshould display allowed routes input field
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mshould call onSubmit with form values when form is submitted
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mshould initialize and submit throttle_on_budget_exceeded from key metadata
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mshould initialize and submit enable_prompt_caching from key metadata
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mshould disable models field when management routes are selected
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mshould disable models field when info routes are selected
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mshould parse comma-separated allowed routes on submit
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/organisms/create_key_button.integration.test.tsx[2m > [22m[2mCreateKey[2m > [22m[2msubmit payload contract[2m > [22m[2msends the full mounted field set when every section is open
+[22m[39mFailed to create key: TypeError: response.text is not a function
+    at request [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/lib/http/client.ts:200:33[90m)[39m
+    at modelHubCall [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/networking.tsx:1453:18[90m)[39m
+    at fetchAvailableModels [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/llm_calls/fetch_models.tsx:54:27[90m)[39m
+
+[90mstderr[2m | src/components/organisms/create_key_button.integration.test.tsx[2m > [22m[2mCreateKey[2m > [22m[2msubmit payload contract[2m > [22m[2msends the full mounted field set when every section is open
+[22m[39mError fetching model info: TypeError: response.text is not a function
+    at request [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/lib/http/client.ts:200:33[90m)[39m
+    at modelHubCall [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/networking.tsx:1453:18[90m)[39m
+    at fetchAvailableModels [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/llm_calls/fetch_models.tsx:54:27[90m)[39m
+
+[90mstderr[2m | src/components/organisms/create_key_button.integration.test.tsx[2m > [22m[2mCreateKey[2m > [22m[2msubmit payload contract[2m > [22m[2msends the full mounted field set when every section is open
+[22m[39mFailed to create key: TypeError: response.text is not a function
+    at request [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/lib/http/client.ts:200:33[90m)[39m
+    at modelHubCall [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/networking.tsx:1453:18[90m)[39m
+    at fetchAvailableModels [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/llm_calls/fetch_models.tsx:54:27[90m)[39m
+    at loadModels [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/common_components/ModelSelector.tsx:46:30[90m)[39m
+
+[90mstderr[2m | src/components/organisms/create_key_button.integration.test.tsx[2m > [22m[2mCreateKey[2m > [22m[2msubmit payload contract[2m > [22m[2msends the full mounted field set when every section is open
+[22m[39mError fetching model info: TypeError: response.text is not a function
+    at request [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/lib/http/client.ts:200:33[90m)[39m
+    at modelHubCall [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/networking.tsx:1453:18[90m)[39m
+    at fetchAvailableModels [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/llm_calls/fetch_models.tsx:54:27[90m)[39m
+    at loadModels [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/common_components/ModelSelector.tsx:46:30[90m)[39m
+
+[90mstderr[2m | src/components/organisms/create_key_button.integration.test.tsx[2m > [22m[2mCreateKey[2m > [22m[2msubmit payload contract[2m > [22m[2msends the full mounted field set when every section is open
+[22m[39mError fetching model info: TypeError: response.text is not a function
+    at request [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/lib/http/client.ts:200:33[90m)[39m
+    at modelHubCall [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/networking.tsx:1453:18[90m)[39m
+    at fetchAvailableModels [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/llm_calls/fetch_models.tsx:54:27[90m)[39m
+    at loadModels [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/common_components/ModelSelector.tsx:46:30[90m)[39m
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mshould handle empty allowed routes string on submit
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mshould omit allowed_routes from submit when value is unchanged
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/organisms/create_key_button.integration.test.tsx[2m > [22m[2mCreateKey[2m > [22m[2msubmit payload contract[2m > [22m[2msends the full mounted field set when every section is open
+[22m[39mIn HTML, <div> cannot be a descendant of <p>.
+This will cause a hydration error.
+
+  ...
+    <div data-open="" hidden={false} id="base-ui-_r..." style={{...}} data-slot="collapsibl..." ref={function} ...>
+      <MountedFormField>
+      <MountedFormField>
+      <Field>
+      <Field>
+      <Field>
+      <MountedFormField>
+      <MountedFormField>
+      <MountedFormField>
+      <MountedFormField>
+      <MountedFormField>
+      <Field>
+      <MountedFormField>
+      <MountedFormField>
+      <MountedFormField>
+      <MountedFormField>
+      <MountedFormField>
+      <MountedFormField>
+      <MountedFormField>
+      <MountedFormField>
+      <MountedFormField>
+      <MountedFormField>
+      <MountedFormField>
+      <Collapsible>
+      <Collapsible>
+      <Collapsible>
+      <SimpleTooltip>
+      <Collapsible>
+      <Collapsible>
+      <Collapsible>
+      <Collapsible className="mt-4 mb-4 ...">
+        <CollapsibleRoot data-slot="collapsible" className="mt-4 mb-4 ...">
+          <div data-open="" data-starting-style="" data-slot="collapsible" ref={null} className="mt-4 mb-4 ...">
+            <CollapsibleTrigger>
+            <CollapsibleContent className="px-4 pb-3">
+              <CollapsiblePanel data-slot="collapsibl..." className="px-4 pb-3">
+                <div data-open="" hidden={false} id="base-ui-_r..." style={{...}} data-slot="collapsibl..." ...>
+                  <SchemaFormFields schemaComponent="GenerateKe..." setValue={function setValue} excludedFields={[...]}>
+                    <div>
+                      <MountedFormField label="Key" name="key" className="mt-8" required={undefined} rules={undefined} ...>
+                        <Controller control={{...}} name="key" rules={undefined} defaultValue={undefined} ...>
+                          <Field data-invalid={undefined} className="mt-8">
+                            <div role="group" data-slot="field" data-orientation="vertical" className={"group/fi..."} ...>
+                              <FieldLabel>
+                              <Input>
+                              <FieldDescription id="key_help">
+>                               <p
+>                                 data-slot="field-description"
+>                                 className={"text-left text-sm leading-normal font-normal text-muted-foreground grou..."}
+>                                 id="key_help"
+>                               >
+>                                 <div className="text-xs text-muted-foreground">
+                      ...
+
+<p> cannot contain a nested <div>.
+See this log for the ancestor stack trace.
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mshould omit allowed_routes from submit when keyData.allowed_routes is null and form is untouched
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mshould omit allowed_routes from submit when server returned routes in a different order
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mshould pass access_group_ids to onSubmit when saving key with access groups
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mshould keep mcp_toolsets when saving an edit that does not touch the MCP selector
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mshould submit budget_limits: [] when the last budget window is deleted
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mshould preserve a budget draft when the same key refreshes before saving
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mshould not mark MCP tool defaults as an edit when saving only a budget
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mshould keep default tool limits for a newly added MCP server when the same key refreshes
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mshould start a fresh budget draft when switching between keys identified only by token_id
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mshould start a fresh budget draft when switching to another key
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mshould persist a canonical budget_duration value, not a word-form the backend cannot parse
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/organisms/create_key_button.integration.test.tsx[2m > [22m[2mCreateKey[2m > [22m[2msubmit payload contract[2m > [22m[2madds exactly the router section's own keys when it is the only nested section open
+[22m[39mFailed to create key: TypeError: response.text is not a function
+    at request [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/lib/http/client.ts:200:33[90m)[39m
+    at modelHubCall [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/networking.tsx:1453:18[90m)[39m
+    at fetchAvailableModels [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/llm_calls/fetch_models.tsx:54:27[90m)[39m
+
+[90mstderr[2m | src/components/organisms/create_key_button.integration.test.tsx[2m > [22m[2mCreateKey[2m > [22m[2msubmit payload contract[2m > [22m[2madds exactly the router section's own keys when it is the only nested section open
+[22m[39mError fetching model info: TypeError: response.text is not a function
+    at request [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/lib/http/client.ts:200:33[90m)[39m
+    at modelHubCall [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/networking.tsx:1453:18[90m)[39m
+    at fetchAvailableModels [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/llm_calls/fetch_models.tsx:54:27[90m)[39m
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mshould keep an existing canonical budget_duration canonical when saved untouched
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mshould heal a legacy word-form budget_duration to canonical when saved untouched
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mshould send an explicit null budget_duration when a previously-set Reset Budget is cleared
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/organisms/create_key_button.integration.test.tsx[2m > [22m[2mCreateKey[2m > [22m[2msubmit payload contract[2m > [22m[2madds exactly the aliases section's own keys when it is the only nested section open
+[22m[39mFailed to create key: TypeError: response.text is not a function
+    at request [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/lib/http/client.ts:200:33[90m)[39m
+    at modelHubCall [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/networking.tsx:1453:18[90m)[39m
+    at fetchAvailableModels [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/llm_calls/fetch_models.tsx:54:27[90m)[39m
+    at loadModels [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/common_components/ModelSelector.tsx:46:30[90m)[39m
+
+[90mstderr[2m | src/components/organisms/create_key_button.integration.test.tsx[2m > [22m[2mCreateKey[2m > [22m[2msubmit payload contract[2m > [22m[2madds exactly the aliases section's own keys when it is the only nested section open
+[22m[39mError fetching model info: TypeError: response.text is not a function
+    at request [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/lib/http/client.ts:200:33[90m)[39m
+    at modelHubCall [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/networking.tsx:1453:18[90m)[39m
+    at fetchAvailableModels [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/llm_calls/fetch_models.tsx:54:27[90m)[39m
+    at loadModels [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/common_components/ModelSelector.tsx:46:30[90m)[39m
+
+[90mstderr[2m | src/components/organisms/create_key_button.integration.test.tsx[2m > [22m[2mCreateKey[2m > [22m[2msubmit payload contract[2m > [22m[2madds exactly the aliases section's own keys when it is the only nested section open
+[22m[39mError fetching model info: TypeError: response.text is not a function
+    at request [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/lib/http/client.ts:200:33[90m)[39m
+    at modelHubCall [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/networking.tsx:1453:18[90m)[39m
+    at fetchAvailableModels [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/llm_calls/fetch_models.tsx:54:27[90m)[39m
+    at loadModels [90m(/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/common_components/ModelSelector.tsx:46:30[90m)[39m
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mshould send an explicit null budget_duration when a legacy word-form Reset Budget is cleared
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mshould omit budget_limits when existing windows are left untouched (issue #33246)
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mshould omit budget_limits on a key that has no windows (issue #33246 repro)
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mshould send budget_limits when a window's cap is changed
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mshould omit budget_limits (not clear stored windows) when a window is left incomplete
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mper-model budgets[2m > [22m[2mre-seeds the editor when a different key is loaded
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mper-model budgets[2m > [22m[2mshould leave the editor usable when the proxy has one
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mper-model budgets[2m > [22m[2mshould leave model_max_budget out of an edit that did not touch it
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mshould display 'AI APIs' label for the llm_api key type option
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mshould display cancel button during submission
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mshould display cancel button during submission
+[22m[39mAn update to KeyEditSession inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mshould display cancel button during submission
+[22m[39mAn update to Controller inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+An update to Controller inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+An update to Controller inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+An update to Controller inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+An update to Controller inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+An update to Controller inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+An update to Controller inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+An update to Controller inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+An update to Controller inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+An update to Controller inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+An update to Controller inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+An update to Controller inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+An update to Controller inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+An update to Controller inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+An update to Controller inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+An update to Controller inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+An update to Controller inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+An update to Controller inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+An update to Controller inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+An update to Controller inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+An update to Controller inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+An update to Controller inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+An update to Controller inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+An update to Controller inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+An update to Controller inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+An update to Controller inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+An update to Controller inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+An update to Controller inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+An update to Controller inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+An update to Controller inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+An update to Controller inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2morganization dropdown[2m > [22m[2mshould disable the organization dropdown for non-admin users
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2morganization dropdown[2m > [22m[2mshould not disable the organization dropdown for admin users
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2morganization dropdown[2m > [22m[2mshould initialize organization from keyData
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2morganization dropdown[2m > [22m[2mkeeps a saved MCP grant editable when it falls outside the key's team scope
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2morganization dropdown[2m > [22m[2mkeeps a saved MCP grant editable when it falls outside the key's team scope
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2morganization dropdown[2m > [22m[2mrescopes the MCP server selector and drops stale MCP grants when the team is changed before saving
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/organisms/create_key_button.integration.test.tsx[2m > [22m[2mCreateKey[2m > [22m[2msubmit payload contract[2m > [22m[2momits a budget typed into a section the user closed again, rather than sending it as null
+[22m[39mA component is changing an uncontrolled input to be controlled. This is likely caused by the value changing from undefined to a defined value, which should not happen. Decide between using a controlled or uncontrolled input element for the lifetime of the component. More info: https://react.dev/link/controlled-components
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2morganization dropdown[2m > [22m[2mkeeps the team change's cleared MCP grants when the same key refreshes before saving
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2morganization dropdown[2m > [22m[2mclears the organization and its dependent team in the update payload
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2morganization dropdown[2m > [22m[2mshould save an explicit project detach while keeping parents locked until reopening the editor
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2morganization dropdown[2m > [22m[2mshould save an explicit project detach while keeping parents locked until reopening the editor
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/organisms/create_key_button.integration.test.tsx[2m > [22m[2mCreateKey[2m > [22m[2msubmit payload contract[2m > [22m[2msends a typed max budget as a string, not a number
+[22m[39mA component is changing a controlled input to be uncontrolled. This is likely caused by the value changing from a defined to undefined, which should not happen. Decide between using a controlled or uncontrolled input element for the lifetime of the component. More info: https://react.dev/link/controlled-components
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2morganization dropdown[2m > [22m[2mshould save an explicit project detach while keeping parents locked until reopening the editor
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2morganization dropdown[2m > [22m[2mkeeps project key relationships locked and omits project updates when the project UI is disabled
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mmodels dropdown team gating[2m > [22m[2mshould offer all-proxy-models but not all-team-models for a teamless key
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mmodels dropdown team gating[2m > [22m[2mshould offer all-team-models but hide all-proxy-models for a team key
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mmodels dropdown team gating[2m > [22m[2mshould not offer all-team-models for a team key whose team has not loaded yet
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mmodels dropdown team gating[2m > [22m[2mshould not duplicate the all-proxy-models option when the teamless model list already carries the sentinel
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mmodels dropdown team gating[2m > [22m[2mshould collapse the selection to all-proxy-models when the sentinel is picked alongside a model
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mmodels dropdown team gating[2m > [22m[2mshould disable the individual model options once all-proxy-models is selected
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mdefault customer budget[2m > [22m[2mshows the stored budget and leaves it off an edit that did not touch it
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mdefault customer budget[2m > [22m[2msends the newly chosen budget id
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mdefault customer budget[2m > [22m[2msends an empty string when the stored budget is cleared so the backend removes it
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mdefault customer budget[2m > [22m[2mdoes not render the control on a plain key that has no budget to show
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mestimated output tokens[2m > [22m[2mrefuses to save an invalid per-model estimate, and saves once it is corrected
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mestimated output tokens[2m > [22m[2mrefuses to save a fractional estimate, and saves once it is corrected
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mestimated output tokens[2m > [22m[2mloads the estimates from key metadata and resubmits them unchanged
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mestimated output tokens[2m > [22m[2msubmits edited estimates as a number and a parsed object
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mestimated output tokens[2m > [22m[2momits both estimates from the payload when the controls are blank
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mestimated output tokens[2m > [22m[2mleaves both controls read-only for Internal User and still resubmits the stored values
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mestimated output tokens[2m > [22m[2mleaves both controls read-only for Admin Viewer and still resubmits the stored values
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mestimated output tokens[2m > [22m[2mleaves both controls read-only for org_admin and still resubmits the stored values
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mestimated output tokens[2m > [22m[2mleaves both controls editable for proxy_admin
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2msubmit payload contract[2m > [22m[2msends exactly the bound form fields on an untouched save, and no server-only key data
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2msubmit payload contract[2m > [22m[2mdrops the policy and prompt keys entirely for a role that cannot see those fields
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2msubmit payload contract[2m > [22m[2mroutes the shared lifecycle and rate-limit-type controls into their own payload keys
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2msubmit payload contract[2m > [22m[2mblanks duration rather than dropping the key when Never Expire is ticked
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2msubmit payload contract[2m > [22m[2mcarries a typed value from every free-text and numeric control into the payload
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2msubmit payload contract[2m > [22m[2mcarries every toggle driven off its default into the payload
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2msubmit payload contract[2m > [22m[2mcarries a tag typed into the tags control into the payload
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2msubmit payload contract[2m > [22m[2mmoves a tags array typed into the metadata JSON into the Tags control on blur
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2msubmit payload contract[2m > [22m[2mcarries a tags array typed into the metadata JSON into the payload even without a blur
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2msubmit payload contract[2m > [22m[2mcarries a picked guardrail into the payload
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2msubmit payload contract[2m > [22m[2mcarries a picked policy into the payload
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2msubmit payload contract[2m > [22m[2mcarries a typed prompt into the payload
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2msubmit payload contract[2m > [22m[2mcarries the RPM rate limit type into its own payload key
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2msubmit payload contract[2m > [22m[2mcarries a picked vector store into the payload
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2msubmit payload contract[2m > [22m[2mcarries a picked pass through route into the payload
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2msubmit payload contract[2m > [22m[2mcarries a picked team into the payload
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2msubmit payload contract[2m > [22m[2mshows team aliases and IDs in the Team combobox
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2msubmit payload contract[2m > [22m[2mshows a dash with the ID underneath for a team without an alias
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2msubmit payload contract[2m > [22m[2mclears the team in the update payload and keeps the organization
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2msubmit payload contract[2m > [22m[2mcarries a picked MCP server into the payload
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2msubmit payload contract[2m > [22m[2mcarries a picked agent into the payload
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2msubmit payload contract[2m > [22m[2mcarries a picked skill into the payload
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2msubmit payload contract[2m > [22m[2mpreloads the stored skills into the payload when the selector is left untouched
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2msubmit payload contract[2m > [22m[2mcarries an added logging integration into the payload
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2msubmit payload contract[2m > [22m[2mresends stored budget fallbacks on an untouched save
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2msubmit payload contract[2m > [22m[2momits budget fallbacks entirely for a key that has none
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2msubmit payload contract[2m > [22m[2mresends the stored per-tag rpm limits on an untouched save
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2msubmit payload contract[2m > [22m[2mcarries an edited RPM limit and the key identifier onto the wire
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2msubmit payload contract[2m > [22m[2msends max_budget as an explicit null when the field is cleared (expected to fail until the forms revamp, tri-state PATCH tracker: today the view hands KeyInfoView an empty string and handleKeyUpdate maps it to null)
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2msubmit payload contract[2m > [22m[2msends only the key identifier and the edited RPM limit (expected to fail until the forms revamp, tri-state PATCH tracker)
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+[90mstderr[2m | src/components/templates/key_edit_view.integration.test.tsx[2m > [22m[2mKeyEditView[2m > [22m[2mdisable_global_guardrails toggle gating[2m > [22m[2mshows the switch to a proxy admin
+[22m[39mFailed to fetch MCP toolsets: [TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3000
+  [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)[39m {
+    errno: [33m-111[39m,
+    code: [32m'ECONNREFUSED'[39m,
+    syscall: [32m'connect'[39m,
+    address: [32m'127.0.0.1'[39m,
+    port: [33m3000[39m
+  }
+}
+
+ [32m✓[39m [30m[45m integration [49m[39m src/components/templates/key_edit_view.integration.test.tsx [2m([22m[2m115 tests[22m[2m)[22m[33m 26765[2mms[22m[39m
+       [33m[2m✓[22m[39m should load the fields it renders into the editor and withhold the ones it does not [33m 320[2mms[22m[39m
+       [33m[2m✓[22m[39m leaves the prompts control usable for a premium admin [33m 517[2mms[22m[39m
+     [33m[2m✓[22m[39m should parse comma-separated allowed routes on submit [33m 736[2mms[22m[39m
+     [33m[2m✓[22m[39m should handle empty allowed routes string on submit [33m 315[2mms[22m[39m
+     [33m[2m✓[22m[39m should preserve a budget draft when the same key refreshes before saving [33m 380[2mms[22m[39m
+     [33m[2m✓[22m[39m should keep default tool limits for a newly added MCP server when the same key refreshes [33m 355[2mms[22m[39m
+     [33m[2m✓[22m[39m should persist a canonical budget_duration value, not a word-form the backend cannot parse [33m 325[2mms[22m[39m
+     [33m[2m✓[22m[39m should send an explicit null budget_duration when a previously-set Reset Budget is cleared [33m 331[2mms[22m[39m
+     [33m[2m✓[22m[39m should send an explicit null budget_duration when a legacy word-form Reset Budget is cleared [33m 359[2mms[22m[39m
+       [33m[2m✓[22m[39m keeps the team change's cleared MCP grants when the same key refreshes before saving [33m 305[2mms[22m[39m
+       [33m[2m✓[22m[39m should save an explicit project detach while keeping parents locked until reopening the editor [33m 1013[2mms[22m[39m
+       [33m[2m✓[22m[39m should collapse the selection to all-proxy-models when the sentinel is picked alongside a model [33m 308[2mms[22m[39m
+       [33m[2m✓[22m[39m refuses to save an invalid per-model estimate, and saves once it is corrected [33m 342[2mms[22m[39m
+       [33m[2m✓[22m[39m submits edited estimates as a number and a parsed object [33m 322[2mms[22m[39m
+       [33m[2m✓[22m[39m routes the shared lifecycle and rate-limit-type controls into their own payload keys [33m 376[2mms[22m[39m
+       [33m[2m✓[22m[39m blanks duration rather than dropping the key when Never Expire is ticked [33m 331[2mms[22m[39m
+       [33m[2m✓[22m[39m carries a typed value from every free-text and numeric control into the payload [33m 787[2mms[22m[39m
+       [33m[2m✓[22m[39m carries a tag typed into the tags control into the payload [33m 426[2mms[22m[39m
+       [33m[2m✓[22m[39m carries a picked policy into the payload [33m 305[2mms[22m[39m
+       [33m[2m✓[22m[39m carries a typed prompt into the payload [33m 366[2mms[22m[39m
+       [33m[2m✓[22m[39m carries the RPM rate limit type into its own payload key [33m 383[2mms[22m[39m
+       [33m[2m✓[22m[39m carries a picked vector store into the payload [33m 355[2mms[22m[39m
+       [33m[2m✓[22m[39m carries a picked pass through route into the payload [33m 352[2mms[22m[39m
+       [33m[2m✓[22m[39m clears the team in the update payload and keeps the organization [33m 304[2mms[22m[39m
+       [33m[2m✓[22m[39m carries an edited RPM limit and the key identifier onto the wire [33m 316[2mms[22m[39m
+[90mstderr[2m | src/components/organisms/create_key_button.integration.test.tsx[2m > [22m[2mCreateKey[2m > [22m[2muser search debounce[2m > [22m[2mfires exactly one search carrying the last typed value
+[22m[39mAn update to CreateKey inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+
+[90mstderr[2m | src/components/organisms/create_key_button.integration.test.tsx[2m > [22m[2mCreateKey[2m > [22m[2muser search debounce[2m > [22m[2mfires exactly one search carrying the last typed value
+[22m[39mAn update to CreateKey inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+An update to CreateKey inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+
+[90mstderr[2m | src/components/organisms/create_key_button.integration.test.tsx[2m > [22m[2mCreateKey[2m > [22m[2muser search debounce[2m > [22m[2monly warns about a failed search when it is the one the box is waiting on
+[22m[39mError fetching users: Error: search failed
+    at [90m/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/organisms/create_key_button.integration.test.tsx:1170:36
+    at /qa/litellm-36095/dashboard-deps-linux/node_modules/[4m@testing-library/react[24m/dist/act-compat.js:47:24
+    at process.env.NODE_ENV.exports.act (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact[24m/cjs/react.development.js:814:22)
+    at Module.<anonymous> (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4m@testing-library/react[24m/dist/act-compat.js:46:25)
+    at [90m/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/organisms/create_key_button.integration.test.tsx:1169:13
+    at file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4m@vitest/runner[24m/dist/chunk-artifact.js:1903:20
+
+[90mstderr[2m | src/components/organisms/create_key_button.integration.test.tsx[2m > [22m[2mCreateKey[2m > [22m[2muser search debounce[2m > [22m[2monly warns about a failed search when it is the one the box is waiting on
+[22m[39mError fetching users: Error: search failed
+    at [90m/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/organisms/create_key_button.integration.test.tsx:1180:57
+    at /qa/litellm-36095/dashboard-deps-linux/node_modules/[4m@testing-library/react[24m/dist/act-compat.js:47:24
+    at process.env.NODE_ENV.exports.act (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4mreact[24m/cjs/react.development.js:814:22)
+    at Module.<anonymous> (/qa/litellm-36095/dashboard-deps-linux/node_modules/[4m@testing-library/react[24m/dist/act-compat.js:46:25)
+    at [90m/opt/litellm-35800/ui/litellm-dashboard/[39msrc/components/organisms/create_key_button.integration.test.tsx:1179:13
+    at file:///qa/litellm-36095/dashboard-deps-linux/node_modules/[4m@vitest/runner[24m/dist/chunk-artifact.js:1903:20
+
+[90mstderr[2m | src/components/organisms/create_key_button.integration.test.tsx[2m > [22m[2mCreateKey[2m > [22m[2muser picker selection[2m > [22m[2mkeeps the picked user in the box instead of searching for its own label
+[22m[39mAn update to ComboboxInput inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+An update to ComboboxValue inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+An update to ComboboxValue inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+An update to ComboboxValue inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+An update to DialogBackdrop inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+An update to DialogPopup inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+
+ [32m✓[39m [30m[45m integration [49m[39m src/components/organisms/create_key_button.integration.test.tsx [2m([22m[2m88 tests[22m[2m)[22m[33m 37194[2mms[22m[39m
+       [33m[2m✓[22m[39m sends only the always-mounted fields when every collapsible section is closed [33m 503[2mms[22m[39m
+       [33m[2m✓[22m[39m registers the Optional Settings fields as undefined-valued keys once that section is open [33m 465[2mms[22m[39m
+       [33m[2m✓[22m[39m sends the full mounted field set when every section is open [33m 1732[2mms[22m[39m
+       [33m[2m✓[22m[39m adds exactly the mcp section's own keys when it is the only nested section open [33m 500[2mms[22m[39m
+       [33m[2m✓[22m[39m adds exactly the agent section's own keys when it is the only nested section open [33m 491[2mms[22m[39m
+       [33m[2m✓[22m[39m adds exactly the skill section's own keys when it is the only nested section open [33m 538[2mms[22m[39m
+       [33m[2m✓[22m[39m adds exactly the logging section's own keys when it is the only nested section open [33m 552[2mms[22m[39m
+       [33m[2m✓[22m[39m adds exactly the router section's own keys when it is the only nested section open [33m 586[2mms[22m[39m
+       [33m[2m✓[22m[39m adds exactly the aliases section's own keys when it is the only nested section open [33m 578[2mms[22m[39m
+       [33m[2m✓[22m[39m adds exactly the lifecycle section's own keys when it is the only nested section open [33m 497[2mms[22m[39m
+       [33m[2m✓[22m[39m adds exactly the advanced section's own keys when it is the only nested section open [33m 519[2mms[22m[39m
+       [33m[2m✓[22m[39m serialises to exactly the wire keys with Optional Settings open [33m 388[2mms[22m[39m
+       [33m[2m✓[22m[39m moves a picked private skill under object_permission.skills and off the top level [33m 676[2mms[22m[39m
+       [33m[2m✓[22m[39m omits a budget typed into a section the user closed again, rather than sending it as null [33m 444[2mms[22m[39m
+       [33m[2m✓[22m[39m restores the typed budget when the closed section is expanded again before submit [33m 626[2mms[22m[39m
+       [33m[2m✓[22m[39m sends a typed max budget as a string, not a number [33m 443[2mms[22m[39m
+       [33m[2m✓[22m[39m routes a typed Tokens per minute Limit (TPM) into the tpm_limit payload key [33m 412[2mms[22m[39m
+       [33m[2m✓[22m[39m routes a typed Requests per minute Limit (RPM) into the rpm_limit payload key [33m 456[2mms[22m[39m
+       [33m[2m✓[22m[39m routes a typed Tokens per day Limit (TPD) into the tpd_limit payload key [33m 430[2mms[22m[39m
+       [33m[2m✓[22m[39m routes the shared rate-limit-type control into its own payload key [33m 556[2mms[22m[39m
+       [33m[2m✓[22m[39m routes a typed expiry into duration, which is otherwise coalesced to null [33m 557[2mms[22m[39m
+       [33m[2m✓[22m[39m drops a typed expiry back to null when its section is collapsed before submit [33m 642[2mms[22m[39m
+       [33m[2m✓[22m[39m routes a selected budget reset window into budget_duration [33m 537[2mms[22m[39m
+       [33m[2m✓[22m[39m sends an explicit null budget_duration when the never-resets window is chosen [33m 574[2mms[22m[39m
+       [33m[2m✓[22m[39m routes typed tags into the tags key [33m 647[2mms[22m[39m
+       [33m[2m✓[22m[39m routes a chosen access group into access_group_ids [33m 538[2mms[22m[39m
+       [33m[2m✓[22m[39m moves the schema-driven Advanced Settings fields onto the payload under their own keys [33m 556[2mms[22m[39m
+       [33m[2m✓[22m[39m drops the schema-driven custom key field when the proxy disables custom API keys [33m 526[2mms[22m[39m
+       [33m[2m✓[22m[39m drops the policy and prompt keys entirely for a role that cannot see those fields [33m 440[2mms[22m[39m
+       [33m[2m✓[22m[39m keeps disable_global_guardrails out of the payload while the switch is off [33m 391[2mms[22m[39m
+       [33m[2m✓[22m[39m sends disable_global_guardrails once the switch is on [33m 457[2mms[22m[39m
+       [33m[2m✓[22m[39m folds a metadata JSON string back through JSON.stringify [33m 455[2mms[22m[39m
+       [33m[2m✓[22m[39m carries the typed key alias and the chosen team onto the wire [33m 367[2mms[22m[39m
+       [33m[2m✓[22m[39m adds no keys for an Optional Settings section the user opened but never filled (expected to fail until the forms revamp, tri-state PATCH tracker) [33m 383[2mms[22m[39m
+         [33m[2m✓[22m[39m creates a key for a member of an administered team without the proxy-wide user search [33m 468[2mms[22m[39m
+       [33m[2m✓[22m[39m routes a service account through the service account endpoint and stamps the alias into metadata [33m 412[2mms[22m[39m
+       [33m[2m✓[22m[39m sends the chosen default customer budget with a service account [33m 711[2mms[22m[39m
+       [33m[2m✓[22m[39m offers the default customer budget only to admins creating a service account [33m 441[2mms[22m[39m
+       [33m[2m✓[22m[39m hides the default customer budget from a non-admin creating a service account [33m 332[2mms[22m[39m
+       [33m[2m✓[22m[39m blocks a service account submit until a team is chosen, then lets it through [33m 529[2mms[22m[39m
+       [33m[2m✓[22m[39m blocks the submit when the budget exceeds the team ceiling [33m 558[2mms[22m[39m
+       [33m[2m✓[22m[39m routes a chosen organization into organization_id [33m 328[2mms[22m[39m
+       [33m[2m✓[22m[39m discards the old project and team when the organization changes [33m 555[2mms[22m[39m
+       [33m[2m✓[22m[39m drops organization_id when the chosen organization is cleared again [33m 325[2mms[22m[39m
+       [33m[2m✓[22m[39m keeps the current search's users when an abandoned search answers last [33m 970[2mms[22m[39m
+       [33m[2m✓[22m[39m labels a user with no email by their user id [33m 523[2mms[22m[39m
+       [33m[2m✓[22m[39m stops searching once the box is cleared and the abandoned search answers [33m 816[2mms[22m[39m
+       [33m[2m✓[22m[39m keeps searching while a newer search is still in flight [33m 910[2mms[22m[39m
+       [33m[2m✓[22m[39m only warns about a failed search when it is the one the box is waiting on [33m 1273[2mms[22m[39m
+       [33m[2m✓[22m[39m keeps the picked user in the box instead of searching for its own label [33m 604[2mms[22m[39m
+       [33m[2m✓[22m[39m clears and disables models when a management key type is chosen [33m 330[2mms[22m[39m
+       [33m[2m✓[22m[39m keeps the MCP tool permissions key out of the payload even with its section open [33m 483[2mms[22m[39m
+       [33m[2m✓[22m[39m lets the selected user win over the search text typed into the same field [33m 760[2mms[22m[39m
+       [33m[2m✓[22m[39m surfaces the required message on a field that carries no help text [33m 310[2mms[22m[39m
+       [33m[2m✓[22m[39m submits an over-ceiling budget typed into a section the user closed again, omitting the key [33m 534[2mms[22m[39m
+       [33m[2m✓[22m[39m sends enable_prompt_caching as a boolean once the switch is on [33m 441[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m6 passed[39m[22m[90m (6)[39m
+[2m      Tests [22m [1m[32m292 passed[39m[22m[2m | [22m[36m3 expected fail[39m[90m (295)[39m
+[2mType Errors [22m [2mno errors[22m
+[2m   Start at [22m 21:55:23
+[2m   Duration [22m 93.67s[2m (transform 4.50s, setup 11.55s, import 101.34s, tests 69.25s, environment 26.13s)[22m
+
