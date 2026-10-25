@@ -1,0 +1,24 @@
+{
+  "base_sha": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "fixed_sha": "ce6d5f6e9edaf11599c6a19e949b5d8392af1ece",
+  "cases": 6,
+  "native_responses_persisted_unchanged": 4,
+  "prometheus_totals": {
+    "baseline": {
+      "litellm_spend_metric_total": 1.8e-05,
+      "litellm_total_tokens_metric_total": 18.0,
+      "litellm_input_tokens_metric_total": 18.0,
+      "litellm_requests_metric_total": 2.0
+    },
+    "fixed": {
+      "litellm_spend_metric_total": 9.3e-05,
+      "litellm_total_tokens_metric_total": 93.0,
+      "litellm_input_tokens_metric_total": 93.0,
+      "litellm_requests_metric_total": 6.0
+    }
+  },
+  "missing_standard_logging_errors": {
+    "baseline": 12,
+    "fixed": 0
+  }
+}

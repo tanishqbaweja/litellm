@@ -1,0 +1,7 @@
+{
+  "model": "qa-33210-embedding",
+  "input": [
+    "Hello world."
+  ],
+  "task": "embed"
+}

@@ -1,0 +1,376 @@
+{
+  "verified_at": "2026-10-25T17:34:08.969320+00:00",
+  "base_sha": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "fixed_sha": "ce6d5f6e9edaf11599c6a19e949b5d8392af1ece",
+  "cases": [
+    {
+      "case": "pooling",
+      "endpoint": "/vllm/pooling",
+      "http_status": 200,
+      "same_request": true,
+      "same_response_except_id_created_and_recorded_float_differences": true,
+      "between_run_numeric_differences": [],
+      "rows": {
+        "baseline": null,
+        "fixed": {
+          "request_id": "pooling-ba1473e149e32abe",
+          "prompt_tokens": 5,
+          "completion_tokens": 0,
+          "total_tokens": 5,
+          "spend": 5e-06
+        }
+      },
+      "full_native_response_persisted": true
+    },
+    {
+      "case": "score",
+      "endpoint": "/vllm/score",
+      "http_status": 200,
+      "same_request": true,
+      "same_response_except_id_created_and_recorded_float_differences": true,
+      "between_run_numeric_differences": [
+        {
+          "path": ".data[0].score",
+          "before": 8.260140419006348,
+          "after": 8.260139465332031,
+          "absolute_difference": 9.5367431640625e-07
+        },
+        {
+          "path": ".data[1].score",
+          "before": -11.154850006103516,
+          "after": -11.1548490524292,
+          "absolute_difference": 9.5367431640625e-07
+        }
+      ],
+      "rows": {
+        "baseline": null,
+        "fixed": {
+          "request_id": "score-8133dc17d4bfd1b9",
+          "prompt_tokens": 28,
+          "completion_tokens": 0,
+          "total_tokens": 28,
+          "spend": 2.8e-05
+        }
+      },
+      "full_native_response_persisted": true
+    },
+    {
+      "case": "rerank",
+      "endpoint": "/vllm/rerank",
+      "http_status": 200,
+      "same_request": true,
+      "same_response_except_id_created_and_recorded_float_differences": true,
+      "between_run_numeric_differences": [],
+      "rows": {
+        "baseline": null,
+        "fixed": {
+          "request_id": "score-98e77f0bccbc61ce",
+          "prompt_tokens": 28,
+          "completion_tokens": 0,
+          "total_tokens": 28,
+          "spend": 2.8e-05
+        }
+      },
+      "full_native_response_persisted": true
+    },
+    {
+      "case": "classify",
+      "endpoint": "/vllm/classify",
+      "http_status": 200,
+      "same_request": true,
+      "same_response_except_id_created_and_recorded_float_differences": true,
+      "between_run_numeric_differences": [],
+      "rows": {
+        "baseline": null,
+        "fixed": {
+          "request_id": "classify-bda314915174f5fb",
+          "prompt_tokens": 14,
+          "completion_tokens": 0,
+          "total_tokens": 14,
+          "spend": 1.4e-05
+        }
+      },
+      "full_native_response_persisted": true
+    },
+    {
+      "case": "relay-embeddings-control",
+      "endpoint": "/vllm/v1/embeddings",
+      "http_status": 200,
+      "same_request": true,
+      "same_response_except_id_created_and_recorded_float_differences": true,
+      "between_run_numeric_differences": [],
+      "rows": {
+        "baseline": {
+          "request_id": "3a35efee-e7a4-4827-af3d-fa9c66959203",
+          "prompt_tokens": 9,
+          "completion_tokens": 0,
+          "total_tokens": 9,
+          "spend": 9e-06
+        },
+        "fixed": {
+          "request_id": "f09e0b60-30fd-4966-9e61-3f92daaf8165",
+          "prompt_tokens": 9,
+          "completion_tokens": 0,
+          "total_tokens": 9,
+          "spend": 9e-06
+        }
+      },
+      "full_native_response_persisted": null
+    },
+    {
+      "case": "regular-embeddings-control",
+      "endpoint": "/v1/embeddings",
+      "http_status": 200,
+      "same_request": true,
+      "same_response_except_id_created_and_recorded_float_differences": true,
+      "between_run_numeric_differences": [],
+      "rows": {
+        "baseline": {
+          "request_id": "66ac3c6b-3f71-4356-a5d0-91ee9771658b",
+          "prompt_tokens": 9,
+          "completion_tokens": 0,
+          "total_tokens": 9,
+          "spend": 9e-06
+        },
+        "fixed": {
+          "request_id": "254e25cf-b68c-43d2-9466-754b83151d9b",
+          "prompt_tokens": 9,
+          "completion_tokens": 0,
+          "total_tokens": 9,
+          "spend": 9e-06
+        }
+      },
+      "full_native_response_persisted": null
+    }
+  ],
+  "prometheus": {
+    "baseline": {
+      "totals": {
+        "litellm_spend_metric_total": 1.8e-05,
+        "litellm_total_tokens_metric_total": 18.0,
+        "litellm_input_tokens_metric_total": 18.0,
+        "litellm_requests_metric_total": 2.0
+      },
+      "metrics": [
+        {
+          "metric": "litellm_spend_metric_total",
+          "labels": {
+            "api_key_alias": "qa-vllm-33210-baseline-86f857",
+            "api_provider": "hosted_vllm",
+            "model": "sentence-transformers/all-MiniLM-L6-v2",
+            "requested_model": "qa-33210-embedding"
+          },
+          "value": 9e-06
+        },
+        {
+          "metric": "litellm_spend_metric_total",
+          "labels": {
+            "api_key_alias": "qa-vllm-33210-baseline-86f857",
+            "api_provider": "hosted_vllm",
+            "model": "sentence-transformers/all-MiniLM-L6-v2",
+            "requested_model": "qa-33210-regular-embedding"
+          },
+          "value": 9e-06
+        },
+        {
+          "metric": "litellm_total_tokens_metric_total",
+          "labels": {
+            "api_key_alias": "qa-vllm-33210-baseline-86f857",
+            "api_provider": "hosted_vllm",
+            "model": "sentence-transformers/all-MiniLM-L6-v2",
+            "requested_model": "qa-33210-embedding"
+          },
+          "value": 9.0
+        },
+        {
+          "metric": "litellm_total_tokens_metric_total",
+          "labels": {
+            "api_key_alias": "qa-vllm-33210-baseline-86f857",
+            "api_provider": "hosted_vllm",
+            "model": "sentence-transformers/all-MiniLM-L6-v2",
+            "requested_model": "qa-33210-regular-embedding"
+          },
+          "value": 9.0
+        },
+        {
+          "metric": "litellm_input_tokens_metric_total",
+          "labels": {
+            "api_key_alias": "qa-vllm-33210-baseline-86f857",
+            "api_provider": "hosted_vllm",
+            "model": "sentence-transformers/all-MiniLM-L6-v2",
+            "requested_model": "qa-33210-embedding"
+          },
+          "value": 9.0
+        },
+        {
+          "metric": "litellm_input_tokens_metric_total",
+          "labels": {
+            "api_key_alias": "qa-vllm-33210-baseline-86f857",
+            "api_provider": "hosted_vllm",
+            "model": "sentence-transformers/all-MiniLM-L6-v2",
+            "requested_model": "qa-33210-regular-embedding"
+          },
+          "value": 9.0
+        },
+        {
+          "metric": "litellm_requests_metric_total",
+          "labels": {
+            "api_key_alias": "qa-vllm-33210-baseline-86f857",
+            "api_provider": "hosted_vllm",
+            "model": "sentence-transformers/all-MiniLM-L6-v2",
+            "requested_model": "qa-33210-embedding"
+          },
+          "value": 1.0
+        },
+        {
+          "metric": "litellm_requests_metric_total",
+          "labels": {
+            "api_key_alias": "qa-vllm-33210-baseline-86f857",
+            "api_provider": "hosted_vllm",
+            "model": "sentence-transformers/all-MiniLM-L6-v2",
+            "requested_model": "qa-33210-regular-embedding"
+          },
+          "value": 1.0
+        }
+      ]
+    },
+    "fixed": {
+      "totals": {
+        "litellm_spend_metric_total": 9.3e-05,
+        "litellm_total_tokens_metric_total": 93.0,
+        "litellm_input_tokens_metric_total": 93.0,
+        "litellm_requests_metric_total": 6.0
+      },
+      "metrics": [
+        {
+          "metric": "litellm_spend_metric_total",
+          "labels": {
+            "api_key_alias": "qa-vllm-33210-fixed-ce6d5f6-51924c",
+            "api_provider": "hosted_vllm",
+            "model": "sentence-transformers/all-MiniLM-L6-v2",
+            "requested_model": "qa-33210-embedding"
+          },
+          "value": 1.4e-05
+        },
+        {
+          "metric": "litellm_spend_metric_total",
+          "labels": {
+            "api_key_alias": "qa-vllm-33210-fixed-ce6d5f6-51924c",
+            "api_provider": "hosted_vllm",
+            "model": "cross-encoder/ms-marco-MiniLM-L6-v2",
+            "requested_model": "qa-33210-ranking"
+          },
+          "value": 7e-05
+        },
+        {
+          "metric": "litellm_spend_metric_total",
+          "labels": {
+            "api_key_alias": "qa-vllm-33210-fixed-ce6d5f6-51924c",
+            "api_provider": "hosted_vllm",
+            "model": "sentence-transformers/all-MiniLM-L6-v2",
+            "requested_model": "qa-33210-regular-embedding"
+          },
+          "value": 9e-06
+        },
+        {
+          "metric": "litellm_total_tokens_metric_total",
+          "labels": {
+            "api_key_alias": "qa-vllm-33210-fixed-ce6d5f6-51924c",
+            "api_provider": "hosted_vllm",
+            "model": "sentence-transformers/all-MiniLM-L6-v2",
+            "requested_model": "qa-33210-embedding"
+          },
+          "value": 14.0
+        },
+        {
+          "metric": "litellm_total_tokens_metric_total",
+          "labels": {
+            "api_key_alias": "qa-vllm-33210-fixed-ce6d5f6-51924c",
+            "api_provider": "hosted_vllm",
+            "model": "cross-encoder/ms-marco-MiniLM-L6-v2",
+            "requested_model": "qa-33210-ranking"
+          },
+          "value": 70.0
+        },
+        {
+          "metric": "litellm_total_tokens_metric_total",
+          "labels": {
+            "api_key_alias": "qa-vllm-33210-fixed-ce6d5f6-51924c",
+            "api_provider": "hosted_vllm",
+            "model": "sentence-transformers/all-MiniLM-L6-v2",
+            "requested_model": "qa-33210-regular-embedding"
+          },
+          "value": 9.0
+        },
+        {
+          "metric": "litellm_input_tokens_metric_total",
+          "labels": {
+            "api_key_alias": "qa-vllm-33210-fixed-ce6d5f6-51924c",
+            "api_provider": "hosted_vllm",
+            "model": "sentence-transformers/all-MiniLM-L6-v2",
+            "requested_model": "qa-33210-embedding"
+          },
+          "value": 14.0
+        },
+        {
+          "metric": "litellm_input_tokens_metric_total",
+          "labels": {
+            "api_key_alias": "qa-vllm-33210-fixed-ce6d5f6-51924c",
+            "api_provider": "hosted_vllm",
+            "model": "cross-encoder/ms-marco-MiniLM-L6-v2",
+            "requested_model": "qa-33210-ranking"
+          },
+          "value": 70.0
+        },
+        {
+          "metric": "litellm_input_tokens_metric_total",
+          "labels": {
+            "api_key_alias": "qa-vllm-33210-fixed-ce6d5f6-51924c",
+            "api_provider": "hosted_vllm",
+            "model": "sentence-transformers/all-MiniLM-L6-v2",
+            "requested_model": "qa-33210-regular-embedding"
+          },
+          "value": 9.0
+        },
+        {
+          "metric": "litellm_requests_metric_total",
+          "labels": {
+            "api_key_alias": "qa-vllm-33210-fixed-ce6d5f6-51924c",
+            "api_provider": "hosted_vllm",
+            "model": "sentence-transformers/all-MiniLM-L6-v2",
+            "requested_model": "qa-33210-embedding"
+          },
+          "value": 2.0
+        },
+        {
+          "metric": "litellm_requests_metric_total",
+          "labels": {
+            "api_key_alias": "qa-vllm-33210-fixed-ce6d5f6-51924c",
+            "api_provider": "hosted_vllm",
+            "model": "cross-encoder/ms-marco-MiniLM-L6-v2",
+            "requested_model": "qa-33210-ranking"
+          },
+          "value": 3.0
+        },
+        {
+          "metric": "litellm_requests_metric_total",
+          "labels": {
+            "api_key_alias": "qa-vllm-33210-fixed-ce6d5f6-51924c",
+            "api_provider": "hosted_vllm",
+            "model": "sentence-transformers/all-MiniLM-L6-v2",
+            "requested_model": "qa-33210-regular-embedding"
+          },
+          "value": 1.0
+        }
+      ]
+    }
+  },
+  "between_run_float_tolerance": {
+    "relative": 1e-06,
+    "absolute": 1e-06
+  },
+  "missing_standard_logging_errors": {
+    "baseline": 12,
+    "fixed": 0
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "model": "qa-33210-ranking",
+  "query": "What color is the sky?",
+  "documents": [
+    "The sky is blue.",
+    "Pizza is a food."
+  ],
+  "top_n": 2
+}

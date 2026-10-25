@@ -1,0 +1,263 @@
+.........FFFF                                                            [100%]
+=================================== FAILURES ===================================
+_ test_native_pooling_responses_reach_standard_logging_with_their_ids_usage_and_full_body[pooling-request_data0-native_fields0] _
+
+endpoint = 'pooling'
+request_data = {'input': ['Hello'], 'task': 'token_classify'}
+native_fields = {'data': [{'data': [[0.1, 0.9], [0.8, 0.2]], 'index': 0, 'object': 'pooling'}], 'object': 'list'}
+
+    @pytest.mark.asyncio
+    @pytest.mark.parametrize(
+        ("endpoint", "request_data", "native_fields"),
+        [
+            (
+                "pooling",
+                {"input": ["Hello"], "task": "token_classify"},
+                {"object": "list", "data": [{"index": 0, "object": "pooling", "data": [[0.1, 0.9], [0.8, 0.2]]}]},
+            ),
+            (
+                "v1/score",
+                {"text_1": "Hello", "text_2": ["Hi"]},
+                {"object": "list", "data": [{"index": 0, "object": "score", "score": 0.9}]},
+            ),
+            (
+                "v2/rerank",
+                {"query": "Hello", "documents": ["Hi"]},
+                {"results": [{"index": 0, "document": {"text": "Hi"}, "relevance_score": 0.9}]},
+            ),
+            (
+                "/classify/",
+                {"input": ["Hello"]},
+                {"object": "list", "data": [{"index": 0, "label": "greeting", "probs": [0.1, 0.9], "num_classes": 2}]},
+            ),
+        ],
+    )
+    async def test_native_pooling_responses_reach_standard_logging_with_their_ids_usage_and_full_body(
+        endpoint: str, request_data: dict[str, object], native_fields: dict[str, object]
+    ) -> None:
+        body: Final = {
+            "id": "vllm-native-response",
+            "model": MODEL,
+            "usage": {"prompt_tokens": 7, "total_tokens": 7},
+            **native_fields,
+        }
+        logging_obj: Final = _relay_logging_obj(endpoint, {"model": MODEL, **request_data})
+
+        await logging_obj.async_success_handler(result=_relayed_json(endpoint, body))
+
+        payload: Final = logging_obj.model_call_details.get("standard_logging_object")
+>       assert payload is not None
+E       assert None is not None
+
+tests/unit/llms/vllm/passthrough/test_vllm_passthrough_transformation.py:285: AssertionError
+_ test_native_pooling_responses_reach_standard_logging_with_their_ids_usage_and_full_body[v1/score-request_data1-native_fields1] _
+
+endpoint = 'v1/score', request_data = {'text_1': 'Hello', 'text_2': ['Hi']}
+native_fields = {'data': [{'index': 0, 'object': 'score', 'score': 0.9}], 'object': 'list'}
+
+    @pytest.mark.asyncio
+    @pytest.mark.parametrize(
+        ("endpoint", "request_data", "native_fields"),
+        [
+            (
+                "pooling",
+                {"input": ["Hello"], "task": "token_classify"},
+                {"object": "list", "data": [{"index": 0, "object": "pooling", "data": [[0.1, 0.9], [0.8, 0.2]]}]},
+            ),
+            (
+                "v1/score",
+                {"text_1": "Hello", "text_2": ["Hi"]},
+                {"object": "list", "data": [{"index": 0, "object": "score", "score": 0.9}]},
+            ),
+            (
+                "v2/rerank",
+                {"query": "Hello", "documents": ["Hi"]},
+                {"results": [{"index": 0, "document": {"text": "Hi"}, "relevance_score": 0.9}]},
+            ),
+            (
+                "/classify/",
+                {"input": ["Hello"]},
+                {"object": "list", "data": [{"index": 0, "label": "greeting", "probs": [0.1, 0.9], "num_classes": 2}]},
+            ),
+        ],
+    )
+    async def test_native_pooling_responses_reach_standard_logging_with_their_ids_usage_and_full_body(
+        endpoint: str, request_data: dict[str, object], native_fields: dict[str, object]
+    ) -> None:
+        body: Final = {
+            "id": "vllm-native-response",
+            "model": MODEL,
+            "usage": {"prompt_tokens": 7, "total_tokens": 7},
+            **native_fields,
+        }
+        logging_obj: Final = _relay_logging_obj(endpoint, {"model": MODEL, **request_data})
+
+        await logging_obj.async_success_handler(result=_relayed_json(endpoint, body))
+
+        payload: Final = logging_obj.model_call_details.get("standard_logging_object")
+>       assert payload is not None
+E       assert None is not None
+
+tests/unit/llms/vllm/passthrough/test_vllm_passthrough_transformation.py:285: AssertionError
+_ test_native_pooling_responses_reach_standard_logging_with_their_ids_usage_and_full_body[v2/rerank-request_data2-native_fields2] _
+
+endpoint = 'v2/rerank', request_data = {'documents': ['Hi'], 'query': 'Hello'}
+native_fields = {'results': [{'document': {'text': 'Hi'}, 'index': 0, 'relevance_score': 0.9}]}
+
+    @pytest.mark.asyncio
+    @pytest.mark.parametrize(
+        ("endpoint", "request_data", "native_fields"),
+        [
+            (
+                "pooling",
+                {"input": ["Hello"], "task": "token_classify"},
+                {"object": "list", "data": [{"index": 0, "object": "pooling", "data": [[0.1, 0.9], [0.8, 0.2]]}]},
+            ),
+            (
+                "v1/score",
+                {"text_1": "Hello", "text_2": ["Hi"]},
+                {"object": "list", "data": [{"index": 0, "object": "score", "score": 0.9}]},
+            ),
+            (
+                "v2/rerank",
+                {"query": "Hello", "documents": ["Hi"]},
+                {"results": [{"index": 0, "document": {"text": "Hi"}, "relevance_score": 0.9}]},
+            ),
+            (
+                "/classify/",
+                {"input": ["Hello"]},
+                {"object": "list", "data": [{"index": 0, "label": "greeting", "probs": [0.1, 0.9], "num_classes": 2}]},
+            ),
+        ],
+    )
+    async def test_native_pooling_responses_reach_standard_logging_with_their_ids_usage_and_full_body(
+        endpoint: str, request_data: dict[str, object], native_fields: dict[str, object]
+    ) -> None:
+        body: Final = {
+            "id": "vllm-native-response",
+            "model": MODEL,
+            "usage": {"prompt_tokens": 7, "total_tokens": 7},
+            **native_fields,
+        }
+        logging_obj: Final = _relay_logging_obj(endpoint, {"model": MODEL, **request_data})
+
+        await logging_obj.async_success_handler(result=_relayed_json(endpoint, body))
+
+        payload: Final = logging_obj.model_call_details.get("standard_logging_object")
+>       assert payload is not None
+E       assert None is not None
+
+tests/unit/llms/vllm/passthrough/test_vllm_passthrough_transformation.py:285: AssertionError
+_ test_native_pooling_responses_reach_standard_logging_with_their_ids_usage_and_full_body[/classify/-request_data3-native_fields3] _
+
+endpoint = '/classify/', request_data = {'input': ['Hello']}
+native_fields = {'data': [{'index': 0, 'label': 'greeting', 'num_classes': 2, 'probs': [0.1, 0.9]}], 'object': 'list'}
+
+    @pytest.mark.asyncio
+    @pytest.mark.parametrize(
+        ("endpoint", "request_data", "native_fields"),
+        [
+            (
+                "pooling",
+                {"input": ["Hello"], "task": "token_classify"},
+                {"object": "list", "data": [{"index": 0, "object": "pooling", "data": [[0.1, 0.9], [0.8, 0.2]]}]},
+            ),
+            (
+                "v1/score",
+                {"text_1": "Hello", "text_2": ["Hi"]},
+                {"object": "list", "data": [{"index": 0, "object": "score", "score": 0.9}]},
+            ),
+            (
+                "v2/rerank",
+                {"query": "Hello", "documents": ["Hi"]},
+                {"results": [{"index": 0, "document": {"text": "Hi"}, "relevance_score": 0.9}]},
+            ),
+            (
+                "/classify/",
+                {"input": ["Hello"]},
+                {"object": "list", "data": [{"index": 0, "label": "greeting", "probs": [0.1, 0.9], "num_classes": 2}]},
+            ),
+        ],
+    )
+    async def test_native_pooling_responses_reach_standard_logging_with_their_ids_usage_and_full_body(
+        endpoint: str, request_data: dict[str, object], native_fields: dict[str, object]
+    ) -> None:
+        body: Final = {
+            "id": "vllm-native-response",
+            "model": MODEL,
+            "usage": {"prompt_tokens": 7, "total_tokens": 7},
+            **native_fields,
+        }
+        logging_obj: Final = _relay_logging_obj(endpoint, {"model": MODEL, **request_data})
+
+        await logging_obj.async_success_handler(result=_relayed_json(endpoint, body))
+
+        payload: Final = logging_obj.model_call_details.get("standard_logging_object")
+>       assert payload is not None
+E       assert None is not None
+
+tests/unit/llms/vllm/passthrough/test_vllm_passthrough_transformation.py:285: AssertionError
+=============================== warnings summary ===============================
+tests/unit/llms/vllm/passthrough/test_vllm_passthrough_transformation.py::test_a_relayed_chat_completion_is_logged_with_the_usage_vllm_reported
+tests/unit/llms/vllm/passthrough/test_vllm_passthrough_transformation.py::test_a_relayed_chat_stream_is_logged_with_the_usage_chunk_vllm_sent
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'index' on TypedDict class 'ChatCompletionThinkingBlock' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/llms/vllm/passthrough/test_vllm_passthrough_transformation.py::test_a_relayed_chat_completion_is_logged_with_the_usage_vllm_reported
+tests/unit/llms/vllm/passthrough/test_vllm_passthrough_transformation.py::test_a_relayed_chat_stream_is_logged_with_the_usage_chunk_vllm_sent
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'index' on TypedDict class 'ChatCompletionRedactedThinkingBlock' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/llms/vllm/passthrough/test_vllm_passthrough_transformation.py::test_a_relayed_chat_completion_is_logged_with_the_usage_vllm_reported
+tests/unit/llms/vllm/passthrough/test_vllm_passthrough_transformation.py::test_a_relayed_chat_stream_is_logged_with_the_usage_chunk_vllm_sent
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'summary' on TypedDict class 'ChatCompletionReasoningItem' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/llms/vllm/passthrough/test_vllm_passthrough_transformation.py::test_a_relayed_chat_stream_is_logged_with_the_usage_chunk_vllm_sent
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'run_id', 'status', 'num_of_steps', 'result', 'error', 'type' on TypedDict class 'TinyfishRun' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/llms/vllm/passthrough/test_vllm_passthrough_transformation.py::test_a_success_callback_gets_the_text_completion_vllm_relayed_as_a_parsed_response
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'model', 'region', 'litellm_provider' on TypedDict class 'TokenCountModelInfo' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/llms/vllm/passthrough/test_vllm_passthrough_transformation.py::test_a_success_callback_gets_the_text_completion_vllm_relayed_as_a_parsed_response
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'hours_utc', 'weekdays' on TypedDict class 'OffPeakWindow' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/llms/vllm/passthrough/test_vllm_passthrough_transformation.py::test_a_success_callback_gets_the_text_completion_vllm_relayed_as_a_parsed_response
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'hours_utc', 'windows', 'weekday_timezone', 'input_cost_per_token', 'output_cost_per_token', 'output_cost_per_reasoning_token', 'cache_read_input_token_cost', 'explicit_cache_read_input_token_cost', 'cache_creation_input_token_cost' on TypedDict class 'OffPeakPricing' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/llms/vllm/passthrough/test_vllm_passthrough_transformation.py::test_a_success_callback_gets_the_text_completion_vllm_relayed_as_a_parsed_response
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'count', 'period', 'shared_group' on TypedDict class 'SearchFreeRequests' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/llms/vllm/passthrough/test_vllm_passthrough_transformation.py::test_a_success_callback_gets_the_text_completion_vllm_relayed_as_a_parsed_response
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'supports_prompt_cache_breakpoint', 'supports_thinking_cache_preservation', 'supports_video_input', 'supports_box_questions', 'supports_bedrock_native_structured_output', 'supports_sampling_params', 'supports_legacy_thinking', 'thinking_always_on', 'reasoning_effort_levels', 'default_reasoning_effort', 'supports_anthropic_thinking_payload', 'supports_anthropic_compaction', 'supported_audio_formats', 'vertex_ai_audio_api', 'supports_regex_lookaround', 'token_count_framing', 'token_count_model', 'token_count_tokenizer', 'input_cost_per_token_balanced', 'input_cost_per_token_ultrafast', 'cache_creation_input_token_cost_above_100k_tokens', 'cache_creation_input_token_cost_above_1hr_above_100k_tokens', 'cache_creation_input_token_cost_above_272k_tokens_ultrafast', 'cache_creation_input_token_cost_above_12hr', 'cache_creation_input_token_cost_above_12hr_flex', 'cache_creation_input_token_cost_above_12hr_priority', 'cache_creation_input_token_cost_above_12hr_above_272k_tokens', 'cache_creation_input_token_cost_above_12hr_above_272k_tokens_flex', 'cache_creation_input_token_cost_above_12hr_above_272k_tokens_priority', 'cache_creation_input_token_cost_above_12hr_batches', 'cache_creation_input_token_cost_above_12hr_ultrafast', 'cache_creation_input_token_cost_above_12hr_above_272k_tokens_batches', 'cache_creation_input_token_cost_above_12hr_above_272k_tokens_ultrafast', 'cache_creation_input_token_cost_ultrafast', 'cache_read_input_audio_token_cost', 'cache_read_input_audio_token_cost_flex', 'cache_read_input_audio_token_cost_priority', 'cache_read_input_image_token_cost', 'explicit_cache_read_input_token_cost', 'cache_read_input_token_cost_balanced', 'cache_read_input_token_cost_ultrafast', 'cache_read_input_token_cost_above_100k_tokens', 'cache_read_input_token_cost_above_272k_tokens_ultrafast', 'cache_read_input_token_cost_batches', 'cache_read_input_audio_token_cost_batches', 'cache_read_input_token_cost_above_200k_tokens_batches', 'cache_read_input_token_cost_above_100k_tokens_batches', 'cache_read_input_token_cost_above_272k_tokens_batches', 'cache_creation_input_token_cost_batches', 'cache_creation_input_token_cost_above_200k_tokens_batches', 'cache_creation_input_token_cost_above_100k_tokens_batches', 'cache_creation_input_token_cost_above_272k_tokens_batches', 'off_peak_pricing', 'input_cost_per_audio_token_flex', 'input_cost_per_audio_token_priority', 'input_cost_per_token_above_100k_tokens', 'input_cost_per_token_above_272k_tokens_ultrafast', 'input_cost_per_audio_token_batches', 'input_cost_per_image_token_batches', 'cost_per_second', 'input_cost_per_text_message', 'input_cost_per_video_token_batches', 'input_cost_per_token_above_200k_tokens_batches', 'input_cost_per_token_above_100k_tokens_batches', 'input_cost_per_token_above_272k_tokens_batches', 'output_cost_per_token_above_200k_tokens_batches', 'output_cost_per_token_above_100k_tokens_batches', 'output_cost_per_token_above_272k_tokens_batches', 'output_cost_per_token_balanced', 'output_cost_per_token_ultrafast', 'regional_endpoint_uplift_multiplier', 'output_cost_per_token_above_100k_tokens', 'output_cost_per_token_above_272k_tokens_ultrafast', 'output_cost_per_pixel', 'output_cost_per_image_token_batches', 'output_cost_per_second_480p', 'output_cost_per_second_720p', 'output_cost_per_second_768p', 'output_cost_per_second_2k', 'output_cost_per_second_4k', 'output_cost_per_image_512', 'output_cost_per_image_1024', 'output_cost_per_image_1536', 'ocr_cost_per_page_batches', 'annotation_cost_per_page_batches', 'search_free_requests', 'google_maps_grounding_cost_per_query' on TypedDict class 'ModelInfo' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/llms/vllm/passthrough/test_vllm_passthrough_transformation.py::test_a_success_callback_gets_the_text_completion_vllm_relayed_as_a_parsed_response
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'code' on TypedDict class '_CodeExecutionToolArgs' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/llms/vllm/passthrough/test_vllm_passthrough_transformation.py::test_a_success_callback_gets_the_text_completion_vllm_relayed_as_a_parsed_response
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'name', 'mime_type', 'content_base64' on TypedDict class '_GeneratedFileEntry' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/llms/vllm/passthrough/test_vllm_passthrough_transformation.py::test_a_success_callback_gets_the_text_completion_vllm_relayed_as_a_parsed_response
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'langfuse_environment', 'langfuse_span_scope', 'arize_success_sampling_rate', 'arize_error_sampling_rate', 'arize_otlp_protocol' on TypedDict class 'StandardCallbackDynamicParams' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/llms/vllm/passthrough/test_vllm_passthrough_transformation.py::test_a_relayed_text_completion_stream_is_logged_with_the_usage_chunk_vllm_sent
+tests/unit/llms/vllm/passthrough/test_vllm_passthrough_transformation.py::test_a_relayed_text_completion_stream_without_a_usage_chunk_counts_every_prompt_and_choice
+  /opt/litellm-33210/litellm/litellm_core_utils/litellm_logging.py:2743: PydanticDeprecatedSince20: The `copy` method is deprecated; use `model_copy` instead. See the docstring of `BaseModel.copy` for details about how to handle `include` and `exclude`. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.13/migration/
+    metadata_hidden_params: Final = hidden_params.copy()
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/unit/llms/vllm/passthrough/test_vllm_passthrough_transformation.py::test_native_pooling_responses_reach_standard_logging_with_their_ids_usage_and_full_body[pooling-request_data0-native_fields0]
+FAILED tests/unit/llms/vllm/passthrough/test_vllm_passthrough_transformation.py::test_native_pooling_responses_reach_standard_logging_with_their_ids_usage_and_full_body[v1/score-request_data1-native_fields1]
+FAILED tests/unit/llms/vllm/passthrough/test_vllm_passthrough_transformation.py::test_native_pooling_responses_reach_standard_logging_with_their_ids_usage_and_full_body[v2/rerank-request_data2-native_fields2]
+FAILED tests/unit/llms/vllm/passthrough/test_vllm_passthrough_transformation.py::test_native_pooling_responses_reach_standard_logging_with_their_ids_usage_and_full_body[/classify/-request_data3-native_fields3]
+4 failed, 9 passed, 17 warnings in 1.44s

@@ -1,0 +1,33 @@
+{
+  "recorded_at": "2026-10-25T17:38:48.591845+00:00",
+  "base_sha": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "fixed_sha": "ce6d5f6e9edaf11599c6a19e949b5d8392af1ece",
+  "tests_before": "4 failed, 9 passed, 17 warnings in 1.44s",
+  "tests_after": "45 passed, 25 warnings in 22.84s across five affected files",
+  "format": "make format: 2932 files unchanged; targeted regression file unchanged",
+  "lint": "make lint BASE_REF=origin/main LINT_JOBS=2, exit 0",
+  "type_budget": "105900 existing diagnostics; every rule within its merge-base ceiling",
+  "e2e_types": "0 errors, 0 warnings, 0 notes",
+  "mutations": "All five selected mutations rejected; exact source restored and all 45 tests pass again",
+  "real_model_requests": 12,
+  "browser_workflows": 4,
+  "raw_screenshots_visually_reviewed": 32,
+  "annotated_screenshots_visually_reviewed": 4,
+  "recording_review": "Eight sampled frames from each of four recordings",
+  "unchanged_ui_export_source": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "vllm": "0.32.0+cpu, Linux amd64, float32, two threads per server, AVX2 CPU, no remote model code",
+  "vllm_image": "vllm/vllm-openai-cpu@sha256:827ef38187f9b52f2bb838695ef815ec5b65f4bf3e4c061b002b2b0a19cb0701",
+  "postgresql": "16.10",
+  "python": "3.12.13",
+  "playwright": "1.58.1",
+  "browser": "145.0.7632.6",
+  "limitations": [
+    "Real inference used MiniLM embedding and cross-encoder models; BAAI/bge-m3 and live token classification were not tested",
+    "The unit regression covers two-dimensional token-classification data and versioned/slash endpoint variants",
+    "Configured test pricing is $0.000001 per prompt token, not a provider bill",
+    "The existing narrow phone drawer clips headers and wraps values; the assistant overlaps pagination on both revisions",
+    "Use JSON view for these non-chat response bodies; Pretty view remains chat-oriented",
+    "Existing static/runtime-config 404s: desktop 60 before/60 after, phone 10 before/9 after; no new paths",
+    "Separate real score calls differ by 9.5367431640625e-7 in two floats; each stored native response exactly matches its own client response"
+  ]
+}

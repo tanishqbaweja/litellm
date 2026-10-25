@@ -1,0 +1,73 @@
+{
+  "reviewed_at": "2026-10-25T17:37:33.890155+00:00",
+  "reviewed_by": "Codex",
+  "screenshots": {
+    "before/desktop-table.png": "0def18ee48834c9a3df846e503cf3c1c7a2d04c30ffb7ae3ada4f2d5e36f5173",
+    "before/desktop-relay-embeddings-control-metrics.png": "1d3810d073b3c014d5041b949fdfb5037a2e040fa911cf16bbd0e1f4cef848a0",
+    "before/desktop-regular-embeddings-control-metrics.png": "9562d79c3396011676e913c6899f255cb017311f25cced479336a6d7c190cee0",
+    "before/desktop-table-after-reopen.png": "6394ec86e5e33e422fecfa16bbc8810f81a58830bbd1b8b2d1d7be6a79e8988d",
+    "before/phone-table.png": "cd6bc5ebcd6958ce825aaaec8e128e0be572f297e1150b5d46bde8b7bfb10cf3",
+    "before/phone-relay-embeddings-control-metrics.png": "2367afdaca593bf90e0594ff9d6a70e6c6c780220f1795469a6e405ac93b208e",
+    "before/phone-regular-embeddings-control-metrics.png": "3e34303ee09ba0550ea6bfeb8ed853b881b7721e6afbe320ffc4299ff4eb34b1",
+    "before/phone-table-after-reopen.png": "cd6bc5ebcd6958ce825aaaec8e128e0be572f297e1150b5d46bde8b7bfb10cf3",
+    "after/desktop-table.png": "ecf0155a341ad348a7421cd34370d63049dbc0d1a5847eb46a0a15de35bc232a",
+    "after/desktop-pooling-metrics.png": "fbe188e2654a3f0fcdbbb729b385858c8d232ceeac45ae920c3f4e3167e3b63d",
+    "after/desktop-pooling-response.png": "84fc015273f8aeeb988cd8b4f83e4af779d21165ff40798264e1f0368ee905d1",
+    "after/desktop-score-metrics.png": "23aef272b57fcf45f1265e0257b0a6a41327984e13c7ca43bb01f4d158b5b038",
+    "after/desktop-score-response.png": "bdcdcd2eed4208df867c19595c33b547fea787dba3b368bf13b966cae807901d",
+    "after/desktop-rerank-metrics.png": "ca798349ebd88e5a041a062ab85b50cb1a111de9a593b18fa4719817f77fbf1e",
+    "after/desktop-rerank-response.png": "d3fc232c08014adaa42957eae26960f3266657887271ee84a4d457a757f6e19e",
+    "after/desktop-classify-metrics.png": "e688ce903f93aedd4e8651e8bb28e06975ed2c2efa77fd2b1974e1f126f20317",
+    "after/desktop-classify-response.png": "ad9883812245ba2e32e78c0447192009597391f0d549bece8bdefdd0c8ddca78",
+    "after/desktop-relay-embeddings-control-metrics.png": "1dcdfc44e8bd5cd6b5b80dee707df0403efaa971679f3c8ed452cac634f67452",
+    "after/desktop-regular-embeddings-control-metrics.png": "3c2ccf7fc98973c45f9cb840be43cb64a9e3b2ce67f3d4db71a9837b90246d61",
+    "after/desktop-table-after-reopen.png": "dc3b6c1dbd7329f5ea3ff93e5a042dd705533ea2064c549fb5d66734d11fc65e",
+    "after/phone-table.png": "a58b089f5f61df575d3c92b6b51eda9442000cfa49265f57e33a1dfbe1b6c1d3",
+    "after/phone-pooling-metrics.png": "a22c877fc09c2052f3f6df045ce8f4d322708a09da2c84973b3a9d0a0f99b8c7",
+    "after/phone-pooling-response.png": "eab1bbc3863a3af7543b0b103c07767e1c6476a5454f950157282e3b61916846",
+    "after/phone-score-metrics.png": "e88a2cf11b8908b398a40568b2391477b1e6250a6d26ac96ed24f946fa6f8179",
+    "after/phone-score-response.png": "a450ddca4b16b19050f8969a9f70a66537ebca69ead670117288fbdafc885c59",
+    "after/phone-rerank-metrics.png": "dba91f413c0f4d42da69b8c98f35e5d0e1c2660ccfc9a940628fcf031820e5f9",
+    "after/phone-rerank-response.png": "d2ae2d73725bd31e5d8f15bb791fb31006bc56795be4e83a6796e74719c91715",
+    "after/phone-classify-metrics.png": "2be1725123128a5ec8bc37c0b4eecd11a80ad6b9b1c3bc04fbc957647d7e99e6",
+    "after/phone-classify-response.png": "1df6f327fda43597b22d752750b0f4a9eb78c8f3bf27adc00d96d39b6b80f964",
+    "after/phone-relay-embeddings-control-metrics.png": "a01886a5ddd7e169f49c7b279780b26f6b46a887003657fd0d2a3b659cc68906",
+    "after/phone-regular-embeddings-control-metrics.png": "2463a97a3d28212e7dd7f5515535d6a70c8fd0f9987a715b25e8c7050e06e03f",
+    "after/phone-table-after-reopen.png": "3a30ce355ef5a1af7721e25401ed30f6fe9befb3b8dae5ebdb4ad03871257b0c"
+  },
+  "annotated_screenshots": {
+    "desktop-baseline-annotated.png": "ed5dc993a7f4c3ccc4a46fc724b07e3f3270e71ea344c0aa9dec3f2b326bade5",
+    "phone-baseline-annotated.png": "382c0686179b54fd31bbb49be0a074d3c498210a237c9f1430a4216d3aa7caa3",
+    "desktop-fixed-annotated.png": "4b29b86fb0c8e3690bfa081bd4e64a0dbe46633e20e7e999887dc17c88f9a42d",
+    "phone-fixed-annotated.png": "cd8ebdb5fff9021a194b99e26d2afd44223c6414a80c8802adcf01c37b7cfa2e"
+  },
+  "recordings": [
+    {
+      "file": "before/desktop.webm",
+      "sha256": "92275c26af92e9b7fe088a1b7882313f89d3ccaec4b65782eb69988a8703c67c",
+      "sampled_frames_visually_reviewed": 8
+    },
+    {
+      "file": "before/phone.webm",
+      "sha256": "66ce9e940d41aa1db0abe3b88a8cc99abc90f338e7a4b0a1b9474e0795896482",
+      "sampled_frames_visually_reviewed": 8
+    },
+    {
+      "file": "after/desktop.webm",
+      "sha256": "41510edd33998686bfe16f26d838978cf2d520f29a8bd41538a918fa23c4e5b7",
+      "sampled_frames_visually_reviewed": 8
+    },
+    {
+      "file": "after/phone.webm",
+      "sha256": "08fe11223942733aaf86e1dabf90f94f1e09966cc55f72dc9281c6acab556fad",
+      "sampled_frames_visually_reviewed": 8
+    }
+  ],
+  "observations": [
+    "Before shows two embedding controls; after shows all six successful requests",
+    "Each native detail shows the expected token count and configured cost; JSON view displays its native result",
+    "The existing narrow phone drawer clips headers and wraps values on both revisions",
+    "The existing assistant overlaps pagination on both revisions",
+    "Pretty view does not render these non-chat response bodies; JSON view was verified"
+  ]
+}

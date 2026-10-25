@@ -1,0 +1,1 @@
+{"id":"score-8133dc17d4bfd1b9","object":"list","created":1792949554,"model":"cross-encoder/ms-marco-MiniLM-L6-v2","data":[{"index":0,"object":"score","score":8.260139465332031},{"index":1,"object":"score","score":-11.1548490524292}],"usage":{"prompt_tokens":28,"total_tokens":28,"completion_tokens":0,"prompt_tokens_details":null,"completion_tokens_details":null}}

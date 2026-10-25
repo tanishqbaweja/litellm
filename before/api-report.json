@@ -1,0 +1,258 @@
+{
+  "revision": "baseline",
+  "source_sha": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "alias": "qa-vllm-33210-baseline-86f857",
+  "cases": [
+    {
+      "case": "pooling",
+      "endpoint": "/vllm/pooling",
+      "http_status": 200,
+      "response_id": "pooling-92b43d47c77c4bf6",
+      "response_model": "sentence-transformers/all-MiniLM-L6-v2",
+      "usage": {
+        "prompt_tokens": 5,
+        "total_tokens": 5,
+        "completion_tokens": 0,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "response_keys": [
+        "id",
+        "object",
+        "created",
+        "model",
+        "data",
+        "usage"
+      ],
+      "headers": {}
+    },
+    {
+      "case": "score",
+      "endpoint": "/vllm/score",
+      "http_status": 200,
+      "response_id": "score-a9b113d99a1499d2",
+      "response_model": "cross-encoder/ms-marco-MiniLM-L6-v2",
+      "usage": {
+        "prompt_tokens": 28,
+        "total_tokens": 28,
+        "completion_tokens": 0,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "response_keys": [
+        "id",
+        "object",
+        "created",
+        "model",
+        "data",
+        "usage"
+      ],
+      "headers": {}
+    },
+    {
+      "case": "rerank",
+      "endpoint": "/vllm/rerank",
+      "http_status": 200,
+      "response_id": "score-b492cbaf0a077352",
+      "response_model": "cross-encoder/ms-marco-MiniLM-L6-v2",
+      "usage": {
+        "prompt_tokens": 28,
+        "total_tokens": 28
+      },
+      "response_keys": [
+        "id",
+        "model",
+        "usage",
+        "results"
+      ],
+      "headers": {}
+    },
+    {
+      "case": "classify",
+      "endpoint": "/vllm/classify",
+      "http_status": 200,
+      "response_id": "classify-a9165d40b18f53b0",
+      "response_model": "cross-encoder/ms-marco-MiniLM-L6-v2",
+      "usage": {
+        "prompt_tokens": 14,
+        "total_tokens": 14,
+        "completion_tokens": 0,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "response_keys": [
+        "id",
+        "object",
+        "created",
+        "model",
+        "data",
+        "usage"
+      ],
+      "headers": {}
+    },
+    {
+      "case": "relay-embeddings-control",
+      "endpoint": "/vllm/v1/embeddings",
+      "http_status": 200,
+      "response_id": "embd-93079a9b854d7b2f",
+      "response_model": "sentence-transformers/all-MiniLM-L6-v2",
+      "usage": {
+        "prompt_tokens": 9,
+        "total_tokens": 9,
+        "completion_tokens": 0,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "response_keys": [
+        "id",
+        "object",
+        "created",
+        "model",
+        "data",
+        "usage"
+      ],
+      "headers": {}
+    },
+    {
+      "case": "regular-embeddings-control",
+      "endpoint": "/v1/embeddings",
+      "http_status": 200,
+      "response_id": null,
+      "response_model": "qa-33210-regular-embedding",
+      "usage": {
+        "completion_tokens": 0,
+        "prompt_tokens": 9,
+        "total_tokens": 9,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      },
+      "response_keys": [
+        "model",
+        "data",
+        "object",
+        "usage"
+      ],
+      "headers": {
+        "x-litellm-call-id": "66ac3c6b-3f71-4356-a5d0-91ee9771658b",
+        "x-litellm-model-id": "9d9442bf0a74ce0980334a8c91f6ce1e697a895458be3416628c3621ff0224f0",
+        "x-litellm-response-cost": "9e-06"
+      }
+    }
+  ],
+  "spend_rows": [
+    {
+      "request_id": "66ac3c6b-3f71-4356-a5d0-91ee9771658b",
+      "call_type": "aembedding",
+      "model": "hosted_vllm/sentence-transformers/all-MiniLM-L6-v2",
+      "prompt_tokens": 9,
+      "completion_tokens": 0,
+      "total_tokens": 9,
+      "spend": 9e-06,
+      "status": "success",
+      "api_base": "http://127.0.0.1:51477/v1/embeddings"
+    },
+    {
+      "request_id": "3a35efee-e7a4-4827-af3d-fa9c66959203",
+      "call_type": "allm_passthrough_route",
+      "model": "hosted_vllm/sentence-transformers/all-MiniLM-L6-v2",
+      "prompt_tokens": 9,
+      "completion_tokens": 0,
+      "total_tokens": 9,
+      "spend": 9e-06,
+      "status": "success",
+      "api_base": "http://127.0.0.1:51477/v1/embeddings"
+    }
+  ],
+  "metrics_status": 200,
+  "observed_at": "2026-10-25T17:20:27.784384+00:00",
+  "prometheus": {
+    "totals": {
+      "litellm_spend_metric_total": 1.8e-05,
+      "litellm_total_tokens_metric_total": 18.0,
+      "litellm_input_tokens_metric_total": 18.0,
+      "litellm_requests_metric_total": 2.0
+    },
+    "metrics": [
+      {
+        "metric": "litellm_spend_metric_total",
+        "labels": {
+          "api_key_alias": "qa-vllm-33210-baseline-86f857",
+          "api_provider": "hosted_vllm",
+          "model": "sentence-transformers/all-MiniLM-L6-v2",
+          "requested_model": "qa-33210-embedding"
+        },
+        "value": 9e-06
+      },
+      {
+        "metric": "litellm_spend_metric_total",
+        "labels": {
+          "api_key_alias": "qa-vllm-33210-baseline-86f857",
+          "api_provider": "hosted_vllm",
+          "model": "sentence-transformers/all-MiniLM-L6-v2",
+          "requested_model": "qa-33210-regular-embedding"
+        },
+        "value": 9e-06
+      },
+      {
+        "metric": "litellm_total_tokens_metric_total",
+        "labels": {
+          "api_key_alias": "qa-vllm-33210-baseline-86f857",
+          "api_provider": "hosted_vllm",
+          "model": "sentence-transformers/all-MiniLM-L6-v2",
+          "requested_model": "qa-33210-embedding"
+        },
+        "value": 9.0
+      },
+      {
+        "metric": "litellm_total_tokens_metric_total",
+        "labels": {
+          "api_key_alias": "qa-vllm-33210-baseline-86f857",
+          "api_provider": "hosted_vllm",
+          "model": "sentence-transformers/all-MiniLM-L6-v2",
+          "requested_model": "qa-33210-regular-embedding"
+        },
+        "value": 9.0
+      },
+      {
+        "metric": "litellm_input_tokens_metric_total",
+        "labels": {
+          "api_key_alias": "qa-vllm-33210-baseline-86f857",
+          "api_provider": "hosted_vllm",
+          "model": "sentence-transformers/all-MiniLM-L6-v2",
+          "requested_model": "qa-33210-embedding"
+        },
+        "value": 9.0
+      },
+      {
+        "metric": "litellm_input_tokens_metric_total",
+        "labels": {
+          "api_key_alias": "qa-vllm-33210-baseline-86f857",
+          "api_provider": "hosted_vllm",
+          "model": "sentence-transformers/all-MiniLM-L6-v2",
+          "requested_model": "qa-33210-regular-embedding"
+        },
+        "value": 9.0
+      },
+      {
+        "metric": "litellm_requests_metric_total",
+        "labels": {
+          "api_key_alias": "qa-vllm-33210-baseline-86f857",
+          "api_provider": "hosted_vllm",
+          "model": "sentence-transformers/all-MiniLM-L6-v2",
+          "requested_model": "qa-33210-embedding"
+        },
+        "value": 1.0
+      },
+      {
+        "metric": "litellm_requests_metric_total",
+        "labels": {
+          "api_key_alias": "qa-vllm-33210-baseline-86f857",
+          "api_provider": "hosted_vllm",
+          "model": "sentence-transformers/all-MiniLM-L6-v2",
+          "requested_model": "qa-33210-regular-embedding"
+        },
+        "value": 1.0
+      }
+    ]
+  }
+}

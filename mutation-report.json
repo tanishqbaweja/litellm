@@ -1,0 +1,36 @@
+{
+  "mutations": [
+    {
+      "name": "omit-native-endpoints",
+      "returncode": 1,
+      "summary": "4 failed, 9 deselected in 0.37s",
+      "log": "litellm-33210-mutation-omit-native-endpoints.log"
+    },
+    {
+      "name": "reject-versioned-and-slash-paths",
+      "returncode": 1,
+      "summary": "3 failed, 1 passed, 9 deselected in 0.41s",
+      "log": "litellm-33210-mutation-reject-versioned-and-slash-paths.log"
+    },
+    {
+      "name": "drop-usage",
+      "returncode": 1,
+      "summary": "4 failed, 9 deselected in 0.38s",
+      "log": "litellm-33210-mutation-drop-usage.log"
+    },
+    {
+      "name": "drop-response-id",
+      "returncode": 1,
+      "summary": "4 failed, 9 deselected in 0.41s",
+      "log": "litellm-33210-mutation-drop-response-id.log"
+    },
+    {
+      "name": "drop-native-result-data",
+      "returncode": 1,
+      "summary": "4 failed, 9 deselected in 0.39s",
+      "log": "litellm-33210-mutation-drop-native-result-data.log"
+    }
+  ],
+  "source_restored_exactly": true,
+  "source_sha256": "aecc04bb36a724b5023ebe0c08a797c7d085e4bddbec20cbeb32ca4885ac3e63"
+}

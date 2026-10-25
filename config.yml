@@ -1,0 +1,33 @@
+model_list:
+  - model_name: qa-33210-embedding
+    litellm_params:
+      model: hosted_vllm/sentence-transformers/all-MiniLM-L6-v2
+      api_base: http://127.0.0.1:51477
+      api_key: local-vllm-only
+      input_cost_per_token: 0.000001
+      output_cost_per_token: 0
+  - model_name: qa-33210-ranking
+    litellm_params:
+      model: hosted_vllm/cross-encoder/ms-marco-MiniLM-L6-v2
+      api_base: http://127.0.0.1:51478
+      api_key: local-vllm-only
+      input_cost_per_token: 0.000001
+      output_cost_per_token: 0
+  - model_name: qa-33210-regular-embedding
+    litellm_params:
+      model: hosted_vllm/sentence-transformers/all-MiniLM-L6-v2
+      api_base: http://127.0.0.1:51477/v1
+      api_key: local-vllm-only
+      input_cost_per_token: 0.000001
+      output_cost_per_token: 0
+
+litellm_settings:
+  callbacks:
+    - prometheus
+
+general_settings:
+  master_key: os.environ/LITELLM_MASTER_KEY
+  database_url: os.environ/DATABASE_URL
+  store_prompts_in_spend_logs: true
+  store_model_in_db: true
+  proxy_batch_write_at: 1

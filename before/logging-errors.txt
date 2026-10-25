@@ -1,0 +1,12 @@
+Debug info - standard_logging_object not found
+Debug info - standard_logging_object not found
+ValueError: standard_logging_object is required, got=None
+Debug info - standard_logging_object not found
+Debug info - standard_logging_object not found
+ValueError: standard_logging_object is required, got=None
+Debug info - standard_logging_object not found
+Debug info - standard_logging_object not found
+ValueError: standard_logging_object is required, got=None
+Debug info - standard_logging_object not found
+Debug info - standard_logging_object not found
+ValueError: standard_logging_object is required, got=None

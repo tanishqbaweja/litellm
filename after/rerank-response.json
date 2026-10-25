@@ -1,0 +1,1 @@
+{"id":"score-98e77f0bccbc61ce","model":"cross-encoder/ms-marco-MiniLM-L6-v2","usage":{"prompt_tokens":28,"total_tokens":28},"results":[{"index":0,"document":{"text":"The sky is blue.","multi_modal":null},"relevance_score":8.260139465332031},{"index":1,"document":{"text":"Pizza is a food.","multi_modal":null},"relevance_score":-11.1548490524292}]}
