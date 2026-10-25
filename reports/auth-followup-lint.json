@@ -1,0 +1,14 @@
+{
+  "name": "lint",
+  "command": [
+    "make",
+    "lint",
+    "BASE_REF=origin/main",
+    "LINT_JOBS=2"
+  ],
+  "started_at": "2026-10-25T22:34:02.912889+00:00",
+  "production_sha256": "145693d9bfcda18ecedd9c732f62d6ef9d0b963b21638c9c537ea235e01a7e51",
+  "returncode": 0,
+  "completed_at": "2026-10-25T22:36:57.539340+00:00",
+  "production_unchanged": true
+}

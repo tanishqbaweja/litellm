@@ -1,0 +1,4 @@
+uv sync --inexact --frozen
+Audited 157 packages in 260ms
+cd litellm && uv run --no-sync ruff format --exclude '/enterprise/' . && cd ..
+2932 files left unchanged

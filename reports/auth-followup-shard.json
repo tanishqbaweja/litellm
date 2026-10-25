@@ -1,0 +1,27 @@
+{
+  "phase": "shard",
+  "command": [
+    "/opt/litellm-venv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "--tb=short",
+    "-o",
+    "faulthandler_timeout=60",
+    "-n",
+    "4",
+    "--dist",
+    "loadscope",
+    "tests/unit/proxy/auth/test_auth_checks.py",
+    "tests/unit/proxy/auth/test_user_api_key_auth.py",
+    "tests/unit/proxy/test_credential_slot_registry.py",
+    "tests/unit/proxy/test_deprecated_key_grace_period.py"
+  ],
+  "source_head": "8c0fe877b9bbfa0a6934d8ec9373fcaf029a2082",
+  "test_sha256": "1e989ab77a1acbbc02d101a900ce90214945a5c09ea54c7c52cd88a94f1c1c9a",
+  "production_sha256": "145693d9bfcda18ecedd9c732f62d6ef9d0b963b21638c9c537ea235e01a7e51",
+  "started_at": "2026-10-25T22:33:03.659778+00:00",
+  "reruns_enabled": false,
+  "returncode": 0,
+  "completed_at": "2026-10-25T22:33:42.222363+00:00"
+}

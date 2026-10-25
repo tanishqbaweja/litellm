@@ -1,0 +1,12 @@
+{
+  "name": "format",
+  "command": [
+    "make",
+    "format"
+  ],
+  "started_at": "2026-10-25T22:34:00.197404+00:00",
+  "production_sha256": "145693d9bfcda18ecedd9c732f62d6ef9d0b963b21638c9c537ea235e01a7e51",
+  "returncode": 0,
+  "completed_at": "2026-10-25T22:34:01.006823+00:00",
+  "production_unchanged": true
+}

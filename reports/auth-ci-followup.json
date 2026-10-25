@@ -1,0 +1,22 @@
+{
+  "recorded_at": "2026-10-25T22:37:07.198894+00:00",
+  "previous_head": "8c0fe877b9bbfa0a6934d8ec9373fcaf029a2082",
+  "head": "f8afcdc27d0ba7f9e2aef46521d1b7eca45d54bc",
+  "changed_files": [
+    "tests/unit/proxy/auth/test_user_api_key_auth.py"
+  ],
+  "production_and_ui_unchanged": true,
+  "full_diff_files": [
+    "litellm/proxy/auth/auth_checks.py",
+    "tests/integration/spend/test_key_budget_lockout.py",
+    "tests/unit/proxy/auth/test_auth_checks.py",
+    "tests/unit/proxy/auth/test_user_api_key_auth.py"
+  ],
+  "initial_ci_failure": "https://github.com/BerriAI/litellm/actions/runs/40239951575/job/121309747587",
+  "diagnosis": "Unconfigured AsyncMock database spend converts to 1.0, overriding the test fixture fallback of 15.0",
+  "test_change": "Use isolated real auth/spend caches, real auth and alerting, a controlled clock, and only an external HTTP transport double; assert allowed auth and the complete alert payload",
+  "main_regression": "1 expected missing-alert failure, 1 passed; baseline restored exactly",
+  "auth_ci_group": "291 passed, 54 warnings; four xdist workers with no reruns",
+  "earlier_live_and_frontend_evidence": "Unchanged production and dashboard, recorded at the previous head",
+  "abandoned_local_test_attempt": "Initial task drain also awaited the perpetual alert flush loop; stopped without test results, then explicitly managed that background task before the complete red and green runs"
+}

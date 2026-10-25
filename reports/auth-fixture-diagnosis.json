@@ -1,0 +1,15 @@
+{
+  "source_head": "8c0fe877b9bbfa0a6934d8ec9373fcaf029a2082",
+  "supplied_fallback": 15.0,
+  "mock_database_spend_read": 1.0,
+  "mock_database_calls": [
+    "call.db.litellm_verificationtoken.find_unique(where={'token': 'fixture-diagnosis'})",
+    "call.db.litellm_verificationtoken.find_unique().spend.__bool__()",
+    "call.db.litellm_verificationtoken.find_unique().spend.__float__()"
+  ],
+  "isolated_old_test": {
+    "main": "1 passed in 3.63s",
+    "pr": "1 failed in 3.68s"
+  },
+  "ci_result": "1 failed, 289 passed, 54 warnings, 2 rerun"
+}

@@ -1,0 +1,81 @@
+bringing up nodes...
+bringing up nodes...
+
+........................................................................ [ 24%]
+........................................................................ [ 49%]
+........................................................................ [ 74%]
+........................................................................ [ 98%]
+...                                                                      [100%]
+=============================== warnings summary ===============================
+tests/unit/proxy/auth/test_auth_checks.py::test_can_key_call_model[openai/gpt-4o-False]
+tests/unit/proxy/auth/test_user_api_key_auth.py::test_auth_header_tag_merge_keeps_json_string_metadata_tags_routable[mapped_baggage]
+tests/unit/proxy/auth/test_user_api_key_auth.py::test_auth_header_tag_merge_keeps_json_string_metadata_tags_routable[mapped_baggage]
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'index' on TypedDict class 'ChatCompletionThinkingBlock' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/proxy/auth/test_auth_checks.py::test_can_key_call_model[openai/gpt-4o-False]
+tests/unit/proxy/auth/test_user_api_key_auth.py::test_auth_header_tag_merge_keeps_json_string_metadata_tags_routable[mapped_baggage]
+tests/unit/proxy/auth/test_user_api_key_auth.py::test_auth_header_tag_merge_keeps_json_string_metadata_tags_routable[mapped_baggage]
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'index' on TypedDict class 'ChatCompletionRedactedThinkingBlock' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/proxy/auth/test_auth_checks.py::test_can_key_call_model[openai/gpt-4o-False]
+tests/unit/proxy/auth/test_user_api_key_auth.py::test_auth_header_tag_merge_keeps_json_string_metadata_tags_routable[mapped_baggage]
+tests/unit/proxy/auth/test_user_api_key_auth.py::test_auth_header_tag_merge_keeps_json_string_metadata_tags_routable[mapped_baggage]
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'summary' on TypedDict class 'ChatCompletionReasoningItem' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/proxy/auth/test_user_api_key_auth.py::test_auth_header_tag_merge_keeps_json_string_metadata_tags_routable[mapped_baggage]
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'device_code', 'user_code', 'verification_uri' on TypedDict class '_DeviceCode' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/proxy/auth/test_user_api_key_auth.py::test_auth_header_tag_merge_keeps_json_string_metadata_tags_routable[mapped_baggage]
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'access_token', 'error' on TypedDict class '_AccessTokenPoll' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/proxy/auth/test_user_api_key_auth.py::test_auth_header_tag_merge_keeps_json_string_metadata_tags_routable[mapped_baggage]
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'token', 'expires_at', 'endpoints' on TypedDict class '_CopilotTokenPayload' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/proxy/auth/test_user_api_key_auth.py::test_auth_header_tag_merge_keeps_json_string_metadata_tags_routable[mapped_baggage]
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'device_code', 'user_code', 'verification_uri', 'expires_in', 'interval' on TypedDict class '_DeviceCodePayload' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/proxy/auth/test_user_api_key_auth.py::test_auth_header_tag_merge_keeps_json_string_metadata_tags_routable[mapped_baggage]
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'access_token', 'error', 'error_description', 'interval' on TypedDict class '_AccessTokenPollPayload' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/proxy/auth/test_user_api_key_auth.py::test_auth_header_tag_merge_keeps_json_string_metadata_tags_routable[mapped_baggage]
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'login' on TypedDict class '_GithubUserPayload' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/proxy/auth/test_user_api_key_auth.py::test_auth_header_tag_merge_keeps_json_string_metadata_tags_routable[mapped_baggage]
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'api' on TypedDict class '_CopilotEndpointsPayload' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/proxy/auth/test_user_api_key_auth.py: 34 warnings
+  /opt/litellm-35800/litellm/proxy/auth/user_api_key_auth.py:2702: PydanticDeprecatedSince20: The `__fields__` attribute is deprecated, use the `model_fields` class property instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.13/migration/
+    if field_name in valid_token.__fields__:
+
+tests/unit/proxy/auth/test_auth_checks.py::test_is_model_cost_zero_judges_an_alias_chain_by_the_deployment_its_entry_routes_to[False]
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'content' on TypedDict class '_OllamaGenerateMessage' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/proxy/auth/test_auth_checks.py::test_is_model_cost_zero_judges_an_alias_chain_by_the_deployment_its_entry_routes_to[False]
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'message', 'prompt_eval_count', 'eval_count' on TypedDict class '_OllamaGenerateResponse' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/proxy/auth/test_auth_checks.py::test_is_valid_fallback_model
+  /opt/litellm-35800/litellm/proxy/auth/auth_checks.py:6629: RuntimeWarning: coroutine 'Router.acompletion' was never awaited
+    await route_request(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/unit/proxy/auth/test_user_api_key_auth.py::test_read_request_body
+  /opt/litellm-venv/lib/python3.12/site-packages/_pytest/python.py:166: RuntimeWarning: coroutine 'read_request_body' was never awaited
+    result = testfunction(**testargs)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+291 passed, 54 warnings in 27.01s

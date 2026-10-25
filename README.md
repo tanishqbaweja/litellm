@@ -1,6 +1,6 @@
 # Standalone-key soft-budget alert verification
 
-This branch holds verification artifacts for [LiteLLM #35800](https://github.com/BerriAI/litellm/issues/35800). The product PR changes three files, the evidence stays on this separate fork branch
+This branch holds verification artifacts for [LiteLLM #35800](https://github.com/BerriAI/litellm/issues/35800). The product PR changes four files, the evidence stays on this separate fork branch
 
 The baseline is `dddbaa803d6e9fcc862ea7a5412f771cb1ae040e` and the fixed commit is `8c0fe877b9bbfa0a6934d8ec9373fcaf029a2082`
 
@@ -56,3 +56,13 @@ The [source check](reports/final-source-check.json) ties the tests and artifacts
 `baseline/` and `fixed/` contain the original screenshots and recordings. `reports/` contains redacted request results, source provenance, check results and cleanup records. `logs/` contains unit, mutation, frontend and lint output, plus sanitized integration summaries. `drivers/` contains the exact local QA harnesses, which use the test environment paths recorded in their source
 
 Both owned databases were dropped, Redis processes stopped and proxy/receiver ports closed. Earlier setup failures, harness corrections and screenshot-framing runs remain archived locally, the published live evidence is the latest complete run at each stated revision
+
+## Authentication regression follow-up
+
+The current product tip is `f8afcdc27d0ba7f9e2aef46521d1b7eca45d54bc`. Its only addition to the live-tested `8c0fe877b9bbfa0a6934d8ec9373fcaf029a2082` is the existing authentication regression test. Production and dashboard files match the recorded live runs byte for byte
+
+The regression now supplies an isolated real spend counter, uses the real authentication and alerting paths, and captures the complete outbound webhook through an external HTTP transport. It checks stale and current cached spend while confirming the request remains authorized, with a controlled clock and explicit background-task cleanup
+
+On unchanged main, the stale-spend case fails at the missing alert and the existing-current-spend case passes. The exact baseline was restored afterward. The full four-file authentication CI group passes 291 tests with 54 recorded warnings and no reruns. Full formatting, lint/type gates and committed-diff formatting pass again
+
+See the [follow-up source and results](reports/auth-ci-followup.json), [fixture diagnosis](reports/auth-fixture-diagnosis.json), [main regression](logs/auth-followup-red.log), [full auth group](logs/auth-followup-shard.log), and [quality gates](logs/auth-followup-lint.log)

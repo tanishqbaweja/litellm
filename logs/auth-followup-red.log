@@ -1,0 +1,12 @@
+F.                                                                       [100%]
+=================================== FAILURES ===================================
+_________________________ test_soft_budget_alert[0.0] __________________________
+tests/unit/proxy/auth/test_user_api_key_auth.py:713: in test_soft_budget_alert
+    assert [json.loads(alert.content) for alert in received] == [
+E   AssertionError: assert [] == [{'alert_emai...: 'key', ...}]
+E     
+E     Right contains one more item: {'alert_emails': None, 'customer_id': None, 'event': 'soft_budget_crossed', 'event_group': 'key', ...}
+E     Use -v to get more diff
+=========================== short test summary info ============================
+FAILED tests/unit/proxy/auth/test_user_api_key_auth.py::test_soft_budget_alert[0.0]
+1 failed, 1 passed in 0.78s
