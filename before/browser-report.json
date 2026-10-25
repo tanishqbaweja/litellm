@@ -1,0 +1,442 @@
+{
+  "revision": "baseline",
+  "sourceSha": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "output": "/qa/litellm-26170/visual-baseline-1792952833997",
+  "startedAt": "2026-10-25T18:27:14.001Z",
+  "viewports": [
+    {
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900
+      },
+      "cases": [
+        {
+          "model": "qa-ollama-chat-26170",
+          "submitMethod": "Send message button",
+          "status": 404,
+          "url": "http://127.0.0.1:41475/chat/completions",
+          "requestBody": {
+            "model": "qa-ollama-chat-26170",
+            "litellm_trace_id": "6f7eb96e-ef3c-4868-a95b-88ec140fb038",
+            "messages": [
+              {
+                "role": "user",
+                "content": "Reply with only: Routing works."
+              }
+            ],
+            "stream": true,
+            "stream_options": {
+              "include_usage": true
+            }
+          },
+          "responseBody": "{\"error\":{\"message\":\"litellm.NotFoundError: Ollama_chatException - {\\\"error\\\":{\\\"message\\\":\\\"File Not Found\\\",\\\"type\\\":\\\"not_found_error\\\",\\\"code\\\":404}}\\n\\nLiteLLM: model group 'qa-ollama-chat-26170' failed with the error above and no fallback model group was found for it, so the request was not retried on another model. Fallbacks are configured for: fake-openai-gpt-4, qa-fallback-26473. Add a fallbacks entry for that model group (Router fallbacks or proxy router_settings.fallbacks) to retry on another model.\",\"type\":\"invalid_request_error\",\"param\":null,\"code\":\"404\"}}",
+          "screenshot": "desktop-chat.png",
+          "visibleResult": "Reply with only: Routing works. qa-ollama-chat-26170 The request failed 404 litellm.NotFoundError: Ollama_chatException - {\"error\":{\"message\":\"File Not Found\",\"type\":\"not_found_error\",\"code\":404}} LiteLLM: model group 'qa-ollama-chat-26170' failed with the error above and no fallback model group was found for it, so the request was not retried on another model. Fallbacks are configured for: fake-openai-gpt-4, qa-fallback-26473. Add a fallbacks entry for that model group (Router fallbacks or proxy router_settings.fallbacks) to retry on another model. $0.0000 Inspect",
+          "conversationBox": {
+            "x": 304,
+            "y": 287,
+            "width": 728,
+            "height": 444
+          },
+          "modelBox": {
+            "x": 339,
+            "y": 740,
+            "width": 178.5,
+            "height": 24
+          }
+        },
+        {
+          "model": "qa-ollama-generate-26170",
+          "submitMethod": "Send message button",
+          "status": 404,
+          "url": "http://127.0.0.1:41475/chat/completions",
+          "requestBody": {
+            "model": "qa-ollama-generate-26170",
+            "litellm_trace_id": "213a9deb-48f6-46a0-a221-d3ac901eed86",
+            "messages": [
+              {
+                "role": "user",
+                "content": "Reply with only: Routing works."
+              }
+            ],
+            "stream": true,
+            "stream_options": {
+              "include_usage": true
+            }
+          },
+          "responseBody": "{\"error\":{\"message\":\"litellm.NotFoundError: OllamaException - {\\\"error\\\":{\\\"message\\\":\\\"File Not Found\\\",\\\"type\\\":\\\"not_found_error\\\",\\\"code\\\":404}}\\n\\nLiteLLM: model group 'qa-ollama-generate-26170' failed with the error above and no fallback model group was found for it, so the request was not retried on another model. Fallbacks are configured for: fake-openai-gpt-4, qa-fallback-26473. Add a fallbacks entry for that model group (Router fallbacks or proxy router_settings.fallbacks) to retry on another model.\",\"type\":\"invalid_request_error\",\"param\":null,\"code\":\"404\"}}",
+          "screenshot": "desktop-generate.png",
+          "visibleResult": "Reply with only: Routing works. qa-ollama-generate-26170 The request failed 404 litellm.NotFoundError: OllamaException - {\"error\":{\"message\":\"File Not Found\",\"type\":\"not_found_error\",\"code\":404}} LiteLLM: model group 'qa-ollama-generate-26170' failed with the error above and no fallback model group was found for it, so the request was not retried on another model. Fallbacks are configured for: fake-openai-gpt-4, qa-fallback-26473. Add a fallbacks entry for that model group (Router fallbacks or proxy router_settings.fallbacks) to retry on another model. $0.0000 Inspect",
+          "conversationBox": {
+            "x": 304,
+            "y": 287,
+            "width": 728,
+            "height": 444
+          },
+          "modelBox": {
+            "x": 339,
+            "y": 740,
+            "width": 207.390625,
+            "height": 24
+          }
+        }
+      ],
+      "pageErrors": [],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      ],
+      "failedResponses": [
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/playground/__next.!KGRhc2hib2FyZCk.playground.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/api-keys/__next.!KGRhc2hib2FyZCk.api-keys.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/models-and-endpoints/__next.!KGRhc2hib2FyZCk.models-and-endpoints.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/mcp-servers/__next.!KGRhc2hib2FyZCk.mcp-servers.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/skills/__next.!KGRhc2hib2FyZCk.skills.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/guardrails/__next.!KGRhc2hib2FyZCk.guardrails.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/policies/__next.!KGRhc2hib2FyZCk.policies.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/usage/__next.!KGRhc2hib2FyZCk.usage.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/model-insights/__next.!KGRhc2hib2FyZCk.model-insights.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/cost-optimization/__next.!KGRhc2hib2FyZCk.cost-optimization.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/logs/__next.!KGRhc2hib2FyZCk.logs.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/lens/__next.!KGRhc2hib2FyZCk.lens.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/guardrails-monitor/__next.!KGRhc2hib2FyZCk.guardrails-monitor.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/teams/__next.!KGRhc2hib2FyZCk.teams.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/users/__next.!KGRhc2hib2FyZCk.users.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/api-keys/__next.!KGRhc2hib2FyZCk.api-keys.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/playground/__next.!KGRhc2hib2FyZCk.playground.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/models-and-endpoints/__next.!KGRhc2hib2FyZCk.models-and-endpoints.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/mcp-servers/__next.!KGRhc2hib2FyZCk.mcp-servers.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/skills/__next.!KGRhc2hib2FyZCk.skills.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/policies/__next.!KGRhc2hib2FyZCk.policies.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/usage/__next.!KGRhc2hib2FyZCk.usage.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/guardrails/__next.!KGRhc2hib2FyZCk.guardrails.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/model-insights/__next.!KGRhc2hib2FyZCk.model-insights.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/cost-optimization/__next.!KGRhc2hib2FyZCk.cost-optimization.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/lens/__next.!KGRhc2hib2FyZCk.lens.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/guardrails-monitor/__next.!KGRhc2hib2FyZCk.guardrails-monitor.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/logs/__next.!KGRhc2hib2FyZCk.logs.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/teams/__next.!KGRhc2hib2FyZCk.teams.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/users/__next.!KGRhc2hib2FyZCk.users.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/chat/completions",
+          "status": 404
+        },
+        {
+          "path": "/chat/completions",
+          "status": 404
+        }
+      ],
+      "result": "pass",
+      "video": "raw-video/229fe2ae6c9a0e7ed2a55e0aff801504.webm"
+    },
+    {
+      "viewport": {
+        "name": "phone",
+        "width": 390,
+        "height": 844
+      },
+      "cases": [
+        {
+          "model": "qa-ollama-chat-26170",
+          "submitMethod": "Enter in the message field",
+          "status": 404,
+          "url": "http://127.0.0.1:41475/chat/completions",
+          "requestBody": {
+            "model": "qa-ollama-chat-26170",
+            "litellm_trace_id": "ba68dac0-6775-4ad4-9604-f6f04e9070ff",
+            "messages": [
+              {
+                "role": "user",
+                "content": "Reply with only: Routing works."
+              }
+            ],
+            "stream": true,
+            "stream_options": {
+              "include_usage": true
+            }
+          },
+          "responseBody": "{\"error\":{\"message\":\"litellm.NotFoundError: Ollama_chatException - {\\\"error\\\":{\\\"message\\\":\\\"File Not Found\\\",\\\"type\\\":\\\"not_found_error\\\",\\\"code\\\":404}}\\n\\nLiteLLM: model group 'qa-ollama-chat-26170' failed with the error above and no fallback model group was found for it, so the request was not retried on another model. Fallbacks are configured for: fake-openai-gpt-4, qa-fallback-26473. Add a fallbacks entry for that model group (Router fallbacks or proxy router_settings.fallbacks) to retry on another model.\",\"type\":\"invalid_request_error\",\"param\":null,\"code\":\"404\"}}",
+          "screenshot": "phone-chat.png",
+          "visibleResult": "Reply with only: Routing works. qa-ollama-chat-26170 The request failed 404 litellm.NotFoundError: Ollama_chatException - {\"error\":{\"message\":\"File Not Found\",\"type\":\"not_found_error\",\"code\":404}} LiteLLM: model group 'qa-ollama-chat-26170' failed with the error above and no fallback model group was found for it, so the request was not retried on another model. Fallbacks are configured for: fake-openai-gpt-4, qa-fallback-26473. Add a fallbacks entry for that model group (Router fallbacks or proxy router_settings.fallbacks) to retry on another model. $0.0000 Inspect",
+          "conversationBox": {
+            "x": 16,
+            "y": 299,
+            "width": 358,
+            "height": 376
+          },
+          "modelBox": {
+            "x": 51,
+            "y": 684,
+            "width": 178.5,
+            "height": 24
+          }
+        },
+        {
+          "model": "qa-ollama-generate-26170",
+          "submitMethod": "Enter in the message field",
+          "status": 404,
+          "url": "http://127.0.0.1:41475/chat/completions",
+          "requestBody": {
+            "model": "qa-ollama-generate-26170",
+            "litellm_trace_id": "8cd68c91-0731-42c9-8ec6-4b855e9dc737",
+            "messages": [
+              {
+                "role": "user",
+                "content": "Reply with only: Routing works."
+              }
+            ],
+            "stream": true,
+            "stream_options": {
+              "include_usage": true
+            }
+          },
+          "responseBody": "{\"error\":{\"message\":\"litellm.NotFoundError: OllamaException - {\\\"error\\\":{\\\"message\\\":\\\"File Not Found\\\",\\\"type\\\":\\\"not_found_error\\\",\\\"code\\\":404}}\\n\\nLiteLLM: model group 'qa-ollama-generate-26170' failed with the error above and no fallback model group was found for it, so the request was not retried on another model. Fallbacks are configured for: fake-openai-gpt-4, qa-fallback-26473. Add a fallbacks entry for that model group (Router fallbacks or proxy router_settings.fallbacks) to retry on another model.\",\"type\":\"invalid_request_error\",\"param\":null,\"code\":\"404\"}}",
+          "screenshot": "phone-generate.png",
+          "visibleResult": "Reply with only: Routing works. qa-ollama-generate-26170 The request failed 404 litellm.NotFoundError: OllamaException - {\"error\":{\"message\":\"File Not Found\",\"type\":\"not_found_error\",\"code\":404}} LiteLLM: model group 'qa-ollama-generate-26170' failed with the error above and no fallback model group was found for it, so the request was not retried on another model. Fallbacks are configured for: fake-openai-gpt-4, qa-fallback-26473. Add a fallbacks entry for that model group (Router fallbacks or proxy router_settings.fallbacks) to retry on another model. $0.0000 Inspect",
+          "conversationBox": {
+            "x": 16,
+            "y": 299,
+            "width": 358,
+            "height": 376
+          },
+          "modelBox": {
+            "x": 51,
+            "y": 684,
+            "width": 207.390625,
+            "height": 24
+          }
+        }
+      ],
+      "pageErrors": [],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      ],
+      "failedResponses": [
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/chat/completions",
+          "status": 404
+        },
+        {
+          "path": "/chat/completions",
+          "status": 404
+        }
+      ],
+      "result": "pass",
+      "video": "raw-video/e6e2ddfbd6f6a32893cb5ff13ab49909.webm"
+    }
+  ],
+  "browser": "145.0.7632.6",
+  "completedAt": "2026-10-25T18:27:56.099Z"
+}

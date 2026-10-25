@@ -1,0 +1,351 @@
+{
+  "revision": "baseline",
+  "source_sha": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "started_at": "2026-10-25T18:22:51.676051+00:00",
+  "cases": [
+    {
+      "model": "qa-ollama-chat-26170",
+      "endpoint": "/v1/chat/completions",
+      "stream": false,
+      "status": 404,
+      "request_body": {
+        "model": "qa-ollama-chat-26170",
+        "stream": false,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Reply with only: Routing works."
+          }
+        ],
+        "max_tokens": 48
+      },
+      "response_body": {
+        "error": {
+          "message": "litellm.NotFoundError: Ollama_chatException - {\"error\":{\"message\":\"File Not Found\",\"type\":\"not_found_error\",\"code\":404}}\n\nLiteLLM: model group 'qa-ollama-chat-26170' failed with the error above and no fallback model group was found for it, so the request was not retried on another model. Fallbacks are configured for: fake-openai-gpt-4, qa-fallback-26473. Add a fallbacks entry for that model group (Router fallbacks or proxy router_settings.fallbacks) to retry on another model.",
+          "type": "invalid_request_error",
+          "param": null,
+          "code": "404"
+        }
+      },
+      "headers": {
+        "x-litellm-call-id": "52e75480-29ce-4ccf-870c-d8c94dec4cf1",
+        "x-litellm-response-cost": "0"
+      }
+    },
+    {
+      "model": "qa-ollama-chat-26170",
+      "endpoint": "/v1/chat/completions",
+      "stream": true,
+      "status": 404,
+      "request_body": {
+        "model": "qa-ollama-chat-26170",
+        "stream": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Reply with only: Routing works."
+          }
+        ],
+        "max_tokens": 48
+      },
+      "response_body": {
+        "error": {
+          "message": "litellm.NotFoundError: Ollama_chatException - {\"error\":{\"message\":\"File Not Found\",\"type\":\"not_found_error\",\"code\":404}}\n\nLiteLLM: model group 'qa-ollama-chat-26170' failed with the error above and no fallback model group was found for it, so the request was not retried on another model. Fallbacks are configured for: fake-openai-gpt-4, qa-fallback-26473. Add a fallbacks entry for that model group (Router fallbacks or proxy router_settings.fallbacks) to retry on another model.",
+          "type": "invalid_request_error",
+          "param": null,
+          "code": "404"
+        }
+      },
+      "headers": {
+        "x-litellm-call-id": "395a7bf7-b496-4cdc-845c-f263c115a3fe",
+        "x-litellm-response-cost": "0"
+      }
+    },
+    {
+      "model": "qa-ollama-chat-26170",
+      "endpoint": "/v1/responses",
+      "stream": false,
+      "status": 404,
+      "request_body": {
+        "model": "qa-ollama-chat-26170",
+        "stream": false,
+        "input": "Reply with only: Routing works.",
+        "max_output_tokens": 48
+      },
+      "response_body": {
+        "error": {
+          "message": "litellm.NotFoundError: Ollama_chatException - {\"error\":{\"message\":\"File Not Found\",\"type\":\"not_found_error\",\"code\":404}}\n\nLiteLLM: model group 'qa-ollama-chat-26170' failed with the error above and no fallback model group was found for it, so the request was not retried on another model. Fallbacks are configured for: fake-openai-gpt-4, qa-fallback-26473. Add a fallbacks entry for that model group (Router fallbacks or proxy router_settings.fallbacks) to retry on another model.",
+          "type": "invalid_request_error",
+          "param": null,
+          "code": "404"
+        }
+      },
+      "headers": {
+        "x-litellm-call-id": "4997e29a-2722-4e4e-8b2f-e7ab4f7bac26",
+        "x-litellm-response-cost": "0"
+      }
+    },
+    {
+      "model": "qa-ollama-chat-26170",
+      "endpoint": "/v1/responses",
+      "stream": true,
+      "status": 404,
+      "request_body": {
+        "model": "qa-ollama-chat-26170",
+        "stream": true,
+        "input": "Reply with only: Routing works.",
+        "max_output_tokens": 48
+      },
+      "response_body": {
+        "error": {
+          "message": "litellm.NotFoundError: Ollama_chatException - {\"error\":{\"message\":\"File Not Found\",\"type\":\"not_found_error\",\"code\":404}}\n\nLiteLLM: model group 'qa-ollama-chat-26170' failed with the error above and no fallback model group was found for it, so the request was not retried on another model. Fallbacks are configured for: fake-openai-gpt-4, qa-fallback-26473. Add a fallbacks entry for that model group (Router fallbacks or proxy router_settings.fallbacks) to retry on another model.",
+          "type": "invalid_request_error",
+          "param": null,
+          "code": "404"
+        }
+      },
+      "headers": {
+        "x-litellm-call-id": "ab89a470-582f-4bde-85f2-e6fddd0f37b9",
+        "x-litellm-response-cost": "0"
+      }
+    },
+    {
+      "model": "qa-ollama-chat-26170",
+      "endpoint": "/v1/messages",
+      "stream": false,
+      "status": 404,
+      "request_body": {
+        "model": "qa-ollama-chat-26170",
+        "stream": false,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Reply with only: Routing works."
+          }
+        ],
+        "max_tokens": 48
+      },
+      "response_body": {
+        "type": "error",
+        "error": {
+          "type": "not_found_error",
+          "message": "litellm.NotFoundError: Ollama_chatException - {\"error\":{\"message\":\"File Not Found\",\"type\":\"not_found_error\",\"code\":404}}\n\nLiteLLM: model group 'qa-ollama-chat-26170' failed with the error above and no fallback model group was found for it, so the request was not retried on another model. Fallbacks are configured for: fake-openai-gpt-4, qa-fallback-26473. Add a fallbacks entry for that model group (Router fallbacks or proxy router_settings.fallbacks) to retry on another model."
+        }
+      },
+      "headers": {
+        "x-litellm-call-id": "ea9d6f06-21ec-48b6-ac64-7fd161ca4f03",
+        "x-litellm-response-cost": "0"
+      }
+    },
+    {
+      "model": "qa-ollama-chat-26170",
+      "endpoint": "/v1/messages",
+      "stream": true,
+      "status": 404,
+      "request_body": {
+        "model": "qa-ollama-chat-26170",
+        "stream": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Reply with only: Routing works."
+          }
+        ],
+        "max_tokens": 48
+      },
+      "response_body": {
+        "type": "error",
+        "error": {
+          "type": "not_found_error",
+          "message": "litellm.NotFoundError: Ollama_chatException - {\"error\":{\"message\":\"File Not Found\",\"type\":\"not_found_error\",\"code\":404}}\n\nLiteLLM: model group 'qa-ollama-chat-26170' failed with the error above and no fallback model group was found for it, so the request was not retried on another model. Fallbacks are configured for: fake-openai-gpt-4, qa-fallback-26473. Add a fallbacks entry for that model group (Router fallbacks or proxy router_settings.fallbacks) to retry on another model."
+        }
+      },
+      "headers": {
+        "x-litellm-call-id": "1a214006-2bcf-4647-b1a2-c065d1340398",
+        "x-litellm-response-cost": "0"
+      }
+    },
+    {
+      "model": "qa-ollama-generate-26170",
+      "endpoint": "/v1/chat/completions",
+      "stream": false,
+      "status": 404,
+      "request_body": {
+        "model": "qa-ollama-generate-26170",
+        "stream": false,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Reply with only: Routing works."
+          }
+        ],
+        "max_tokens": 48
+      },
+      "response_body": {
+        "error": {
+          "message": "litellm.NotFoundError: OllamaException - {\"error\":{\"message\":\"File Not Found\",\"type\":\"not_found_error\",\"code\":404}}\n\nLiteLLM: model group 'qa-ollama-generate-26170' failed with the error above and no fallback model group was found for it, so the request was not retried on another model. Fallbacks are configured for: fake-openai-gpt-4, qa-fallback-26473. Add a fallbacks entry for that model group (Router fallbacks or proxy router_settings.fallbacks) to retry on another model.",
+          "type": "invalid_request_error",
+          "param": null,
+          "code": "404"
+        }
+      },
+      "headers": {
+        "x-litellm-call-id": "5b954c2a-6868-4d80-b6f1-d256df977b35",
+        "x-litellm-response-cost": "0"
+      }
+    },
+    {
+      "model": "qa-ollama-generate-26170",
+      "endpoint": "/v1/chat/completions",
+      "stream": true,
+      "status": 404,
+      "request_body": {
+        "model": "qa-ollama-generate-26170",
+        "stream": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Reply with only: Routing works."
+          }
+        ],
+        "max_tokens": 48
+      },
+      "response_body": {
+        "error": {
+          "message": "litellm.NotFoundError: OllamaException - {\"error\":{\"message\":\"File Not Found\",\"type\":\"not_found_error\",\"code\":404}}\n\nLiteLLM: model group 'qa-ollama-generate-26170' failed with the error above and no fallback model group was found for it, so the request was not retried on another model. Fallbacks are configured for: fake-openai-gpt-4, qa-fallback-26473. Add a fallbacks entry for that model group (Router fallbacks or proxy router_settings.fallbacks) to retry on another model.",
+          "type": "invalid_request_error",
+          "param": null,
+          "code": "404"
+        }
+      },
+      "headers": {
+        "x-litellm-call-id": "95992545-414b-4f2c-9eb6-052a539eeac6",
+        "x-litellm-response-cost": "0"
+      }
+    },
+    {
+      "model": "qa-ollama-generate-26170",
+      "endpoint": "/v1/responses",
+      "stream": false,
+      "status": 404,
+      "request_body": {
+        "model": "qa-ollama-generate-26170",
+        "stream": false,
+        "input": "Reply with only: Routing works.",
+        "max_output_tokens": 48
+      },
+      "response_body": {
+        "error": {
+          "message": "litellm.NotFoundError: OllamaException - {\"error\":{\"message\":\"File Not Found\",\"type\":\"not_found_error\",\"code\":404}}\n\nLiteLLM: model group 'qa-ollama-generate-26170' failed with the error above and no fallback model group was found for it, so the request was not retried on another model. Fallbacks are configured for: fake-openai-gpt-4, qa-fallback-26473. Add a fallbacks entry for that model group (Router fallbacks or proxy router_settings.fallbacks) to retry on another model.",
+          "type": "invalid_request_error",
+          "param": null,
+          "code": "404"
+        }
+      },
+      "headers": {
+        "x-litellm-call-id": "7d77dd41-7ed3-4035-a962-a228938cd51e",
+        "x-litellm-response-cost": "0"
+      }
+    },
+    {
+      "model": "qa-ollama-generate-26170",
+      "endpoint": "/v1/responses",
+      "stream": true,
+      "status": 404,
+      "request_body": {
+        "model": "qa-ollama-generate-26170",
+        "stream": true,
+        "input": "Reply with only: Routing works.",
+        "max_output_tokens": 48
+      },
+      "response_body": {
+        "error": {
+          "message": "litellm.NotFoundError: OllamaException - {\"error\":{\"message\":\"File Not Found\",\"type\":\"not_found_error\",\"code\":404}}\n\nLiteLLM: model group 'qa-ollama-generate-26170' failed with the error above and no fallback model group was found for it, so the request was not retried on another model. Fallbacks are configured for: fake-openai-gpt-4, qa-fallback-26473. Add a fallbacks entry for that model group (Router fallbacks or proxy router_settings.fallbacks) to retry on another model.",
+          "type": "invalid_request_error",
+          "param": null,
+          "code": "404"
+        }
+      },
+      "headers": {
+        "x-litellm-call-id": "565cda7c-eeda-4bef-93c7-ce610222bf5a",
+        "x-litellm-response-cost": "0"
+      }
+    },
+    {
+      "model": "qa-ollama-generate-26170",
+      "endpoint": "/v1/messages",
+      "stream": false,
+      "status": 404,
+      "request_body": {
+        "model": "qa-ollama-generate-26170",
+        "stream": false,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Reply with only: Routing works."
+          }
+        ],
+        "max_tokens": 48
+      },
+      "response_body": {
+        "type": "error",
+        "error": {
+          "type": "not_found_error",
+          "message": "litellm.NotFoundError: OllamaException - {\"error\":{\"message\":\"File Not Found\",\"type\":\"not_found_error\",\"code\":404}}\n\nLiteLLM: model group 'qa-ollama-generate-26170' failed with the error above and no fallback model group was found for it, so the request was not retried on another model. Fallbacks are configured for: fake-openai-gpt-4, qa-fallback-26473. Add a fallbacks entry for that model group (Router fallbacks or proxy router_settings.fallbacks) to retry on another model."
+        }
+      },
+      "headers": {
+        "x-litellm-call-id": "a9fddeab-488b-430b-950e-aed2d435f7d3",
+        "x-litellm-response-cost": "0"
+      }
+    },
+    {
+      "model": "qa-ollama-generate-26170",
+      "endpoint": "/v1/messages",
+      "stream": true,
+      "status": 404,
+      "request_body": {
+        "model": "qa-ollama-generate-26170",
+        "stream": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Reply with only: Routing works."
+          }
+        ],
+        "max_tokens": 48
+      },
+      "response_body": {
+        "type": "error",
+        "error": {
+          "type": "not_found_error",
+          "message": "litellm.NotFoundError: OllamaException - {\"error\":{\"message\":\"File Not Found\",\"type\":\"not_found_error\",\"code\":404}}\n\nLiteLLM: model group 'qa-ollama-generate-26170' failed with the error above and no fallback model group was found for it, so the request was not retried on another model. Fallbacks are configured for: fake-openai-gpt-4, qa-fallback-26473. Add a fallbacks entry for that model group (Router fallbacks or proxy router_settings.fallbacks) to retry on another model."
+        }
+      },
+      "headers": {
+        "x-litellm-call-id": "7c5c9231-03ac-4a7a-9d66-dfdc60ca979d",
+        "x-litellm-response-cost": "0"
+      }
+    },
+    {
+      "model": "qa-ollama-embed-26170",
+      "endpoint": "/v1/embeddings",
+      "stream": false,
+      "status": 404,
+      "request_body": {
+        "model": "qa-ollama-embed-26170",
+        "input": "hello"
+      },
+      "response_body": {
+        "error": {
+          "message": "litellm.NotFoundError: OllamaException - {\"error\":{\"message\":\"File Not Found\",\"type\":\"not_found_error\",\"code\":404}}\n\nLiteLLM: model group 'qa-ollama-embed-26170' failed with the error above and no fallback model group was found for it, so the request was not retried on another model. Fallbacks are configured for: fake-openai-gpt-4, qa-fallback-26473. Add a fallbacks entry for that model group (Router fallbacks or proxy router_settings.fallbacks) to retry on another model.",
+          "type": "invalid_request_error",
+          "param": null,
+          "code": "404"
+        }
+      }
+    }
+  ],
+  "alias": "qa-ollama-26170-baseline-a5910c",
+  "completed_at": "2026-10-25T18:22:54.497681+00:00"
+}

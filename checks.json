@@ -1,0 +1,92 @@
+{
+  "recorded_at": "2026-10-25T18:29:56.614011+00:00",
+  "base_sha": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "fixed_sha": "f548922490cbbd5d9d519671e858a8ddb127ed04",
+  "results": {
+    "baseline": {
+      "source_sha": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+      "sdk_outcomes": {
+        "error": 6,
+        "success": 24
+      },
+      "proxy_statuses": {
+        "404": 13
+      },
+      "browser": [
+        {
+          "viewport": "desktop",
+          "cases": 2,
+          "page_errors": 0,
+          "http_status_counts": {
+            "404": 43
+          },
+          "console_errors": 43
+        },
+        {
+          "viewport": "phone",
+          "cases": 2,
+          "page_errors": 0,
+          "http_status_counts": {
+            "404": 9
+          },
+          "console_errors": 9
+        }
+      ]
+    },
+    "fixed": {
+      "source_sha": "f548922490cbbd5d9d519671e858a8ddb127ed04",
+      "sdk_outcomes": {
+        "success": 30
+      },
+      "proxy_statuses": {
+        "200": 13
+      },
+      "browser": [
+        {
+          "viewport": "desktop",
+          "cases": 2,
+          "page_errors": 0,
+          "http_status_counts": {
+            "404": 33
+          },
+          "console_errors": 33
+        },
+        {
+          "viewport": "phone",
+          "cases": 2,
+          "page_errors": 0,
+          "http_status_counts": {
+            "404": 7
+          },
+          "console_errors": 7
+        }
+      ]
+    }
+  },
+  "tests_before": "6 failed, 24 passed, 535 deselected, 12 warnings in 1.69s",
+  "tests_after": "757 passed, 73 warnings in 12.29s across eight affected files",
+  "mutations_rejected": 4,
+  "production_formatter": "make format: 2932 files unchanged",
+  "lint": "make lint BASE_REF=origin/main LINT_JOBS=2: exit 0",
+  "type_budget": "105900 existing diagnostics, each rule within its main ceiling",
+  "e2e_types": "0 errors, 0 warnings, 0 notes",
+  "browser": "145.0.7632.6",
+  "playwright": "1.58.1",
+  "postgresql": "16.10",
+  "python": "3.12.13",
+  "ollama": "0.40.11",
+  "mocked_live_requests": 0,
+  "unchanged_ui_export_source": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "new_failed_browser_paths": [],
+  "cleanup": "Both temporary virtual keys deleted with HTTP 200 and owned proxy stopped",
+  "limitations": [
+    "Local CPU routing verification with Qwen3.5-0.8B Q4_0 and qwen3-embedding:0.6b Q8_0, not a performance or model-quality benchmark",
+    "Existing phone layout clips the send button and endpoint selector, and the assistant overlaps the composer footer; phone submission used Enter",
+    "Static/runtime-config 404s remain. Desktop: 43 before including two expected chat errors, 33 after. Phone: nine before including two expected chat errors, seven after",
+    "Both revisions use the same PostgreSQL QA database, which retains unrelated earlier fallback aliases; the tested Ollama aliases have no fallback and retries are disabled",
+    "Separate model-info /api/show URL forwarding is tracked by #37062 and is not changed here",
+    "The broad test run initially lacked optional tenacity. Locked version 8.5.0 was installed with its uv.lock SHA256, then all 757 tests passed",
+    "A whole-file test formatter initially changed existing formatting. Those unrelated edits were reverted; only the new formatted regression remains",
+    "Configured dashboard costs are local test pricing, not provider invoices"
+  ]
+}

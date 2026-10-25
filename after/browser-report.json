@@ -1,0 +1,426 @@
+{
+  "revision": "fixed",
+  "sourceSha": "f548922490cbbd5d9d519671e858a8ddb127ed04",
+  "output": "/qa/litellm-26170/visual-fixed-1792952708664",
+  "startedAt": "2026-10-25T18:25:08.678Z",
+  "viewports": [
+    {
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900
+      },
+      "cases": [
+        {
+          "model": "qa-ollama-chat-26170",
+          "submitMethod": "Send message button",
+          "status": 200,
+          "url": "http://127.0.0.1:41475/chat/completions",
+          "requestBody": {
+            "model": "qa-ollama-chat-26170",
+            "litellm_trace_id": "bee42f4a-3984-4a44-a58b-c433983ab3d9",
+            "messages": [
+              {
+                "role": "user",
+                "content": "Reply with only: Routing works."
+              }
+            ],
+            "stream": true,
+            "stream_options": {
+              "include_usage": true
+            }
+          },
+          "responseBody": "data: {\"id\":\"cbe98695-d89b-4399-a808-b42624b00d01\",\"object\":\"chat.completion.chunk\",\"created\":1792952712,\"model\":\"qa-ollama-chat-26170\",\"choices\":[{\"index\":0,\"delta\":{\"role\":\"assistant\",\"content\":\"Routing\"}}]}\n\ndata: {\"id\":\"fd8b6ea8-d570-434d-a17c-cecfcf2fbafb\",\"object\":\"chat.completion.chunk\",\"created\":1792952712,\"model\":\"qa-ollama-chat-26170\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" works\"}}]}\n\ndata: {\"id\":\"34c7441b-42ac-4bcc-91cb-d640e232df6c\",\"object\":\"chat.completion.chunk\",\"created\":1792952712,\"model\":\"qa-ollama-chat-26170\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\".\"}}]}\n\ndata: {\"id\":\"8a752c1d-3f5a-4870-8f2c-2e8c919b8cad\",\"object\":\"chat.completion.chunk\",\"created\":1792952712,\"model\":\"qa-ollama-chat-26170\",\"choices\":[{\"index\":0,\"delta\":{},\"finish_reason\":\"stop\"}]}\n\ndata: {\"id\":\"8a752c1d-3f5a-4870-8f2c-2e8c919b8cad\",\"created\":1792952712,\"model\":\"qa-ollama-chat-26170\",\"object\":\"chat.completion.chunk\",\"choices\":[],\"usage\":{\"completion_tokens\":4,\"prompt_tokens\":19,\"total_tokens\":23,\"completion_tokens_details\":{\"reasoning_tokens\":0,\"text_tokens\":4},\"cost\":0.000022999999999999997}}\n\ndata: [DONE]\n\n",
+          "screenshot": "desktop-chat.png",
+          "generatedContent": "Routing works.",
+          "usage": {
+            "completion_tokens": 4,
+            "prompt_tokens": 19,
+            "total_tokens": 23,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "text_tokens": 4
+            },
+            "cost": 0.000022999999999999997
+          },
+          "visibleResult": "Reply with only: Routing works. qa-ollama-chat-26170 Routing works. 0.15s to first token 0.26s total 19 in 4 out $0.000023 Inspect",
+          "conversationBox": {
+            "x": 304,
+            "y": 287,
+            "width": 728,
+            "height": 444
+          },
+          "modelBox": {
+            "x": 339,
+            "y": 740,
+            "width": 178.5,
+            "height": 24
+          }
+        },
+        {
+          "model": "qa-ollama-generate-26170",
+          "submitMethod": "Send message button",
+          "status": 200,
+          "url": "http://127.0.0.1:41475/chat/completions",
+          "requestBody": {
+            "model": "qa-ollama-generate-26170",
+            "litellm_trace_id": "13092873-9686-4e08-8231-2c9289978419",
+            "messages": [
+              {
+                "role": "user",
+                "content": "Reply with only: Routing works."
+              }
+            ],
+            "stream": true,
+            "stream_options": {
+              "include_usage": true
+            }
+          },
+          "responseBody": "data: {\"id\":\"chatcmpl-9b45b674-044f-4a0f-b34f-b232fcb4a6f9\",\"object\":\"chat.completion.chunk\",\"created\":1792952717,\"model\":\"qa-ollama-generate-26170\",\"choices\":[{\"index\":0,\"delta\":{\"role\":\"assistant\",\"content\":\"Routing\"}}]}\n\ndata: {\"id\":\"chatcmpl-9b45b674-044f-4a0f-b34f-b232fcb4a6f9\",\"object\":\"chat.completion.chunk\",\"created\":1792952717,\"model\":\"qa-ollama-generate-26170\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" works\"}}]}\n\ndata: {\"id\":\"chatcmpl-9b45b674-044f-4a0f-b34f-b232fcb4a6f9\",\"object\":\"chat.completion.chunk\",\"created\":1792952717,\"model\":\"qa-ollama-generate-26170\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\".\"}}]}\n\ndata: {\"id\":\"chatcmpl-9b45b674-044f-4a0f-b34f-b232fcb4a6f9\",\"object\":\"chat.completion.chunk\",\"created\":1792952717,\"model\":\"qa-ollama-generate-26170\",\"choices\":[{\"index\":0,\"delta\":{},\"finish_reason\":\"stop\"}]}\n\ndata: {\"id\":\"chatcmpl-9b45b674-044f-4a0f-b34f-b232fcb4a6f9\",\"created\":1792952717,\"model\":\"qa-ollama-generate-26170\",\"object\":\"chat.completion.chunk\",\"choices\":[],\"usage\":{\"completion_tokens\":4,\"prompt_tokens\":23,\"total_tokens\":27,\"completion_tokens_details\":{\"reasoning_tokens\":0,\"text_tokens\":4},\"cost\":0.000027}}\n\ndata: [DONE]\n\n",
+          "screenshot": "desktop-generate.png",
+          "generatedContent": "Routing works.",
+          "usage": {
+            "completion_tokens": 4,
+            "prompt_tokens": 23,
+            "total_tokens": 27,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "text_tokens": 4
+            },
+            "cost": 0.000027
+          },
+          "visibleResult": "Reply with only: Routing works. qa-ollama-generate-26170 Routing works. 0.11s to first token 0.25s total 23 in 4 out $0.000027 Inspect",
+          "conversationBox": {
+            "x": 304,
+            "y": 287,
+            "width": 728,
+            "height": 444
+          },
+          "modelBox": {
+            "x": 339,
+            "y": 740,
+            "width": 207.390625,
+            "height": 24
+          }
+        }
+      ],
+      "pageErrors": [],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      ],
+      "failedResponses": [
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/playground/__next.!KGRhc2hib2FyZCk.playground.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/api-keys/__next.!KGRhc2hib2FyZCk.api-keys.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/models-and-endpoints/__next.!KGRhc2hib2FyZCk.models-and-endpoints.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/guardrails/__next.!KGRhc2hib2FyZCk.guardrails.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/skills/__next.!KGRhc2hib2FyZCk.skills.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/mcp-servers/__next.!KGRhc2hib2FyZCk.mcp-servers.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/policies/__next.!KGRhc2hib2FyZCk.policies.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/api-keys/__next.!KGRhc2hib2FyZCk.api-keys.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/playground/__next.!KGRhc2hib2FyZCk.playground.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/mcp-servers/__next.!KGRhc2hib2FyZCk.mcp-servers.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/models-and-endpoints/__next.!KGRhc2hib2FyZCk.models-and-endpoints.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/skills/__next.!KGRhc2hib2FyZCk.skills.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/guardrails/__next.!KGRhc2hib2FyZCk.guardrails.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/policies/__next.!KGRhc2hib2FyZCk.policies.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/usage/__next.!KGRhc2hib2FyZCk.usage.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/model-insights/__next.!KGRhc2hib2FyZCk.model-insights.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/cost-optimization/__next.!KGRhc2hib2FyZCk.cost-optimization.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/logs/__next.!KGRhc2hib2FyZCk.logs.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/guardrails-monitor/__next.!KGRhc2hib2FyZCk.guardrails-monitor.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/lens/__next.!KGRhc2hib2FyZCk.lens.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/users/__next.!KGRhc2hib2FyZCk.users.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/teams/__next.!KGRhc2hib2FyZCk.teams.__PAGE__.txt",
+          "status": 404
+        }
+      ],
+      "result": "pass",
+      "video": "raw-video/8db0853e90e768a7f42dc0f9f52b0ce6.webm"
+    },
+    {
+      "viewport": {
+        "name": "phone",
+        "width": 390,
+        "height": 844
+      },
+      "cases": [
+        {
+          "model": "qa-ollama-chat-26170",
+          "submitMethod": "Enter in the message field",
+          "status": 200,
+          "url": "http://127.0.0.1:41475/chat/completions",
+          "requestBody": {
+            "model": "qa-ollama-chat-26170",
+            "litellm_trace_id": "1952f191-92b9-4ee7-895a-b46cbca89817",
+            "messages": [
+              {
+                "role": "user",
+                "content": "Reply with only: Routing works."
+              }
+            ],
+            "stream": true,
+            "stream_options": {
+              "include_usage": true
+            }
+          },
+          "responseBody": "data: {\"id\":\"5593e1c5-1952-4645-8a4f-b5065011286a\",\"object\":\"chat.completion.chunk\",\"created\":1792952725,\"model\":\"qa-ollama-chat-26170\",\"choices\":[{\"index\":0,\"delta\":{\"role\":\"assistant\",\"content\":\"Routing\"}}]}\n\ndata: {\"id\":\"c99938bb-3578-4687-b301-5e2a72efe30d\",\"object\":\"chat.completion.chunk\",\"created\":1792952725,\"model\":\"qa-ollama-chat-26170\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" works\"}}]}\n\ndata: {\"id\":\"1550fbb2-a51d-469e-b22f-aaf99360185f\",\"object\":\"chat.completion.chunk\",\"created\":1792952725,\"model\":\"qa-ollama-chat-26170\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\".\"}}]}\n\ndata: {\"id\":\"2b498edb-c205-43e5-9291-9d096e3aa39d\",\"object\":\"chat.completion.chunk\",\"created\":1792952725,\"model\":\"qa-ollama-chat-26170\",\"choices\":[{\"index\":0,\"delta\":{},\"finish_reason\":\"stop\"}]}\n\ndata: {\"id\":\"2b498edb-c205-43e5-9291-9d096e3aa39d\",\"created\":1792952725,\"model\":\"qa-ollama-chat-26170\",\"object\":\"chat.completion.chunk\",\"choices\":[],\"usage\":{\"completion_tokens\":4,\"prompt_tokens\":19,\"total_tokens\":23,\"completion_tokens_details\":{\"reasoning_tokens\":0,\"text_tokens\":4},\"cost\":0.000022999999999999997}}\n\ndata: [DONE]\n\n",
+          "screenshot": "phone-chat.png",
+          "generatedContent": "Routing works.",
+          "usage": {
+            "completion_tokens": 4,
+            "prompt_tokens": 19,
+            "total_tokens": 23,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "text_tokens": 4
+            },
+            "cost": 0.000022999999999999997
+          },
+          "visibleResult": "Reply with only: Routing works. qa-ollama-chat-26170 Routing works. 0.13s to first token 0.21s total 19 in 4 out $0.000023 Inspect",
+          "conversationBox": {
+            "x": 16,
+            "y": 299,
+            "width": 358,
+            "height": 376
+          },
+          "modelBox": {
+            "x": 51,
+            "y": 684,
+            "width": 178.5,
+            "height": 24
+          }
+        },
+        {
+          "model": "qa-ollama-generate-26170",
+          "submitMethod": "Enter in the message field",
+          "status": 200,
+          "url": "http://127.0.0.1:41475/chat/completions",
+          "requestBody": {
+            "model": "qa-ollama-generate-26170",
+            "litellm_trace_id": "3b9fb62b-194c-44ef-89d8-165b465b056f",
+            "messages": [
+              {
+                "role": "user",
+                "content": "Reply with only: Routing works."
+              }
+            ],
+            "stream": true,
+            "stream_options": {
+              "include_usage": true
+            }
+          },
+          "responseBody": "data: {\"id\":\"chatcmpl-10c608cc-d775-4cc6-a1b3-acdba39a41a3\",\"object\":\"chat.completion.chunk\",\"created\":1792952730,\"model\":\"qa-ollama-generate-26170\",\"choices\":[{\"index\":0,\"delta\":{\"role\":\"assistant\",\"content\":\"Routing\"}}]}\n\ndata: {\"id\":\"chatcmpl-10c608cc-d775-4cc6-a1b3-acdba39a41a3\",\"object\":\"chat.completion.chunk\",\"created\":1792952730,\"model\":\"qa-ollama-generate-26170\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" works\"}}]}\n\ndata: {\"id\":\"chatcmpl-10c608cc-d775-4cc6-a1b3-acdba39a41a3\",\"object\":\"chat.completion.chunk\",\"created\":1792952730,\"model\":\"qa-ollama-generate-26170\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\".\"}}]}\n\ndata: {\"id\":\"chatcmpl-10c608cc-d775-4cc6-a1b3-acdba39a41a3\",\"object\":\"chat.completion.chunk\",\"created\":1792952730,\"model\":\"qa-ollama-generate-26170\",\"choices\":[{\"index\":0,\"delta\":{},\"finish_reason\":\"stop\"}]}\n\ndata: {\"id\":\"chatcmpl-10c608cc-d775-4cc6-a1b3-acdba39a41a3\",\"created\":1792952730,\"model\":\"qa-ollama-generate-26170\",\"object\":\"chat.completion.chunk\",\"choices\":[],\"usage\":{\"completion_tokens\":4,\"prompt_tokens\":23,\"total_tokens\":27,\"completion_tokens_details\":{\"reasoning_tokens\":0,\"text_tokens\":4},\"cost\":0.000027}}\n\ndata: [DONE]\n\n",
+          "screenshot": "phone-generate.png",
+          "generatedContent": "Routing works.",
+          "usage": {
+            "completion_tokens": 4,
+            "prompt_tokens": 23,
+            "total_tokens": 27,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "text_tokens": 4
+            },
+            "cost": 0.000027
+          },
+          "visibleResult": "Reply with only: Routing works. qa-ollama-generate-26170 Routing works. 0.12s to first token 0.18s total 23 in 4 out $0.000027 Inspect",
+          "conversationBox": {
+            "x": 16,
+            "y": 299,
+            "width": 358,
+            "height": 376
+          },
+          "modelBox": {
+            "x": 51,
+            "y": 684,
+            "width": 207.390625,
+            "height": 24
+          }
+        }
+      ],
+      "pageErrors": [],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      ],
+      "failedResponses": [
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        }
+      ],
+      "result": "pass",
+      "video": "raw-video/0940b67666bae28aff0554d67884c36e.webm"
+    }
+  ],
+  "browser": "145.0.7632.6",
+  "completedAt": "2026-10-25T18:25:35.971Z"
+}

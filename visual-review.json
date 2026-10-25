@@ -1,0 +1,100 @@
+{
+  "reviewed_at": "2026-10-25T18:29:56.440079+00:00",
+  "reviewer": "Codex visual inspection",
+  "raw_screenshots": {
+    "before/desktop-chat.png": "8a00e1b517afa5d3269aa7bb24950308f7cf1521dd1fa9e8a8d7c8e36d332777",
+    "before/desktop-generate.png": "742fdb30cb05b4a7347059be04b9f81f0eeb9e7f65378e237a836c2b57b202b6",
+    "before/phone-chat.png": "e19de7da7e4155e1902e6a5fa9ae5676ee73783987f95fdf93db053f9dc70c4d",
+    "before/phone-generate.png": "b6c8a6d9d404203b5a3132eb74202aa779db98b14f47fdcd87d99ba1852bc8c5",
+    "after/desktop-chat.png": "6073f94690355e14e2ac8271ba3e7148068ab2905dc176010b59335e03785f54",
+    "after/desktop-generate.png": "bc73f76dee18536b52358ee0c5b2d1647584ed6f604da030189268f851834125",
+    "after/phone-chat.png": "dd4386f1bd62106e875016d1bfe2f0edc7a8436e6f80ed1c444b4899bbba558a",
+    "after/phone-generate.png": "d37cf45c489362857f277297cb37efc6c34fe73126d68c8c7fdbf18ed6cd584d"
+  },
+  "annotated_screenshots": {
+    "before/desktop-chat-annotated.png": "15a518400a85dd57d2e6f5f2c4010905f568ffae44f91ebe79866668a3ec592d",
+    "before/desktop-generate-annotated.png": "b4dcbe9252ebfd2bdea0cd4a6f1d647b283485ce0c73cdcb175e77fbe4386350",
+    "before/phone-chat-annotated.png": "291dfd3219e21b88c10185aabfecce720bac527ff888fcccacf164f98d8b94e5",
+    "before/phone-generate-annotated.png": "934146445607e15671abf683496bc150a9200a50bf0e8f24d22ea2a9b7bb0432",
+    "after/desktop-chat-annotated.png": "13baeed9a792b3001e6b268fe487d5ce5ae5dc2c7ce95ad2cccccf346ee703ac",
+    "after/desktop-generate-annotated.png": "11f4d2486b70bb2a34e09558987d0dd34a88ca2d247b696e53a98f9ffc088c9a",
+    "after/phone-chat-annotated.png": "c37fcceecdfeb48679e8f23bb266d671118819dca5519693feb8123794574e38",
+    "after/phone-generate-annotated.png": "b219a224f5b7f6480a7e57d361df2e559541a3b9a48f14752ee22b2c575dd2f6"
+  },
+  "recordings": [
+    {
+      "file": "before/desktop.webm",
+      "sha256": "e41cc4250c4f51de4c95e5af6f42ab67a25be37097ff907af362ed60e55334f6",
+      "duration_seconds": 14.64,
+      "sampled_frames_visually_reviewed": 8,
+      "frame_contacts": [
+        {
+          "file": "visual-review/baseline-desktop-video-1.png",
+          "sha256": "4af94bd5aaf4c7e42b9a86a4a2943a30f24faa74ee706ad98d511d9544b78b8e"
+        },
+        {
+          "file": "visual-review/baseline-desktop-video-2.png",
+          "sha256": "c6fdfe2a3c31760da132a6ba5ec8f2a94d1a56dec65a8173265637ce4c89de97"
+        }
+      ]
+    },
+    {
+      "file": "before/phone.webm",
+      "sha256": "acc9c7b54ca0ae5decc181cde0e4804fa6aa074ea19ba6c32d0b1c4609262cce",
+      "duration_seconds": 14.16,
+      "sampled_frames_visually_reviewed": 8,
+      "frame_contacts": [
+        {
+          "file": "visual-review/baseline-phone-video-1.png",
+          "sha256": "7b4bbc904417c028899e9c89c494d58ec17c854ca7bded38ffe5362d3ba49e68"
+        },
+        {
+          "file": "visual-review/baseline-phone-video-2.png",
+          "sha256": "32ccc3328537666de69f93f11b0979e9a3f1ee697aa55a9b976b7e3a1d2dc00a"
+        }
+      ]
+    },
+    {
+      "file": "after/desktop.webm",
+      "sha256": "65de5908ab31fab58f1b374678a2de28dd5c029de2cb6e56b0bb302b285189a7",
+      "duration_seconds": 13.88,
+      "sampled_frames_visually_reviewed": 8,
+      "frame_contacts": [
+        {
+          "file": "visual-review/fixed-desktop-video-1.png",
+          "sha256": "b601916c3606203a1afb3f78336634720629ab3156bb8ddfd5d19c256b83bdbd"
+        },
+        {
+          "file": "visual-review/fixed-desktop-video-2.png",
+          "sha256": "f162a044c4d7bd36b84d16ac83832c5c93e4fd2f4e43858b01ff13a13ceea843"
+        }
+      ]
+    },
+    {
+      "file": "after/phone.webm",
+      "sha256": "60aa62a1501a09d5955db2c638d7f01d97c55135400bd43ae0e009f9841e73ca",
+      "duration_seconds": 13.6,
+      "sampled_frames_visually_reviewed": 8,
+      "frame_contacts": [
+        {
+          "file": "visual-review/fixed-phone-video-1.png",
+          "sha256": "ffd26a2d669cfda68cfac5acefd1f3caf1b6eb18908f0ee583d63511ad7a5ccb"
+        },
+        {
+          "file": "visual-review/fixed-phone-video-2.png",
+          "sha256": "28c3bfad2ef7aa092e72dfd1214eead10f8da17c99c13173e6f9a5058ec9e1ad"
+        }
+      ]
+    }
+  ],
+  "observations": [
+    "All eight raw screenshots and eight red-box annotations were inspected",
+    "Eight evenly sampled frames from each of four recordings were inspected, not every video frame",
+    "Both selected model aliases show the expected 404 before and the real Routing works. response after",
+    "Desktop trace details after the fix show the explicit Ollama API base, native model, zero retries and zero fallbacks",
+    "The phone layout already clips the send button and endpoint selector, and Aria overlaps the composer footer",
+    "Phone requests were submitted using the supported Enter shortcut, not the clipped send button",
+    "Chat-history toasts clear before final screenshots, while recordings retain transient toasts and loading states",
+    "No password or token is visible in the inspected images; the login password input is asserted to be masked"
+  ]
+}

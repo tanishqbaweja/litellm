@@ -1,0 +1,6 @@
+{
+  "base": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "head": "f548922490cbbd5d9d519671e858a8ddb127ed04",
+  "branch": "litellm_fix_26170_ollama_api_base",
+  "files": ".../litellm_core_utils/get_llm_provider_logic.py   |  2 +-\n litellm/main.py                                    |  6 +-\n tests/unit/test_main.py                            | 64 ++++++++++++++++++++++\n 3 files changed, 68 insertions(+), 4 deletions(-)"
+}

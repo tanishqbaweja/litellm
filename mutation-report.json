@@ -1,0 +1,30 @@
+{
+  "started_at": "2026-10-25T18:13:30.124506+00:00",
+  "cases": [
+    {
+      "name": "generate-global-shadows-explicit",
+      "exit_code": 1,
+      "failed_cases": 2
+    },
+    {
+      "name": "chat-global-shadows-explicit",
+      "exit_code": 1,
+      "failed_cases": 2
+    },
+    {
+      "name": "embedding-global-shadows-explicit",
+      "exit_code": 1,
+      "failed_cases": 2
+    },
+    {
+      "name": "provider-drops-global-fallback",
+      "exit_code": 1,
+      "failed_cases": 8
+    }
+  ],
+  "restored": true,
+  "restored_sha256": {
+    "litellm/main.py": "39cd54d098d5e627a366a22f10f31713f89c71c84e2481ec000bfb3d0f055983",
+    "litellm/litellm_core_utils/get_llm_provider_logic.py": "af089a065b61109e2f0738680aa3dedf4e615344c4f8834cde331c4d62224b1b"
+  }
+}

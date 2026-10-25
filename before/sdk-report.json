@@ -1,0 +1,551 @@
+{
+  "revision": "baseline",
+  "source_sha": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "source_path": "/opt/litellm-34927-baseline",
+  "started_at": "2026-10-25T18:20:19.877733+00:00",
+  "cases": [
+    {
+      "configuration": "explicit",
+      "provider": "ollama",
+      "endpoint": "generate",
+      "asynchronous": false,
+      "explicit_base": "http://127.0.0.1:11434",
+      "global_base": "http://127.0.0.1:51476/v1",
+      "env_base": "http://127.0.0.1:51476/v1",
+      "outcome": "error",
+      "exception": "NotFoundError",
+      "message": "litellm.NotFoundError: OllamaException - {\"error\":{\"message\":\"File Not Found\",\"type\":\"not_found_error\",\"code\":404}}",
+      "status_code": 404
+    },
+    {
+      "configuration": "explicit",
+      "provider": "ollama",
+      "endpoint": "generate",
+      "asynchronous": true,
+      "explicit_base": "http://127.0.0.1:11434",
+      "global_base": "http://127.0.0.1:51476/v1",
+      "env_base": "http://127.0.0.1:51476/v1",
+      "outcome": "error",
+      "exception": "NotFoundError",
+      "message": "litellm.NotFoundError: OllamaException - {\"error\":{\"message\":\"File Not Found\",\"type\":\"not_found_error\",\"code\":404}}",
+      "status_code": 404
+    },
+    {
+      "configuration": "explicit",
+      "provider": "ollama_chat",
+      "endpoint": "chat",
+      "asynchronous": false,
+      "explicit_base": "http://127.0.0.1:11434",
+      "global_base": "http://127.0.0.1:51476/v1",
+      "env_base": "http://127.0.0.1:51476/v1",
+      "outcome": "error",
+      "exception": "NotFoundError",
+      "message": "litellm.NotFoundError: Ollama_chatException - {\"error\":{\"message\":\"File Not Found\",\"type\":\"not_found_error\",\"code\":404}}",
+      "status_code": 404
+    },
+    {
+      "configuration": "explicit",
+      "provider": "ollama_chat",
+      "endpoint": "chat",
+      "asynchronous": true,
+      "explicit_base": "http://127.0.0.1:11434",
+      "global_base": "http://127.0.0.1:51476/v1",
+      "env_base": "http://127.0.0.1:51476/v1",
+      "outcome": "error",
+      "exception": "NotFoundError",
+      "message": "litellm.NotFoundError: Ollama_chatException - {\"error\":{\"message\":\"File Not Found\",\"type\":\"not_found_error\",\"code\":404}}",
+      "status_code": 404
+    },
+    {
+      "configuration": "explicit",
+      "provider": "ollama",
+      "endpoint": "embed",
+      "asynchronous": false,
+      "explicit_base": "http://127.0.0.1:11434",
+      "global_base": "http://127.0.0.1:51476/v1",
+      "env_base": "http://127.0.0.1:51476/v1",
+      "outcome": "error",
+      "exception": "NotFoundError",
+      "message": "litellm.NotFoundError: OllamaException - {\"error\":{\"message\":\"File Not Found\",\"type\":\"not_found_error\",\"code\":404}}",
+      "status_code": 404
+    },
+    {
+      "configuration": "explicit",
+      "provider": "ollama",
+      "endpoint": "embed",
+      "asynchronous": true,
+      "explicit_base": "http://127.0.0.1:11434",
+      "global_base": "http://127.0.0.1:51476/v1",
+      "env_base": "http://127.0.0.1:51476/v1",
+      "outcome": "error",
+      "exception": "NotFoundError",
+      "message": "litellm.NotFoundError: OllamaException - {\"error\":{\"message\":\"File Not Found\",\"type\":\"not_found_error\",\"code\":404}}",
+      "status_code": 404
+    },
+    {
+      "configuration": "global",
+      "provider": "ollama",
+      "endpoint": "generate",
+      "asynchronous": false,
+      "explicit_base": null,
+      "global_base": "http://127.0.0.1:11434",
+      "env_base": "http://127.0.0.1:51476/v1",
+      "content": "Routing works.",
+      "usage": {
+        "completion_tokens": 4,
+        "prompt_tokens": 23,
+        "total_tokens": 27,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      },
+      "finish_reason": "stop",
+      "outcome": "success"
+    },
+    {
+      "configuration": "global",
+      "provider": "ollama",
+      "endpoint": "generate",
+      "asynchronous": true,
+      "explicit_base": null,
+      "global_base": "http://127.0.0.1:11434",
+      "env_base": "http://127.0.0.1:51476/v1",
+      "content": "Routing works.",
+      "usage": {
+        "completion_tokens": 4,
+        "prompt_tokens": 23,
+        "total_tokens": 27,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      },
+      "finish_reason": "stop",
+      "outcome": "success"
+    },
+    {
+      "configuration": "global",
+      "provider": "ollama_chat",
+      "endpoint": "chat",
+      "asynchronous": false,
+      "explicit_base": null,
+      "global_base": "http://127.0.0.1:11434",
+      "env_base": "http://127.0.0.1:51476/v1",
+      "content": "Routing works.",
+      "usage": {
+        "completion_tokens": 4,
+        "prompt_tokens": 19,
+        "total_tokens": 23,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      },
+      "finish_reason": "stop",
+      "outcome": "success"
+    },
+    {
+      "configuration": "global",
+      "provider": "ollama_chat",
+      "endpoint": "chat",
+      "asynchronous": true,
+      "explicit_base": null,
+      "global_base": "http://127.0.0.1:11434",
+      "env_base": "http://127.0.0.1:51476/v1",
+      "content": "Routing works.",
+      "usage": {
+        "completion_tokens": 4,
+        "prompt_tokens": 19,
+        "total_tokens": 23,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      },
+      "finish_reason": "stop",
+      "outcome": "success"
+    },
+    {
+      "configuration": "global",
+      "provider": "ollama",
+      "endpoint": "embed",
+      "asynchronous": false,
+      "explicit_base": null,
+      "global_base": "http://127.0.0.1:11434",
+      "env_base": "http://127.0.0.1:51476/v1",
+      "dimensions": 1024,
+      "maximum_absolute_difference_from_direct": 0.0,
+      "usage": {
+        "completion_tokens": 0,
+        "prompt_tokens": 2,
+        "total_tokens": 2,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      },
+      "outcome": "success"
+    },
+    {
+      "configuration": "global",
+      "provider": "ollama",
+      "endpoint": "embed",
+      "asynchronous": true,
+      "explicit_base": null,
+      "global_base": "http://127.0.0.1:11434",
+      "env_base": "http://127.0.0.1:51476/v1",
+      "dimensions": 1024,
+      "maximum_absolute_difference_from_direct": 0.0,
+      "usage": {
+        "completion_tokens": 0,
+        "prompt_tokens": 2,
+        "total_tokens": 2,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      },
+      "outcome": "success"
+    },
+    {
+      "configuration": "empty-explicit",
+      "provider": "ollama",
+      "endpoint": "generate",
+      "asynchronous": false,
+      "explicit_base": "",
+      "global_base": "http://127.0.0.1:11434",
+      "env_base": "http://127.0.0.1:51476/v1",
+      "content": "Routing works.",
+      "usage": {
+        "completion_tokens": 4,
+        "prompt_tokens": 23,
+        "total_tokens": 27,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      },
+      "finish_reason": "stop",
+      "outcome": "success"
+    },
+    {
+      "configuration": "empty-explicit",
+      "provider": "ollama",
+      "endpoint": "generate",
+      "asynchronous": true,
+      "explicit_base": "",
+      "global_base": "http://127.0.0.1:11434",
+      "env_base": "http://127.0.0.1:51476/v1",
+      "content": "Routing works.",
+      "usage": {
+        "completion_tokens": 4,
+        "prompt_tokens": 23,
+        "total_tokens": 27,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      },
+      "finish_reason": "stop",
+      "outcome": "success"
+    },
+    {
+      "configuration": "empty-explicit",
+      "provider": "ollama_chat",
+      "endpoint": "chat",
+      "asynchronous": false,
+      "explicit_base": "",
+      "global_base": "http://127.0.0.1:11434",
+      "env_base": "http://127.0.0.1:51476/v1",
+      "content": "Routing works.",
+      "usage": {
+        "completion_tokens": 4,
+        "prompt_tokens": 19,
+        "total_tokens": 23,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      },
+      "finish_reason": "stop",
+      "outcome": "success"
+    },
+    {
+      "configuration": "empty-explicit",
+      "provider": "ollama_chat",
+      "endpoint": "chat",
+      "asynchronous": true,
+      "explicit_base": "",
+      "global_base": "http://127.0.0.1:11434",
+      "env_base": "http://127.0.0.1:51476/v1",
+      "content": "Routing works.",
+      "usage": {
+        "completion_tokens": 4,
+        "prompt_tokens": 19,
+        "total_tokens": 23,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      },
+      "finish_reason": "stop",
+      "outcome": "success"
+    },
+    {
+      "configuration": "empty-explicit",
+      "provider": "ollama",
+      "endpoint": "embed",
+      "asynchronous": false,
+      "explicit_base": "",
+      "global_base": "http://127.0.0.1:11434",
+      "env_base": "http://127.0.0.1:51476/v1",
+      "dimensions": 1024,
+      "maximum_absolute_difference_from_direct": 0.0,
+      "usage": {
+        "completion_tokens": 0,
+        "prompt_tokens": 2,
+        "total_tokens": 2,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      },
+      "outcome": "success"
+    },
+    {
+      "configuration": "empty-explicit",
+      "provider": "ollama",
+      "endpoint": "embed",
+      "asynchronous": true,
+      "explicit_base": "",
+      "global_base": "http://127.0.0.1:11434",
+      "env_base": "http://127.0.0.1:51476/v1",
+      "dimensions": 1024,
+      "maximum_absolute_difference_from_direct": 0.0,
+      "usage": {
+        "completion_tokens": 0,
+        "prompt_tokens": 2,
+        "total_tokens": 2,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      },
+      "outcome": "success"
+    },
+    {
+      "configuration": "environment",
+      "provider": "ollama",
+      "endpoint": "generate",
+      "asynchronous": false,
+      "explicit_base": null,
+      "global_base": null,
+      "env_base": "http://127.0.0.1:11434",
+      "content": "Routing works.",
+      "usage": {
+        "completion_tokens": 4,
+        "prompt_tokens": 23,
+        "total_tokens": 27,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      },
+      "finish_reason": "stop",
+      "outcome": "success"
+    },
+    {
+      "configuration": "environment",
+      "provider": "ollama",
+      "endpoint": "generate",
+      "asynchronous": true,
+      "explicit_base": null,
+      "global_base": null,
+      "env_base": "http://127.0.0.1:11434",
+      "content": "Routing works.",
+      "usage": {
+        "completion_tokens": 4,
+        "prompt_tokens": 23,
+        "total_tokens": 27,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      },
+      "finish_reason": "stop",
+      "outcome": "success"
+    },
+    {
+      "configuration": "environment",
+      "provider": "ollama_chat",
+      "endpoint": "chat",
+      "asynchronous": false,
+      "explicit_base": null,
+      "global_base": null,
+      "env_base": "http://127.0.0.1:11434",
+      "content": "Routing works.",
+      "usage": {
+        "completion_tokens": 4,
+        "prompt_tokens": 19,
+        "total_tokens": 23,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      },
+      "finish_reason": "stop",
+      "outcome": "success"
+    },
+    {
+      "configuration": "environment",
+      "provider": "ollama_chat",
+      "endpoint": "chat",
+      "asynchronous": true,
+      "explicit_base": null,
+      "global_base": null,
+      "env_base": "http://127.0.0.1:11434",
+      "content": "Routing works.",
+      "usage": {
+        "completion_tokens": 4,
+        "prompt_tokens": 19,
+        "total_tokens": 23,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      },
+      "finish_reason": "stop",
+      "outcome": "success"
+    },
+    {
+      "configuration": "environment",
+      "provider": "ollama",
+      "endpoint": "embed",
+      "asynchronous": false,
+      "explicit_base": null,
+      "global_base": null,
+      "env_base": "http://127.0.0.1:11434",
+      "dimensions": 1024,
+      "maximum_absolute_difference_from_direct": 0.0,
+      "usage": {
+        "completion_tokens": 0,
+        "prompt_tokens": 2,
+        "total_tokens": 2,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      },
+      "outcome": "success"
+    },
+    {
+      "configuration": "environment",
+      "provider": "ollama",
+      "endpoint": "embed",
+      "asynchronous": true,
+      "explicit_base": null,
+      "global_base": null,
+      "env_base": "http://127.0.0.1:11434",
+      "dimensions": 1024,
+      "maximum_absolute_difference_from_direct": 0.0,
+      "usage": {
+        "completion_tokens": 0,
+        "prompt_tokens": 2,
+        "total_tokens": 2,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      },
+      "outcome": "success"
+    },
+    {
+      "configuration": "default",
+      "provider": "ollama",
+      "endpoint": "generate",
+      "asynchronous": false,
+      "explicit_base": null,
+      "global_base": null,
+      "env_base": null,
+      "content": "Routing works.",
+      "usage": {
+        "completion_tokens": 4,
+        "prompt_tokens": 23,
+        "total_tokens": 27,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      },
+      "finish_reason": "stop",
+      "outcome": "success"
+    },
+    {
+      "configuration": "default",
+      "provider": "ollama",
+      "endpoint": "generate",
+      "asynchronous": true,
+      "explicit_base": null,
+      "global_base": null,
+      "env_base": null,
+      "content": "Routing works.",
+      "usage": {
+        "completion_tokens": 4,
+        "prompt_tokens": 23,
+        "total_tokens": 27,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      },
+      "finish_reason": "stop",
+      "outcome": "success"
+    },
+    {
+      "configuration": "default",
+      "provider": "ollama_chat",
+      "endpoint": "chat",
+      "asynchronous": false,
+      "explicit_base": null,
+      "global_base": null,
+      "env_base": null,
+      "content": "Routing works.",
+      "usage": {
+        "completion_tokens": 4,
+        "prompt_tokens": 19,
+        "total_tokens": 23,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      },
+      "finish_reason": "stop",
+      "outcome": "success"
+    },
+    {
+      "configuration": "default",
+      "provider": "ollama_chat",
+      "endpoint": "chat",
+      "asynchronous": true,
+      "explicit_base": null,
+      "global_base": null,
+      "env_base": null,
+      "content": "Routing works.",
+      "usage": {
+        "completion_tokens": 4,
+        "prompt_tokens": 19,
+        "total_tokens": 23,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      },
+      "finish_reason": "stop",
+      "outcome": "success"
+    },
+    {
+      "configuration": "default",
+      "provider": "ollama",
+      "endpoint": "embed",
+      "asynchronous": false,
+      "explicit_base": null,
+      "global_base": null,
+      "env_base": null,
+      "dimensions": 1024,
+      "maximum_absolute_difference_from_direct": 0.0,
+      "usage": {
+        "completion_tokens": 0,
+        "prompt_tokens": 2,
+        "total_tokens": 2,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      },
+      "outcome": "success"
+    },
+    {
+      "configuration": "default",
+      "provider": "ollama",
+      "endpoint": "embed",
+      "asynchronous": true,
+      "explicit_base": null,
+      "global_base": null,
+      "env_base": null,
+      "dimensions": 1024,
+      "maximum_absolute_difference_from_direct": 0.0,
+      "usage": {
+        "completion_tokens": 0,
+        "prompt_tokens": 2,
+        "total_tokens": 2,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      },
+      "outcome": "success"
+    }
+  ],
+  "ollama": {
+    "version": "0.40.11"
+  },
+  "direct_embedding": {
+    "dimensions": 1024,
+    "sha256": "42e51ac0d585472dbd5015ab006484b41baf66faedcd3e3cb6ba6b3220b686ec",
+    "prompt_tokens": 2
+  },
+  "completed_at": "2026-10-25T18:20:34.997090+00:00"
+}
