@@ -1,0 +1,210 @@
+{
+  "build": "baseline",
+  "headerMode": "custom",
+  "sourceSha": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "runId": "mvnzkg5m",
+  "baseURL": "http://127.0.0.1:41475",
+  "browserVersion": "145.0.7632.6",
+  "reports": [
+    {
+      "name": "desktop-signup",
+      "sourceSha": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+      "headerMode": "custom",
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900,
+        "touch": false
+      },
+      "runId": "mvnzkg5m",
+      "outcome": "reproduced_missing_onboarding_session",
+      "claim": {
+        "status": 401,
+        "authorizationPresent": true,
+        "customHeaderPresent": false
+      },
+      "screenshots": {
+        "before-submit": "desktop-signup-before-submit.png",
+        "result": "desktop-signup-result.png"
+      },
+      "pageErrors": [],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+        "Failed to delete key: ApiError: Missing onboarding session for invitation link.\n    at l (http://127.0.0.1:41475/litellm-asset-prefix/_next/static/chunks/3sx5mmlfefaux.js:57:134389)\n    at async u (http://127.0.0.1:41475/litellm-asset-prefix/_next/static/chunks/3sx5mmlfefaux.js:57:134464)\n    at async eF (http://127.0.0.1:41475/litellm-asset-prefix/_next/static/chunks/3sx5mmlfefaux.js:57:19635)\n    at async Object.mutationFn (http://127.0.0.1:41475/litellm-asset-prefix/_next/static/chunks/1s12htsjr2h32.js:1:7791)"
+      ],
+      "httpErrors": [
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/onboarding/claim_token",
+          "status": 401
+        }
+      ],
+      "cleanup": 200,
+      "highlight": {
+        "x": 563,
+        "y": 528.5,
+        "width": 340,
+        "height": 20
+      }
+    },
+    {
+      "name": "desktop-reset_password",
+      "sourceSha": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+      "headerMode": "custom",
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900,
+        "touch": false
+      },
+      "runId": "mvnzkg5m",
+      "outcome": "reproduced_missing_onboarding_session",
+      "claim": {
+        "status": 401,
+        "authorizationPresent": true,
+        "customHeaderPresent": false
+      },
+      "screenshots": {
+        "before-submit": "desktop-reset_password-before-submit.png",
+        "result": "desktop-reset_password-result.png"
+      },
+      "pageErrors": [],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+        "Failed to delete key: ApiError: Missing onboarding session for invitation link.\n    at l (http://127.0.0.1:41475/litellm-asset-prefix/_next/static/chunks/3sx5mmlfefaux.js:57:134389)\n    at async u (http://127.0.0.1:41475/litellm-asset-prefix/_next/static/chunks/3sx5mmlfefaux.js:57:134464)\n    at async eF (http://127.0.0.1:41475/litellm-asset-prefix/_next/static/chunks/3sx5mmlfefaux.js:57:19635)\n    at async Object.mutationFn (http://127.0.0.1:41475/litellm-asset-prefix/_next/static/chunks/1s12htsjr2h32.js:1:7791)"
+      ],
+      "httpErrors": [
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/onboarding/claim_token",
+          "status": 401
+        }
+      ],
+      "cleanup": 200,
+      "highlight": {
+        "x": 563,
+        "y": 432.5,
+        "width": 340,
+        "height": 20
+      }
+    },
+    {
+      "name": "phone-signup",
+      "sourceSha": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+      "headerMode": "custom",
+      "viewport": {
+        "name": "phone",
+        "width": 390,
+        "height": 844,
+        "touch": true
+      },
+      "runId": "mvnzkg5m",
+      "outcome": "reproduced_missing_onboarding_session",
+      "claim": {
+        "status": 401,
+        "authorizationPresent": true,
+        "customHeaderPresent": false
+      },
+      "screenshots": {
+        "before-submit": "phone-signup-before-submit.png",
+        "result": "phone-signup-result.png"
+      },
+      "pageErrors": [],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+        "Failed to delete key: ApiError: Missing onboarding session for invitation link.\n    at l (http://127.0.0.1:41475/litellm-asset-prefix/_next/static/chunks/3sx5mmlfefaux.js:57:134389)\n    at async u (http://127.0.0.1:41475/litellm-asset-prefix/_next/static/chunks/3sx5mmlfefaux.js:57:134464)\n    at async eF (http://127.0.0.1:41475/litellm-asset-prefix/_next/static/chunks/3sx5mmlfefaux.js:57:19635)\n    at async Object.mutationFn (http://127.0.0.1:41475/litellm-asset-prefix/_next/static/chunks/1s12htsjr2h32.js:1:7791)"
+      ],
+      "httpErrors": [
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/onboarding/claim_token",
+          "status": 401
+        }
+      ],
+      "cleanup": 200,
+      "highlight": {
+        "x": 67,
+        "y": 536.5,
+        "width": 282,
+        "height": 40
+      }
+    },
+    {
+      "name": "phone-reset_password",
+      "sourceSha": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+      "headerMode": "custom",
+      "viewport": {
+        "name": "phone",
+        "width": 390,
+        "height": 844,
+        "touch": true
+      },
+      "runId": "mvnzkg5m",
+      "outcome": "reproduced_missing_onboarding_session",
+      "claim": {
+        "status": 401,
+        "authorizationPresent": true,
+        "customHeaderPresent": false
+      },
+      "screenshots": {
+        "before-submit": "phone-reset_password-before-submit.png",
+        "result": "phone-reset_password-result.png"
+      },
+      "pageErrors": [],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+        "Failed to delete key: ApiError: Missing onboarding session for invitation link.\n    at l (http://127.0.0.1:41475/litellm-asset-prefix/_next/static/chunks/3sx5mmlfefaux.js:57:134389)\n    at async u (http://127.0.0.1:41475/litellm-asset-prefix/_next/static/chunks/3sx5mmlfefaux.js:57:134464)\n    at async eF (http://127.0.0.1:41475/litellm-asset-prefix/_next/static/chunks/3sx5mmlfefaux.js:57:19635)\n    at async Object.mutationFn (http://127.0.0.1:41475/litellm-asset-prefix/_next/static/chunks/1s12htsjr2h32.js:1:7791)"
+      ],
+      "httpErrors": [
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/onboarding/claim_token",
+          "status": 401
+        }
+      ],
+      "cleanup": 200,
+      "highlight": {
+        "x": 67,
+        "y": 432.5,
+        "width": 282,
+        "height": 40
+      }
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "before": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "after": "48592e3c49857032553896eacaad1488f78a8cbd",
+  "regression_on_main": {
+    "failed": 6,
+    "reason": "The claim request does not contain the expected authentication header"
+  },
+  "affected_frontend_tests": {
+    "files": 6,
+    "passed": 92
+  },
+  "final_regression_tests": {
+    "passed": 6
+  },
+  "production_build": "passed",
+  "production_typecheck": "passed",
+  "prettier": "passed",
+  "eslint": {
+    "errors": 0,
+    "warnings": 3349
+  },
+  "lint_budgets": "passed",
+  "knip": "passed",
+  "diff_check": "passed",
+  "broad_typecheck_comparison": {
+    "exit": 2,
+    "mainDiagnostics": 802,
+    "prDiagnostics": 802,
+    "differingDiagnostics": 0,
+    "baseline": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+    "after": "48592e3c49857032553896eacaad1488f78a8cbd"
+  }
+}
