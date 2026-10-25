@@ -1,0 +1,12 @@
+model_list:
+  - model_name: qa-response-cache
+    litellm_params:
+      model: openai/Qwen3.5-0.8B
+      api_base: http://127.0.0.1:51476/v1
+      api_key: local-model-only
+
+general_settings:
+  master_key: os.environ/LITELLM_MASTER_KEY
+  database_url: os.environ/DATABASE_URL
+  store_prompts_in_spend_logs: true
+  store_model_in_db: true

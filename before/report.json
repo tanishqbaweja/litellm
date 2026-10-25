@@ -1,0 +1,170 @@
+{
+  "mode": "baseline",
+  "sha": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "browser": "145.0.7632.6",
+  "fixture": "qa-cache-23743-1663a4ba",
+  "cases": [
+    {
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900
+      },
+      "screenshots": [
+        "desktop-table.png",
+        "desktop-cache-column.png",
+        "desktop-hit-detail.png",
+        "desktop-miss-detail.png",
+        "desktop-hit-filter.png"
+      ],
+      "pageErrors": [],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      ],
+      "serverErrors": [],
+      "missingResources": [
+        "/ui/litellm-runtime-config.json",
+        "/ui/litellm-runtime-config.json",
+        "/ui.txt",
+        "/ui/litellm-runtime-config.json",
+        "/ui/litellm-runtime-config.json",
+        "/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt",
+        "/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt",
+        "/ui/api-keys/__next.!KGRhc2hib2FyZCk.api-keys.__PAGE__.txt",
+        "/ui/playground/__next.!KGRhc2hib2FyZCk.playground.__PAGE__.txt",
+        "/ui/models-and-endpoints/__next.!KGRhc2hib2FyZCk.models-and-endpoints.__PAGE__.txt",
+        "/ui/guardrails/__next.!KGRhc2hib2FyZCk.guardrails.__PAGE__.txt",
+        "/ui/mcp-servers/__next.!KGRhc2hib2FyZCk.mcp-servers.__PAGE__.txt",
+        "/ui/skills/__next.!KGRhc2hib2FyZCk.skills.__PAGE__.txt",
+        "/ui/policies/__next.!KGRhc2hib2FyZCk.policies.__PAGE__.txt",
+        "/ui/usage/__next.!KGRhc2hib2FyZCk.usage.__PAGE__.txt",
+        "/ui/cost-optimization/__next.!KGRhc2hib2FyZCk.cost-optimization.__PAGE__.txt",
+        "/ui/model-insights/__next.!KGRhc2hib2FyZCk.model-insights.__PAGE__.txt",
+        "/ui/logs/__next.!KGRhc2hib2FyZCk.logs.__PAGE__.txt",
+        "/ui/guardrails-monitor/__next.!KGRhc2hib2FyZCk.guardrails-monitor.__PAGE__.txt",
+        "/ui/lens/__next.!KGRhc2hib2FyZCk.lens.__PAGE__.txt",
+        "/ui/teams/__next.!KGRhc2hib2FyZCk.teams.__PAGE__.txt",
+        "/ui/users/__next.!KGRhc2hib2FyZCk.users.__PAGE__.txt",
+        "/ui/litellm-runtime-config.json",
+        "/ui/litellm-runtime-config.json",
+        "/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt",
+        "/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt",
+        "/ui/api-keys/__next.!KGRhc2hib2FyZCk.api-keys.__PAGE__.txt",
+        "/ui/models-and-endpoints/__next.!KGRhc2hib2FyZCk.models-and-endpoints.__PAGE__.txt",
+        "/ui/playground/__next.!KGRhc2hib2FyZCk.playground.__PAGE__.txt",
+        "/ui/mcp-servers/__next.!KGRhc2hib2FyZCk.mcp-servers.__PAGE__.txt",
+        "/ui/skills/__next.!KGRhc2hib2FyZCk.skills.__PAGE__.txt",
+        "/ui/guardrails/__next.!KGRhc2hib2FyZCk.guardrails.__PAGE__.txt",
+        "/ui/policies/__next.!KGRhc2hib2FyZCk.policies.__PAGE__.txt",
+        "/ui/usage/__next.!KGRhc2hib2FyZCk.usage.__PAGE__.txt",
+        "/ui/model-insights/__next.!KGRhc2hib2FyZCk.model-insights.__PAGE__.txt",
+        "/ui/lens/__next.!KGRhc2hib2FyZCk.lens.__PAGE__.txt",
+        "/ui/cost-optimization/__next.!KGRhc2hib2FyZCk.cost-optimization.__PAGE__.txt",
+        "/ui/logs/__next.!KGRhc2hib2FyZCk.logs.__PAGE__.txt",
+        "/ui/teams/__next.!KGRhc2hib2FyZCk.teams.__PAGE__.txt",
+        "/ui/guardrails-monitor/__next.!KGRhc2hib2FyZCk.guardrails-monitor.__PAGE__.txt",
+        "/ui/users/__next.!KGRhc2hib2FyZCk.users.__PAGE__.txt"
+      ],
+      "column": "absent",
+      "focusBox": {
+        "x": 278.453125,
+        "y": 279,
+        "width": 82.171875,
+        "height": 173.328125
+      },
+      "cacheFilter": "hit filter and reset passed",
+      "pageWidth": {
+        "viewport": 1440,
+        "document": 1440
+      },
+      "outcome": "passed"
+    },
+    {
+      "viewport": {
+        "name": "phone",
+        "width": 390,
+        "height": 844
+      },
+      "screenshots": [
+        "phone-table.png",
+        "phone-cache-column.png",
+        "phone-hit-detail.png",
+        "phone-miss-detail.png",
+        "phone-hit-filter.png"
+      ],
+      "pageErrors": [],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      ],
+      "serverErrors": [],
+      "missingResources": [
+        "/ui/litellm-runtime-config.json",
+        "/ui/litellm-runtime-config.json",
+        "/ui.txt",
+        "/ui/litellm-runtime-config.json",
+        "/ui/litellm-runtime-config.json",
+        "/ui/litellm-runtime-config.json",
+        "/ui/litellm-runtime-config.json"
+      ],
+      "column": "absent",
+      "focusBox": {
+        "x": 198.453125,
+        "y": 447,
+        "width": 82.171875,
+        "height": 173.328125
+      },
+      "cacheFilter": "hit filter and reset passed",
+      "pageWidth": {
+        "viewport": 390,
+        "document": 390
+      },
+      "outcome": "passed"
+    }
+  ]
+}

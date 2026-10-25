@@ -1,0 +1,169 @@
+{
+  "revision": "baseline",
+  "source": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "alias": "qa-cache-23743-1663a4ba",
+  "calls": [
+    {
+      "name": "cache-disabled",
+      "id": "chatcmpl-uCW0if2PHgk8nvtrdm4WaQ69Ybv7NGBp",
+      "content": "hello",
+      "usage": {
+        "completion_tokens": 2,
+        "prompt_tokens": 36,
+        "total_tokens": 38,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "name": "single-miss",
+      "id": "chatcmpl-5He4V7CHAfOqOaOXVVk5pkXJ7oP4slTg",
+      "content": "hello",
+      "usage": {
+        "completion_tokens": 2,
+        "prompt_tokens": 36,
+        "total_tokens": 38,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "name": "single-hit",
+      "id": "chatcmpl-5He4V7CHAfOqOaOXVVk5pkXJ7oP4slTg",
+      "content": "hello",
+      "usage": {
+        "completion_tokens": 2,
+        "prompt_tokens": 36,
+        "total_tokens": 38,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "name": "session-0",
+      "id": "chatcmpl-TARbxhvrkvzNU4daq6CrdRYpYOstbqcD",
+      "content": "hello",
+      "usage": {
+        "completion_tokens": 2,
+        "prompt_tokens": 36,
+        "total_tokens": 38,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "name": "session-1",
+      "id": "chatcmpl-TARbxhvrkvzNU4daq6CrdRYpYOstbqcD",
+      "content": "hello",
+      "usage": {
+        "completion_tokens": 2,
+        "prompt_tokens": 36,
+        "total_tokens": 38,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "name": "session-2",
+      "id": "chatcmpl-TARbxhvrkvzNU4daq6CrdRYpYOstbqcD",
+      "content": "hello",
+      "usage": {
+        "completion_tokens": 2,
+        "prompt_tokens": 36,
+        "total_tokens": 38,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    }
+  ],
+  "logs": [
+    {
+      "request_id": "chatcmpl-TARbxhvrkvzNU4daq6CrdRYpYOstbqcD_cache_hit1792944385.606748",
+      "cache_hit": "True",
+      "cache_key": "79bd91c2341962074c2f9ea918635df2b470f5afc29f2a20f0c8b14aeff7788c",
+      "session_id": "qa-cache-23743-1663a4ba-session",
+      "session_total_count": null,
+      "session_cache_hit_count": null
+    },
+    {
+      "request_id": "chatcmpl-TARbxhvrkvzNU4daq6CrdRYpYOstbqcD_cache_hit1792944385.5987256",
+      "cache_hit": "True",
+      "cache_key": "79bd91c2341962074c2f9ea918635df2b470f5afc29f2a20f0c8b14aeff7788c",
+      "session_id": "qa-cache-23743-1663a4ba-session",
+      "session_total_count": null,
+      "session_cache_hit_count": null
+    },
+    {
+      "request_id": "chatcmpl-TARbxhvrkvzNU4daq6CrdRYpYOstbqcD",
+      "cache_hit": "None",
+      "cache_key": "9a4e224340fa4fb4929d9a2601490547ac4cf09777bcd6900668bd4046e26635",
+      "session_id": "qa-cache-23743-1663a4ba-session",
+      "session_total_count": null,
+      "session_cache_hit_count": null
+    },
+    {
+      "request_id": "chatcmpl-5He4V7CHAfOqOaOXVVk5pkXJ7oP4slTg_cache_hit1792944385.4500868",
+      "cache_hit": "True",
+      "cache_key": "96c6e1276660204aabacb099992aa07a9d81579c23c318ec0e38c84ebc4f5d19",
+      "session_id": "49cf3122-826e-4369-8bdb-2fab77c1e0b7",
+      "session_total_count": null,
+      "session_cache_hit_count": null
+    },
+    {
+      "request_id": "chatcmpl-5He4V7CHAfOqOaOXVVk5pkXJ7oP4slTg",
+      "cache_hit": "None",
+      "cache_key": "c37a3b133d0d91beb81fe50d339f7982404c11ecbfd0d56f5ecc116b22b3ee44",
+      "session_id": "a76ed661-109a-4edb-8587-d20b9e124f4e",
+      "session_total_count": null,
+      "session_cache_hit_count": null
+    },
+    {
+      "request_id": "chatcmpl-uCW0if2PHgk8nvtrdm4WaQ69Ybv7NGBp",
+      "cache_hit": "None",
+      "cache_key": "Cache OFF",
+      "session_id": "a23a4e06-a37d-449c-8501-8a81591eb295",
+      "session_total_count": null,
+      "session_cache_hit_count": null
+    }
+  ],
+  "grouped_rows": [
+    {
+      "request_id": "chatcmpl-TARbxhvrkvzNU4daq6CrdRYpYOstbqcD_cache_hit1792944385.606748",
+      "cache_hit": "True",
+      "cache_key": "79bd91c2341962074c2f9ea918635df2b470f5afc29f2a20f0c8b14aeff7788c",
+      "session_id": "qa-cache-23743-1663a4ba-session",
+      "session_total_count": 3,
+      "session_cache_hit_count": 2
+    },
+    {
+      "request_id": "chatcmpl-5He4V7CHAfOqOaOXVVk5pkXJ7oP4slTg_cache_hit1792944385.4500868",
+      "cache_hit": "True",
+      "cache_key": "96c6e1276660204aabacb099992aa07a9d81579c23c318ec0e38c84ebc4f5d19",
+      "session_id": "49cf3122-826e-4369-8bdb-2fab77c1e0b7",
+      "session_total_count": 1,
+      "session_cache_hit_count": 1
+    },
+    {
+      "request_id": "chatcmpl-5He4V7CHAfOqOaOXVVk5pkXJ7oP4slTg",
+      "cache_hit": "None",
+      "cache_key": "c37a3b133d0d91beb81fe50d339f7982404c11ecbfd0d56f5ecc116b22b3ee44",
+      "session_id": "a76ed661-109a-4edb-8587-d20b9e124f4e",
+      "session_total_count": 1,
+      "session_cache_hit_count": 0
+    },
+    {
+      "request_id": "chatcmpl-uCW0if2PHgk8nvtrdm4WaQ69Ybv7NGBp",
+      "cache_hit": "None",
+      "cache_key": "Cache OFF",
+      "session_id": "a23a4e06-a37d-449c-8501-8a81591eb295",
+      "session_total_count": 1,
+      "session_cache_hit_count": 0
+    }
+  ]
+}
