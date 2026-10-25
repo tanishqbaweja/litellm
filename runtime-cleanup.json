@@ -1,0 +1,23 @@
+{
+  "proxy_pid": 16774,
+  "proxy_stopped": true,
+  "math_pid": 9795,
+  "math_stopped": true,
+  "math_process_state": "Z",
+  "math_process_reaped": false,
+  "owned_ports_closed": [
+    41475,
+    41476
+  ],
+  "checked_at": "2026-10-25T20:10:55.999056+00:00",
+  "keys": {
+    "baseline": {
+      "alias": "qa-35459-baseline-9b5f9c",
+      "status": 200
+    },
+    "fixed": {
+      "alias": "qa-35459-fixed-f1966b",
+      "status": 200
+    }
+  }
+}

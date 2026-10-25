@@ -1,0 +1,14 @@
+{
+  "checked_at": "2026-10-25T20:10:55.870018+00:00",
+  "base": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "host_sha": "cf5082d8077212669b8cb91f2cc3c814007f02e8",
+  "linux_sha": "cf5082d8077212669b8cb91f2cc3c814007f02e8",
+  "host_clean": true,
+  "linux_clean": true,
+  "changed_files": [
+    "litellm/router_strategy/lowest_cost.py",
+    "tests/unit/router_strategy/test_lowest_cost.py"
+  ],
+  "diff_check": "pass",
+  "frontend_source_unchanged": true
+}

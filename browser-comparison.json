@@ -1,0 +1,142 @@
+{
+  "baseline": {
+    "desktop": {
+      "failed_path_counts": {
+        "/ui/litellm-runtime-config.json": 8,
+        "/ui.txt": 1,
+        "/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt": 3,
+        "/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt": 3,
+        "/ui/api-keys/__next.!KGRhc2hib2FyZCk.api-keys.__PAGE__.txt": 3,
+        "/ui/playground/__next.!KGRhc2hib2FyZCk.playground.__PAGE__.txt": 3,
+        "/ui/models-and-endpoints/__next.!KGRhc2hib2FyZCk.models-and-endpoints.__PAGE__.txt": 3,
+        "/ui/mcp-servers/__next.!KGRhc2hib2FyZCk.mcp-servers.__PAGE__.txt": 3,
+        "/ui/skills/__next.!KGRhc2hib2FyZCk.skills.__PAGE__.txt": 3,
+        "/ui/guardrails/__next.!KGRhc2hib2FyZCk.guardrails.__PAGE__.txt": 3,
+        "/ui/policies/__next.!KGRhc2hib2FyZCk.policies.__PAGE__.txt": 3,
+        "/ui/usage/__next.!KGRhc2hib2FyZCk.usage.__PAGE__.txt": 3,
+        "/ui/model-insights/__next.!KGRhc2hib2FyZCk.model-insights.__PAGE__.txt": 3,
+        "/ui/cost-optimization/__next.!KGRhc2hib2FyZCk.cost-optimization.__PAGE__.txt": 3,
+        "/ui/lens/__next.!KGRhc2hib2FyZCk.lens.__PAGE__.txt": 3,
+        "/ui/logs/__next.!KGRhc2hib2FyZCk.logs.__PAGE__.txt": 3,
+        "/ui/teams/__next.!KGRhc2hib2FyZCk.teams.__PAGE__.txt": 3,
+        "/ui/guardrails-monitor/__next.!KGRhc2hib2FyZCk.guardrails-monitor.__PAGE__.txt": 3,
+        "/ui/users/__next.!KGRhc2hib2FyZCk.users.__PAGE__.txt": 3,
+        "/ui/connect/__next.connect.__PAGE__.txt": 1
+      },
+      "failed_responses": 61,
+      "console_errors": 61,
+      "callback_errors": 1,
+      "page_errors": 0,
+      "portrait_mcp": null,
+      "mcp_viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900
+      }
+    },
+    "phone": {
+      "failed_path_counts": {
+        "/ui/litellm-runtime-config.json": 8,
+        "/ui.txt": 1,
+        "/ui/connect/__next.connect.__PAGE__.txt": 1,
+        "/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt": 1,
+        "/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt": 1,
+        "/ui/api-keys/__next.!KGRhc2hib2FyZCk.api-keys.__PAGE__.txt": 1,
+        "/ui/playground/__next.!KGRhc2hib2FyZCk.playground.__PAGE__.txt": 1,
+        "/ui/models-and-endpoints/__next.!KGRhc2hib2FyZCk.models-and-endpoints.__PAGE__.txt": 1,
+        "/ui/mcp-servers/__next.!KGRhc2hib2FyZCk.mcp-servers.__PAGE__.txt": 1,
+        "/ui/skills/__next.!KGRhc2hib2FyZCk.skills.__PAGE__.txt": 1
+      },
+      "failed_responses": 17,
+      "console_errors": 17,
+      "callback_errors": 1,
+      "page_errors": 0,
+      "portrait_mcp": {
+        "toolBox": {
+          "x": 85,
+          "y": 774,
+          "width": 0,
+          "height": 16
+        },
+        "screenshot": "phone-mcp-portrait-layout.png"
+      },
+      "mcp_viewport": {
+        "width": 844,
+        "height": 390,
+        "orientation": "landscape"
+      }
+    }
+  },
+  "fixed": {
+    "desktop": {
+      "failed_path_counts": {
+        "/ui/litellm-runtime-config.json": 8,
+        "/ui.txt": 1,
+        "/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt": 3,
+        "/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt": 3,
+        "/ui/api-keys/__next.!KGRhc2hib2FyZCk.api-keys.__PAGE__.txt": 3,
+        "/ui/playground/__next.!KGRhc2hib2FyZCk.playground.__PAGE__.txt": 3,
+        "/ui/models-and-endpoints/__next.!KGRhc2hib2FyZCk.models-and-endpoints.__PAGE__.txt": 3,
+        "/ui/mcp-servers/__next.!KGRhc2hib2FyZCk.mcp-servers.__PAGE__.txt": 3,
+        "/ui/skills/__next.!KGRhc2hib2FyZCk.skills.__PAGE__.txt": 3,
+        "/ui/guardrails/__next.!KGRhc2hib2FyZCk.guardrails.__PAGE__.txt": 3,
+        "/ui/policies/__next.!KGRhc2hib2FyZCk.policies.__PAGE__.txt": 3,
+        "/ui/usage/__next.!KGRhc2hib2FyZCk.usage.__PAGE__.txt": 3,
+        "/ui/model-insights/__next.!KGRhc2hib2FyZCk.model-insights.__PAGE__.txt": 3,
+        "/ui/logs/__next.!KGRhc2hib2FyZCk.logs.__PAGE__.txt": 3,
+        "/ui/cost-optimization/__next.!KGRhc2hib2FyZCk.cost-optimization.__PAGE__.txt": 3,
+        "/ui/lens/__next.!KGRhc2hib2FyZCk.lens.__PAGE__.txt": 3,
+        "/ui/guardrails-monitor/__next.!KGRhc2hib2FyZCk.guardrails-monitor.__PAGE__.txt": 3,
+        "/ui/teams/__next.!KGRhc2hib2FyZCk.teams.__PAGE__.txt": 3,
+        "/ui/users/__next.!KGRhc2hib2FyZCk.users.__PAGE__.txt": 3,
+        "/ui/connect/__next.connect.__PAGE__.txt": 1
+      },
+      "failed_responses": 61,
+      "console_errors": 61,
+      "callback_errors": 0,
+      "page_errors": 0,
+      "portrait_mcp": null,
+      "mcp_viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900
+      }
+    },
+    "phone": {
+      "failed_path_counts": {
+        "/ui/litellm-runtime-config.json": 8,
+        "/ui.txt": 1,
+        "/ui/connect/__next.connect.__PAGE__.txt": 1,
+        "/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt": 1,
+        "/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt": 1,
+        "/ui/api-keys/__next.!KGRhc2hib2FyZCk.api-keys.__PAGE__.txt": 1,
+        "/ui/mcp-servers/__next.!KGRhc2hib2FyZCk.mcp-servers.__PAGE__.txt": 1,
+        "/ui/playground/__next.!KGRhc2hib2FyZCk.playground.__PAGE__.txt": 1,
+        "/ui/models-and-endpoints/__next.!KGRhc2hib2FyZCk.models-and-endpoints.__PAGE__.txt": 1,
+        "/ui/skills/__next.!KGRhc2hib2FyZCk.skills.__PAGE__.txt": 1
+      },
+      "failed_responses": 17,
+      "console_errors": 17,
+      "callback_errors": 0,
+      "page_errors": 0,
+      "portrait_mcp": {
+        "toolBox": {
+          "x": 85,
+          "y": 774,
+          "width": 0,
+          "height": 16
+        },
+        "screenshot": "phone-mcp-portrait-layout.png"
+      },
+      "mcp_viewport": {
+        "width": 844,
+        "height": 390,
+        "orientation": "landscape"
+      }
+    }
+  },
+  "new_failed_paths": {
+    "desktop": [],
+    "phone": []
+  }
+}

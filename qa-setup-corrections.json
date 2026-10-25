@@ -1,0 +1,15 @@
+{
+  "recorded_at": "2026-10-25T20:04:56.743385+00:00",
+  "initial_test_result": {
+    "failed": 4,
+    "passed": 3927,
+    "skipped": 11,
+    "warnings": 331,
+    "cause": "Optional semantic-router dependency absent, all four failures were ModuleNotFoundError during semantic routing initialization"
+  },
+  "installed_extra": "semantic-router",
+  "locked_version": "0.1.15",
+  "initial_linux_transport_issue": "docker cp preserved an executable bit on lowest_cost.py, detected by exact Git tree comparison and EXE002 lint gate",
+  "resolution": "Restored mode 100644 from the reviewed commit, verified the full staged tree, and adopted cf5082d8077212669b8cb91f2cc3c814007f02e8 without changing file contents",
+  "test_content_sha256_unchanged": true
+}

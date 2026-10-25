@@ -1,0 +1,11 @@
+{
+  "base": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "branch": "litellm_fix_35459_null_model_info",
+  "created_at": "2026-10-25T19:48:11.692803+00:00",
+  "previous_pr_closed_unmerged": 35463,
+  "previous_pr_closed_reason": "stale with no activity in 30 days",
+  "adjacent_prs_not_same_fix": [
+    45486,
+    36303
+  ]
+}

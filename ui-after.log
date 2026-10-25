@@ -1,0 +1,1 @@
+[{"viewport":{"name":"desktop","width":1440,"height":900},"result":"pass","cases":[{"kind":"routed-chat","status":200},{"kind":"mcp-tool","status":200}],"callbackErrors":0,"pageErrors":[]},{"viewport":{"name":"phone","width":390,"height":844},"result":"pass","cases":[{"kind":"routed-chat","status":200},{"kind":"mcp-tool","status":200}],"callbackErrors":0,"pageErrors":[]}]

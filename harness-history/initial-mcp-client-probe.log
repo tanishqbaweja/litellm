@@ -1,0 +1,32 @@
+  + Exception Group Traceback (most recent call last):
+  |   File "/qa/litellm-35459/mcp-probe.py", line 80, in <module>
+  |     asyncio.run(main())
+  |   File "/opt/uv-python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/asyncio/runners.py", line 195, in run
+  |     return runner.run(main)
+  |            ^^^^^^^^^^^^^^^^
+  |   File "/opt/uv-python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/asyncio/runners.py", line 118, in run
+  |     return self._loop.run_until_complete(task)
+  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "/opt/uv-python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+  |     return future.result()
+  |            ^^^^^^^^^^^^^^^
+  |   File "/qa/litellm-35459/mcp-probe.py", line 46, in main
+  |     async with streamable_http_client('http://127.0.0.1:41475/mcp/', http_client=client) as (read, write, _):
+  |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "/opt/uv-python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/contextlib.py", line 231, in __aexit__
+  |     await self.gen.athrow(value)
+  |   File "/opt/litellm-venv/lib/python3.12/site-packages/mcp/client/streamable_http.py", line 771, in streamable_http_client
+  |     anyio.create_task_group() as tg,
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "/opt/litellm-venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 815, in __aexit__
+  |     raise BaseExceptionGroup(
+  | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "/opt/litellm-venv/lib/python3.12/site-packages/mcp/client/streamable_http.py", line 788, in streamable_http_client
+    |     yield read_stream, write_stream
+    |   File "/qa/litellm-35459/mcp-probe.py", line 46, in main
+    |     async with streamable_http_client('http://127.0.0.1:41475/mcp/', http_client=client) as (read, write, _):
+    |                                                                                             ^^^^^^^^^^^^^^^^
+    | ValueError: not enough values to unpack (expected 3, got 2)
+    +------------------------------------

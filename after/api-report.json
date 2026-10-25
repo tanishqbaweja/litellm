@@ -1,0 +1,323 @@
+{
+  "revision": "fixed",
+  "source_sha": "cf5082d8077212669b8cb91f2cc3c814007f02e8",
+  "started_at": "2026-10-25T20:06:02.708994+00:00",
+  "cases": [
+    {
+      "endpoint": "/v1/chat/completions",
+      "stream": false,
+      "status": 200,
+      "request_body": {
+        "model": "qa-cost-35459",
+        "stream": false,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Reply with only: Routing works. Verification reference 3d3196ebc6d1"
+          }
+        ],
+        "max_tokens": 48
+      },
+      "response_body": {
+        "id": "chatcmpl-e87a82c9-bb9b-48b6-8867-0d6f3ddce3e4",
+        "created": 1792958764,
+        "model": "qa-cost-35459",
+        "object": "chat.completion",
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "message": {
+              "content": "Routing works. Verification reference 3d3196ebc6d1",
+              "role": "assistant"
+            }
+          }
+        ],
+        "usage": {
+          "completion_tokens": 18,
+          "prompt_tokens": 33,
+          "total_tokens": 51
+        }
+      },
+      "headers": {
+        "x-litellm-call-id": "7b9e08d4-1344-4fdd-bc91-3dab3bee2187",
+        "x-litellm-model-id": "qa-cost-35459-deployment",
+        "x-litellm-model-name": "ollama_chat/qa-qwen3.5-0.8b",
+        "x-litellm-model-api-base": "http://127.0.0.1:11434"
+      },
+      "generated_content": "Routing works. Verification reference 3d3196ebc6d1"
+    },
+    {
+      "endpoint": "/v1/chat/completions",
+      "stream": true,
+      "status": 200,
+      "request_body": {
+        "model": "qa-cost-35459",
+        "stream": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Reply with only: Routing works. Verification reference b2c4e732dd68"
+          }
+        ],
+        "max_tokens": 48
+      },
+      "response_body": "data: {\"id\":\"d6478b4b-68b0-4208-be26-49692651e652\",\"object\":\"chat.completion.chunk\",\"created\":1792958764,\"model\":\"qa-cost-35459\",\"choices\":[{\"index\":0,\"delta\":{\"role\":\"assistant\",\"content\":\"Routing\"}}]}\n\ndata: {\"id\":\"0c46f1ec-6f78-4ed6-a73d-45aafcf37f05\",\"object\":\"chat.completion.chunk\",\"created\":1792958764,\"model\":\"qa-cost-35459\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" works\"}}]}\n\ndata: {\"id\":\"55e36ea1-1fcb-4c34-a98a-7f52ba17fbcc\",\"object\":\"chat.completion.chunk\",\"created\":1792958764,\"model\":\"qa-cost-35459\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\".\"}}]}\n\ndata: {\"id\":\"ff4882c4-2373-4f6c-a178-0207630488c6\",\"object\":\"chat.completion.chunk\",\"created\":1792958764,\"model\":\"qa-cost-35459\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" Verification\"}}]}\n\ndata: {\"id\":\"d76fa5f5-6ccf-4bc6-bd38-91e930e85926\",\"object\":\"chat.completion.chunk\",\"created\":1792958764,\"model\":\"qa-cost-35459\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" reference\"}}]}\n\ndata: {\"id\":\"7a8919d5-d5bb-410d-92a9-f798a9d5341b\",\"object\":\"chat.completion.chunk\",\"created\":1792958764,\"model\":\"qa-cost-35459\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" b\"}}]}\n\ndata: {\"id\":\"056940c3-c4a0-4cb4-82e9-8bdc33d27d47\",\"object\":\"chat.completion.chunk\",\"created\":1792958764,\"model\":\"qa-cost-35459\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"2\"}}]}\n\ndata: {\"id\":\"3ec80283-3b9f-4205-8e52-8cecd1fd354b\",\"object\":\"chat.completion.chunk\",\"created\":1792958764,\"model\":\"qa-cost-35459\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"c\"}}]}\n\ndata: {\"id\":\"48dc9db3-a7b1-4aac-a605-d3229ccc68da\",\"object\":\"chat.completion.chunk\",\"created\":1792958764,\"model\":\"qa-cost-35459\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"4\"}}]}\n\ndata: {\"id\":\"8b3550e6-cc04-4b25-8136-d813e283c1d0\",\"object\":\"chat.completion.chunk\",\"created\":1792958764,\"model\":\"qa-cost-35459\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"e\"}}]}\n\ndata: {\"id\":\"b94a5015-9465-4f12-a853-1039da352e0c\",\"object\":\"chat.completion.chunk\",\"created\":1792958764,\"model\":\"qa-cost-35459\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"7\"}}]}\n\ndata: {\"id\":\"398140cf-356f-4475-9d80-13cb10b9fa01\",\"object\":\"chat.completion.chunk\",\"created\":1792958764,\"model\":\"qa-cost-35459\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"3\"}}]}\n\ndata: {\"id\":\"69674b15-9212-44d6-9da0-ec20fcfb2a20\",\"object\":\"chat.completion.chunk\",\"created\":1792958764,\"model\":\"qa-cost-35459\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"2\"}}]}\n\ndata: {\"id\":\"ae9ba5d6-6d6b-4955-bc13-7dab578dc2d1\",\"object\":\"chat.completion.chunk\",\"created\":1792958764,\"model\":\"qa-cost-35459\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"dd\"}}]}\n\ndata: {\"id\":\"f527e1ad-34e7-4030-a7f7-6926f141631a\",\"object\":\"chat.completion.chunk\",\"created\":1792958764,\"model\":\"qa-cost-35459\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"6\"}}]}\n\ndata: {\"id\":\"3cf253b2-8183-48c7-a7d7-ebeb423997a5\",\"object\":\"chat.completion.chunk\",\"created\":1792958764,\"model\":\"qa-cost-35459\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"8\"}}]}\n\ndata: {\"id\":\"caaa7d26-b716-4abc-ba49-a7bdd7f5cb64\",\"object\":\"chat.completion.chunk\",\"created\":1792958764,\"model\":\"qa-cost-35459\",\"choices\":[{\"index\":0,\"delta\":{},\"finish_reason\":\"stop\"}]}\n\ndata: [DONE]\n\n",
+      "headers": {
+        "x-litellm-call-id": "4cc6846e-56bf-4955-8464-aa72cc4161a6",
+        "x-litellm-model-id": "qa-cost-35459-deployment",
+        "x-litellm-model-name": "ollama_chat/qa-qwen3.5-0.8b",
+        "x-litellm-model-api-base": "http://127.0.0.1:11434"
+      },
+      "generated_content": "Routing works. Verification reference b2c4e732dd68"
+    },
+    {
+      "endpoint": "/v1/responses",
+      "stream": false,
+      "status": 200,
+      "request_body": {
+        "model": "qa-cost-35459",
+        "stream": false,
+        "input": "Reply with only: Routing works. Verification reference f830c37cdfca",
+        "max_output_tokens": 48
+      },
+      "response_body": {
+        "id": "resp_npU_r5TvoVFyqwNtqXFfu4LEJaI-HHa3JSoTJFHaBz629ppFFTWrKEhNzsp65va12Smkj07WQQRlmiDPhn0lyaVElkb813iSv1zFdaYYIkmLUhu4JJWA52oLoKBWcDXnZ6KxX0ldtUDTzpxDXYhtV7HqU-mXYk1Pm6ZvfqgiE7GpQqexmeSEuUG1mgrRwkfQ7zdT-XJKa0f7PBwHEiJhSpuaUe2SOCPIV8T1R2kQjL5uuFz14JTUCL0E8IJJfLanpv_4wkHo0uewggqLy05Sem0L58t-O887OD9ygkGD2r2Nk5OLxTTffnls75YZ-RpcDnhg8zrtKOINLpnSgt_s0_AJ4n7E-iRkAtf4l4EzWCIlOaaZecoV",
+        "created_at": 1792958766,
+        "error": null,
+        "incomplete_details": null,
+        "instructions": null,
+        "metadata": {},
+        "model": "qa-cost-35459",
+        "object": "response",
+        "output": [
+          {
+            "type": "message",
+            "id": "msg_66e36162-5ea2-4b23-9354-b3b406807256",
+            "status": "completed",
+            "role": "assistant",
+            "content": [
+              {
+                "type": "output_text",
+                "text": "Routing works. Verification reference f830c37cdfca",
+                "annotations": []
+              }
+            ],
+            "phase": null
+          }
+        ],
+        "parallel_tool_calls": false,
+        "temperature": 0.0,
+        "tool_choice": "auto",
+        "tools": [],
+        "top_p": null,
+        "max_output_tokens": 48,
+        "previous_response_id": null,
+        "reasoning": {
+          "effort": "none"
+        },
+        "status": "completed",
+        "text": {},
+        "truncation": null,
+        "usage": {
+          "input_tokens": 30,
+          "input_tokens_details": null,
+          "output_tokens": 15,
+          "output_tokens_details": null,
+          "total_tokens": 45,
+          "cost": null
+        },
+        "user": null,
+        "store": null
+      },
+      "headers": {
+        "x-litellm-call-id": "b5721a99-9fc5-41e6-8882-9dd1d2c14800",
+        "x-litellm-model-id": "qa-cost-35459-deployment",
+        "x-litellm-model-name": "ollama_chat/qa-qwen3.5-0.8b",
+        "x-litellm-model-api-base": "http://127.0.0.1:11434"
+      },
+      "generated_content": "Routing works. Verification reference f830c37cdfca"
+    },
+    {
+      "endpoint": "/v1/responses",
+      "stream": true,
+      "status": 200,
+      "request_body": {
+        "model": "qa-cost-35459",
+        "stream": true,
+        "input": "Reply with only: Routing works. Verification reference 303ef559c693",
+        "max_output_tokens": 48
+      },
+      "response_body": "data: {\"type\":\"response.created\",\"response\":{\"id\":\"resp_kHYPunNDPXBqKyzsrsPqTibs3qzYYMZt7t1KPtjjWJvgSsyE4wvZQsJGpCHEGe6_6HO56nwDdhiHRc5QcOXMkNuaAVAd2r9PYPZ07ir2rmRaIXI7ksdZRgIX4T6YwfSlVT5Ynaq1OT4hJvwFDfEqNk-HLsLgwJ4HAB81R0X83mKT-ThOcCtIltjPK5e7D3vMY5r2yGvL-qNj3FAtfAEynmiXrppW_C5nrYoE3n69qF_Vce8KANCxvYtEta69-FGmCQdOlwC9Dh7QxqVzj1LJGbm4E660dN7H1YZNyaqCoVFlMMh_RKAxGE1mbmIgo1S4NYbo0rsfpptX1YggIbQ-8fr1bCiVOu-UvYGc\",\"created_at\":1792958767,\"model\":\"qa-cost-35459\",\"object\":\"response\",\"output\":[],\"parallel_tool_calls\":true,\"temperature\":0.0,\"tool_choice\":\"auto\",\"tools\":[],\"top_p\":1.0,\"reasoning\":{\"effort\":null,\"summary\":null},\"status\":\"in_progress\",\"store\":true},\"model\":\"qa-cost-35459\"}\n\ndata: {\"type\":\"response.in_progress\",\"response\":{\"id\":\"resp_kHYPunNDPXBqKyzsrsPqTibs3qzYYMZt7t1KPtjjWJvgSsyE4wvZQsJGpCHEGe6_6HO56nwDdhiHRc5QcOXMkNuaAVAd2r9PYPZ07ir2rmRaIXI7ksdZRgIX4T6YwfSlVT5Ynaq1OT4hJvwFDfEqNk-HLsLgwJ4HAB81R0X83mKT-ThOcCtIltjPK5e7D3vMY5r2yGvL-qNj3FAtfAEynmiXrppW_C5nrYoE3n69qF_Vce8KANCxvYtEta69-FGmCQdOlwC9Dh7QxqVzj1LJGbm4E660dN7H1YZNyaqCoVFlMMh_RKAxGE1mbmIgo1S4NYbo0rsfpptX1YggIbQ-8fr1bCiVOu-UvYGc\",\"created_at\":1792958767,\"model\":\"qa-cost-35459\",\"object\":\"response\",\"output\":[],\"parallel_tool_calls\":true,\"temperature\":0.0,\"tool_choice\":\"auto\",\"tools\":[],\"top_p\":1.0,\"reasoning\":{\"effort\":null,\"summary\":null},\"status\":\"in_progress\",\"store\":true},\"model\":\"qa-cost-35459\"}\n\ndata: {\"type\":\"response.output_item.added\",\"output_index\":0,\"item\":{\"id\":\"msg_707d6fb7-4da1-4097-a8b3-14d18d9012be\",\"type\":\"message\",\"role\":\"assistant\",\"status\":\"in_progress\",\"content\":[]},\"model\":\"qa-cost-35459\"}\n\ndata: {\"type\":\"response.content_part.added\",\"item_id\":\"msg_707d6fb7-4da1-4097-a8b3-14d18d9012be\",\"output_index\":0,\"content_index\":0,\"part\":{\"type\":\"output_text\",\"text\":\"\",\"annotations\":[]},\"model\":\"qa-cost-35459\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_707d6fb7-4da1-4097-a8b3-14d18d9012be\",\"output_index\":0,\"content_index\":0,\"delta\":\"Routing\",\"model\":\"qa-cost-35459\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_707d6fb7-4da1-4097-a8b3-14d18d9012be\",\"output_index\":0,\"content_index\":0,\"delta\":\" works\",\"model\":\"qa-cost-35459\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_707d6fb7-4da1-4097-a8b3-14d18d9012be\",\"output_index\":0,\"content_index\":0,\"delta\":\".\",\"model\":\"qa-cost-35459\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_707d6fb7-4da1-4097-a8b3-14d18d9012be\",\"output_index\":0,\"content_index\":0,\"delta\":\" Verification\",\"model\":\"qa-cost-35459\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_707d6fb7-4da1-4097-a8b3-14d18d9012be\",\"output_index\":0,\"content_index\":0,\"delta\":\" reference\",\"model\":\"qa-cost-35459\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_707d6fb7-4da1-4097-a8b3-14d18d9012be\",\"output_index\":0,\"content_index\":0,\"delta\":\" \",\"model\":\"qa-cost-35459\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_707d6fb7-4da1-4097-a8b3-14d18d9012be\",\"output_index\":0,\"content_index\":0,\"delta\":\"3\",\"model\":\"qa-cost-35459\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_707d6fb7-4da1-4097-a8b3-14d18d9012be\",\"output_index\":0,\"content_index\":0,\"delta\":\"0\",\"model\":\"qa-cost-35459\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_707d6fb7-4da1-4097-a8b3-14d18d9012be\",\"output_index\":0,\"content_index\":0,\"delta\":\"3\",\"model\":\"qa-cost-35459\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_707d6fb7-4da1-4097-a8b3-14d18d9012be\",\"output_index\":0,\"content_index\":0,\"delta\":\"ef\",\"model\":\"qa-cost-35459\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_707d6fb7-4da1-4097-a8b3-14d18d9012be\",\"output_index\":0,\"content_index\":0,\"delta\":\"5\",\"model\":\"qa-cost-35459\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_707d6fb7-4da1-4097-a8b3-14d18d9012be\",\"output_index\":0,\"content_index\":0,\"delta\":\"5\",\"model\":\"qa-cost-35459\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_707d6fb7-4da1-4097-a8b3-14d18d9012be\",\"output_index\":0,\"content_index\":0,\"delta\":\"9\",\"model\":\"qa-cost-35459\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_707d6fb7-4da1-4097-a8b3-14d18d9012be\",\"output_index\":0,\"content_index\":0,\"delta\":\"c\",\"model\":\"qa-cost-35459\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_707d6fb7-4da1-4097-a8b3-14d18d9012be\",\"output_index\":0,\"content_index\":0,\"delta\":\"6\",\"model\":\"qa-cost-35459\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_707d6fb7-4da1-4097-a8b3-14d18d9012be\",\"output_index\":0,\"content_index\":0,\"delta\":\"9\",\"model\":\"qa-cost-35459\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_707d6fb7-4da1-4097-a8b3-14d18d9012be\",\"output_index\":0,\"content_index\":0,\"delta\":\"3\",\"model\":\"qa-cost-35459\"}\n\ndata: {\"type\":\"response.output_text.done\",\"item_id\":\"msg_707d6fb7-4da1-4097-a8b3-14d18d9012be\",\"output_index\":0,\"content_index\":0,\"text\":\"Routing works. Verification reference 303ef559c693\",\"model\":\"qa-cost-35459\"}\n\ndata: {\"type\":\"response.content_part.done\",\"item_id\":\"msg_707d6fb7-4da1-4097-a8b3-14d18d9012be\",\"output_index\":0,\"content_index\":0,\"part\":{\"type\":\"output_text\",\"text\":\"Routing works. Verification reference 303ef559c693\",\"annotations\":[]},\"model\":\"qa-cost-35459\"}\n\ndata: {\"type\":\"response.output_item.done\",\"output_index\":0,\"sequence_number\":1,\"item\":{\"id\":\"msg_707d6fb7-4da1-4097-a8b3-14d18d9012be\",\"status\":\"completed\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"output_text\",\"text\":\"Routing works. Verification reference 303ef559c693\",\"annotations\":[]}]},\"model\":\"qa-cost-35459\"}\n\ndata: {\"type\":\"response.completed\",\"response\":{\"id\":\"resp_kHYPunNDPXBqKyzsrsPqTibs3qzYYMZt7t1KPtjjWJvgSsyE4wvZQsJGpCHEGe6_6HO56nwDdhiHRc5QcOXMkNuaAVAd2r9PYPZ07ir2rmRaIXI7ksdZRgIX4T6YwfSlVT5Ynaq1OT4hJvwFDfEqNk-HLsLgwJ4HAB81R0X83mKT-ThOcCtIltjPK5e7D3vMY5r2yGvL-qNj3FAtfAEynmiXrppW_C5nrYoE3n69qF_Vce8KANCxvYtEta69-FGmCQdOlwC9Dh7QxqVzj1LJGbm4E660dN7H1YZNyaqCoVFlMMh_RKAxGE1mbmIgo1S4NYbo0rsfpptX1YggIbQ-8fr1bCiVOu-UvYGc\",\"created_at\":1792958767,\"metadata\":{},\"model\":\"qa-cost-35459\",\"object\":\"response\",\"output\":[{\"type\":\"message\",\"id\":\"msg_707d6fb7-4da1-4097-a8b3-14d18d9012be\",\"status\":\"completed\",\"role\":\"assistant\",\"content\":[{\"type\":\"output_text\",\"text\":\"Routing works. Verification reference 303ef559c693\",\"annotations\":[]}]}],\"parallel_tool_calls\":false,\"temperature\":0.0,\"tool_choice\":\"auto\",\"tools\":[],\"max_output_tokens\":48,\"reasoning\":{\"effort\":\"none\"},\"status\":\"completed\",\"text\":{},\"usage\":{\"input_tokens\":33,\"output_tokens\":18,\"output_tokens_details\":{\"reasoning_tokens\":0,\"text_tokens\":18},\"total_tokens\":51,\"cost\":0.00005099999999999999}},\"model\":\"qa-cost-35459\"}\n\ndata: [DONE]\n\n",
+      "headers": {
+        "x-litellm-call-id": "1b479889-d383-44c5-8d74-7d356784f6dc",
+        "x-litellm-model-id": "qa-cost-35459-deployment",
+        "x-litellm-model-name": "ollama_chat/qa-qwen3.5-0.8b"
+      },
+      "generated_content": "Routing works. Verification reference 303ef559c693"
+    },
+    {
+      "endpoint": "/v1/messages",
+      "stream": false,
+      "status": 200,
+      "request_body": {
+        "model": "qa-cost-35459",
+        "stream": false,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Reply with only: Routing works. Verification reference 50cfe0a35b84"
+          }
+        ],
+        "max_tokens": 48
+      },
+      "response_body": {
+        "id": "chatcmpl-3cb75520-af2c-4aab-a046-ce2d11363cc8",
+        "type": "message",
+        "role": "assistant",
+        "model": "qa-cost-35459",
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 33,
+          "output_tokens": 18
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "Routing works. Verification reference 50cfe0a35b84"
+          }
+        ],
+        "stop_reason": "end_turn",
+        "stop_details": null
+      },
+      "headers": {
+        "x-litellm-call-id": "7b81227e-59ec-4518-abbd-a9cc4af612cd",
+        "x-litellm-model-id": "qa-cost-35459-deployment",
+        "x-litellm-model-name": "ollama_chat/qa-qwen3.5-0.8b"
+      },
+      "generated_content": "Routing works. Verification reference 50cfe0a35b84"
+    },
+    {
+      "endpoint": "/v1/messages",
+      "stream": true,
+      "status": 200,
+      "request_body": {
+        "model": "qa-cost-35459",
+        "stream": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Reply with only: Routing works. Verification reference db29dfa0547b"
+          }
+        ],
+        "max_tokens": 48
+      },
+      "response_body": "event: message_start\ndata: {\"type\":\"message_start\",\"message\":{\"id\":\"msg_08bf0ebe-0ab9-4c36-986d-6d93edfac843\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[],\"model\":\"qa-cost-35459\",\"stop_reason\":null,\"stop_sequence\":null,\"usage\":{\"input_tokens\":0,\"output_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0}}}\n\nevent: content_block_start\ndata: {\"type\": \"content_block_start\", \"index\": 0, \"content_block\": {\"type\": \"text\", \"text\": \"\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"Routing\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \" works\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \".\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \" Verification\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \" reference\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \" db\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"2\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"9\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"dfa\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"0\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"5\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"4\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"7\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"b\"}}\n\nevent: content_block_stop\ndata: {\"type\": \"content_block_stop\", \"index\": 0}\n\nevent: message_delta\ndata: {\"type\": \"message_delta\", \"delta\": {\"stop_reason\": \"end_turn\"}, \"usage\": {\"input_tokens\": 30, \"output_tokens\": 15}}\n\nevent: message_stop\ndata: {\"type\": \"message_stop\"}\n\n",
+      "headers": {
+        "x-litellm-call-id": "1ad29c92-49ff-4e9b-bc43-336da415b35d",
+        "x-litellm-model-id": "qa-cost-35459-deployment",
+        "x-litellm-model-name": "ollama_chat/qa-qwen3.5-0.8b",
+        "x-litellm-model-api-base": "http://127.0.0.1:11434"
+      },
+      "generated_content": "Routing works. Verification reference db29dfa0547b"
+    }
+  ],
+  "model_configuration": {
+    "group": "qa-cost-35459",
+    "id": "qa-cost-35459-deployment",
+    "provider_model": "ollama_chat/qa-qwen3.5-0.8b"
+  },
+  "provider_version": {
+    "version": "0.40.11"
+  },
+  "provider_model": {
+    "name": "qa-qwen3.5-0.8b:latest",
+    "model": "qa-qwen3.5-0.8b:latest",
+    "modified_at": "2026-10-25T18:19:40.2149338Z",
+    "size": 563036247,
+    "digest": "b790a0205272c35146e957d39a04462650f001c32bfecabcb6518a00b63ce3b7",
+    "details": {
+      "parent_model": "Qwen3.5-0.8B-Q4_0.gguf",
+      "format": "gguf",
+      "family": "qwen35",
+      "families": [
+        "qwen35"
+      ],
+      "parameter_size": "752.39M",
+      "quantization_level": "Q4_0",
+      "context_length": 262144,
+      "embedding_length": 1024,
+      "runner": "llamacpp"
+    },
+    "capabilities": [
+      "tools",
+      "thinking",
+      "completion"
+    ]
+  },
+  "alias": "qa-35459-fixed-f1966b",
+  "callbacks": [
+    {
+      "at": "2026-10-25T20:06:04.369278+00:00",
+      "mode": "async",
+      "call_type": "acompletion",
+      "model": "qa-qwen3.5-0.8b",
+      "model_info_type": "dict",
+      "deployment_id": "qa-cost-35459-deployment",
+      "metadata_model_group": "qa-cost-35459",
+      "litellm_call_id": "7b9e08d4-1344-4fdd-bc91-3dab3bee2187"
+    },
+    {
+      "at": "2026-10-25T20:06:05.474024+00:00",
+      "mode": "async",
+      "call_type": "acompletion",
+      "model": "qa-qwen3.5-0.8b",
+      "model_info_type": "dict",
+      "deployment_id": "qa-cost-35459-deployment",
+      "metadata_model_group": "qa-cost-35459",
+      "litellm_call_id": "4cc6846e-56bf-4955-8464-aa72cc4161a6"
+    },
+    {
+      "at": "2026-10-25T20:06:06.493740+00:00",
+      "mode": "async",
+      "call_type": "aresponses",
+      "model": "qa-qwen3.5-0.8b",
+      "model_info_type": "dict",
+      "deployment_id": "qa-cost-35459-deployment",
+      "metadata_model_group": "qa-cost-35459",
+      "litellm_call_id": "b5721a99-9fc5-41e6-8882-9dd1d2c14800"
+    },
+    {
+      "at": "2026-10-25T20:06:08.367663+00:00",
+      "mode": "async",
+      "call_type": "aresponses",
+      "model": "qa-qwen3.5-0.8b",
+      "model_info_type": "dict",
+      "deployment_id": "qa-cost-35459-deployment",
+      "metadata_model_group": "qa-cost-35459",
+      "litellm_call_id": "1b479889-d383-44c5-8d74-7d356784f6dc"
+    },
+    {
+      "at": "2026-10-25T20:06:09.655269+00:00",
+      "mode": "async",
+      "call_type": "anthropic_messages",
+      "model": "qa-qwen3.5-0.8b",
+      "model_info_type": "dict",
+      "deployment_id": "qa-cost-35459-deployment",
+      "metadata_model_group": "qa-cost-35459",
+      "litellm_call_id": "7b81227e-59ec-4518-abbd-a9cc4af612cd"
+    },
+    {
+      "at": "2026-10-25T20:06:10.859280+00:00",
+      "mode": "async",
+      "call_type": "anthropic_messages",
+      "model": "qa-qwen3.5-0.8b",
+      "model_info_type": "dict",
+      "deployment_id": "qa-cost-35459-deployment",
+      "metadata_model_group": "qa-cost-35459",
+      "litellm_call_id": "1ad29c92-49ff-4e9b-bc43-336da415b35d"
+    }
+  ],
+  "callback_errors": [],
+  "completed_at": "2026-10-25T20:06:11.411905+00:00"
+}

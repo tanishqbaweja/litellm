@@ -1,0 +1,10 @@
+{
+  "base": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "head": "cf5082d8077212669b8cb91f2cc3c814007f02e8",
+  "branch": "litellm_fix_35459_null_model_info",
+  "files": [
+    "litellm/router_strategy/lowest_cost.py",
+    "tests/unit/router_strategy/test_lowest_cost.py"
+  ],
+  "committed_at": "2026-10-25T20:04:04.399687+00:00"
+}

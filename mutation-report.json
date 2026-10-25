@@ -1,0 +1,28 @@
+{
+  "started_at": "2026-10-25T19:51:49.704698+00:00",
+  "mutations": [
+    {
+      "name": "null-sync-metadata",
+      "returncode": 1,
+      "failed_cases": 1
+    },
+    {
+      "name": "null-async-metadata",
+      "returncode": 1,
+      "failed_cases": 1
+    },
+    {
+      "name": "skip-valid-deployments",
+      "returncode": 1,
+      "failed_cases": 5
+    },
+    {
+      "name": "attribute-unidentified-calls",
+      "returncode": 1,
+      "failed_cases": 8
+    }
+  ],
+  "source_restored_exactly": true,
+  "restored_sha256": "b21ee7f1f20e6f328a929b85141188eb25153f0af9f234f66a8bcf9c1821f766",
+  "completed_at": "2026-10-25T19:52:03.462962+00:00"
+}

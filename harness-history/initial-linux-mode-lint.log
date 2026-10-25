@@ -1,0 +1,28 @@
+make[1]: Entering directory '/opt/litellm-35459'
+uv sync --inexact --frozen --group proxy-dev --group e2e-dev
+Audited 215 packages in 386ms
+uv run --no-sync python scripts/prisma_generate_if_needed.py
+Prisma client already generated for litellm/proxy/schema.prisma (prisma 0.11.0); skipping prisma generate
+make[2]: Entering directory '/opt/litellm-35459'
+No changed litellm Python files to format-check.
+make[2]: Leaving directory '/opt/litellm-35459'
+make[2]: Entering directory '/opt/litellm-35459'
+uv run --no-sync python scripts/ruff_strict_gate.py --base "origin/main"
+FAIL: strict-rule totals grew past their merge-base count (base origin/main):
+  EXE002: total 4 over ceiling 3 (this change added 1)
+Reduce the new violations or remove an equal number elsewhere; the ceiling is the merge-base count.
+make[2]: *** [Makefile:237: lint-gate] Error 1
+make[2]: Leaving directory '/opt/litellm-35459'
+make[2]: *** Waiting for unfinished jobs....
+make[2]: Entering directory '/opt/litellm-35459'
+uv run --no-sync python scripts/check_mcp_operation_boundary.py
+MCP operation boundary: passed
+cd litellm && uv run --no-sync ruff check . && cd ..
+All checks passed!
+uv run --no-sync ruff check --config ruff-tests.toml tests
+warning: Invalid `# noqa` directive on tests/unit/proxy/common_utils/test_user_api_key_cache.py:49: expected a comma-separated list of codes (e.g., `# noqa: F401, F841`).
+All checks passed!
+make[2]: Leaving directory '/opt/litellm-35459'
+make[1]: *** [Makefile:257: lint-inner] Error 2
+make[1]: Leaving directory '/opt/litellm-35459'
+make: *** [Makefile:254: lint] Error 2

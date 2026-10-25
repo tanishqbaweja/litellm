@@ -1,0 +1,120 @@
+{
+  "reviewed_at": "2026-10-25T20:10:55.501162+00:00",
+  "reviewer": "Codex visual inspection through view_image",
+  "observations": [
+    "Desktop screenshots and sampled frames show a streamed Playground answer and the MCP add tool returning 42 on both revisions",
+    "Phone portrait chat shows the generated answer, with the same clipped Send control, partially hidden prompt, horizontally scrolling navigation and overlapping Aria control on both revisions. Enter submits the chat",
+    "The unchanged portrait MCP tool list collapses to zero-width labels. Both runs capture the limitation then rotate the touch viewport to 844x390 landscape to execute the add tool",
+    "Landscape MCP screenshots show 42, with existing header crowding, a wide desktop sidebar and horizontal scrolling. No clean portrait MCP or general mobile usability claim is made",
+    "Eight evenly sampled frames per recording were inspected using eight contact sheets. This is sampled visual inspection, not a claim of watching every video frame",
+    "This backend fix changes callback logging. Successful UI results are compatibility controls and are not visual proof of the logging correction"
+  ],
+  "screenshots": [
+    {
+      "file": "before/desktop-routed-chat.png",
+      "sha256": "38a05a6e250d74ac41ba39541619eadb9bb711464c7b6fbfa31e43cf387a67b3"
+    },
+    {
+      "file": "before/desktop-mcp-tool.png",
+      "sha256": "8f90b1c73cb4f89d79c2d5b846549e3a436f635ad10fb239dcfd9cf0b9873f39"
+    },
+    {
+      "file": "before/phone-routed-chat.png",
+      "sha256": "fa59faf755f97eb1b529b62262a91c2b60f3eb03058ca78d4190c84b43887be8"
+    },
+    {
+      "file": "before/phone-mcp-tool.png",
+      "sha256": "2f39bae81409f3afc068b51cf4a5cae748d130f2e7a3ae1490d81c9fc7581b21"
+    },
+    {
+      "file": "before/phone-mcp-portrait-layout.png",
+      "sha256": "62bf63220c5588b0ede7fe9ee33eca1477eb1194995fe01622eaa2cfedb3afd7"
+    },
+    {
+      "file": "after/desktop-routed-chat.png",
+      "sha256": "6219b123bfb004442709f881454b9a15886d496fbf0a89124a5deb394e14c4cc"
+    },
+    {
+      "file": "after/desktop-mcp-tool.png",
+      "sha256": "c75ff6443701968972ea66d649ab30e3007e33804e1d4c2dd645ae2d91b54e3d"
+    },
+    {
+      "file": "after/phone-routed-chat.png",
+      "sha256": "8d845eae32eca4ac44a3fdf4d0cdfad3d151a222294dc133d127785ef8a8378e"
+    },
+    {
+      "file": "after/phone-mcp-tool.png",
+      "sha256": "616da8c20ce01cdac3e489f7490428f5c315cc92d978623dc1b68d7b7434157f"
+    },
+    {
+      "file": "after/phone-mcp-portrait-layout.png",
+      "sha256": "62bf63220c5588b0ede7fe9ee33eca1477eb1194995fe01622eaa2cfedb3afd7"
+    }
+  ],
+  "recordings": [
+    {
+      "file": "before/desktop.webm",
+      "sha256": "43ce41b2c5033049e0ede7002a51649a3b9d281a6d73a1b88635ff503d3240a3",
+      "duration_seconds": 10.2,
+      "sampled_frames_visually_reviewed": 8,
+      "frame_contacts": [
+        {
+          "file": "visual-review/baseline-desktop-video-1.png",
+          "sha256": "0f5b5f3495b56ed5d08b55bb43009115484541f7390c746fb59481da5868adce"
+        },
+        {
+          "file": "visual-review/baseline-desktop-video-2.png",
+          "sha256": "82f8e12959da0cf88a9d306e72bbefa1791a7656643e0515f6fc6058c7e53ae8"
+        }
+      ]
+    },
+    {
+      "file": "before/phone.webm",
+      "sha256": "5e17785aa6122b753aba65c091e52fa45428774850a518ee7736db48e67a5027",
+      "duration_seconds": 9.72,
+      "sampled_frames_visually_reviewed": 8,
+      "frame_contacts": [
+        {
+          "file": "visual-review/baseline-phone-video-1.png",
+          "sha256": "bd397191f710a04c0d13247d76af694039bd49a56bfa164328c282b6804276c5"
+        },
+        {
+          "file": "visual-review/baseline-phone-video-2.png",
+          "sha256": "46465f18ed92289277022dc3d6aa151320eacbb2352f9398342e5e53dd47c5b9"
+        }
+      ]
+    },
+    {
+      "file": "after/desktop.webm",
+      "sha256": "6112a7e5473f8e4129362962706f23d62cd243b39b2fbf56b2bc35e88549131b",
+      "duration_seconds": 13.12,
+      "sampled_frames_visually_reviewed": 8,
+      "frame_contacts": [
+        {
+          "file": "visual-review/fixed-desktop-video-1.png",
+          "sha256": "3697780a1ccbf9c0a875094416410746182ae284fc68ebfd5fd87398d58e45c2"
+        },
+        {
+          "file": "visual-review/fixed-desktop-video-2.png",
+          "sha256": "0018cde9e79155a288d5189ddc05ee0f5fb0fd229d8993ab4c88e84568bb6144"
+        }
+      ]
+    },
+    {
+      "file": "after/phone.webm",
+      "sha256": "eccfbbaa2dfaf754e88486b61552720154a96d4e5e84b190a257dc4d683cea50",
+      "duration_seconds": 10.36,
+      "sampled_frames_visually_reviewed": 8,
+      "frame_contacts": [
+        {
+          "file": "visual-review/fixed-phone-video-1.png",
+          "sha256": "dc3e615cf6dc5765db1460a766b8c256a1c8cdd757651cc0c9909bf8928f4d3e"
+        },
+        {
+          "file": "visual-review/fixed-phone-video-2.png",
+          "sha256": "b7091ef32097e4e90d50a1fb51c4040a119ebbaa5e7e6ed922490e6f72ad2489"
+        }
+      ]
+    }
+  ]
+}

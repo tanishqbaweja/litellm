@@ -1,0 +1,100 @@
+{
+  "revision": "fixed",
+  "routing_strategy": "cost-based-routing",
+  "started_at": "2026-10-25T20:05:44.630568+00:00",
+  "calls": [
+    {
+      "name": "math35459-add",
+      "arguments": {
+        "a": 17,
+        "b": 25
+      },
+      "result": {
+        "meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "42",
+            "annotations": null,
+            "meta": null
+          }
+        ],
+        "structured_content": {
+          "result": 42
+        },
+        "is_error": false,
+        "result_type": "complete"
+      }
+    },
+    {
+      "name": "math35459-multiply",
+      "arguments": {
+        "a": 6,
+        "b": 7
+      },
+      "result": {
+        "meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "42",
+            "annotations": null,
+            "meta": null
+          }
+        ],
+        "structured_content": {
+          "result": 42
+        },
+        "is_error": false,
+        "result_type": "complete"
+      }
+    }
+  ],
+  "source_sha": "cf5082d8077212669b8cb91f2cc3c814007f02e8",
+  "server_info": {
+    "name": "litellm-mcp-server",
+    "title": null,
+    "version": "1.0.0",
+    "description": null,
+    "website_url": null,
+    "icons": null
+  },
+  "tool_names": [
+    "math35459-add",
+    "math35459-multiply"
+  ],
+  "callbacks": [
+    {
+      "at": "2026-10-25T20:06:01.401511+00:00",
+      "mode": "async",
+      "call_type": "list_mcp_tools",
+      "model": "MCP: list_tools",
+      "model_info_type": "NoneType",
+      "deployment_id": null,
+      "metadata_model_group": null,
+      "litellm_call_id": "1862e2f0-0d8e-40a2-9af4-dc8a70f8e3d1"
+    },
+    {
+      "at": "2026-10-25T20:06:01.565640+00:00",
+      "mode": "async",
+      "call_type": "call_mcp_tool",
+      "model": "MCP: math35459-add",
+      "model_info_type": "NoneType",
+      "deployment_id": null,
+      "metadata_model_group": null,
+      "litellm_call_id": "91a0a95b-5b02-42aa-8863-1fd9b5587da0"
+    },
+    {
+      "at": "2026-10-25T20:06:01.674568+00:00",
+      "mode": "async",
+      "call_type": "call_mcp_tool",
+      "model": "MCP: math35459-multiply",
+      "model_info_type": "NoneType",
+      "deployment_id": null,
+      "metadata_model_group": null,
+      "litellm_call_id": "7a9c19fa-7dbc-4bb9-91d4-95696adf67ad"
+    }
+  ],
+  "callback_errors": [],
+  "completed_at": "2026-10-25T20:06:02.261596+00:00"
+}

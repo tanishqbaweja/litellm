@@ -1,0 +1,77 @@
+{
+  "revision": "fixed",
+  "source": "/opt/litellm-35459",
+  "sha": "cf5082d8077212669b8cb91f2cc3c814007f02e8",
+  "started_at": "2026-10-25T20:05:05.486138+00:00",
+  "calls": [
+    {
+      "kind": "direct-sync-completion",
+      "content": "Routing works.",
+      "usage": {
+        "completion_tokens": 4,
+        "prompt_tokens": 19,
+        "total_tokens": 23,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      }
+    },
+    {
+      "kind": "direct-async-completion",
+      "content": "Async routing works.",
+      "usage": {
+        "completion_tokens": 5,
+        "prompt_tokens": 20,
+        "total_tokens": 25,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      }
+    },
+    {
+      "kind": "router-async-control",
+      "content": "Routed control works.",
+      "usage": {
+        "completion_tokens": 6,
+        "prompt_tokens": 21,
+        "total_tokens": 27,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      }
+    }
+  ],
+  "errors": [],
+  "callback_metadata": [
+    {
+      "mode": "sync",
+      "model": "qa-qwen3.5-0.8b",
+      "model_info_type": "NoneType",
+      "deployment_id": null,
+      "metadata_model_group": null
+    },
+    {
+      "mode": "async",
+      "model": "qa-qwen3.5-0.8b",
+      "model_info_type": "NoneType",
+      "deployment_id": null,
+      "metadata_model_group": null
+    },
+    {
+      "mode": "async",
+      "model": "qa-qwen3.5-0.8b",
+      "model_info_type": "dict",
+      "deployment_id": "qa-cost-35459-deployment",
+      "metadata_model_group": "qa-cost-35459"
+    }
+  ],
+  "provider_version": {
+    "version": "0.40.11"
+  },
+  "routed_counters": {
+    "qa-cost-35459-deployment": {
+      "2026-10-25-20-05": {
+        "tpm": 27,
+        "rpm": 1
+      }
+    }
+  },
+  "completed_at": "2026-10-25T20:05:42.864750+00:00"
+}

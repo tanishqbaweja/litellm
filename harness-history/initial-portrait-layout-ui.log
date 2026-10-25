@@ -1,0 +1,13 @@
+Error: expect(locator).toBeVisible() failed
+
+Locator: getByRole('heading', { name: /^(?:math35459-)?add$/ }).filter({ visible: true }).first()
+Expected: visible
+Timeout: 30000ms
+Error: element(s) not found
+
+Call log:
+  - Expect "to.be.visible" with timeout 30000ms
+  - waiting for getByRole('heading', { name: /^(?:math35459-)?add$/ }).filter({ visible: true }).first()
+
+    at Proxy.<anonymous> (/repo/tests/e2e/ui/node_modules/playwright/lib/matchers/expect.js:213:24)
+    at main (/qa/litellm-35459/qa.cjs:115:28)

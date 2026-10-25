@@ -1,0 +1,81 @@
+FFFFFFFF...........                                                      [100%]
+=================================== FAILURES ===================================
+_ test_success_without_a_deployment_id_skips_cost_accounting_without_errors[omitted-sync] _
+tests/unit/router_strategy/test_lowest_cost.py:68: in test_success_without_a_deployment_id_skips_cost_accounting_without_errors
+    assert cache.get_cache(key=COST_KEY) is None
+E   AssertionError: assert {'unidentified': {'2026-10-25-19-52': {'rpm': 1, 'tpm': 12}}} is None
+E    +  where {'unidentified': {'2026-10-25-19-52': {'rpm': 1, 'tpm': 12}}} = get_cache(key='cost_map:gpt-5.5-pool')
+E    +    where get_cache = <litellm.caching.dual_cache.DualCache object at 0x79b82083ac90>.get_cache
+_ test_success_without_a_deployment_id_skips_cost_accounting_without_errors[omitted-async] _
+tests/unit/router_strategy/test_lowest_cost.py:68: in test_success_without_a_deployment_id_skips_cost_accounting_without_errors
+    assert cache.get_cache(key=COST_KEY) is None
+E   AssertionError: assert {'unidentified': {'2026-10-25-19-52': {'rpm': 1, 'tpm': 12}}} is None
+E    +  where {'unidentified': {'2026-10-25-19-52': {'rpm': 1, 'tpm': 12}}} = get_cache(key='cost_map:gpt-5.5-pool')
+E    +    where get_cache = <litellm.caching.dual_cache.DualCache object at 0x79b81fcb5e50>.get_cache
+_ test_success_without_a_deployment_id_skips_cost_accounting_without_errors[null-sync] _
+tests/unit/router_strategy/test_lowest_cost.py:68: in test_success_without_a_deployment_id_skips_cost_accounting_without_errors
+    assert cache.get_cache(key=COST_KEY) is None
+E   AssertionError: assert {'unidentified': {'2026-10-25-19-52': {'rpm': 1, 'tpm': 12}}} is None
+E    +  where {'unidentified': {'2026-10-25-19-52': {'rpm': 1, 'tpm': 12}}} = get_cache(key='cost_map:gpt-5.5-pool')
+E    +    where get_cache = <litellm.caching.dual_cache.DualCache object at 0x79b81fcb6ba0>.get_cache
+_ test_success_without_a_deployment_id_skips_cost_accounting_without_errors[null-async] _
+tests/unit/router_strategy/test_lowest_cost.py:68: in test_success_without_a_deployment_id_skips_cost_accounting_without_errors
+    assert cache.get_cache(key=COST_KEY) is None
+E   AssertionError: assert {'unidentified': {'2026-10-25-19-52': {'rpm': 1, 'tpm': 12}}} is None
+E    +  where {'unidentified': {'2026-10-25-19-52': {'rpm': 1, 'tpm': 12}}} = get_cache(key='cost_map:gpt-5.5-pool')
+E    +    where get_cache = <litellm.caching.dual_cache.DualCache object at 0x79b81fcb7c20>.get_cache
+_ test_success_without_a_deployment_id_skips_cost_accounting_without_errors[empty-sync] _
+tests/unit/router_strategy/test_lowest_cost.py:68: in test_success_without_a_deployment_id_skips_cost_accounting_without_errors
+    assert cache.get_cache(key=COST_KEY) is None
+E   AssertionError: assert {'unidentified': {'2026-10-25-19-52': {'rpm': 1, 'tpm': 12}}} is None
+E    +  where {'unidentified': {'2026-10-25-19-52': {'rpm': 1, 'tpm': 12}}} = get_cache(key='cost_map:gpt-5.5-pool')
+E    +    where get_cache = <litellm.caching.dual_cache.DualCache object at 0x79b81f7f40e0>.get_cache
+_ test_success_without_a_deployment_id_skips_cost_accounting_without_errors[empty-async] _
+tests/unit/router_strategy/test_lowest_cost.py:68: in test_success_without_a_deployment_id_skips_cost_accounting_without_errors
+    assert cache.get_cache(key=COST_KEY) is None
+E   AssertionError: assert {'unidentified': {'2026-10-25-19-52': {'rpm': 1, 'tpm': 12}}} is None
+E    +  where {'unidentified': {'2026-10-25-19-52': {'rpm': 1, 'tpm': 12}}} = get_cache(key='cost_map:gpt-5.5-pool')
+E    +    where get_cache = <litellm.caching.dual_cache.DualCache object at 0x79b81fcb5a90>.get_cache
+_ test_success_without_a_deployment_id_skips_cost_accounting_without_errors[null-id-sync] _
+tests/unit/router_strategy/test_lowest_cost.py:68: in test_success_without_a_deployment_id_skips_cost_accounting_without_errors
+    assert cache.get_cache(key=COST_KEY) is None
+E   AssertionError: assert {'unidentified': {'2026-10-25-19-52': {'rpm': 1, 'tpm': 12}}} is None
+E    +  where {'unidentified': {'2026-10-25-19-52': {'rpm': 1, 'tpm': 12}}} = get_cache(key='cost_map:gpt-5.5-pool')
+E    +    where get_cache = <litellm.caching.dual_cache.DualCache object at 0x79b81feed8e0>.get_cache
+_ test_success_without_a_deployment_id_skips_cost_accounting_without_errors[null-id-async] _
+tests/unit/router_strategy/test_lowest_cost.py:68: in test_success_without_a_deployment_id_skips_cost_accounting_without_errors
+    assert cache.get_cache(key=COST_KEY) is None
+E   AssertionError: assert {'unidentified': {'2026-10-25-19-52': {'rpm': 1, 'tpm': 12}}} is None
+E    +  where {'unidentified': {'2026-10-25-19-52': {'rpm': 1, 'tpm': 12}}} = get_cache(key='cost_map:gpt-5.5-pool')
+E    +    where get_cache = <litellm.caching.dual_cache.DualCache object at 0x79b81fecb680>.get_cache
+=============================== warnings summary ===============================
+tests/unit/router_strategy/test_lowest_cost.py::test_success_without_a_deployment_id_skips_cost_accounting_without_errors[omitted-sync]
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'index' on TypedDict class 'ChatCompletionThinkingBlock' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/router_strategy/test_lowest_cost.py::test_success_without_a_deployment_id_skips_cost_accounting_without_errors[omitted-sync]
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'index' on TypedDict class 'ChatCompletionRedactedThinkingBlock' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/router_strategy/test_lowest_cost.py::test_success_without_a_deployment_id_skips_cost_accounting_without_errors[omitted-sync]
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'summary' on TypedDict class 'ChatCompletionReasoningItem' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/router_strategy/test_lowest_cost.py::test_get_available_endpoints_tpm_rpm_check_async[1]
+tests/unit/router_strategy/test_lowest_cost.py::test_get_available_endpoints_tpm_rpm_check_async[5]
+  /opt/litellm-35459/tests/unit/router_strategy/test_lowest_cost.py:391: RuntimeWarning: coroutine 'sleep' was never awaited
+    asyncio.sleep(3)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/unit/router_strategy/test_lowest_cost.py::test_success_without_a_deployment_id_skips_cost_accounting_without_errors[omitted-sync]
+FAILED tests/unit/router_strategy/test_lowest_cost.py::test_success_without_a_deployment_id_skips_cost_accounting_without_errors[omitted-async]
+FAILED tests/unit/router_strategy/test_lowest_cost.py::test_success_without_a_deployment_id_skips_cost_accounting_without_errors[null-sync]
+FAILED tests/unit/router_strategy/test_lowest_cost.py::test_success_without_a_deployment_id_skips_cost_accounting_without_errors[null-async]
+FAILED tests/unit/router_strategy/test_lowest_cost.py::test_success_without_a_deployment_id_skips_cost_accounting_without_errors[empty-sync]
+FAILED tests/unit/router_strategy/test_lowest_cost.py::test_success_without_a_deployment_id_skips_cost_accounting_without_errors[empty-async]
+FAILED tests/unit/router_strategy/test_lowest_cost.py::test_success_without_a_deployment_id_skips_cost_accounting_without_errors[null-id-sync]
+FAILED tests/unit/router_strategy/test_lowest_cost.py::test_success_without_a_deployment_id_skips_cost_accounting_without_errors[null-id-async]
+8 failed, 11 passed, 5 warnings in 0.57s

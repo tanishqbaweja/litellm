@@ -1,0 +1,15 @@
+{
+  "started_at": "2026-10-25T20:04:05.973365+00:00",
+  "files": [
+    "tests/unit/proxy/pass_through_endpoints/test_pass_through_endpoints.py",
+    "tests/unit/router_strategy/test_lowest_cost.py",
+    "tests/unit/router_strategy/test_router_routing_groups.py",
+    "tests/unit/router_strategy/test_router_routing_plugins.py",
+    "tests/unit/router_utils/test_cooldown_handlers.py",
+    "tests/unit/test_router/test_router.py",
+    "tests/unit/test_router/test_router_helper_utils.py",
+    "tests/unit/types/test_litellm_params.py"
+  ],
+  "returncode": 0,
+  "completed_at": "2026-10-25T20:13:40.186273+00:00"
+}

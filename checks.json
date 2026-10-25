@@ -1,0 +1,138 @@
+{
+  "recorded_at": "2026-10-25T20:14:27.138983+00:00",
+  "base_sha": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "fixed_sha": "cf5082d8077212669b8cb91f2cc3c814007f02e8",
+  "results": {
+    "baseline": {
+      "source_sha": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+      "sdk_calls": 3,
+      "sdk_callback_errors": 2,
+      "routed_counters": {
+        "rpm": 1,
+        "tpm": 27
+      },
+      "mcp_list_and_tool_calls": 3,
+      "mcp_callback_errors": 3,
+      "proxy_statuses": {
+        "200": 6
+      },
+      "browser": [
+        {
+          "viewport": "desktop",
+          "actions": 2,
+          "successful_actions": 2,
+          "callback_errors": 1,
+          "page_errors": 0,
+          "console_errors": 61,
+          "static_404_responses": 61
+        },
+        {
+          "viewport": "phone",
+          "actions": 2,
+          "successful_actions": 2,
+          "callback_errors": 1,
+          "page_errors": 0,
+          "console_errors": 17,
+          "static_404_responses": 17
+        }
+      ]
+    },
+    "fixed": {
+      "source_sha": "cf5082d8077212669b8cb91f2cc3c814007f02e8",
+      "sdk_calls": 3,
+      "sdk_callback_errors": 0,
+      "routed_counters": {
+        "rpm": 1,
+        "tpm": 27
+      },
+      "mcp_list_and_tool_calls": 3,
+      "mcp_callback_errors": 0,
+      "proxy_statuses": {
+        "200": 6
+      },
+      "browser": [
+        {
+          "viewport": "desktop",
+          "actions": 2,
+          "successful_actions": 2,
+          "callback_errors": 0,
+          "page_errors": 0,
+          "console_errors": 61,
+          "static_404_responses": 61
+        },
+        {
+          "viewport": "phone",
+          "actions": 2,
+          "successful_actions": 2,
+          "callback_errors": 0,
+          "page_errors": 0,
+          "console_errors": 17,
+          "static_404_responses": 17
+        }
+      ]
+    }
+  },
+  "tests_before": "2 failed, 6 passed, 11 deselected",
+  "tests_focused_after": "19 passed, 5 warnings",
+  "tests_after": "3942 passed, 337 warnings in 549.26s",
+  "test_files": [
+    "tests/unit/proxy/pass_through_endpoints/test_pass_through_endpoints.py",
+    "tests/unit/router_strategy/test_lowest_cost.py",
+    "tests/unit/router_strategy/test_router_routing_groups.py",
+    "tests/unit/router_strategy/test_router_routing_plugins.py",
+    "tests/unit/router_utils/test_cooldown_handlers.py",
+    "tests/unit/test_router/test_router.py",
+    "tests/unit/test_router/test_router_helper_utils.py",
+    "tests/unit/types/test_litellm_params.py"
+  ],
+  "mutations_rejected": 4,
+  "production_formatter": "make format: 2932 files unchanged",
+  "lint": "make lint BASE_REF=origin/main LINT_JOBS=2: exit 0",
+  "type_budget": "105900 existing diagnostics, each rule within its main ceiling",
+  "e2e_types": "0 errors, 0 warnings, 0 notes",
+  "browser": "145.0.7632.6",
+  "playwright": "1.58.1",
+  "postgresql": "16.10",
+  "python": "3.12.13",
+  "ollama": "0.40.11",
+  "mcp_sdk": "2.3.0",
+  "mocked_live_requests": 0,
+  "unchanged_ui_export_source": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "new_failed_browser_paths": [],
+  "cleanup": {
+    "proxy_pid": 16774,
+    "proxy_stopped": true,
+    "math_pid": 9795,
+    "math_stopped": true,
+    "math_process_state": "Z",
+    "math_process_reaped": false,
+    "owned_ports_closed": [
+      41475,
+      41476
+    ],
+    "checked_at": "2026-10-25T20:10:55.999056+00:00",
+    "keys": {
+      "baseline": {
+        "alias": "qa-35459-baseline-9b5f9c",
+        "status": 200
+      },
+      "fixed": {
+        "alias": "qa-35459-fixed-f1966b",
+        "status": 200
+      }
+    }
+  },
+  "limitations": [
+    "Successful requests already return results on main. The corrected failure is a caught cost-routing callback exception",
+    "Calls without a deployment ID intentionally do not update deployment routing counters",
+    "The current-main reproduction uses cost-based-routing, not the strategy named in the older issue title",
+    "Local CPU Qwen3.5-0.8B Q4_0 through Ollama, with no external paid-provider, performance or model-quality claim",
+    "The unchanged phone portrait MCP tool list collapses. Both runs rotate to 844x390 landscape to execute the tool, with existing header crowding and horizontal scrolling",
+    "Phone chat uses Enter because the existing layout clips the Send control, partly hides the prompt and overlaps the footer with Aria",
+    "The identical static-prefetch/runtime-config 404 paths and counts remain, 61 desktop and 17 phone per revision",
+    "SDK logs retain unrelated custom-pricing cache-field warnings, so this is not a globally clean-log claim",
+    "The initial broader run lacked the optional semantic-router dependency. Its locked 0.1.15 extra was installed, and all eight files were rerun",
+    "MCP client and fixture setup was corrected for the installed official 2.3.0 SDK before completed before/after runs",
+    "No frontend source change or standalone frontend build is claimed for this backend-only fix"
+  ]
+}

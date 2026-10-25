@@ -1,0 +1,478 @@
+........................................................................ [  1%]
+................................................................20:04:36 - LiteLLM Router:ERROR: lowest_tpm_rpm.py:146 - litellm.router_strategy.lowest_tpm_rpm.py::async_log_success_event(): Exception occured - 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/opt/litellm-35459/litellm/router_strategy/lowest_tpm_rpm.py", line 112, in async_log_success_event
+    total_tokens: Final = response_obj["usage"]["total_tokens"]
+                          ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+.......20:04:36 - LiteLLM Router:ERROR: lowest_tpm_rpm.py:146 - litellm.router_strategy.lowest_tpm_rpm.py::async_log_success_event(): Exception occured - 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/opt/litellm-35459/litellm/router_strategy/lowest_tpm_rpm.py", line 112, in async_log_success_event
+    total_tokens: Final = response_obj["usage"]["total_tokens"]
+                          ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+20:04:36 - LiteLLM Router:ERROR: lowest_tpm_rpm.py:146 - litellm.router_strategy.lowest_tpm_rpm.py::async_log_success_event(): Exception occured - 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/opt/litellm-35459/litellm/router_strategy/lowest_tpm_rpm.py", line 112, in async_log_success_event
+    total_tokens: Final = response_obj["usage"]["total_tokens"]
+                          ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+. [  3%]
+20:04:36 - LiteLLM Router:ERROR: lowest_tpm_rpm.py:146 - litellm.router_strategy.lowest_tpm_rpm.py::async_log_success_event(): Exception occured - 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/opt/litellm-35459/litellm/router_strategy/lowest_tpm_rpm.py", line 112, in async_log_success_event
+    total_tokens: Final = response_obj["usage"]["total_tokens"]
+                          ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+.20:04:36 - LiteLLM Router:ERROR: lowest_tpm_rpm.py:146 - litellm.router_strategy.lowest_tpm_rpm.py::async_log_success_event(): Exception occured - 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/opt/litellm-35459/litellm/router_strategy/lowest_tpm_rpm.py", line 112, in async_log_success_event
+    total_tokens: Final = response_obj["usage"]["total_tokens"]
+                          ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+....................................................................... [  5%]
+........................................................................ [  7%]
+........................................................................ [  9%]
+........................................................................ [ 10%]
+........................................................................ [ 12%]
+........................................................................ [ 14%]
+........................................................................ [ 16%]
+........................................................................ [ 18%]
+........................................................................ [ 20%]
+........................................................................ [ 21%]
+........................................................................ [ 23%]
+........................................................................ [ 25%]
+........................................................................ [ 27%]
+........................................................................ [ 29%]
+........................................................................ [ 31%]
+........................................................................ [ 32%]
+........................................................................ [ 34%]
+........................................................................ [ 36%]
+........................................................................ [ 38%]
+........................................................................ [ 40%]
+........................................................................ [ 42%]
+........................................................................ [ 43%]
+........................................................................ [ 45%]
+........................................................................ [ 47%]
+........................................................................ [ 49%]
+........................................................................ [ 51%]
+........................................................................ [ 52%]
+........................................................................ [ 54%]
+........................................................................ [ 56%]
+........................................................................ [ 58%]
+........................................................................ [ 60%]
+........................................................................ [ 62%]
+........................................................................ [ 63%]
+........................................................................ [ 65%]
+..20:09:01 - LiteLLM:ERROR: logging_worker.py:205 - LoggingWorker error: argument of type 'coroutine' is not iterable
+Traceback (most recent call last):
+  File "/opt/litellm-35459/litellm/litellm_core_utils/logging_worker.py", line 198, in _process_log_task
+    await asyncio.wait_for(callback_task, timeout=self.timeout)
+  File "/opt/uv-python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/opt/litellm-35459/litellm/proxy/pass_through_endpoints/success_handler.py", line 486, in pass_through_async_success_handler
+    normalized_llm_passthrough_logging_payload: Final = self.normalize_llm_passthrough_logging_payload(
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/litellm-35459/litellm/proxy/pass_through_endpoints/success_handler.py", line 204, in normalize_llm_passthrough_logging_payload
+    AnthropicPassthroughLoggingHandler.anthropic_passthrough_handler(
+  File "/opt/litellm-35459/litellm/proxy/pass_through_endpoints/llm_provider_handlers/anthropic_passthrough_logging_handler.py", line 131, in anthropic_passthrough_handler
+    litellm_model_response: Final[ModelResponse] = anthropic_config().transform_response(
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/litellm-35459/litellm/llms/anthropic/chat/transformation.py", line 3148, in transform_response
+    model_response = self.transform_parsed_response(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/litellm-35459/litellm/llms/anthropic/chat/transformation.py", line 2985, in transform_parsed_response
+    if "error" in completion_response:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'coroutine' is not iterable
+.20:09:01 - LiteLLM:ERROR: logging_worker.py:205 - LoggingWorker error: argument of type 'coroutine' is not iterable
+Traceback (most recent call last):
+  File "/opt/litellm-35459/litellm/litellm_core_utils/logging_worker.py", line 198, in _process_log_task
+    await asyncio.wait_for(callback_task, timeout=self.timeout)
+  File "/opt/uv-python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/opt/litellm-35459/litellm/proxy/pass_through_endpoints/success_handler.py", line 486, in pass_through_async_success_handler
+    normalized_llm_passthrough_logging_payload: Final = self.normalize_llm_passthrough_logging_payload(
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/litellm-35459/litellm/proxy/pass_through_endpoints/success_handler.py", line 204, in normalize_llm_passthrough_logging_payload
+    AnthropicPassthroughLoggingHandler.anthropic_passthrough_handler(
+  File "/opt/litellm-35459/litellm/proxy/pass_through_endpoints/llm_provider_handlers/anthropic_passthrough_logging_handler.py", line 131, in anthropic_passthrough_handler
+    litellm_model_response: Final[ModelResponse] = anthropic_config().transform_response(
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/litellm-35459/litellm/llms/anthropic/chat/transformation.py", line 3148, in transform_response
+    model_response = self.transform_parsed_response(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/litellm-35459/litellm/llms/anthropic/chat/transformation.py", line 2985, in transform_parsed_response
+    if "error" in completion_response:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'coroutine' is not iterable
+.................20:09:02 - LiteLLM Proxy:WARNING: openai_passthrough_logging_handler.py:702 - Failed to build complete response from OpenAI streaming chunks
+....20:09:02 - LiteLLM:ERROR: langfuse_sdk.py:752 - Langfuse rejected an export to https://cloud.langfuse.com/api/public/otel/v1/traces with HTTP 401
+......................................20:09:05 - LiteLLM:WARNING: langfuse_sdk.py:760 - Langfuse export to https://langfuse.example.test/api/public/otel/v1/traces raised [Errno -2] Name or service not known
+.......... [ 67%]
+........................................................................ [ 69%]
+........................................................................ [ 71%]
+........................................................................ [ 73%]
+........................................................................ [ 74%]
+........................................................................ [ 76%]
+........................................................................ [ 78%]
+........................................................................ [ 80%]
+........................................................................ [ 82%]
+........................................................................ [ 84%]
+........................................................................ [ 85%]
+........................................................................ [ 87%]
+........................................................................ [ 89%]
+........................................................................ [ 91%]
+........................................................................ [ 93%]
+........................................................................ [ 94%]
+........................................................................ [ 96%]
+........................................................................ [ 98%]
+......................................................                   [100%]
+=============================== warnings summary ===============================
+tests/unit/test_router/test_router.py:24103
+  /opt/litellm-35459/tests/unit/test_router/test_router.py:24103: PytestUnknownMarkWarning: Unknown pytest.mark.serial - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
+    @pytest.mark.serial
+
+../litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480
+tests/unit/router_utils/test_cooldown_handlers.py::TestTeamModelCooldownAlternatives::test_429_on_only_team_deployment_keeps_single_deployment_exemption
+tests/unit/test_router/test_router.py::TestPreRoutingTierDrivesFallbacks::test_a_caller_cannot_pick_the_chain_by_sending_the_selection
+tests/unit/types/test_litellm_params.py::test_every_owned_leaf_accepts_a_strict_reader_shaped_sample[PromptOptions-]
+tests/unit/test_router/test_router.py::TestAutoRouterCompressionDecoupling::test_model_side_compression_alone_leaves_routing_uncompressed
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'index' on TypedDict class 'ChatCompletionThinkingBlock' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+../litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480
+tests/unit/router_utils/test_cooldown_handlers.py::TestTeamModelCooldownAlternatives::test_429_on_only_team_deployment_keeps_single_deployment_exemption
+tests/unit/test_router/test_router.py::TestPreRoutingTierDrivesFallbacks::test_a_caller_cannot_pick_the_chain_by_sending_the_selection
+tests/unit/types/test_litellm_params.py::test_every_owned_leaf_accepts_a_strict_reader_shaped_sample[PromptOptions-]
+tests/unit/test_router/test_router.py::TestAutoRouterCompressionDecoupling::test_model_side_compression_alone_leaves_routing_uncompressed
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'index' on TypedDict class 'ChatCompletionRedactedThinkingBlock' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+../litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480
+tests/unit/router_utils/test_cooldown_handlers.py::TestTeamModelCooldownAlternatives::test_429_on_only_team_deployment_keeps_single_deployment_exemption
+tests/unit/test_router/test_router.py::TestPreRoutingTierDrivesFallbacks::test_a_caller_cannot_pick_the_chain_by_sending_the_selection
+tests/unit/types/test_litellm_params.py::test_every_owned_leaf_accepts_a_strict_reader_shaped_sample[PromptOptions-]
+tests/unit/test_router/test_router.py::TestAutoRouterCompressionDecoupling::test_model_side_compression_alone_leaves_routing_uncompressed
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'summary' on TypedDict class 'ChatCompletionReasoningItem' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/test_router/test_router.py::TestPreRoutingTierDrivesFallbacks::test_a_caller_cannot_pick_the_chain_by_sending_the_selection
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'device_code', 'user_code', 'verification_uri' on TypedDict class '_DeviceCode' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/test_router/test_router.py::TestPreRoutingTierDrivesFallbacks::test_a_caller_cannot_pick_the_chain_by_sending_the_selection
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'access_token', 'error' on TypedDict class '_AccessTokenPoll' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/test_router/test_router.py::TestPreRoutingTierDrivesFallbacks::test_a_caller_cannot_pick_the_chain_by_sending_the_selection
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'token', 'expires_at', 'endpoints' on TypedDict class '_CopilotTokenPayload' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/test_router/test_router.py::TestPreRoutingTierDrivesFallbacks::test_a_caller_cannot_pick_the_chain_by_sending_the_selection
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'device_code', 'user_code', 'verification_uri', 'expires_in', 'interval' on TypedDict class '_DeviceCodePayload' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/test_router/test_router.py::TestPreRoutingTierDrivesFallbacks::test_a_caller_cannot_pick_the_chain_by_sending_the_selection
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'access_token', 'error', 'error_description', 'interval' on TypedDict class '_AccessTokenPollPayload' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/test_router/test_router.py::TestPreRoutingTierDrivesFallbacks::test_a_caller_cannot_pick_the_chain_by_sending_the_selection
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'login' on TypedDict class '_GithubUserPayload' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/test_router/test_router.py::TestPreRoutingTierDrivesFallbacks::test_a_caller_cannot_pick_the_chain_by_sending_the_selection
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'api' on TypedDict class '_CopilotEndpointsPayload' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/test_router/test_router.py::TestPreRoutingTierDrivesFallbacks::test_a_chain_keyed_on_the_router_name_is_not_used
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'probabilities', 'threshold', 'predicted_tier', 'request_type' on TypedDict class 'StandardLoggingHeuristicV2Forecast' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/test_router/test_router.py::TestPreRoutingTierDrivesFallbacks::test_a_chain_keyed_on_the_router_name_is_not_used
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'router_type', 'router_config_id', 'router_config_updated_at', 'router_config_fingerprint', 'classifier_failure_reason', 'classifier_error_type', 'classifier_probabilities', 'classifier_confidence', 'heuristic_v2_forecast', 'classifier_calibrated_p_solve', 'classifier_calibration_version', 'classifier_efficient_p_solve', 'classifier_capable_p_solve', 'classifier_calibrated_efficient_p_solve', 'classifier_calibrated_capable_p_solve', 'classifier_max_quality_gap', 'classifier_prompt_version' on TypedDict class 'StandardLoggingRoutingDecision' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/test_router/test_router.py: 16 warnings
+  /opt/litellm-35459/litellm/proxy/auth/auth_checks.py:3557: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.13/migration/
+    _response: Final = LiteLLM_TeamTableCachedObj.model_validate(response.dict())
+
+tests/unit/test_router/test_router.py::TestMemberAutoRouterInference::test_access_group_grants_are_cached_and_revoked[key]
+tests/unit/test_router/test_router.py::TestMemberAutoRouterInference::test_access_group_grants_are_cached_and_revoked[key]
+tests/unit/test_router/test_router.py::TestMemberAutoRouterInference::test_access_group_grants_are_cached_and_revoked[team]
+tests/unit/test_router/test_router.py::TestMemberAutoRouterInference::test_access_group_grants_are_cached_and_revoked[team]
+  /opt/litellm-35459/litellm/proxy/auth/auth_checks.py:3755: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.13/migration/
+    _response: Final = LiteLLM_AccessGroupTable.model_validate(response.dict())
+
+tests/unit/test_router/test_router.py: 30 warnings
+tests/unit/test_router/test_router_helper_utils.py: 2 warnings
+  /opt/litellm-35459/litellm/cost_calculator.py:3065: PydanticDeprecatedSince211: Accessing the 'model_computed_fields' attribute on the instance is deprecated. Instead, you should access this attribute from the model class. Deprecated in Pydantic V2.11 to be removed in V3.0.
+    return _ATTRIBUTE_VALUE.validate_python(getattr(obj, name))
+
+tests/unit/test_router/test_router.py: 30 warnings
+tests/unit/test_router/test_router_helper_utils.py: 2 warnings
+  /opt/litellm-35459/litellm/cost_calculator.py:3133: PydanticDeprecatedSince211: Accessing the 'model_computed_fields' attribute on the instance is deprecated. Instead, you should access this attribute from the model class. Deprecated in Pydantic V2.11 to be removed in V3.0.
+    current_val = getattr(combined, attr, 0)
+
+tests/unit/test_router/test_router.py: 30 warnings
+tests/unit/test_router/test_router_helper_utils.py: 2 warnings
+  /opt/litellm-35459/litellm/cost_calculator.py:3134: PydanticDeprecatedSince211: Accessing the 'model_computed_fields' attribute on the instance is deprecated. Instead, you should access this attribute from the model class. Deprecated in Pydantic V2.11 to be removed in V3.0.
+    new_val = getattr(usage, attr, 0)
+
+tests/unit/test_router/test_router.py: 30 warnings
+tests/unit/test_router/test_router_helper_utils.py: 2 warnings
+  /opt/litellm-35459/litellm/cost_calculator.py:3065: PydanticDeprecatedSince211: Accessing the 'model_fields' attribute on the instance is deprecated. Instead, you should access this attribute from the model class. Deprecated in Pydantic V2.11 to be removed in V3.0.
+    return _ATTRIBUTE_VALUE.validate_python(getattr(obj, name))
+
+tests/unit/test_router/test_router.py: 30 warnings
+tests/unit/test_router/test_router_helper_utils.py: 2 warnings
+  /opt/litellm-35459/litellm/cost_calculator.py:3133: PydanticDeprecatedSince211: Accessing the 'model_fields' attribute on the instance is deprecated. Instead, you should access this attribute from the model class. Deprecated in Pydantic V2.11 to be removed in V3.0.
+    current_val = getattr(combined, attr, 0)
+
+tests/unit/test_router/test_router.py: 30 warnings
+tests/unit/test_router/test_router_helper_utils.py: 2 warnings
+  /opt/litellm-35459/litellm/cost_calculator.py:3134: PydanticDeprecatedSince211: Accessing the 'model_fields' attribute on the instance is deprecated. Instead, you should access this attribute from the model class. Deprecated in Pydantic V2.11 to be removed in V3.0.
+    new_val = getattr(usage, attr, 0)
+
+tests/unit/router_strategy/test_router_routing_plugins.py::test_async_completion_with_unsupported_strategy_rejects_configured_plugins
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'content' on TypedDict class '_OllamaGenerateMessage' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/router_strategy/test_router_routing_plugins.py::test_async_completion_with_unsupported_strategy_rejects_configured_plugins
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'message', 'prompt_eval_count', 'eval_count' on TypedDict class '_OllamaGenerateResponse' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/test_router/test_router.py: 20 warnings
+tests/unit/test_router/test_router_helper_utils.py: 1 warning
+  /opt/litellm-35459/litellm/router.py:4797: PydanticDeprecatedSince20: The `copy` method is deprecated; use `model_copy` instead. See the docstring of `BaseModel.copy` for details about how to handle `include` and `exclude`. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.13/migration/
+    model_info = deployment.get("model_info", {}).copy()
+
+tests/unit/types/test_litellm_params.py::test_every_owned_leaf_accepts_a_strict_reader_shaped_sample[ProviderConnection-]
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'native_anthropic_messages_only' on TypedDict class 'ProviderSpecificHeader' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/types/test_litellm_params.py::test_every_owned_leaf_accepts_a_strict_reader_shaped_sample[ProxyRequestState-]
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'user_provider_credentials', 'user_provider_credentials_user_id' on TypedDict class 'SecretFields' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/types/test_litellm_params.py::test_every_owned_leaf_accepts_a_strict_reader_shaped_sample[RoutingOptions-]
+tests/unit/types/test_litellm_params.py::test_routing_options_accept_every_strategy_the_router_accepts[cost-based-routing]
+tests/unit/types/test_litellm_params.py::test_routing_options_accept_every_strategy_the_router_accepts[lar1]
+tests/unit/types/test_litellm_params.py::test_routing_options_accept_every_strategy_the_router_accepts[latency-based-routing]
+tests/unit/types/test_litellm_params.py::test_routing_options_accept_every_strategy_the_router_accepts[least-busy]
+tests/unit/types/test_litellm_params.py::test_routing_options_accept_every_strategy_the_router_accepts[simple-shuffle]
+tests/unit/types/test_litellm_params.py::test_routing_options_accept_every_strategy_the_router_accepts[usage-based-routing-v2]
+tests/unit/types/test_litellm_params.py::test_routing_options_accept_every_strategy_the_router_accepts[usage-based-routing]
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'responses_api_version', 'timeout_by_service_tier', 'stream_timeout_by_service_tier', 'provider_affinity_header', 'kubernetes_pod_discovery', 'cost_per_second', 'input_cost_per_text_message', 'output_cost_per_second_480p', 'output_cost_per_second_720p', 'output_cost_per_second_768p', 'output_cost_per_second_2k', 'output_cost_per_second_4k' on TypedDict class 'LiteLLMParamsTypedDict' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/router_strategy/test_lowest_cost.py::test_get_available_endpoints_tpm_rpm_check_async[1]
+tests/unit/router_strategy/test_lowest_cost.py::test_get_available_endpoints_tpm_rpm_check_async[5]
+  /opt/litellm-35459/tests/unit/router_strategy/test_lowest_cost.py:391: RuntimeWarning: coroutine 'sleep' was never awaited
+    asyncio.sleep(3)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/unit/test_router/test_router.py::TestAutoRouterCompressionDecoupling::test_model_side_compression_alone_leaves_routing_uncompressed
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'entity_type' on TypedDict class '_PresidioAnonymizeItem' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/test_router/test_router.py::TestAutoRouterCompressionDecoupling::test_model_side_compression_alone_leaves_routing_uncompressed
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'text', 'items' on TypedDict class '_PresidioAnonymizeResponse' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/test_router/test_router.py::TestAutoRouterCompressionDecoupling::test_model_side_compression_alone_leaves_routing_uncompressed
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'role', 'content' on TypedDict class 'AimRedactedMessage' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/test_router/test_router.py::TestAutoRouterCompressionDecoupling::test_model_side_compression_alone_leaves_routing_uncompressed
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'all_redacted_messages' on TypedDict class 'AimRedactedChat' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/test_router/test_router.py::TestAutoRouterCompressionDecoupling::test_model_side_compression_alone_leaves_routing_uncompressed
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'name', 'display_name', 'pattern', 'category', 'description' on TypedDict class '_PatternEntry' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/test_router/test_router.py::TestAutoRouterCompressionDecoupling::test_model_side_compression_alone_leaves_routing_uncompressed
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'patterns' on TypedDict class '_PatternsFile' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/test_router/test_router.py::TestAutoRouterCompressionDecoupling::test_model_side_compression_alone_leaves_routing_uncompressed
+tests/unit/test_router/test_router.py::TestAutoRouterCompressionDecoupling::test_model_side_compression_alone_leaves_routing_uncompressed
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'matchState' on TypedDict class '_MatchResult' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/test_router/test_router.py::TestAutoRouterCompressionDecoupling::test_model_side_compression_alone_leaves_routing_uncompressed
+tests/unit/test_router/test_router.py::TestAutoRouterCompressionDecoupling::test_model_side_compression_alone_leaves_routing_uncompressed
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'text' on TypedDict class '_DeidentifyData' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/test_router/test_router.py::TestAutoRouterCompressionDecoupling::test_model_side_compression_alone_leaves_routing_uncompressed
+tests/unit/test_router/test_router.py::TestAutoRouterCompressionDecoupling::test_model_side_compression_alone_leaves_routing_uncompressed
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'matchState', 'data' on TypedDict class '_DeidentifyResult' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/test_router/test_router.py::TestAutoRouterCompressionDecoupling::test_model_side_compression_alone_leaves_routing_uncompressed
+tests/unit/test_router/test_router.py::TestAutoRouterCompressionDecoupling::test_model_side_compression_alone_leaves_routing_uncompressed
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'inspectResult', 'deidentifyResult' on TypedDict class '_SdpResult' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/test_router/test_router.py::TestAutoRouterCompressionDecoupling::test_model_side_compression_alone_leaves_routing_uncompressed
+tests/unit/test_router/test_router.py::TestAutoRouterCompressionDecoupling::test_model_side_compression_alone_leaves_routing_uncompressed
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'raiFilterResult', 'piAndJailbreakFilterResult', 'maliciousUriFilterResult', 'csamFilterFilterResult', 'virusScanFilterResult', 'sdpFilterResult' on TypedDict class '_Filter' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/test_router/test_router.py::TestAutoRouterCompressionDecoupling::test_model_side_compression_alone_leaves_routing_uncompressed
+tests/unit/test_router/test_router.py::TestAutoRouterCompressionDecoupling::test_model_side_compression_alone_leaves_routing_uncompressed
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'filterResults' on TypedDict class '_SanitizationResult' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/test_router/test_router.py::TestAutoRouterCompressionDecoupling::test_model_side_compression_alone_leaves_routing_uncompressed
+tests/unit/test_router/test_router.py::TestAutoRouterCompressionDecoupling::test_model_side_compression_alone_leaves_routing_uncompressed
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'sanitizationResult', 'sanitizedText', 'text' on TypedDict class '_ModelArmorResponse' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/proxy/pass_through_endpoints/test_pass_through_endpoints.py: 13 warnings
+  /opt/uv-python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/copy.py:118: RuntimeWarning: coroutine 'AsyncMockMixin._execute_mock_call' was never awaited
+    def deepcopy(x, memo=None, _nil=[]):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/unit/proxy/pass_through_endpoints/test_pass_through_endpoints.py::test_pass_through_request_failure_handler
+  /opt/litellm-35459/litellm/integrations/custom_guardrail.py:191: RuntimeWarning: coroutine 'AsyncMockMixin._execute_mock_call' was never awaited
+    for key, value in data.items()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/unit/proxy/pass_through_endpoints/test_pass_through_endpoints.py::test_pass_through_request_leaves_cost_router_logger_working
+  /opt/litellm-venv/lib/python3.12/site-packages/pytest_socket/__init__.py:365: UserWarning: A test tried to use socket.socket.connect() with host "63.34.96.77" (allowed: "127.0.0.1,::1,localhost (127.0.0.1,::1)").
+    raise SocketConnectBlockedError(allowed_list, host)
+
+tests/unit/proxy/pass_through_endpoints/test_pass_through_endpoints.py::test_pass_through_request_preserves_caller_streaming_request_field[stream-true]
+  /opt/uv-python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/copy.py:118: RuntimeWarning: coroutine 'BaseRoutingStrategy.periodic_sync_in_memory_spend_with_redis' was never awaited
+    def deepcopy(x, memo=None, _nil=[]):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/unit/proxy/pass_through_endpoints/test_pass_through_endpoints.py::test_pass_through_route_pings_while_the_upstream_call_is_still_running[0.05-True]
+tests/unit/proxy/pass_through_endpoints/test_pass_through_endpoints.py::test_pass_through_route_pings_while_the_upstream_call_is_still_running[None-False]
+  /opt/litellm-35459/tests/unit/proxy/pass_through_endpoints/test_pass_through_endpoints.py:7925: RuntimeWarning: coroutine 'AsyncMockMixin._execute_mock_call' was never awaited
+    response = await endpoint_func(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/unit/test_router/test_router_helper_utils.py::test_responses_websocket_turn_counts_toward_deployment_tpm
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'type', 'event_id', 'response_id', 'item_id', 'output_index', 'call_id', 'delta' on TypedDict class 'OpenAIRealtimeFunctionCallArgumentsDelta' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/test_router/test_router_helper_utils.py::test_responses_websocket_turn_counts_toward_deployment_tpm
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'type', 'event_id', 'item_id' on TypedDict class 'OpenAIRealtimeInputAudioBufferSpeechEvent' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/test_router/test_router_helper_utils.py::test_responses_websocket_turn_counts_toward_deployment_tpm
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'type', 'event_id', 'item_id', 'content_index', 'delta' on TypedDict class 'OpenAIRealtimeInputAudioTranscriptionDelta' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/test_router/test_router_helper_utils.py::test_responses_websocket_turn_counts_toward_deployment_tpm
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'type', 'event_id', 'item_id', 'content_index', 'transcript', 'usage' on TypedDict class 'OpenAIRealtimeInputAudioTranscriptionCompleted' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/test_router/test_router_helper_utils.py::test_responses_websocket_turn_counts_toward_deployment_tpm
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'type', 'rate' on TypedDict class 'OpenAIRealtimeTranscriptionAudioFormat' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/test_router/test_router_helper_utils.py::test_responses_websocket_turn_counts_toward_deployment_tpm
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'model', 'language' on TypedDict class 'OpenAIRealtimeTranscriptionSettings' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/test_router/test_router_helper_utils.py::test_responses_websocket_turn_counts_toward_deployment_tpm
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'type' on TypedDict class 'OpenAIRealtimeServerVadTurnDetection' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/test_router/test_router_helper_utils.py::test_responses_websocket_turn_counts_toward_deployment_tpm
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'format', 'transcription', 'turn_detection' on TypedDict class 'OpenAIRealtimeTranscriptionAudioInput' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/test_router/test_router_helper_utils.py::test_responses_websocket_turn_counts_toward_deployment_tpm
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'input' on TypedDict class 'OpenAIRealtimeTranscriptionAudio' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/test_router/test_router_helper_utils.py::test_responses_websocket_turn_counts_toward_deployment_tpm
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'id', 'object', 'type', 'audio' on TypedDict class 'OpenAIRealtimeTranscriptionSession' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/test_router/test_router_helper_utils.py::test_responses_websocket_turn_counts_toward_deployment_tpm
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'type', 'event_id', 'session' on TypedDict class 'OpenAIRealtimeTranscriptionSessionCreated' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/test_router/test_router_helper_utils.py::test_responses_websocket_turn_counts_toward_deployment_tpm
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'type', 'message' on TypedDict class 'OpenAIRealtimeErrorDetail' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/test_router/test_router_helper_utils.py::test_responses_websocket_turn_counts_toward_deployment_tpm
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'type', 'error' on TypedDict class 'OpenAIRealtimeErrorEvent' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/test_router/test_router.py::TestAutoRouterSharedModelNameConnectionParams::test_routed_tier_call_goes_out_on_its_own_endpoint_and_credentials[marker_entry_first]
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'displayName', 'name', 'expireTime' on TypedDict class '_CachedContentItem' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/test_router/test_router.py::TestAutoRouterSharedModelNameConnectionParams::test_routed_tier_call_goes_out_on_its_own_endpoint_and_credentials[marker_entry_first]
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'cachedContents', 'nextPageToken' on TypedDict class '_CachedContentListBody' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/test_router/test_router.py::TestAutoRouterSharedModelNameConnectionParams::test_routed_tier_call_goes_out_on_its_own_endpoint_and_credentials[marker_entry_first]
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'totalTokenCount' on TypedDict class '_CachedContentUsageMetadata' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/test_router/test_router.py::TestAutoRouterSharedModelNameConnectionParams::test_routed_tier_call_goes_out_on_its_own_endpoint_and_credentials[marker_entry_first]
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'name', 'expireTime', 'usageMetadata' on TypedDict class '_CreatedCachedContent' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/test_router/test_router_helper_utils.py::test_router_function_with_fallbacks[True]
+  /opt/litellm-35459/litellm/router.py:7791: RuntimeWarning: coroutine 'BaseRoutingStrategy.periodic_sync_in_memory_spend_with_redis' was never awaited
+    def factory_function(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/unit/test_router/test_router.py::test_router_prompt_management_factory
+  /opt/litellm-venv/lib/python3.12/site-packages/_pytest/python.py:166: RuntimeWarning: coroutine 'Router._prompt_management_factory' was never awaited
+    result = testfunction(**testargs)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/unit/test_router/test_router.py::TestAutoRouterTraceProvenance::test_semantic_internal_failure_keeps_phase_identity_without_parent_retry_attribution[False]
+tests/unit/test_router/test_router.py::TestAutoRouterTraceProvenance::test_semantic_team_alias_keeps_registered_identity_after_routing_and_retry
+  /opt/litellm-venv/lib/python3.12/site-packages/semantic_router/route.py:153: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.13/migration/
+    data = self.dict()
+
+tests/unit/test_router/test_router.py::test_sync_completion_keeps_include_fallback_errors_off_the_wire_and_returns_the_errors
+  /opt/litellm-35459/litellm/utils.py:6361: RuntimeWarning: coroutine 'BaseRoutingStrategy.periodic_sync_in_memory_spend_with_redis' was never awaited
+    matches: Final = (
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/unit/test_router/test_router_helper_utils.py::test_sync_deployment_budget_config
+tests/unit/test_router/test_router_helper_utils.py::test_sync_deployment_budget_config_clears_removed_limits
+tests/unit/test_router/test_router_helper_utils.py::test_upsert_deployment_clears_stale_budget_config
+  /opt/litellm-35459/litellm/router_strategy/budget_limiter.py:131: RuntimeWarning: coroutine 'RouterBudgetLimiting.periodic_sync_in_memory_spend_with_redis' was never awaited
+    self._sync_task: asyncio.Task[None] = asyncio.create_task(self.periodic_sync_in_memory_spend_with_redis())
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/unit/router_strategy/test_router_routing_groups.py::test_sync_usage_based_v2_override_enforces_rpm_when_a_specific_deployment_is_requested
+  /opt/litellm-35459/tests/unit/conftest.py:325: RuntimeWarning: coroutine 'BaseRoutingStrategy.periodic_sync_in_memory_spend_with_redis' was never awaited
+    provider_model_sets: Final = tuple((models, frozenset(models)) for models in _provider_model_sets())
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/unit/proxy/pass_through_endpoints/test_pass_through_endpoints.py::test_websocket_passthrough_does_not_relay_unsendable_upstream_close[None]
+  /opt/uv-python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/copy.py:118: RuntimeWarning: coroutine 'PassThroughEndpointLogging.pass_through_async_success_handler' was never awaited
+    def deepcopy(x, memo=None, _nil=[]):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+3942 passed, 337 warnings in 549.26s (0:09:09)

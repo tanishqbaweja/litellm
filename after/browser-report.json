@@ -1,0 +1,612 @@
+{
+  "revision": "fixed",
+  "sourceSha": "cf5082d8077212669b8cb91f2cc3c814007f02e8",
+  "output": "/qa/litellm-35459/output/playwright/visual-fixed-1792958780964",
+  "startedAt": "2026-10-25T20:06:20.979Z",
+  "viewports": [
+    {
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900
+      },
+      "cases": [
+        {
+          "kind": "routed-chat",
+          "status": 200,
+          "requestBody": {
+            "model": "qa-cost-35459",
+            "litellm_trace_id": "5dc3fe7a-3723-4407-8954-8855aed513cb",
+            "messages": [
+              {
+                "role": "user",
+                "content": "Reply with only: Routing works. Verification reference 1fe0db0d-fd3"
+              }
+            ],
+            "stream": true,
+            "stream_options": {
+              "include_usage": true
+            }
+          },
+          "responseBody": "data: {\"id\":\"a4ad0531-790d-410f-b920-f95f04705628\",\"object\":\"chat.completion.chunk\",\"created\":1792958792,\"model\":\"qa-cost-35459\",\"choices\":[{\"index\":0,\"delta\":{\"role\":\"assistant\",\"content\":\"Routing\"}}]}\n\ndata: {\"id\":\"cfa68e3d-eb73-4160-920c-248c3ec81071\",\"object\":\"chat.completion.chunk\",\"created\":1792958792,\"model\":\"qa-cost-35459\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" works\"}}]}\n\ndata: {\"id\":\"0b623a5b-fcf8-4388-a4d3-b84abcacafcb\",\"object\":\"chat.completion.chunk\",\"created\":1792958792,\"model\":\"qa-cost-35459\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\".\"}}]}\n\ndata: {\"id\":\"4f015ad6-1b6f-4bf5-88d5-f7e7dbaa92b9\",\"object\":\"chat.completion.chunk\",\"created\":1792958792,\"model\":\"qa-cost-35459\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" Verification\"}}]}\n\ndata: {\"id\":\"ff0464c7-a969-4afa-95af-b6b86593b4dc\",\"object\":\"chat.completion.chunk\",\"created\":1792958792,\"model\":\"qa-cost-35459\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" reference\"}}]}\n\ndata: {\"id\":\"921f4b97-470a-47aa-a95e-95eea0bcf9db\",\"object\":\"chat.completion.chunk\",\"created\":1792958792,\"model\":\"qa-cost-35459\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" \"}}]}\n\ndata: {\"id\":\"9cf7e506-635b-466c-ac14-c6bc9c6a5d69\",\"object\":\"chat.completion.chunk\",\"created\":1792958792,\"model\":\"qa-cost-35459\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"1\"}}]}\n\ndata: {\"id\":\"4e12530e-3304-4411-ae05-c517dc684cf1\",\"object\":\"chat.completion.chunk\",\"created\":1792958792,\"model\":\"qa-cost-35459\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"fe\"}}]}\n\ndata: {\"id\":\"cefa4f0c-f8cb-4f2d-850c-8e3115c34458\",\"object\":\"chat.completion.chunk\",\"created\":1792958792,\"model\":\"qa-cost-35459\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"0\"}}]}\n\ndata: {\"id\":\"de942008-dea6-4d65-9a14-6d7edf3efafd\",\"object\":\"chat.completion.chunk\",\"created\":1792958792,\"model\":\"qa-cost-35459\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"db\"}}]}\n\ndata: {\"id\":\"e73149bc-0203-46cd-8c32-3f69c79bcf01\",\"object\":\"chat.completion.chunk\",\"created\":1792958792,\"model\":\"qa-cost-35459\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"0\"}}]}\n\ndata: {\"id\":\"b75a69bb-19bd-4651-a9fe-96ade58afb60\",\"object\":\"chat.completion.chunk\",\"created\":1792958792,\"model\":\"qa-cost-35459\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"d\"}}]}\n\ndata: {\"id\":\"41b8c685-999f-493b-8b94-0c0a3c5f07fc\",\"object\":\"chat.completion.chunk\",\"created\":1792958792,\"model\":\"qa-cost-35459\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"-f\"}}]}\n\ndata: {\"id\":\"2b989477-46d2-4691-b6b1-81c7b8168b9d\",\"object\":\"chat.completion.chunk\",\"created\":1792958792,\"model\":\"qa-cost-35459\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"d\"}}]}\n\ndata: {\"id\":\"c3d6a95d-80c3-42a9-bc10-ad80a97fd505\",\"object\":\"chat.completion.chunk\",\"created\":1792958792,\"model\":\"qa-cost-35459\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"3\"}}]}\n\ndata: {\"id\":\"118ad4ea-cd8c-480f-b2bd-078e0345f6fa\",\"object\":\"chat.completion.chunk\",\"created\":1792958792,\"model\":\"qa-cost-35459\",\"choices\":[{\"index\":0,\"delta\":{},\"finish_reason\":\"stop\"}]}\n\ndata: {\"id\":\"118ad4ea-cd8c-480f-b2bd-078e0345f6fa\",\"created\":1792958792,\"model\":\"qa-cost-35459\",\"object\":\"chat.completion.chunk\",\"choices\":[],\"usage\":{\"completion_tokens\":16,\"prompt_tokens\":31,\"total_tokens\":47,\"completion_tokens_details\":{\"reasoning_tokens\":0,\"text_tokens\":16},\"cost\":0.000047000000000000004}}\n\ndata: [DONE]\n\n",
+          "modelId": "qa-cost-35459-deployment",
+          "generatedContent": "Routing works. Verification reference 1fe0db0d-fd3",
+          "visibleResult": "Reply with only: Routing works. Verification reference 1fe0db0d-fd3 qa-cost-35459 Routing works. Verification reference 1fe0db0d-fd3 0.41s to first token 1.23s total 31 in 16 out $0.000047 Inspect",
+          "conversationBox": {
+            "x": 304,
+            "y": 287,
+            "width": 728,
+            "height": 444
+          },
+          "screenshot": "desktop-routed-chat.png",
+          "submitMethod": "Send message button"
+        },
+        {
+          "kind": "mcp-tool",
+          "status": 200,
+          "requestBody": {
+            "server_id": "a59f9578d66db0fd5a737b3e72ad84ed",
+            "name": "add",
+            "arguments": {
+              "a": 17,
+              "b": 25
+            }
+          },
+          "responseBody": {
+            "_meta": null,
+            "content": [
+              {
+                "type": "text",
+                "text": "42",
+                "annotations": null,
+                "_meta": null
+              }
+            ],
+            "structuredContent": {
+              "result": 42
+            },
+            "isError": false,
+            "resultType": "complete"
+          },
+          "visibleResult": "v1.108.0 AI GATEWAY Home Virtual Keys Playground Models + Endpoints Agentic MCP Servers Skills Guardrails Policies Tools OBSERVABILITY Usage Model Leaderboard Beta Cost Optimization Logs Lens Beta Guardrails Monitor ACCESS CONTROL Teams Internal Users Organizations Access Groups Budgets DEVELOPER TOOLS API Reference AI Hub Learning Resources Response Cache Experimental SETTINGS Settings DE Account Admin AI Gateway MCP Servers Search or jump to… Ctrl K Docs Blog 1 Environment-credential login is enabled Review MCP Servers 1 Configure and manage your MCP servers My Connections Import from JSON + Add New MCP Server All Servers Toolsets Connect Semantic Filter Tool Search Network Settings Submitted MCPs Live Connections Back to All Servers math35459 a59f9578d66db0fd5a737b3e72ad84ed Overview MCP Tools Settings User Credentials MCP Tools Available Tools 2 add math35459 Selected multiply math35459 Tool Testing Playground Test Tool: add Provider: math35459 Input Parameters a * b * Call Again Tool Result Tool executed successfully • 0.13s Formatted JSON TEXT RESPONSE 42 Aria Agent",
+          "screenshot": "desktop-mcp-tool.png"
+        }
+      ],
+      "pageErrors": [],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      ],
+      "failedResponses": [
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/api-keys/__next.!KGRhc2hib2FyZCk.api-keys.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/playground/__next.!KGRhc2hib2FyZCk.playground.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/models-and-endpoints/__next.!KGRhc2hib2FyZCk.models-and-endpoints.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/mcp-servers/__next.!KGRhc2hib2FyZCk.mcp-servers.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/skills/__next.!KGRhc2hib2FyZCk.skills.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/guardrails/__next.!KGRhc2hib2FyZCk.guardrails.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/policies/__next.!KGRhc2hib2FyZCk.policies.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/usage/__next.!KGRhc2hib2FyZCk.usage.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/model-insights/__next.!KGRhc2hib2FyZCk.model-insights.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/logs/__next.!KGRhc2hib2FyZCk.logs.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/cost-optimization/__next.!KGRhc2hib2FyZCk.cost-optimization.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/lens/__next.!KGRhc2hib2FyZCk.lens.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/guardrails-monitor/__next.!KGRhc2hib2FyZCk.guardrails-monitor.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/teams/__next.!KGRhc2hib2FyZCk.teams.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/users/__next.!KGRhc2hib2FyZCk.users.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/playground/__next.!KGRhc2hib2FyZCk.playground.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/api-keys/__next.!KGRhc2hib2FyZCk.api-keys.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/models-and-endpoints/__next.!KGRhc2hib2FyZCk.models-and-endpoints.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/mcp-servers/__next.!KGRhc2hib2FyZCk.mcp-servers.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/guardrails/__next.!KGRhc2hib2FyZCk.guardrails.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/policies/__next.!KGRhc2hib2FyZCk.policies.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/skills/__next.!KGRhc2hib2FyZCk.skills.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/usage/__next.!KGRhc2hib2FyZCk.usage.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/model-insights/__next.!KGRhc2hib2FyZCk.model-insights.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/logs/__next.!KGRhc2hib2FyZCk.logs.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/cost-optimization/__next.!KGRhc2hib2FyZCk.cost-optimization.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/users/__next.!KGRhc2hib2FyZCk.users.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/lens/__next.!KGRhc2hib2FyZCk.lens.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/guardrails-monitor/__next.!KGRhc2hib2FyZCk.guardrails-monitor.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/teams/__next.!KGRhc2hib2FyZCk.teams.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/connect/__next.connect.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/api-keys/__next.!KGRhc2hib2FyZCk.api-keys.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/playground/__next.!KGRhc2hib2FyZCk.playground.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/models-and-endpoints/__next.!KGRhc2hib2FyZCk.models-and-endpoints.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/mcp-servers/__next.!KGRhc2hib2FyZCk.mcp-servers.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/policies/__next.!KGRhc2hib2FyZCk.policies.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/usage/__next.!KGRhc2hib2FyZCk.usage.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/guardrails/__next.!KGRhc2hib2FyZCk.guardrails.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/skills/__next.!KGRhc2hib2FyZCk.skills.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/model-insights/__next.!KGRhc2hib2FyZCk.model-insights.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/lens/__next.!KGRhc2hib2FyZCk.lens.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/logs/__next.!KGRhc2hib2FyZCk.logs.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/cost-optimization/__next.!KGRhc2hib2FyZCk.cost-optimization.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/guardrails-monitor/__next.!KGRhc2hib2FyZCk.guardrails-monitor.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/users/__next.!KGRhc2hib2FyZCk.users.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/teams/__next.!KGRhc2hib2FyZCk.teams.__PAGE__.txt",
+          "status": 404
+        }
+      ],
+      "callbacks": [
+        {
+          "at": "2026-10-25T20:06:33.678533+00:00",
+          "mode": "async",
+          "call_type": "acompletion",
+          "model": "qa-qwen3.5-0.8b",
+          "model_info_type": "dict",
+          "deployment_id": "qa-cost-35459-deployment",
+          "metadata_model_group": "qa-cost-35459",
+          "litellm_call_id": "b961be77-fcd0-4ed1-b893-212e0cb30b13"
+        },
+        {
+          "at": "2026-10-25T20:06:39.615004+00:00",
+          "mode": "async",
+          "call_type": "call_mcp_tool",
+          "model": "MCP: add",
+          "model_info_type": "NoneType",
+          "deployment_id": null,
+          "metadata_model_group": "MCP: add",
+          "litellm_call_id": "8e2f305d-6a7d-471a-9863-b3aa203fae0a"
+        }
+      ],
+      "callbackErrors": [],
+      "result": "pass",
+      "video": "raw-video/093666f242e280710529a75ff67b69d9.webm"
+    },
+    {
+      "viewport": {
+        "name": "phone",
+        "width": 390,
+        "height": 844
+      },
+      "cases": [
+        {
+          "kind": "routed-chat",
+          "status": 200,
+          "requestBody": {
+            "model": "qa-cost-35459",
+            "litellm_trace_id": "99b9427c-362e-4d46-91b2-f459289dbd53",
+            "messages": [
+              {
+                "role": "user",
+                "content": "Reply with only: Routing works. Verification reference e03ea099-46b"
+              }
+            ],
+            "stream": true,
+            "stream_options": {
+              "include_usage": true
+            }
+          },
+          "responseBody": "data: {\"id\":\"553dc3fa-ace3-4135-aae4-9c63150aebb9\",\"object\":\"chat.completion.chunk\",\"created\":1792958804,\"model\":\"qa-cost-35459\",\"choices\":[{\"index\":0,\"delta\":{\"role\":\"assistant\",\"content\":\"Routing\"}}]}\n\ndata: {\"id\":\"ca8795dd-8702-436b-877e-a019c83f3332\",\"object\":\"chat.completion.chunk\",\"created\":1792958804,\"model\":\"qa-cost-35459\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" works\"}}]}\n\ndata: {\"id\":\"ed1d42f3-244f-4ac8-9577-15b90b2f5577\",\"object\":\"chat.completion.chunk\",\"created\":1792958804,\"model\":\"qa-cost-35459\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\".\"}}]}\n\ndata: {\"id\":\"1642a802-345d-4b0e-a2aa-3fc156d30192\",\"object\":\"chat.completion.chunk\",\"created\":1792958804,\"model\":\"qa-cost-35459\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" Verification\"}}]}\n\ndata: {\"id\":\"789f100b-74a0-4c18-983c-4a422bc611b4\",\"object\":\"chat.completion.chunk\",\"created\":1792958804,\"model\":\"qa-cost-35459\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" reference\"}}]}\n\ndata: {\"id\":\"b057476a-4eb0-4ca4-8038-0f82f1d36319\",\"object\":\"chat.completion.chunk\",\"created\":1792958804,\"model\":\"qa-cost-35459\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" e\"}}]}\n\ndata: {\"id\":\"e2bcb310-074b-4181-a31b-7d2116b41c69\",\"object\":\"chat.completion.chunk\",\"created\":1792958804,\"model\":\"qa-cost-35459\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"0\"}}]}\n\ndata: {\"id\":\"94d33e32-11dd-42c3-81d8-b8d0e37bbe6d\",\"object\":\"chat.completion.chunk\",\"created\":1792958804,\"model\":\"qa-cost-35459\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"3\"}}]}\n\ndata: {\"id\":\"6eb5e6b2-c497-42ef-a90a-43833c626ecb\",\"object\":\"chat.completion.chunk\",\"created\":1792958804,\"model\":\"qa-cost-35459\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"ea\"}}]}\n\ndata: {\"id\":\"7398b62b-236a-4a87-9729-aa0e16047397\",\"object\":\"chat.completion.chunk\",\"created\":1792958804,\"model\":\"qa-cost-35459\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"0\"}}]}\n\ndata: {\"id\":\"0c91820b-c408-4c88-a96f-1c0421db12bb\",\"object\":\"chat.completion.chunk\",\"created\":1792958804,\"model\":\"qa-cost-35459\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"9\"}}]}\n\ndata: {\"id\":\"f1b4fd1b-b58b-4920-836c-3439bea642ba\",\"object\":\"chat.completion.chunk\",\"created\":1792958804,\"model\":\"qa-cost-35459\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"9\"}}]}\n\ndata: {\"id\":\"5ad903aa-c552-42a2-a232-5baeaf0e1c30\",\"object\":\"chat.completion.chunk\",\"created\":1792958804,\"model\":\"qa-cost-35459\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"-\"}}]}\n\ndata: {\"id\":\"4fa2631b-6269-4ba1-8747-d06d9b6323bd\",\"object\":\"chat.completion.chunk\",\"created\":1792958804,\"model\":\"qa-cost-35459\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"4\"}}]}\n\ndata: {\"id\":\"b0bed45d-edca-4d82-839c-78f61f2e2fa0\",\"object\":\"chat.completion.chunk\",\"created\":1792958804,\"model\":\"qa-cost-35459\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"6\"}}]}\n\ndata: {\"id\":\"063fd3cc-2eb1-4ba3-9dd9-01eb30417c08\",\"object\":\"chat.completion.chunk\",\"created\":1792958804,\"model\":\"qa-cost-35459\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"b\"}}]}\n\ndata: {\"id\":\"ffa4744d-f130-4740-bb95-c242e7001a15\",\"object\":\"chat.completion.chunk\",\"created\":1792958804,\"model\":\"qa-cost-35459\",\"choices\":[{\"index\":0,\"delta\":{},\"finish_reason\":\"stop\"}]}\n\ndata: {\"id\":\"ffa4744d-f130-4740-bb95-c242e7001a15\",\"created\":1792958804,\"model\":\"qa-cost-35459\",\"object\":\"chat.completion.chunk\",\"choices\":[],\"usage\":{\"completion_tokens\":17,\"prompt_tokens\":32,\"total_tokens\":49,\"completion_tokens_details\":{\"reasoning_tokens\":0,\"text_tokens\":17},\"cost\":0.000049}}\n\ndata: [DONE]\n\n",
+          "modelId": "qa-cost-35459-deployment",
+          "generatedContent": "Routing works. Verification reference e03ea099-46b",
+          "visibleResult": "Reply with only: Routing works. Verification reference e03ea099-46b qa-cost-35459 Routing works. Verification reference e03ea099-46b 0.29s to first token 1.04s total 32 in 17 out $0.000049 Inspect",
+          "conversationBox": {
+            "x": 16,
+            "y": 299,
+            "width": 358,
+            "height": 376
+          },
+          "screenshot": "phone-routed-chat.png",
+          "submitMethod": "Enter in the message field"
+        },
+        {
+          "kind": "mcp-tool",
+          "status": 200,
+          "requestBody": {
+            "server_id": "a59f9578d66db0fd5a737b3e72ad84ed",
+            "name": "add",
+            "arguments": {
+              "a": 17,
+              "b": 25
+            }
+          },
+          "responseBody": {
+            "_meta": null,
+            "content": [
+              {
+                "type": "text",
+                "text": "42",
+                "annotations": null,
+                "_meta": null
+              }
+            ],
+            "structuredContent": {
+              "result": 42
+            },
+            "isError": false,
+            "resultType": "complete"
+          },
+          "visibleResult": "v1.108.0 AI GATEWAY Home Virtual Keys Playground Models + Endpoints Agentic MCP Servers Skills Guardrails Policies Tools OBSERVABILITY Usage Model Leaderboard Beta Cost Optimization Logs Lens Beta Guardrails Monitor ACCESS CONTROL Teams Internal Users Organizations Access Groups Budgets DEVELOPER TOOLS API Reference AI Hub Learning Resources Response Cache Experimental SETTINGS Settings DE Account Admin AI Gateway MCP Servers Search or jump to… Ctrl K Docs Blog 1 Environment-credential login is enabled Review MCP Servers 1 Configure and manage your MCP servers My Connections Import from JSON + Add New MCP Server All Servers Toolsets Connect Semantic Filter Tool Search Network Settings Submitted MCPs Live Connections Back to All Servers math35459 a59f9578d66db0fd5a737b3e72ad84ed Overview MCP Tools Settings User Credentials MCP Tools Available Tools 2 add math35459 Selected multiply math35459 Tool Testing Playground Test Tool: add Provider: math35459 Input Parameters a * b * Call Again Tool Result Tool executed successfully • 0.08s Formatted JSON TEXT RESPONSE 42 Press Ctrl K to search or jump to a page Aria Agent",
+          "screenshot": "phone-mcp-tool.png"
+        }
+      ],
+      "pageErrors": [],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      ],
+      "failedResponses": [
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/connect/__next.connect.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/api-keys/__next.!KGRhc2hib2FyZCk.api-keys.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/mcp-servers/__next.!KGRhc2hib2FyZCk.mcp-servers.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/playground/__next.!KGRhc2hib2FyZCk.playground.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/models-and-endpoints/__next.!KGRhc2hib2FyZCk.models-and-endpoints.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/skills/__next.!KGRhc2hib2FyZCk.skills.__PAGE__.txt",
+          "status": 404
+        }
+      ],
+      "mcpPortraitObservation": {
+        "toolBox": {
+          "x": 85,
+          "y": 774,
+          "width": 0,
+          "height": 16
+        },
+        "screenshot": "phone-mcp-portrait-layout.png"
+      },
+      "mcpViewport": {
+        "width": 844,
+        "height": 390,
+        "orientation": "landscape"
+      },
+      "callbacks": [
+        {
+          "at": "2026-10-25T20:06:44.998163+00:00",
+          "mode": "async",
+          "call_type": "acompletion",
+          "model": "qa-qwen3.5-0.8b",
+          "model_info_type": "dict",
+          "deployment_id": "qa-cost-35459-deployment",
+          "metadata_model_group": "qa-cost-35459",
+          "litellm_call_id": "af2832e9-9057-4cfa-a23c-2f77cfe4ee5d"
+        },
+        {
+          "at": "2026-10-25T20:06:50.619476+00:00",
+          "mode": "async",
+          "call_type": "call_mcp_tool",
+          "model": "MCP: add",
+          "model_info_type": "NoneType",
+          "deployment_id": null,
+          "metadata_model_group": "MCP: add",
+          "litellm_call_id": "fc4ac549-78d2-491f-a2f3-7dc32bc4fe20"
+        }
+      ],
+      "callbackErrors": [],
+      "result": "pass",
+      "video": "raw-video/a61aa4652cbcac2189ea80b51003c589.webm"
+    }
+  ],
+  "browser": "145.0.7632.6",
+  "completedAt": "2026-10-25T20:06:51.797Z"
+}

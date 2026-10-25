@@ -1,0 +1,29 @@
+{
+  "url": "https://github.com/ollama/ollama/releases/download/v0.40.11/ollama-linux-amd64.tar.zst",
+  "size": 1508659610,
+  "sha256": "7bedab90dd122661be78798e9f0edf37fccf0cccf2699d2c58ea1a3afdc04b6d",
+  "verified": true,
+  "preserved_prefix_bytes": 598192128,
+  "ranges": [
+    [
+      0,
+      598192128,
+      825808998
+    ],
+    [
+      1,
+      825808999,
+      1053425869
+    ],
+    [
+      2,
+      1053425870,
+      1281042740
+    ],
+    [
+      3,
+      1281042741,
+      1508659609
+    ]
+  ]
+}

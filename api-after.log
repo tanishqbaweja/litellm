@@ -1,0 +1,7 @@
+{"endpoint": "/v1/chat/completions", "stream": false, "status": 200, "model_id": "qa-cost-35459-deployment"}
+{"endpoint": "/v1/chat/completions", "stream": true, "status": 200, "model_id": "qa-cost-35459-deployment"}
+{"endpoint": "/v1/responses", "stream": false, "status": 200, "model_id": "qa-cost-35459-deployment"}
+{"endpoint": "/v1/responses", "stream": true, "status": 200, "model_id": "qa-cost-35459-deployment"}
+{"endpoint": "/v1/messages", "stream": false, "status": 200, "model_id": "qa-cost-35459-deployment"}
+{"endpoint": "/v1/messages", "stream": true, "status": 200, "model_id": "qa-cost-35459-deployment"}
+{"calls": 6, "successes": 6, "callback_errors": 0}

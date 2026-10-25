@@ -1,0 +1,90 @@
+{
+  "revision": "baseline",
+  "source": "/opt/litellm-34927-baseline",
+  "sha": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "started_at": "2026-10-25T20:00:01.189968+00:00",
+  "calls": [
+    {
+      "kind": "direct-sync-completion",
+      "content": "Routing works.",
+      "usage": {
+        "completion_tokens": 4,
+        "prompt_tokens": 19,
+        "total_tokens": 23,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      }
+    },
+    {
+      "kind": "direct-async-completion",
+      "content": "Async routing works.",
+      "usage": {
+        "completion_tokens": 5,
+        "prompt_tokens": 20,
+        "total_tokens": 25,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      }
+    },
+    {
+      "kind": "router-async-control",
+      "content": "Routed control works.",
+      "usage": {
+        "completion_tokens": 6,
+        "prompt_tokens": 21,
+        "total_tokens": 27,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      }
+    }
+  ],
+  "errors": [
+    {
+      "function": "log_success_event",
+      "message": "litellm.router_strategy.lowest_cost.py::log_success_event(): Exception occured - 'NoneType' object has no attribute 'get'",
+      "exception_type": "AttributeError",
+      "traceback": "Traceback (most recent call last):\n  File \"/opt/litellm-34927-baseline/litellm/router_strategy/lowest_cost.py\", line 61, in log_success_event\n    id = kwargs[\"litellm_params\"].get(\"model_info\", {}).get(\"id\", None)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'NoneType' object has no attribute 'get'\n"
+    },
+    {
+      "function": "async_log_success_event",
+      "message": "litellm.proxy.hooks.prompt_injection_detection.py::async_pre_call_hook(): Exception occured - 'NoneType' object has no attribute 'get'",
+      "exception_type": "AttributeError",
+      "traceback": "Traceback (most recent call last):\n  File \"/opt/litellm-34927-baseline/litellm/router_strategy/lowest_cost.py\", line 137, in async_log_success_event\n    id = kwargs[\"litellm_params\"].get(\"model_info\", {}).get(\"id\", None)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'NoneType' object has no attribute 'get'\n"
+    }
+  ],
+  "callback_metadata": [
+    {
+      "mode": "sync",
+      "model": "qa-qwen3.5-0.8b",
+      "model_info_type": "NoneType",
+      "deployment_id": null,
+      "metadata_model_group": null
+    },
+    {
+      "mode": "async",
+      "model": "qa-qwen3.5-0.8b",
+      "model_info_type": "NoneType",
+      "deployment_id": null,
+      "metadata_model_group": null
+    },
+    {
+      "mode": "async",
+      "model": "qa-qwen3.5-0.8b",
+      "model_info_type": "dict",
+      "deployment_id": "qa-cost-35459-deployment",
+      "metadata_model_group": "qa-cost-35459"
+    }
+  ],
+  "provider_version": {
+    "version": "0.40.11"
+  },
+  "routed_counters": {
+    "qa-cost-35459-deployment": {
+      "2026-10-25-20-00": {
+        "tpm": 27,
+        "rpm": 1
+      }
+    }
+  },
+  "completed_at": "2026-10-25T20:00:03.389086+00:00"
+}

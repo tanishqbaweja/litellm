@@ -1,0 +1,11 @@
+{
+  "model": "ollama_chat/qa-qwen3.5-0.8b",
+  "api_base": "http://127.0.0.1:11434",
+  "reasoning_effort": "none",
+  "max_tokens": 48,
+  "num_ctx": 1024,
+  "num_thread": 4,
+  "temperature": 0,
+  "input_cost_per_token": 1e-06,
+  "output_cost_per_token": 1e-06
+}

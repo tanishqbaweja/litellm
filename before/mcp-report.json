@@ -1,0 +1,122 @@
+{
+  "revision": "baseline",
+  "routing_strategy": "cost-based-routing",
+  "started_at": "2026-10-25T19:55:29.840305+00:00",
+  "calls": [
+    {
+      "name": "math35459-add",
+      "arguments": {
+        "a": 17,
+        "b": 25
+      },
+      "result": {
+        "meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "42",
+            "annotations": null,
+            "meta": null
+          }
+        ],
+        "structured_content": {
+          "result": 42
+        },
+        "is_error": false,
+        "result_type": "complete"
+      }
+    },
+    {
+      "name": "math35459-multiply",
+      "arguments": {
+        "a": 6,
+        "b": 7
+      },
+      "result": {
+        "meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "42",
+            "annotations": null,
+            "meta": null
+          }
+        ],
+        "structured_content": {
+          "result": 42
+        },
+        "is_error": false,
+        "result_type": "complete"
+      }
+    }
+  ],
+  "source_sha": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "server_info": {
+    "name": "litellm-mcp-server",
+    "title": null,
+    "version": "1.0.0",
+    "description": null,
+    "website_url": null,
+    "icons": null
+  },
+  "tool_names": [
+    "math35459-add",
+    "math35459-multiply"
+  ],
+  "callbacks": [
+    {
+      "at": "2026-10-25T19:55:37.278718+00:00",
+      "mode": "async",
+      "call_type": "list_mcp_tools",
+      "model": "MCP: list_tools",
+      "model_info_type": "NoneType",
+      "deployment_id": null,
+      "metadata_model_group": null,
+      "litellm_call_id": "fb0258d2-83ca-424b-9f6e-77bc222e492d"
+    },
+    {
+      "at": "2026-10-25T19:55:37.441455+00:00",
+      "mode": "async",
+      "call_type": "call_mcp_tool",
+      "model": "MCP: math35459-add",
+      "model_info_type": "NoneType",
+      "deployment_id": null,
+      "metadata_model_group": null,
+      "litellm_call_id": "b00d7a96-3cae-4472-b3e6-f85bef9a5c38"
+    },
+    {
+      "at": "2026-10-25T19:55:37.520412+00:00",
+      "mode": "async",
+      "call_type": "call_mcp_tool",
+      "model": "MCP: math35459-multiply",
+      "model_info_type": "NoneType",
+      "deployment_id": null,
+      "metadata_model_group": null,
+      "litellm_call_id": "7670870e-d6b3-408c-b36f-efb6bf7b0909"
+    }
+  ],
+  "callback_errors": [
+    {
+      "at": "2026-10-25T19:55:37.288517+00:00",
+      "function": "async_log_success_event",
+      "message": "litellm.proxy.hooks.prompt_injection_detection.py::async_pre_call_hook(): Exception occured - 'NoneType' object has no attribute 'get'",
+      "exception_type": "AttributeError",
+      "traceback": "Traceback (most recent call last):\n  File \"/opt/litellm-34927-baseline/litellm/router_strategy/lowest_cost.py\", line 137, in async_log_success_event\n    id = kwargs[\"litellm_params\"].get(\"model_info\", {}).get(\"id\", None)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'NoneType' object has no attribute 'get'\n"
+    },
+    {
+      "at": "2026-10-25T19:55:37.449797+00:00",
+      "function": "async_log_success_event",
+      "message": "litellm.proxy.hooks.prompt_injection_detection.py::async_pre_call_hook(): Exception occured - 'NoneType' object has no attribute 'get'",
+      "exception_type": "AttributeError",
+      "traceback": "Traceback (most recent call last):\n  File \"/opt/litellm-34927-baseline/litellm/router_strategy/lowest_cost.py\", line 137, in async_log_success_event\n    id = kwargs[\"litellm_params\"].get(\"model_info\", {}).get(\"id\", None)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'NoneType' object has no attribute 'get'\n"
+    },
+    {
+      "at": "2026-10-25T19:55:37.524131+00:00",
+      "function": "async_log_success_event",
+      "message": "litellm.proxy.hooks.prompt_injection_detection.py::async_pre_call_hook(): Exception occured - 'NoneType' object has no attribute 'get'",
+      "exception_type": "AttributeError",
+      "traceback": "Traceback (most recent call last):\n  File \"/opt/litellm-34927-baseline/litellm/router_strategy/lowest_cost.py\", line 137, in async_log_success_event\n    id = kwargs[\"litellm_params\"].get(\"model_info\", {}).get(\"id\", None)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'NoneType' object has no attribute 'get'\n"
+    }
+  ],
+  "completed_at": "2026-10-25T19:55:38.067224+00:00"
+}
