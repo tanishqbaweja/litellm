@@ -1,0 +1,67 @@
+........................................................................ [ 28%]
+........................................................................ [ 56%]
+........................................................................ [ 85%]
+......................................                                   [100%]
+=============================== warnings summary ===============================
+../litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480
+../litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480
+../litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480
+tests/unit/proxy/vector_store_endpoints/test_vector_store_endpoints.py::TestVectorStoreManagementEndpointsExist::test_vector_store_management_endpoints_exist_on_proxy_startup
+tests/unit/proxy/vector_store_endpoints/test_vector_store_endpoints.py::TestVectorStoreManagementEndpointsExist::test_vector_store_management_endpoints_exist_on_proxy_startup
+tests/unit/proxy/vector_store_endpoints/test_vector_store_endpoints.py::TestVectorStoreManagementEndpointsExist::test_vector_store_management_endpoints_exist_on_proxy_startup
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'is_config' on TypedDict class 'LiteLLM_ManagedVectorStore' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+../litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'id', 'name', 'create_time' on TypedDict class '_RAGFlowDataset' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+../litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'data' on TypedDict class '_RAGFlowCreateResponse' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/vector_stores/test_vector_store_registry.py::test_a_caller_api_base_never_redirects_a_registry_credential_that_sets_its_own[file_create]
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'device_code', 'user_code', 'verification_uri' on TypedDict class '_DeviceCode' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/vector_stores/test_vector_store_registry.py::test_a_caller_api_base_never_redirects_a_registry_credential_that_sets_its_own[file_create]
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'access_token', 'error' on TypedDict class '_AccessTokenPoll' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/vector_stores/test_vector_store_registry.py::test_a_caller_api_base_never_redirects_a_registry_credential_that_sets_its_own[file_create]
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'token', 'expires_at', 'endpoints' on TypedDict class '_CopilotTokenPayload' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/vector_stores/test_vector_store_registry.py::test_a_caller_api_base_never_redirects_a_registry_credential_that_sets_its_own[file_create]
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'device_code', 'user_code', 'verification_uri', 'expires_in', 'interval' on TypedDict class '_DeviceCodePayload' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/vector_stores/test_vector_store_registry.py::test_a_caller_api_base_never_redirects_a_registry_credential_that_sets_its_own[file_create]
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'access_token', 'error', 'error_description', 'interval' on TypedDict class '_AccessTokenPollPayload' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/vector_stores/test_vector_store_registry.py::test_a_caller_api_base_never_redirects_a_registry_credential_that_sets_its_own[file_create]
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'login' on TypedDict class '_GithubUserPayload' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/vector_stores/test_vector_store_registry.py::test_a_caller_api_base_never_redirects_a_registry_credential_that_sets_its_own[file_create]
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'api' on TypedDict class '_CopilotEndpointsPayload' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/vector_stores/test_vector_store_registry.py::test_a_caller_api_base_never_redirects_a_registry_credential_that_sets_its_own[file_create]
+tests/unit/proxy/vector_store_endpoints/test_vector_store_endpoints.py::test_new_vector_store_auto_resolves_from_router
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'index' on TypedDict class 'ChatCompletionThinkingBlock' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/vector_stores/test_vector_store_registry.py::test_a_caller_api_base_never_redirects_a_registry_credential_that_sets_its_own[file_create]
+tests/unit/proxy/vector_store_endpoints/test_vector_store_endpoints.py::test_new_vector_store_auto_resolves_from_router
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'index' on TypedDict class 'ChatCompletionRedactedThinkingBlock' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/vector_stores/test_vector_store_registry.py::test_a_caller_api_base_never_redirects_a_registry_credential_that_sets_its_own[file_create]
+tests/unit/proxy/vector_store_endpoints/test_vector_store_endpoints.py::test_new_vector_store_auto_resolves_from_router
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'summary' on TypedDict class 'ChatCompletionReasoningItem' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+254 passed, 21 warnings in 7.92s

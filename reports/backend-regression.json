@@ -1,0 +1,20 @@
+{
+  "name": "backend-regression",
+  "command": [
+    "/opt/litellm-venv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/unit/proxy/vector_store_endpoints/test_vector_store_endpoints.py",
+    "tests/unit/proxy/vector_store_endpoints/test_vector_store_access_control.py",
+    "tests/unit/proxy/vector_store_endpoints/test_vector_store_rbac.py",
+    "tests/unit/proxy/vector_store_endpoints/test_vector_store_tenant_guard.py",
+    "tests/unit/proxy/vector_store_endpoints/test_vector_store_utils.py",
+    "tests/unit/vector_stores/test_vector_store_registry.py",
+    "tests/unit/vector_stores/test_main.py",
+    "tests/unit/vector_stores/test_vector_store_create_provider_logic.py"
+  ],
+  "started_at": "2026-10-25T20:54:18.287400+00:00",
+  "returncode": 0,
+  "completed_at": "2026-10-25T20:54:37.343804+00:00"
+}

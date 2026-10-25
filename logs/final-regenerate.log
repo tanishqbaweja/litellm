@@ -1,0 +1,8 @@
+wrote 36 feature fragments to /opt/litellm-38352/litellm/proxy/_lazy_openapi_snapshot.json
+
+> litellm-dashboard@0.1.0 gen:api
+> node scripts/gen-api-types.mjs
+
+✨ openapi-typescript 7.13.0
+🚀 /tmp/litellm-openapi-rSAk1V/openapi.json → /opt/litellm-38352/ui/litellm-dashboard/src/lib/http/schema.d.ts [1.2s]
+

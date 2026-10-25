@@ -1,0 +1,13 @@
+{
+  "phase": "red",
+  "started_at": "2026-10-25T20:29:09.756687+00:00",
+  "nodes": [
+    "tests/integration/management/test_vector_store_config_ownership.py::test_list_rejects_non_positive_pagination",
+    "tests/integration/management/test_vector_store_config_ownership.py::test_list_pages_cover_config_and_database_stores_once"
+  ],
+  "source_head": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "services_ready": true,
+  "returncode": 1,
+  "owned_services_cleaned_up": true,
+  "completed_at": "2026-10-25T20:30:01.745812+00:00"
+}

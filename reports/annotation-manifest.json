@@ -1,0 +1,32 @@
+[
+  {
+    "revision": "baseline",
+    "source_sha": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+    "raw": "output\\playwright\\visual-baseline-1792961333159\\desktop-last-page.png",
+    "raw_sha256": "c51043e2d160f9d43d310ee99842585c267e0c022582097e6440f54bc9d24cb5",
+    "annotated": "annotated\\baseline-desktop-last-page.png",
+    "annotated_sha256": "0bada41786a988d81177cb8bf5037bbd9c1a8f548aaa4cd071e0f86e83a16c90",
+    "rectangle": [
+      324,
+      394,
+      1396,
+      577
+    ],
+    "change": "Only a red outline around the last-page rows and pagination controls"
+  },
+  {
+    "revision": "fixed",
+    "source_sha": "1188ea351c7701227452cb487434c8f840d88a9b",
+    "raw": "output\\playwright\\visual-fixed-1792962300646\\desktop-last-page.png",
+    "raw_sha256": "4ca9bc0cf7b5ea45d5e37ecf442ed732fcba2f2c407d55555f427724284a3625",
+    "annotated": "annotated\\fixed-desktop-last-page.png",
+    "annotated_sha256": "ed48cf3c5fb2130b7b53c8321269cb2617c8d969ef478b1f9fda534963a79242",
+    "rectangle": [
+      324,
+      394,
+      1396,
+      577
+    ],
+    "change": "Only a red outline around the last-page rows and pagination controls"
+  }
+]

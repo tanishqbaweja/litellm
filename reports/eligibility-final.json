@@ -1,0 +1,75 @@
+{
+  "checked_at": "2026-10-25T21:02:50.674168+00:00",
+  "repository": "BerriAI/litellm",
+  "account": "tanishqbaweja",
+  "default_branch": "main",
+  "base": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "head": "1188ea351c7701227452cb487434c8f840d88a9b",
+  "issue": {
+    "number": 38352,
+    "title": "[Feature]: Make vector-store management pagination authoritative",
+    "state": "OPEN",
+    "updatedAt": "2026-08-26T14:55:50Z",
+    "assignees": [],
+    "url": "https://github.com/BerriAI/litellm/issues/38352"
+  },
+  "comments": 0,
+  "active_timeline_pr_references": [],
+  "searches": [
+    {
+      "query": "38352",
+      "results": []
+    },
+    {
+      "query": "\"vector store\" pagination",
+      "results": []
+    },
+    {
+      "query": "vector_store page_size",
+      "results": []
+    },
+    {
+      "query": "\"vector_store/list\"",
+      "results": [
+        {
+          "number": 36471,
+          "title": "fix(ui): gate /config/list and /credentials behind proxy-admin capabilities",
+          "updatedAt": "2026-10-13T18:08:19Z",
+          "url": "https://github.com/BerriAI/litellm/pull/36471"
+        },
+        {
+          "number": 43639,
+          "title": "fix(vector_stores): encrypt litellm_params secrets at rest",
+          "updatedAt": "2026-10-13T19:24:57Z",
+          "url": "https://github.com/BerriAI/litellm/pull/43639"
+        },
+        {
+          "number": 32398,
+          "title": "test(vector-stores): live e2e suite for Milvus managed vector store",
+          "updatedAt": "2026-09-23T15:49:38Z",
+          "url": "https://github.com/BerriAI/litellm/pull/32398"
+        },
+        {
+          "number": 47759,
+          "title": "feat(vector_stores): add OpenSearch k-NN search as a vector store provider",
+          "updatedAt": "2026-10-21T15:02:23Z",
+          "url": "https://github.com/BerriAI/litellm/pull/47759"
+        },
+        {
+          "number": 47753,
+          "title": "fix(proxy): register managed files hooks from the litellm_enterprise package",
+          "updatedAt": "2026-10-21T04:28:50Z",
+          "url": "https://github.com/BerriAI/litellm/pull/47753"
+        }
+      ]
+    }
+  ],
+  "reviewed_adjacent_scopes": {
+    "36471": "UI credential/config capability gating",
+    "43639": "Encrypt vector-store credentials at rest",
+    "32398": "Milvus provider end-to-end tests",
+    "47759": "OpenSearch provider search support",
+    "47753": "Managed-files hook registration for wheel installs"
+  },
+  "new_unreviewed_hits": []
+}

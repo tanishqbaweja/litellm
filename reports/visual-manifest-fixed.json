@@ -1,0 +1,106 @@
+{
+  "revision": "fixed",
+  "raw_screenshots": [
+    {
+      "path": "output\\playwright\\visual-fixed-1792962300646\\desktop-first-page.png",
+      "sha256": "2d434fd2fcad15a1a8ba17ec88573884ca94cdaca2618a6d980712cbad461c96"
+    },
+    {
+      "path": "output\\playwright\\visual-fixed-1792962300646\\desktop-last-page.png",
+      "sha256": "4ca9bc0cf7b5ea45d5e37ecf442ed732fcba2f2c407d55555f427724284a3625"
+    },
+    {
+      "path": "output\\playwright\\visual-fixed-1792962300646\\desktop-store-details.png",
+      "sha256": "adb682029575b74bbff0ee4e555ff44c857d40a7a8f42f2ce8faaf9267468277"
+    },
+    {
+      "path": "output\\playwright\\visual-fixed-1792962300646\\desktop-selector-option.png",
+      "sha256": "55cbb3034cebe16f09b546796d41a40d87b5283aa017e9f8b248f51015555c27"
+    },
+    {
+      "path": "output\\playwright\\visual-fixed-1792962300646\\desktop-selected-store.png",
+      "sha256": "757fc7761c5037dba9997263b2d12afc9c318b7dce7f9d45c1153be164de713b"
+    },
+    {
+      "path": "output\\playwright\\visual-fixed-1792962300646\\desktop-refreshed-inventory.png",
+      "sha256": "bb1feb66f3fbfd678b90f1faca67162c5957375ffbc8cfc665ac3bf9556a7008"
+    },
+    {
+      "path": "output\\playwright\\visual-fixed-1792962300646\\desktop-reloaded-inventory.png",
+      "sha256": "0f709f1e30357aaefe3136ee7ace629f3f4ac409f9073bde80d022f6cd2a3398"
+    },
+    {
+      "path": "output\\playwright\\visual-fixed-1792962300646\\phone-first-page.png",
+      "sha256": "5f91ba14144bcd004287fc334e3916b464ed2d6b4fab63567706701a179a7d41"
+    },
+    {
+      "path": "output\\playwright\\visual-fixed-1792962300646\\phone-last-page.png",
+      "sha256": "0523c626d0b860d36f4a0056054b65c710da741e67bf96c68bcb6ca21c9f021a"
+    },
+    {
+      "path": "output\\playwright\\visual-fixed-1792962300646\\phone-store-details.png",
+      "sha256": "2ee4e032c2e219cdda49c8ed883941abc7df0ba774939f4ce400038902458ed1"
+    },
+    {
+      "path": "output\\playwright\\visual-fixed-1792962300646\\phone-selector-option.png",
+      "sha256": "99b8945cc2125f5eb1140ad10fcec7a2dc449766f7639bf850cabf960b8b025c"
+    },
+    {
+      "path": "output\\playwright\\visual-fixed-1792962300646\\phone-selected-store.png",
+      "sha256": "4e0c0cc1c6a5b334933bf056841cfe2182c7913c9e39ea3b0f880c0818272ca7"
+    },
+    {
+      "path": "output\\playwright\\visual-fixed-1792962300646\\phone-refreshed-inventory.png",
+      "sha256": "a33bc9b2d10118936330f3eef818b6acd041b1f4cb4739a6ea592f5051bea366"
+    },
+    {
+      "path": "output\\playwright\\visual-fixed-1792962300646\\phone-reloaded-inventory.png",
+      "sha256": "0f700a1806ebcbde3c1ca049242c2b4a11e5b6a6bc30b24ef3c7dfdb67e65173"
+    }
+  ],
+  "recordings": [
+    {
+      "revision": "fixed",
+      "source_sha": "1188ea351c7701227452cb487434c8f840d88a9b",
+      "viewport": "desktop",
+      "video": "output\\playwright\\visual-fixed-1792962300646\\raw-video\\2c24e8eb81737512ff954cf2bbcd6821.webm",
+      "duration_seconds": 11.68,
+      "sampled_frames": [
+        "visual-review-final\\fixed-desktop-frame-1-0.73s.png",
+        "visual-review-final\\fixed-desktop-frame-2-2.19s.png",
+        "visual-review-final\\fixed-desktop-frame-3-3.65s.png",
+        "visual-review-final\\fixed-desktop-frame-4-5.11s.png",
+        "visual-review-final\\fixed-desktop-frame-5-6.57s.png",
+        "visual-review-final\\fixed-desktop-frame-6-8.03s.png",
+        "visual-review-final\\fixed-desktop-frame-7-9.49s.png",
+        "visual-review-final\\fixed-desktop-frame-8-10.95s.png"
+      ],
+      "contact_sheets": [
+        "visual-review-final\\fixed-desktop-video-1.png",
+        "visual-review-final\\fixed-desktop-video-2.png"
+      ]
+    },
+    {
+      "revision": "fixed",
+      "source_sha": "1188ea351c7701227452cb487434c8f840d88a9b",
+      "viewport": "phone",
+      "video": "output\\playwright\\visual-fixed-1792962300646\\raw-video\\6bd11f26ac494e3d87e1b4b0c599d153.webm",
+      "duration_seconds": 9.64,
+      "sampled_frames": [
+        "visual-review-final\\fixed-phone-frame-1-0.60s.png",
+        "visual-review-final\\fixed-phone-frame-2-1.81s.png",
+        "visual-review-final\\fixed-phone-frame-3-3.01s.png",
+        "visual-review-final\\fixed-phone-frame-4-4.22s.png",
+        "visual-review-final\\fixed-phone-frame-5-5.42s.png",
+        "visual-review-final\\fixed-phone-frame-6-6.63s.png",
+        "visual-review-final\\fixed-phone-frame-7-7.83s.png",
+        "visual-review-final\\fixed-phone-frame-8-9.04s.png"
+      ],
+      "contact_sheets": [
+        "visual-review-final\\fixed-phone-video-1.png",
+        "visual-review-final\\fixed-phone-video-2.png"
+      ]
+    }
+  ],
+  "source_sha": "1188ea351c7701227452cb487434c8f840d88a9b"
+}

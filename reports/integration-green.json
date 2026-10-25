@@ -1,0 +1,12 @@
+{
+  "phase": "green",
+  "started_at": "2026-10-25T20:54:37.412172+00:00",
+  "nodes": [
+    "tests/integration/management/test_vector_store_config_ownership.py"
+  ],
+  "source_head": "11e60893710ec4373a4f14b515d2ef6f3ad1eabf",
+  "services_ready": true,
+  "returncode": 0,
+  "owned_services_cleaned_up": true,
+  "completed_at": "2026-10-25T20:56:06.413710+00:00"
+}

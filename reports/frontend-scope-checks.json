@@ -1,0 +1,57 @@
+{
+  "started_at": "2026-10-25T20:39:33.218921+00:00",
+  "gates": [
+    {
+      "name": "targeted-tests",
+      "command": [
+        "/opt/contri-node/bin/node",
+        "node_modules/vitest/vitest.mjs",
+        "run",
+        "src/components/networking.test.ts",
+        "src/lib/http/client.test.ts",
+        "src/components/vector_store_management/VectorStoreSelector.test.tsx",
+        "src/app/(dashboard)/vector-stores/_components/index.test.tsx",
+        "src/app/(dashboard)/playground/components/chat/PlaygroundChat.integration.test.tsx",
+        "src/components/ModelInfoEditForm.test.tsx",
+        "src/components/templates/key_edit_view.integration.test.tsx",
+        "--maxWorkers=2"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "production-types",
+      "command": [
+        "/opt/contri-node/bin/node",
+        "node_modules/typescript/bin/tsc",
+        "--project",
+        "tsconfig.production.json"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "type-tests",
+      "command": [
+        "/opt/contri-node/bin/node",
+        "node_modules/vitest/vitest.mjs",
+        "run",
+        "--project",
+        "types",
+        "--maxWorkers=2"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "prettier",
+      "command": [
+        "/opt/contri-node/bin/node",
+        "node_modules/prettier/bin/prettier.cjs",
+        "--check",
+        "src/components/networking.tsx",
+        "src/components/networking.test.ts",
+        "src/lib/http/schema.d.ts"
+      ],
+      "returncode": 0
+    }
+  ],
+  "final_changed_file_rerun": "ui-final.json"
+}

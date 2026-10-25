@@ -1,0 +1,168 @@
+
+/opt/litellm-38352/ui/litellm-dashboard/src/components/networking.test.ts
+   71:10   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+   73:33   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+   78:36   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  104:11   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  114:11   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  167:112  warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  168:33   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  197:65   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  205:14   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  211:12   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  213:33   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  444:39   warning  Object literal with 4 properties passed inline as an argument; assign it to a named variable first  local/no-large-inline-object-arg
+  450:10   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  451:33   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  467:39   warning  Object literal with 4 properties passed inline as an argument; assign it to a named variable first  local/no-large-inline-object-arg
+  473:10   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  474:33   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  499:10   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  500:33   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  534:10   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  535:33   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  561:39   warning  Object literal with 5 properties passed inline as an argument; assign it to a named variable first  local/no-large-inline-object-arg
+  562:10   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  563:33   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  568:32   warning  Object literal with 4 properties passed inline as an argument; assign it to a named variable first  local/no-large-inline-object-arg
+  619:39   warning  Object literal with 5 properties passed inline as an argument; assign it to a named variable first  local/no-large-inline-object-arg
+  620:10   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  621:33   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  639:39   warning  Object literal with 5 properties passed inline as an argument; assign it to a named variable first  local/no-large-inline-object-arg
+  640:10   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  641:33   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  686:10   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  687:33   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  775:10   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  776:33   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  857:109  warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  858:33   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  905:89   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  906:33   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  994:10   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  994:18   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+
+/opt/litellm-38352/ui/litellm-dashboard/src/components/networking.tsx
+   198:3    warning  Unexpected console statement. Only these console methods are allowed: warn, error                   no-console
+   331:28   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+   339:25   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+   340:10   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+   341:10   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+   342:12   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+   350:22   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+   435:55   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+   574:13   warning  Boolean expression combines 4 conditions; extract it into a named variable                          local/no-long-condition-chain
+   799:30   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+   818:30   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+   868:30   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+   926:30   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+   987:29   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+   991:30   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  1023:30   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  1122:30   warning  Async arrow function has a complexity of 26. Maximum allowed is 20                                  complexity
+  1160:28   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  1560:97   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  1609:3    warning  Async arrow function has a complexity of 28. Maximum allowed is 20                                  complexity
+  2255:34   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  2256:30   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  2579:30   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  2607:30   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  2733:30   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  2761:30   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  2810:30   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  2850:30   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  2917:24   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  2927:15   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  2949:22   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  2975:24   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  2985:15   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  3005:24   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  3052:24   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  3062:15   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  3172:15   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  3194:15   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  3199:38   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  3229:24   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  3337:98   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  3352:98   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  3455:97   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  3474:100  warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  3537:88   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  3703:101  warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  3777:28   warning  Object literal with 4 properties passed inline as an argument; assign it to a named variable first  local/no-large-inline-object-arg
+  4034:39   warning  Object literal with 4 properties passed inline as an argument; assign it to a named variable first  local/no-large-inline-object-arg
+  4041:28   warning  Object literal with 7 properties passed inline as an argument; assign it to a named variable first  local/no-large-inline-object-arg
+  4103:17   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  4151:85   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  4175:27   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  4180:3    warning  Async arrow function has a complexity of 21. Maximum allowed is 20                                  complexity
+  4182:15   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  4208:3    warning  Unused eslint-disable directive (no problems were reported from 'no-constant-condition')
+  4237:73   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  4247:91   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  4260:45   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  4292:12   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  4325:12   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  4369:87   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  4409:13   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  4464:89   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  4553:73   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  4563:91   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  4589:44   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  4618:71   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  4676:79   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  4858:30   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  4884:87   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  4902:70   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  4911:88   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  4920:88   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  4938:89   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  5057:88   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  5072:110  warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  5126:99   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  5176:13   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  5197:26   warning  Boolean expression combines 4 conditions; extract it into a named variable                          local/no-long-condition-chain
+  5222:33   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  5235:32   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  5262:11   warning  Blocks are nested too deeply (5). Maximum allowed is 4                                              max-depth
+  5281:25   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  5282:25   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  5283:25   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  5423:95   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  5524:93   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  5611:96   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  5636:93   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  5636:108  warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  5668:43   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  5669:12   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  5677:26   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  6084:37   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  6085:40   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  6086:40   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  6127:37   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  6128:37   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  6168:39   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  6231:28   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  6232:33   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  6233:42   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  6242:31   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  6253:33   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  6254:37   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  6345:87   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  6372:27   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  6374:25   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  6531:30   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  6583:35   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  6653:92   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  6798:26   warning  Boolean expression combines 4 conditions; extract it into a named variable                          local/no-long-condition-chain
+  6808:12   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  6841:12   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  7043:42   warning  Object literal with 4 properties passed inline as an argument; assign it to a named variable first  local/no-large-inline-object-arg
+  7064:55   warning  Object literal with 4 properties passed inline as an argument; assign it to a named variable first  local/no-large-inline-object-arg
+  7130:86   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  7364:42   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+  7414:32   warning  Unexpected any. Specify a different type                                                            @typescript-eslint/no-explicit-any
+
+✖ 160 problems (0 errors, 160 warnings)
+  0 errors and 1 warning potentially fixable with the `--fix` option.
+

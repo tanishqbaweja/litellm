@@ -1,0 +1,20 @@
+{
+  "revision": "baseline",
+  "source": "/opt/litellm-34927-baseline",
+  "sha": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "source_clean": true,
+  "ui": "/qa/litellm-ui-baseline-47520",
+  "ui_source_sha": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "port": 41477,
+  "database_name": "qa38352_baseline_5bce77480e",
+  "started_at": "2026-10-25T20:47:50.224517+00:00",
+  "enterprise_entitlement_override": false,
+  "pid": 28317,
+  "ready_at": "2026-10-25T20:48:12.310616+00:00",
+  "forced_stop": false,
+  "process_reaped": true,
+  "exit_code": -15,
+  "owned_database_dropped": true,
+  "port_closed": true,
+  "stopped_at": "2026-10-25T20:51:51.990413+00:00"
+}

@@ -1,0 +1,25 @@
+{
+  "runs": [
+    {
+      "phase": "green-final",
+      "returncode": 0,
+      "production_source_sha256": "d6460401f4372ffbe1e40879ce7df7ac557f8084bac441bc2c8a77673c10106b",
+      "summary": [
+        "Test Files  1 passed (1)",
+        "Tests  5 passed | 58 skipped (63)",
+        "Duration  1.02s (transform 357ms, setup 41ms, import 780ms, tests 40ms, environment 0ms)"
+      ]
+    },
+    {
+      "phase": "red-final",
+      "returncode": 1,
+      "production_source_sha256": "ec6f3f971dc3d93e1ec13055285694ecfc5183ba3a0e3dce7a7ed1f753d47516",
+      "summary": [
+        "Test Files  1 failed (1)",
+        "Tests  2 failed | 3 passed | 58 skipped (63)",
+        "Duration  852ms (transform 335ms, setup 34ms, import 631ms, tests 56ms, environment 0ms)"
+      ]
+    }
+  ],
+  "fixed_source_restored_exactly": true
+}

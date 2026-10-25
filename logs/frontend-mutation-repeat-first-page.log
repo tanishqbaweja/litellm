@@ -1,0 +1,112 @@
+
+[1m[30m[46m RUN [49m[39m[22m [36mv4.1.12 [39m[90m/opt/litellm-38352/ui/litellm-dashboard[39m
+
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22mnetworking - expired session handling[2m > [22mkeeps the query string and hash on the redirect after session expiry
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22mnetworking - expired session handling[2m > [22mdoes not navigate or clear cookies for other errors
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22mnetworking - expired session handling[2m > [22mshould surface backend detail error when updateSSOSettings fails
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22mloginCall - storeLoginToken integration[2m > [22mcalls storeLoginToken when response includes token
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22mloginCall - storeLoginToken integration[2m > [22mdoes not call storeLoginToken when response has no token
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22mexchangeLoginCode - storeLoginToken integration[2m > [22mcalls storeLoginToken when exchange response includes token
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22mexchangeLoginCode - storeLoginToken integration[2m > [22mdoes not call storeLoginToken when exchange response has no token
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22mmodelInfoCall[2m > [22msends the exact model name as the model query param and leaves search alone
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22mUI config and public endpoints[2m > [22mshould use proxyBaseURL and server_root_path for /public/providers/fields when server_root_path is defined
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22mUI config and public endpoints[2m > [22mshould use proxyBaseURL and server_root_path for /public/model_hub/info when server_root_path is defined
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22mUI config and public endpoints[2m > [22mshould use proxyBaseURL and server_root_path for /public/model_hub when server_root_path is defined
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22mUI config and public endpoints[2m > [22mshould use proxyBaseURL and server_root_path for /public/agent_hub when server_root_path is defined
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22mUI config and public endpoints[2m > [22mshould use proxyBaseURL and server_root_path for /public/mcp_hub when server_root_path is defined
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22mUI config and public endpoints[2m > [22mshould not include server_root_path when it is root path
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22mUI config and public endpoints[2m > [22mshould return UI config from getUiConfig
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22mUI config and public endpoints[2m > [22mupdates serverRootPath so path-based nav links carry the root path
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22mUI config and public endpoints[2m > [22msends model group connection probes to the configured gateway
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22mUI config and public endpoints[2m > [22mfalls back to the proxy URL for model group probes when the gateway is unset
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22mindividualModelHealthCheckCall[2m > [22mshould call /health with model_id query param so health checks run by deployment id
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22mindividualModelHealthCheckCall[2m > [22mshould encode model_id in URL
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22mteamInfoCall[2m > [22mshould URL-encode team_id query param to handle special characters safely
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22mteamInfoCall[2m > [22mpasses key_limit when requested
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22mteamInfoCall[2m > [22mshould not append team_id when teamID is null
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22muiSpendLogsCall exclude_internal_health_checks serialization[2m > [22mappends exclude_internal_health_checks=true when the toggle is on
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22muiSpendLogsCall exclude_internal_health_checks serialization[2m > [22momits exclude_internal_health_checks when the toggle is off
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22muiSpendLogsCall exclude_internal_health_checks serialization[2m > [22momits exclude_internal_health_checks when the param is absent
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22msessionSpendLogsCall[2m > [22mshould request the first page with defaults so the caller can page through the session
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22msessionSpendLogsCall[2m > [22mshould pass explicit page and page_size query params for later pages
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22mbuildModelGroupTestRequest[2m > [22mbuilds a chat completion request with NO max_tokens (reasoning models 400 on a tiny cap)
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22mbuildModelGroupTestRequest[2m > [22mbuilds an embeddings request for embedding mode
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22mbuildModelGroupTestRequest[2m > [22madds classifier request parameters to a chat probe
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22mtestMCPToolsListRequest auth headers[2m > [22msends the litellm key under a custom litellm_key_header_name even when an upstream OAuth token uses Authorization
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22mtestMCPToolsListRequest auth headers[2m > [22mBearer-prefixes x-litellm-api-key when it is the configured key header (raw values fail _get_bearer_token)
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22mtestMCPToolsListRequest auth headers[2m > [22mnever clobbers the upstream OAuth token on default deployments
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22mtestMCPToolsListRequest auth headers[2m > [22msends the litellm key as the bearer on default deployments without an OAuth token
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22mfetchMCPServerHealth[2m > [22mopts into reachability while preserving requested servers: undefined
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22mfetchMCPServerHealth[2m > [22mopts into reachability while preserving requested servers: []
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22mfetchMCPServerHealth[2m > [22mopts into reachability while preserving requested servers: [ 'server one', 'server&two' ]
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22mgetAutoRouterClassifierDefaultPromptCall[2m > [22msends renamed tiers as a JSON object so the rubric names them
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22mgetAutoRouterClassifierDefaultPromptCall[2m > [22momits tier_labels entirely when nothing was renamed
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22muserListCall search serialization[2m > [22msends the combined search term as search, not user_email
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22muserListCall search serialization[2m > [22momits search when no search term is given and keeps user_email as before
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22mfetchMemoryList search serialization[2m > [22msends the search box value as search and omits key_prefix and key
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22mfetchMemoryList search serialization[2m > [22mkeeps key_prefix and key working when no search is given
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22muserFilterUICall[2m > [22mforwards the search param to /user/filter/ui
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22mschema-bound dashboard responses[2m > [22mkeeps null plugin metadata and source maps from the API
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22mschema-bound dashboard responses[2m > [22mvalidates agent metadata at the HTTP boundary
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22mschema-bound dashboard responses[2m > [22mkeeps nullable user fields without asserting they are strings
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22mmodelCostMap[2m > [22mrequests the catalog-only map when catalogOnly is set and the full map otherwise
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22mragIngestCall[2m > [22mrejects with the proxy's error text when the detail is an object
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22mgetUiConfig runtime backend discovery[2m > [22muses a normalized runtime backend URL for discovery and the management fallback
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22mgetUiConfig runtime backend discovery[2m > [22mkeeps discovery behavior when runtime config returns 404
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22mgetUiConfig runtime backend discovery[2m > [22mkeeps discovery behavior when runtime config returns HTML 200
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22mgetUiConfig runtime backend discovery[2m > [22mfetches model availability from the gateway and falls back to the backend when unset
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22mgetUiConfig runtime backend discovery[2m > [22mposts decision tests to the gateway
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22mgetUiConfig runtime backend discovery[2m > [22mingests RAG documents through the gateway
+ [32m✓[39m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22mgetUiConfig runtime backend discovery[2m > [22mkeeps vector store inventory on the management backend[32m 21[2mms[22m[39m
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22mgetUiConfig runtime backend discovery[2m > [22mlists indexes from the gateway
+ [2m[90m↓[39m[22m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22mgetUiConfig runtime backend discovery[2m > [22mdiscovers agent cards through the gateway with the default discovery mode
+ [31m×[39m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22mvectorStoreListCall complete dashboard inventory[2m > [22mloads every page with the configured authentication header[32m 9[2mms[22m[39m
+[31m   → expected [ { …(4) }, { …(4) }, { …(4) } ] to deeply equal [ { …(4) }, { …(4) }, { …(4) } ][39m
+ [32m✓[39m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22mvectorStoreListCall complete dashboard inventory[2m > [22mdoes not duplicate an older backend's already-complete first response[32m 1[2mms[22m[39m
+ [32m✓[39m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22mvectorStoreListCall complete dashboard inventory[2m > [22mkeeps an empty inventory empty without requesting another page[32m 0[2mms[22m[39m
+ [32m✓[39m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22mvectorStoreListCall complete dashboard inventory[2m > [22mreports a later page error instead of returning a partial inventory[32m 7[2mms[22m[39m
+
+[31m⎯⎯⎯⎯⎯⎯⎯[39m[1m[41m Failed Tests 1 [49m[22m[31m⎯⎯⎯⎯⎯⎯⎯[39m
+
+[41m[1m FAIL [22m[49m [30m[42m unit [49m[39m src/components/networking.test.ts[2m > [22mvectorStoreListCall complete dashboard inventory[2m > [22mloads every page with the configured authentication header
+[31m[1mAssertionError[22m: expected [ { …(4) }, { …(4) }, { …(4) } ] to deeply equal [ { …(4) }, { …(4) }, { …(4) } ][39m
+
+[32m- Expected[39m
+[31m+ Received[39m
+
+[33m@@ -5,16 +5,16 @@[39m
+[2m      "pageSize": "100",[22m
+[2m      "path": "/vector_store/list",[22m
+[2m    },[22m
+[2m    {[22m
+[2m      "auth": "Bearer inventory-token",[22m
+[32m-     "page": "2",[39m
+[31m+     "page": "1",[39m
+[2m      "pageSize": "100",[22m
+[2m      "path": "/vector_store/list",[22m
+[2m    },[22m
+[2m    {[22m
+[2m      "auth": "Bearer inventory-token",[22m
+[32m-     "page": "3",[39m
+[31m+     "page": "1",[39m
+[2m      "pageSize": "100",[22m
+[2m      "path": "/vector_store/list",[22m
+[2m    },[22m
+[2m  ][22m
+
+[36m [2m❯[22m src/components/networking.test.ts:[2m1235:22[22m[39m
+    [90m1233|[39m
+    [90m1234|[39m     [34mexpect[39m(response[33m.[39mdata)[33m.[39m[34mtoEqual[39m(stores)[33m;[39m
+    [90m1235|[39m     [34mexpect[39m(requests)[33m.[39m[34mtoEqual[39m([
+    [90m   |[39m                      [31m^[39m
+    [90m1236|[39m       { path: "/vector_store/list", page: "1", pageSize: "100", auth: …
+    [90m1237|[39m       { path: "/vector_store/list", page: "2", pageSize: "100", auth: …
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯[22m[39m
+
+
+[2m Test Files [22m [1m[31m1 failed[39m[22m[90m (1)[39m
+[2m      Tests [22m [1m[31m1 failed[39m[22m[2m | [22m[1m[32m4 passed[39m[22m[2m | [22m[33m58 skipped[39m[90m (63)[39m
+[2m   Start at [22m 20:49:39
+[2m   Duration [22m 741ms[2m (transform 291ms, setup 28ms, import 562ms, tests 40ms, environment 0ms)[22m
+

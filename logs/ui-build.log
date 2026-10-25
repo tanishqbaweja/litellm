@@ -1,0 +1,98 @@
+
+> litellm-dashboard@0.1.0 build
+> next build
+
+▲ Next.js 16.4.1 (Turbopack)
+- Environments: .env.production
+✓ Running next.config.mjs took 16ms
+- Experiments (use with caution):
+  ⨯ useTypeScriptCli
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 16.6s
+  Running TypeScript ...
+  Finished TypeScript in 35.3s ...
+  Collecting page data using 7 workers ...
+  Generating static pages using 7 workers (0/58) ...
+  Generating static pages using 7 workers (14/58) 
+  Generating static pages using 7 workers (28/58) 
+  Generating static pages using 7 workers (43/58) 
+✓ Generating static pages using 7 workers (58/58) in 1101ms
+Turbopack build encountered 1 warning:
+./public/assets/logos/enkrypt_ai.avif
+Warning: AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/assets/logos/enkrypt_ai.avif
+    ./src/app/(dashboard)/guardrails/_components/guardrail_info_helpers.tsx [Client Component SSR]
+    ./src/app/(dashboard)/guardrails/_components/add_guardrail_form.tsx [Client Component SSR]
+    ./src/app/(dashboard)/guardrails/_components/GuardrailsPanel.tsx [Client Component SSR]
+    ./src/app/(dashboard)/guardrails/page.tsx [Client Component SSR]
+    ./src/app/(dashboard)/guardrails/page.tsx [Server Component]
+
+
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ○ /access-groups
+├ ○ /admin-panel
+├ ○ /agents
+├ ○ /api-keys
+├ ○ /api-reference
+├ ○ /budgets
+├ ○ /caching
+├ ○ /change-password
+├ ○ /chat
+├ ○ /chat/api-keys
+├ ○ /chat/credentials
+├ ○ /chat/integrations
+├ ○ /chat/logs
+├ ○ /chat/models
+├ ○ /chat/usage
+├ ○ /connect
+├ ○ /cost-optimization
+├ ○ /cost-tracking
+├ ○ /guardrails
+├ ○ /guardrails-monitor
+├ ○ /home
+├ ○ /lens
+├ ○ /logging-and-alerts
+├ ○ /login
+├ ○ /logs
+├ ○ /mcp-servers
+├ ○ /mcp/oauth/callback
+├ ○ /memory
+├ ○ /model_hub
+├ ○ /model_hub_table
+├ ○ /model-hub-table
+├ ○ /model-insights
+├ ○ /models-and-endpoints
+├ ○ /moyai
+├ ○ /old-usage
+├ ○ /onboarding
+├ ○ /organizations
+├ ○ /playground
+├ ○ /policies
+├ ○ /projects
+├ ○ /prompts
+├ ○ /router-settings
+├ ○ /search-tools
+├ ○ /skills
+├ ○ /tag-management
+├ ○ /teams
+├ ○ /telemetry
+├ ○ /tool-policies
+├ ○ /transform-request
+├ ○ /ui-theme
+├ ○ /usage
+├ ○ /users
+├ ○ /vector-stores
+└ ○ /workflows
+
+
+○  (Static)  prerendered as static content
+

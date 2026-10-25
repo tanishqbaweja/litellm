@@ -1,0 +1,14 @@
+{
+  "revision": "fixed",
+  "source": "/opt/litellm-38352",
+  "sha": "1188ea351c7701227452cb487434c8f840d88a9b",
+  "source_clean": true,
+  "ui": "/opt/qa-ui-build-38352/out",
+  "ui_source_sha": "1188ea351c7701227452cb487434c8f840d88a9b",
+  "port": 41477,
+  "database_name": "qa38352_fixed_a68fd22689",
+  "started_at": "2026-10-25T21:04:14.211620+00:00",
+  "enterprise_entitlement_override": false,
+  "pid": 32100,
+  "ready_at": "2026-10-25T21:04:42.502296+00:00"
+}

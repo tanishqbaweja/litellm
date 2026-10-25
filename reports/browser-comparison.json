@@ -1,0 +1,275 @@
+{
+  "checked_at": "2026-10-25T21:06:28.003039+00:00",
+  "base": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "head": "1188ea351c7701227452cb487434c8f840d88a9b",
+  "revisions": {
+    "baseline": {
+      "source_sha": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+      "browser": "145.0.7632.6",
+      "viewports": [
+        {
+          "viewport": {
+            "name": "desktop",
+            "width": 1440,
+            "height": 900
+          },
+          "result": "pass",
+          "steps": 7,
+          "inventory_responses": [
+            {
+              "page": 1,
+              "returned": 103,
+              "total_count": 103
+            },
+            {
+              "page": 1,
+              "returned": 103,
+              "total_count": 103
+            },
+            {
+              "page": 1,
+              "returned": 103,
+              "total_count": 103
+            },
+            {
+              "page": 1,
+              "returned": 103,
+              "total_count": 103
+            }
+          ],
+          "page_errors": [],
+          "console_errors": {
+            "Failed to load resource: the server responded with a status of 404 (Not Found)": 62
+          },
+          "http_404_paths": {
+            "/ui/litellm-runtime-config.json": 8,
+            "/ui.txt": 1,
+            "/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt": 3,
+            "/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt": 3,
+            "/ui/api-keys/__next.!KGRhc2hib2FyZCk.api-keys.__PAGE__.txt": 3,
+            "/ui/playground/__next.!KGRhc2hib2FyZCk.playground.__PAGE__.txt": 3,
+            "/ui/models-and-endpoints/__next.!KGRhc2hib2FyZCk.models-and-endpoints.__PAGE__.txt": 3,
+            "/ui/mcp-servers/__next.!KGRhc2hib2FyZCk.mcp-servers.__PAGE__.txt": 3,
+            "/ui/skills/__next.!KGRhc2hib2FyZCk.skills.__PAGE__.txt": 3,
+            "/ui/guardrails/__next.!KGRhc2hib2FyZCk.guardrails.__PAGE__.txt": 3,
+            "/ui/policies/__next.!KGRhc2hib2FyZCk.policies.__PAGE__.txt": 3,
+            "/ui/usage/__next.!KGRhc2hib2FyZCk.usage.__PAGE__.txt": 3,
+            "/ui/model-insights/__next.!KGRhc2hib2FyZCk.model-insights.__PAGE__.txt": 3,
+            "/ui/cost-optimization/__next.!KGRhc2hib2FyZCk.cost-optimization.__PAGE__.txt": 3,
+            "/ui/lens/__next.!KGRhc2hib2FyZCk.lens.__PAGE__.txt": 3,
+            "/ui/logs/__next.!KGRhc2hib2FyZCk.logs.__PAGE__.txt": 3,
+            "/ui/guardrails-monitor/__next.!KGRhc2hib2FyZCk.guardrails-monitor.__PAGE__.txt": 3,
+            "/ui/teams/__next.!KGRhc2hib2FyZCk.teams.__PAGE__.txt": 1,
+            "/ui/users/__next.!KGRhc2hib2FyZCk.users.__PAGE__.txt": 1,
+            "/ui/search-tools/__next.!KGRhc2hib2FyZCk.search-tools.__PAGE__.txt": 2,
+            "/ui/vector-stores/__next.!KGRhc2hib2FyZCk.vector-stores.__PAGE__.txt": 2,
+            "/ui/tool-policies/__next.!KGRhc2hib2FyZCk.tool-policies.__PAGE__.txt": 2
+          }
+        },
+        {
+          "viewport": {
+            "name": "phone",
+            "width": 390,
+            "height": 844
+          },
+          "result": "pass",
+          "steps": 7,
+          "inventory_responses": [
+            {
+              "page": 1,
+              "returned": 103,
+              "total_count": 103
+            },
+            {
+              "page": 1,
+              "returned": 103,
+              "total_count": 103
+            },
+            {
+              "page": 1,
+              "returned": 103,
+              "total_count": 103
+            },
+            {
+              "page": 1,
+              "returned": 103,
+              "total_count": 103
+            }
+          ],
+          "page_errors": [],
+          "console_errors": {
+            "Failed to load resource: the server responded with a status of 404 (Not Found)": 9
+          },
+          "http_404_paths": {
+            "/ui/litellm-runtime-config.json": 8,
+            "/ui.txt": 1
+          }
+        }
+      ],
+      "api_requests": 56,
+      "curl_commands": 16,
+      "enumerations": [
+        {
+          "route": "/vector_store/list",
+          "rounds_equal": true,
+          "exactly_once_in_id_order": false,
+          "enumerated_count": 721,
+          "unique_count": 103
+        },
+        {
+          "route": "/v1/vector_store/list",
+          "rounds_equal": true,
+          "exactly_once_in_id_order": false,
+          "enumerated_count": 721,
+          "unique_count": 103
+        }
+      ],
+      "credentials_masked": true,
+      "owned_resources_cleaned": true
+    },
+    "fixed": {
+      "source_sha": "1188ea351c7701227452cb487434c8f840d88a9b",
+      "browser": "145.0.7632.6",
+      "viewports": [
+        {
+          "viewport": {
+            "name": "desktop",
+            "width": 1440,
+            "height": 900
+          },
+          "result": "pass",
+          "steps": 7,
+          "inventory_responses": [
+            {
+              "page": 1,
+              "returned": 100,
+              "total_count": 103
+            },
+            {
+              "page": 2,
+              "returned": 3,
+              "total_count": 103
+            },
+            {
+              "page": 1,
+              "returned": 100,
+              "total_count": 103
+            },
+            {
+              "page": 2,
+              "returned": 3,
+              "total_count": 103
+            },
+            {
+              "page": 1,
+              "returned": 100,
+              "total_count": 103
+            },
+            {
+              "page": 2,
+              "returned": 3,
+              "total_count": 103
+            },
+            {
+              "page": 1,
+              "returned": 100,
+              "total_count": 103
+            },
+            {
+              "page": 2,
+              "returned": 3,
+              "total_count": 103
+            }
+          ],
+          "page_errors": [],
+          "console_errors": {
+            "Failed to load resource: the server responded with a status of 404 (Not Found)": 9
+          },
+          "http_404_paths": {
+            "/ui/litellm-runtime-config.json": 8,
+            "/ui.txt": 1
+          }
+        },
+        {
+          "viewport": {
+            "name": "phone",
+            "width": 390,
+            "height": 844
+          },
+          "result": "pass",
+          "steps": 7,
+          "inventory_responses": [
+            {
+              "page": 1,
+              "returned": 100,
+              "total_count": 103
+            },
+            {
+              "page": 2,
+              "returned": 3,
+              "total_count": 103
+            },
+            {
+              "page": 1,
+              "returned": 100,
+              "total_count": 103
+            },
+            {
+              "page": 2,
+              "returned": 3,
+              "total_count": 103
+            },
+            {
+              "page": 1,
+              "returned": 100,
+              "total_count": 103
+            },
+            {
+              "page": 2,
+              "returned": 3,
+              "total_count": 103
+            },
+            {
+              "page": 1,
+              "returned": 100,
+              "total_count": 103
+            },
+            {
+              "page": 2,
+              "returned": 3,
+              "total_count": 103
+            }
+          ],
+          "page_errors": [],
+          "console_errors": {
+            "Failed to load resource: the server responded with a status of 404 (Not Found)": 9
+          },
+          "http_404_paths": {
+            "/ui/litellm-runtime-config.json": 8,
+            "/ui.txt": 1
+          }
+        }
+      ],
+      "api_requests": 56,
+      "curl_commands": 16,
+      "enumerations": [
+        {
+          "route": "/vector_store/list",
+          "rounds_equal": true,
+          "exactly_once_in_id_order": true,
+          "enumerated_count": 103,
+          "unique_count": 103
+        },
+        {
+          "route": "/v1/vector_store/list",
+          "rounds_equal": true,
+          "exactly_once_in_id_order": true,
+          "enumerated_count": 103,
+          "unique_count": 103
+        }
+      ],
+      "credentials_masked": true,
+      "owned_resources_cleaned": true
+    }
+  }
+}

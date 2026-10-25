@@ -1,0 +1,10 @@
+{
+  "files": 2442,
+  "errors": 0,
+  "fatal_errors": 0,
+  "warnings": 3348,
+  "raw_report_sha256": "d88d7bd5280b7178784de050a05bd41098d7e8003b3bc2f3de28484d76474527",
+  "raw_exit_code": 2,
+  "existing_unpruned_suppressions": true,
+  "ci_budget_exit_code": 0
+}

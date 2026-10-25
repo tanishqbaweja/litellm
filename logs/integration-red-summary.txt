@@ -1,0 +1,18 @@
+collecting ... collected 10 items
+tests/integration/management/test_vector_store_config_ownership.py::test_list_rejects_non_positive_pagination[page-0-/vector_store/list] FAILED [ 10%]
+tests/integration/management/test_vector_store_config_ownership.py::test_list_rejects_non_positive_pagination[page-0-/v1/vector_store/list] FAILED [ 20%]
+tests/integration/management/test_vector_store_config_ownership.py::test_list_rejects_non_positive_pagination[page--1-/vector_store/list] FAILED [ 30%]
+tests/integration/management/test_vector_store_config_ownership.py::test_list_rejects_non_positive_pagination[page--1-/v1/vector_store/list] FAILED [ 40%]
+tests/integration/management/test_vector_store_config_ownership.py::test_list_rejects_non_positive_pagination[page_size-0-/vector_store/list] PASSED [ 50%]
+tests/integration/management/test_vector_store_config_ownership.py::test_list_rejects_non_positive_pagination[page_size-0-/v1/vector_store/list] PASSED [ 60%]
+tests/integration/management/test_vector_store_config_ownership.py::test_list_rejects_non_positive_pagination[page_size--1-/vector_store/list] PASSED [ 70%]
+tests/integration/management/test_vector_store_config_ownership.py::test_list_rejects_non_positive_pagination[page_size--1-/v1/vector_store/list] PASSED [ 80%]
+tests/integration/management/test_vector_store_config_ownership.py::test_list_pages_cover_config_and_database_stores_once[/vector_store/list] FAILED [ 90%]
+tests/integration/management/test_vector_store_config_ownership.py::test_list_pages_cover_config_and_database_stores_once[/v1/vector_store/list] FAILED [100%]
+tests/integration/management/test_vector_store_config_ownership.py:79: in test_list_rejects_non_positive_pagination
+tests/integration/management/test_vector_store_config_ownership.py:79: in test_list_rejects_non_positive_pagination
+tests/integration/management/test_vector_store_config_ownership.py:79: in test_list_rejects_non_positive_pagination
+tests/integration/management/test_vector_store_config_ownership.py:79: in test_list_rejects_non_positive_pagination
+tests/integration/management/test_vector_store_config_ownership.py:103: in test_list_pages_cover_config_and_database_stores_once
+tests/integration/management/test_vector_store_config_ownership.py:103: in test_list_pages_cover_config_and_database_stores_once
+========================= 6 failed, 4 passed in 0.66s ==========================

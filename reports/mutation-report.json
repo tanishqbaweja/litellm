@@ -1,0 +1,67 @@
+{
+  "started_at": "2026-10-25T20:53:17.766464+00:00",
+  "mutations": [
+    {
+      "kind": "frontend",
+      "name": "omit-last-page",
+      "returncode": 1,
+      "failed_cases": 1
+    },
+    {
+      "kind": "frontend",
+      "name": "repeat-first-page",
+      "returncode": 1,
+      "failed_cases": 1
+    },
+    {
+      "kind": "frontend",
+      "name": "duplicate-legacy-catalog",
+      "returncode": 1,
+      "failed_cases": 1
+    },
+    {
+      "kind": "frontend",
+      "name": "wrong-management-target",
+      "returncode": 1,
+      "failed_cases": 1
+    },
+    {
+      "kind": "backend",
+      "name": "unsliced-data",
+      "returncode": 1,
+      "failed_cases": 6
+    },
+    {
+      "kind": "backend",
+      "name": "unstable-order",
+      "returncode": 1,
+      "failed_cases": 5
+    },
+    {
+      "kind": "backend",
+      "name": "incorrect-page-offset",
+      "returncode": 1,
+      "failed_cases": 5
+    },
+    {
+      "kind": "backend",
+      "name": "accept-page-zero",
+      "returncode": 1,
+      "failed_cases": 1
+    },
+    {
+      "kind": "backend",
+      "name": "count-inaccessible-stores",
+      "returncode": 1,
+      "failed_cases": 1
+    }
+  ],
+  "preserved_mutations_started_at": "2026-10-25T20:49:38.108869+00:00",
+  "refreshed_kind": "backend",
+  "source_restored_exactly": true,
+  "restored_sha256": {
+    "litellm/proxy/vector_store_endpoints/management_endpoints.py": "12fb31fb82502653ce7fa8a3356673f1e5cd87e258713fba9521e9b861eb3b8a",
+    "ui/litellm-dashboard/src/components/networking.tsx": "d6460401f4372ffbe1e40879ce7df7ac557f8084bac441bc2c8a77673c10106b"
+  },
+  "completed_at": "2026-10-25T20:54:18.238589+00:00"
+}

@@ -1,0 +1,18 @@
+..F.......                                                               [100%]
+=================================== FAILURES ===================================
+________ test_list_vector_stores_rejects_non_positive_page_with_400[0] _________
+tests/unit/proxy/vector_store_endpoints/test_vector_store_rbac.py:163: in test_list_vector_stores_rejects_non_positive_page_with_400
+    with pytest.raises(HTTPException) as exc_info:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   Failed: DID NOT RAISE <class 'fastapi.exceptions.HTTPException'>
+=============================== warnings summary ===============================
+../litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480
+../litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480
+../litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'is_config' on TypedDict class 'LiteLLM_ManagedVectorStore' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/unit/proxy/vector_store_endpoints/test_vector_store_rbac.py::test_list_vector_stores_rejects_non_positive_page_with_400[0]
+1 failed, 9 passed, 148 deselected, 3 warnings in 0.58s

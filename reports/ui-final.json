@@ -1,0 +1,107 @@
+{
+  "started_at": "2026-10-25T20:49:35.108083+00:00",
+  "gates": [
+    {
+      "name": "counterfactual",
+      "command": [
+        "/opt/litellm-venv/bin/python",
+        "/qa/litellm-38352/verify-frontend.py"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "mutations",
+      "command": [
+        "/opt/litellm-venv/bin/python",
+        "/qa/litellm-38352/mutations.py",
+        "frontend"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "networking-tests",
+      "command": [
+        "/opt/contri-node/bin/node",
+        "node_modules/vitest/vitest.mjs",
+        "run",
+        "src/components/networking.test.ts",
+        "--maxWorkers=2"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "types",
+      "command": [
+        "/opt/contri-node/bin/node",
+        "node_modules/vitest/vitest.mjs",
+        "run",
+        "--project",
+        "types",
+        "--maxWorkers=2"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "prettier",
+      "command": [
+        "/opt/contri-node/bin/node",
+        "node_modules/prettier/bin/prettier.cjs",
+        "--check",
+        "src/components/networking.tsx",
+        "src/components/networking.test.ts",
+        "src/lib/http/schema.d.ts"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "eslint-changed",
+      "command": [
+        "/opt/contri-node/bin/node",
+        "node_modules/eslint/bin/eslint.js",
+        "--no-warn-ignored",
+        "--pass-on-unpruned-suppressions",
+        "src/components/networking.tsx",
+        "src/components/networking.test.ts",
+        "src/lib/http/schema.d.ts"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "eslint-report",
+      "command": [
+        "/opt/contri-node/bin/node",
+        "node_modules/eslint/bin/eslint.js",
+        ".",
+        "-f",
+        "json",
+        "-o",
+        "/qa/litellm-38352/eslint-report.json"
+      ],
+      "returncode": 2
+    },
+    {
+      "name": "eslint-budgets",
+      "command": [
+        "/opt/contri-node/bin/node",
+        "scripts/check-lint-budgets.mjs",
+        "/qa/litellm-38352/eslint-report.json",
+        "eslint-budgets.json"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "knip",
+      "command": [
+        "/opt/contri-node/bin/node",
+        "node_modules/knip/bin/knip.js",
+        "--exclude",
+        "exports,nsExports,types,nsTypes,enumMembers,classMembers,duplicates"
+      ],
+      "returncode": 0
+    }
+  ],
+  "dependency_lock_matches": true,
+  "eslint_report_files": 2442,
+  "eslint_errors": 0,
+  "completed_at": "2026-10-25T20:51:07.673800+00:00"
+}

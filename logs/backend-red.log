@@ -1,0 +1,94 @@
+FFFFFFFFF.                                                               [100%]
+=================================== FAILURES ===================================
+_____ test_list_vector_stores_paginates_only_the_stores_granted_to_the_key _____
+tests/unit/proxy/vector_store_endpoints/test_vector_store_endpoints.py:3488: in test_list_vector_stores_paginates_only_the_stores_granted_to_the_key
+    assert response == {
+E   AssertionError: assert {'current_pag...ount': 2, ...} == {'current_pag...ount': 2, ...}
+E     
+E     Omitting 4 identical items, use -vv to show
+E     Differing items:
+E     {'data': [{'custom_llm_provider': 'openai', 'is_config': True, 'litellm_params': None, 'vector_store_id': 'vs_c'}, {'custom_llm_provider': 'openai', 'is_config': True, 'litellm_params': None, 'vector_store_id': 'vs_a'}]} != {'data': [{'custom_llm_provider': 'openai', 'is_config': True, 'litellm_params': None, 'vector_store_id': 'vs_c'}]}
+E     Use -v to get more diff
+________ test_list_vector_stores_rejects_non_positive_page_with_400[-1] ________
+tests/unit/proxy/vector_store_endpoints/test_vector_store_rbac.py:161: in test_list_vector_stores_rejects_non_positive_page_with_400
+    with pytest.raises(HTTPException) as exc_info:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   Failed: DID NOT RAISE <class 'fastapi.exceptions.HTTPException'>
+________ test_list_vector_stores_rejects_non_positive_page_with_400[0] _________
+tests/unit/proxy/vector_store_endpoints/test_vector_store_rbac.py:161: in test_list_vector_stores_rejects_non_positive_page_with_400
+    with pytest.raises(HTTPException) as exc_info:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   Failed: DID NOT RAISE <class 'fastapi.exceptions.HTTPException'>
+_ test_list_vector_stores_returns_the_requested_page_in_id_order[store_ids0-1-expected_ids0-2] _
+tests/unit/proxy/vector_store_endpoints/test_vector_store_endpoints.py:3453: in test_list_vector_stores_returns_the_requested_page_in_id_order
+    assert response == {
+E   AssertionError: assert {'current_pag...ount': 3, ...} == {'current_pag...ount': 3, ...}
+E     
+E     Omitting 4 identical items, use -vv to show
+E     Differing items:
+E     {'data': [{'custom_llm_provider': 'openai', 'is_config': True, 'litellm_params': None, 'vector_store_id': 'vs_c'}, {'c...id': 'vs_a'}, {'custom_llm_provider': 'openai', 'is_config': True, 'litellm_params': None, 'vector_store_id': 'vs_b'}]} != {'data': [{'custom_llm_provider': 'openai', 'is_config': True, 'litellm_params': None, 'vector_store_id': 'vs_a'}, {'custom_llm_provider': 'openai', 'is_config': True, 'litellm_params': None, 'vector_store_id': 'vs_b'}]}
+E     Use -v to get more diff
+_ test_list_vector_stores_returns_the_requested_page_in_id_order[store_ids1-1-expected_ids1-2] _
+tests/unit/proxy/vector_store_endpoints/test_vector_store_endpoints.py:3453: in test_list_vector_stores_returns_the_requested_page_in_id_order
+    assert response == {
+E   AssertionError: assert {'current_pag...ount': 3, ...} == {'current_pag...ount': 3, ...}
+E     
+E     Omitting 4 identical items, use -vv to show
+E     Differing items:
+E     {'data': [{'custom_llm_provider': 'openai', 'is_config': True, 'litellm_params': None, 'vector_store_id': 'vs_b'}, {'c...id': 'vs_c'}, {'custom_llm_provider': 'openai', 'is_config': True, 'litellm_params': None, 'vector_store_id': 'vs_a'}]} != {'data': [{'custom_llm_provider': 'openai', 'is_config': True, 'litellm_params': None, 'vector_store_id': 'vs_a'}, {'custom_llm_provider': 'openai', 'is_config': True, 'litellm_params': None, 'vector_store_id': 'vs_b'}]}
+E     Use -v to get more diff
+_ test_list_vector_stores_returns_the_requested_page_in_id_order[store_ids2-2-expected_ids2-2] _
+tests/unit/proxy/vector_store_endpoints/test_vector_store_endpoints.py:3453: in test_list_vector_stores_returns_the_requested_page_in_id_order
+    assert response == {
+E   AssertionError: assert {'current_pag...ount': 3, ...} == {'current_pag...ount': 3, ...}
+E     
+E     Omitting 4 identical items, use -vv to show
+E     Differing items:
+E     {'data': [{'custom_llm_provider': 'openai', 'is_config': True, 'litellm_params': None, 'vector_store_id': 'vs_c'}, {'c...id': 'vs_a'}, {'custom_llm_provider': 'openai', 'is_config': True, 'litellm_params': None, 'vector_store_id': 'vs_b'}]} != {'data': [{'custom_llm_provider': 'openai', 'is_config': True, 'litellm_params': None, 'vector_store_id': 'vs_c'}]}
+E     Use -v to get more diff
+_ test_list_vector_stores_returns_the_requested_page_in_id_order[store_ids3-3-expected_ids3-2] _
+tests/unit/proxy/vector_store_endpoints/test_vector_store_endpoints.py:3453: in test_list_vector_stores_returns_the_requested_page_in_id_order
+    assert response == {
+E   AssertionError: assert {'current_pag...ount': 3, ...} == {'current_pag...ount': 3, ...}
+E     
+E     Omitting 4 identical items, use -vv to show
+E     Differing items:
+E     {'data': [{'custom_llm_provider': 'openai', 'is_config': True, 'litellm_params': None, 'vector_store_id': 'vs_c'}, {'c...id': 'vs_a'}, {'custom_llm_provider': 'openai', 'is_config': True, 'litellm_params': None, 'vector_store_id': 'vs_b'}]} != {'data': []}
+E     Use -v to get more diff
+_ test_list_vector_stores_returns_the_requested_page_in_id_order[store_ids4-1-expected_ids4-1] _
+tests/unit/proxy/vector_store_endpoints/test_vector_store_endpoints.py:3453: in test_list_vector_stores_returns_the_requested_page_in_id_order
+    assert response == {
+E   AssertionError: assert {'current_pag...ount': 2, ...} == {'current_pag...ount': 2, ...}
+E     
+E     Omitting 4 identical items, use -vv to show
+E     Differing items:
+E     {'data': [{'custom_llm_provider': 'openai', 'is_config': True, 'litellm_params': None, 'vector_store_id': 'vs_b'}, {'custom_llm_provider': 'openai', 'is_config': True, 'litellm_params': None, 'vector_store_id': 'vs_a'}]} != {'data': [{'custom_llm_provider': 'openai', 'is_config': True, 'litellm_params': None, 'vector_store_id': 'vs_a'}, {'custom_llm_provider': 'openai', 'is_config': True, 'litellm_params': None, 'vector_store_id': 'vs_b'}]}
+E     Use -v to get more diff
+_ test_list_vector_stores_returns_the_requested_page_in_id_order[store_ids5-2-expected_ids5-1] _
+tests/unit/proxy/vector_store_endpoints/test_vector_store_endpoints.py:3453: in test_list_vector_stores_returns_the_requested_page_in_id_order
+    assert response == {
+E   AssertionError: assert {'current_pag...ount': 2, ...} == {'current_pag...ount': 2, ...}
+E     
+E     Omitting 4 identical items, use -vv to show
+E     Differing items:
+E     {'data': [{'custom_llm_provider': 'openai', 'is_config': True, 'litellm_params': None, 'vector_store_id': 'vs_b'}, {'custom_llm_provider': 'openai', 'is_config': True, 'litellm_params': None, 'vector_store_id': 'vs_a'}]} != {'data': []}
+E     Use -v to get more diff
+=============================== warnings summary ===============================
+../litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480
+../litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480
+../litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'is_config' on TypedDict class 'LiteLLM_ManagedVectorStore' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/unit/proxy/vector_store_endpoints/test_vector_store_endpoints.py::test_list_vector_stores_paginates_only_the_stores_granted_to_the_key
+FAILED tests/unit/proxy/vector_store_endpoints/test_vector_store_rbac.py::test_list_vector_stores_rejects_non_positive_page_with_400[-1]
+FAILED tests/unit/proxy/vector_store_endpoints/test_vector_store_rbac.py::test_list_vector_stores_rejects_non_positive_page_with_400[0]
+FAILED tests/unit/proxy/vector_store_endpoints/test_vector_store_endpoints.py::test_list_vector_stores_returns_the_requested_page_in_id_order[store_ids0-1-expected_ids0-2]
+FAILED tests/unit/proxy/vector_store_endpoints/test_vector_store_endpoints.py::test_list_vector_stores_returns_the_requested_page_in_id_order[store_ids1-1-expected_ids1-2]
+FAILED tests/unit/proxy/vector_store_endpoints/test_vector_store_endpoints.py::test_list_vector_stores_returns_the_requested_page_in_id_order[store_ids2-2-expected_ids2-2]
+FAILED tests/unit/proxy/vector_store_endpoints/test_vector_store_endpoints.py::test_list_vector_stores_returns_the_requested_page_in_id_order[store_ids3-3-expected_ids3-2]
+FAILED tests/unit/proxy/vector_store_endpoints/test_vector_store_endpoints.py::test_list_vector_stores_returns_the_requested_page_in_id_order[store_ids4-1-expected_ids4-1]
+FAILED tests/unit/proxy/vector_store_endpoints/test_vector_store_endpoints.py::test_list_vector_stores_returns_the_requested_page_in_id_order[store_ids5-2-expected_ids5-1]
+9 failed, 1 passed, 148 deselected, 3 warnings in 1.02s

@@ -1,0 +1,9 @@
+@typescript-eslint/no-explicit-any: 1432 | max: 2040 | target: 1500 | at target
+no-console: 12 | max: 12 | target: 0 | 0 of headroom
+complexity: 140 | max: 140 | target: 80 | 0 of headroom
+max-depth: 54 | max: 70 | target: 30 | 16 of headroom
+local/no-large-inline-object-arg: 550 | max: 551 | target: 300 | 1 of headroom
+local/no-long-condition-chain: 192 | max: 194 | target: 120 | 2 of headroom
+testing-library/no-container: 122 | max: 133 | target: 50 | 11 of headroom
+testing-library/no-node-access: 697 | max: 707 | target: 500 | 10 of headroom
+testing-library/prefer-screen-queries: 18 | max: 18 | target: 18 | at target

@@ -1,0 +1,618 @@
+model_list:
+- model_name: qa-catalog-38352
+  litellm_params:
+    model: ollama_chat/qa-qwen3.5-0.8b
+    api_base: http://127.0.0.1:11434
+  model_info:
+    id: qa-catalog-38352-deployment
+general_settings:
+  master_key: os.environ/LITELLM_MASTER_KEY
+  database_url: os.environ/DATABASE_URL
+  store_model_in_db: true
+vector_store_registry:
+- vector_store_name: Catalog 101
+  litellm_params:
+    vector_store_id: vs_qa38352_101
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 100
+  litellm_params:
+    vector_store_id: vs_qa38352_100
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 099
+  litellm_params:
+    vector_store_id: vs_qa38352_099
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 098
+  litellm_params:
+    vector_store_id: vs_qa38352_098
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 097
+  litellm_params:
+    vector_store_id: vs_qa38352_097
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 096
+  litellm_params:
+    vector_store_id: vs_qa38352_096
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 095
+  litellm_params:
+    vector_store_id: vs_qa38352_095
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 094
+  litellm_params:
+    vector_store_id: vs_qa38352_094
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 093
+  litellm_params:
+    vector_store_id: vs_qa38352_093
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 092
+  litellm_params:
+    vector_store_id: vs_qa38352_092
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 091
+  litellm_params:
+    vector_store_id: vs_qa38352_091
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 090
+  litellm_params:
+    vector_store_id: vs_qa38352_090
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 089
+  litellm_params:
+    vector_store_id: vs_qa38352_089
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 088
+  litellm_params:
+    vector_store_id: vs_qa38352_088
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 087
+  litellm_params:
+    vector_store_id: vs_qa38352_087
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 086
+  litellm_params:
+    vector_store_id: vs_qa38352_086
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 085
+  litellm_params:
+    vector_store_id: vs_qa38352_085
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 084
+  litellm_params:
+    vector_store_id: vs_qa38352_084
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 083
+  litellm_params:
+    vector_store_id: vs_qa38352_083
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 082
+  litellm_params:
+    vector_store_id: vs_qa38352_082
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 081
+  litellm_params:
+    vector_store_id: vs_qa38352_081
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 080
+  litellm_params:
+    vector_store_id: vs_qa38352_080
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 079
+  litellm_params:
+    vector_store_id: vs_qa38352_079
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 078
+  litellm_params:
+    vector_store_id: vs_qa38352_078
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 077
+  litellm_params:
+    vector_store_id: vs_qa38352_077
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 076
+  litellm_params:
+    vector_store_id: vs_qa38352_076
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 075
+  litellm_params:
+    vector_store_id: vs_qa38352_075
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 074
+  litellm_params:
+    vector_store_id: vs_qa38352_074
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 073
+  litellm_params:
+    vector_store_id: vs_qa38352_073
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 072
+  litellm_params:
+    vector_store_id: vs_qa38352_072
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 071
+  litellm_params:
+    vector_store_id: vs_qa38352_071
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 070
+  litellm_params:
+    vector_store_id: vs_qa38352_070
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 069
+  litellm_params:
+    vector_store_id: vs_qa38352_069
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 068
+  litellm_params:
+    vector_store_id: vs_qa38352_068
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 067
+  litellm_params:
+    vector_store_id: vs_qa38352_067
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 066
+  litellm_params:
+    vector_store_id: vs_qa38352_066
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 065
+  litellm_params:
+    vector_store_id: vs_qa38352_065
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 064
+  litellm_params:
+    vector_store_id: vs_qa38352_064
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 063
+  litellm_params:
+    vector_store_id: vs_qa38352_063
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 062
+  litellm_params:
+    vector_store_id: vs_qa38352_062
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 061
+  litellm_params:
+    vector_store_id: vs_qa38352_061
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 060
+  litellm_params:
+    vector_store_id: vs_qa38352_060
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 059
+  litellm_params:
+    vector_store_id: vs_qa38352_059
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 058
+  litellm_params:
+    vector_store_id: vs_qa38352_058
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 057
+  litellm_params:
+    vector_store_id: vs_qa38352_057
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 056
+  litellm_params:
+    vector_store_id: vs_qa38352_056
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 055
+  litellm_params:
+    vector_store_id: vs_qa38352_055
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 054
+  litellm_params:
+    vector_store_id: vs_qa38352_054
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 053
+  litellm_params:
+    vector_store_id: vs_qa38352_053
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 052
+  litellm_params:
+    vector_store_id: vs_qa38352_052
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 051
+  litellm_params:
+    vector_store_id: vs_qa38352_051
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 050
+  litellm_params:
+    vector_store_id: vs_qa38352_050
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 049
+  litellm_params:
+    vector_store_id: vs_qa38352_049
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 048
+  litellm_params:
+    vector_store_id: vs_qa38352_048
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 047
+  litellm_params:
+    vector_store_id: vs_qa38352_047
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 046
+  litellm_params:
+    vector_store_id: vs_qa38352_046
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 045
+  litellm_params:
+    vector_store_id: vs_qa38352_045
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 044
+  litellm_params:
+    vector_store_id: vs_qa38352_044
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 043
+  litellm_params:
+    vector_store_id: vs_qa38352_043
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 042
+  litellm_params:
+    vector_store_id: vs_qa38352_042
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 041
+  litellm_params:
+    vector_store_id: vs_qa38352_041
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 040
+  litellm_params:
+    vector_store_id: vs_qa38352_040
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 039
+  litellm_params:
+    vector_store_id: vs_qa38352_039
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 038
+  litellm_params:
+    vector_store_id: vs_qa38352_038
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 037
+  litellm_params:
+    vector_store_id: vs_qa38352_037
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 036
+  litellm_params:
+    vector_store_id: vs_qa38352_036
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 035
+  litellm_params:
+    vector_store_id: vs_qa38352_035
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 034
+  litellm_params:
+    vector_store_id: vs_qa38352_034
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 033
+  litellm_params:
+    vector_store_id: vs_qa38352_033
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 032
+  litellm_params:
+    vector_store_id: vs_qa38352_032
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 031
+  litellm_params:
+    vector_store_id: vs_qa38352_031
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 030
+  litellm_params:
+    vector_store_id: vs_qa38352_030
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 029
+  litellm_params:
+    vector_store_id: vs_qa38352_029
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 028
+  litellm_params:
+    vector_store_id: vs_qa38352_028
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 027
+  litellm_params:
+    vector_store_id: vs_qa38352_027
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 026
+  litellm_params:
+    vector_store_id: vs_qa38352_026
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 025
+  litellm_params:
+    vector_store_id: vs_qa38352_025
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 024
+  litellm_params:
+    vector_store_id: vs_qa38352_024
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 023
+  litellm_params:
+    vector_store_id: vs_qa38352_023
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 022
+  litellm_params:
+    vector_store_id: vs_qa38352_022
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 021
+  litellm_params:
+    vector_store_id: vs_qa38352_021
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 020
+  litellm_params:
+    vector_store_id: vs_qa38352_020
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 019
+  litellm_params:
+    vector_store_id: vs_qa38352_019
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 018
+  litellm_params:
+    vector_store_id: vs_qa38352_018
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 017
+  litellm_params:
+    vector_store_id: vs_qa38352_017
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 016
+  litellm_params:
+    vector_store_id: vs_qa38352_016
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 015
+  litellm_params:
+    vector_store_id: vs_qa38352_015
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 014
+  litellm_params:
+    vector_store_id: vs_qa38352_014
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 013
+  litellm_params:
+    vector_store_id: vs_qa38352_013
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 012
+  litellm_params:
+    vector_store_id: vs_qa38352_012
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 011
+  litellm_params:
+    vector_store_id: vs_qa38352_011
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 010
+  litellm_params:
+    vector_store_id: vs_qa38352_010
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 009
+  litellm_params:
+    vector_store_id: vs_qa38352_009
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 008
+  litellm_params:
+    vector_store_id: vs_qa38352_008
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 007
+  litellm_params:
+    vector_store_id: vs_qa38352_007
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 006
+  litellm_params:
+    vector_store_id: vs_qa38352_006
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 005
+  litellm_params:
+    vector_store_id: vs_qa38352_005
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 004
+  litellm_params:
+    vector_store_id: vs_qa38352_004
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 003
+  litellm_params:
+    vector_store_id: vs_qa38352_003
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 002
+  litellm_params:
+    vector_store_id: vs_qa38352_002
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token
+- vector_store_name: Catalog 001
+  litellm_params:
+    vector_store_id: vs_qa38352_001
+    custom_llm_provider: openai
+    vector_store_description: Pagination QA configuration store
+    api_key: qa38352-catalog-only-provider-token

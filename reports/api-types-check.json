@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-10-25T21:01:58.759137+00:00",
+  "head": "1188ea351c7701227452cb487434c8f840d88a9b",
+  "commands": [
+    "python -m litellm.proxy._lazy_openapi_snapshot",
+    "npm run gen:api"
+  ],
+  "returncode": 0,
+  "tracked_files_unchanged": true
+}

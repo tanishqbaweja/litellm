@@ -1,0 +1,5 @@
+{
+  "build_directory": "/opt/qa-ui-build-38352",
+  "dependency_source": "/qa/litellm-36095/dashboard-deps-linux",
+  "lock_matches": true
+}

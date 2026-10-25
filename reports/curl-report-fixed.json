@@ -1,0 +1,272 @@
+{
+  "revision": "fixed",
+  "source_sha": "1188ea351c7701227452cb487434c8f840d88a9b",
+  "started_at": "2026-10-25T21:04:53.544591+00:00",
+  "cases": [
+    {
+      "actor": "admin",
+      "route": "/vector_store/list",
+      "page": 1,
+      "page_size": 2,
+      "command": "curl -sS -w \"%{stderr}HTTP %{http_code}\\n\" -H \"Authorization: Bearer $QA_TOKEN\" \"http://127.0.0.1:41477/vector_store/list?page=1&page_size=2\" | jq 'if .data then {returned: (.data|length), first_three_ids: [.data[:3][].vector_store_id], total_count, current_page, total_pages} else . end'",
+      "status": 200,
+      "stdout": "{\n  \"returned\": 2,\n  \"first_three_ids\": [\n    \"vs_qa38352_001\",\n    \"vs_qa38352_002\"\n  ],\n  \"total_count\": 103,\n  \"current_page\": 1,\n  \"total_pages\": 52\n}\n",
+      "stderr": "HTTP 200\n",
+      "output": {
+        "returned": 2,
+        "first_three_ids": [
+          "vs_qa38352_001",
+          "vs_qa38352_002"
+        ],
+        "total_count": 103,
+        "current_page": 1,
+        "total_pages": 52
+      }
+    },
+    {
+      "actor": "admin",
+      "route": "/vector_store/list",
+      "page": 2,
+      "page_size": 2,
+      "command": "curl -sS -w \"%{stderr}HTTP %{http_code}\\n\" -H \"Authorization: Bearer $QA_TOKEN\" \"http://127.0.0.1:41477/vector_store/list?page=2&page_size=2\" | jq 'if .data then {returned: (.data|length), first_three_ids: [.data[:3][].vector_store_id], total_count, current_page, total_pages} else . end'",
+      "status": 200,
+      "stdout": "{\n  \"returned\": 2,\n  \"first_three_ids\": [\n    \"vs_qa38352_003\",\n    \"vs_qa38352_004\"\n  ],\n  \"total_count\": 103,\n  \"current_page\": 2,\n  \"total_pages\": 52\n}\n",
+      "stderr": "HTTP 200\n",
+      "output": {
+        "returned": 2,
+        "first_three_ids": [
+          "vs_qa38352_003",
+          "vs_qa38352_004"
+        ],
+        "total_count": 103,
+        "current_page": 2,
+        "total_pages": 52
+      }
+    },
+    {
+      "actor": "admin",
+      "route": "/vector_store/list",
+      "page": 53,
+      "page_size": 2,
+      "command": "curl -sS -w \"%{stderr}HTTP %{http_code}\\n\" -H \"Authorization: Bearer $QA_TOKEN\" \"http://127.0.0.1:41477/vector_store/list?page=53&page_size=2\" | jq 'if .data then {returned: (.data|length), first_three_ids: [.data[:3][].vector_store_id], total_count, current_page, total_pages} else . end'",
+      "status": 200,
+      "stdout": "{\n  \"returned\": 0,\n  \"first_three_ids\": [],\n  \"total_count\": 103,\n  \"current_page\": 53,\n  \"total_pages\": 52\n}\n",
+      "stderr": "HTTP 200\n",
+      "output": {
+        "returned": 0,
+        "first_three_ids": [],
+        "total_count": 103,
+        "current_page": 53,
+        "total_pages": 52
+      }
+    },
+    {
+      "actor": "admin",
+      "route": "/vector_store/list",
+      "page": 0,
+      "page_size": 2,
+      "command": "curl -sS -w \"%{stderr}HTTP %{http_code}\\n\" -H \"Authorization: Bearer $QA_TOKEN\" \"http://127.0.0.1:41477/vector_store/list?page=0&page_size=2\" | jq 'if .data then {returned: (.data|length), first_three_ids: [.data[:3][].vector_store_id], total_count, current_page, total_pages} else . end'",
+      "status": 400,
+      "stdout": "{\n  \"detail\": \"page must be >= 1, got page=0\"\n}\n",
+      "stderr": "HTTP 400\n",
+      "output": {
+        "detail": "page must be >= 1, got page=0"
+      }
+    },
+    {
+      "actor": "admin",
+      "route": "/vector_store/list",
+      "page": -1,
+      "page_size": 2,
+      "command": "curl -sS -w \"%{stderr}HTTP %{http_code}\\n\" -H \"Authorization: Bearer $QA_TOKEN\" \"http://127.0.0.1:41477/vector_store/list?page=-1&page_size=2\" | jq 'if .data then {returned: (.data|length), first_three_ids: [.data[:3][].vector_store_id], total_count, current_page, total_pages} else . end'",
+      "status": 400,
+      "stdout": "{\n  \"detail\": \"page must be >= 1, got page=-1\"\n}\n",
+      "stderr": "HTTP 400\n",
+      "output": {
+        "detail": "page must be >= 1, got page=-1"
+      }
+    },
+    {
+      "actor": "admin",
+      "route": "/vector_store/list",
+      "page": 1,
+      "page_size": 0,
+      "command": "curl -sS -w \"%{stderr}HTTP %{http_code}\\n\" -H \"Authorization: Bearer $QA_TOKEN\" \"http://127.0.0.1:41477/vector_store/list?page=1&page_size=0\" | jq 'if .data then {returned: (.data|length), first_three_ids: [.data[:3][].vector_store_id], total_count, current_page, total_pages} else . end'",
+      "status": 400,
+      "stdout": "{\n  \"detail\": \"page_size must be >= 1, got page_size=0\"\n}\n",
+      "stderr": "HTTP 400\n",
+      "output": {
+        "detail": "page_size must be >= 1, got page_size=0"
+      }
+    },
+    {
+      "actor": "restricted",
+      "route": "/vector_store/list",
+      "page": 2,
+      "page_size": 2,
+      "command": "curl -sS -w \"%{stderr}HTTP %{http_code}\\n\" -H \"Authorization: Bearer $QA_TOKEN\" \"http://127.0.0.1:41477/vector_store/list?page=2&page_size=2\" | jq 'if .data then {returned: (.data|length), first_three_ids: [.data[:3][].vector_store_id], total_count, current_page, total_pages} else . end'",
+      "status": 200,
+      "stdout": "{\n  \"returned\": 1,\n  \"first_three_ids\": [\n    \"vs_qa38352_103\"\n  ],\n  \"total_count\": 3,\n  \"current_page\": 2,\n  \"total_pages\": 2\n}\n",
+      "stderr": "HTTP 200\n",
+      "output": {
+        "returned": 1,
+        "first_three_ids": [
+          "vs_qa38352_103"
+        ],
+        "total_count": 3,
+        "current_page": 2,
+        "total_pages": 2
+      }
+    },
+    {
+      "actor": "empty",
+      "route": "/vector_store/list",
+      "page": 1,
+      "page_size": 2,
+      "command": "curl -sS -w \"%{stderr}HTTP %{http_code}\\n\" -H \"Authorization: Bearer $QA_TOKEN\" \"http://127.0.0.1:41477/vector_store/list?page=1&page_size=2\" | jq 'if .data then {returned: (.data|length), first_three_ids: [.data[:3][].vector_store_id], total_count, current_page, total_pages} else . end'",
+      "status": 200,
+      "stdout": "{\n  \"returned\": 0,\n  \"first_three_ids\": [],\n  \"total_count\": 0,\n  \"current_page\": 1,\n  \"total_pages\": 0\n}\n",
+      "stderr": "HTTP 200\n",
+      "output": {
+        "returned": 0,
+        "first_three_ids": [],
+        "total_count": 0,
+        "current_page": 1,
+        "total_pages": 0
+      }
+    },
+    {
+      "actor": "admin",
+      "route": "/v1/vector_store/list",
+      "page": 1,
+      "page_size": 2,
+      "command": "curl -sS -w \"%{stderr}HTTP %{http_code}\\n\" -H \"Authorization: Bearer $QA_TOKEN\" \"http://127.0.0.1:41477/v1/vector_store/list?page=1&page_size=2\" | jq 'if .data then {returned: (.data|length), first_three_ids: [.data[:3][].vector_store_id], total_count, current_page, total_pages} else . end'",
+      "status": 200,
+      "stdout": "{\n  \"returned\": 2,\n  \"first_three_ids\": [\n    \"vs_qa38352_001\",\n    \"vs_qa38352_002\"\n  ],\n  \"total_count\": 103,\n  \"current_page\": 1,\n  \"total_pages\": 52\n}\n",
+      "stderr": "HTTP 200\n",
+      "output": {
+        "returned": 2,
+        "first_three_ids": [
+          "vs_qa38352_001",
+          "vs_qa38352_002"
+        ],
+        "total_count": 103,
+        "current_page": 1,
+        "total_pages": 52
+      }
+    },
+    {
+      "actor": "admin",
+      "route": "/v1/vector_store/list",
+      "page": 2,
+      "page_size": 2,
+      "command": "curl -sS -w \"%{stderr}HTTP %{http_code}\\n\" -H \"Authorization: Bearer $QA_TOKEN\" \"http://127.0.0.1:41477/v1/vector_store/list?page=2&page_size=2\" | jq 'if .data then {returned: (.data|length), first_three_ids: [.data[:3][].vector_store_id], total_count, current_page, total_pages} else . end'",
+      "status": 200,
+      "stdout": "{\n  \"returned\": 2,\n  \"first_three_ids\": [\n    \"vs_qa38352_003\",\n    \"vs_qa38352_004\"\n  ],\n  \"total_count\": 103,\n  \"current_page\": 2,\n  \"total_pages\": 52\n}\n",
+      "stderr": "HTTP 200\n",
+      "output": {
+        "returned": 2,
+        "first_three_ids": [
+          "vs_qa38352_003",
+          "vs_qa38352_004"
+        ],
+        "total_count": 103,
+        "current_page": 2,
+        "total_pages": 52
+      }
+    },
+    {
+      "actor": "admin",
+      "route": "/v1/vector_store/list",
+      "page": 53,
+      "page_size": 2,
+      "command": "curl -sS -w \"%{stderr}HTTP %{http_code}\\n\" -H \"Authorization: Bearer $QA_TOKEN\" \"http://127.0.0.1:41477/v1/vector_store/list?page=53&page_size=2\" | jq 'if .data then {returned: (.data|length), first_three_ids: [.data[:3][].vector_store_id], total_count, current_page, total_pages} else . end'",
+      "status": 200,
+      "stdout": "{\n  \"returned\": 0,\n  \"first_three_ids\": [],\n  \"total_count\": 103,\n  \"current_page\": 53,\n  \"total_pages\": 52\n}\n",
+      "stderr": "HTTP 200\n",
+      "output": {
+        "returned": 0,
+        "first_three_ids": [],
+        "total_count": 103,
+        "current_page": 53,
+        "total_pages": 52
+      }
+    },
+    {
+      "actor": "admin",
+      "route": "/v1/vector_store/list",
+      "page": 0,
+      "page_size": 2,
+      "command": "curl -sS -w \"%{stderr}HTTP %{http_code}\\n\" -H \"Authorization: Bearer $QA_TOKEN\" \"http://127.0.0.1:41477/v1/vector_store/list?page=0&page_size=2\" | jq 'if .data then {returned: (.data|length), first_three_ids: [.data[:3][].vector_store_id], total_count, current_page, total_pages} else . end'",
+      "status": 400,
+      "stdout": "{\n  \"detail\": \"page must be >= 1, got page=0\"\n}\n",
+      "stderr": "HTTP 400\n",
+      "output": {
+        "detail": "page must be >= 1, got page=0"
+      }
+    },
+    {
+      "actor": "admin",
+      "route": "/v1/vector_store/list",
+      "page": -1,
+      "page_size": 2,
+      "command": "curl -sS -w \"%{stderr}HTTP %{http_code}\\n\" -H \"Authorization: Bearer $QA_TOKEN\" \"http://127.0.0.1:41477/v1/vector_store/list?page=-1&page_size=2\" | jq 'if .data then {returned: (.data|length), first_three_ids: [.data[:3][].vector_store_id], total_count, current_page, total_pages} else . end'",
+      "status": 400,
+      "stdout": "{\n  \"detail\": \"page must be >= 1, got page=-1\"\n}\n",
+      "stderr": "HTTP 400\n",
+      "output": {
+        "detail": "page must be >= 1, got page=-1"
+      }
+    },
+    {
+      "actor": "admin",
+      "route": "/v1/vector_store/list",
+      "page": 1,
+      "page_size": 0,
+      "command": "curl -sS -w \"%{stderr}HTTP %{http_code}\\n\" -H \"Authorization: Bearer $QA_TOKEN\" \"http://127.0.0.1:41477/v1/vector_store/list?page=1&page_size=0\" | jq 'if .data then {returned: (.data|length), first_three_ids: [.data[:3][].vector_store_id], total_count, current_page, total_pages} else . end'",
+      "status": 400,
+      "stdout": "{\n  \"detail\": \"page_size must be >= 1, got page_size=0\"\n}\n",
+      "stderr": "HTTP 400\n",
+      "output": {
+        "detail": "page_size must be >= 1, got page_size=0"
+      }
+    },
+    {
+      "actor": "restricted",
+      "route": "/v1/vector_store/list",
+      "page": 2,
+      "page_size": 2,
+      "command": "curl -sS -w \"%{stderr}HTTP %{http_code}\\n\" -H \"Authorization: Bearer $QA_TOKEN\" \"http://127.0.0.1:41477/v1/vector_store/list?page=2&page_size=2\" | jq 'if .data then {returned: (.data|length), first_three_ids: [.data[:3][].vector_store_id], total_count, current_page, total_pages} else . end'",
+      "status": 200,
+      "stdout": "{\n  \"returned\": 1,\n  \"first_three_ids\": [\n    \"vs_qa38352_103\"\n  ],\n  \"total_count\": 3,\n  \"current_page\": 2,\n  \"total_pages\": 2\n}\n",
+      "stderr": "HTTP 200\n",
+      "output": {
+        "returned": 1,
+        "first_three_ids": [
+          "vs_qa38352_103"
+        ],
+        "total_count": 3,
+        "current_page": 2,
+        "total_pages": 2
+      }
+    },
+    {
+      "actor": "empty",
+      "route": "/v1/vector_store/list",
+      "page": 1,
+      "page_size": 2,
+      "command": "curl -sS -w \"%{stderr}HTTP %{http_code}\\n\" -H \"Authorization: Bearer $QA_TOKEN\" \"http://127.0.0.1:41477/v1/vector_store/list?page=1&page_size=2\" | jq 'if .data then {returned: (.data|length), first_three_ids: [.data[:3][].vector_store_id], total_count, current_page, total_pages} else . end'",
+      "status": 200,
+      "stdout": "{\n  \"returned\": 0,\n  \"first_three_ids\": [],\n  \"total_count\": 0,\n  \"current_page\": 1,\n  \"total_pages\": 0\n}\n",
+      "stderr": "HTTP 200\n",
+      "output": {
+        "returned": 0,
+        "first_three_ids": [],
+        "total_count": 0,
+        "current_page": 1,
+        "total_pages": 0
+      }
+    }
+  ],
+  "completed_at": "2026-10-25T21:04:53.884508+00:00"
+}

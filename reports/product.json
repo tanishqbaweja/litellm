@@ -1,0 +1,29 @@
+{
+  "base": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "head": "1188ea351c7701227452cb487434c8f840d88a9b",
+  "branch": "litellm_fix_38352_vector_store_pagination",
+  "files": [
+    "litellm/proxy/_lazy_openapi_snapshot.json",
+    "litellm/proxy/vector_store_endpoints/management_endpoints.py",
+    "tests/integration/management/test_vector_store_config_ownership.py",
+    "tests/unit/proxy/vector_store_endpoints/test_vector_store_endpoints.py",
+    "tests/unit/proxy/vector_store_endpoints/test_vector_store_rbac.py",
+    "ui/litellm-dashboard/eslint-suppressions.json",
+    "ui/litellm-dashboard/src/components/networking.test.ts",
+    "ui/litellm-dashboard/src/components/networking.tsx",
+    "ui/litellm-dashboard/src/lib/http/schema.d.ts"
+  ],
+  "created_at": "2026-10-25T20:56:12.355259+00:00",
+  "reviewed_diff_sha256": "c9d0dd2edc81b030bd0689fea165c90f4501ca1c6409f4dc3bf98dfc00f8aefd",
+  "file_sha256": {
+    "litellm/proxy/_lazy_openapi_snapshot.json": "751f7fc537c0bca2ccd0fad3decab7081d552b4e512d1fcb7cb8ed2c7ce6fb16",
+    "litellm/proxy/vector_store_endpoints/management_endpoints.py": "12fb31fb82502653ce7fa8a3356673f1e5cd87e258713fba9521e9b861eb3b8a",
+    "tests/integration/management/test_vector_store_config_ownership.py": "df35233e29bdd76f92101014c59b708a2e50e30f267583841ecc0d29af5a4441",
+    "tests/unit/proxy/vector_store_endpoints/test_vector_store_endpoints.py": "19f077d883b6d8267d663a7722189b4ad2749cbb1985238de30d955f00d64b56",
+    "tests/unit/proxy/vector_store_endpoints/test_vector_store_rbac.py": "a0b01d394bd03608cbbe24c4636b9bcedd39ee955cc833d48758b9bcf0174dc7",
+    "ui/litellm-dashboard/eslint-suppressions.json": "83909422e3a5992510627601097078958819a2837676f7f57c25930b61951e15",
+    "ui/litellm-dashboard/src/components/networking.test.ts": "47489050439ee370c0be7d098489e28ad657131c9d6f6ca97b8e25cd087f05aa",
+    "ui/litellm-dashboard/src/components/networking.tsx": "d6460401f4372ffbe1e40879ce7df7ac557f8084bac441bc2c8a77673c10106b",
+    "ui/litellm-dashboard/src/lib/http/schema.d.ts": "cdc3fcdd82ecebdcb2c2ef426823755b3f6b2dc848a780d0592301f115ca4ff2"
+  }
+}

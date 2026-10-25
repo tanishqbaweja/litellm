@@ -1,0 +1,32 @@
+[
+  {
+    "kind": "key",
+    "label": "restricted",
+    "status": 200
+  },
+  {
+    "kind": "key",
+    "label": "empty",
+    "status": 200
+  },
+  {
+    "kind": "user",
+    "user_id": "qa38352-baseline-restricted",
+    "status": 200
+  },
+  {
+    "kind": "user",
+    "user_id": "qa38352-baseline-empty",
+    "status": 200
+  },
+  {
+    "kind": "vector_store",
+    "id": "vs_qa38352_102",
+    "status": 200
+  },
+  {
+    "kind": "vector_store",
+    "id": "vs_qa38352_103",
+    "status": 200
+  }
+]
