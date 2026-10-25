@@ -1,0 +1,51 @@
+{
+  "checked_at": "2026-10-25T16:45:54.398970+00:00",
+  "base_sha": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "fixed_sha": "db1791631208a8d1065cdb393185404c51c26555",
+  "baseline_regressions": "6 failed, 38 passed",
+  "fixed_affected_tests": "333 passed, 23 warnings in 14.41s",
+  "format": "make format, 2932 files unchanged; targeted test formatting check passed",
+  "lint": "make lint BASE_REF=origin/main LINT_JOBS=2, exit 0",
+  "whole_tree_type_gate": "105899 total diagnostics, all rules within merge-base ceilings",
+  "e2e_type_check": "0 errors, 0 warnings, 0 notes",
+  "mutations": {
+    "mutations": [
+      {
+        "name": "last-dot-split",
+        "returncode": 1,
+        "summary": "1 failed, 43 deselected in 0.34s",
+        "log": "litellm-26231-mutation-last-dot-split.log"
+      },
+      {
+        "name": "floor-signature-size",
+        "returncode": 1,
+        "summary": "3 failed, 41 deselected in 0.60s",
+        "log": "litellm-26231-mutation-floor-signature-size.log"
+      },
+      {
+        "name": "ignore-separator",
+        "returncode": 1,
+        "summary": "1 failed, 43 deselected in 0.35s",
+        "log": "litellm-26231-mutation-ignore-separator.log"
+      },
+      {
+        "name": "skip-cryptographic-verification",
+        "returncode": 1,
+        "summary": "3 failed, 3 passed, 38 deselected in 0.71s",
+        "log": "litellm-26231-mutation-skip-cryptographic-verification.log"
+      }
+    ],
+    "source_restored_exactly": true
+  },
+  "real_api_cases": 10,
+  "browser_cases": 4,
+  "raw_screenshots_visually_reviewed": 14,
+  "annotated_screenshots_visually_reviewed": 4,
+  "recordings_visually_reviewed": "8 sampled frames from each of 4 recordings",
+  "ui_export_source": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "limitations": [
+    "Generated test licenses and public key, no issued production license available",
+    "Existing phone tabs overlap the settings panel on both revisions",
+    "Existing runtime-config and static-prefetch 404s, no new 404 paths"
+  ]
+}

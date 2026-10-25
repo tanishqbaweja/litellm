@@ -1,0 +1,63 @@
+{
+  "trust_anchor": "Generated test RSA public key, substituted only in private verification worktrees",
+  "public_key_sha256": "86a5981b7d19831f2bbbe2b9f004279708aba32f487b87e56358105bd22fe94f",
+  "rsa_bits": 2048,
+  "cases": {
+    "plain": {
+      "payload": {
+        "user_id": "qa-license-26231",
+        "expiration_date": "2099-12-31",
+        "max_users": 500,
+        "max_teams": 50,
+        "allowed_features": [
+          "*"
+        ]
+      },
+      "signature_contains_dot": true,
+      "cryptographically_valid": true
+    },
+    "dotted": {
+      "payload": {
+        "user_id": "qa.example.co.jp-license-26231",
+        "expiration_date": "2099-12-31",
+        "max_users": 500,
+        "max_teams": 50,
+        "allowed_features": [
+          "*"
+        ]
+      },
+      "signature_contains_dot": true,
+      "cryptographically_valid": true
+    },
+    "expired": {
+      "payload": {
+        "user_id": "qa.example.co.jp-license-26231",
+        "expiration_date": "2000-01-01",
+        "max_users": 500,
+        "max_teams": 50,
+        "allowed_features": [
+          "*"
+        ]
+      },
+      "signature_contains_dot": true,
+      "cryptographically_valid": true
+    },
+    "tampered": {
+      "cryptographically_valid": false
+    },
+    "dotted-unpadded": {
+      "payload": {
+        "user_id": "qa.example.co.jp-license-26231",
+        "expiration_date": "2099-12-31",
+        "max_users": 500,
+        "max_teams": 50,
+        "allowed_features": [
+          "*"
+        ]
+      },
+      "signature_contains_dot": true,
+      "cryptographically_valid": true
+    }
+  },
+  "customer_license_used": false
+}

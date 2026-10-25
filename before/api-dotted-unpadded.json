@@ -1,0 +1,21 @@
+{
+  "revision": "baseline",
+  "source_sha": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "case": "dotted-unpadded",
+  "public_key_sha256": "86a5981b7d19831f2bbbe2b9f004279708aba32f487b87e56358105bd22fe94f",
+  "license_sha256": "4ce8812f8816b533abca1feb536db9a38ebca9fa58d844ae8099562e109e9f9e",
+  "test_trust_anchor_substituted": true,
+  "license_server_dns": "127.0.0.1",
+  "http_status": 200,
+  "response": {
+    "has_license": true,
+    "license_type": "community",
+    "expiration_date": null,
+    "allowed_features": [],
+    "limits": {
+      "max_users": null,
+      "max_teams": null
+    }
+  },
+  "command": "curl --fail-with-body -H \"Authorization: Bearer $LITELLM_MASTER_KEY\" http://127.0.0.1:41475/health/license"
+}
