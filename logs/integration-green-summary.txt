@@ -1,0 +1,5 @@
+collecting ... collected 3 items
+tests/integration/management/test_budget_updates.py::test_clearing_model_budgets_preserves_other_limits[null] PASSED [ 33%]
+tests/integration/management/test_budget_updates.py::test_clearing_model_budgets_preserves_other_limits[empty-object] PASSED [ 66%]
+tests/integration/management/test_budget_updates.py::test_shortening_budget_duration_moves_reset_at_onto_the_new_schedule PASSED [100%]
+============================== 3 passed in 0.37s ===============================

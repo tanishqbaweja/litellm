@@ -1,0 +1,17 @@
+{
+  "name": "frontend",
+  "command": [
+    "/opt/contri-node/bin/node",
+    "node_modules/vitest/vitest.mjs",
+    "run",
+    "src/app/(dashboard)/budgets/_components/BudgetModal.integration.test.tsx",
+    "src/app/(dashboard)/budgets/_components/BudgetPanel.test.tsx",
+    "src/app/(dashboard)/budgets/_components/BudgetTable.test.tsx",
+    "src/app/(dashboard)/budgets/_components/EditBudgetModal.integration.test.tsx",
+    "src/app/(dashboard)/budgets/_components/budgetPrecision.test.ts",
+    "src/app/(dashboard)/hooks/budgets/budgetFilters.test.ts"
+  ],
+  "started_at": "2026-10-25T21:27:03.267308+00:00",
+  "returncode": 0,
+  "completed_at": "2026-10-25T21:27:51.654584+00:00"
+}

@@ -1,0 +1,16 @@
+{
+  "phase": "post-mutations",
+  "command": [
+    "/opt/litellm-venv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "--tb=short",
+    "tests/unit/proxy/management_endpoints/test_budget_endpoints.py"
+  ],
+  "started_at": "2026-10-25T21:30:37.186794+00:00",
+  "source_head": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "source_sha256": "91150f6540226766e02ea3476909f611872b16cb25e8f22b9445eb28ba61cdbe",
+  "returncode": 0,
+  "completed_at": "2026-10-25T21:30:50.884082+00:00"
+}

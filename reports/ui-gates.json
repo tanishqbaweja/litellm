@@ -1,0 +1,64 @@
+{
+  "source_sha": "52f7654be9ee2a86a88ecc5db0f2eb81962da9d9",
+  "started_at": "2026-10-25T21:37:22.544119+00:00",
+  "gates": [
+    {
+      "name": "prettier",
+      "command": [
+        "/opt/contri-node/bin/node",
+        "node_modules/prettier/bin/prettier.cjs",
+        "--check",
+        "src/lib/http/schema.d.ts"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "eslint-changed",
+      "command": [
+        "/opt/contri-node/bin/node",
+        "node_modules/eslint/bin/eslint.js",
+        "--no-warn-ignored",
+        "--pass-on-unpruned-suppressions",
+        "src/lib/http/schema.d.ts"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "eslint-report",
+      "command": [
+        "/opt/contri-node/bin/node",
+        "node_modules/eslint/bin/eslint.js",
+        ".",
+        "-f",
+        "json",
+        "-o",
+        "/qa/litellm-38759/eslint-report.json"
+      ],
+      "returncode": 2
+    },
+    {
+      "name": "eslint-budgets",
+      "command": [
+        "/opt/contri-node/bin/node",
+        "scripts/check-lint-budgets.mjs",
+        "/qa/litellm-38759/eslint-report.json",
+        "eslint-budgets.json"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "knip",
+      "command": [
+        "/opt/contri-node/bin/node",
+        "node_modules/knip/bin/knip.js",
+        "--exclude",
+        "exports,nsExports,types,nsTypes,enumMembers,classMembers,duplicates"
+      ],
+      "returncode": 0
+    }
+  ],
+  "eslint_report_files": 2442,
+  "eslint_fatal_errors": 0,
+  "product_tree_clean": true,
+  "completed_at": "2026-10-25T21:40:16.369151+00:00"
+}

@@ -1,0 +1,1345 @@
+{
+  "checked_at": "2026-10-25T21:41:55.378022+00:00",
+  "repository": "BerriAI/litellm",
+  "account": "tanishqbaweja",
+  "default_branch": "main",
+  "base": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "head": "52f7654be9ee2a86a88ecc5db0f2eb81962da9d9",
+  "issue": {
+    "number": 38759,
+    "title": "[Bug]: /budget/update returns 500 for valid structured model_max_budget objects",
+    "state": "OPEN",
+    "updatedAt": "2026-10-24T02:51:41Z",
+    "assignees": [],
+    "url": "https://github.com/BerriAI/litellm/issues/38759"
+  },
+  "comments": 1,
+  "active_timeline_pr_references": [],
+  "searches": [
+    {
+      "query": "38759",
+      "results": []
+    },
+    {
+      "query": "\"budget/update\" null",
+      "results": [
+        {
+          "number": 45050,
+          "title": "feat(proxy): exempt admins from key upperbounds",
+          "updatedAt": "2026-10-07T14:32:15Z",
+          "url": "https://github.com/BerriAI/litellm/pull/45050"
+        },
+        {
+          "number": 28205,
+          "title": "fix(proxy): allow budget_limits:[] to clear all budget windows on /key/update",
+          "updatedAt": "2026-10-24T12:53:10Z",
+          "url": "https://github.com/BerriAI/litellm/pull/28205"
+        },
+        {
+          "number": 33945,
+          "title": "fix(proxy): persist budget_duration on /customer/update",
+          "updatedAt": "2026-10-19T00:03:07Z",
+          "url": "https://github.com/BerriAI/litellm/pull/33945"
+        },
+        {
+          "number": 32500,
+          "title": "fix: gracefully handle stringified None values for unlimited budget d\u2026",
+          "updatedAt": "2026-10-13T17:38:54Z",
+          "url": "https://github.com/BerriAI/litellm/pull/32500"
+        },
+        {
+          "number": 39535,
+          "title": "fix(ui): prefill the key edit Organization picker from org_id",
+          "updatedAt": "2026-10-21T14:45:47Z",
+          "url": "https://github.com/BerriAI/litellm/pull/39535"
+        },
+        {
+          "number": 44122,
+          "title": "feat(teams): move custom member budgets onto a new team default in one update",
+          "updatedAt": "2026-10-24T18:41:09Z",
+          "url": "https://github.com/BerriAI/litellm/pull/44122"
+        },
+        {
+          "number": 39515,
+          "title": "fix(proxy): stop treating empty budget_duration as a daily reset",
+          "updatedAt": "2026-10-24T12:18:08Z",
+          "url": "https://github.com/BerriAI/litellm/pull/39515"
+        },
+        {
+          "number": 33951,
+          "title": "fix(proxy): persist budget_duration on /customer/update",
+          "updatedAt": "2026-10-13T17:46:52Z",
+          "url": "https://github.com/BerriAI/litellm/pull/33951"
+        },
+        {
+          "number": 31197,
+          "title": "fix(proxy): support setting soft budget at the team member level",
+          "updatedAt": "2026-10-13T17:25:04Z",
+          "url": "https://github.com/BerriAI/litellm/pull/31197"
+        },
+        {
+          "number": 40708,
+          "title": "fix(terraform): omit empty key_alias from /key/update payload",
+          "updatedAt": "2026-10-13T18:52:27Z",
+          "url": "https://github.com/BerriAI/litellm/pull/40708"
+        },
+        {
+          "number": 34806,
+          "title": "feat(schema): declare user relation on verification tokens",
+          "updatedAt": "2026-09-23T15:28:40Z",
+          "url": "https://github.com/BerriAI/litellm/pull/34806"
+        },
+        {
+          "number": 47693,
+          "title": "feat(proxy): per-provider and per-model rpm/tpm requirements for enforce_project_model_quota",
+          "updatedAt": "2026-10-21T09:13:04Z",
+          "url": "https://github.com/BerriAI/litellm/pull/47693"
+        },
+        {
+          "number": 44621,
+          "title": "feat(proxy): paginated team members list endpoint",
+          "updatedAt": "2026-10-13T19:37:53Z",
+          "url": "https://github.com/BerriAI/litellm/pull/44621"
+        },
+        {
+          "number": 39558,
+          "title": "fix(proxy): stop labelling management and health rejections as auth failures",
+          "updatedAt": "2026-10-21T11:40:26Z",
+          "url": "https://github.com/BerriAI/litellm/pull/39558"
+        },
+        {
+          "number": 47778,
+          "title": "fix(proxy): stop labelling management and health rejections as auth failures",
+          "updatedAt": "2026-10-21T04:58:45Z",
+          "url": "https://github.com/BerriAI/litellm/pull/47778"
+        }
+      ]
+    },
+    {
+      "query": "\"budget/update\" \"model_max_budget\"",
+      "results": [
+        {
+          "number": 28204,
+          "title": "fix(proxy): add model_max_budget to NewTeamRequest and UpdateTeamRequest",
+          "updatedAt": "2026-10-24T12:53:12Z",
+          "url": "https://github.com/BerriAI/litellm/pull/28204"
+        },
+        {
+          "number": 33951,
+          "title": "fix(proxy): persist budget_duration on /customer/update",
+          "updatedAt": "2026-10-13T17:46:52Z",
+          "url": "https://github.com/BerriAI/litellm/pull/33951"
+        },
+        {
+          "number": 31042,
+          "title": "fix(proxy): allow clearing empty-collection user fields via /user/update",
+          "updatedAt": "2026-10-13T17:23:56Z",
+          "url": "https://github.com/BerriAI/litellm/pull/31042"
+        },
+        {
+          "number": 41726,
+          "title": "feat(proxy): budget fallbacks on teams and internal users",
+          "updatedAt": "2026-09-18T23:15:49Z",
+          "url": "https://github.com/BerriAI/litellm/pull/41726"
+        },
+        {
+          "number": 37874,
+          "title": "[Fix/Refactor] Add stdlib uuid fallback in litellm._uuid and enhance reasoning_effort bidirectional translations",
+          "updatedAt": "2026-10-24T12:23:48Z",
+          "url": "https://github.com/BerriAI/litellm/pull/37874"
+        },
+        {
+          "number": 47722,
+          "title": "feat(proxy): model family and access group entries in model_max_budget",
+          "updatedAt": "2026-10-21T09:12:18Z",
+          "url": "https://github.com/BerriAI/litellm/pull/47722"
+        }
+      ]
+    },
+    {
+      "query": "budget_management_endpoints",
+      "results": []
+    },
+    {
+      "query": "model_max_budget",
+      "results": [
+        {
+          "number": 47084,
+          "title": "fix(terraform): read litellm_tag model_max_budget back and keep the proxy budget_id",
+          "updatedAt": "2026-10-17T07:18:33Z",
+          "url": "https://github.com/BerriAI/litellm/pull/47084"
+        },
+        {
+          "number": 28204,
+          "title": "fix(proxy): add model_max_budget to NewTeamRequest and UpdateTeamRequest",
+          "updatedAt": "2026-10-24T12:53:12Z",
+          "url": "https://github.com/BerriAI/litellm/pull/28204"
+        },
+        {
+          "number": 47722,
+          "title": "feat(proxy): model family and access group entries in model_max_budget",
+          "updatedAt": "2026-10-21T09:12:18Z",
+          "url": "https://github.com/BerriAI/litellm/pull/47722"
+        },
+        {
+          "number": 45599,
+          "title": "fix(proxy): keep internal callbacks when litellm_settings.callbacks is a single string",
+          "updatedAt": "2026-10-13T15:35:59Z",
+          "url": "https://github.com/BerriAI/litellm/pull/45599"
+        },
+        {
+          "number": 32136,
+          "title": "fix(proxy): enforce customer model_max_budget on auth paths",
+          "updatedAt": "2026-10-06T21:56:12Z",
+          "url": "https://github.com/BerriAI/litellm/pull/32136"
+        },
+        {
+          "number": 31083,
+          "title": "fix: preserve model budget spend on key regeneration",
+          "updatedAt": "2026-10-13T17:24:24Z",
+          "url": "https://github.com/BerriAI/litellm/pull/31083"
+        },
+        {
+          "number": 33364,
+          "title": "fix(budget): key model_max_budget window start by model and duration",
+          "updatedAt": "2026-10-13T17:43:57Z",
+          "url": "https://github.com/BerriAI/litellm/pull/33364"
+        },
+        {
+          "number": 34376,
+          "title": "feat(proxy): add model group budgets for virtual keys",
+          "updatedAt": "2026-10-14T18:19:05Z",
+          "url": "https://github.com/BerriAI/litellm/pull/34376"
+        },
+        {
+          "number": 41708,
+          "title": "feat(ui): add per-model budgets to the create user form",
+          "updatedAt": "2026-09-19T00:08:53Z",
+          "url": "https://github.com/BerriAI/litellm/pull/41708"
+        },
+        {
+          "number": 31042,
+          "title": "fix(proxy): allow clearing empty-collection user fields via /user/update",
+          "updatedAt": "2026-10-13T17:23:56Z",
+          "url": "https://github.com/BerriAI/litellm/pull/31042"
+        },
+        {
+          "number": 46907,
+          "title": "fix(budget): keep pre-attach budget spend when Redis is added at runtime",
+          "updatedAt": "2026-10-16T16:01:25Z",
+          "url": "https://github.com/BerriAI/litellm/pull/46907"
+        },
+        {
+          "number": 33951,
+          "title": "fix(proxy): persist budget_duration on /customer/update",
+          "updatedAt": "2026-10-13T17:46:52Z",
+          "url": "https://github.com/BerriAI/litellm/pull/33951"
+        },
+        {
+          "number": 47693,
+          "title": "feat(proxy): per-provider and per-model rpm/tpm requirements for enforce_project_model_quota",
+          "updatedAt": "2026-10-21T09:13:04Z",
+          "url": "https://github.com/BerriAI/litellm/pull/47693"
+        },
+        {
+          "number": 47783,
+          "title": "fix(proxy): apply key and team router_settings to image generations",
+          "updatedAt": "2026-10-21T04:30:25Z",
+          "url": "https://github.com/BerriAI/litellm/pull/47783"
+        },
+        {
+          "number": 37874,
+          "title": "[Fix/Refactor] Add stdlib uuid fallback in litellm._uuid and enhance reasoning_effort bidirectional translations",
+          "updatedAt": "2026-10-24T12:23:48Z",
+          "url": "https://github.com/BerriAI/litellm/pull/37874"
+        },
+        {
+          "number": 40278,
+          "title": "fix(proxy/auth): copy end_user_max_budget onto token in update_valid_token_with_end_user_params",
+          "updatedAt": "2026-10-13T18:49:00Z",
+          "url": "https://github.com/BerriAI/litellm/pull/40278"
+        },
+        {
+          "number": 44427,
+          "title": "fix(shadow-eval): isolate creator billing and budget settlement",
+          "updatedAt": "2026-10-13T19:35:27Z",
+          "url": "https://github.com/BerriAI/litellm/pull/44427"
+        },
+        {
+          "number": 44356,
+          "title": "fix(shadow-eval): bill the creator and enforce their budgets",
+          "updatedAt": "2026-10-13T19:34:01Z",
+          "url": "https://github.com/BerriAI/litellm/pull/44356"
+        },
+        {
+          "number": 41726,
+          "title": "feat(proxy): budget fallbacks on teams and internal users",
+          "updatedAt": "2026-09-18T23:15:49Z",
+          "url": "https://github.com/BerriAI/litellm/pull/41726"
+        },
+        {
+          "number": 40540,
+          "title": "fix(terraform): keep prior state when the proxy rejects a virtual key update",
+          "updatedAt": "2026-10-13T18:51:02Z",
+          "url": "https://github.com/BerriAI/litellm/pull/40540"
+        },
+        {
+          "number": 40538,
+          "title": "fix(terraform): keep prior state when the proxy rejects a virtual key update",
+          "updatedAt": "2026-09-23T14:37:29Z",
+          "url": "https://github.com/BerriAI/litellm/pull/40538"
+        },
+        {
+          "number": 44464,
+          "title": "fix(shadow-eval): run evaluation calls as the job creator",
+          "updatedAt": "2026-10-05T20:46:34Z",
+          "url": "https://github.com/BerriAI/litellm/pull/44464"
+        },
+        {
+          "number": 45560,
+          "title": "feat(proxy): add Google AI Studio Live API websocket pass-through",
+          "updatedAt": "2026-10-09T13:16:40Z",
+          "url": "https://github.com/BerriAI/litellm/pull/45560"
+        },
+        {
+          "number": 46643,
+          "title": "refactor: clean up fresh tech debt in proxy auth reads, mcp tool calls, user list sorting and opencode affinity header",
+          "updatedAt": "2026-10-24T08:31:25Z",
+          "url": "https://github.com/BerriAI/litellm/pull/46643"
+        },
+        {
+          "number": 37570,
+          "title": "feat(key management): show every budget that applies to a key",
+          "updatedAt": "2026-10-13T18:17:49Z",
+          "url": "https://github.com/BerriAI/litellm/pull/37570"
+        },
+        {
+          "number": 40366,
+          "title": "feat(chatgpt): support Codex images, review, and public Live routes",
+          "updatedAt": "2026-10-24T01:26:12Z",
+          "url": "https://github.com/BerriAI/litellm/pull/40366"
+        }
+      ]
+    }
+  ],
+  "reviewed_adjacent_prs": [
+    {
+      "number": 28204,
+      "title": "fix(proxy): add model_max_budget to NewTeamRequest and UpdateTeamRequest",
+      "headRefOid": "1853f961b0ba95c3335ae0174b082577d81a694d",
+      "files": [
+        "litellm/proxy/_types.py"
+      ]
+    },
+    {
+      "number": 28205,
+      "title": "fix(proxy): allow budget_limits:[] to clear all budget windows on /key/update",
+      "headRefOid": "83cff6482390f91b0601e3923bab324d93bc41be",
+      "files": [
+        "litellm/proxy/management_endpoints/key_management_endpoints.py"
+      ]
+    },
+    {
+      "number": 31042,
+      "title": "fix(proxy): allow clearing empty-collection user fields via /user/update",
+      "headRefOid": "bbc62c34f6e19b646095479dc3db6b47f61e16b2",
+      "files": [
+        "litellm/proxy/management_endpoints/internal_user_endpoints.py",
+        "tests/test_litellm/proxy/management_endpoints/test_internal_user_endpoints.py"
+      ]
+    },
+    {
+      "number": 31083,
+      "title": "fix: preserve model budget spend on key regeneration",
+      "headRefOid": "5784b4877ab0d919f794edb1e244a8f196209293",
+      "files": [
+        "litellm/proxy/management_endpoints/key_management_endpoints.py",
+        "tests/test_litellm/proxy/management_endpoints/test_key_management_endpoints.py"
+      ]
+    },
+    {
+      "number": 31197,
+      "title": "fix(proxy): support setting soft budget at the team member level",
+      "headRefOid": "22f09201f7be6e5e1f477a4c09f71b13aed5b3f1",
+      "files": [
+        "litellm/proxy/_types.py",
+        "litellm/proxy/management_endpoints/team_endpoints.py",
+        "tests/test_litellm/proxy/management_endpoints/test_team_endpoints.py",
+        "ui/litellm-dashboard/src/lib/http/schema.d.ts"
+      ]
+    },
+    {
+      "number": 32136,
+      "title": "fix(proxy): enforce customer model_max_budget on auth paths",
+      "headRefOid": "f50232e3b2e1bcb078a2de8528be1b4eafc43691",
+      "files": [
+        ".github/workflows/test-unit-proxy-db.yml",
+        "litellm/__init__.py",
+        "litellm/proxy/auth/user_api_key_auth.py",
+        "tests/proxy_unit_tests/test_end_user_model_max_budget_enforcement.py"
+      ]
+    },
+    {
+      "number": 32500,
+      "title": "fix: gracefully handle stringified None values for unlimited budget d\u2026",
+      "headRefOid": "9774245f402ee08e912f8e6ffd5b7824dc70cb29",
+      "files": [
+        "litellm/litellm_core_utils/duration_parser.py",
+        "tests/test_duration_parser.py"
+      ]
+    },
+    {
+      "number": 33364,
+      "title": "fix(budget): key model_max_budget window start by model and duration",
+      "headRefOid": "38344c4c601bde1130e27bf9a03ccb0435cb7915",
+      "files": [
+        "litellm/proxy/hooks/model_max_budget_limiter.py",
+        "tests/proxy_unit_tests/test_unit_test_max_model_budget_limiter.py"
+      ]
+    },
+    {
+      "number": 33945,
+      "title": "fix(proxy): persist budget_duration on /customer/update",
+      "headRefOid": "81bf1b1bb26b951a09211e592c22e81d796e2227",
+      "files": [
+        "litellm/proxy/_types.py",
+        "litellm/proxy/management_endpoints/customer_endpoints.py",
+        "tests/test_litellm/proxy/management_endpoints/test_customer_budget.py",
+        "ui/litellm-dashboard/src/lib/http/schema.d.ts"
+      ]
+    },
+    {
+      "number": 33951,
+      "title": "fix(proxy): persist budget_duration on /customer/update",
+      "headRefOid": "ca353b4698a1aeb64f5a8ef520e9ac5b957a2c72",
+      "files": [
+        "litellm/proxy/_types.py",
+        "litellm/proxy/management_endpoints/customer_endpoints.py",
+        "tests/test_litellm/proxy/management_endpoints/test_customer_budget.py",
+        "ui/litellm-dashboard/src/lib/http/schema.d.ts"
+      ]
+    },
+    {
+      "number": 34376,
+      "title": "feat(proxy): add model group budgets for virtual keys",
+      "headRefOid": "8f12dbc89f85d5cc2775e881a81eacae70ec49ec",
+      "files": [
+        "litellm/proxy/_types.py",
+        "litellm/proxy/hooks/model_max_budget_limiter.py",
+        "litellm/proxy/management_endpoints/key_management_endpoints.py",
+        "litellm/types/utils.py",
+        "tests/test_litellm/proxy/hooks/test_model_max_budget_limiter.py",
+        "ui/litellm-dashboard/src/lib/http/schema.d.ts"
+      ]
+    },
+    {
+      "number": 34806,
+      "title": "feat(schema): declare user relation on verification tokens",
+      "headRefOid": "af05f4b24987a666d3cef80b6a86c67e42109c78",
+      "files": [
+        "litellm-proxy-extras/litellm_proxy_extras/migrations/20260727000000_add_verification_token_user_fkey/migration.sql",
+        "litellm-proxy-extras/litellm_proxy_extras/schema.prisma",
+        "litellm/proxy/management_endpoints/key_management_endpoints.py",
+        "litellm/proxy/schema.prisma",
+        "schema.prisma",
+        "tests/test_litellm/proxy/management_endpoints/test_key_management_endpoints.py"
+      ]
+    },
+    {
+      "number": 37570,
+      "title": "feat(key management): show every budget that applies to a key",
+      "headRefOid": "f5080dee2e9653eebe244117559236650e997eb8",
+      "files": [
+        "litellm/proxy/_types.py",
+        "litellm/proxy/auth/auth_checks.py",
+        "litellm/proxy/auth/auth_exception_handler.py",
+        "litellm/proxy/auth/auth_utils.py",
+        "litellm/proxy/auth/route_checks.py",
+        "litellm/proxy/auth/user_api_key_auth.py",
+        "litellm/proxy/hooks/model_max_budget_limiter.py",
+        "litellm/proxy/management_endpoints/key_budget_resolver.py",
+        "litellm/proxy/management_endpoints/key_management_endpoints.py",
+        "litellm/proxy/spend_tracking/spend_counter_keys.py",
+        "litellm/proxy/utils.py",
+        "litellm/repositories/budget_repository.py",
+        "litellm/types/proxy/management_endpoints/key_management_endpoints.py",
+        "tests/proxy_unit_tests/test_proxy_utils.py",
+        "tests/proxy_unit_tests/test_unit_test_max_model_budget_limiter.py",
+        "tests/test_litellm/proxy/auth/test_auth_exception_handler.py",
+        "tests/test_litellm/proxy/auth/test_auth_utils.py",
+        "tests/test_litellm/proxy/auth/test_info_routes.py",
+        "tests/test_litellm/proxy/auth/test_team_member_budget.py",
+        "tests/test_litellm/proxy/auth/test_user_api_key_auth.py",
+        "tests/test_litellm/proxy/management_endpoints/test_key_management_endpoints.py",
+        "tests/test_litellm/proxy/test_proxy_utils.py",
+        "tests/test_litellm/repositories/test_repositories.py",
+        "ui/litellm-dashboard/src/app/(dashboard)/hooks/keys/useKeyBudgets.ts",
+        "ui/litellm-dashboard/src/components/shared/InheritedBudgetHint.tsx",
+        "ui/litellm-dashboard/src/components/templates/KeyBudgetsBulletChart.test.tsx",
+        "ui/litellm-dashboard/src/components/templates/KeyBudgetsBulletChart.tsx",
+        "ui/litellm-dashboard/src/components/templates/KeyBudgetsTable.tsx",
+        "ui/litellm-dashboard/src/components/templates/KeyBudgetsTableColumns.test.ts",
+        "ui/litellm-dashboard/src/components/templates/KeyBudgetsTableColumns.tsx",
+        "ui/litellm-dashboard/src/components/templates/key_info_view.budgets_tab.test.tsx",
+        "ui/litellm-dashboard/src/components/templates/key_info_view.tsx",
+        "ui/litellm-dashboard/src/lib/http/schema.d.ts",
+        "ui/litellm-dashboard/tsconfig.tsbuildinfo"
+      ]
+    },
+    {
+      "number": 37874,
+      "title": "[Fix/Refactor] Add stdlib uuid fallback in litellm._uuid and enhance reasoning_effort bidirectional translations",
+      "headRefOid": "15a87848f0023932035ae47a92d8a01bf84214f7",
+      "files": [
+        "ci_cd/generate_model_prices_schema.py",
+        "enterprise/enterprise_hooks/banned_keywords.py",
+        "enterprise/enterprise_hooks/blocked_user_list.py",
+        "litellm/_uuid.py",
+        "litellm/constants.py",
+        "litellm/integrations/custom_logger.py",
+        "litellm/litellm_core_utils/exception_mapping_utils.py",
+        "litellm/litellm_core_utils/llm_cost_calc/utils.py",
+        "litellm/litellm_core_utils/ptu_pricing.py",
+        "litellm/litellm_core_utils/reasoning_effort_utils.py",
+        "litellm/litellm_core_utils/streaming_handler.py",
+        "litellm/llms/anthropic/chat/transformation.py",
+        "litellm/llms/anthropic/common_utils.py",
+        "litellm/llms/anthropic/experimental_pass_through/context_management/editors/compact.py",
+        "litellm/llms/anthropic/experimental_pass_through/messages/transformation.py",
+        "litellm/llms/bedrock/chat/converse_handler.py",
+        "litellm/llms/bedrock/chat/converse_transformation.py",
+        "litellm/llms/bedrock/chat/invoke_handler.py",
+        "litellm/llms/bedrock/chat/invoke_transformations/base_invoke_transformation.py",
+        "litellm/llms/custom_httpx/llm_http_handler.py",
+        "litellm/llms/fal_ai/cost_calculator.py",
+        "litellm/llms/sagemaker/chat/transformation.py",
+        "litellm/model_prices_and_context_window_backup.json",
+        "litellm/proxy/_types.py",
+        "litellm/proxy/auth/auth_utils.py",
+        "litellm/proxy/auth/user_api_key_auth.py",
+        "litellm/proxy/common_request_processing.py",
+        "litellm/proxy/db/spend_log_batching.py",
+        "litellm/proxy/hooks/azure_content_safety.py",
+        "litellm/proxy/hooks/model_max_budget_limiter.py",
+        "litellm/proxy/hooks/prompt_injection_detection.py",
+        "litellm/proxy/litellm_pre_call_utils.py",
+        "litellm/proxy/management_endpoints/internal_user_endpoints.py",
+        "litellm/proxy/management_endpoints/key_management_endpoints.py",
+        "litellm/proxy/management_endpoints/model_management_endpoints.py",
+        "litellm/proxy/management_endpoints/scim/scim_v2.py",
+        "litellm/proxy/management_endpoints/team_endpoints.py",
+        "litellm/proxy/openai_files_endpoints/batch_guardrails.py",
+        "litellm/proxy/openai_files_endpoints/files_endpoints.py",
+        "litellm/proxy/pass_through_endpoints/pass_through_endpoints.py",
+        "litellm/proxy/pass_through_endpoints/streaming_handler.py",
+        "litellm/proxy/proxy_server.py",
+        "litellm/proxy/spend_tracking/ptu_flat_cost_rollup.py",
+        "litellm/proxy/spend_tracking/spend_tracking_utils.py",
+        "litellm/proxy/utils.py",
+        "litellm/router.py",
+        "litellm/types/llms/anthropic.py",
+        "litellm/types/utils.py",
+        "litellm/utils.py",
+        "model_prices_and_context_window.json",
+        "model_prices_and_context_window.schema.json",
+        "ruff-tests.toml",
+        "test-quality-budget.json",
+        "tests/enterprise/litellm_enterprise/integrations/test_prometheus.py",
+        "tests/enterprise/litellm_enterprise/proxy/guardrails/test_bedrock_apply_guardrail.py",
+        "tests/enterprise/litellm_enterprise/proxy/hooks/test_managed_files.py",
+        "tests/enterprise/litellm_enterprise/proxy/management_endpoints/test_project_endpoints_prisma.py",
+        "tests/guardrails_tests/test_bedrock_guardrails.py",
+        "tests/guardrails_tests/test_dynamoai_guardrails.py",
+        "tests/guardrails_tests/test_eu_ai_act_article5.py",
+        "tests/guardrails_tests/test_eu_ai_act_french_3_scenarios.py",
+        "tests/guardrails_tests/test_sg_mas_ai_guardrails.py",
+        "tests/guardrails_tests/test_sg_pdpa_guardrails.py",
+        "tests/litellm_utils_tests/test_hashicorp.py",
+        "tests/litellm_utils_tests/test_utils.py",
+        "tests/litellm_utils_tests/test_validate_tool_choice.py",
+        "tests/llm_responses_api_testing/test_openai_responses_api.py",
+        "tests/llm_responses_api_testing/test_responses_hooks.py",
+        "tests/llm_translation/test_bedrock_completion.py",
+        "tests/llm_translation/test_bedrock_moonshot.py",
+        "tests/llm_translation/test_llm_response_utils/test_convert_dict_to_chat_completion.py",
+        "tests/llm_translation/test_prompt_factory.py",
+        "tests/llm_translation/test_triton.py",
+        "tests/llm_translation/test_unit_test_bedrock_invoke.py",
+        "tests/local_testing/test_aim_guardrails.py",
+        "tests/local_testing/test_auth_utils.py",
+        "tests/local_testing/test_completion_cost.py",
+        "tests/local_testing/test_exceptions.py",
+        "tests/local_testing/test_file_types.py",
+        "tests/local_testing/test_function_calling.py",
+        "tests/local_testing/test_get_model_info.py",
+        "tests/local_testing/test_mock_request.py",
+        "tests/local_testing/test_router_budget_limiter.py",
+        "tests/local_testing/test_router_fallbacks.py",
+        "tests/local_testing/test_router_max_parallel_requests.py",
+        "tests/local_testing/test_streaming.py",
+        "tests/logging_callback_tests/test_standard_logging_payload.py",
+        "tests/multi_instance_e2e_tests/test_update_team_e2e.py",
+        "tests/ocr_tests/test_ocr_azure_document_intelligence.py",
+        "tests/otel_tests/test_e2e_model_access.py",
+        "tests/proxy_admin_ui_tests/test_access_group_team_sync.py",
+        "tests/proxy_admin_ui_tests/test_key_management.py",
+        "tests/proxy_admin_ui_tests/test_role_based_access.py",
+        "tests/proxy_unit_tests/test_auth_checks.py",
+        "tests/proxy_unit_tests/test_jwt.py",
+        "tests/proxy_unit_tests/test_proxy_server.py",
+        "tests/proxy_unit_tests/test_proxy_utils.py",
+        "tests/proxy_unit_tests/test_unit_test_max_model_budget_limiter.py",
+        "tests/proxy_unit_tests/test_update_spend.py",
+        "tests/proxy_unit_tests/test_user_api_key_auth.py",
+        "tests/router_unit_tests/test_router_helper_utils.py",
+        "tests/store_model_in_db_tests/test_mcp_servers.py",
+        "tests/test_litellm/a2a_protocol/test_a2a_exception_mapping_utils.py",
+        "tests/test_litellm/caching/test_redis_semantic_cache.py",
+        "tests/test_litellm/conftest.py",
+        "tests/test_litellm/enterprise/enterprise_callbacks/send_emails/test_sendgrid_email.py",
+        "tests/test_litellm/enterprise/proxy/test_managed_files_hook.py",
+        "tests/test_litellm/experimental_mcp_client/test_mcp_client.py",
+        "tests/test_litellm/integrations/bitbucket/test_bitbucket_integration.py",
+        "tests/test_litellm/integrations/cloudzero/test_cloudzero_database.py",
+        "tests/test_litellm/integrations/cloudzero/test_cz_stream_api.py",
+        "tests/test_litellm/integrations/focus/test_focus_database.py",
+        "tests/test_litellm/integrations/focus/test_s3_destination.py",
+        "tests/test_litellm/integrations/gitlab/test_gitlab_client.py",
+        "tests/test_litellm/integrations/levo/test_levo.py",
+        "tests/test_litellm/integrations/otel/test_otel_v2_metrics.py",
+        "tests/test_litellm/integrations/test_langfuse.py",
+        "tests/test_litellm/litellm_core_utils/llm_cost_calc/test_tool_call_cost_tracking.py",
+        "tests/test_litellm/litellm_core_utils/prompt_templates/test_litellm_core_utils_prompt_templates_factory.py",
+        "tests/test_litellm/litellm_core_utils/test_exception_mapping_utils.py",
+        "tests/test_litellm/litellm_core_utils/test_fallback_generalizations.py",
+        "tests/test_litellm/litellm_core_utils/test_initialize_dynamic_callback_params.py",
+        "tests/test_litellm/litellm_core_utils/test_llm_judge.py",
+        "tests/test_litellm/litellm_core_utils/test_ptu_pricing.py",
+        "tests/test_litellm/litellm_core_utils/test_streaming_handler.py",
+        "tests/test_litellm/litellm_core_utils/test_token_counter.py",
+        "tests/test_litellm/litellm_core_utils/test_url_utils.py",
+        "tests/test_litellm/llms/aiml/image_generation/test_aiml_image_generation_transformation.py",
+        "tests/test_litellm/llms/anthropic/chat/test_anthropic_chat_transformation.py",
+        "tests/test_litellm/llms/anthropic/experimental_pass_through/context_management/test_compact.py",
+        "tests/test_litellm/llms/anthropic/experimental_pass_through/messages/test_mcp_handler.py",
+        "tests/test_litellm/llms/anthropic/experimental_pass_through/messages/test_reasoning_effort_translation.py",
+        "tests/test_litellm/llms/anthropic/test_anthropic_common_utils.py",
+        "tests/test_litellm/llms/azure_ai/claude/test_azure_anthropic_messages_transformation.py",
+        "tests/test_litellm/llms/azure_ai/rerank/test_azure_ai_rerank_transformation.py",
+        "tests/test_litellm/llms/bedrock/chat/test_converse_transformation.py",
+        "tests/test_litellm/llms/bedrock/chat/test_invoke_handler.py",
+        "tests/test_litellm/llms/bedrock/messages/invoke_transformations/test_anthropic_claude3_transformation.py",
+        "tests/test_litellm/llms/bedrock/test_base_aws_llm.py",
+        "tests/test_litellm/llms/bedrock_mantle/test_bedrock_mantle_responses_transformation.py",
+        "tests/test_litellm/llms/bedrock_mantle/test_bedrock_mantle_transformation.py",
+        "tests/test_litellm/llms/bytez/chat/test_bytez_chat_transformation.py",
+        "tests/test_litellm/llms/chat/test_converse_handler.py",
+        "tests/test_litellm/llms/custom_httpx/test_aiohttp_transport.py",
+        "tests/test_litellm/llms/custom_httpx/test_credential_leak_prevention.py",
+        "tests/test_litellm/llms/custom_httpx/test_llm_http_handler.py",
+        "tests/test_litellm/llms/deepinfra/test_deepinfra_rerank_transformation.py",
+        "tests/test_litellm/llms/fal_ai/image_generation/test_fal_ai_gpt_image_2_transformation.py",
+        "tests/test_litellm/llms/fal_ai/image_generation/test_fal_ai_nano_banana_transformation.py",
+        "tests/test_litellm/llms/fal_ai/test_cost_calculator.py",
+        "tests/test_litellm/llms/featherless_ai/chat/test_featherless_chat_transformation.py",
+        "tests/test_litellm/llms/fireworks_ai/rerank/test_fireworks_ai_rerank_transformation.py",
+        "tests/test_litellm/llms/gemini/image_edit/test_gemini_image_edit_transformation.py",
+        "tests/test_litellm/llms/gemini/test_gemini_client_setup.py",
+        "tests/test_litellm/llms/groq/chat/test_groq_chat_transformation.py",
+        "tests/test_litellm/llms/hosted_vllm/test_hosted_vllm_rerank_transformation.py",
+        "tests/test_litellm/llms/langflow/chat/test_langflow_chat_transformation.py",
+        "tests/test_litellm/llms/mistral/ocr/test_mistral_ocr_cost.py",
+        "tests/test_litellm/llms/modelscope/image_generation/test_modelscope_image_gen_transformation.py",
+        "tests/test_litellm/llms/novita/chat/test_novita_chat_transformation.py",
+        "tests/test_litellm/llms/oci/chat/test_oci_chat_transformation.py",
+        "tests/test_litellm/llms/openai/test_openai_common_utils.py",
+        "tests/test_litellm/llms/openai_like/test_cognition_provider.py",
+        "tests/test_litellm/llms/pg_vector/vector_stores/test_pg_vector_transformation.py",
+        "tests/test_litellm/llms/recraft/image_edit/test_recraft_image_edit_transformation.py",
+        "tests/test_litellm/llms/recraft/image_generation/test_recraft_image_gen_transformation.py",
+        "tests/test_litellm/llms/sagemaker/test_sagemaker_chat_transformation.py",
+        "tests/test_litellm/llms/stability/image_generation/test_stability_image_generation.py",
+        "tests/test_litellm/llms/tencent/test_cost_calculator.py",
+        "tests/test_litellm/llms/tinyfish/test_tinyfish_search.py",
+        "tests/test_litellm/llms/vertex_ai/files/test_vertex_ai_files_integration.py",
+        "tests/test_litellm/llms/vertex_ai/gemini/test_vertex_and_google_ai_studio_gemini.py",
+        "tests/test_litellm/llms/vertex_ai/test_vertex_ai_common_utils.py",
+        "tests/test_litellm/llms/vertex_ai/vertex_ai_partner_models/anthropic/test_vertex_ai_partner_models_anthropic_messages_config.py",
+        "tests/test_litellm/llms/volcengine/responses/test_volcengine_responses_transformation.py",
+        "tests/test_litellm/llms/volcengine/test_volcengine_embedding.py",
+        "tests/test_litellm/llms/voyage/rerank/test_voyage_rerank_transformation.py",
+        "tests/test_litellm/llms/voyage/test_voyage_multimodal_embedding.py",
+        "tests/test_litellm/llms/xai/test_xai_key_fallback.py",
+        "tests/test_litellm/passthrough/test_async_streaming_error_propagation.py",
+        "tests/test_litellm/passthrough/test_passthrough_main.py",
+        "tests/test_litellm/passthrough/test_streaming_interrupt_spend_tracking.py",
+        "tests/test_litellm/proxy/_experimental/mcp_server/auth/test_user_api_key_auth_mcp.py",
+        "tests/test_litellm/proxy/_experimental/mcp_server/test_discoverable_endpoints.py",
+        "tests/test_litellm/proxy/_experimental/mcp_server/test_short_mcp_tool_prefix.py",
+        "tests/test_litellm/proxy/auth/test_auth_checks.py",
+        "tests/test_litellm/proxy/auth/test_auth_exception_handler.py",
+        "tests/test_litellm/proxy/auth/test_auth_hot_path_network_requests.py",
+        "tests/test_litellm/proxy/auth/test_auth_utils.py",
+        "tests/test_litellm/proxy/auth/test_handle_jwt.py",
+        "tests/test_litellm/proxy/auth/test_oauth2_proxy_hook.py",
+        "tests/test_litellm/proxy/auth/test_route_checks.py",
+        "tests/test_litellm/proxy/auth/test_user_api_key_auth.py",
+        "tests/test_litellm/proxy/client/cli/test_auth_commands.py",
+        "tests/test_litellm/proxy/client/cli/test_pkce_login.py",
+        "tests/test_litellm/proxy/client/test_models.py",
+        "tests/test_litellm/proxy/common_utils/test_callback_utils.py",
+        "tests/test_litellm/proxy/common_utils/test_path_utils.py",
+        "tests/test_litellm/proxy/common_utils/test_timezone_utils.py",
+        "tests/test_litellm/proxy/conftest.py",
+        "tests/test_litellm/proxy/db/db_transaction_queue/test_spend_logs_partition_manager.py",
+        "tests/test_litellm/proxy/db/test_prisma_planned_engine_restart.py",
+        "tests/test_litellm/proxy/db/test_spend_log_batching.py",
+        "tests/test_litellm/proxy/db/test_spend_log_tool_index.py",
+        "tests/test_litellm/proxy/guardrails/guardrail_hooks/openai/test_moderations.py",
+        "tests/test_litellm/proxy/guardrails/guardrail_hooks/test_bedrock_invoke_guardrail_checks.py",
+        "tests/test_litellm/proxy/guardrails/guardrail_hooks/test_cato_networks.py",
+        "tests/test_litellm/proxy/guardrails/guardrail_hooks/test_enkryptai.py",
+        "tests/test_litellm/proxy/guardrails/guardrail_hooks/test_generic_guardrail_api.py",
+        "tests/test_litellm/proxy/guardrails/guardrail_hooks/test_microsoft_purview.py",
+        "tests/test_litellm/proxy/guardrails/guardrail_hooks/test_model_armor.py",
+        "tests/test_litellm/proxy/guardrails/guardrail_hooks/test_panw_prisma_airs.py",
+        "tests/test_litellm/proxy/guardrails/guardrail_hooks/test_straiker.py",
+        "tests/test_litellm/proxy/guardrails/guardrail_hooks/test_tool_permission.py",
+        "tests/test_litellm/proxy/guardrails/test_llm_as_a_judge.py",
+        "tests/test_litellm/proxy/guardrails/test_prompt_security_guardrails.py",
+        "tests/test_litellm/proxy/hooks/test_sensitive_data_routing.py",
+        "tests/test_litellm/proxy/hooks/test_tpm_concurrent.py",
+        "tests/test_litellm/proxy/management_endpoints/scim/test_scim_v2_endpoints.py",
+        "tests/test_litellm/proxy/management_endpoints/test_internal_user_endpoints.py",
+        "tests/test_litellm/proxy/management_endpoints/test_key_management_endpoints.py",
+        "tests/test_litellm/proxy/management_endpoints/test_mcp_management_endpoints.py",
+        "tests/test_litellm/proxy/management_endpoints/test_model_management_endpoints.py",
+        "tests/test_litellm/proxy/management_endpoints/test_ptu_model_settings.py",
+        "tests/test_litellm/proxy/management_endpoints/test_team_endpoints.py",
+        "tests/test_litellm/proxy/management_endpoints/usage_endpoints/test_ai_usage_chat.py",
+        "tests/test_litellm/proxy/management_helpers/test_team_metadata_validation.py",
+        "tests/test_litellm/proxy/openai_files_endpoint/test_batch_guardrails.py",
+        "tests/test_litellm/proxy/pass_through_endpoints/test_llm_pass_through_endpoints.py",
+        "tests/test_litellm/proxy/pass_through_endpoints/test_pass_through_endpoints.py",
+        "tests/test_litellm/proxy/policy_engine/test_policy_versioning.py",
+        "tests/test_litellm/proxy/proxy_server/test_proxy_config.py",
+        "tests/test_litellm/proxy/spend_tracking/test_ptu_flat_cost_rollup.py",
+        "tests/test_litellm/proxy/spend_tracking/test_spend_management_endpoints.py",
+        "tests/test_litellm/proxy/spend_tracking/test_spend_tracking_utils.py",
+        "tests/test_litellm/proxy/test_budget_reservation.py",
+        "tests/test_litellm/proxy/test_common_request_processing.py",
+        "tests/test_litellm/proxy/test_enforce_user_param.py",
+        "tests/test_litellm/proxy/test_litellm_pre_call_utils.py",
+        "tests/test_litellm/proxy/test_proxy_logging_hook_detection.py",
+        "tests/test_litellm/proxy/test_proxy_server.py",
+        "tests/test_litellm/proxy/test_route_llm_request.py",
+        "tests/test_litellm/proxy/test_spend_log_cleanup.py",
+        "tests/test_litellm/proxy/test_team_org_move.py",
+        "tests/test_litellm/proxy/utils/helpers/test_team_configs.py",
+        "tests/test_litellm/proxy/utils/prisma_and_spend/test_proxy_update_spend.py",
+        "tests/test_litellm/proxy/utils/proxy_logging/test_callback_capabilities_class.py",
+        "tests/test_litellm/proxy/utils/proxy_logging/test_pre_call_hook.py",
+        "tests/test_litellm/repositories/test_unit_of_work.py",
+        "tests/test_litellm/responses/test_responses_websocket_all_providers.py",
+        "tests/test_litellm/responses/test_streaming_iterator_error_events.py",
+        "tests/test_litellm/router_strategy/adaptive_router/test_bandit.py",
+        "tests/test_litellm/router_strategy/test_router_tag_routing.py",
+        "tests/test_litellm/router_utils/pre_call_checks/test_prompt_caching_deployment_check.py",
+        "tests/test_litellm/sandbox/test_e2b_sandbox.py",
+        "tests/test_litellm/secret_managers/test_base_secret_manager.py",
+        "tests/test_litellm/secret_managers/test_custom_secret_manager.py",
+        "tests/test_litellm/test_claude_fable_5_config.py",
+        "tests/test_litellm/test_claude_opus_4_8_config.py",
+        "tests/test_litellm/test_claude_opus_5_config.py",
+        "tests/test_litellm/test_claude_sonnet_5_config.py",
+        "tests/test_litellm/test_github_close_low_quality_prs.py",
+        "tests/test_litellm/test_github_triage_with_llm.py",
+        "tests/test_litellm/test_mistral_medium_3_5_model_metadata.py",
+        "tests/test_litellm/test_muse_spark_1_2_model_metadata.py",
+        "tests/test_litellm/test_reasoning_effort_utils.py",
+        "tests/test_litellm/test_redact_string_in_error_paths.py",
+        "tests/test_litellm/test_redis.py",
+        "tests/test_litellm/test_router.py",
+        "tests/test_litellm/test_router_model_cost_isolation.py",
+        "tests/test_litellm/test_utils.py",
+        "tests/test_litellm/test_uuid_helper.py",
+        "tests/test_litellm/types/test_router.py",
+        "tests/test_ratelimit.py",
+        "type-discipline-budget.json",
+        "ui/litellm-dashboard/src/app/(dashboard)/users/_components/BulkEditUsers.tsx",
+        "ui/litellm-dashboard/src/app/(dashboard)/users/_components/user_edit_view.test.tsx",
+        "ui/litellm-dashboard/src/app/(dashboard)/users/_components/user_edit_view.tsx",
+        "ui/litellm-dashboard/src/app/(dashboard)/users/_components/view_users/user_info_view.integration.test.tsx",
+        "ui/litellm-dashboard/src/app/(dashboard)/users/_components/view_users/user_info_view.tsx",
+        "ui/litellm-dashboard/src/components/key_team_helpers/ModelMaxBudgetEditor.integration.test.tsx",
+        "ui/litellm-dashboard/src/components/key_team_helpers/ModelMaxBudgetEditor.test.ts",
+        "ui/litellm-dashboard/src/components/key_team_helpers/ModelMaxBudgetEditor.tsx",
+        "ui/litellm-dashboard/src/components/key_team_helpers/key_list.tsx",
+        "ui/litellm-dashboard/src/components/key_team_helpers/modelMaxBudgetPayload.test.ts",
+        "ui/litellm-dashboard/src/components/key_team_helpers/modelMaxBudgetPayload.ts",
+        "ui/litellm-dashboard/src/components/key_team_helpers/useModelMaxBudgetField.ts",
+        "ui/litellm-dashboard/src/components/key_team_helpers/useSeededState.ts",
+        "ui/litellm-dashboard/src/components/networking.tsx",
+        "ui/litellm-dashboard/src/components/organisms/createKeyPayload.test.ts",
+        "ui/litellm-dashboard/src/components/organisms/createKeyPayload.ts",
+        "ui/litellm-dashboard/src/components/organisms/create_key_button.tsx",
+        "ui/litellm-dashboard/src/components/templates/key_edit_view.test.tsx",
+        "ui/litellm-dashboard/src/components/templates/key_edit_view.tsx",
+        "ui/litellm-dashboard/src/lib/http/schema.d.ts"
+      ]
+    },
+    {
+      "number": 39515,
+      "title": "fix(proxy): stop treating empty budget_duration as a daily reset",
+      "headRefOid": "f53b2bbb27fccc0f56e0986a590736748f0d9932",
+      "files": [
+        "litellm/litellm_core_utils/duration_parser.py",
+        "litellm/proxy/_types.py",
+        "litellm/proxy/common_utils/reset_budget_job.py",
+        "litellm/proxy/db/health_check_latest.py",
+        "litellm/proxy/dd_span_tagger.py",
+        "litellm/proxy/health_endpoints/_health_endpoints.py",
+        "litellm/proxy/management_endpoints/team_endpoints.py",
+        "litellm/repositories/unit_of_work.py",
+        "litellm/router.py",
+        "litellm/types/router.py",
+        "tests/test_litellm/litellm_core_utils/test_duration_parser.py",
+        "tests/test_litellm/proxy/common_utils/test_reset_budget_job.py",
+        "tests/test_litellm/proxy/db/test_health_check_latest.py",
+        "tests/test_litellm/proxy/management_endpoints/test_team_endpoints.py",
+        "tests/test_litellm/proxy/test__types.py",
+        "tests/test_litellm/proxy/test_common_request_processing.py",
+        "tests/test_litellm/proxy/test_health_check_functions.py",
+        "tests/test_litellm/repositories/test_unit_of_work.py",
+        "tests/test_litellm/test_router.py",
+        "ui/litellm-dashboard/src/components/AIHub/ModelHubTable.tsx",
+        "ui/litellm-dashboard/src/components/AIHub/ModelHubTableColumns.tsx",
+        "ui/litellm-dashboard/src/components/PublicModelHubTableColumns.tsx",
+        "ui/litellm-dashboard/src/components/public_model_hub.tsx",
+        "ui/litellm-dashboard/src/lib/http/schema.d.ts"
+      ]
+    },
+    {
+      "number": 39535,
+      "title": "fix(ui): prefill the key edit Organization picker from org_id",
+      "headRefOid": "45339ad26e2d09342fc997a588641da69d6d9663",
+      "files": [
+        "ui/litellm-dashboard/src/components/team/TeamVirtualKeysTable.test.tsx",
+        "ui/litellm-dashboard/src/components/team/TeamVirtualKeysTable.tsx",
+        "ui/litellm-dashboard/src/components/templates/KeyInfoView.handleKeyUpdate.test.tsx",
+        "ui/litellm-dashboard/src/components/templates/keyEditFieldNormalizers.ts",
+        "ui/litellm-dashboard/src/components/templates/keyEditFormValues.ts",
+        "ui/litellm-dashboard/src/components/templates/key_edit_view.integration.test.tsx",
+        "ui/litellm-dashboard/src/components/templates/key_edit_view.tsx",
+        "ui/litellm-dashboard/src/components/templates/key_info_view.tsx"
+      ]
+    },
+    {
+      "number": 39558,
+      "title": "fix(proxy): stop labelling management and health rejections as auth failures",
+      "headRefOid": "0c38a256eebf518d48c6f204123d3db7a4f37bbe",
+      "files": [
+        "litellm/proxy/common_utils/openai_error_payload.py",
+        "litellm/proxy/health_endpoints/_health_endpoints.py",
+        "litellm/proxy/management_endpoints/internal_user_endpoints.py",
+        "litellm/proxy/management_endpoints/key_management_endpoints.py",
+        "litellm/proxy/management_endpoints/model_management_endpoints.py",
+        "litellm/proxy/management_endpoints/organization_endpoints.py",
+        "litellm/proxy/management_endpoints/team_endpoints.py",
+        "litellm/proxy/proxy_server.py",
+        "tests/test_litellm/proxy/common_utils/test_openai_error_payload.py",
+        "tests/test_litellm/proxy/health_endpoints/test_health_endpoints.py",
+        "tests/test_litellm/proxy/management_endpoints/test_internal_user_endpoints.py",
+        "tests/test_litellm/proxy/management_endpoints/test_key_management_endpoints.py",
+        "tests/test_litellm/proxy/management_endpoints/test_model_management_endpoints.py",
+        "tests/test_litellm/proxy/management_endpoints/test_organization_endpoints.py",
+        "tests/test_litellm/proxy/management_endpoints/test_team_endpoints.py",
+        "tests/test_litellm/proxy/test_proxy_server.py"
+      ]
+    },
+    {
+      "number": 40278,
+      "title": "fix(proxy/auth): copy end_user_max_budget onto token in update_valid_token_with_end_user_params",
+      "headRefOid": "59f67c5832b51b82dce24026d86c3c4c756f8198",
+      "files": [
+        "litellm/proxy/auth/user_api_key_auth.py",
+        "tests/test_litellm/proxy/auth/test_custom_auth_end_user_budget.py"
+      ]
+    },
+    {
+      "number": 40366,
+      "title": "feat(chatgpt): support Codex images, review, and public Live routes",
+      "headRefOid": "966b047dd5ff7e67b6afe4156172c1e3d53ba0fa",
+      "files": [
+        ".github/codeql/codeql-config.yml",
+        ".github/workflows/_test-unit-base.yml",
+        ".github/workflows/codeql.yml",
+        ".github/workflows/test-unit.yml",
+        "backend/routes/allowlist.py",
+        "gateway/routes/allowlist.py",
+        "litellm-rust/crates/python-bridge/src/routes/traces.rs",
+        "litellm/cost_calculator.py",
+        "litellm/images/main.py",
+        "litellm/litellm_core_utils/llm_cost_calc/utils.py",
+        "litellm/litellm_core_utils/realtime_streaming.py",
+        "litellm/llms/base_llm/realtime/http_transformation.py",
+        "litellm/llms/chatgpt/authenticator.py",
+        "litellm/llms/chatgpt/chat/transformation.py",
+        "litellm/llms/chatgpt/codex.py",
+        "litellm/llms/chatgpt/common_utils.py",
+        "litellm/llms/chatgpt/images.py",
+        "litellm/llms/chatgpt/live.py",
+        "litellm/llms/chatgpt/realtime.py",
+        "litellm/llms/chatgpt/responses/transformation.py",
+        "litellm/llms/custom_httpx/llm_http_handler.py",
+        "litellm/llms/openai/realtime/handler.py",
+        "litellm/model_prices_and_context_window_backup.json",
+        "litellm/proxy/_lazy_features.py",
+        "litellm/proxy/_lazy_openapi_snapshot.json",
+        "litellm/proxy/_types.py",
+        "litellm/proxy/auth/auth_checks.py",
+        "litellm/proxy/auth/auth_utils.py",
+        "litellm/proxy/auth/handle_jwt.py",
+        "litellm/proxy/auth/user_api_key_auth.py",
+        "litellm/proxy/common_request_processing.py",
+        "litellm/proxy/common_utils/user_api_key_cache.py",
+        "litellm/proxy/hooks/parallel_request_limiter.py",
+        "litellm/proxy/hooks/parallel_request_limiter_v3.py",
+        "litellm/proxy/hooks/realtime_call_lease.py",
+        "litellm/proxy/management_endpoints/model_access_group_management_endpoints.py",
+        "litellm/proxy/proxy_server.py",
+        "litellm/proxy/realtime_endpoints/call_sessions.py",
+        "litellm/proxy/realtime_endpoints/call_supervision.py",
+        "litellm/proxy/realtime_endpoints/endpoints.py",
+        "litellm/proxy/realtime_endpoints/live.py",
+        "litellm/proxy/utils.py",
+        "litellm/realtime_api/main.py",
+        "litellm/rust_bridge/_native.pyi",
+        "litellm/types/images/main.py",
+        "litellm/types/litellm_params.py",
+        "litellm/types/llms/openai.py",
+        "litellm/types/realtime.py",
+        "litellm/utils.py",
+        "model_prices_and_context_window.json",
+        "tests/local_testing/test_realtime_call_redis.py",
+        "tests/test_litellm/proxy/agent_endpoints/auth/test_managed_authorization.py",
+        "tests/test_litellm/proxy/auth/test_auth_utils.py",
+        "tests/test_litellm/proxy/auth/test_route_checks.py",
+        "tests/test_litellm/proxy/auth/test_user_api_key_auth.py",
+        "tests/test_litellm/proxy/batches_endpoints/test_endpoints.py",
+        "tests/test_litellm/proxy/hooks/test_parallel_request_limiter.py",
+        "tests/test_litellm/proxy/hooks/test_parallel_request_limiter_v3.py",
+        "tests/test_litellm/proxy/hooks/test_realtime_call_lease.py",
+        "tests/test_litellm/proxy/management_endpoints/test_access_group_management.py",
+        "tests/test_litellm/proxy/realtime_endpoints/test_call_sessions.py",
+        "tests/test_litellm/proxy/realtime_endpoints/test_call_supervision.py",
+        "tests/test_litellm/proxy/realtime_endpoints/test_live.py",
+        "tests/test_litellm/proxy/realtime_endpoints/test_realtime_webrtc_endpoints.py",
+        "tests/test_litellm/proxy/test_live_route_registration.py",
+        "tests/test_litellm/proxy/test_native_compaction.py",
+        "tests/test_litellm/proxy/test_proxy_server.py",
+        "tests/test_litellm/proxy/test_proxy_utils.py",
+        "tests/test_litellm_rust/test_traces.py",
+        "tests/unit/interactions/test_openapi_compliance.py",
+        "tests/unit/litellm_core_utils/llm_cost_calc/test_llm_cost_calc_utils.py",
+        "tests/unit/litellm_core_utils/test_get_supported_openai_params.py",
+        "tests/unit/litellm_core_utils/test_realtime_streaming.py",
+        "tests/unit/llms/chatgpt/conftest.py",
+        "tests/unit/llms/chatgpt/responses/test_chatgpt_responses_transformation.py",
+        "tests/unit/llms/chatgpt/test_codex.py",
+        "tests/unit/llms/chatgpt/test_images.py",
+        "tests/unit/llms/chatgpt/test_live.py",
+        "tests/unit/llms/chatgpt/test_realtime.py",
+        "tests/unit/llms/custom_httpx/test_llm_http_handler.py",
+        "tests/unit/llms/openai/realtime/test_openai_realtime_handler.py",
+        "tests/unit/llms/vertex_ai/gemini_embeddings/test_batch_embed_content_transformation.py",
+        "tests/unit/proxy/auth/test_auth_checks.py",
+        "tests/unit/proxy/auth/test_user_api_key_auth.py",
+        "tests/unit/realtime_api/test_main.py",
+        "tests/unit/test_cost_calculator.py",
+        "tests/unit/test_gpt_image_cost_calculator.py",
+        "tests/unit/test_utils.py",
+        "tests/unit/types/test_litellm_params.py",
+        "ui/litellm-dashboard/src/lib/http/schema.d.ts"
+      ]
+    },
+    {
+      "number": 40538,
+      "title": "fix(terraform): keep prior state when the proxy rejects a virtual key update",
+      "headRefOid": "925601810a9bd832701ff6c6303d9a221efcc077",
+      "files": [
+        "terraform/provider/litellm/resource_key.go"
+      ]
+    },
+    {
+      "number": 40540,
+      "title": "fix(terraform): keep prior state when the proxy rejects a virtual key update",
+      "headRefOid": "2cf6f47c884b24ed0c33c4812dabb7e5aabe60fc",
+      "files": [
+        "terraform/provider/litellm/resource_key.go"
+      ]
+    },
+    {
+      "number": 40708,
+      "title": "fix(terraform): omit empty key_alias from /key/update payload",
+      "headRefOid": "f75725929f13535c4f00ffb99ecc6b15efd74f92",
+      "files": [
+        "terraform/provider/litellm/client.go",
+        "terraform/provider/litellm/resource_key.go",
+        "terraform/provider/litellm/resource_key_test.go",
+        "terraform/provider/litellm/types.go",
+        "tests/unit/interactions/test_openapi_compliance.py"
+      ]
+    },
+    {
+      "number": 41708,
+      "title": "feat(ui): add per-model budgets to the create user form",
+      "headRefOid": "4e90a80275cd040cb54c9f5b14b81ffc983aee67",
+      "files": [
+        "ui/litellm-dashboard/src/app/(dashboard)/users/_components/view_users.tsx",
+        "ui/litellm-dashboard/src/app/(dashboard)/users/page.tsx",
+        "ui/litellm-dashboard/src/components/CreateUserButton.test.tsx",
+        "ui/litellm-dashboard/src/components/CreateUserButton.tsx",
+        "ui/litellm-dashboard/src/components/organisms/create_key_button.tsx"
+      ]
+    },
+    {
+      "number": 41726,
+      "title": "feat(proxy): budget fallbacks on teams and internal users",
+      "headRefOid": "f898998d50d770f7c36607e3cb923a456ff16725",
+      "files": [
+        "litellm-proxy-extras/litellm_proxy_extras/migrations/20260918010429_add_team_user_budget_fallbacks/migration.sql",
+        "litellm-proxy-extras/litellm_proxy_extras/schema.prisma",
+        "litellm/models/team.py",
+        "litellm/models/user.py",
+        "litellm/proxy/_types.py",
+        "litellm/proxy/auth/handle_jwt.py",
+        "litellm/proxy/auth/team_grants.py",
+        "litellm/proxy/auth/user_api_key_auth.py",
+        "litellm/proxy/management_endpoints/internal_user_endpoints.py",
+        "litellm/proxy/management_endpoints/key_management_endpoints.py",
+        "litellm/proxy/management_endpoints/team_endpoints.py",
+        "litellm/proxy/schema.prisma",
+        "litellm/proxy/spend_tracking/carried_budget_state.py",
+        "litellm/proxy/utils.py",
+        "schema.prisma",
+        "tests/proxy_unit_tests/test_user_api_key_auth.py",
+        "tests/test_litellm/proxy/auth/test_handle_jwt.py",
+        "tests/test_litellm/proxy/auth/test_team_grants.py",
+        "tests/test_litellm/proxy/auth/test_user_api_key_auth.py",
+        "tests/test_litellm/proxy/management_endpoints/test_internal_user_endpoints.py",
+        "tests/test_litellm/proxy/management_endpoints/test_team_endpoints.py",
+        "tests/test_litellm/proxy/memory/test_memory_endpoints.py",
+        "ui/litellm-dashboard/src/app/(dashboard)/users/_components/user_edit_view.test.tsx",
+        "ui/litellm-dashboard/src/app/(dashboard)/users/_components/user_edit_view.tsx",
+        "ui/litellm-dashboard/src/app/(dashboard)/users/_components/view_users/user_info_view.tsx",
+        "ui/litellm-dashboard/src/components/Teams.test.tsx",
+        "ui/litellm-dashboard/src/components/Teams.tsx",
+        "ui/litellm-dashboard/src/components/networking.tsx",
+        "ui/litellm-dashboard/src/components/team/TeamInfo.test.tsx",
+        "ui/litellm-dashboard/src/components/team/TeamInfo.tsx",
+        "ui/litellm-dashboard/src/lib/http/schema.d.ts"
+      ]
+    },
+    {
+      "number": 44122,
+      "title": "feat(teams): move custom member budgets onto a new team default in one update",
+      "headRefOid": "edd697564b6e9edaac8e4e5f8525ea28e697b220",
+      "files": [
+        "litellm/litellm_core_utils/duration_parser.py",
+        "litellm/proxy/_types.py",
+        "litellm/proxy/management_endpoints/common_utils.py",
+        "litellm/proxy/management_endpoints/team_admin_field_permissions.py",
+        "litellm/proxy/management_endpoints/team_endpoints.py",
+        "litellm/proxy/management_helpers/bulk_team_member_budgets.py",
+        "litellm/proxy/management_helpers/team_member_default_budget.py",
+        "tests/integration/management/test_team_member_budget_backfill.py",
+        "tests/unit/litellm_core_utils/test_duration_parser.py",
+        "tests/unit/proxy/common_utils/test_upsert_budget_membership.py",
+        "tests/unit/proxy/management_endpoints/management_v1/test_teams.py",
+        "tests/unit/proxy/management_endpoints/test_team_admin_field_permissions.py",
+        "tests/unit/proxy/management_endpoints/test_team_endpoints.py",
+        "tests/unit/proxy/management_helpers/test_management_helpers_utils.py",
+        "tests/unit/proxy/management_helpers/test_team_member_default_budget.py",
+        "tests/unit/proxy/test_team_member_update.py",
+        "ui/litellm-dashboard/src/components/networking.tsx",
+        "ui/litellm-dashboard/src/components/team/ResetMemberBudgetsDialog.test.tsx",
+        "ui/litellm-dashboard/src/components/team/ResetMemberBudgetsDialog.tsx",
+        "ui/litellm-dashboard/src/components/team/TeamInfo.integration.test.tsx",
+        "ui/litellm-dashboard/src/components/team/TeamInfo.test.tsx",
+        "ui/litellm-dashboard/src/components/team/TeamInfo.tsx",
+        "ui/litellm-dashboard/src/components/team/memberBudgetReset.test.ts",
+        "ui/litellm-dashboard/src/components/team/memberBudgetReset.ts",
+        "ui/litellm-dashboard/src/components/team/useMemberBudgetReset.test.tsx",
+        "ui/litellm-dashboard/src/components/team/useMemberBudgetReset.ts",
+        "ui/litellm-dashboard/src/lib/http/schema.d.ts"
+      ]
+    },
+    {
+      "number": 44356,
+      "title": "fix(shadow-eval): bill the creator and enforce their budgets",
+      "headRefOid": "0e460ab47af3c2a0c6599277b0ab8e66138ac92b",
+      "files": [
+        "litellm/caching/caching_handler.py",
+        "litellm/integrations/datadog/datadog_cost_management.py",
+        "litellm/integrations/lago.py",
+        "litellm/integrations/openmeter.py",
+        "litellm/integrations/shadow_eval_logger.py",
+        "litellm/litellm_core_utils/internal_call_metadata.py",
+        "litellm/litellm_core_utils/litellm_logging.py",
+        "litellm/proxy/auth/user_api_key_auth.py",
+        "litellm/proxy/hooks/model_max_budget_limiter.py",
+        "litellm/proxy/hooks/proxy_track_cost_callback.py",
+        "litellm/proxy/management_endpoints/auto_router_endpoints.py",
+        "litellm/proxy/native_compaction.py",
+        "litellm/proxy/spend_tracking/budget_reservation.py",
+        "litellm/proxy/spend_tracking/evaluation_budget.py",
+        "litellm/utils.py",
+        "tests/integration/spend/test_evaluation_budget.py",
+        "tests/unit/integrations/datadog/test_datadog_cost_management.py",
+        "tests/unit/integrations/test_openmeter.py",
+        "tests/unit/integrations/test_shadow_eval_logger.py",
+        "tests/unit/litellm_core_utils/test_internal_call_metadata.py",
+        "tests/unit/litellm_core_utils/test_litellm_logging.py",
+        "tests/unit/proxy/auth/test_user_api_key_auth_request_flow.py",
+        "tests/unit/proxy/hooks/test_model_max_budget_limiter.py",
+        "tests/unit/proxy/hooks/test_proxy_track_cost_callback.py",
+        "tests/unit/proxy/hooks/test_unit_test_max_model_budget_limiter.py",
+        "tests/unit/proxy/management_endpoints/test_auto_router_endpoints.py",
+        "tests/unit/proxy/spend_tracking/test_evaluation_budget.py",
+        "tests/unit/proxy/test_native_compaction.py",
+        "tests/unit/test_utils.py",
+        "ui/litellm-dashboard/src/app/(dashboard)/cost-optimization/_components/ShadowEvalStartForm.tsx",
+        "ui/litellm-dashboard/src/lib/http/schema.d.ts"
+      ]
+    },
+    {
+      "number": 44427,
+      "title": "fix(shadow-eval): isolate creator billing and budget settlement",
+      "headRefOid": "5c76148f717c8037c614b605deef6a679c168f4f",
+      "files": [
+        "litellm/caching/caching_handler.py",
+        "litellm/caching/in_memory_cache.py",
+        "litellm/integrations/lago.py",
+        "litellm/integrations/shadow_eval_logger.py",
+        "litellm/litellm_core_utils/fallback_utils.py",
+        "litellm/litellm_core_utils/internal_call_metadata.py",
+        "litellm/litellm_core_utils/litellm_logging.py",
+        "litellm/litellm_core_utils/llm_judge.py",
+        "litellm/llms/anthropic/pass_through/messages/handler.py",
+        "litellm/main.py",
+        "litellm/proxy/auth/user_api_key_auth.py",
+        "litellm/proxy/hooks/model_max_budget_limiter.py",
+        "litellm/proxy/hooks/proxy_track_cost_callback.py",
+        "litellm/proxy/management_endpoints/auto_router_endpoints.py",
+        "litellm/proxy/native_compaction.py",
+        "litellm/proxy/proxy_server.py",
+        "litellm/proxy/spend_tracking/budget_reservation.py",
+        "litellm/proxy/spend_tracking/evaluation_budget.py",
+        "litellm/router_strategy/budget_limiter.py",
+        "litellm/utils.py",
+        "tests/unit/conftest.py",
+        "tests/unit/integrations/test_lago.py",
+        "tests/unit/integrations/test_shadow_eval_logger.py",
+        "tests/unit/litellm_core_utils/test_litellm_logging.py",
+        "tests/unit/litellm_core_utils/test_llm_judge.py",
+        "tests/unit/proxy/spend_tracking/test_evaluation_budget.py",
+        "tests/unit/test_utils.py",
+        "ui/litellm-dashboard/src/app/(dashboard)/cost-optimization/_components/ShadowEvalStartForm.tsx",
+        "ui/litellm-dashboard/src/lib/http/schema.d.ts"
+      ]
+    },
+    {
+      "number": 44464,
+      "title": "fix(shadow-eval): run evaluation calls as the job creator",
+      "headRefOid": "06a7192144c58003b0615aac395d9a70745b1ce7",
+      "files": [
+        "litellm/integrations/shadow_eval_logger.py",
+        "litellm/litellm_core_utils/internal_call_metadata.py",
+        "litellm/litellm_core_utils/llm_judge.py",
+        "litellm/proxy/auth/evaluation_principal.py",
+        "litellm/proxy/management_endpoints/auto_router_endpoints.py",
+        "litellm/responses/mcp/litellm_proxy_mcp_handler.py",
+        "tests/unit/integrations/test_shadow_eval_logger.py",
+        "tests/unit/litellm_core_utils/test_llm_judge.py",
+        "tests/unit/proxy/auth/test_evaluation_principal.py",
+        "ui/litellm-dashboard/src/app/(dashboard)/cost-optimization/_components/ShadowEvalStartForm.tsx",
+        "ui/litellm-dashboard/src/lib/http/schema.d.ts"
+      ]
+    },
+    {
+      "number": 44621,
+      "title": "feat(proxy): paginated team members list endpoint",
+      "headRefOid": "032a9b38824e93060c7d3f20641f7fda2fa1420e",
+      "files": [
+        "litellm/proxy/_types.py",
+        "litellm/proxy/list_api/common.py",
+        "litellm/proxy/list_api/list_framework.py",
+        "litellm/proxy/management/teams/authz.py",
+        "litellm/proxy/management/teams/dependencies.py",
+        "litellm/proxy/management/teams/endpoints.py",
+        "litellm/proxy/management/teams/exceptions.py",
+        "litellm/proxy/management/teams/repository.py",
+        "litellm/proxy/management/teams/schemas.py",
+        "litellm/proxy/management/teams/service.py",
+        "litellm/proxy/management_endpoints/management_v1/__init__.py",
+        "litellm/proxy/management_endpoints/team_endpoints.py",
+        "litellm/proxy/proxy_server.py",
+        "tests/proxy_behavior/management/test_team_members_list.py",
+        "tests/unit/proxy/list_api/test_list_framework.py",
+        "tests/unit/proxy/management/teams/test_authz.py",
+        "tests/unit/proxy/management/teams/test_dependencies.py",
+        "tests/unit/proxy/management/teams/test_exceptions.py",
+        "tests/unit/proxy/management/teams/test_service.py",
+        "tests/unit/proxy/proxy_server/test_exception_handlers.py",
+        "ui/litellm-dashboard/src/lib/http/schema.d.ts"
+      ]
+    },
+    {
+      "number": 45050,
+      "title": "feat(proxy): exempt admins from key upperbounds",
+      "headRefOid": "a4ece469240b821d08db17e910158be011629893",
+      "files": [
+        "litellm/__init__.py",
+        "litellm/proxy/management_endpoints/key_management_endpoints.py",
+        "tests/unit/proxy/management_endpoints/test_key_management_endpoints.py"
+      ]
+    },
+    {
+      "number": 45560,
+      "title": "feat(proxy): add Google AI Studio Live API websocket pass-through",
+      "headRefOid": "ff606fefca8eb474df5f38befb408a1d0d5f5d9d",
+      "files": [
+        "litellm/constants.py",
+        "litellm/llms/gemini/common_utils.py",
+        "litellm/proxy/auth/user_api_key_auth.py",
+        "litellm/proxy/pass_through_endpoints/llm_passthrough_endpoints.py",
+        "litellm/proxy/pass_through_endpoints/llm_provider_handlers/vertex_ai_live_passthrough_logging_handler.py",
+        "litellm/proxy/pass_through_endpoints/pass_through_endpoints.py",
+        "litellm/proxy/pass_through_endpoints/success_handler.py",
+        "tests/unit/llms/gemini/test_gemini_common_utils.py",
+        "tests/unit/proxy/pass_through_endpoints/test_gemini_live_ws_passthrough_routes.py",
+        "tests/unit/proxy/pass_through_endpoints/test_pass_through_endpoints.py",
+        "tests/unit/proxy/pass_through_endpoints/test_vertex_ai_live_passthrough.py"
+      ]
+    },
+    {
+      "number": 45599,
+      "title": "fix(proxy): keep internal callbacks when litellm_settings.callbacks is a single string",
+      "headRefOid": "b83a1359991b292d0ea7c75eb80564b766c25d7d",
+      "files": [
+        "litellm/proxy/common_utils/callback_utils.py",
+        "tests/unit/proxy/common_utils/test_callback_utils.py"
+      ]
+    },
+    {
+      "number": 46643,
+      "title": "refactor: clean up fresh tech debt in proxy auth reads, mcp tool calls, user list sorting and opencode affinity header",
+      "headRefOid": "dd0ed5025576e870c9c4d501aa47c5608f3a073c",
+      "files": [
+        "litellm/anthropic_beta_headers_manager.py",
+        "litellm/litellm_core_utils/get_llm_provider_logic.py",
+        "litellm/litellm_core_utils/get_model_cost_map.py",
+        "litellm/litellm_core_utils/litellm_logging.py",
+        "litellm/litellm_core_utils/streaming_handler.py",
+        "litellm/llms/anthropic/pass_through/caller_model_checks.py",
+        "litellm/llms/aws_polly/text_to_speech/transformation.py",
+        "litellm/llms/bedrock/count_tokens/kimi_k3.py",
+        "litellm/llms/opencode/transformation.py",
+        "litellm/main.py",
+        "litellm/proxy/_experimental/mcp_server/mcp_server_manager.py",
+        "litellm/proxy/db/db_transaction_queue/spend_log_cleanup.py",
+        "litellm/proxy/guardrails/guardrail_hooks/generic_guardrail_api/__init__.py",
+        "litellm/proxy/management_helpers/user_list_sorting.py",
+        "litellm/proxy/proxy_server.py",
+        "litellm/proxy/utils.py",
+        "tests/unit/llms/opencode/test_transformation.py"
+      ]
+    },
+    {
+      "number": 46907,
+      "title": "fix(budget): keep pre-attach budget spend when Redis is added at runtime",
+      "headRefOid": "a29615aa66bef62e2ed13e8dd12b367a99b1c240",
+      "files": [
+        "litellm/proxy/hooks/model_max_budget_limiter.py",
+        "litellm/router_strategy/budget_limiter.py",
+        "tests/integration/sdk/test_router_budget_limiter_wire.py",
+        "tests/unit/proxy/hooks/test_unit_test_max_model_budget_limiter.py",
+        "tests/unit/router_strategy/test_budget_limiter.py",
+        "tests/unit/router_strategy/test_budget_limiter_hotpath.py"
+      ]
+    },
+    {
+      "number": 47084,
+      "title": "fix(terraform): read litellm_tag model_max_budget back and keep the proxy budget_id",
+      "headRefOid": "686a3b72f3f7ae8618607c75357a6049abfb5868",
+      "files": [
+        "terraform/provider/CHANGELOG.md",
+        "terraform/provider/docs/resources/tag.md",
+        "terraform/provider/litellm/resource_tag.go",
+        "terraform/provider/litellm/resource_tag_test.go"
+      ]
+    },
+    {
+      "number": 47693,
+      "title": "feat(proxy): per-provider and per-model rpm/tpm requirements for enforce_project_model_quota",
+      "headRefOid": "39cb563098818b5259f78ad4ef6721f7b59678a3",
+      "files": [
+        "enterprise/litellm_enterprise/proxy/management_endpoints/project_endpoints.py",
+        "enterprise/litellm_enterprise/proxy/management_endpoints/project_model_quota.py",
+        "litellm/proxy/management_endpoints/model_management_endpoints.py",
+        "litellm/proxy/management_helpers/model_quota_policy.py",
+        "tests/unit/enterprise/proxy/management_endpoints/test_project_endpoints_prisma.py",
+        "tests/unit/proxy/management_endpoints/test_model_management_endpoints.py"
+      ]
+    },
+    {
+      "number": 47722,
+      "title": "feat(proxy): model family and access group entries in model_max_budget",
+      "headRefOid": "3d78d57662dc6fc1dba53194e68d8831ae8cb3a3",
+      "files": [
+        "litellm/integrations/otel/model/spans.py",
+        "litellm/proxy/db/budget_window_spend_writer.py",
+        "litellm/proxy/hooks/model_budget_shared_windows.py",
+        "litellm/proxy/hooks/model_max_budget_limiter.py",
+        "litellm/proxy/management_endpoints/team_endpoints.py",
+        "tests/unit/proxy/db/test_budget_window_spend_writer.py",
+        "tests/unit/proxy/hooks/test_model_budget_shared_windows.py",
+        "tests/unit/proxy/hooks/test_model_max_budget_limiter.py",
+        "tests/unit/proxy/management_endpoints/test_key_management_endpoints.py",
+        "tests/unit/proxy/management_endpoints/test_team_endpoints.py",
+        "tests/unit/test_internal_context.py",
+        "ui/litellm-dashboard/src/components/key_team_helpers/ModelMaxBudgetEditor.integration.test.tsx",
+        "ui/litellm-dashboard/src/components/key_team_helpers/ModelMaxBudgetEditor.tsx",
+        "ui/litellm-dashboard/src/components/shared/SearchSelect.integration.test.tsx",
+        "ui/litellm-dashboard/src/components/shared/SearchSelect.tsx"
+      ]
+    },
+    {
+      "number": 47778,
+      "title": "fix(proxy): stop labelling management and health rejections as auth failures",
+      "headRefOid": "a692298b2df45fc20149cb0f291f0990a772c0dc",
+      "files": [
+        "tests/unit/proxy/health_endpoints/test_health_endpoints.py",
+        "tests/unit/proxy/management_endpoints/test_internal_user_endpoints.py",
+        "tests/unit/proxy/management_endpoints/test_key_management_endpoints.py",
+        "tests/unit/proxy/management_endpoints/test_model_management_endpoints.py",
+        "tests/unit/proxy/management_endpoints/test_organization_endpoints.py",
+        "tests/unit/proxy/management_endpoints/test_team_endpoints.py",
+        "tests/unit/proxy/test_proxy_server.py"
+      ]
+    },
+    {
+      "number": 47783,
+      "title": "fix(proxy): apply key and team router_settings to image generations",
+      "headRefOid": "d3c46c82cc195f7597c3691f561864cea8097dc5",
+      "files": [
+        "litellm/proxy/common_request_processing.py",
+        "litellm/proxy/image_endpoints/endpoints.py",
+        "tests/unit/proxy/image_endpoints/test_image_generation_router_settings.py"
+      ]
+    }
+  ],
+  "shared_helper_review": "#37874 changes callback capabilities and spend batching, #41726 adds team/user budget fallbacks. Neither changes null serialization for /budget/update",
+  "new_unreviewed_hits": []
+}

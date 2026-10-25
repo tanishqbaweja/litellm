@@ -1,0 +1,1021 @@
+{
+  "revision": "baseline",
+  "sourceSha": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "uiSourceSha": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "output": "/qa/litellm-38759/output/playwright/visual-baseline-1792963426955",
+  "startedAt": "2026-10-25T21:23:46.972Z",
+  "providerRequestsPerformed": false,
+  "viewports": [
+    {
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900
+      },
+      "budgetId": "qa38759-desktop",
+      "startedAt": "2026-10-25T21:23:47.214Z",
+      "steps": [
+        {
+          "name": "budgets-page",
+          "at": "2026-10-25T21:23:49.793Z",
+          "screenshot": "desktop-budgets-page.png"
+        },
+        {
+          "name": "create-form",
+          "at": "2026-10-25T21:23:51.140Z",
+          "screenshot": "desktop-create-form.png"
+        },
+        {
+          "name": "created-budget",
+          "at": "2026-10-25T21:23:52.773Z",
+          "screenshot": "desktop-created-budget.png",
+          "row": "qa38759-desktop\n\t\n$20.00\n\t1000\t60\tn/a\t"
+        },
+        {
+          "name": "edit-form",
+          "at": "2026-10-25T21:23:53.837Z",
+          "screenshot": "desktop-edit-form.png"
+        },
+        {
+          "name": "edited-budget",
+          "at": "2026-10-25T21:23:55.075Z",
+          "screenshot": "desktop-edited-budget.png",
+          "row": "qa38759-desktop\n\t\n$99.00\n\t1000\t60\tn/a\t"
+        },
+        {
+          "name": "clear-spend-form",
+          "at": "2026-10-25T21:23:56.147Z",
+          "screenshot": "desktop-clear-spend-form.png"
+        },
+        {
+          "name": "cleared-spend-budget",
+          "at": "2026-10-25T21:23:57.412Z",
+          "screenshot": "desktop-cleared-spend-budget.png",
+          "row": "qa38759-desktop\n\t\nUnlimited\n\t1000\t60\tn/a\t"
+        },
+        {
+          "name": "reloaded-budget",
+          "at": "2026-10-25T21:23:58.824Z",
+          "screenshot": "desktop-reloaded-budget.png",
+          "row": "qa38759-desktop\n\t\nUnlimited\n\t1000\t60\tn/a\t"
+        },
+        {
+          "name": "deleted-budget",
+          "at": "2026-10-25T21:24:00.035Z",
+          "screenshot": "desktop-deleted-budget.png"
+        }
+      ],
+      "mutations": [
+        {
+          "path": "/budget/new",
+          "status": 200,
+          "request": {
+            "budget_id": "qa38759-desktop",
+            "tpm_limit": 1000,
+            "rpm_limit": 60,
+            "max_budget": 20,
+            "budget_duration": "30d"
+          },
+          "response": {
+            "budget_id": "qa38759-desktop",
+            "max_budget": 20,
+            "soft_budget": null,
+            "max_parallel_requests": null,
+            "tpm_limit": 1000,
+            "rpm_limit": 60,
+            "tpd_limit": null,
+            "model_max_budget": null,
+            "budget_duration": "30d",
+            "budget_reset_at": "2026-11-01T00:00:00Z",
+            "allowed_models": [],
+            "temp_budget_increase": null,
+            "temp_budget_expiry": null,
+            "created_at": "2026-10-25T21:23:51.221000Z",
+            "created_by": "default_user_id",
+            "updated_at": "2026-10-25T21:23:51.221000Z",
+            "updated_by": "default_user_id",
+            "organization": null,
+            "projects": null,
+            "keys": null,
+            "end_users": null,
+            "tags": null,
+            "model_access_groups": null,
+            "team_membership": null,
+            "organization_membership": null
+          }
+        },
+        {
+          "path": "/budget/update",
+          "status": 200,
+          "request": {
+            "budget_id": "qa38759-desktop",
+            "max_budget": 99
+          },
+          "response": {
+            "budget_id": "qa38759-desktop",
+            "max_budget": 99,
+            "soft_budget": null,
+            "max_parallel_requests": null,
+            "tpm_limit": 1000,
+            "rpm_limit": 60,
+            "tpd_limit": null,
+            "model_max_budget": null,
+            "budget_duration": "30d",
+            "budget_reset_at": "2026-11-01T00:00:00Z",
+            "allowed_models": [],
+            "temp_budget_increase": null,
+            "temp_budget_expiry": null,
+            "created_at": "2026-10-25T21:23:51.221000Z",
+            "created_by": "default_user_id",
+            "updated_at": "2026-10-25T21:23:53.904000Z",
+            "updated_by": "default_user_id",
+            "organization": null,
+            "projects": null,
+            "keys": null,
+            "end_users": null,
+            "tags": null,
+            "model_access_groups": null,
+            "team_membership": null,
+            "organization_membership": null
+          }
+        },
+        {
+          "path": "/budget/update",
+          "status": 200,
+          "request": {
+            "budget_id": "qa38759-desktop",
+            "max_budget": null
+          },
+          "response": {
+            "budget_id": "qa38759-desktop",
+            "max_budget": null,
+            "soft_budget": null,
+            "max_parallel_requests": null,
+            "tpm_limit": 1000,
+            "rpm_limit": 60,
+            "tpd_limit": null,
+            "model_max_budget": null,
+            "budget_duration": "30d",
+            "budget_reset_at": "2026-11-01T00:00:00Z",
+            "allowed_models": [],
+            "temp_budget_increase": null,
+            "temp_budget_expiry": null,
+            "created_at": "2026-10-25T21:23:51.221000Z",
+            "created_by": "default_user_id",
+            "updated_at": "2026-10-25T21:23:56.220000Z",
+            "updated_by": "default_user_id",
+            "organization": null,
+            "projects": null,
+            "keys": null,
+            "end_users": null,
+            "tags": null,
+            "model_access_groups": null,
+            "team_membership": null,
+            "organization_membership": null
+          }
+        },
+        {
+          "path": "/budget/delete",
+          "status": 200,
+          "request": {
+            "id": "qa38759-desktop"
+          },
+          "response": {
+            "budget_id": "qa38759-desktop",
+            "max_budget": null,
+            "soft_budget": null,
+            "max_parallel_requests": null,
+            "tpm_limit": 1000,
+            "rpm_limit": 60,
+            "tpd_limit": null,
+            "model_max_budget": null,
+            "budget_duration": "30d",
+            "budget_reset_at": "2026-11-01T00:00:00Z",
+            "allowed_models": [],
+            "temp_budget_increase": null,
+            "temp_budget_expiry": null,
+            "created_at": "2026-10-25T21:23:51.221000Z",
+            "created_by": "default_user_id",
+            "updated_at": "2026-10-25T21:23:56.220000Z",
+            "updated_by": "default_user_id",
+            "organization": null,
+            "projects": null,
+            "keys": null,
+            "end_users": null,
+            "tags": null,
+            "model_access_groups": null,
+            "team_membership": null,
+            "organization_membership": null
+          }
+        }
+      ],
+      "readbacks": [
+        [
+          {
+            "budget_id": "qa38759-desktop",
+            "max_budget": 20,
+            "soft_budget": null,
+            "max_parallel_requests": null,
+            "tpm_limit": 1000,
+            "rpm_limit": 60,
+            "tpd_limit": null,
+            "model_max_budget": null,
+            "budget_duration": "30d",
+            "budget_reset_at": "2026-11-01T00:00:00Z",
+            "allowed_models": [],
+            "temp_budget_increase": null,
+            "temp_budget_expiry": null,
+            "created_at": "2026-10-25T21:23:51.221000Z",
+            "created_by": "default_user_id",
+            "updated_at": "2026-10-25T21:23:51.221000Z",
+            "updated_by": "default_user_id",
+            "organization": null,
+            "projects": null,
+            "keys": null,
+            "end_users": null,
+            "tags": null,
+            "model_access_groups": null,
+            "team_membership": null,
+            "organization_membership": null
+          }
+        ],
+        [
+          {
+            "budget_id": "qa38759-desktop",
+            "max_budget": 99,
+            "soft_budget": null,
+            "max_parallel_requests": null,
+            "tpm_limit": 1000,
+            "rpm_limit": 60,
+            "tpd_limit": null,
+            "model_max_budget": null,
+            "budget_duration": "30d",
+            "budget_reset_at": "2026-11-01T00:00:00Z",
+            "allowed_models": [],
+            "temp_budget_increase": null,
+            "temp_budget_expiry": null,
+            "created_at": "2026-10-25T21:23:51.221000Z",
+            "created_by": "default_user_id",
+            "updated_at": "2026-10-25T21:23:53.904000Z",
+            "updated_by": "default_user_id",
+            "organization": null,
+            "projects": null,
+            "keys": null,
+            "end_users": null,
+            "tags": null,
+            "model_access_groups": null,
+            "team_membership": null,
+            "organization_membership": null
+          }
+        ],
+        [
+          {
+            "budget_id": "qa38759-desktop",
+            "max_budget": null,
+            "soft_budget": null,
+            "max_parallel_requests": null,
+            "tpm_limit": 1000,
+            "rpm_limit": 60,
+            "tpd_limit": null,
+            "model_max_budget": null,
+            "budget_duration": "30d",
+            "budget_reset_at": "2026-11-01T00:00:00Z",
+            "allowed_models": [],
+            "temp_budget_increase": null,
+            "temp_budget_expiry": null,
+            "created_at": "2026-10-25T21:23:51.221000Z",
+            "created_by": "default_user_id",
+            "updated_at": "2026-10-25T21:23:56.220000Z",
+            "updated_by": "default_user_id",
+            "organization": null,
+            "projects": null,
+            "keys": null,
+            "end_users": null,
+            "tags": null,
+            "model_access_groups": null,
+            "team_membership": null,
+            "organization_membership": null
+          }
+        ],
+        [
+          {
+            "budget_id": "qa38759-desktop",
+            "max_budget": null,
+            "soft_budget": null,
+            "max_parallel_requests": null,
+            "tpm_limit": 1000,
+            "rpm_limit": 60,
+            "tpd_limit": null,
+            "model_max_budget": null,
+            "budget_duration": "30d",
+            "budget_reset_at": "2026-11-01T00:00:00Z",
+            "allowed_models": [],
+            "temp_budget_increase": null,
+            "temp_budget_expiry": null,
+            "created_at": "2026-10-25T21:23:51.221000Z",
+            "created_by": "default_user_id",
+            "updated_at": "2026-10-25T21:23:56.220000Z",
+            "updated_by": "default_user_id",
+            "organization": null,
+            "projects": null,
+            "keys": null,
+            "end_users": null,
+            "tags": null,
+            "model_access_groups": null,
+            "team_membership": null,
+            "organization_membership": null
+          }
+        ],
+        [],
+        []
+      ],
+      "pageErrors": [],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      ],
+      "failedResponses": [
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/api-keys/__next.!KGRhc2hib2FyZCk.api-keys.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/playground/__next.!KGRhc2hib2FyZCk.playground.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/models-and-endpoints/__next.!KGRhc2hib2FyZCk.models-and-endpoints.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/mcp-servers/__next.!KGRhc2hib2FyZCk.mcp-servers.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/skills/__next.!KGRhc2hib2FyZCk.skills.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/guardrails/__next.!KGRhc2hib2FyZCk.guardrails.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/policies/__next.!KGRhc2hib2FyZCk.policies.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/usage/__next.!KGRhc2hib2FyZCk.usage.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/cost-optimization/__next.!KGRhc2hib2FyZCk.cost-optimization.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/model-insights/__next.!KGRhc2hib2FyZCk.model-insights.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/logs/__next.!KGRhc2hib2FyZCk.logs.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/lens/__next.!KGRhc2hib2FyZCk.lens.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/teams/__next.!KGRhc2hib2FyZCk.teams.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/guardrails-monitor/__next.!KGRhc2hib2FyZCk.guardrails-monitor.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/users/__next.!KGRhc2hib2FyZCk.users.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/api-keys/__next.!KGRhc2hib2FyZCk.api-keys.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/playground/__next.!KGRhc2hib2FyZCk.playground.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/models-and-endpoints/__next.!KGRhc2hib2FyZCk.models-and-endpoints.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/mcp-servers/__next.!KGRhc2hib2FyZCk.mcp-servers.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/skills/__next.!KGRhc2hib2FyZCk.skills.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/guardrails/__next.!KGRhc2hib2FyZCk.guardrails.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/usage/__next.!KGRhc2hib2FyZCk.usage.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/policies/__next.!KGRhc2hib2FyZCk.policies.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/model-insights/__next.!KGRhc2hib2FyZCk.model-insights.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/cost-optimization/__next.!KGRhc2hib2FyZCk.cost-optimization.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/logs/__next.!KGRhc2hib2FyZCk.logs.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/lens/__next.!KGRhc2hib2FyZCk.lens.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/guardrails-monitor/__next.!KGRhc2hib2FyZCk.guardrails-monitor.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/teams/__next.!KGRhc2hib2FyZCk.teams.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/users/__next.!KGRhc2hib2FyZCk.users.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/playground/__next.!KGRhc2hib2FyZCk.playground.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/api-keys/__next.!KGRhc2hib2FyZCk.api-keys.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/models-and-endpoints/__next.!KGRhc2hib2FyZCk.models-and-endpoints.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/mcp-servers/__next.!KGRhc2hib2FyZCk.mcp-servers.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/guardrails/__next.!KGRhc2hib2FyZCk.guardrails.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/skills/__next.!KGRhc2hib2FyZCk.skills.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/policies/__next.!KGRhc2hib2FyZCk.policies.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/usage/__next.!KGRhc2hib2FyZCk.usage.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/cost-optimization/__next.!KGRhc2hib2FyZCk.cost-optimization.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/model-insights/__next.!KGRhc2hib2FyZCk.model-insights.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/logs/__next.!KGRhc2hib2FyZCk.logs.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/lens/__next.!KGRhc2hib2FyZCk.lens.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/guardrails-monitor/__next.!KGRhc2hib2FyZCk.guardrails-monitor.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/teams/__next.!KGRhc2hib2FyZCk.teams.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/users/__next.!KGRhc2hib2FyZCk.users.__PAGE__.txt",
+          "status": 404
+        }
+      ],
+      "result": "pass",
+      "video": "raw-video/98dcae3154fe89481b82d08b75e3cd15.webm",
+      "completedAt": "2026-10-25T21:24:00.213Z"
+    },
+    {
+      "viewport": {
+        "name": "phone",
+        "width": 390,
+        "height": 844
+      },
+      "budgetId": "qa38759-phone",
+      "startedAt": "2026-10-25T21:24:00.259Z",
+      "steps": [
+        {
+          "name": "budgets-page",
+          "at": "2026-10-25T21:24:02.833Z",
+          "screenshot": "phone-budgets-page.png"
+        },
+        {
+          "name": "create-form",
+          "at": "2026-10-25T21:24:03.977Z",
+          "screenshot": "phone-create-form.png"
+        },
+        {
+          "name": "created-budget",
+          "at": "2026-10-25T21:24:05.301Z",
+          "screenshot": "phone-created-budget.png",
+          "row": "qa38759-phone\n\t\n$20.00\n\t1000\t60\tn/a\t"
+        },
+        {
+          "name": "edit-form",
+          "at": "2026-10-25T21:24:06.322Z",
+          "screenshot": "phone-edit-form.png"
+        },
+        {
+          "name": "edited-budget",
+          "at": "2026-10-25T21:24:07.285Z",
+          "screenshot": "phone-edited-budget.png",
+          "row": "qa38759-phone\n\t\n$99.00\n\t1000\t60\tn/a\t"
+        },
+        {
+          "name": "clear-spend-form",
+          "at": "2026-10-25T21:24:08.281Z",
+          "screenshot": "phone-clear-spend-form.png"
+        },
+        {
+          "name": "cleared-spend-budget",
+          "at": "2026-10-25T21:24:09.249Z",
+          "screenshot": "phone-cleared-spend-budget.png",
+          "row": "qa38759-phone\n\t\nUnlimited\n\t1000\t60\tn/a\t"
+        },
+        {
+          "name": "reloaded-budget",
+          "at": "2026-10-25T21:24:10.634Z",
+          "screenshot": "phone-reloaded-budget.png",
+          "row": "qa38759-phone\n\t\nUnlimited\n\t1000\t60\tn/a\t"
+        },
+        {
+          "name": "deleted-budget",
+          "at": "2026-10-25T21:24:11.816Z",
+          "screenshot": "phone-deleted-budget.png"
+        }
+      ],
+      "mutations": [
+        {
+          "path": "/budget/new",
+          "status": 200,
+          "request": {
+            "budget_id": "qa38759-phone",
+            "tpm_limit": 1000,
+            "rpm_limit": 60,
+            "max_budget": 20,
+            "budget_duration": "30d"
+          },
+          "response": {
+            "budget_id": "qa38759-phone",
+            "max_budget": 20,
+            "soft_budget": null,
+            "max_parallel_requests": null,
+            "tpm_limit": 1000,
+            "rpm_limit": 60,
+            "tpd_limit": null,
+            "model_max_budget": null,
+            "budget_duration": "30d",
+            "budget_reset_at": "2026-11-01T00:00:00Z",
+            "allowed_models": [],
+            "temp_budget_increase": null,
+            "temp_budget_expiry": null,
+            "created_at": "2026-10-25T21:24:04.049000Z",
+            "created_by": "default_user_id",
+            "updated_at": "2026-10-25T21:24:04.049000Z",
+            "updated_by": "default_user_id",
+            "organization": null,
+            "projects": null,
+            "keys": null,
+            "end_users": null,
+            "tags": null,
+            "model_access_groups": null,
+            "team_membership": null,
+            "organization_membership": null
+          }
+        },
+        {
+          "path": "/budget/update",
+          "status": 200,
+          "request": {
+            "budget_id": "qa38759-phone",
+            "max_budget": 99
+          },
+          "response": {
+            "budget_id": "qa38759-phone",
+            "max_budget": 99,
+            "soft_budget": null,
+            "max_parallel_requests": null,
+            "tpm_limit": 1000,
+            "rpm_limit": 60,
+            "tpd_limit": null,
+            "model_max_budget": null,
+            "budget_duration": "30d",
+            "budget_reset_at": "2026-11-01T00:00:00Z",
+            "allowed_models": [],
+            "temp_budget_increase": null,
+            "temp_budget_expiry": null,
+            "created_at": "2026-10-25T21:24:04.049000Z",
+            "created_by": "default_user_id",
+            "updated_at": "2026-10-25T21:24:06.381000Z",
+            "updated_by": "default_user_id",
+            "organization": null,
+            "projects": null,
+            "keys": null,
+            "end_users": null,
+            "tags": null,
+            "model_access_groups": null,
+            "team_membership": null,
+            "organization_membership": null
+          }
+        },
+        {
+          "path": "/budget/update",
+          "status": 200,
+          "request": {
+            "budget_id": "qa38759-phone",
+            "max_budget": null
+          },
+          "response": {
+            "budget_id": "qa38759-phone",
+            "max_budget": null,
+            "soft_budget": null,
+            "max_parallel_requests": null,
+            "tpm_limit": 1000,
+            "rpm_limit": 60,
+            "tpd_limit": null,
+            "model_max_budget": null,
+            "budget_duration": "30d",
+            "budget_reset_at": "2026-11-01T00:00:00Z",
+            "allowed_models": [],
+            "temp_budget_increase": null,
+            "temp_budget_expiry": null,
+            "created_at": "2026-10-25T21:24:04.049000Z",
+            "created_by": "default_user_id",
+            "updated_at": "2026-10-25T21:24:08.347000Z",
+            "updated_by": "default_user_id",
+            "organization": null,
+            "projects": null,
+            "keys": null,
+            "end_users": null,
+            "tags": null,
+            "model_access_groups": null,
+            "team_membership": null,
+            "organization_membership": null
+          }
+        },
+        {
+          "path": "/budget/delete",
+          "status": 200,
+          "request": {
+            "id": "qa38759-phone"
+          },
+          "response": {
+            "budget_id": "qa38759-phone",
+            "max_budget": null,
+            "soft_budget": null,
+            "max_parallel_requests": null,
+            "tpm_limit": 1000,
+            "rpm_limit": 60,
+            "tpd_limit": null,
+            "model_max_budget": null,
+            "budget_duration": "30d",
+            "budget_reset_at": "2026-11-01T00:00:00Z",
+            "allowed_models": [],
+            "temp_budget_increase": null,
+            "temp_budget_expiry": null,
+            "created_at": "2026-10-25T21:24:04.049000Z",
+            "created_by": "default_user_id",
+            "updated_at": "2026-10-25T21:24:08.347000Z",
+            "updated_by": "default_user_id",
+            "organization": null,
+            "projects": null,
+            "keys": null,
+            "end_users": null,
+            "tags": null,
+            "model_access_groups": null,
+            "team_membership": null,
+            "organization_membership": null
+          }
+        }
+      ],
+      "readbacks": [
+        [
+          {
+            "budget_id": "qa38759-phone",
+            "max_budget": 20,
+            "soft_budget": null,
+            "max_parallel_requests": null,
+            "tpm_limit": 1000,
+            "rpm_limit": 60,
+            "tpd_limit": null,
+            "model_max_budget": null,
+            "budget_duration": "30d",
+            "budget_reset_at": "2026-11-01T00:00:00Z",
+            "allowed_models": [],
+            "temp_budget_increase": null,
+            "temp_budget_expiry": null,
+            "created_at": "2026-10-25T21:24:04.049000Z",
+            "created_by": "default_user_id",
+            "updated_at": "2026-10-25T21:24:04.049000Z",
+            "updated_by": "default_user_id",
+            "organization": null,
+            "projects": null,
+            "keys": null,
+            "end_users": null,
+            "tags": null,
+            "model_access_groups": null,
+            "team_membership": null,
+            "organization_membership": null
+          }
+        ],
+        [
+          {
+            "budget_id": "qa38759-phone",
+            "max_budget": 99,
+            "soft_budget": null,
+            "max_parallel_requests": null,
+            "tpm_limit": 1000,
+            "rpm_limit": 60,
+            "tpd_limit": null,
+            "model_max_budget": null,
+            "budget_duration": "30d",
+            "budget_reset_at": "2026-11-01T00:00:00Z",
+            "allowed_models": [],
+            "temp_budget_increase": null,
+            "temp_budget_expiry": null,
+            "created_at": "2026-10-25T21:24:04.049000Z",
+            "created_by": "default_user_id",
+            "updated_at": "2026-10-25T21:24:06.381000Z",
+            "updated_by": "default_user_id",
+            "organization": null,
+            "projects": null,
+            "keys": null,
+            "end_users": null,
+            "tags": null,
+            "model_access_groups": null,
+            "team_membership": null,
+            "organization_membership": null
+          }
+        ],
+        [
+          {
+            "budget_id": "qa38759-phone",
+            "max_budget": null,
+            "soft_budget": null,
+            "max_parallel_requests": null,
+            "tpm_limit": 1000,
+            "rpm_limit": 60,
+            "tpd_limit": null,
+            "model_max_budget": null,
+            "budget_duration": "30d",
+            "budget_reset_at": "2026-11-01T00:00:00Z",
+            "allowed_models": [],
+            "temp_budget_increase": null,
+            "temp_budget_expiry": null,
+            "created_at": "2026-10-25T21:24:04.049000Z",
+            "created_by": "default_user_id",
+            "updated_at": "2026-10-25T21:24:08.347000Z",
+            "updated_by": "default_user_id",
+            "organization": null,
+            "projects": null,
+            "keys": null,
+            "end_users": null,
+            "tags": null,
+            "model_access_groups": null,
+            "team_membership": null,
+            "organization_membership": null
+          }
+        ],
+        [
+          {
+            "budget_id": "qa38759-phone",
+            "max_budget": null,
+            "soft_budget": null,
+            "max_parallel_requests": null,
+            "tpm_limit": 1000,
+            "rpm_limit": 60,
+            "tpd_limit": null,
+            "model_max_budget": null,
+            "budget_duration": "30d",
+            "budget_reset_at": "2026-11-01T00:00:00Z",
+            "allowed_models": [],
+            "temp_budget_increase": null,
+            "temp_budget_expiry": null,
+            "created_at": "2026-10-25T21:24:04.049000Z",
+            "created_by": "default_user_id",
+            "updated_at": "2026-10-25T21:24:08.347000Z",
+            "updated_by": "default_user_id",
+            "organization": null,
+            "projects": null,
+            "keys": null,
+            "end_users": null,
+            "tags": null,
+            "model_access_groups": null,
+            "team_membership": null,
+            "organization_membership": null
+          }
+        ],
+        [],
+        []
+      ],
+      "pageErrors": [],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      ],
+      "failedResponses": [
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        }
+      ],
+      "result": "pass",
+      "video": "raw-video/0e5d7b53a4ef9ef9beca2e69150b4196.webm",
+      "completedAt": "2026-10-25T21:24:11.861Z"
+    }
+  ],
+  "browser": "145.0.7632.6",
+  "completedAt": "2026-10-25T21:24:11.864Z"
+}

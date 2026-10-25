@@ -1,0 +1,507 @@
+{
+  "revision": "fixed",
+  "source_sha": "52f7654be9ee2a86a88ecc5db0f2eb81962da9d9",
+  "started_at": "2026-10-25T21:42:06.551771+00:00",
+  "enterprise_entitlement_override": false,
+  "provider_requests_performed": false,
+  "requests": [
+    {
+      "label": "create",
+      "path": "/budget/new",
+      "method": "POST",
+      "body": {
+        "budget_id": "qa38759-api",
+        "max_budget": 20,
+        "soft_budget": 5,
+        "tpm_limit": 1000,
+        "rpm_limit": 60,
+        "budget_duration": "30d",
+        "model_max_budget": {}
+      },
+      "command": "curl -sS -X POST http://127.0.0.1:41478/budget/new -H \"Authorization: Bearer $MASTER_KEY\" -H 'Content-Type: application/json' --data-raw '{\"budget_id\": \"qa38759-api\", \"max_budget\": 20, \"soft_budget\": 5, \"tpm_limit\": 1000, \"rpm_limit\": 60, \"budget_duration\": \"30d\", \"model_max_budget\": {}}' -w '\\nHTTP %{http_code}\\n'",
+      "status": 200,
+      "response": {
+        "budget_id": "qa38759-api",
+        "max_budget": 20.0,
+        "soft_budget": 5.0,
+        "max_parallel_requests": null,
+        "tpm_limit": 1000,
+        "rpm_limit": 60,
+        "tpd_limit": null,
+        "model_max_budget": {},
+        "budget_duration": "30d",
+        "budget_reset_at": "2026-11-01T00:00:00Z",
+        "allowed_models": [],
+        "temp_budget_increase": null,
+        "temp_budget_expiry": null,
+        "created_at": "2026-10-25T21:42:06.642000Z",
+        "created_by": "default_user_id",
+        "updated_at": "2026-10-25T21:42:06.642000Z",
+        "updated_by": "default_user_id",
+        "organization": null,
+        "projects": null,
+        "keys": null,
+        "end_users": null,
+        "tags": null,
+        "model_access_groups": null,
+        "team_membership": null,
+        "organization_membership": null
+      },
+      "stdout": "{\"budget_id\":\"qa38759-api\",\"max_budget\":20.0,\"soft_budget\":5.0,\"max_parallel_requests\":null,\"tpm_limit\":1000,\"rpm_limit\":60,\"tpd_limit\":null,\"model_max_budget\":{},\"budget_duration\":\"30d\",\"budget_reset_at\":\"2026-11-01T00:00:00Z\",\"allowed_models\":[],\"temp_budget_increase\":null,\"temp_budget_expiry\":null,\"created_at\":\"2026-10-25T21:42:06.642000Z\",\"created_by\":\"default_user_id\",\"updated_at\":\"2026-10-25T21:42:06.642000Z\",\"updated_by\":\"default_user_id\",\"organization\":null,\"projects\":null,\"keys\":null,\"end_users\":null,\"tags\":null,\"model_access_groups\":null,\"team_membership\":null,\"organization_membership\":null}\nHTTP 200\n",
+      "stderr": ""
+    },
+    {
+      "label": "read-before",
+      "path": "/budget/info",
+      "method": "POST",
+      "body": {
+        "budgets": [
+          "qa38759-api"
+        ]
+      },
+      "command": "curl -sS -X POST http://127.0.0.1:41478/budget/info -H \"Authorization: Bearer $MASTER_KEY\" -H 'Content-Type: application/json' --data-raw '{\"budgets\": [\"qa38759-api\"]}' -w '\\nHTTP %{http_code}\\n'",
+      "status": 200,
+      "response": [
+        {
+          "budget_id": "qa38759-api",
+          "max_budget": 20.0,
+          "soft_budget": 5.0,
+          "max_parallel_requests": null,
+          "tpm_limit": 1000,
+          "rpm_limit": 60,
+          "tpd_limit": null,
+          "model_max_budget": {},
+          "budget_duration": "30d",
+          "budget_reset_at": "2026-11-01T00:00:00Z",
+          "allowed_models": [],
+          "temp_budget_increase": null,
+          "temp_budget_expiry": null,
+          "created_at": "2026-10-25T21:42:06.642000Z",
+          "created_by": "default_user_id",
+          "updated_at": "2026-10-25T21:42:06.642000Z",
+          "updated_by": "default_user_id",
+          "organization": null,
+          "projects": null,
+          "keys": null,
+          "end_users": null,
+          "tags": null,
+          "model_access_groups": null,
+          "team_membership": null,
+          "organization_membership": null
+        }
+      ],
+      "stdout": "[{\"budget_id\":\"qa38759-api\",\"max_budget\":20.0,\"soft_budget\":5.0,\"max_parallel_requests\":null,\"tpm_limit\":1000,\"rpm_limit\":60,\"tpd_limit\":null,\"model_max_budget\":{},\"budget_duration\":\"30d\",\"budget_reset_at\":\"2026-11-01T00:00:00Z\",\"allowed_models\":[],\"temp_budget_increase\":null,\"temp_budget_expiry\":null,\"created_at\":\"2026-10-25T21:42:06.642000Z\",\"created_by\":\"default_user_id\",\"updated_at\":\"2026-10-25T21:42:06.642000Z\",\"updated_by\":\"default_user_id\",\"organization\":null,\"projects\":null,\"keys\":null,\"end_users\":null,\"tags\":null,\"model_access_groups\":null,\"team_membership\":null,\"organization_membership\":null}]\nHTTP 200\n",
+      "stderr": ""
+    },
+    {
+      "label": "explicit-null",
+      "path": "/budget/update",
+      "method": "POST",
+      "body": {
+        "budget_id": "qa38759-api",
+        "model_max_budget": null
+      },
+      "command": "curl -sS -X POST http://127.0.0.1:41478/budget/update -H \"Authorization: Bearer $MASTER_KEY\" -H 'Content-Type: application/json' --data-raw '{\"budget_id\": \"qa38759-api\", \"model_max_budget\": null}' -w '\\nHTTP %{http_code}\\n'",
+      "status": 200,
+      "response": {
+        "budget_id": "qa38759-api",
+        "max_budget": 20.0,
+        "soft_budget": 5.0,
+        "max_parallel_requests": null,
+        "tpm_limit": 1000,
+        "rpm_limit": 60,
+        "tpd_limit": null,
+        "model_max_budget": {},
+        "budget_duration": "30d",
+        "budget_reset_at": "2026-11-01T00:00:00Z",
+        "allowed_models": [],
+        "temp_budget_increase": null,
+        "temp_budget_expiry": null,
+        "created_at": "2026-10-25T21:42:06.642000Z",
+        "created_by": "default_user_id",
+        "updated_at": "2026-10-25T21:42:06.678000Z",
+        "updated_by": "default_user_id",
+        "organization": null,
+        "projects": null,
+        "keys": null,
+        "end_users": null,
+        "tags": null,
+        "model_access_groups": null,
+        "team_membership": null,
+        "organization_membership": null
+      },
+      "stdout": "{\"budget_id\":\"qa38759-api\",\"max_budget\":20.0,\"soft_budget\":5.0,\"max_parallel_requests\":null,\"tpm_limit\":1000,\"rpm_limit\":60,\"tpd_limit\":null,\"model_max_budget\":{},\"budget_duration\":\"30d\",\"budget_reset_at\":\"2026-11-01T00:00:00Z\",\"allowed_models\":[],\"temp_budget_increase\":null,\"temp_budget_expiry\":null,\"created_at\":\"2026-10-25T21:42:06.642000Z\",\"created_by\":\"default_user_id\",\"updated_at\":\"2026-10-25T21:42:06.678000Z\",\"updated_by\":\"default_user_id\",\"organization\":null,\"projects\":null,\"keys\":null,\"end_users\":null,\"tags\":null,\"model_access_groups\":null,\"team_membership\":null,\"organization_membership\":null}\nHTTP 200\n",
+      "stderr": ""
+    },
+    {
+      "label": "read-after-null",
+      "path": "/budget/info",
+      "method": "POST",
+      "body": {
+        "budgets": [
+          "qa38759-api"
+        ]
+      },
+      "command": "curl -sS -X POST http://127.0.0.1:41478/budget/info -H \"Authorization: Bearer $MASTER_KEY\" -H 'Content-Type: application/json' --data-raw '{\"budgets\": [\"qa38759-api\"]}' -w '\\nHTTP %{http_code}\\n'",
+      "status": 200,
+      "response": [
+        {
+          "budget_id": "qa38759-api",
+          "max_budget": 20.0,
+          "soft_budget": 5.0,
+          "max_parallel_requests": null,
+          "tpm_limit": 1000,
+          "rpm_limit": 60,
+          "tpd_limit": null,
+          "model_max_budget": {},
+          "budget_duration": "30d",
+          "budget_reset_at": "2026-11-01T00:00:00Z",
+          "allowed_models": [],
+          "temp_budget_increase": null,
+          "temp_budget_expiry": null,
+          "created_at": "2026-10-25T21:42:06.642000Z",
+          "created_by": "default_user_id",
+          "updated_at": "2026-10-25T21:42:06.678000Z",
+          "updated_by": "default_user_id",
+          "organization": null,
+          "projects": null,
+          "keys": null,
+          "end_users": null,
+          "tags": null,
+          "model_access_groups": null,
+          "team_membership": null,
+          "organization_membership": null
+        }
+      ],
+      "stdout": "[{\"budget_id\":\"qa38759-api\",\"max_budget\":20.0,\"soft_budget\":5.0,\"max_parallel_requests\":null,\"tpm_limit\":1000,\"rpm_limit\":60,\"tpd_limit\":null,\"model_max_budget\":{},\"budget_duration\":\"30d\",\"budget_reset_at\":\"2026-11-01T00:00:00Z\",\"allowed_models\":[],\"temp_budget_increase\":null,\"temp_budget_expiry\":null,\"created_at\":\"2026-10-25T21:42:06.642000Z\",\"created_by\":\"default_user_id\",\"updated_at\":\"2026-10-25T21:42:06.678000Z\",\"updated_by\":\"default_user_id\",\"organization\":null,\"projects\":null,\"keys\":null,\"end_users\":null,\"tags\":null,\"model_access_groups\":null,\"team_membership\":null,\"organization_membership\":null}]\nHTTP 200\n",
+      "stderr": ""
+    },
+    {
+      "label": "repeat-null",
+      "path": "/budget/update",
+      "method": "POST",
+      "body": {
+        "budget_id": "qa38759-api",
+        "model_max_budget": null
+      },
+      "command": "curl -sS -X POST http://127.0.0.1:41478/budget/update -H \"Authorization: Bearer $MASTER_KEY\" -H 'Content-Type: application/json' --data-raw '{\"budget_id\": \"qa38759-api\", \"model_max_budget\": null}' -w '\\nHTTP %{http_code}\\n'",
+      "status": 200,
+      "response": {
+        "budget_id": "qa38759-api",
+        "max_budget": 20.0,
+        "soft_budget": 5.0,
+        "max_parallel_requests": null,
+        "tpm_limit": 1000,
+        "rpm_limit": 60,
+        "tpd_limit": null,
+        "model_max_budget": {},
+        "budget_duration": "30d",
+        "budget_reset_at": "2026-11-01T00:00:00Z",
+        "allowed_models": [],
+        "temp_budget_increase": null,
+        "temp_budget_expiry": null,
+        "created_at": "2026-10-25T21:42:06.642000Z",
+        "created_by": "default_user_id",
+        "updated_at": "2026-10-25T21:42:06.714000Z",
+        "updated_by": "default_user_id",
+        "organization": null,
+        "projects": null,
+        "keys": null,
+        "end_users": null,
+        "tags": null,
+        "model_access_groups": null,
+        "team_membership": null,
+        "organization_membership": null
+      },
+      "stdout": "{\"budget_id\":\"qa38759-api\",\"max_budget\":20.0,\"soft_budget\":5.0,\"max_parallel_requests\":null,\"tpm_limit\":1000,\"rpm_limit\":60,\"tpd_limit\":null,\"model_max_budget\":{},\"budget_duration\":\"30d\",\"budget_reset_at\":\"2026-11-01T00:00:00Z\",\"allowed_models\":[],\"temp_budget_increase\":null,\"temp_budget_expiry\":null,\"created_at\":\"2026-10-25T21:42:06.642000Z\",\"created_by\":\"default_user_id\",\"updated_at\":\"2026-10-25T21:42:06.714000Z\",\"updated_by\":\"default_user_id\",\"organization\":null,\"projects\":null,\"keys\":null,\"end_users\":null,\"tags\":null,\"model_access_groups\":null,\"team_membership\":null,\"organization_membership\":null}\nHTTP 200\n",
+      "stderr": ""
+    },
+    {
+      "label": "empty-object-control",
+      "path": "/budget/update",
+      "method": "POST",
+      "body": {
+        "budget_id": "qa38759-api",
+        "model_max_budget": {}
+      },
+      "command": "curl -sS -X POST http://127.0.0.1:41478/budget/update -H \"Authorization: Bearer $MASTER_KEY\" -H 'Content-Type: application/json' --data-raw '{\"budget_id\": \"qa38759-api\", \"model_max_budget\": {}}' -w '\\nHTTP %{http_code}\\n'",
+      "status": 200,
+      "response": {
+        "budget_id": "qa38759-api",
+        "max_budget": 20.0,
+        "soft_budget": 5.0,
+        "max_parallel_requests": null,
+        "tpm_limit": 1000,
+        "rpm_limit": 60,
+        "tpd_limit": null,
+        "model_max_budget": {},
+        "budget_duration": "30d",
+        "budget_reset_at": "2026-11-01T00:00:00Z",
+        "allowed_models": [],
+        "temp_budget_increase": null,
+        "temp_budget_expiry": null,
+        "created_at": "2026-10-25T21:42:06.642000Z",
+        "created_by": "default_user_id",
+        "updated_at": "2026-10-25T21:42:06.733000Z",
+        "updated_by": "default_user_id",
+        "organization": null,
+        "projects": null,
+        "keys": null,
+        "end_users": null,
+        "tags": null,
+        "model_access_groups": null,
+        "team_membership": null,
+        "organization_membership": null
+      },
+      "stdout": "{\"budget_id\":\"qa38759-api\",\"max_budget\":20.0,\"soft_budget\":5.0,\"max_parallel_requests\":null,\"tpm_limit\":1000,\"rpm_limit\":60,\"tpd_limit\":null,\"model_max_budget\":{},\"budget_duration\":\"30d\",\"budget_reset_at\":\"2026-11-01T00:00:00Z\",\"allowed_models\":[],\"temp_budget_increase\":null,\"temp_budget_expiry\":null,\"created_at\":\"2026-10-25T21:42:06.642000Z\",\"created_by\":\"default_user_id\",\"updated_at\":\"2026-10-25T21:42:06.733000Z\",\"updated_by\":\"default_user_id\",\"organization\":null,\"projects\":null,\"keys\":null,\"end_users\":null,\"tags\":null,\"model_access_groups\":null,\"team_membership\":null,\"organization_membership\":null}\nHTTP 200\n",
+      "stderr": ""
+    },
+    {
+      "label": "omitted-control",
+      "path": "/budget/update",
+      "method": "POST",
+      "body": {
+        "budget_id": "qa38759-api",
+        "max_budget": 25
+      },
+      "command": "curl -sS -X POST http://127.0.0.1:41478/budget/update -H \"Authorization: Bearer $MASTER_KEY\" -H 'Content-Type: application/json' --data-raw '{\"budget_id\": \"qa38759-api\", \"max_budget\": 25}' -w '\\nHTTP %{http_code}\\n'",
+      "status": 200,
+      "response": {
+        "budget_id": "qa38759-api",
+        "max_budget": 25.0,
+        "soft_budget": 5.0,
+        "max_parallel_requests": null,
+        "tpm_limit": 1000,
+        "rpm_limit": 60,
+        "tpd_limit": null,
+        "model_max_budget": {},
+        "budget_duration": "30d",
+        "budget_reset_at": "2026-11-01T00:00:00Z",
+        "allowed_models": [],
+        "temp_budget_increase": null,
+        "temp_budget_expiry": null,
+        "created_at": "2026-10-25T21:42:06.642000Z",
+        "created_by": "default_user_id",
+        "updated_at": "2026-10-25T21:42:06.752000Z",
+        "updated_by": "default_user_id",
+        "organization": null,
+        "projects": null,
+        "keys": null,
+        "end_users": null,
+        "tags": null,
+        "model_access_groups": null,
+        "team_membership": null,
+        "organization_membership": null
+      },
+      "stdout": "{\"budget_id\":\"qa38759-api\",\"max_budget\":25.0,\"soft_budget\":5.0,\"max_parallel_requests\":null,\"tpm_limit\":1000,\"rpm_limit\":60,\"tpd_limit\":null,\"model_max_budget\":{},\"budget_duration\":\"30d\",\"budget_reset_at\":\"2026-11-01T00:00:00Z\",\"allowed_models\":[],\"temp_budget_increase\":null,\"temp_budget_expiry\":null,\"created_at\":\"2026-10-25T21:42:06.642000Z\",\"created_by\":\"default_user_id\",\"updated_at\":\"2026-10-25T21:42:06.752000Z\",\"updated_by\":\"default_user_id\",\"organization\":null,\"projects\":null,\"keys\":null,\"end_users\":null,\"tags\":null,\"model_access_groups\":null,\"team_membership\":null,\"organization_membership\":null}\nHTTP 200\n",
+      "stderr": ""
+    },
+    {
+      "label": "scalar-null-control",
+      "path": "/budget/update",
+      "method": "POST",
+      "body": {
+        "budget_id": "qa38759-api",
+        "soft_budget": null
+      },
+      "command": "curl -sS -X POST http://127.0.0.1:41478/budget/update -H \"Authorization: Bearer $MASTER_KEY\" -H 'Content-Type: application/json' --data-raw '{\"budget_id\": \"qa38759-api\", \"soft_budget\": null}' -w '\\nHTTP %{http_code}\\n'",
+      "status": 200,
+      "response": {
+        "budget_id": "qa38759-api",
+        "max_budget": 25.0,
+        "soft_budget": null,
+        "max_parallel_requests": null,
+        "tpm_limit": 1000,
+        "rpm_limit": 60,
+        "tpd_limit": null,
+        "model_max_budget": {},
+        "budget_duration": "30d",
+        "budget_reset_at": "2026-11-01T00:00:00Z",
+        "allowed_models": [],
+        "temp_budget_increase": null,
+        "temp_budget_expiry": null,
+        "created_at": "2026-10-25T21:42:06.642000Z",
+        "created_by": "default_user_id",
+        "updated_at": "2026-10-25T21:42:06.773000Z",
+        "updated_by": "default_user_id",
+        "organization": null,
+        "projects": null,
+        "keys": null,
+        "end_users": null,
+        "tags": null,
+        "model_access_groups": null,
+        "team_membership": null,
+        "organization_membership": null
+      },
+      "stdout": "{\"budget_id\":\"qa38759-api\",\"max_budget\":25.0,\"soft_budget\":null,\"max_parallel_requests\":null,\"tpm_limit\":1000,\"rpm_limit\":60,\"tpd_limit\":null,\"model_max_budget\":{},\"budget_duration\":\"30d\",\"budget_reset_at\":\"2026-11-01T00:00:00Z\",\"allowed_models\":[],\"temp_budget_increase\":null,\"temp_budget_expiry\":null,\"created_at\":\"2026-10-25T21:42:06.642000Z\",\"created_by\":\"default_user_id\",\"updated_at\":\"2026-10-25T21:42:06.773000Z\",\"updated_by\":\"default_user_id\",\"organization\":null,\"projects\":null,\"keys\":null,\"end_users\":null,\"tags\":null,\"model_access_groups\":null,\"team_membership\":null,\"organization_membership\":null}\nHTTP 200\n",
+      "stderr": ""
+    },
+    {
+      "label": "malformed-control",
+      "path": "/budget/update",
+      "method": "POST",
+      "body": {
+        "budget_id": "qa38759-api",
+        "model_max_budget": {
+          "qa-budget-a": {
+            "max_budget": "lots"
+          }
+        }
+      },
+      "command": "curl -sS -X POST http://127.0.0.1:41478/budget/update -H \"Authorization: Bearer $MASTER_KEY\" -H 'Content-Type: application/json' --data-raw '{\"budget_id\": \"qa38759-api\", \"model_max_budget\": {\"qa-budget-a\": {\"max_budget\": \"lots\"}}}' -w '\\nHTTP %{http_code}\\n'",
+      "status": 422,
+      "response": {
+        "detail": [
+          {
+            "type": "float_parsing",
+            "loc": [
+              "body",
+              "model_max_budget",
+              "qa-budget-a",
+              "max_budget"
+            ],
+            "msg": "Input should be a valid number, unable to parse string as a number"
+          }
+        ]
+      },
+      "stdout": "{\"detail\":[{\"type\":\"float_parsing\",\"loc\":[\"body\",\"model_max_budget\",\"qa-budget-a\",\"max_budget\"],\"msg\":\"Input should be a valid number, unable to parse string as a number\"}]}\nHTTP 422\n",
+      "stderr": ""
+    },
+    {
+      "label": "legacy-scalar-control",
+      "path": "/budget/update",
+      "method": "POST",
+      "body": {
+        "budget_id": "qa38759-api",
+        "model_max_budget": {
+          "qa-budget-a": 5
+        }
+      },
+      "command": "curl -sS -X POST http://127.0.0.1:41478/budget/update -H \"Authorization: Bearer $MASTER_KEY\" -H 'Content-Type: application/json' --data-raw '{\"budget_id\": \"qa38759-api\", \"model_max_budget\": {\"qa-budget-a\": 5}}' -w '\\nHTTP %{http_code}\\n'",
+      "status": 422,
+      "response": {
+        "detail": [
+          {
+            "type": "model_attributes_type",
+            "loc": [
+              "body",
+              "model_max_budget",
+              "qa-budget-a"
+            ],
+            "msg": "Input should be a valid dictionary or object to extract fields from"
+          }
+        ]
+      },
+      "stdout": "{\"detail\":[{\"type\":\"model_attributes_type\",\"loc\":[\"body\",\"model_max_budget\",\"qa-budget-a\"],\"msg\":\"Input should be a valid dictionary or object to extract fields from\"}]}\nHTTP 422\n",
+      "stderr": ""
+    },
+    {
+      "label": "license-gate-control",
+      "path": "/budget/update",
+      "method": "POST",
+      "body": {
+        "budget_id": "qa38759-api",
+        "model_max_budget": {
+          "qa-budget-a": {
+            "max_budget": 1
+          }
+        }
+      },
+      "command": "curl -sS -X POST http://127.0.0.1:41478/budget/update -H \"Authorization: Bearer $MASTER_KEY\" -H 'Content-Type: application/json' --data-raw '{\"budget_id\": \"qa38759-api\", \"model_max_budget\": {\"qa-budget-a\": {\"max_budget\": 1}}}' -w '\\nHTTP %{http_code}\\n'",
+      "status": 400,
+      "response": {
+        "detail": {
+          "error": "Invalid model_max_budget: You must have an enterprise license to set model_max_budget. You must be a LiteLLM Enterprise user to use this feature. If you have a license please set `LITELLM_LICENSE` in your env. Get a 7 day trial key here: https://www.litellm.ai/enterprise#trial. \nPricing: https://www.litellm.ai/#pricing. Example of valid model_max_budget: https://docs.litellm.ai/docs/proxy/users"
+        }
+      },
+      "stdout": "{\"detail\":{\"error\":\"Invalid model_max_budget: You must have an enterprise license to set model_max_budget. You must be a LiteLLM Enterprise user to use this feature. If you have a license please set `LITELLM_LICENSE` in your env. Get a 7 day trial key here: https://www.litellm.ai/enterprise#trial. \\nPricing: https://www.litellm.ai/#pricing. Example of valid model_max_budget: https://docs.litellm.ai/docs/proxy/users\"}}\nHTTP 400\n",
+      "stderr": ""
+    },
+    {
+      "label": "read-after-rejections",
+      "path": "/budget/info",
+      "method": "POST",
+      "body": {
+        "budgets": [
+          "qa38759-api"
+        ]
+      },
+      "command": "curl -sS -X POST http://127.0.0.1:41478/budget/info -H \"Authorization: Bearer $MASTER_KEY\" -H 'Content-Type: application/json' --data-raw '{\"budgets\": [\"qa38759-api\"]}' -w '\\nHTTP %{http_code}\\n'",
+      "status": 200,
+      "response": [
+        {
+          "budget_id": "qa38759-api",
+          "max_budget": 25.0,
+          "soft_budget": null,
+          "max_parallel_requests": null,
+          "tpm_limit": 1000,
+          "rpm_limit": 60,
+          "tpd_limit": null,
+          "model_max_budget": {},
+          "budget_duration": "30d",
+          "budget_reset_at": "2026-11-01T00:00:00Z",
+          "allowed_models": [],
+          "temp_budget_increase": null,
+          "temp_budget_expiry": null,
+          "created_at": "2026-10-25T21:42:06.642000Z",
+          "created_by": "default_user_id",
+          "updated_at": "2026-10-25T21:42:06.773000Z",
+          "updated_by": "default_user_id",
+          "organization": null,
+          "projects": null,
+          "keys": null,
+          "end_users": null,
+          "tags": null,
+          "model_access_groups": null,
+          "team_membership": null,
+          "organization_membership": null
+        }
+      ],
+      "stdout": "[{\"budget_id\":\"qa38759-api\",\"max_budget\":25.0,\"soft_budget\":null,\"max_parallel_requests\":null,\"tpm_limit\":1000,\"rpm_limit\":60,\"tpd_limit\":null,\"model_max_budget\":{},\"budget_duration\":\"30d\",\"budget_reset_at\":\"2026-11-01T00:00:00Z\",\"allowed_models\":[],\"temp_budget_increase\":null,\"temp_budget_expiry\":null,\"created_at\":\"2026-10-25T21:42:06.642000Z\",\"created_by\":\"default_user_id\",\"updated_at\":\"2026-10-25T21:42:06.773000Z\",\"updated_by\":\"default_user_id\",\"organization\":null,\"projects\":null,\"keys\":null,\"end_users\":null,\"tags\":null,\"model_access_groups\":null,\"team_membership\":null,\"organization_membership\":null}]\nHTTP 200\n",
+      "stderr": ""
+    },
+    {
+      "label": "cleanup-budget",
+      "path": "/budget/delete",
+      "method": "POST",
+      "body": {
+        "id": "qa38759-api"
+      },
+      "command": "curl -sS -X POST http://127.0.0.1:41478/budget/delete -H \"Authorization: Bearer $MASTER_KEY\" -H 'Content-Type: application/json' --data-raw '{\"id\": \"qa38759-api\"}' -w '\\nHTTP %{http_code}\\n'",
+      "status": 200,
+      "response": {
+        "budget_id": "qa38759-api",
+        "max_budget": 25.0,
+        "soft_budget": null,
+        "max_parallel_requests": null,
+        "tpm_limit": 1000,
+        "rpm_limit": 60,
+        "tpd_limit": null,
+        "model_max_budget": {},
+        "budget_duration": "30d",
+        "budget_reset_at": "2026-11-01T00:00:00Z",
+        "allowed_models": [],
+        "temp_budget_increase": null,
+        "temp_budget_expiry": null,
+        "created_at": "2026-10-25T21:42:06.642000Z",
+        "created_by": "default_user_id",
+        "updated_at": "2026-10-25T21:42:06.773000Z",
+        "updated_by": "default_user_id",
+        "organization": null,
+        "projects": null,
+        "keys": null,
+        "end_users": null,
+        "tags": null,
+        "model_access_groups": null,
+        "team_membership": null,
+        "organization_membership": null
+      },
+      "stdout": "{\"budget_id\":\"qa38759-api\",\"max_budget\":25.0,\"soft_budget\":null,\"max_parallel_requests\":null,\"tpm_limit\":1000,\"rpm_limit\":60,\"tpd_limit\":null,\"model_max_budget\":{},\"budget_duration\":\"30d\",\"budget_reset_at\":\"2026-11-01T00:00:00Z\",\"allowed_models\":[],\"temp_budget_increase\":null,\"temp_budget_expiry\":null,\"created_at\":\"2026-10-25T21:42:06.642000Z\",\"created_by\":\"default_user_id\",\"updated_at\":\"2026-10-25T21:42:06.773000Z\",\"updated_by\":\"default_user_id\",\"organization\":null,\"projects\":null,\"keys\":null,\"end_users\":null,\"tags\":null,\"model_access_groups\":null,\"team_membership\":null,\"organization_membership\":null}\nHTTP 200\n",
+      "stderr": ""
+    }
+  ],
+  "result": "pass",
+  "null_status": 200,
+  "budget_deleted": true,
+  "completed_at": "2026-10-25T21:42:06.906589+00:00"
+}

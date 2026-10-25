@@ -1,0 +1,20 @@
+{
+  "base": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "head": "52f7654be9ee2a86a88ecc5db0f2eb81962da9d9",
+  "branch": "litellm_fix_38759_null_model_budget",
+  "files": [
+    "litellm/proxy/management_endpoints/budget_management_endpoints.py",
+    "tests/integration/management/test_budget_updates.py",
+    "tests/unit/proxy/management_endpoints/test_budget_endpoints.py",
+    "ui/litellm-dashboard/src/lib/http/schema.d.ts"
+  ],
+  "created_at": "2026-10-25T21:37:12.275089+00:00",
+  "reviewed_diff_sha256": "4e956c5f2bdf3767644001f3abbc3a56a46b8f3dff8d978e9c6a96b4cc29b766",
+  "file_sha256": {
+    "litellm/proxy/management_endpoints/budget_management_endpoints.py": "91150f6540226766e02ea3476909f611872b16cb25e8f22b9445eb28ba61cdbe",
+    "tests/integration/management/test_budget_updates.py": "0a4c8bb320e3e608920959c510d8d647182025ba716aed32436317185c76c3a9",
+    "tests/unit/proxy/management_endpoints/test_budget_endpoints.py": "967c0fb93e1fc3bdaf3f01fe56d01662d1400a650552e4c1523ac2c42ead4c0a",
+    "ui/litellm-dashboard/src/lib/http/schema.d.ts": "687510e596f6cf411a59b34fb3bc699321d3a67625c06eabbb6b605e923ca151"
+  },
+  "precommit_checks_ran_on_working_tree": true
+}

@@ -1,0 +1,62 @@
+FFFF                                                                     [100%]
+=================================== FAILURES ===================================
+_ test_update_budget_preserves_omitted_model_budgets_and_clears_explicit_empty_values[empty-object] _
+tests/unit/proxy/management_endpoints/test_budget_endpoints.py:504: in test_update_budget_preserves_omitted_model_budgets_and_clears_explicit_empty_values
+    assert captured == {
+E   AssertionError: assert {'budget_dura...t': None, ...} == {'budget_id':...: 'test_user'}
+E     
+E     Omitting 4 identical items, use -vv to show
+E     Left contains 7 more items:
+E     {'budget_duration': None,
+E      'budget_reset_at': None,
+E      'max_budget': None,
+E      'max_parallel_requests': None,...
+E     
+E     ...Full output truncated (4 lines hidden), use '-vv' to show
+_ test_update_budget_preserves_omitted_model_budgets_and_clears_explicit_empty_values[null] _
+tests/unit/proxy/management_endpoints/test_budget_endpoints.py:504: in test_update_budget_preserves_omitted_model_budgets_and_clears_explicit_empty_values
+    assert captured == {
+E   AssertionError: assert {'budget_dura...t': None, ...} == {'budget_id':...: 'test_user'}
+E     
+E     Omitting 4 identical items, use -vv to show
+E     Left contains 7 more items:
+E     {'budget_duration': None,
+E      'budget_reset_at': None,
+E      'max_budget': None,
+E      'max_parallel_requests': None,...
+E     
+E     ...Full output truncated (4 lines hidden), use '-vv' to show
+_ test_update_budget_preserves_omitted_model_budgets_and_clears_explicit_empty_values[omitted] _
+tests/unit/proxy/management_endpoints/test_budget_endpoints.py:504: in test_update_budget_preserves_omitted_model_budgets_and_clears_explicit_empty_values
+    assert captured == {
+E   AssertionError: assert {'budget_dura...t': None, ...} == {'budget_id':...: 'test_user'}
+E     
+E     Omitting 3 identical items, use -vv to show
+E     Left contains 8 more items:
+E     {'budget_duration': None,
+E      'budget_reset_at': None,
+E      'max_budget': None,
+E      'max_parallel_requests': None,...
+E     
+E     ...Full output truncated (5 lines hidden), use '-vv' to show
+__________ test_update_budget_serializes_model_max_budget_for_prisma ___________
+tests/unit/proxy/management_endpoints/test_budget_endpoints.py:476: in test_update_budget_serializes_model_max_budget_for_prisma
+    assert json.loads(stored) == {
+E   AssertionError: assert {'glm-5.2': {...limit': None}} == {'glm-5.2': {...budget': 5.0}}
+E     
+E     Differing items:
+E     {'gpt4o': {'budget_duration': '1d', 'max_budget': 5.0, 'rpm_limit': None, 'tpm_limit': None}} != {'gpt4o': {'budget_duration': '1d', 'max_budget': 5.0}}
+E     {'glm-5.2': {'budget_duration': '30d', 'max_budget': 7.5, 'rpm_limit': None, 'tpm_limit': None}} != {'glm-5.2': {'budget_duration': '30d', 'max_budget': 7.5}}
+E     Use -v to get more diff
+=============================== warnings summary ===============================
+tests/unit/proxy/management_endpoints/test_budget_endpoints.py::test_update_budget_preserves_omitted_model_budgets_and_clears_explicit_empty_values[empty-object]
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:2274: UnsupportedFieldAttributeWarning: The 'alias' attribute with value 'budget_obj' was provided to the `Field()` function, which has no effect in the context it was used. 'alias' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/unit/proxy/management_endpoints/test_budget_endpoints.py::test_update_budget_preserves_omitted_model_budgets_and_clears_explicit_empty_values[empty-object]
+FAILED tests/unit/proxy/management_endpoints/test_budget_endpoints.py::test_update_budget_preserves_omitted_model_budgets_and_clears_explicit_empty_values[null]
+FAILED tests/unit/proxy/management_endpoints/test_budget_endpoints.py::test_update_budget_preserves_omitted_model_budgets_and_clears_explicit_empty_values[omitted]
+FAILED tests/unit/proxy/management_endpoints/test_budget_endpoints.py::test_update_budget_serializes_model_max_budget_for_prisma
+4 failed, 22 deselected, 1 warning in 0.45s

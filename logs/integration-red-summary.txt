@@ -1,0 +1,5 @@
+collecting ... collected 2 items
+tests/integration/management/test_budget_updates.py::test_clearing_model_budgets_preserves_other_limits[null] FAILED [ 50%]
+tests/integration/management/test_budget_updates.py::test_clearing_model_budgets_preserves_other_limits[empty-object] PASSED [100%]
+tests/integration/management/test_budget_updates.py:247: in test_clearing_model_budgets_preserves_other_limits
+========================= 1 failed, 1 passed in 0.35s ==========================

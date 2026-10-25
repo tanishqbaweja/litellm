@@ -1,0 +1,20 @@
+...F                                                                     [100%]
+=================================== FAILURES ===================================
+__________ test_update_budget_serializes_model_max_budget_for_prisma ___________
+tests/unit/proxy/management_endpoints/test_budget_endpoints.py:476: in test_update_budget_serializes_model_max_budget_for_prisma
+    assert json.loads(stored) == {
+E   AssertionError: assert {} == {'glm-5.2': {...budget': 5.0}}
+E     
+E     Right contains 2 more items:
+E     {'glm-5.2': {'budget_duration': '30d', 'max_budget': 7.5},
+E      'gpt4o': {'budget_duration': '1d', 'max_budget': 5.0}}
+E     Use -v to get more diff
+=============================== warnings summary ===============================
+tests/unit/proxy/management_endpoints/test_budget_endpoints.py::test_update_budget_preserves_omitted_model_budgets_and_clears_explicit_empty_values[empty-object]
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:2274: UnsupportedFieldAttributeWarning: The 'alias' attribute with value 'budget_obj' was provided to the `Field()` function, which has no effect in the context it was used. 'alias' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/unit/proxy/management_endpoints/test_budget_endpoints.py::test_update_budget_serializes_model_max_budget_for_prisma
+1 failed, 3 passed, 22 deselected, 1 warning in 0.54s

@@ -1,0 +1,158 @@
+{
+  "base": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "head": "52f7654be9ee2a86a88ecc5db0f2eb81962da9d9",
+  "api": [
+    {
+      "case": "create",
+      "before": 200,
+      "after": 200
+    },
+    {
+      "case": "read-before",
+      "before": 200,
+      "after": 200
+    },
+    {
+      "case": "explicit-null",
+      "before": 500,
+      "after": 200
+    },
+    {
+      "case": "read-after-null",
+      "before": 200,
+      "after": 200
+    },
+    {
+      "case": "repeat-null",
+      "before": 500,
+      "after": 200
+    },
+    {
+      "case": "empty-object-control",
+      "before": 200,
+      "after": 200
+    },
+    {
+      "case": "omitted-control",
+      "before": 200,
+      "after": 200
+    },
+    {
+      "case": "scalar-null-control",
+      "before": 200,
+      "after": 200
+    },
+    {
+      "case": "malformed-control",
+      "before": 422,
+      "after": 422
+    },
+    {
+      "case": "legacy-scalar-control",
+      "before": 422,
+      "after": 422
+    },
+    {
+      "case": "license-gate-control",
+      "before": 400,
+      "after": 400
+    },
+    {
+      "case": "read-after-rejections",
+      "before": 200,
+      "after": 200
+    },
+    {
+      "case": "cleanup-budget",
+      "before": 200,
+      "after": 200
+    }
+  ],
+  "browser": {
+    "baseline": [
+      {
+        "viewport": {
+          "name": "desktop",
+          "width": 1440,
+          "height": 900
+        },
+        "steps": 9,
+        "mutations": 4,
+        "page_errors": [],
+        "console_errors": 60,
+        "http_404_count": 60,
+        "failed_response_paths": [
+          "/ui.txt",
+          "/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt",
+          "/ui/api-keys/__next.!KGRhc2hib2FyZCk.api-keys.__PAGE__.txt",
+          "/ui/cost-optimization/__next.!KGRhc2hib2FyZCk.cost-optimization.__PAGE__.txt",
+          "/ui/guardrails-monitor/__next.!KGRhc2hib2FyZCk.guardrails-monitor.__PAGE__.txt",
+          "/ui/guardrails/__next.!KGRhc2hib2FyZCk.guardrails.__PAGE__.txt",
+          "/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt",
+          "/ui/lens/__next.!KGRhc2hib2FyZCk.lens.__PAGE__.txt",
+          "/ui/litellm-runtime-config.json",
+          "/ui/logs/__next.!KGRhc2hib2FyZCk.logs.__PAGE__.txt",
+          "/ui/mcp-servers/__next.!KGRhc2hib2FyZCk.mcp-servers.__PAGE__.txt",
+          "/ui/model-insights/__next.!KGRhc2hib2FyZCk.model-insights.__PAGE__.txt",
+          "/ui/models-and-endpoints/__next.!KGRhc2hib2FyZCk.models-and-endpoints.__PAGE__.txt",
+          "/ui/playground/__next.!KGRhc2hib2FyZCk.playground.__PAGE__.txt",
+          "/ui/policies/__next.!KGRhc2hib2FyZCk.policies.__PAGE__.txt",
+          "/ui/skills/__next.!KGRhc2hib2FyZCk.skills.__PAGE__.txt",
+          "/ui/teams/__next.!KGRhc2hib2FyZCk.teams.__PAGE__.txt",
+          "/ui/usage/__next.!KGRhc2hib2FyZCk.usage.__PAGE__.txt",
+          "/ui/users/__next.!KGRhc2hib2FyZCk.users.__PAGE__.txt"
+        ]
+      },
+      {
+        "viewport": {
+          "name": "phone",
+          "width": 390,
+          "height": 844
+        },
+        "steps": 9,
+        "mutations": 4,
+        "page_errors": [],
+        "console_errors": 9,
+        "http_404_count": 9,
+        "failed_response_paths": [
+          "/ui.txt",
+          "/ui/litellm-runtime-config.json"
+        ]
+      }
+    ],
+    "fixed": [
+      {
+        "viewport": {
+          "name": "desktop",
+          "width": 1440,
+          "height": 900
+        },
+        "steps": 9,
+        "mutations": 4,
+        "page_errors": [],
+        "console_errors": 9,
+        "http_404_count": 9,
+        "failed_response_paths": [
+          "/ui.txt",
+          "/ui/litellm-runtime-config.json"
+        ]
+      },
+      {
+        "viewport": {
+          "name": "phone",
+          "width": 390,
+          "height": 844
+        },
+        "steps": 9,
+        "mutations": 4,
+        "page_errors": [],
+        "console_errors": 9,
+        "http_404_count": 9,
+        "failed_response_paths": [
+          "/ui.txt",
+          "/ui/litellm-runtime-config.json"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "regenerate",
+  "command": [
+    "bash",
+    "/qa/litellm-38759/regenerate.sh"
+  ],
+  "started_at": "2026-10-25T21:31:21.544432+00:00",
+  "returncode": 0,
+  "completed_at": "2026-10-25T21:31:52.655020+00:00"
+}

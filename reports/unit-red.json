@@ -1,0 +1,18 @@
+{
+  "phase": "red",
+  "command": [
+    "/opt/litellm-venv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "--tb=short",
+    "tests/unit/proxy/management_endpoints/test_budget_endpoints.py",
+    "-k",
+    "preserves_omitted_model_budgets_and_clears_explicit_empty_values or serializes_model_max_budget_for_prisma"
+  ],
+  "started_at": "2026-10-25T21:20:08.263748+00:00",
+  "source_head": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "source_sha256": "e9b3a336f4bd5f619f3c7d3beb4e51aec04844f47696a4ce65cc783e3e62b6cd",
+  "returncode": 1,
+  "completed_at": "2026-10-25T21:20:22.667309+00:00"
+}

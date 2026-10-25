@@ -1,0 +1,64 @@
+{
+  "started_at": "2026-10-25T21:28:17.383019+00:00",
+  "source_sha256": "91150f6540226766e02ea3476909f611872b16cb25e8f22b9445eb28ba61cdbe",
+  "command": [
+    "/opt/litellm-venv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "--tb=short",
+    "tests/unit/proxy/management_endpoints/test_budget_endpoints.py",
+    "-k",
+    "preserves_omitted_model_budgets_and_clears_explicit_empty_values or serializes_model_max_budget_for_prisma"
+  ],
+  "mutations": [
+    {
+      "name": "leave-null-unserialized",
+      "old": "field: {} if field == \"model_max_budget\" and value is None else value",
+      "new": "field: value",
+      "returncode": 1,
+      "failures": 1,
+      "controls_passed": 3,
+      "killed": true
+    },
+    {
+      "name": "clear-nonempty-model-limits",
+      "old": "field: {} if field == \"model_max_budget\" and value is None else value",
+      "new": "field: {} if field == \"model_max_budget\" else value",
+      "returncode": 1,
+      "failures": 1,
+      "controls_passed": 3,
+      "killed": true
+    },
+    {
+      "name": "convert-scalar-nulls-to-objects",
+      "old": "field: {} if field == \"model_max_budget\" and value is None else value",
+      "new": "field: {} if value is None else value",
+      "returncode": 1,
+      "failures": 3,
+      "controls_passed": 1,
+      "killed": true
+    },
+    {
+      "name": "drop-explicit-nulls",
+      "old": "budget_patch: Final[Mapping[str, object]] = budget_obj.model_dump(exclude_unset=True)",
+      "new": "budget_patch: Final[Mapping[str, object]] = budget_obj.model_dump(exclude_none=True)",
+      "returncode": 1,
+      "failures": 3,
+      "controls_passed": 1,
+      "killed": true
+    },
+    {
+      "name": "overwrite-omitted-fields",
+      "old": "budget_patch: Final[Mapping[str, object]] = budget_obj.model_dump(exclude_unset=True)",
+      "new": "budget_patch: Final[Mapping[str, object]] = budget_obj.model_dump(exclude_unset=False)",
+      "returncode": 1,
+      "failures": 4,
+      "controls_passed": 0,
+      "killed": true
+    }
+  ],
+  "restored_source_sha256": "91150f6540226766e02ea3476909f611872b16cb25e8f22b9445eb28ba61cdbe",
+  "exactly_restored": true,
+  "completed_at": "2026-10-25T21:30:37.118823+00:00"
+}

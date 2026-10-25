@@ -1,0 +1,6 @@
+{
+  "build_directory": "/opt/qa-ui-build-38759",
+  "dependency_source": "/opt/qa-ui-build-38352",
+  "lock_matches": true,
+  "copy_method": "hard links to the existing native installation, excluding mutable caches"
+}

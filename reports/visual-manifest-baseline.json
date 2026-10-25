@@ -1,0 +1,122 @@
+{
+  "revision": "baseline",
+  "raw_screenshots": [
+    {
+      "path": "output\\playwright\\visual-baseline-1792963426955\\desktop-budgets-page.png",
+      "sha256": "f7c6b408fd3480b840712996f558d63ccf212898a1bc65e6e2f8d97423095792"
+    },
+    {
+      "path": "output\\playwright\\visual-baseline-1792963426955\\desktop-create-form.png",
+      "sha256": "a6c5adb271cd1b72bf3e01381834fd5330d828b759172cf9ad906184aa86d377"
+    },
+    {
+      "path": "output\\playwright\\visual-baseline-1792963426955\\desktop-created-budget.png",
+      "sha256": "d1843c3ca1914d02971ed951289d21ede4cc5749c17d8aea6fbd1b5902dfafbc"
+    },
+    {
+      "path": "output\\playwright\\visual-baseline-1792963426955\\desktop-edit-form.png",
+      "sha256": "71d86dba6318e9662a6e064da02aa9171374bc5a7defecc7832407c5291d1147"
+    },
+    {
+      "path": "output\\playwright\\visual-baseline-1792963426955\\desktop-edited-budget.png",
+      "sha256": "3b03bfc6e7ccb4e9f3956365cc571e25396d2751f9ebc20aca4daf379ee4e114"
+    },
+    {
+      "path": "output\\playwright\\visual-baseline-1792963426955\\desktop-clear-spend-form.png",
+      "sha256": "1db2b98d7c1cf7e7c0351133f0e56b6a8240f49587ac54867247bf70022c9502"
+    },
+    {
+      "path": "output\\playwright\\visual-baseline-1792963426955\\desktop-cleared-spend-budget.png",
+      "sha256": "e3ae704be4a23ee906a99195b8f9bd6884000a61311ad8abcef6713b2d1ad655"
+    },
+    {
+      "path": "output\\playwright\\visual-baseline-1792963426955\\desktop-reloaded-budget.png",
+      "sha256": "37951058c6ced111a12e873ffa3b09a7bbb6e4ceff70c78e09e365ad1d954974"
+    },
+    {
+      "path": "output\\playwright\\visual-baseline-1792963426955\\desktop-deleted-budget.png",
+      "sha256": "2a5a78e98941f4c2fad70137cefc7675ece9f97e11e1ed3e045f547d045b8317"
+    },
+    {
+      "path": "output\\playwright\\visual-baseline-1792963426955\\phone-budgets-page.png",
+      "sha256": "41e7d20b837eafbba1b765ed772675d9bfb0aeddbb5ca52939e6d5dfde42eb05"
+    },
+    {
+      "path": "output\\playwright\\visual-baseline-1792963426955\\phone-create-form.png",
+      "sha256": "6cc1a6433762f7cc10a7018e05ca8c63f6c3b6df38ca5cc8b82f6758418ccdeb"
+    },
+    {
+      "path": "output\\playwright\\visual-baseline-1792963426955\\phone-created-budget.png",
+      "sha256": "60b6c5cb54192217a4e4756585cd7b4081f2fb8c6d62149bcad66cc7e6b020cf"
+    },
+    {
+      "path": "output\\playwright\\visual-baseline-1792963426955\\phone-edit-form.png",
+      "sha256": "ff9e7ec022781a956b944ec4576ec082c586226006c4ed8e8aa4394f2786c06a"
+    },
+    {
+      "path": "output\\playwright\\visual-baseline-1792963426955\\phone-edited-budget.png",
+      "sha256": "6ff414d3e3ec014be4dd36a1444611899b20691f2be0cdc956cc727a7303cb90"
+    },
+    {
+      "path": "output\\playwright\\visual-baseline-1792963426955\\phone-clear-spend-form.png",
+      "sha256": "cbdefce2c90cead1a49b32c8da02c71a4f62703ce4aa3be4dd90ebf20031408f"
+    },
+    {
+      "path": "output\\playwright\\visual-baseline-1792963426955\\phone-cleared-spend-budget.png",
+      "sha256": "fc0fcee7370eed4241ff1412c69b02ad45533b52c060a49374c59a34f45c8eed"
+    },
+    {
+      "path": "output\\playwright\\visual-baseline-1792963426955\\phone-reloaded-budget.png",
+      "sha256": "860df2c6fad6139ee4c9cce7aac95aeed783ef43cd6e27f52c4f75ea9b4dbabc"
+    },
+    {
+      "path": "output\\playwright\\visual-baseline-1792963426955\\phone-deleted-budget.png",
+      "sha256": "3f33ade69369a12ee059698df7ec68bce6ddd08843c17a5771a3d2c51041260e"
+    }
+  ],
+  "recordings": [
+    {
+      "revision": "baseline",
+      "source_sha": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+      "viewport": "desktop",
+      "video": "output\\playwright\\visual-baseline-1792963426955\\raw-video\\98dcae3154fe89481b82d08b75e3cd15.webm",
+      "duration_seconds": 13.72,
+      "sampled_frames": [
+        "visual-review-final\\baseline-desktop-frame-1-0.86s.png",
+        "visual-review-final\\baseline-desktop-frame-2-2.57s.png",
+        "visual-review-final\\baseline-desktop-frame-3-4.29s.png",
+        "visual-review-final\\baseline-desktop-frame-4-6.00s.png",
+        "visual-review-final\\baseline-desktop-frame-5-7.72s.png",
+        "visual-review-final\\baseline-desktop-frame-6-9.43s.png",
+        "visual-review-final\\baseline-desktop-frame-7-11.15s.png",
+        "visual-review-final\\baseline-desktop-frame-8-12.86s.png"
+      ],
+      "contact_sheets": [
+        "visual-review-final\\baseline-desktop-video-1.png",
+        "visual-review-final\\baseline-desktop-video-2.png"
+      ]
+    },
+    {
+      "revision": "baseline",
+      "source_sha": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+      "viewport": "phone",
+      "video": "output\\playwright\\visual-baseline-1792963426955\\raw-video\\0e5d7b53a4ef9ef9beca2e69150b4196.webm",
+      "duration_seconds": 12.48,
+      "sampled_frames": [
+        "visual-review-final\\baseline-phone-frame-1-0.78s.png",
+        "visual-review-final\\baseline-phone-frame-2-2.34s.png",
+        "visual-review-final\\baseline-phone-frame-3-3.90s.png",
+        "visual-review-final\\baseline-phone-frame-4-5.46s.png",
+        "visual-review-final\\baseline-phone-frame-5-7.02s.png",
+        "visual-review-final\\baseline-phone-frame-6-8.58s.png",
+        "visual-review-final\\baseline-phone-frame-7-10.14s.png",
+        "visual-review-final\\baseline-phone-frame-8-11.70s.png"
+      ],
+      "contact_sheets": [
+        "visual-review-final\\baseline-phone-video-1.png",
+        "visual-review-final\\baseline-phone-video-2.png"
+      ]
+    }
+  ],
+  "source_sha": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e"
+}

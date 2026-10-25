@@ -1,0 +1,8 @@
+..........................                                               [100%]
+=============================== warnings summary ===============================
+tests/unit/proxy/management_endpoints/test_budget_endpoints.py::test_new_and_update_budget_persist_tpd_limit
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:2274: UnsupportedFieldAttributeWarning: The 'alias' attribute with value 'budget_obj' was provided to the `Field()` function, which has no effect in the context it was used. 'alias' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+26 passed, 1 warning in 1.20s

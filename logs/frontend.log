@@ -1,0 +1,33 @@
+[33mTesting types with tsc and vue-tsc is an experimental feature.
+Breaking changes might not follow SemVer, please pin Vitest's version when using it.[39m
+
+[1m[30m[46m RUN [49m[39m[22m [36mv4.1.12 [39m[90m/opt/litellm-38759/ui/litellm-dashboard[39m
+
+Importing from "vitest/environments" is deprecated since Vitest 4.1. Please use "vitest/runtime" instead.
+The Vitest environment jsdom-fetch defines the "transformMode". This options was deprecated in Vitest 4 and will be removed in the next major version. Please, use "viteEnvironment" instead.
+Importing from "vitest/environments" is deprecated since Vitest 4.1. Please use "vitest/runtime" instead.
+The Vitest environment jsdom-fetch defines the "transformMode". This options was deprecated in Vitest 4 and will be removed in the next major version. Please, use "viteEnvironment" instead.
+Importing from "vitest/environments" is deprecated since Vitest 4.1. Please use "vitest/runtime" instead.
+The Vitest environment jsdom-fetch defines the "transformMode". This options was deprecated in Vitest 4 and will be removed in the next major version. Please, use "viteEnvironment" instead.
+ [32m✓[39m [30m[45m component [49m[39m src/app/(dashboard)/hooks/budgets/budgetFilters.test.ts [2m([22m[2m10 tests[22m[2m)[22m[32m 7[2mms[22m[39m
+Importing from "vitest/environments" is deprecated since Vitest 4.1. Please use "vitest/runtime" instead.
+The Vitest environment jsdom-fetch defines the "transformMode". This options was deprecated in Vitest 4 and will be removed in the next major version. Please, use "viteEnvironment" instead.
+ [32m✓[39m [30m[45m component [49m[39m src/app/(dashboard)/budgets/_components/BudgetTable.test.tsx [2m([22m[2m19 tests[22m[2m)[22m[33m 1454[2mms[22m[39m
+Importing from "vitest/environments" is deprecated since Vitest 4.1. Please use "vitest/runtime" instead.
+The Vitest environment jsdom-fetch defines the "transformMode". This options was deprecated in Vitest 4 and will be removed in the next major version. Please, use "viteEnvironment" instead.
+ [32m✓[39m [30m[45m component [49m[39m src/app/(dashboard)/budgets/_components/BudgetPanel.test.tsx [2m([22m[2m13 tests[22m[2m)[22m[33m 3076[2mms[22m[39m
+     [33m[2m✓[22m[39m searches on budget_id with a debounced q [33m 375[2mms[22m[39m
+     [33m[2m✓[22m[39m filters by reset duration and clears it again [33m 365[2mms[22m[39m
+     [33m[2m✓[22m[39m pages through the results and changes page size [33m 302[2mms[22m[39m
+ [32m✓[39m [30m[45m integration [49m[39m src/app/(dashboard)/budgets/_components/EditBudgetModal.integration.test.tsx [2m([22m[2m6 tests[22m[2m)[22m[33m 988[2mms[22m[39m
+ [32m✓[39m [30m[42m unit [49m[39m src/app/(dashboard)/budgets/_components/budgetPrecision.test.ts [2m([22m[2m7 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[45m integration [49m[39m src/app/(dashboard)/budgets/_components/BudgetModal.integration.test.tsx [2m([22m[2m4 tests[22m[2m)[22m[33m 970[2mms[22m[39m
+     [33m[2m✓[22m[39m submits the spend limit and reset period alongside the rate limits [33m 486[2mms[22m[39m
+     [33m[2m✓[22m[39m submits a spend limit that never resets as a null reset period [33m 348[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m6 passed[39m[22m[90m (6)[39m
+[2m      Tests [22m [1m[32m59 passed[39m[22m[90m (59)[39m
+[2mType Errors [22m [2mno errors[22m
+[2m   Start at [22m 21:27:06
+[2m   Duration [22m 44.80s[2m (transform 3.46s, setup 12.28s, import 46.92s, tests 6.50s, environment 32.66s)[22m
+

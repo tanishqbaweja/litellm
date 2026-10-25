@@ -1,0 +1,10 @@
+{
+  "name": "format",
+  "command": [
+    "bash",
+    "/qa/litellm-38759/format.sh"
+  ],
+  "started_at": "2026-10-25T21:26:08.182647+00:00",
+  "returncode": 0,
+  "completed_at": "2026-10-25T21:27:17.590702+00:00"
+}

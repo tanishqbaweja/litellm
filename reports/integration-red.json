@@ -1,0 +1,12 @@
+{
+  "phase": "red",
+  "started_at": "2026-10-25T21:22:37.454396+00:00",
+  "nodes": [
+    "tests/integration/management/test_budget_updates.py::test_clearing_model_budgets_preserves_other_limits"
+  ],
+  "source_head": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "services_ready": true,
+  "returncode": 1,
+  "owned_services_cleaned_up": true,
+  "completed_at": "2026-10-25T21:23:32.080092+00:00"
+}

@@ -1,0 +1,40 @@
+{
+  "source_sha": "52f7654be9ee2a86a88ecc5db0f2eb81962da9d9",
+  "started_at": "2026-10-25T21:37:22.245610+00:00",
+  "stages": [
+    {
+      "name": "format-committed",
+      "command": [
+        "make",
+        "lint-format-check-changed",
+        "BASE_REF=origin/main",
+        "LINT_DEP_INSTALL=",
+        "LINT_DEP_BASE="
+      ],
+      "started_at": "2026-10-25T21:37:22.245622+00:00",
+      "returncode": 0,
+      "completed_at": "2026-10-25T21:37:22.458654+00:00"
+    },
+    {
+      "name": "ui-gates",
+      "command": [
+        "/opt/litellm-venv/bin/python",
+        "/qa/litellm-38759/ui-gates.py"
+      ],
+      "started_at": "2026-10-25T21:37:22.465760+00:00",
+      "returncode": 0,
+      "completed_at": "2026-10-25T21:40:16.393896+00:00"
+    },
+    {
+      "name": "ui-build",
+      "command": [
+        "/opt/litellm-venv/bin/python",
+        "/qa/litellm-38759/build-ui.py"
+      ],
+      "started_at": "2026-10-25T21:40:16.397454+00:00",
+      "returncode": 0,
+      "completed_at": "2026-10-25T21:41:11.682125+00:00"
+    }
+  ],
+  "completed_at": "2026-10-25T21:41:11.685432+00:00"
+}

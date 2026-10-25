@@ -1,0 +1,20 @@
+{
+  "revision": "fixed",
+  "source": "/opt/litellm-38759",
+  "sha": "52f7654be9ee2a86a88ecc5db0f2eb81962da9d9",
+  "source_clean": true,
+  "ui": "/opt/qa-ui-build-38759/out",
+  "ui_source_sha": "52f7654be9ee2a86a88ecc5db0f2eb81962da9d9",
+  "port": 41478,
+  "database_name": "qa38759_fixed_8991958fee",
+  "started_at": "2026-10-25T21:41:32.749514+00:00",
+  "enterprise_entitlement_override": false,
+  "pid": 42424,
+  "ready_at": "2026-10-25T21:41:53.503047+00:00",
+  "forced_stop": false,
+  "process_reaped": true,
+  "exit_code": -15,
+  "owned_database_dropped": true,
+  "port_closed": true,
+  "stopped_at": "2026-10-25T21:43:02.657717+00:00"
+}

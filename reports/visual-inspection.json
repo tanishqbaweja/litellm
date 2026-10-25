@@ -1,0 +1,220 @@
+{
+  "inspected_at": "2026-10-25T21:43:45.434506+00:00",
+  "baseline_source_sha": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "fixed_source_sha": "52f7654be9ee2a86a88ecc5db0f2eb81962da9d9",
+  "baseline_inspection": "baseline-visual-inspection.json",
+  "raw_screenshots_inspected": 36,
+  "sampled_video_frames_inspected": 32,
+  "method": "All nine screenshots per viewport and eight evenly spaced frames per recording inspected through screenshot and video contact sheets for both revisions. Full recordings were not watched end to end",
+  "fixed_screenshots": [
+    {
+      "path": "output\\playwright\\visual-fixed-1792964535162\\desktop-budgets-page.png",
+      "sha256": "f7c6b408fd3480b840712996f558d63ccf212898a1bc65e6e2f8d97423095792"
+    },
+    {
+      "path": "output\\playwright\\visual-fixed-1792964535162\\desktop-create-form.png",
+      "sha256": "a6c5adb271cd1b72bf3e01381834fd5330d828b759172cf9ad906184aa86d377"
+    },
+    {
+      "path": "output\\playwright\\visual-fixed-1792964535162\\desktop-created-budget.png",
+      "sha256": "d1843c3ca1914d02971ed951289d21ede4cc5749c17d8aea6fbd1b5902dfafbc"
+    },
+    {
+      "path": "output\\playwright\\visual-fixed-1792964535162\\desktop-edit-form.png",
+      "sha256": "71d86dba6318e9662a6e064da02aa9171374bc5a7defecc7832407c5291d1147"
+    },
+    {
+      "path": "output\\playwright\\visual-fixed-1792964535162\\desktop-edited-budget.png",
+      "sha256": "3b03bfc6e7ccb4e9f3956365cc571e25396d2751f9ebc20aca4daf379ee4e114"
+    },
+    {
+      "path": "output\\playwright\\visual-fixed-1792964535162\\desktop-clear-spend-form.png",
+      "sha256": "1db2b98d7c1cf7e7c0351133f0e56b6a8240f49587ac54867247bf70022c9502"
+    },
+    {
+      "path": "output\\playwright\\visual-fixed-1792964535162\\desktop-cleared-spend-budget.png",
+      "sha256": "e3ae704be4a23ee906a99195b8f9bd6884000a61311ad8abcef6713b2d1ad655"
+    },
+    {
+      "path": "output\\playwright\\visual-fixed-1792964535162\\desktop-reloaded-budget.png",
+      "sha256": "6d53d1035f9ce287f0946dc2e81e1b12e63513e9398948a145c1d1bc4297fa21"
+    },
+    {
+      "path": "output\\playwright\\visual-fixed-1792964535162\\desktop-deleted-budget.png",
+      "sha256": "2a5a78e98941f4c2fad70137cefc7675ece9f97e11e1ed3e045f547d045b8317"
+    },
+    {
+      "path": "output\\playwright\\visual-fixed-1792964535162\\phone-budgets-page.png",
+      "sha256": "41e7d20b837eafbba1b765ed772675d9bfb0aeddbb5ca52939e6d5dfde42eb05"
+    },
+    {
+      "path": "output\\playwright\\visual-fixed-1792964535162\\phone-create-form.png",
+      "sha256": "6cc1a6433762f7cc10a7018e05ca8c63f6c3b6df38ca5cc8b82f6758418ccdeb"
+    },
+    {
+      "path": "output\\playwright\\visual-fixed-1792964535162\\phone-created-budget.png",
+      "sha256": "60b6c5cb54192217a4e4756585cd7b4081f2fb8c6d62149bcad66cc7e6b020cf"
+    },
+    {
+      "path": "output\\playwright\\visual-fixed-1792964535162\\phone-edit-form.png",
+      "sha256": "ff9e7ec022781a956b944ec4576ec082c586226006c4ed8e8aa4394f2786c06a"
+    },
+    {
+      "path": "output\\playwright\\visual-fixed-1792964535162\\phone-edited-budget.png",
+      "sha256": "6ff414d3e3ec014be4dd36a1444611899b20691f2be0cdc956cc727a7303cb90"
+    },
+    {
+      "path": "output\\playwright\\visual-fixed-1792964535162\\phone-clear-spend-form.png",
+      "sha256": "cfc715c8db464400cdebc6f48711ba6e49c4c2198d2fb7306b21c308cab86c6d"
+    },
+    {
+      "path": "output\\playwright\\visual-fixed-1792964535162\\phone-cleared-spend-budget.png",
+      "sha256": "fc0fcee7370eed4241ff1412c69b02ad45533b52c060a49374c59a34f45c8eed"
+    },
+    {
+      "path": "output\\playwright\\visual-fixed-1792964535162\\phone-reloaded-budget.png",
+      "sha256": "860df2c6fad6139ee4c9cce7aac95aeed783ef43cd6e27f52c4f75ea9b4dbabc"
+    },
+    {
+      "path": "output\\playwright\\visual-fixed-1792964535162\\phone-deleted-budget.png",
+      "sha256": "3f33ade69369a12ee059698df7ec68bce6ddd08843c17a5771a3d2c51041260e"
+    }
+  ],
+  "fixed_recordings": [
+    {
+      "revision": "fixed",
+      "source_sha": "52f7654be9ee2a86a88ecc5db0f2eb81962da9d9",
+      "viewport": "desktop",
+      "video": "output\\playwright\\visual-fixed-1792964535162\\raw-video\\52d3510ed0e8480aa2620ca18c85608b.webm",
+      "duration_seconds": 15.08,
+      "sampled_frames": [
+        "visual-review-final\\fixed-desktop-frame-1-0.94s.png",
+        "visual-review-final\\fixed-desktop-frame-2-2.83s.png",
+        "visual-review-final\\fixed-desktop-frame-3-4.71s.png",
+        "visual-review-final\\fixed-desktop-frame-4-6.60s.png",
+        "visual-review-final\\fixed-desktop-frame-5-8.48s.png",
+        "visual-review-final\\fixed-desktop-frame-6-10.37s.png",
+        "visual-review-final\\fixed-desktop-frame-7-12.25s.png",
+        "visual-review-final\\fixed-desktop-frame-8-14.14s.png"
+      ],
+      "contact_sheets": [
+        "visual-review-final\\fixed-desktop-video-1.png",
+        "visual-review-final\\fixed-desktop-video-2.png"
+      ]
+    },
+    {
+      "revision": "fixed",
+      "source_sha": "52f7654be9ee2a86a88ecc5db0f2eb81962da9d9",
+      "viewport": "phone",
+      "video": "output\\playwright\\visual-fixed-1792964535162\\raw-video\\3df9f20fe70a85006f7c7142dc55d486.webm",
+      "duration_seconds": 12.32,
+      "sampled_frames": [
+        "visual-review-final\\fixed-phone-frame-1-0.77s.png",
+        "visual-review-final\\fixed-phone-frame-2-2.31s.png",
+        "visual-review-final\\fixed-phone-frame-3-3.85s.png",
+        "visual-review-final\\fixed-phone-frame-4-5.39s.png",
+        "visual-review-final\\fixed-phone-frame-5-6.93s.png",
+        "visual-review-final\\fixed-phone-frame-6-8.47s.png",
+        "visual-review-final\\fixed-phone-frame-7-10.01s.png",
+        "visual-review-final\\fixed-phone-frame-8-11.55s.png"
+      ],
+      "contact_sheets": [
+        "visual-review-final\\fixed-phone-video-1.png",
+        "visual-review-final\\fixed-phone-video-2.png"
+      ]
+    }
+  ],
+  "desktop": "The create, edit and clear forms fit. Screenshots and sampled frames show $20, $99 and Unlimited, with TPM 1000 and RPM 60 retained. Reload preserves Unlimited and deletion removes the row",
+  "phone": "All three forms fit the 390 by 844 viewport and the workflow completes using taps. Existing horizontal table scrolling crops some left-side table and toast content. Pagination text wraps and the Aria launcher overlays the bottom-right controls, as on main",
+  "transitions": "Desktop samples include initial Home loading, the empty budget page, create form, actions menu, edited row, cleared row, reload and deleted state. Phone samples include initial loading, reset-period selection, created row, edit form, clear form, cleared row, reload and deleted state",
+  "scope": "Budget CRUD regression check. Per-model budget JSON is not exposed by this dashboard and its explicit-null failure is verified separately with real curl requests",
+  "local_banner": "The environment-credential login banner appears on both revisions",
+  "browser_errors": {
+    "baseline": [
+      {
+        "viewport": {
+          "name": "desktop",
+          "width": 1440,
+          "height": 900
+        },
+        "steps": 9,
+        "mutations": 4,
+        "page_errors": [],
+        "console_errors": 60,
+        "http_404_count": 60,
+        "failed_response_paths": [
+          "/ui.txt",
+          "/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt",
+          "/ui/api-keys/__next.!KGRhc2hib2FyZCk.api-keys.__PAGE__.txt",
+          "/ui/cost-optimization/__next.!KGRhc2hib2FyZCk.cost-optimization.__PAGE__.txt",
+          "/ui/guardrails-monitor/__next.!KGRhc2hib2FyZCk.guardrails-monitor.__PAGE__.txt",
+          "/ui/guardrails/__next.!KGRhc2hib2FyZCk.guardrails.__PAGE__.txt",
+          "/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt",
+          "/ui/lens/__next.!KGRhc2hib2FyZCk.lens.__PAGE__.txt",
+          "/ui/litellm-runtime-config.json",
+          "/ui/logs/__next.!KGRhc2hib2FyZCk.logs.__PAGE__.txt",
+          "/ui/mcp-servers/__next.!KGRhc2hib2FyZCk.mcp-servers.__PAGE__.txt",
+          "/ui/model-insights/__next.!KGRhc2hib2FyZCk.model-insights.__PAGE__.txt",
+          "/ui/models-and-endpoints/__next.!KGRhc2hib2FyZCk.models-and-endpoints.__PAGE__.txt",
+          "/ui/playground/__next.!KGRhc2hib2FyZCk.playground.__PAGE__.txt",
+          "/ui/policies/__next.!KGRhc2hib2FyZCk.policies.__PAGE__.txt",
+          "/ui/skills/__next.!KGRhc2hib2FyZCk.skills.__PAGE__.txt",
+          "/ui/teams/__next.!KGRhc2hib2FyZCk.teams.__PAGE__.txt",
+          "/ui/usage/__next.!KGRhc2hib2FyZCk.usage.__PAGE__.txt",
+          "/ui/users/__next.!KGRhc2hib2FyZCk.users.__PAGE__.txt"
+        ]
+      },
+      {
+        "viewport": {
+          "name": "phone",
+          "width": 390,
+          "height": 844
+        },
+        "steps": 9,
+        "mutations": 4,
+        "page_errors": [],
+        "console_errors": 9,
+        "http_404_count": 9,
+        "failed_response_paths": [
+          "/ui.txt",
+          "/ui/litellm-runtime-config.json"
+        ]
+      }
+    ],
+    "fixed": [
+      {
+        "viewport": {
+          "name": "desktop",
+          "width": 1440,
+          "height": 900
+        },
+        "steps": 9,
+        "mutations": 4,
+        "page_errors": [],
+        "console_errors": 9,
+        "http_404_count": 9,
+        "failed_response_paths": [
+          "/ui.txt",
+          "/ui/litellm-runtime-config.json"
+        ]
+      },
+      {
+        "viewport": {
+          "name": "phone",
+          "width": 390,
+          "height": 844
+        },
+        "steps": 9,
+        "mutations": 4,
+        "page_errors": [],
+        "console_errors": 9,
+        "http_404_count": 9,
+        "failed_response_paths": [
+          "/ui.txt",
+          "/ui/litellm-runtime-config.json"
+        ]
+      }
+    ]
+  },
+  "error_comparison": "No page exceptions or browser HTTP 5xx responses on either revision. Existing static/runtime-config 404s number 60 desktop and nine phone before, nine each after. The after failures are a subset of the baseline paths. No static-prefetch fix is claimed"
+}

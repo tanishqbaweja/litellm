@@ -1,0 +1,766 @@
+{
+  "revision": "fixed",
+  "sourceSha": "52f7654be9ee2a86a88ecc5db0f2eb81962da9d9",
+  "uiSourceSha": "52f7654be9ee2a86a88ecc5db0f2eb81962da9d9",
+  "output": "/qa/litellm-38759/output/playwright/visual-fixed-1792964535162",
+  "startedAt": "2026-10-25T21:42:15.181Z",
+  "providerRequestsPerformed": false,
+  "viewports": [
+    {
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900
+      },
+      "budgetId": "qa38759-desktop",
+      "startedAt": "2026-10-25T21:42:17.589Z",
+      "steps": [
+        {
+          "name": "budgets-page",
+          "at": "2026-10-25T21:42:21.273Z",
+          "screenshot": "desktop-budgets-page.png"
+        },
+        {
+          "name": "create-form",
+          "at": "2026-10-25T21:42:22.608Z",
+          "screenshot": "desktop-create-form.png"
+        },
+        {
+          "name": "created-budget",
+          "at": "2026-10-25T21:42:24.215Z",
+          "screenshot": "desktop-created-budget.png",
+          "row": "qa38759-desktop\n\t\n$20.00\n\t1000\t60\tn/a\t"
+        },
+        {
+          "name": "edit-form",
+          "at": "2026-10-25T21:42:25.321Z",
+          "screenshot": "desktop-edit-form.png"
+        },
+        {
+          "name": "edited-budget",
+          "at": "2026-10-25T21:42:26.583Z",
+          "screenshot": "desktop-edited-budget.png",
+          "row": "qa38759-desktop\n\t\n$99.00\n\t1000\t60\tn/a\t"
+        },
+        {
+          "name": "clear-spend-form",
+          "at": "2026-10-25T21:42:27.711Z",
+          "screenshot": "desktop-clear-spend-form.png"
+        },
+        {
+          "name": "cleared-spend-budget",
+          "at": "2026-10-25T21:42:28.982Z",
+          "screenshot": "desktop-cleared-spend-budget.png",
+          "row": "qa38759-desktop\n\t\nUnlimited\n\t1000\t60\tn/a\t"
+        },
+        {
+          "name": "reloaded-budget",
+          "at": "2026-10-25T21:42:30.486Z",
+          "screenshot": "desktop-reloaded-budget.png",
+          "row": "qa38759-desktop\n\t\nUnlimited\n\t1000\t60\tn/a\t"
+        },
+        {
+          "name": "deleted-budget",
+          "at": "2026-10-25T21:42:31.882Z",
+          "screenshot": "desktop-deleted-budget.png"
+        }
+      ],
+      "mutations": [
+        {
+          "path": "/budget/new",
+          "status": 200,
+          "request": {
+            "budget_id": "qa38759-desktop",
+            "tpm_limit": 1000,
+            "rpm_limit": 60,
+            "max_budget": 20,
+            "budget_duration": "30d"
+          },
+          "response": {
+            "budget_id": "qa38759-desktop",
+            "max_budget": 20,
+            "soft_budget": null,
+            "max_parallel_requests": null,
+            "tpm_limit": 1000,
+            "rpm_limit": 60,
+            "tpd_limit": null,
+            "model_max_budget": null,
+            "budget_duration": "30d",
+            "budget_reset_at": "2026-11-01T00:00:00Z",
+            "allowed_models": [],
+            "temp_budget_increase": null,
+            "temp_budget_expiry": null,
+            "created_at": "2026-10-25T21:42:22.677000Z",
+            "created_by": "default_user_id",
+            "updated_at": "2026-10-25T21:42:22.677000Z",
+            "updated_by": "default_user_id",
+            "organization": null,
+            "projects": null,
+            "keys": null,
+            "end_users": null,
+            "tags": null,
+            "model_access_groups": null,
+            "team_membership": null,
+            "organization_membership": null
+          }
+        },
+        {
+          "path": "/budget/update",
+          "status": 200,
+          "request": {
+            "budget_id": "qa38759-desktop",
+            "max_budget": 99
+          },
+          "response": {
+            "budget_id": "qa38759-desktop",
+            "max_budget": 99,
+            "soft_budget": null,
+            "max_parallel_requests": null,
+            "tpm_limit": 1000,
+            "rpm_limit": 60,
+            "tpd_limit": null,
+            "model_max_budget": null,
+            "budget_duration": "30d",
+            "budget_reset_at": "2026-11-01T00:00:00Z",
+            "allowed_models": [],
+            "temp_budget_increase": null,
+            "temp_budget_expiry": null,
+            "created_at": "2026-10-25T21:42:22.677000Z",
+            "created_by": "default_user_id",
+            "updated_at": "2026-10-25T21:42:25.411000Z",
+            "updated_by": "default_user_id",
+            "organization": null,
+            "projects": null,
+            "keys": null,
+            "end_users": null,
+            "tags": null,
+            "model_access_groups": null,
+            "team_membership": null,
+            "organization_membership": null
+          }
+        },
+        {
+          "path": "/budget/update",
+          "status": 200,
+          "request": {
+            "budget_id": "qa38759-desktop",
+            "max_budget": null
+          },
+          "response": {
+            "budget_id": "qa38759-desktop",
+            "max_budget": null,
+            "soft_budget": null,
+            "max_parallel_requests": null,
+            "tpm_limit": 1000,
+            "rpm_limit": 60,
+            "tpd_limit": null,
+            "model_max_budget": null,
+            "budget_duration": "30d",
+            "budget_reset_at": "2026-11-01T00:00:00Z",
+            "allowed_models": [],
+            "temp_budget_increase": null,
+            "temp_budget_expiry": null,
+            "created_at": "2026-10-25T21:42:22.677000Z",
+            "created_by": "default_user_id",
+            "updated_at": "2026-10-25T21:42:27.798000Z",
+            "updated_by": "default_user_id",
+            "organization": null,
+            "projects": null,
+            "keys": null,
+            "end_users": null,
+            "tags": null,
+            "model_access_groups": null,
+            "team_membership": null,
+            "organization_membership": null
+          }
+        },
+        {
+          "path": "/budget/delete",
+          "status": 200,
+          "request": {
+            "id": "qa38759-desktop"
+          },
+          "response": {
+            "budget_id": "qa38759-desktop",
+            "max_budget": null,
+            "soft_budget": null,
+            "max_parallel_requests": null,
+            "tpm_limit": 1000,
+            "rpm_limit": 60,
+            "tpd_limit": null,
+            "model_max_budget": null,
+            "budget_duration": "30d",
+            "budget_reset_at": "2026-11-01T00:00:00Z",
+            "allowed_models": [],
+            "temp_budget_increase": null,
+            "temp_budget_expiry": null,
+            "created_at": "2026-10-25T21:42:22.677000Z",
+            "created_by": "default_user_id",
+            "updated_at": "2026-10-25T21:42:27.798000Z",
+            "updated_by": "default_user_id",
+            "organization": null,
+            "projects": null,
+            "keys": null,
+            "end_users": null,
+            "tags": null,
+            "model_access_groups": null,
+            "team_membership": null,
+            "organization_membership": null
+          }
+        }
+      ],
+      "readbacks": [
+        [
+          {
+            "budget_id": "qa38759-desktop",
+            "max_budget": 20,
+            "soft_budget": null,
+            "max_parallel_requests": null,
+            "tpm_limit": 1000,
+            "rpm_limit": 60,
+            "tpd_limit": null,
+            "model_max_budget": null,
+            "budget_duration": "30d",
+            "budget_reset_at": "2026-11-01T00:00:00Z",
+            "allowed_models": [],
+            "temp_budget_increase": null,
+            "temp_budget_expiry": null,
+            "created_at": "2026-10-25T21:42:22.677000Z",
+            "created_by": "default_user_id",
+            "updated_at": "2026-10-25T21:42:22.677000Z",
+            "updated_by": "default_user_id",
+            "organization": null,
+            "projects": null,
+            "keys": null,
+            "end_users": null,
+            "tags": null,
+            "model_access_groups": null,
+            "team_membership": null,
+            "organization_membership": null
+          }
+        ],
+        [
+          {
+            "budget_id": "qa38759-desktop",
+            "max_budget": 99,
+            "soft_budget": null,
+            "max_parallel_requests": null,
+            "tpm_limit": 1000,
+            "rpm_limit": 60,
+            "tpd_limit": null,
+            "model_max_budget": null,
+            "budget_duration": "30d",
+            "budget_reset_at": "2026-11-01T00:00:00Z",
+            "allowed_models": [],
+            "temp_budget_increase": null,
+            "temp_budget_expiry": null,
+            "created_at": "2026-10-25T21:42:22.677000Z",
+            "created_by": "default_user_id",
+            "updated_at": "2026-10-25T21:42:25.411000Z",
+            "updated_by": "default_user_id",
+            "organization": null,
+            "projects": null,
+            "keys": null,
+            "end_users": null,
+            "tags": null,
+            "model_access_groups": null,
+            "team_membership": null,
+            "organization_membership": null
+          }
+        ],
+        [
+          {
+            "budget_id": "qa38759-desktop",
+            "max_budget": null,
+            "soft_budget": null,
+            "max_parallel_requests": null,
+            "tpm_limit": 1000,
+            "rpm_limit": 60,
+            "tpd_limit": null,
+            "model_max_budget": null,
+            "budget_duration": "30d",
+            "budget_reset_at": "2026-11-01T00:00:00Z",
+            "allowed_models": [],
+            "temp_budget_increase": null,
+            "temp_budget_expiry": null,
+            "created_at": "2026-10-25T21:42:22.677000Z",
+            "created_by": "default_user_id",
+            "updated_at": "2026-10-25T21:42:27.798000Z",
+            "updated_by": "default_user_id",
+            "organization": null,
+            "projects": null,
+            "keys": null,
+            "end_users": null,
+            "tags": null,
+            "model_access_groups": null,
+            "team_membership": null,
+            "organization_membership": null
+          }
+        ],
+        [
+          {
+            "budget_id": "qa38759-desktop",
+            "max_budget": null,
+            "soft_budget": null,
+            "max_parallel_requests": null,
+            "tpm_limit": 1000,
+            "rpm_limit": 60,
+            "tpd_limit": null,
+            "model_max_budget": null,
+            "budget_duration": "30d",
+            "budget_reset_at": "2026-11-01T00:00:00Z",
+            "allowed_models": [],
+            "temp_budget_increase": null,
+            "temp_budget_expiry": null,
+            "created_at": "2026-10-25T21:42:22.677000Z",
+            "created_by": "default_user_id",
+            "updated_at": "2026-10-25T21:42:27.798000Z",
+            "updated_by": "default_user_id",
+            "organization": null,
+            "projects": null,
+            "keys": null,
+            "end_users": null,
+            "tags": null,
+            "model_access_groups": null,
+            "team_membership": null,
+            "organization_membership": null
+          }
+        ],
+        [],
+        []
+      ],
+      "pageErrors": [],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      ],
+      "failedResponses": [
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        }
+      ],
+      "result": "pass",
+      "video": "raw-video/52d3510ed0e8480aa2620ca18c85608b.webm",
+      "completedAt": "2026-10-25T21:42:32.055Z"
+    },
+    {
+      "viewport": {
+        "name": "phone",
+        "width": 390,
+        "height": 844
+      },
+      "budgetId": "qa38759-phone",
+      "startedAt": "2026-10-25T21:42:32.101Z",
+      "steps": [
+        {
+          "name": "budgets-page",
+          "at": "2026-10-25T21:42:34.207Z",
+          "screenshot": "phone-budgets-page.png"
+        },
+        {
+          "name": "create-form",
+          "at": "2026-10-25T21:42:35.346Z",
+          "screenshot": "phone-create-form.png"
+        },
+        {
+          "name": "created-budget",
+          "at": "2026-10-25T21:42:36.673Z",
+          "screenshot": "phone-created-budget.png",
+          "row": "qa38759-phone\n\t\n$20.00\n\t1000\t60\tn/a\t"
+        },
+        {
+          "name": "edit-form",
+          "at": "2026-10-25T21:42:37.693Z",
+          "screenshot": "phone-edit-form.png"
+        },
+        {
+          "name": "edited-budget",
+          "at": "2026-10-25T21:42:38.656Z",
+          "screenshot": "phone-edited-budget.png",
+          "row": "qa38759-phone\n\t\n$99.00\n\t1000\t60\tn/a\t"
+        },
+        {
+          "name": "clear-spend-form",
+          "at": "2026-10-25T21:42:39.654Z",
+          "screenshot": "phone-clear-spend-form.png"
+        },
+        {
+          "name": "cleared-spend-budget",
+          "at": "2026-10-25T21:42:40.858Z",
+          "screenshot": "phone-cleared-spend-budget.png",
+          "row": "qa38759-phone\n\t\nUnlimited\n\t1000\t60\tn/a\t"
+        },
+        {
+          "name": "reloaded-budget",
+          "at": "2026-10-25T21:42:42.275Z",
+          "screenshot": "phone-reloaded-budget.png",
+          "row": "qa38759-phone\n\t\nUnlimited\n\t1000\t60\tn/a\t"
+        },
+        {
+          "name": "deleted-budget",
+          "at": "2026-10-25T21:42:43.474Z",
+          "screenshot": "phone-deleted-budget.png"
+        }
+      ],
+      "mutations": [
+        {
+          "path": "/budget/new",
+          "status": 200,
+          "request": {
+            "budget_id": "qa38759-phone",
+            "tpm_limit": 1000,
+            "rpm_limit": 60,
+            "max_budget": 20,
+            "budget_duration": "30d"
+          },
+          "response": {
+            "budget_id": "qa38759-phone",
+            "max_budget": 20,
+            "soft_budget": null,
+            "max_parallel_requests": null,
+            "tpm_limit": 1000,
+            "rpm_limit": 60,
+            "tpd_limit": null,
+            "model_max_budget": null,
+            "budget_duration": "30d",
+            "budget_reset_at": "2026-11-01T00:00:00Z",
+            "allowed_models": [],
+            "temp_budget_increase": null,
+            "temp_budget_expiry": null,
+            "created_at": "2026-10-25T21:42:35.409000Z",
+            "created_by": "default_user_id",
+            "updated_at": "2026-10-25T21:42:35.409000Z",
+            "updated_by": "default_user_id",
+            "organization": null,
+            "projects": null,
+            "keys": null,
+            "end_users": null,
+            "tags": null,
+            "model_access_groups": null,
+            "team_membership": null,
+            "organization_membership": null
+          }
+        },
+        {
+          "path": "/budget/update",
+          "status": 200,
+          "request": {
+            "budget_id": "qa38759-phone",
+            "max_budget": 99
+          },
+          "response": {
+            "budget_id": "qa38759-phone",
+            "max_budget": 99,
+            "soft_budget": null,
+            "max_parallel_requests": null,
+            "tpm_limit": 1000,
+            "rpm_limit": 60,
+            "tpd_limit": null,
+            "model_max_budget": null,
+            "budget_duration": "30d",
+            "budget_reset_at": "2026-11-01T00:00:00Z",
+            "allowed_models": [],
+            "temp_budget_increase": null,
+            "temp_budget_expiry": null,
+            "created_at": "2026-10-25T21:42:35.409000Z",
+            "created_by": "default_user_id",
+            "updated_at": "2026-10-25T21:42:37.755000Z",
+            "updated_by": "default_user_id",
+            "organization": null,
+            "projects": null,
+            "keys": null,
+            "end_users": null,
+            "tags": null,
+            "model_access_groups": null,
+            "team_membership": null,
+            "organization_membership": null
+          }
+        },
+        {
+          "path": "/budget/update",
+          "status": 200,
+          "request": {
+            "budget_id": "qa38759-phone",
+            "max_budget": null
+          },
+          "response": {
+            "budget_id": "qa38759-phone",
+            "max_budget": null,
+            "soft_budget": null,
+            "max_parallel_requests": null,
+            "tpm_limit": 1000,
+            "rpm_limit": 60,
+            "tpd_limit": null,
+            "model_max_budget": null,
+            "budget_duration": "30d",
+            "budget_reset_at": "2026-11-01T00:00:00Z",
+            "allowed_models": [],
+            "temp_budget_increase": null,
+            "temp_budget_expiry": null,
+            "created_at": "2026-10-25T21:42:35.409000Z",
+            "created_by": "default_user_id",
+            "updated_at": "2026-10-25T21:42:39.707000Z",
+            "updated_by": "default_user_id",
+            "organization": null,
+            "projects": null,
+            "keys": null,
+            "end_users": null,
+            "tags": null,
+            "model_access_groups": null,
+            "team_membership": null,
+            "organization_membership": null
+          }
+        },
+        {
+          "path": "/budget/delete",
+          "status": 200,
+          "request": {
+            "id": "qa38759-phone"
+          },
+          "response": {
+            "budget_id": "qa38759-phone",
+            "max_budget": null,
+            "soft_budget": null,
+            "max_parallel_requests": null,
+            "tpm_limit": 1000,
+            "rpm_limit": 60,
+            "tpd_limit": null,
+            "model_max_budget": null,
+            "budget_duration": "30d",
+            "budget_reset_at": "2026-11-01T00:00:00Z",
+            "allowed_models": [],
+            "temp_budget_increase": null,
+            "temp_budget_expiry": null,
+            "created_at": "2026-10-25T21:42:35.409000Z",
+            "created_by": "default_user_id",
+            "updated_at": "2026-10-25T21:42:39.707000Z",
+            "updated_by": "default_user_id",
+            "organization": null,
+            "projects": null,
+            "keys": null,
+            "end_users": null,
+            "tags": null,
+            "model_access_groups": null,
+            "team_membership": null,
+            "organization_membership": null
+          }
+        }
+      ],
+      "readbacks": [
+        [
+          {
+            "budget_id": "qa38759-phone",
+            "max_budget": 20,
+            "soft_budget": null,
+            "max_parallel_requests": null,
+            "tpm_limit": 1000,
+            "rpm_limit": 60,
+            "tpd_limit": null,
+            "model_max_budget": null,
+            "budget_duration": "30d",
+            "budget_reset_at": "2026-11-01T00:00:00Z",
+            "allowed_models": [],
+            "temp_budget_increase": null,
+            "temp_budget_expiry": null,
+            "created_at": "2026-10-25T21:42:35.409000Z",
+            "created_by": "default_user_id",
+            "updated_at": "2026-10-25T21:42:35.409000Z",
+            "updated_by": "default_user_id",
+            "organization": null,
+            "projects": null,
+            "keys": null,
+            "end_users": null,
+            "tags": null,
+            "model_access_groups": null,
+            "team_membership": null,
+            "organization_membership": null
+          }
+        ],
+        [
+          {
+            "budget_id": "qa38759-phone",
+            "max_budget": 99,
+            "soft_budget": null,
+            "max_parallel_requests": null,
+            "tpm_limit": 1000,
+            "rpm_limit": 60,
+            "tpd_limit": null,
+            "model_max_budget": null,
+            "budget_duration": "30d",
+            "budget_reset_at": "2026-11-01T00:00:00Z",
+            "allowed_models": [],
+            "temp_budget_increase": null,
+            "temp_budget_expiry": null,
+            "created_at": "2026-10-25T21:42:35.409000Z",
+            "created_by": "default_user_id",
+            "updated_at": "2026-10-25T21:42:37.755000Z",
+            "updated_by": "default_user_id",
+            "organization": null,
+            "projects": null,
+            "keys": null,
+            "end_users": null,
+            "tags": null,
+            "model_access_groups": null,
+            "team_membership": null,
+            "organization_membership": null
+          }
+        ],
+        [
+          {
+            "budget_id": "qa38759-phone",
+            "max_budget": null,
+            "soft_budget": null,
+            "max_parallel_requests": null,
+            "tpm_limit": 1000,
+            "rpm_limit": 60,
+            "tpd_limit": null,
+            "model_max_budget": null,
+            "budget_duration": "30d",
+            "budget_reset_at": "2026-11-01T00:00:00Z",
+            "allowed_models": [],
+            "temp_budget_increase": null,
+            "temp_budget_expiry": null,
+            "created_at": "2026-10-25T21:42:35.409000Z",
+            "created_by": "default_user_id",
+            "updated_at": "2026-10-25T21:42:39.707000Z",
+            "updated_by": "default_user_id",
+            "organization": null,
+            "projects": null,
+            "keys": null,
+            "end_users": null,
+            "tags": null,
+            "model_access_groups": null,
+            "team_membership": null,
+            "organization_membership": null
+          }
+        ],
+        [
+          {
+            "budget_id": "qa38759-phone",
+            "max_budget": null,
+            "soft_budget": null,
+            "max_parallel_requests": null,
+            "tpm_limit": 1000,
+            "rpm_limit": 60,
+            "tpd_limit": null,
+            "model_max_budget": null,
+            "budget_duration": "30d",
+            "budget_reset_at": "2026-11-01T00:00:00Z",
+            "allowed_models": [],
+            "temp_budget_increase": null,
+            "temp_budget_expiry": null,
+            "created_at": "2026-10-25T21:42:35.409000Z",
+            "created_by": "default_user_id",
+            "updated_at": "2026-10-25T21:42:39.707000Z",
+            "updated_by": "default_user_id",
+            "organization": null,
+            "projects": null,
+            "keys": null,
+            "end_users": null,
+            "tags": null,
+            "model_access_groups": null,
+            "team_membership": null,
+            "organization_membership": null
+          }
+        ],
+        [],
+        []
+      ],
+      "pageErrors": [],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      ],
+      "failedResponses": [
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        }
+      ],
+      "result": "pass",
+      "video": "raw-video/3df9f20fe70a85006f7c7142dc55d486.webm",
+      "completedAt": "2026-10-25T21:42:43.541Z"
+    }
+  ],
+  "browser": "145.0.7632.6",
+  "completedAt": "2026-10-25T21:42:43.544Z"
+}
