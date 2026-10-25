@@ -1,0 +1,104 @@
+{
+  "started_at": "2026-10-25T19:19:32.818031+00:00",
+  "locale": {
+    "locale": "en-US",
+    "number": "1,000,000"
+  },
+  "gates": [
+    {
+      "name": "targeted-tests",
+      "command": [
+        "/opt/contri-node/bin/node",
+        "node_modules/vitest/vitest.mjs",
+        "run",
+        "src/components/model_info_view.test.tsx",
+        "src/components/add_model/AddModelForm.integration.test.tsx",
+        "src/components/add_model/handle_add_model_submit.test.tsx",
+        "src/lib/http/api.test.ts",
+        "--maxWorkers=2"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "production-types",
+      "command": [
+        "/opt/contri-node/bin/node",
+        "node_modules/typescript/bin/tsc",
+        "--project",
+        "tsconfig.production.json"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "type-tests",
+      "command": [
+        "/opt/contri-node/bin/node",
+        "node_modules/vitest/vitest.mjs",
+        "run",
+        "--project",
+        "types",
+        "--maxWorkers=2"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "prettier",
+      "command": [
+        "/opt/contri-node/bin/node",
+        "node_modules/prettier/bin/prettier.cjs",
+        "--check",
+        "src/lib/http/schema.d.ts"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "eslint-changed",
+      "command": [
+        "/opt/contri-node/bin/node",
+        "node_modules/eslint/bin/eslint.js",
+        "--no-warn-ignored",
+        "--pass-on-unpruned-suppressions",
+        "src/lib/http/schema.d.ts"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "eslint-report",
+      "command": [
+        "/opt/contri-node/bin/node",
+        "node_modules/eslint/bin/eslint.js",
+        ".",
+        "-f",
+        "json",
+        "-o",
+        "/qa/litellm-36095/eslint-report-linux.json"
+      ],
+      "returncode": 2
+    },
+    {
+      "name": "eslint-budgets",
+      "command": [
+        "/opt/contri-node/bin/node",
+        "scripts/check-lint-budgets.mjs",
+        "/qa/litellm-36095/eslint-report-linux.json",
+        "eslint-budgets.json"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "knip",
+      "command": [
+        "/opt/contri-node/bin/node",
+        "node_modules/knip/bin/knip.js",
+        "--exclude",
+        "exports,nsExports,types,nsTypes,enumMembers,classMembers,duplicates"
+      ],
+      "returncode": 0
+    }
+  ],
+  "resumed_at": "2026-10-25T19:28:26.672458+00:00",
+  "eslint_report_files": 2442,
+  "eslint_fatal_errors": 0,
+  "raw_eslint_exit_reason": "The CI workflow permits the raw report command to fail before checking budgets. This run reports existing stale suppressions, with a valid JSON report and no fatal lint errors.",
+  "completed_at": "2026-10-25T19:28:42.056137+00:00"
+}

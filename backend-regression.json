@@ -1,0 +1,17 @@
+{
+  "started_at": "2026-10-25T19:12:16.222061+00:00",
+  "completed_at": "2026-10-25T19:12:49.521927+00:00",
+  "files": [
+    "tests/unit/types/test_router.py",
+    "tests/unit/router_strategy/test_simple_shuffle.py",
+    "tests/unit/test_router_weighted_failover.py",
+    "tests/unit/test_router_order_fallback.py",
+    "tests/unit/test_router_model_cost_isolation.py",
+    "tests/unit/test_router_get_settings.py",
+    "tests/unit/test_litellm_params_reserved_keys.py",
+    "tests/unit/test_router/test_enforce_model_rate_limits.py",
+    "tests/unit/test_router/test_io_token_rate_limits.py",
+    "tests/unit/test_router/test_router_get_deployments.py"
+  ],
+  "returncode": 0
+}

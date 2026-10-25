@@ -1,0 +1,8 @@
+{
+  "at": "2026-10-25T19:27:22.144285+00:00",
+  "initial_script_sha256": "2cd53c725e744754d50c5fff24247602443a532d52c7e081dfd01d5dbe651e3b",
+  "observation": "The live desktop screenshot shows The request failed and 500 Deployment weight must be numeric. The worker remained waiting after three HTTP 500 responses. No completed browser report was produced.",
+  "inference": "The first retried error response body appears to remain unfinished from Playwright's perspective. The final harness will wait for the visible error and record response statuses without reading those retried bodies.",
+  "source_sha": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "worker_cleanup": "Stopped owned browser harness 5748"
+}

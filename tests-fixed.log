@@ -1,0 +1,94 @@
+........................................................................ [  8%]
+........................................................................ [ 16%]
+........................................................................ [ 24%]
+........................................................................ [ 32%]
+........................................................................ [ 40%]
+........................................................................ [ 48%]
+........................................................................ [ 56%]
+........................................................................ [ 64%]
+........................................................................ [ 72%]
+........................................................................ [ 81%]
+........................................................................ [ 89%]
+........................................................................ [ 97%]
+........................                                                 [100%]
+=============================== warnings summary ===============================
+tests/unit/types/test_router.py::test_sdk_timeout_is_normalized_for_provider_clients
+tests/unit/types/test_router.py::test_deployment_mirrors_pricing_from_litellm_params_onto_model_info[input_cost_per_token]
+tests/unit/router_strategy/test_simple_shuffle.py::test_weighted_pick_when_only_a_later_deployment_carries_the_metric[weight]
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'index' on TypedDict class 'ChatCompletionThinkingBlock' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/types/test_router.py::test_sdk_timeout_is_normalized_for_provider_clients
+tests/unit/types/test_router.py::test_deployment_mirrors_pricing_from_litellm_params_onto_model_info[input_cost_per_token]
+tests/unit/router_strategy/test_simple_shuffle.py::test_weighted_pick_when_only_a_later_deployment_carries_the_metric[weight]
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'index' on TypedDict class 'ChatCompletionRedactedThinkingBlock' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/types/test_router.py::test_sdk_timeout_is_normalized_for_provider_clients
+tests/unit/types/test_router.py::test_deployment_mirrors_pricing_from_litellm_params_onto_model_info[input_cost_per_token]
+tests/unit/router_strategy/test_simple_shuffle.py::test_weighted_pick_when_only_a_later_deployment_carries_the_metric[weight]
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'summary' on TypedDict class 'ChatCompletionReasoningItem' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/router_strategy/test_simple_shuffle.py::test_weighted_pick_when_only_a_later_deployment_carries_the_metric[weight]
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'device_code', 'user_code', 'verification_uri' on TypedDict class '_DeviceCode' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/router_strategy/test_simple_shuffle.py::test_weighted_pick_when_only_a_later_deployment_carries_the_metric[weight]
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'access_token', 'error' on TypedDict class '_AccessTokenPoll' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/router_strategy/test_simple_shuffle.py::test_weighted_pick_when_only_a_later_deployment_carries_the_metric[weight]
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'token', 'expires_at', 'endpoints' on TypedDict class '_CopilotTokenPayload' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/router_strategy/test_simple_shuffle.py::test_weighted_pick_when_only_a_later_deployment_carries_the_metric[weight]
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'device_code', 'user_code', 'verification_uri', 'expires_in', 'interval' on TypedDict class '_DeviceCodePayload' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/router_strategy/test_simple_shuffle.py::test_weighted_pick_when_only_a_later_deployment_carries_the_metric[weight]
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'access_token', 'error', 'error_description', 'interval' on TypedDict class '_AccessTokenPollPayload' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/router_strategy/test_simple_shuffle.py::test_weighted_pick_when_only_a_later_deployment_carries_the_metric[weight]
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'login' on TypedDict class '_GithubUserPayload' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/router_strategy/test_simple_shuffle.py::test_weighted_pick_when_only_a_later_deployment_carries_the_metric[weight]
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'api' on TypedDict class '_CopilotEndpointsPayload' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/router_strategy/test_simple_shuffle.py::test_weighted_pick_when_only_a_later_deployment_carries_the_metric[weight]
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'model', 'region', 'litellm_provider' on TypedDict class 'TokenCountModelInfo' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/router_strategy/test_simple_shuffle.py::test_weighted_pick_when_only_a_later_deployment_carries_the_metric[weight]
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'hours_utc', 'weekdays' on TypedDict class 'OffPeakWindow' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/router_strategy/test_simple_shuffle.py::test_weighted_pick_when_only_a_later_deployment_carries_the_metric[weight]
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'hours_utc', 'windows', 'weekday_timezone', 'input_cost_per_token', 'output_cost_per_token', 'output_cost_per_reasoning_token', 'cache_read_input_token_cost', 'explicit_cache_read_input_token_cost', 'cache_creation_input_token_cost' on TypedDict class 'OffPeakPricing' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/router_strategy/test_simple_shuffle.py::test_weighted_pick_when_only_a_later_deployment_carries_the_metric[weight]
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'count', 'period', 'shared_group' on TypedDict class 'SearchFreeRequests' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/router_strategy/test_simple_shuffle.py::test_weighted_pick_when_only_a_later_deployment_carries_the_metric[weight]
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'supports_prompt_cache_breakpoint', 'supports_thinking_cache_preservation', 'supports_video_input', 'supports_box_questions', 'supports_bedrock_native_structured_output', 'supports_sampling_params', 'supports_legacy_thinking', 'thinking_always_on', 'reasoning_effort_levels', 'default_reasoning_effort', 'supports_anthropic_thinking_payload', 'supports_anthropic_compaction', 'supported_audio_formats', 'vertex_ai_audio_api', 'supports_regex_lookaround', 'token_count_framing', 'token_count_model', 'token_count_tokenizer', 'input_cost_per_token_balanced', 'input_cost_per_token_ultrafast', 'cache_creation_input_token_cost_above_100k_tokens', 'cache_creation_input_token_cost_above_1hr_above_100k_tokens', 'cache_creation_input_token_cost_above_272k_tokens_ultrafast', 'cache_creation_input_token_cost_above_12hr', 'cache_creation_input_token_cost_above_12hr_flex', 'cache_creation_input_token_cost_above_12hr_priority', 'cache_creation_input_token_cost_above_12hr_above_272k_tokens', 'cache_creation_input_token_cost_above_12hr_above_272k_tokens_flex', 'cache_creation_input_token_cost_above_12hr_above_272k_tokens_priority', 'cache_creation_input_token_cost_above_12hr_batches', 'cache_creation_input_token_cost_above_12hr_ultrafast', 'cache_creation_input_token_cost_above_12hr_above_272k_tokens_batches', 'cache_creation_input_token_cost_above_12hr_above_272k_tokens_ultrafast', 'cache_creation_input_token_cost_ultrafast', 'cache_read_input_audio_token_cost', 'cache_read_input_audio_token_cost_flex', 'cache_read_input_audio_token_cost_priority', 'cache_read_input_image_token_cost', 'explicit_cache_read_input_token_cost', 'cache_read_input_token_cost_balanced', 'cache_read_input_token_cost_ultrafast', 'cache_read_input_token_cost_above_100k_tokens', 'cache_read_input_token_cost_above_272k_tokens_ultrafast', 'cache_read_input_token_cost_batches', 'cache_read_input_audio_token_cost_batches', 'cache_read_input_token_cost_above_200k_tokens_batches', 'cache_read_input_token_cost_above_100k_tokens_batches', 'cache_read_input_token_cost_above_272k_tokens_batches', 'cache_creation_input_token_cost_batches', 'cache_creation_input_token_cost_above_200k_tokens_batches', 'cache_creation_input_token_cost_above_100k_tokens_batches', 'cache_creation_input_token_cost_above_272k_tokens_batches', 'off_peak_pricing', 'input_cost_per_audio_token_flex', 'input_cost_per_audio_token_priority', 'input_cost_per_token_above_100k_tokens', 'input_cost_per_token_above_272k_tokens_ultrafast', 'input_cost_per_audio_token_batches', 'input_cost_per_image_token_batches', 'cost_per_second', 'input_cost_per_text_message', 'input_cost_per_video_token_batches', 'input_cost_per_token_above_200k_tokens_batches', 'input_cost_per_token_above_100k_tokens_batches', 'input_cost_per_token_above_272k_tokens_batches', 'output_cost_per_token_above_200k_tokens_batches', 'output_cost_per_token_above_100k_tokens_batches', 'output_cost_per_token_above_272k_tokens_batches', 'output_cost_per_token_balanced', 'output_cost_per_token_ultrafast', 'regional_endpoint_uplift_multiplier', 'output_cost_per_token_above_100k_tokens', 'output_cost_per_token_above_272k_tokens_ultrafast', 'output_cost_per_pixel', 'output_cost_per_image_token_batches', 'output_cost_per_second_480p', 'output_cost_per_second_720p', 'output_cost_per_second_768p', 'output_cost_per_second_2k', 'output_cost_per_second_4k', 'output_cost_per_image_512', 'output_cost_per_image_1024', 'output_cost_per_image_1536', 'ocr_cost_per_page_batches', 'annotation_cost_per_page_batches', 'search_free_requests', 'google_maps_grounding_cost_per_query' on TypedDict class 'ModelInfo' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/router_strategy/test_simple_shuffle.py::test_weighted_pick_when_only_a_later_deployment_carries_the_metric[weight]
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'code' on TypedDict class '_CodeExecutionToolArgs' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/router_strategy/test_simple_shuffle.py::test_weighted_pick_when_only_a_later_deployment_carries_the_metric[weight]
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'name', 'mime_type', 'content_base64' on TypedDict class '_GeneratedFileEntry' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/router_strategy/test_simple_shuffle.py::test_weighted_pick_when_only_a_later_deployment_carries_the_metric[weight]
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Items 'langfuse_environment', 'langfuse_span_scope', 'arize_success_sampling_rate', 'arize_error_sampling_rate', 'arize_otlp_protocol' on TypedDict class 'StandardCallbackDynamicParams' are using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+888 passed, 24 warnings in 24.03s

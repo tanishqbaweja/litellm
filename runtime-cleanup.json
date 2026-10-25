@@ -1,0 +1,15 @@
+{
+  "completed_at": "2026-10-25T19:34:15.954337+00:00",
+  "keys": [
+    {
+      "alias": "qa-36095-baseline-b404f2",
+      "status": 200
+    },
+    {
+      "alias": "qa-36095-fixed-cc8563",
+      "status": 200
+    }
+  ],
+  "proxy": "Stopped owned proxy 6335",
+  "provider": "Shared local Ollama server retained for subsequent contribution QA"
+}

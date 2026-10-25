@@ -1,0 +1,111 @@
+{
+  "recorded_at": "2026-10-25T19:39:05.948425+00:00",
+  "base_sha": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "fixed_sha": "828228e0d2894d2b3f2091dc00d9aab9cf9fe9ee",
+  "results": {
+    "baseline": {
+      "source_sha": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+      "proxy_statuses": {
+        "500": 12,
+        "200": 24
+      },
+      "browser": [
+        {
+          "viewport": "desktop",
+          "actions": 2,
+          "chat_requests": 4,
+          "page_errors": 0,
+          "chat_status_counts": {
+            "500": 3,
+            "200": 1
+          },
+          "failed_response_counts": {
+            "404": 26,
+            "500": 3
+          },
+          "console_errors": 29
+        },
+        {
+          "viewport": "phone",
+          "actions": 2,
+          "chat_requests": 4,
+          "page_errors": 0,
+          "chat_status_counts": {
+            "500": 3,
+            "200": 1
+          },
+          "failed_response_counts": {
+            "404": 7,
+            "500": 3
+          },
+          "console_errors": 10
+        }
+      ]
+    },
+    "fixed": {
+      "source_sha": "828228e0d2894d2b3f2091dc00d9aab9cf9fe9ee",
+      "proxy_statuses": {
+        "200": 36
+      },
+      "browser": [
+        {
+          "viewport": "desktop",
+          "actions": 2,
+          "chat_requests": 2,
+          "page_errors": 0,
+          "chat_status_counts": {
+            "200": 2
+          },
+          "failed_response_counts": {
+            "404": 41
+          },
+          "console_errors": 41
+        },
+        {
+          "viewport": "phone",
+          "actions": 2,
+          "chat_requests": 2,
+          "page_errors": 0,
+          "chat_status_counts": {
+            "200": 2
+          },
+          "failed_response_counts": {
+            "404": 7
+          },
+          "console_errors": 7
+        }
+      ]
+    }
+  },
+  "tests_before": "4 failed, 4 passed, 93 deselected",
+  "tests_after": "888 passed, 24 warnings in 24.03s across ten affected files",
+  "mutations_rejected": 5,
+  "production_formatter": "make format: 2932 files unchanged",
+  "lint": "make lint BASE_REF=origin/main LINT_JOBS=2: exit 0",
+  "type_budget": "105900 existing diagnostics, each rule within its main ceiling",
+  "e2e_types": "0 errors, 0 warnings, 0 notes",
+  "ui_linux_tests": "190 passed, 4 expected failures",
+  "ui_type_tests": "8 passed, no type errors",
+  "ui_production_build": "npm run build: exit 0",
+  "browser": "145.0.7632.6",
+  "playwright": "1.58.1",
+  "postgresql": "16.10",
+  "python": "3.12.13",
+  "ollama": "0.40.11",
+  "mocked_live_requests": 0,
+  "unchanged_ui_export_source": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "new_failed_browser_paths": [],
+  "cleanup": "Both owned temporary virtual keys deleted with HTTP 200 and the owned proxy stopped",
+  "limitations": [
+    "RPM and TPM environment strings already work on main and are controls, not additional fixes",
+    "Local CPU Qwen3.5-0.8B Q4_0 through Ollama, with no external paid provider request, performance or model-quality claim",
+    "Existing phone layout clips navigation and the Send control, partly hides the user prompt under the sticky toolbar, and overlaps the footer with Aria. Phone submission used Enter",
+    "Identical static-prefetch/runtime-config 404 paths remain. Desktop counts are 26 before and 41 after, and phone counts are seven on each revision",
+    "The baseline dashboard retries each failing environment-weight action twice. Four baseline actions produce eight HTTP responses. Four fixed actions produce four successful responses",
+    "Failed browser response bodies are not read after correcting the initial harness stall. Visible error text and all retry statuses are checked, and the separate API probe verifies error bodies",
+    "Two existing Windows en-IN PTU formatting failures reproduce against unchanged-main dashboard source. The Linux en-US run passes",
+    "Raw ESLint exits 2 for stale suppressions, with a valid JSON report and zero fatal errors. All separate CI budgets pass unchanged",
+    "The production dashboard build succeeds with one existing AVIF asset warning, emitted without optimization",
+    "Configured dashboard costs are local test pricing, not provider invoices"
+  ]
+}

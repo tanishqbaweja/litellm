@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/qa/litellm-36095/api-probe.py", line 26, in <module>
+    assert source['pid'] == int((root / 'proxy.pid').read_text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

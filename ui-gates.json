@@ -1,0 +1,19 @@
+{
+  "started_at": "2026-10-25T19:11:42.440211+00:00",
+  "gates": [
+    {
+      "name": "targeted-tests",
+      "command": [
+        "H:\\Github Repositories\\contri\\.tools\\node-v24.21.0-win-x64\\node.exe",
+        "node_modules/vitest/vitest.mjs",
+        "run",
+        "src/components/model_info_view.test.tsx",
+        "src/components/add_model/AddModelForm.integration.test.tsx",
+        "src/components/add_model/handle_add_model_submit.test.tsx",
+        "src/lib/http/api.test.ts",
+        "--maxWorkers=2"
+      ],
+      "returncode": 1
+    }
+  ]
+}

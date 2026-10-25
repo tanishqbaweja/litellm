@@ -1,0 +1,33 @@
+{
+  "started_at": "2026-10-25T19:10:03.598757+00:00",
+  "mutations": [
+    {
+      "name": "missing-weight-field",
+      "returncode": 1,
+      "failed_cases": 4
+    },
+    {
+      "name": "integer-only-weight",
+      "returncode": 1,
+      "failed_cases": 2
+    },
+    {
+      "name": "allow-unconverted-strings",
+      "returncode": 1,
+      "failed_cases": 4
+    },
+    {
+      "name": "reject-zero-weight",
+      "returncode": 1,
+      "failed_cases": 4
+    },
+    {
+      "name": "reject-explicit-none-weight",
+      "returncode": 1,
+      "failed_cases": 1
+    }
+  ],
+  "source_restored_exactly": true,
+  "restored_sha256": "ee8ea8ae34a29fa6083983c5fd3cfcbcbd64334ff1c842b6f284e357a8a4de92",
+  "completed_at": "2026-10-25T19:10:23.429317+00:00"
+}

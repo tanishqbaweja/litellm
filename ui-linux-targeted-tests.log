@@ -1,0 +1,42 @@
+Testing types with tsc and vue-tsc is an experimental feature.
+Breaking changes might not follow SemVer, please pin Vitest's version when using it.
+
+ RUN  v4.1.12 /opt/litellm-36095/ui/litellm-dashboard
+
+Importing from "vitest/environments" is deprecated since Vitest 4.1. Please use "vitest/runtime" instead.
+The Vitest environment jsdom-fetch defines the "transformMode". This options was deprecated in Vitest 4 and will be removed in the next major version. Please, use "viteEnvironment" instead.
+Importing from "vitest/environments" is deprecated since Vitest 4.1. Please use "vitest/runtime" instead.
+The Vitest environment jsdom-fetch defines the "transformMode". This options was deprecated in Vitest 4 and will be removed in the next major version. Please, use "viteEnvironment" instead.
+ ✓  component  src/components/add_model/handle_add_model_submit.test.tsx (13 tests) 9ms
+Importing from "vitest/environments" is deprecated since Vitest 4.1. Please use "vitest/runtime" instead.
+The Vitest environment jsdom-fetch defines the "transformMode". This options was deprecated in Vitest 4 and will be removed in the next major version. Please, use "viteEnvironment" instead.
+ ✓  component  src/components/model_info_view.test.tsx (124 tests) 14332ms
+       ✓ routes each edited field into its own payload key  425ms
+       ✓ routes each typed collection field into its own payload key  718ms
+       ✓ sends the team picked in the Team ID selector  349ms
+       ✓ omits the credential when it is cleared and then restored before saving  338ms
+       ✓ restores the stored credential in the selector after cancel  366ms
+       ✓ keeps the form open and surfaces the error when the backend rejects the detach  388ms
+       ✓ sends the vector stores picked in the knowledge base selector  363ms
+       ✓ sends the health check model picked for a wildcard deployment  357ms
+ ✓  unit  src/lib/http/api.test.ts (17 tests) 88ms
+ ✓  integration  src/components/add_model/AddModelForm.integration.test.tsx (40 tests) 11194ms
+     ✓ shows only the Close button in the connection test dialog footer  386ms
+       ✓ saves the federation fields as a credential and attaches it to the model  318ms
+       ✓ creates and attaches an OAuth exchange credential without mounting its fields on the model  425ms
+       ✓ creates a per-user GitHub credential and attaches it without sending its auth type inline  449ms
+       ✓ runs the connection test once provider, auth and model are filled in  575ms
+       ✓ runs the connection test for the provider wildcard  587ms
+       ✓ asks for the custom model name before testing a custom model  591ms
+       ✓ runs the connection test for an Azure deployment name  517ms
+       ✓ asks for a credential before testing a credential-only auth type  685ms
+       ✓ runs the connection test with a credential just created from the credential dialog  740ms
+       ✓ runs the connection test after the public model name is edited in the mapping table  775ms
+       ✓ shows the mapping error instead of testing when the public model name is cleared  697ms
+       ✓ carries an edited role and keeps the index a string, as the antd control did  313ms
+
+ Test Files  4 passed (4)
+      Tests  190 passed | 4 expected fail (194)
+Type Errors  no errors
+   Start at  19:19:35
+   Duration  52.65s (transform 3.48s, setup 5.60s, import 45.99s, tests 25.62s, environment 17.72s)

@@ -1,0 +1,130 @@
+{
+  "reviewed_at": "2026-10-25T19:34:32.288168+00:00",
+  "reviewer": "Codex visual inspection",
+  "observations": [
+    "The baseline desktop and phone environment-weight workflows visibly show The request failed and 500 Deployment weight must be numeric",
+    "The same fixed workflows show nonempty real model answers, with the selected qa-weight-frac-36095 group visible and no error card",
+    "The numeric control displays a real model answer on both viewports before and after",
+    "Desktop trace details show the local Ollama API base and no fallbacks or retries for successful requests",
+    "The existing phone layout clips navigation and composer controls, partly hides the user prompt beneath the sticky toolbar, and overlaps the footer with the Aria launcher. Phone submission uses Enter",
+    "The recordings retain real loading states, streaming text and the Chat history cleared toast. Final screenshots wait for this toast to clear",
+    "All eight raw screenshots, eight annotated screenshots and eight sampled frames from each of four recordings were visually inspected. The complete recordings were not reviewed frame by frame",
+    "No credentials are visible in the inspected screenshots or sampled video frames"
+  ],
+  "screenshots": [
+    {
+      "file": "before/desktop-environment.png",
+      "sha256": "a9e9e8046fb678cb1a67bf5bb71e5098ecf1e3cc498eec30bbfb85a12f4cb2f5",
+      "annotation": "before/desktop-environment-annotated.png",
+      "annotation_sha256": "96a48e3d51952b98a2c2f79576c01ce69589d8c924b8f1463bf9bf5f0cf501d6"
+    },
+    {
+      "file": "before/desktop-numeric-control.png",
+      "sha256": "9bfd0d18ab0acd7d0d16025612ffa44f0ad98490dd00f80e70b758329380a0bb",
+      "annotation": "before/desktop-numeric-control-annotated.png",
+      "annotation_sha256": "16071d2742a882b2075c472940aa331a6f84397173f6066ec66d4423b47a420d"
+    },
+    {
+      "file": "before/phone-environment.png",
+      "sha256": "1390bdd3faf0099478eadee6ed155010253552b4d531106534d5ff3e0fd58d0b",
+      "annotation": "before/phone-environment-annotated.png",
+      "annotation_sha256": "f8c66453b0dd44c1d13bc8202b5b40b65b8f813322dfa483caf104896faa2a84"
+    },
+    {
+      "file": "before/phone-numeric-control.png",
+      "sha256": "dfef5eb89f824b13750dab359fee29378c8449d20a4abbd8373db647ecaf0da0",
+      "annotation": "before/phone-numeric-control-annotated.png",
+      "annotation_sha256": "ce6042872f95d82bafaa5496d81545a9d82e420f174d9951261630f33bc680f8"
+    },
+    {
+      "file": "after/desktop-environment.png",
+      "sha256": "500317d056c95f86ab120bc52b41c95f7f4dd8b9695cd68d6f26e45bafa2f083",
+      "annotation": "after/desktop-environment-annotated.png",
+      "annotation_sha256": "ef70c0ed5bec0a666283831a9a3e5f004370d814142c18c1b6cca9872b53233c"
+    },
+    {
+      "file": "after/desktop-numeric-control.png",
+      "sha256": "46be8e174b46c0ad72f1ab54899a84dea2f25c523fb955059e13666e70db42bf",
+      "annotation": "after/desktop-numeric-control-annotated.png",
+      "annotation_sha256": "324050670a2a3737a3b36d9a0df90b324179977f6fb3c258053673604d6920e6"
+    },
+    {
+      "file": "after/phone-environment.png",
+      "sha256": "271fa31db609d4479492b06b6f4287757cc7caf6e1f7d86d874c887624e96d9d",
+      "annotation": "after/phone-environment-annotated.png",
+      "annotation_sha256": "432f1889d82d091bcc98e8e711c6083dfbcd05b58f3cca9082fcf2164f669759"
+    },
+    {
+      "file": "after/phone-numeric-control.png",
+      "sha256": "13c642db4feab9059e31e28376b496d4e0c381fedb20aa822491c56795ecc0b0",
+      "annotation": "after/phone-numeric-control-annotated.png",
+      "annotation_sha256": "f881cec6edde96001ff0177ddda9574db4c35b2e351a7b1508a200511dec2a4b"
+    }
+  ],
+  "recordings": [
+    {
+      "file": "before/desktop.webm",
+      "sha256": "4387d055ac8b77c2adfea49371321d5e819c1ac4cae8d4cdeee0bd958e8f8792",
+      "duration_seconds": 19.36,
+      "sampled_frames_visually_reviewed": 8,
+      "frame_contacts": [
+        {
+          "file": "visual-review/baseline-desktop-video-1.png",
+          "sha256": "349e1d8d95f1dfb5b760b568adc992382f14e0736ce01535a07016334cd869bd"
+        },
+        {
+          "file": "visual-review/baseline-desktop-video-2.png",
+          "sha256": "4439e77088187292ec7adb0c5aa5e209ec9042ec4239881f0ac67bd4bbe2124f"
+        }
+      ]
+    },
+    {
+      "file": "before/phone.webm",
+      "sha256": "ef992d04a8da943988d72cf73667e84d882f059c02c654db0ebf9b7bcd5c07b0",
+      "duration_seconds": 14.68,
+      "sampled_frames_visually_reviewed": 8,
+      "frame_contacts": [
+        {
+          "file": "visual-review/baseline-phone-video-1.png",
+          "sha256": "c2e183bfe85a19b1975c7901d678c6fe2e99cb6ebb52fcd563f7c4a89ebd1a40"
+        },
+        {
+          "file": "visual-review/baseline-phone-video-2.png",
+          "sha256": "64c8fb2f0704e802f8496372d9a329cb1d4029cc3d8e3946e216789ca0e690ad"
+        }
+      ]
+    },
+    {
+      "file": "after/desktop.webm",
+      "sha256": "fea23a9e7e058371d30a490daa7077f812c430647fab5bf11a316025b3eebda2",
+      "duration_seconds": 15.36,
+      "sampled_frames_visually_reviewed": 8,
+      "frame_contacts": [
+        {
+          "file": "visual-review/fixed-desktop-video-1.png",
+          "sha256": "04412843ce3c280eb2c903f58a4172f219d913186563a602afaf2137b4a171ac"
+        },
+        {
+          "file": "visual-review/fixed-desktop-video-2.png",
+          "sha256": "14f56d6c9f35221dfae244a94b28fac4bff80e4dd6708eac315646fb210deeb4"
+        }
+      ]
+    },
+    {
+      "file": "after/phone.webm",
+      "sha256": "669076cc87e548d15167efa64d7c0de5be0ad32a8436184c9986c8dc5135e5e1",
+      "duration_seconds": 14.16,
+      "sampled_frames_visually_reviewed": 8,
+      "frame_contacts": [
+        {
+          "file": "visual-review/fixed-phone-video-1.png",
+          "sha256": "93ac04849a29bcc02d8fc30cfd576a23c2273d2a1c8fe32d4173dd1e8a706114"
+        },
+        {
+          "file": "visual-review/fixed-phone-video-2.png",
+          "sha256": "cabe5637869310f8e3bf6d1d0a88f830b6286921e83eeb0d89f841a3dabed6f5"
+        }
+      ]
+    }
+  ]
+}

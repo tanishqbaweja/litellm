@@ -1,0 +1,11 @@
+{
+  "base": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "head": "828228e0d2894d2b3f2091dc00d9aab9cf9fe9ee",
+  "branch": "litellm_fix_36095_numeric_weights",
+  "files": [
+    "litellm/types/router.py",
+    "tests/unit/types/test_router.py",
+    "ui/litellm-dashboard/src/lib/http/schema.d.ts"
+  ],
+  "committed_at": "2026-10-25T19:15:07.039055+00:00"
+}

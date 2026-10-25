@@ -1,0 +1,94 @@
+diff --git a/litellm/types/router.py b/litellm/types/router.py
+index cd1389a..8599feb 100644
+--- a/litellm/types/router.py
++++ b/litellm/types/router.py
+@@ -533,6 +533,7 @@ class GenericLiteLLMParams(CredentialLiteLLMParams, CustomPricingLiteLLMParams):
+     rpm: int | None = None
+     itpm: int | None = None
+     otpm: int | None = None
++    weight: float | None = None
+     timeout: float | str | httpx.Timeout | SDKTimeout | None = None  # if str, pass in as os.environ/
+     # read timeout of a live stream, a faked stream takes the longer of this and timeout. If str, pass in as os.environ/
+     stream_timeout: float | str | None = None
+diff --git a/tests/unit/types/test_router.py b/tests/unit/types/test_router.py
+index 2892a82..ea48176 100644
+--- a/tests/unit/types/test_router.py
++++ b/tests/unit/types/test_router.py
+@@ -1,11 +1,12 @@
+ import logging
+-from typing import Final
++from typing import Final, Literal
+
+ import httpx
+ import pytest
+ from openai import Timeout as SDKTimeout
+ from pydantic import ValidationError
+
++from litellm.router_strategy.simple_shuffle import simple_shuffle
+ from litellm.types.router import (
+     SPECIAL_MODEL_INFO_PARAMS,
+     CredentialLiteLLMParams,
+@@ -37,6 +38,41 @@ def test_sdk_timeout_is_normalized_for_provider_clients() -> None:
+     assert params.timeout.as_dict() == timeout.as_dict()
+
+
++@pytest.mark.parametrize(
++    "parameter, preferred, zero",
++    [
++        ("weight", "1.5", "0"),
++        ("weight", "100", 0),
++        ("weight", 100, "0"),
++        ("weight", 1.5, 0),
++        ("rpm", "100", "0"),
++        ("tpm", "100", "0"),
++    ],
++)
++def test_numeric_string_routing_params_select_the_nonzero_deployment(
++    parameter: Literal["weight", "rpm", "tpm"], preferred: str | float, zero: str | int
++) -> None:
++    deployments: Final = tuple(
++        {"litellm_params": GenericLiteLLMParams(**{parameter: value}).model_dump(exclude_none=True)}
++        for value in (preferred, zero)
++    )
++
++    assert simple_shuffle(lambda _: None, deployments, "weighted-model", None) is deployments[0]
++
++
++def test_none_weight_keeps_rate_based_routing() -> None:
++    deployments: Final = tuple(
++        {"litellm_params": GenericLiteLLMParams(weight=None, rpm=rpm).model_dump(exclude_none=True)} for rpm in (100, 0)
++    )
++
++    assert simple_shuffle(lambda _: None, deployments, "weighted-model", None) is deployments[0]
++
++
++def test_invalid_deployment_weight_is_rejected_before_routing() -> None:
++    with pytest.raises(ValidationError, match="weight"):
++        GenericLiteLLMParams(weight="heavy")
++
++
+ def test_model_info_declares_mirrored_pricing_fields():
+     """The pricing keys Deployment mirrors onto model_info must be declared fields, not
+     extras that only survive because ModelInfo sets extra="allow"."""
+diff --git a/ui/litellm-dashboard/src/lib/http/schema.d.ts b/ui/litellm-dashboard/src/lib/http/schema.d.ts
+index 262e8b6..366176a 100644
+--- a/ui/litellm-dashboard/src/lib/http/schema.d.ts
++++ b/ui/litellm-dashboard/src/lib/http/schema.d.ts
+@@ -35673,6 +35673,8 @@ export interface components {
+             vertex_project?: string | null;
+             /** Watsonx Region Name */
+             watsonx_region_name?: string | null;
++            /** Weight */
++            weight?: number | null;
+         } & {
+             [key: string]: unknown;
+         };
+@@ -51024,6 +51026,8 @@ export interface components {
+             vertex_project?: string | null;
+             /** Watsonx Region Name */
+             watsonx_region_name?: string | null;
++            /** Weight */
++            weight?: number | null;
+         } & {
+             [key: string]: unknown;
+         };

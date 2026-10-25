@@ -1,0 +1,22 @@
+{
+  "base": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "started_at": "2026-10-25T19:13:58.368332+00:00",
+  "dashboard_matches_main_exactly": true,
+  "locale": {
+    "locale": "en-IN",
+    "number": "10,00,000"
+  },
+  "returncode": 1,
+  "failures": [
+    "FAIL  |component| src/components/model_info_view.test.tsx > ModelInfoView > PTU cost attribution gate > blocks a PTU count above the backend ceiling",
+    "FAIL  |component| src/components/model_info_view.test.tsx > ModelInfoView > PTU cost attribution gate > blocks a cost per PTU hour above the backend ceiling"
+  ],
+  "summary": [
+    "Test Files  1 failed | 3 passed (4)",
+    "Tests  2 failed | 188 passed | 4 expected fail (194)",
+    "Duration  42.70s (transform 3.06s, setup 480ms, import 7.04s, tests 58.06s, environment 1.70s)"
+  ],
+  "fixed_schema_restored_exactly": true,
+  "fixed_schema_sha256": "d05b0404e7ddeb9fa8ac29d5941001f024df4dd140e8db1795ee873b7624bec1",
+  "completed_at": "2026-10-25T19:14:42.019258+00:00"
+}

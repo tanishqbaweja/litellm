@@ -1,0 +1,505 @@
+{
+  "revision": "baseline",
+  "sourceSha": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "output": "/qa/litellm-36095/output/playwright/visual-baseline-1792956468674",
+  "startedAt": "2026-10-25T19:27:48.692Z",
+  "viewports": [
+    {
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900
+      },
+      "cases": [
+        {
+          "model": "qa-weight-frac-36095",
+          "kind": "environment",
+          "submitMethod": "Send message button",
+          "status": 500,
+          "url": "http://127.0.0.1:41475/chat/completions",
+          "requestBody": {
+            "model": "qa-weight-frac-36095",
+            "litellm_trace_id": "1c0bcf8f-c756-4adb-b320-09a6c7651ec8",
+            "messages": [
+              {
+                "role": "user",
+                "content": "Reply with only: Weights work. Verification reference a1f60d05-fc0"
+              }
+            ],
+            "stream": true,
+            "stream_options": {
+              "include_usage": true
+            }
+          },
+          "responseBody": null,
+          "screenshot": "desktop-environment.png",
+          "bodyRead": false,
+          "networkAttempts": [
+            {
+              "model": "qa-weight-frac-36095",
+              "status": 500
+            },
+            {
+              "model": "qa-weight-frac-36095",
+              "status": 500
+            },
+            {
+              "model": "qa-weight-frac-36095",
+              "status": 500
+            }
+          ],
+          "headers": {
+            "x-litellm-call-id": "fff6cf85-e38a-4328-8f81-1ba38f3017b3"
+          },
+          "visibleResult": "Reply with only: Weights work. Verification reference a1f60d05-fc0 qa-weight-frac-36095 The request failed 500 Deployment weight must be numeric $0.0000 Inspect",
+          "conversationBox": {
+            "x": 304,
+            "y": 287,
+            "width": 728,
+            "height": 444
+          },
+          "modelBox": {
+            "x": 339,
+            "y": 740,
+            "width": 178.5,
+            "height": 24
+          }
+        },
+        {
+          "model": "qa-weight-numeric-36095",
+          "kind": "numeric-control",
+          "submitMethod": "Send message button",
+          "status": 200,
+          "url": "http://127.0.0.1:41475/chat/completions",
+          "requestBody": {
+            "model": "qa-weight-numeric-36095",
+            "litellm_trace_id": "fd9b03a6-e52d-4d3a-bf65-12b88928e1d4",
+            "messages": [
+              {
+                "role": "user",
+                "content": "Reply with only: Weights work. Verification reference a4bfd49c-350"
+              }
+            ],
+            "stream": true,
+            "stream_options": {
+              "include_usage": true
+            }
+          },
+          "responseBody": "data: {\"id\":\"6c963cba-6a36-4868-89f2-02802feb7eb8\",\"object\":\"chat.completion.chunk\",\"created\":1792956487,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"role\":\"assistant\",\"content\":\"Weights\"}}]}\n\ndata: {\"id\":\"ae57756c-0db0-4991-88a8-2d8d4d1ba365\",\"object\":\"chat.completion.chunk\",\"created\":1792956487,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" work\"}}]}\n\ndata: {\"id\":\"7340acab-677f-43de-a54e-fa460da5340b\",\"object\":\"chat.completion.chunk\",\"created\":1792956487,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\".\"}}]}\n\ndata: {\"id\":\"db5e6ea6-5496-4182-9a18-6c0e8b62397f\",\"object\":\"chat.completion.chunk\",\"created\":1792956487,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" Verification\"}}]}\n\ndata: {\"id\":\"04c8aa9d-66ae-4773-9fab-75147c823e7b\",\"object\":\"chat.completion.chunk\",\"created\":1792956487,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" reference\"}}]}\n\ndata: {\"id\":\"7b9ab465-33c8-4df9-a172-1715eef79489\",\"object\":\"chat.completion.chunk\",\"created\":1792956487,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" a\"}}]}\n\ndata: {\"id\":\"8c79bb1d-38e6-4818-852e-d6c368c2d2e7\",\"object\":\"chat.completion.chunk\",\"created\":1792956487,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"4\"}}]}\n\ndata: {\"id\":\"0d25770f-5c97-4a46-b7a5-93620d7f462a\",\"object\":\"chat.completion.chunk\",\"created\":1792956487,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"bfd\"}}]}\n\ndata: {\"id\":\"785f3e20-5729-46a8-8058-680591f01976\",\"object\":\"chat.completion.chunk\",\"created\":1792956487,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"4\"}}]}\n\ndata: {\"id\":\"3ab72aa4-a416-4544-a70e-e0a8a88711ef\",\"object\":\"chat.completion.chunk\",\"created\":1792956487,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"9\"}}]}\n\ndata: {\"id\":\"34386cb1-b0c3-4724-a93a-8905d65be590\",\"object\":\"chat.completion.chunk\",\"created\":1792956487,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"c\"}}]}\n\ndata: {\"id\":\"d1ca2fa3-ec61-4590-82c1-0a7d7a0a66be\",\"object\":\"chat.completion.chunk\",\"created\":1792956487,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"-\"}}]}\n\ndata: {\"id\":\"2501093f-c118-42a8-8218-8b38fb3bf81c\",\"object\":\"chat.completion.chunk\",\"created\":1792956487,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"3\"}}]}\n\ndata: {\"id\":\"1515bed3-6cd1-42ab-aff4-6ba32b9da55e\",\"object\":\"chat.completion.chunk\",\"created\":1792956487,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"5\"}}]}\n\ndata: {\"id\":\"5b39e59a-e516-43d6-b998-280d1894a458\",\"object\":\"chat.completion.chunk\",\"created\":1792956487,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"0\"}}]}\n\ndata: {\"id\":\"462fb4b0-bc7c-4d04-9a0c-7a5e01f4f69a\",\"object\":\"chat.completion.chunk\",\"created\":1792956487,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{},\"finish_reason\":\"stop\"}]}\n\ndata: {\"id\":\"462fb4b0-bc7c-4d04-9a0c-7a5e01f4f69a\",\"created\":1792956487,\"model\":\"qa-weight-numeric-36095\",\"object\":\"chat.completion.chunk\",\"choices\":[],\"usage\":{\"completion_tokens\":16,\"prompt_tokens\":32,\"total_tokens\":48,\"completion_tokens_details\":{\"reasoning_tokens\":0,\"text_tokens\":16},\"cost\":0.000048}}\n\ndata: [DONE]\n\n",
+          "screenshot": "desktop-numeric-control.png",
+          "bodyRead": true,
+          "networkAttempts": [
+            {
+              "model": "qa-weight-numeric-36095",
+              "status": 200,
+              "modelId": "qa-weight-numeric-36095-preferred"
+            }
+          ],
+          "headers": {
+            "x-litellm-model-id": "qa-weight-numeric-36095-preferred",
+            "x-litellm-model-name": "ollama_chat/qa-qwen3.5-0.8b",
+            "x-litellm-call-id": "b1fe048f-8f43-4f87-b2c7-cc9bd51d9bcf",
+            "x-litellm-model-api-base": "http://127.0.0.1:11434"
+          },
+          "generatedContent": "Weights work. Verification reference a4bfd49c-350",
+          "usage": {
+            "completion_tokens": 16,
+            "prompt_tokens": 32,
+            "total_tokens": 48,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "text_tokens": 16
+            },
+            "cost": 0.000048
+          },
+          "visibleResult": "Reply with only: Weights work. Verification reference a4bfd49c-350 qa-weight-numeric-36095 Weights work. Verification reference a4bfd49c-350 8.71s to first token 9.26s total 32 in 16 out $0.000048 Inspect",
+          "conversationBox": {
+            "x": 304,
+            "y": 287,
+            "width": 728,
+            "height": 444
+          },
+          "modelBox": {
+            "x": 339,
+            "y": 740,
+            "width": 200.171875,
+            "height": 24
+          }
+        }
+      ],
+      "chatResponses": [
+        {
+          "model": "qa-weight-frac-36095",
+          "status": 500
+        },
+        {
+          "model": "qa-weight-frac-36095",
+          "status": 500
+        },
+        {
+          "model": "qa-weight-frac-36095",
+          "status": 500
+        },
+        {
+          "model": "qa-weight-numeric-36095",
+          "status": 200,
+          "modelId": "qa-weight-numeric-36095-preferred"
+        }
+      ],
+      "pageErrors": [],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+        "Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+        "Failed to load resource: the server responded with a status of 500 (Internal Server Error)"
+      ],
+      "failedResponses": [
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/api-keys/__next.!KGRhc2hib2FyZCk.api-keys.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/playground/__next.!KGRhc2hib2FyZCk.playground.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/mcp-servers/__next.!KGRhc2hib2FyZCk.mcp-servers.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/models-and-endpoints/__next.!KGRhc2hib2FyZCk.models-and-endpoints.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/skills/__next.!KGRhc2hib2FyZCk.skills.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/policies/__next.!KGRhc2hib2FyZCk.policies.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/guardrails/__next.!KGRhc2hib2FyZCk.guardrails.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/usage/__next.!KGRhc2hib2FyZCk.usage.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/model-insights/__next.!KGRhc2hib2FyZCk.model-insights.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/cost-optimization/__next.!KGRhc2hib2FyZCk.cost-optimization.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/logs/__next.!KGRhc2hib2FyZCk.logs.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/guardrails-monitor/__next.!KGRhc2hib2FyZCk.guardrails-monitor.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/lens/__next.!KGRhc2hib2FyZCk.lens.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/teams/__next.!KGRhc2hib2FyZCk.teams.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/users/__next.!KGRhc2hib2FyZCk.users.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/chat/completions",
+          "status": 500
+        },
+        {
+          "path": "/chat/completions",
+          "status": 500
+        },
+        {
+          "path": "/chat/completions",
+          "status": 500
+        }
+      ],
+      "result": "pass",
+      "video": "raw-video/d4d89f4f011e6d728854d6190c4f8d4a.webm"
+    },
+    {
+      "viewport": {
+        "name": "phone",
+        "width": 390,
+        "height": 844
+      },
+      "cases": [
+        {
+          "model": "qa-weight-frac-36095",
+          "kind": "environment",
+          "submitMethod": "Enter in the message field",
+          "status": 500,
+          "url": "http://127.0.0.1:41475/chat/completions",
+          "requestBody": {
+            "model": "qa-weight-frac-36095",
+            "litellm_trace_id": "09c9e62b-4dd0-4721-a9fa-004391ecffa1",
+            "messages": [
+              {
+                "role": "user",
+                "content": "Reply with only: Weights work. Verification reference e6d14c3d-5f0"
+              }
+            ],
+            "stream": true,
+            "stream_options": {
+              "include_usage": true
+            }
+          },
+          "responseBody": null,
+          "screenshot": "phone-environment.png",
+          "bodyRead": false,
+          "networkAttempts": [
+            {
+              "model": "qa-weight-frac-36095",
+              "status": 500
+            },
+            {
+              "model": "qa-weight-frac-36095",
+              "status": 500
+            },
+            {
+              "model": "qa-weight-frac-36095",
+              "status": 500
+            }
+          ],
+          "headers": {
+            "x-litellm-call-id": "dc7eb3bc-e098-4fc0-ba77-a6a30d67895a"
+          },
+          "visibleResult": "Reply with only: Weights work. Verification reference e6d14c3d-5f0 qa-weight-frac-36095 The request failed 500 Deployment weight must be numeric $0.0000 Inspect",
+          "conversationBox": {
+            "x": 16,
+            "y": 299,
+            "width": 358,
+            "height": 376
+          },
+          "modelBox": {
+            "x": 51,
+            "y": 684,
+            "width": 178.5,
+            "height": 24
+          }
+        },
+        {
+          "model": "qa-weight-numeric-36095",
+          "kind": "numeric-control",
+          "submitMethod": "Enter in the message field",
+          "status": 200,
+          "url": "http://127.0.0.1:41475/chat/completions",
+          "requestBody": {
+            "model": "qa-weight-numeric-36095",
+            "litellm_trace_id": "c470406a-2578-49d7-8060-bd7177985268",
+            "messages": [
+              {
+                "role": "user",
+                "content": "Reply with only: Weights work. Verification reference 518102fd-f0a"
+              }
+            ],
+            "stream": true,
+            "stream_options": {
+              "include_usage": true
+            }
+          },
+          "responseBody": "data: {\"id\":\"c733f491-9955-4f2a-9e33-964b2562e6c4\",\"object\":\"chat.completion.chunk\",\"created\":1792956497,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"role\":\"assistant\",\"content\":\"We\"}}]}\n\ndata: {\"id\":\"b687fcf2-01d0-4081-89d3-eb5155d3998f\",\"object\":\"chat.completion.chunk\",\"created\":1792956497,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"ights\"}}]}\n\ndata: {\"id\":\"7b27a61f-4a2f-4d6c-81d2-fa687c74e3e2\",\"object\":\"chat.completion.chunk\",\"created\":1792956497,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" work\"}}]}\n\ndata: {\"id\":\"bc0c933a-f202-46b1-803b-579448b9c658\",\"object\":\"chat.completion.chunk\",\"created\":1792956497,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\".\"}}]}\n\ndata: {\"id\":\"719f0e6d-e6b6-4502-a4a9-8d0eaaa91a89\",\"object\":\"chat.completion.chunk\",\"created\":1792956497,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" Verification\"}}]}\n\ndata: {\"id\":\"e258e28f-fd59-42ff-86b1-b121b9a08efc\",\"object\":\"chat.completion.chunk\",\"created\":1792956497,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" reference\"}}]}\n\ndata: {\"id\":\"2caecc40-3424-4351-9715-7ce185d80cf0\",\"object\":\"chat.completion.chunk\",\"created\":1792956497,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" \"}}]}\n\ndata: {\"id\":\"591fc021-e10c-4c5e-8fae-b0045521cbc5\",\"object\":\"chat.completion.chunk\",\"created\":1792956497,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"5\"}}]}\n\ndata: {\"id\":\"367b5f09-b6ee-4815-87ad-6b1eed202abc\",\"object\":\"chat.completion.chunk\",\"created\":1792956497,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"1\"}}]}\n\ndata: {\"id\":\"9f74070c-e27d-4908-8458-ec8560fd0de9\",\"object\":\"chat.completion.chunk\",\"created\":1792956497,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"8\"}}]}\n\ndata: {\"id\":\"62b739e9-8f52-4b26-b962-3ba4b2a4cccc\",\"object\":\"chat.completion.chunk\",\"created\":1792956497,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"1\"}}]}\n\ndata: {\"id\":\"011df6f7-3ad0-4a92-8492-efb15cb75b21\",\"object\":\"chat.completion.chunk\",\"created\":1792956497,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"0\"}}]}\n\ndata: {\"id\":\"bcda3b56-d56c-4670-b439-9528758bd777\",\"object\":\"chat.completion.chunk\",\"created\":1792956497,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"2\"}}]}\n\ndata: {\"id\":\"c598f97b-8552-4c56-af50-fc27494fa318\",\"object\":\"chat.completion.chunk\",\"created\":1792956497,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"fd\"}}]}\n\ndata: {\"id\":\"93e6d3f5-3fdf-4937-917a-a1f62ee48482\",\"object\":\"chat.completion.chunk\",\"created\":1792956497,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"-f\"}}]}\n\ndata: {\"id\":\"1c52796c-4723-4a69-a73b-bf6e2a3d0511\",\"object\":\"chat.completion.chunk\",\"created\":1792956497,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"0\"}}]}\n\ndata: {\"id\":\"664c51d0-83d2-4ad9-8c09-646985b42368\",\"object\":\"chat.completion.chunk\",\"created\":1792956497,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"a\"}}]}\n\ndata: {\"id\":\"bde50e2e-6413-4bc4-9f0e-6a32868b2f11\",\"object\":\"chat.completion.chunk\",\"created\":1792956497,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{},\"finish_reason\":\"stop\"}]}\n\ndata: {\"id\":\"bde50e2e-6413-4bc4-9f0e-6a32868b2f11\",\"created\":1792956497,\"model\":\"qa-weight-numeric-36095\",\"object\":\"chat.completion.chunk\",\"choices\":[],\"usage\":{\"completion_tokens\":18,\"prompt_tokens\":33,\"total_tokens\":51,\"completion_tokens_details\":{\"reasoning_tokens\":0,\"text_tokens\":18},\"cost\":0.00005099999999999999}}\n\ndata: [DONE]\n\n",
+          "screenshot": "phone-numeric-control.png",
+          "bodyRead": true,
+          "networkAttempts": [
+            {
+              "model": "qa-weight-numeric-36095",
+              "status": 200,
+              "modelId": "qa-weight-numeric-36095-preferred"
+            }
+          ],
+          "headers": {
+            "x-litellm-model-id": "qa-weight-numeric-36095-preferred",
+            "x-litellm-model-name": "ollama_chat/qa-qwen3.5-0.8b",
+            "x-litellm-call-id": "13149b2f-7533-4d46-b9e1-7750c4c80b44",
+            "x-litellm-model-api-base": "http://127.0.0.1:11434"
+          },
+          "generatedContent": "Weights work. Verification reference 518102fd-f0a",
+          "usage": {
+            "completion_tokens": 18,
+            "prompt_tokens": 33,
+            "total_tokens": 51,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "text_tokens": 18
+            },
+            "cost": 0.00005099999999999999
+          },
+          "visibleResult": "Reply with only: Weights work. Verification reference 518102fd-f0a qa-weight-numeric-36095 Weights work. Verification reference 518102fd-f0a 0.19s to first token 0.72s total 33 in 18 out $0.000051 Inspect",
+          "conversationBox": {
+            "x": 16,
+            "y": 299,
+            "width": 358,
+            "height": 376
+          },
+          "modelBox": {
+            "x": 51,
+            "y": 684,
+            "width": 200.171875,
+            "height": 24
+          }
+        }
+      ],
+      "chatResponses": [
+        {
+          "model": "qa-weight-frac-36095",
+          "status": 500
+        },
+        {
+          "model": "qa-weight-frac-36095",
+          "status": 500
+        },
+        {
+          "model": "qa-weight-frac-36095",
+          "status": 500
+        },
+        {
+          "model": "qa-weight-numeric-36095",
+          "status": 200,
+          "modelId": "qa-weight-numeric-36095-preferred"
+        }
+      ],
+      "pageErrors": [],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+        "Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+        "Failed to load resource: the server responded with a status of 500 (Internal Server Error)"
+      ],
+      "failedResponses": [
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/chat/completions",
+          "status": 500
+        },
+        {
+          "path": "/chat/completions",
+          "status": 500
+        },
+        {
+          "path": "/chat/completions",
+          "status": 500
+        }
+      ],
+      "result": "pass",
+      "video": "raw-video/ff9562c077258439f4fbb95b694ca401.webm"
+    }
+  ],
+  "browser": "145.0.7632.6",
+  "completedAt": "2026-10-25T19:28:22.947Z"
+}

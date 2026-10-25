@@ -1,0 +1,62 @@
+FFFF....                                                                 [100%]
+=================================== FAILURES ===================================
+_ test_numeric_string_routing_params_select_the_nonzero_deployment[weight-1.5-0_0] _
+tests/unit/types/test_router.py:55: in test_numeric_string_routing_params_select_the_nonzero_deployment
+    deployments: Final = tuple(
+tests/unit/types/test_router.py:56: in <genexpr>
+    {"litellm_params": GenericLiteLLMParams(**{parameter: value}).model_dump(exclude_none=True)}
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   pydantic_core._pydantic_core.ValidationError: 1 validation error for GenericLiteLLMParams
+E   weight
+E     Input should be greater than 0 [type=greater_than, input_value='0', input_type=str]
+E       For further information visit https://errors.pydantic.dev/2.13/v/greater_than
+_ test_numeric_string_routing_params_select_the_nonzero_deployment[weight-100-0_0] _
+tests/unit/types/test_router.py:55: in test_numeric_string_routing_params_select_the_nonzero_deployment
+    deployments: Final = tuple(
+tests/unit/types/test_router.py:56: in <genexpr>
+    {"litellm_params": GenericLiteLLMParams(**{parameter: value}).model_dump(exclude_none=True)}
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   pydantic_core._pydantic_core.ValidationError: 1 validation error for GenericLiteLLMParams
+E   weight
+E     Input should be greater than 0 [type=greater_than, input_value=0, input_type=int]
+E       For further information visit https://errors.pydantic.dev/2.13/v/greater_than
+_ test_numeric_string_routing_params_select_the_nonzero_deployment[weight-100-0_1] _
+tests/unit/types/test_router.py:55: in test_numeric_string_routing_params_select_the_nonzero_deployment
+    deployments: Final = tuple(
+tests/unit/types/test_router.py:56: in <genexpr>
+    {"litellm_params": GenericLiteLLMParams(**{parameter: value}).model_dump(exclude_none=True)}
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   pydantic_core._pydantic_core.ValidationError: 1 validation error for GenericLiteLLMParams
+E   weight
+E     Input should be greater than 0 [type=greater_than, input_value='0', input_type=str]
+E       For further information visit https://errors.pydantic.dev/2.13/v/greater_than
+_ test_numeric_string_routing_params_select_the_nonzero_deployment[weight-1.5-0_1] _
+tests/unit/types/test_router.py:55: in test_numeric_string_routing_params_select_the_nonzero_deployment
+    deployments: Final = tuple(
+tests/unit/types/test_router.py:56: in <genexpr>
+    {"litellm_params": GenericLiteLLMParams(**{parameter: value}).model_dump(exclude_none=True)}
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   pydantic_core._pydantic_core.ValidationError: 1 validation error for GenericLiteLLMParams
+E   weight
+E     Input should be greater than 0 [type=greater_than, input_value=0, input_type=int]
+E       For further information visit https://errors.pydantic.dev/2.13/v/greater_than
+=============================== warnings summary ===============================
+tests/unit/types/test_router.py::test_numeric_string_routing_params_select_the_nonzero_deployment[weight-1.5-0_0]
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'index' on TypedDict class 'ChatCompletionThinkingBlock' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/types/test_router.py::test_numeric_string_routing_params_select_the_nonzero_deployment[weight-1.5-0_0]
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'index' on TypedDict class 'ChatCompletionRedactedThinkingBlock' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/types/test_router.py::test_numeric_string_routing_params_select_the_nonzero_deployment[weight-1.5-0_0]
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'summary' on TypedDict class 'ChatCompletionReasoningItem' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/unit/types/test_router.py::test_numeric_string_routing_params_select_the_nonzero_deployment[weight-1.5-0_0]
+FAILED tests/unit/types/test_router.py::test_numeric_string_routing_params_select_the_nonzero_deployment[weight-100-0_0]
+FAILED tests/unit/types/test_router.py::test_numeric_string_routing_params_select_the_nonzero_deployment[weight-100-0_1]
+FAILED tests/unit/types/test_router.py::test_numeric_string_routing_params_select_the_nonzero_deployment[weight-1.5-0_1]
+4 failed, 4 passed, 93 deselected, 3 warnings in 0.42s

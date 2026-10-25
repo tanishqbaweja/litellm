@@ -1,0 +1,550 @@
+{
+  "revision": "fixed",
+  "sourceSha": "828228e0d2894d2b3f2091dc00d9aab9cf9fe9ee",
+  "output": "/qa/litellm-36095/output/playwright/visual-fixed-1792956772805",
+  "startedAt": "2026-10-25T19:32:52.820Z",
+  "viewports": [
+    {
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900
+      },
+      "cases": [
+        {
+          "model": "qa-weight-frac-36095",
+          "kind": "environment",
+          "submitMethod": "Send message button",
+          "status": 200,
+          "url": "http://127.0.0.1:41475/chat/completions",
+          "requestBody": {
+            "model": "qa-weight-frac-36095",
+            "litellm_trace_id": "da13b3e6-b33a-4b9f-b37e-179b9adead73",
+            "messages": [
+              {
+                "role": "user",
+                "content": "Reply with only: Weights work. Verification reference 199748f9-c12"
+              }
+            ],
+            "stream": true,
+            "stream_options": {
+              "include_usage": true
+            }
+          },
+          "responseBody": "data: {\"id\":\"677de5f7-874f-4c03-994f-9929c48df686\",\"object\":\"chat.completion.chunk\",\"created\":1792956777,\"model\":\"qa-weight-frac-36095\",\"choices\":[{\"index\":0,\"delta\":{\"role\":\"assistant\",\"content\":\"We\"}}]}\n\ndata: {\"id\":\"a33ab3d6-c0ea-48e2-b100-9d278e32f50e\",\"object\":\"chat.completion.chunk\",\"created\":1792956777,\"model\":\"qa-weight-frac-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"ights\"}}]}\n\ndata: {\"id\":\"cf849dc8-203a-4adc-bd6a-63b93d8e2936\",\"object\":\"chat.completion.chunk\",\"created\":1792956777,\"model\":\"qa-weight-frac-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" work\"}}]}\n\ndata: {\"id\":\"1512e7b2-3c18-4c18-80d9-a5fefe2633bb\",\"object\":\"chat.completion.chunk\",\"created\":1792956777,\"model\":\"qa-weight-frac-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\".\"}}]}\n\ndata: {\"id\":\"f2c95567-b8e2-4671-9f80-31e844c6b167\",\"object\":\"chat.completion.chunk\",\"created\":1792956777,\"model\":\"qa-weight-frac-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" Verification\"}}]}\n\ndata: {\"id\":\"47285bf9-aa36-4134-aac4-edfa49cb2ac1\",\"object\":\"chat.completion.chunk\",\"created\":1792956777,\"model\":\"qa-weight-frac-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" reference\"}}]}\n\ndata: {\"id\":\"17f78696-dbbf-48ef-bbd4-42b0bb814391\",\"object\":\"chat.completion.chunk\",\"created\":1792956777,\"model\":\"qa-weight-frac-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" \"}}]}\n\ndata: {\"id\":\"3f8a6878-08ca-4762-964e-85f1ecdb2f7d\",\"object\":\"chat.completion.chunk\",\"created\":1792956777,\"model\":\"qa-weight-frac-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"1\"}}]}\n\ndata: {\"id\":\"dc2f9973-a0f8-40ab-a4c6-9fa7c00b5b41\",\"object\":\"chat.completion.chunk\",\"created\":1792956777,\"model\":\"qa-weight-frac-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"9\"}}]}\n\ndata: {\"id\":\"24bb0d6e-eaf6-40f4-8a54-89d9e2bb372a\",\"object\":\"chat.completion.chunk\",\"created\":1792956777,\"model\":\"qa-weight-frac-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"9\"}}]}\n\ndata: {\"id\":\"1e5078e5-662c-4f6e-a0e0-6d36ef181a63\",\"object\":\"chat.completion.chunk\",\"created\":1792956777,\"model\":\"qa-weight-frac-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"7\"}}]}\n\ndata: {\"id\":\"78d91540-4930-4cce-bb2c-60a872dd554b\",\"object\":\"chat.completion.chunk\",\"created\":1792956777,\"model\":\"qa-weight-frac-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"4\"}}]}\n\ndata: {\"id\":\"74304417-6701-4b70-b24c-14cb21ca86e2\",\"object\":\"chat.completion.chunk\",\"created\":1792956777,\"model\":\"qa-weight-frac-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"8\"}}]}\n\ndata: {\"id\":\"6dc12e26-259a-4ee9-bc7f-08b8a50589f3\",\"object\":\"chat.completion.chunk\",\"created\":1792956777,\"model\":\"qa-weight-frac-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"f\"}}]}\n\ndata: {\"id\":\"25ebf0f2-3096-43ca-91b4-8accd7e1c4d6\",\"object\":\"chat.completion.chunk\",\"created\":1792956777,\"model\":\"qa-weight-frac-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"9\"}}]}\n\ndata: {\"id\":\"03c2d141-d67d-41db-b7a5-69d2627656c7\",\"object\":\"chat.completion.chunk\",\"created\":1792956777,\"model\":\"qa-weight-frac-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"-c\"}}]}\n\ndata: {\"id\":\"e7a6dfb6-5cf8-4af6-88d2-1cddbe2e7206\",\"object\":\"chat.completion.chunk\",\"created\":1792956777,\"model\":\"qa-weight-frac-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"1\"}}]}\n\ndata: {\"id\":\"eaac8e6a-e05d-4702-a134-3f52052b8bc3\",\"object\":\"chat.completion.chunk\",\"created\":1792956777,\"model\":\"qa-weight-frac-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"2\"}}]}\n\ndata: {\"id\":\"ddb6bd14-6f88-4f88-960d-6cd0895fe4bf\",\"object\":\"chat.completion.chunk\",\"created\":1792956777,\"model\":\"qa-weight-frac-36095\",\"choices\":[{\"index\":0,\"delta\":{},\"finish_reason\":\"stop\"}]}\n\ndata: {\"id\":\"ddb6bd14-6f88-4f88-960d-6cd0895fe4bf\",\"created\":1792956777,\"model\":\"qa-weight-frac-36095\",\"object\":\"chat.completion.chunk\",\"choices\":[],\"usage\":{\"completion_tokens\":19,\"prompt_tokens\":34,\"total_tokens\":53,\"completion_tokens_details\":{\"reasoning_tokens\":0,\"text_tokens\":19},\"cost\":0.000053}}\n\ndata: [DONE]\n\n",
+          "screenshot": "desktop-environment.png",
+          "bodyRead": true,
+          "networkAttempts": [
+            {
+              "model": "qa-weight-frac-36095",
+              "status": 200,
+              "modelId": "qa-weight-frac-36095-preferred"
+            }
+          ],
+          "headers": {
+            "x-litellm-model-id": "qa-weight-frac-36095-preferred",
+            "x-litellm-model-name": "ollama_chat/qa-qwen3.5-0.8b",
+            "x-litellm-call-id": "a7dc0bda-c367-4243-b0d6-b0bff8193466",
+            "x-litellm-model-api-base": "http://127.0.0.1:11434"
+          },
+          "generatedContent": "Weights work. Verification reference 199748f9-c12",
+          "usage": {
+            "completion_tokens": 19,
+            "prompt_tokens": 34,
+            "total_tokens": 53,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "text_tokens": 19
+            },
+            "cost": 0.000053
+          },
+          "visibleResult": "Reply with only: Weights work. Verification reference 199748f9-c12 qa-weight-frac-36095 Weights work. Verification reference 199748f9-c12 0.33s to first token 1.14s total 34 in 19 out $0.000053 Inspect",
+          "conversationBox": {
+            "x": 304,
+            "y": 287,
+            "width": 728,
+            "height": 444
+          },
+          "modelBox": {
+            "x": 339,
+            "y": 740,
+            "width": 178.5,
+            "height": 24
+          }
+        },
+        {
+          "model": "qa-weight-numeric-36095",
+          "kind": "numeric-control",
+          "submitMethod": "Send message button",
+          "status": 200,
+          "url": "http://127.0.0.1:41475/chat/completions",
+          "requestBody": {
+            "model": "qa-weight-numeric-36095",
+            "litellm_trace_id": "64f84224-8405-45bf-bd47-0fa0e2dd6f30",
+            "messages": [
+              {
+                "role": "user",
+                "content": "Reply with only: Weights work. Verification reference 78790543-c0b"
+              }
+            ],
+            "stream": true,
+            "stream_options": {
+              "include_usage": true
+            }
+          },
+          "responseBody": "data: {\"id\":\"d128c9b2-7c0f-4c00-8dd1-0d7e85aae3f1\",\"object\":\"chat.completion.chunk\",\"created\":1792956782,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"role\":\"assistant\",\"content\":\"We\"}}]}\n\ndata: {\"id\":\"864adb4e-1f44-42a2-af84-cb71dcbc7e62\",\"object\":\"chat.completion.chunk\",\"created\":1792956782,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"ights\"}}]}\n\ndata: {\"id\":\"a0d7fce3-d044-47e4-8730-db036f0715f7\",\"object\":\"chat.completion.chunk\",\"created\":1792956782,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" work\"}}]}\n\ndata: {\"id\":\"6fc3a17f-0b6e-4041-96c6-bd0047130544\",\"object\":\"chat.completion.chunk\",\"created\":1792956782,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\".\"}}]}\n\ndata: {\"id\":\"5c6d209b-097e-43fa-8891-00472d5bf079\",\"object\":\"chat.completion.chunk\",\"created\":1792956782,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" Verification\"}}]}\n\ndata: {\"id\":\"879d7c37-ceee-4255-9d03-b030caa35602\",\"object\":\"chat.completion.chunk\",\"created\":1792956782,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" reference\"}}]}\n\ndata: {\"id\":\"3e3615a4-8404-4eec-b5ab-157330d97c59\",\"object\":\"chat.completion.chunk\",\"created\":1792956782,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" \"}}]}\n\ndata: {\"id\":\"febc08c6-802f-4bd8-9dcc-c6c885402b31\",\"object\":\"chat.completion.chunk\",\"created\":1792956782,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"7\"}}]}\n\ndata: {\"id\":\"f037edfd-d9d6-42b2-9f0a-c8fa049848a6\",\"object\":\"chat.completion.chunk\",\"created\":1792956782,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"8\"}}]}\n\ndata: {\"id\":\"a1726153-a54d-4c55-9ee0-ad35f5658135\",\"object\":\"chat.completion.chunk\",\"created\":1792956782,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"7\"}}]}\n\ndata: {\"id\":\"6503c627-9496-4c43-beaa-64565a20ca66\",\"object\":\"chat.completion.chunk\",\"created\":1792956782,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"9\"}}]}\n\ndata: {\"id\":\"ae910c3e-f6fb-441a-8872-03e206f52d5f\",\"object\":\"chat.completion.chunk\",\"created\":1792956782,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"0\"}}]}\n\ndata: {\"id\":\"301946f9-fbde-400e-af0c-25deefe24ada\",\"object\":\"chat.completion.chunk\",\"created\":1792956782,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"5\"}}]}\n\ndata: {\"id\":\"448c133d-ce49-4c81-81bc-786d3b020e0b\",\"object\":\"chat.completion.chunk\",\"created\":1792956782,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"4\"}}]}\n\ndata: {\"id\":\"8e78557e-3997-45d9-b7bc-bae46d729cb3\",\"object\":\"chat.completion.chunk\",\"created\":1792956782,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"3\"}}]}\n\ndata: {\"id\":\"56141f58-4298-408d-9c6f-b1501f51ec14\",\"object\":\"chat.completion.chunk\",\"created\":1792956782,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"-c\"}}]}\n\ndata: {\"id\":\"8a373cc4-78bd-42ec-abb0-14b6a7fac119\",\"object\":\"chat.completion.chunk\",\"created\":1792956782,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"0\"}}]}\n\ndata: {\"id\":\"a7d15dde-0f11-47f5-b84e-9b9b70aba6aa\",\"object\":\"chat.completion.chunk\",\"created\":1792956782,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"b\"}}]}\n\ndata: {\"id\":\"564c2725-6301-48e1-b4f9-4d3b63b7c13b\",\"object\":\"chat.completion.chunk\",\"created\":1792956782,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{},\"finish_reason\":\"stop\"}]}\n\ndata: {\"id\":\"564c2725-6301-48e1-b4f9-4d3b63b7c13b\",\"created\":1792956782,\"model\":\"qa-weight-numeric-36095\",\"object\":\"chat.completion.chunk\",\"choices\":[],\"usage\":{\"completion_tokens\":19,\"prompt_tokens\":34,\"total_tokens\":53,\"completion_tokens_details\":{\"reasoning_tokens\":0,\"text_tokens\":19},\"cost\":0.000053}}\n\ndata: [DONE]\n\n",
+          "screenshot": "desktop-numeric-control.png",
+          "bodyRead": true,
+          "networkAttempts": [
+            {
+              "model": "qa-weight-numeric-36095",
+              "status": 200,
+              "modelId": "qa-weight-numeric-36095-preferred"
+            }
+          ],
+          "headers": {
+            "x-litellm-model-id": "qa-weight-numeric-36095-preferred",
+            "x-litellm-model-name": "ollama_chat/qa-qwen3.5-0.8b",
+            "x-litellm-call-id": "b77c6dd6-4d81-4ee3-926a-ee6dd317a699",
+            "x-litellm-model-api-base": "http://127.0.0.1:11434"
+          },
+          "generatedContent": "Weights work. Verification reference 78790543-c0b",
+          "usage": {
+            "completion_tokens": 19,
+            "prompt_tokens": 34,
+            "total_tokens": 53,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "text_tokens": 19
+            },
+            "cost": 0.000053
+          },
+          "visibleResult": "Reply with only: Weights work. Verification reference 78790543-c0b qa-weight-numeric-36095 Weights work. Verification reference 78790543-c0b 0.23s to first token 0.89s total 34 in 19 out $0.000053 Inspect",
+          "conversationBox": {
+            "x": 304,
+            "y": 287,
+            "width": 728,
+            "height": 444
+          },
+          "modelBox": {
+            "x": 339,
+            "y": 740,
+            "width": 200.171875,
+            "height": 24
+          }
+        }
+      ],
+      "chatResponses": [
+        {
+          "model": "qa-weight-frac-36095",
+          "status": 200,
+          "modelId": "qa-weight-frac-36095-preferred"
+        },
+        {
+          "model": "qa-weight-numeric-36095",
+          "status": 200,
+          "modelId": "qa-weight-numeric-36095-preferred"
+        }
+      ],
+      "pageErrors": [],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      ],
+      "failedResponses": [
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/api-keys/__next.!KGRhc2hib2FyZCk.api-keys.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/playground/__next.!KGRhc2hib2FyZCk.playground.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/mcp-servers/__next.!KGRhc2hib2FyZCk.mcp-servers.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/models-and-endpoints/__next.!KGRhc2hib2FyZCk.models-and-endpoints.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/skills/__next.!KGRhc2hib2FyZCk.skills.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/guardrails/__next.!KGRhc2hib2FyZCk.guardrails.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/policies/__next.!KGRhc2hib2FyZCk.policies.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/usage/__next.!KGRhc2hib2FyZCk.usage.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/model-insights/__next.!KGRhc2hib2FyZCk.model-insights.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/cost-optimization/__next.!KGRhc2hib2FyZCk.cost-optimization.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/logs/__next.!KGRhc2hib2FyZCk.logs.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/lens/__next.!KGRhc2hib2FyZCk.lens.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/guardrails-monitor/__next.!KGRhc2hib2FyZCk.guardrails-monitor.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/teams/__next.!KGRhc2hib2FyZCk.teams.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/users/__next.!KGRhc2hib2FyZCk.users.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/__next.!KGRhc2hib2FyZCk.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/home/__next.!KGRhc2hib2FyZCk.home.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/api-keys/__next.!KGRhc2hib2FyZCk.api-keys.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/playground/__next.!KGRhc2hib2FyZCk.playground.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/models-and-endpoints/__next.!KGRhc2hib2FyZCk.models-and-endpoints.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/mcp-servers/__next.!KGRhc2hib2FyZCk.mcp-servers.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/guardrails/__next.!KGRhc2hib2FyZCk.guardrails.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/skills/__next.!KGRhc2hib2FyZCk.skills.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/policies/__next.!KGRhc2hib2FyZCk.policies.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/usage/__next.!KGRhc2hib2FyZCk.usage.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/model-insights/__next.!KGRhc2hib2FyZCk.model-insights.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/cost-optimization/__next.!KGRhc2hib2FyZCk.cost-optimization.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/logs/__next.!KGRhc2hib2FyZCk.logs.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/lens/__next.!KGRhc2hib2FyZCk.lens.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/guardrails-monitor/__next.!KGRhc2hib2FyZCk.guardrails-monitor.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/teams/__next.!KGRhc2hib2FyZCk.teams.__PAGE__.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/users/__next.!KGRhc2hib2FyZCk.users.__PAGE__.txt",
+          "status": 404
+        }
+      ],
+      "result": "pass",
+      "video": "raw-video/ef3e08210715e71ab9e40ffeddd3fb55.webm"
+    },
+    {
+      "viewport": {
+        "name": "phone",
+        "width": 390,
+        "height": 844
+      },
+      "cases": [
+        {
+          "model": "qa-weight-frac-36095",
+          "kind": "environment",
+          "submitMethod": "Enter in the message field",
+          "status": 200,
+          "url": "http://127.0.0.1:41475/chat/completions",
+          "requestBody": {
+            "model": "qa-weight-frac-36095",
+            "litellm_trace_id": "15b55ecf-746f-4758-8f86-d08ef1a80c1b",
+            "messages": [
+              {
+                "role": "user",
+                "content": "Reply with only: Weights work. Verification reference 80e839c3-874"
+              }
+            ],
+            "stream": true,
+            "stream_options": {
+              "include_usage": true
+            }
+          },
+          "responseBody": "data: {\"id\":\"50a1de20-af60-4fd5-95d9-0066a4800095\",\"object\":\"chat.completion.chunk\",\"created\":1792956791,\"model\":\"qa-weight-frac-36095\",\"choices\":[{\"index\":0,\"delta\":{\"role\":\"assistant\",\"content\":\"We\"}}]}\n\ndata: {\"id\":\"9b46fa84-7ced-4de8-83b4-a2f7d24325c4\",\"object\":\"chat.completion.chunk\",\"created\":1792956791,\"model\":\"qa-weight-frac-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"ights\"}}]}\n\ndata: {\"id\":\"6a414338-3911-4ef1-ae87-d6f080616238\",\"object\":\"chat.completion.chunk\",\"created\":1792956791,\"model\":\"qa-weight-frac-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" work\"}}]}\n\ndata: {\"id\":\"fc62f68a-ddc6-466e-8ba5-c4f0d97e0cd9\",\"object\":\"chat.completion.chunk\",\"created\":1792956791,\"model\":\"qa-weight-frac-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\".\"}}]}\n\ndata: {\"id\":\"1f8fcc01-a81b-45d2-8fbc-387e13106151\",\"object\":\"chat.completion.chunk\",\"created\":1792956791,\"model\":\"qa-weight-frac-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" Verification\"}}]}\n\ndata: {\"id\":\"4f57a6e1-792a-4947-9dcd-7c7abc1f7199\",\"object\":\"chat.completion.chunk\",\"created\":1792956791,\"model\":\"qa-weight-frac-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" reference\"}}]}\n\ndata: {\"id\":\"2b7c8f15-0546-4b40-b7e9-9734fb4fdc03\",\"object\":\"chat.completion.chunk\",\"created\":1792956791,\"model\":\"qa-weight-frac-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" \"}}]}\n\ndata: {\"id\":\"dbff6995-ae31-4e58-9298-027f32969367\",\"object\":\"chat.completion.chunk\",\"created\":1792956791,\"model\":\"qa-weight-frac-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"8\"}}]}\n\ndata: {\"id\":\"c8d3442a-2a97-4baa-ac41-32e090df0194\",\"object\":\"chat.completion.chunk\",\"created\":1792956791,\"model\":\"qa-weight-frac-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"0\"}}]}\n\ndata: {\"id\":\"2d58e7b7-bc32-4e03-a973-ff177226481b\",\"object\":\"chat.completion.chunk\",\"created\":1792956791,\"model\":\"qa-weight-frac-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"e\"}}]}\n\ndata: {\"id\":\"e34f6997-df37-40a0-b2d7-e7094b7daf4c\",\"object\":\"chat.completion.chunk\",\"created\":1792956791,\"model\":\"qa-weight-frac-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"8\"}}]}\n\ndata: {\"id\":\"d17851f6-ad83-4022-bb7d-92c3b7f56a4e\",\"object\":\"chat.completion.chunk\",\"created\":1792956791,\"model\":\"qa-weight-frac-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"3\"}}]}\n\ndata: {\"id\":\"2f49ad4f-e5c1-42d1-9069-61a029e6dae8\",\"object\":\"chat.completion.chunk\",\"created\":1792956791,\"model\":\"qa-weight-frac-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"9\"}}]}\n\ndata: {\"id\":\"3df70214-c66a-4d13-981a-dabaaed9aafe\",\"object\":\"chat.completion.chunk\",\"created\":1792956791,\"model\":\"qa-weight-frac-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"c\"}}]}\n\ndata: {\"id\":\"0b8a482d-0656-4f89-9fc1-b1d93a0c88ea\",\"object\":\"chat.completion.chunk\",\"created\":1792956791,\"model\":\"qa-weight-frac-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"3\"}}]}\n\ndata: {\"id\":\"4d481026-c616-4d1f-992b-abfaf29bf70d\",\"object\":\"chat.completion.chunk\",\"created\":1792956791,\"model\":\"qa-weight-frac-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"-\"}}]}\n\ndata: {\"id\":\"477954e0-606e-4d4d-b406-0889b4871ab6\",\"object\":\"chat.completion.chunk\",\"created\":1792956791,\"model\":\"qa-weight-frac-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"8\"}}]}\n\ndata: {\"id\":\"25a9e5a5-20e3-4290-a377-c3c0f94c3bea\",\"object\":\"chat.completion.chunk\",\"created\":1792956791,\"model\":\"qa-weight-frac-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"7\"}}]}\n\ndata: {\"id\":\"4a3b98d4-5ddf-42b5-a361-703b9b6aa52a\",\"object\":\"chat.completion.chunk\",\"created\":1792956791,\"model\":\"qa-weight-frac-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"4\"}}]}\n\ndata: {\"id\":\"f0d03c35-5900-455a-a8ca-5c873ed12580\",\"object\":\"chat.completion.chunk\",\"created\":1792956791,\"model\":\"qa-weight-frac-36095\",\"choices\":[{\"index\":0,\"delta\":{},\"finish_reason\":\"stop\"}]}\n\ndata: {\"id\":\"f0d03c35-5900-455a-a8ca-5c873ed12580\",\"created\":1792956791,\"model\":\"qa-weight-frac-36095\",\"object\":\"chat.completion.chunk\",\"choices\":[],\"usage\":{\"completion_tokens\":20,\"prompt_tokens\":35,\"total_tokens\":55,\"completion_tokens_details\":{\"reasoning_tokens\":0,\"text_tokens\":20},\"cost\":0.000054999999999999995}}\n\ndata: [DONE]\n\n",
+          "screenshot": "phone-environment.png",
+          "bodyRead": true,
+          "networkAttempts": [
+            {
+              "model": "qa-weight-frac-36095",
+              "status": 200,
+              "modelId": "qa-weight-frac-36095-preferred"
+            }
+          ],
+          "headers": {
+            "x-litellm-model-id": "qa-weight-frac-36095-preferred",
+            "x-litellm-model-name": "ollama_chat/qa-qwen3.5-0.8b",
+            "x-litellm-call-id": "c649640b-69a5-4652-ab0e-651e72fd1ca4",
+            "x-litellm-model-api-base": "http://127.0.0.1:11434"
+          },
+          "generatedContent": "Weights work. Verification reference 80e839c3-874",
+          "usage": {
+            "completion_tokens": 20,
+            "prompt_tokens": 35,
+            "total_tokens": 55,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "text_tokens": 20
+            },
+            "cost": 0.000054999999999999995
+          },
+          "visibleResult": "Reply with only: Weights work. Verification reference 80e839c3-874 qa-weight-frac-36095 Weights work. Verification reference 80e839c3-874 0.25s to first token 1.22s total 35 in 20 out $0.000055 Inspect",
+          "conversationBox": {
+            "x": 16,
+            "y": 299,
+            "width": 358,
+            "height": 376
+          },
+          "modelBox": {
+            "x": 51,
+            "y": 684,
+            "width": 178.5,
+            "height": 24
+          }
+        },
+        {
+          "model": "qa-weight-numeric-36095",
+          "kind": "numeric-control",
+          "submitMethod": "Enter in the message field",
+          "status": 200,
+          "url": "http://127.0.0.1:41475/chat/completions",
+          "requestBody": {
+            "model": "qa-weight-numeric-36095",
+            "litellm_trace_id": "5fa591e4-1429-4736-9452-8c09ef5b79bc",
+            "messages": [
+              {
+                "role": "user",
+                "content": "Reply with only: Weights work. Verification reference 443c8cc8-414"
+              }
+            ],
+            "stream": true,
+            "stream_options": {
+              "include_usage": true
+            }
+          },
+          "responseBody": "data: {\"id\":\"eafab136-4eba-40b3-8144-3cead74fc966\",\"object\":\"chat.completion.chunk\",\"created\":1792956796,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"role\":\"assistant\",\"content\":\"We\"}}]}\n\ndata: {\"id\":\"76c1b8d2-2560-4166-b46d-faa79aed513a\",\"object\":\"chat.completion.chunk\",\"created\":1792956796,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"ights\"}}]}\n\ndata: {\"id\":\"a29d6c8b-002e-4490-8110-688aaaa749cd\",\"object\":\"chat.completion.chunk\",\"created\":1792956796,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" work\"}}]}\n\ndata: {\"id\":\"f3163c4b-1607-41f7-b912-7998e80ed1a6\",\"object\":\"chat.completion.chunk\",\"created\":1792956796,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\".\"}}]}\n\ndata: {\"id\":\"59bfed9c-63bf-42f2-9a14-e0eacf6c03d8\",\"object\":\"chat.completion.chunk\",\"created\":1792956796,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" Verification\"}}]}\n\ndata: {\"id\":\"3c3ba4ab-be5d-44aa-a918-92063139cddb\",\"object\":\"chat.completion.chunk\",\"created\":1792956796,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" reference\"}}]}\n\ndata: {\"id\":\"937482a8-76b8-48e3-bcb9-65d3d5e580ff\",\"object\":\"chat.completion.chunk\",\"created\":1792956796,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" \"}}]}\n\ndata: {\"id\":\"f372efc0-586c-4148-9391-3ac48c992261\",\"object\":\"chat.completion.chunk\",\"created\":1792956796,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"4\"}}]}\n\ndata: {\"id\":\"bd3d465c-784e-4e50-9b20-e4aeb22faec1\",\"object\":\"chat.completion.chunk\",\"created\":1792956796,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"4\"}}]}\n\ndata: {\"id\":\"6c8a3344-ca02-42a0-b1bc-74effaa77889\",\"object\":\"chat.completion.chunk\",\"created\":1792956796,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"3\"}}]}\n\ndata: {\"id\":\"aa31af4a-2a4c-4fa3-854f-d964f61d534c\",\"object\":\"chat.completion.chunk\",\"created\":1792956796,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"c\"}}]}\n\ndata: {\"id\":\"42c0a433-9079-42a8-a7b9-8dac08745d45\",\"object\":\"chat.completion.chunk\",\"created\":1792956796,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"8\"}}]}\n\ndata: {\"id\":\"cf089394-0861-4e1a-91d1-514239460f8c\",\"object\":\"chat.completion.chunk\",\"created\":1792956796,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"cc\"}}]}\n\ndata: {\"id\":\"2597e316-e5a5-4494-9e8c-143fb994bf37\",\"object\":\"chat.completion.chunk\",\"created\":1792956796,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"8\"}}]}\n\ndata: {\"id\":\"69684bc8-ff49-4687-8e5c-b5fffca286ed\",\"object\":\"chat.completion.chunk\",\"created\":1792956796,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"-\"}}]}\n\ndata: {\"id\":\"23a15439-40bc-4ff6-b019-d34b9b381f62\",\"object\":\"chat.completion.chunk\",\"created\":1792956796,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"4\"}}]}\n\ndata: {\"id\":\"765f96aa-e679-4d88-9c32-b19b1f15a7f0\",\"object\":\"chat.completion.chunk\",\"created\":1792956796,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"1\"}}]}\n\ndata: {\"id\":\"24135a4b-c7fc-436f-8dda-2fc5e8cc71eb\",\"object\":\"chat.completion.chunk\",\"created\":1792956796,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"4\"}}]}\n\ndata: {\"id\":\"c758ace0-2f75-4fb4-b448-966812d146d0\",\"object\":\"chat.completion.chunk\",\"created\":1792956796,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{},\"finish_reason\":\"stop\"}]}\n\ndata: {\"id\":\"c758ace0-2f75-4fb4-b448-966812d146d0\",\"created\":1792956796,\"model\":\"qa-weight-numeric-36095\",\"object\":\"chat.completion.chunk\",\"choices\":[],\"usage\":{\"completion_tokens\":19,\"prompt_tokens\":34,\"total_tokens\":53,\"completion_tokens_details\":{\"reasoning_tokens\":0,\"text_tokens\":19},\"cost\":0.000053}}\n\ndata: [DONE]\n\n",
+          "screenshot": "phone-numeric-control.png",
+          "bodyRead": true,
+          "networkAttempts": [
+            {
+              "model": "qa-weight-numeric-36095",
+              "status": 200,
+              "modelId": "qa-weight-numeric-36095-preferred"
+            }
+          ],
+          "headers": {
+            "x-litellm-model-id": "qa-weight-numeric-36095-preferred",
+            "x-litellm-model-name": "ollama_chat/qa-qwen3.5-0.8b",
+            "x-litellm-call-id": "9c4a6d01-6817-4f25-92e4-a2bd8112c7ef",
+            "x-litellm-model-api-base": "http://127.0.0.1:11434"
+          },
+          "generatedContent": "Weights work. Verification reference 443c8cc8-414",
+          "usage": {
+            "completion_tokens": 19,
+            "prompt_tokens": 34,
+            "total_tokens": 53,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "text_tokens": 19
+            },
+            "cost": 0.000053
+          },
+          "visibleResult": "Reply with only: Weights work. Verification reference 443c8cc8-414 qa-weight-numeric-36095 Weights work. Verification reference 443c8cc8-414 0.18s to first token 0.75s total 34 in 19 out $0.000053 Inspect",
+          "conversationBox": {
+            "x": 16,
+            "y": 299,
+            "width": 358,
+            "height": 376
+          },
+          "modelBox": {
+            "x": 51,
+            "y": 684,
+            "width": 200.171875,
+            "height": 24
+          }
+        }
+      ],
+      "chatResponses": [
+        {
+          "model": "qa-weight-frac-36095",
+          "status": 200,
+          "modelId": "qa-weight-frac-36095-preferred"
+        },
+        {
+          "model": "qa-weight-numeric-36095",
+          "status": 200,
+          "modelId": "qa-weight-numeric-36095-preferred"
+        }
+      ],
+      "pageErrors": [],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      ],
+      "failedResponses": [
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui.txt",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        },
+        {
+          "path": "/ui/litellm-runtime-config.json",
+          "status": 404
+        }
+      ],
+      "result": "pass",
+      "video": "raw-video/615131633e4feb2b90eb7b2a249a9634.webm"
+    }
+  ],
+  "browser": "145.0.7632.6",
+  "completedAt": "2026-10-25T19:33:22.206Z"
+}

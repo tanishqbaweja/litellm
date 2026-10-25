@@ -1,0 +1,29 @@
+......F.                                                                 [100%]
+=================================== FAILURES ===================================
+__________________ test_none_weight_keeps_rate_based_routing ___________________
+tests/unit/types/test_router.py:64: in test_none_weight_keeps_rate_based_routing
+    deployments: Final = tuple(
+tests/unit/types/test_router.py:65: in <genexpr>
+    {"litellm_params": GenericLiteLLMParams(weight=None, rpm=rpm).model_dump(exclude_none=True)} for rpm in (100, 0)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   pydantic_core._pydantic_core.ValidationError: 1 validation error for GenericLiteLLMParams
+E   weight
+E     Input should be a valid number [type=float_type, input_value=None, input_type=NoneType]
+E       For further information visit https://errors.pydantic.dev/2.13/v/float_type
+=============================== warnings summary ===============================
+tests/unit/types/test_router.py::test_numeric_string_routing_params_select_the_nonzero_deployment[weight-1.5-0_0]
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'index' on TypedDict class 'ChatCompletionThinkingBlock' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/types/test_router.py::test_numeric_string_routing_params_select_the_nonzero_deployment[weight-1.5-0_0]
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'index' on TypedDict class 'ChatCompletionRedactedThinkingBlock' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+tests/unit/types/test_router.py::test_numeric_string_routing_params_select_the_nonzero_deployment[weight-1.5-0_0]
+  /opt/litellm-venv/lib/python3.12/site-packages/pydantic/_internal/_generate_schema.py:1480: UserWarning: Item 'summary' on TypedDict class 'ChatCompletionReasoningItem' is using the `ReadOnly` qualifier. Pydantic will not protect items from any mutation on dictionary instances.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/unit/types/test_router.py::test_none_weight_keeps_rate_based_routing
+1 failed, 7 passed, 93 deselected, 3 warnings in 0.32s

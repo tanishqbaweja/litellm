@@ -1,0 +1,1405 @@
+{
+  "revision": "baseline",
+  "source_sha": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "started_at": "2026-10-25T19:21:45.137867+00:00",
+  "model_configuration": [
+    {
+      "group": "qa-weight-int-36095",
+      "id": "qa-weight-int-36095-preferred",
+      "metric": "weight",
+      "value": "100",
+      "value_type": "str",
+      "weight": "100"
+    },
+    {
+      "group": "qa-weight-int-36095",
+      "id": "qa-weight-int-36095-zero",
+      "metric": "weight",
+      "value": "0",
+      "value_type": "str",
+      "weight": "0"
+    },
+    {
+      "group": "qa-weight-frac-36095",
+      "id": "qa-weight-frac-36095-preferred",
+      "metric": "weight",
+      "value": "1.5",
+      "value_type": "str",
+      "weight": "1.5"
+    },
+    {
+      "group": "qa-weight-frac-36095",
+      "id": "qa-weight-frac-36095-zero",
+      "metric": "weight",
+      "value": "0",
+      "value_type": "str",
+      "weight": "0"
+    },
+    {
+      "group": "qa-weight-numeric-36095",
+      "id": "qa-weight-numeric-36095-preferred",
+      "metric": "weight",
+      "value": 1.5,
+      "value_type": "float",
+      "weight": 1.5
+    },
+    {
+      "group": "qa-weight-numeric-36095",
+      "id": "qa-weight-numeric-36095-zero",
+      "metric": "weight",
+      "value": 0,
+      "value_type": "int",
+      "weight": 0
+    },
+    {
+      "group": "qa-weight-none-36095",
+      "id": "qa-weight-none-36095-preferred",
+      "metric": "rpm",
+      "value": 1000000,
+      "value_type": "int",
+      "weight": null
+    },
+    {
+      "group": "qa-weight-none-36095",
+      "id": "qa-weight-none-36095-zero",
+      "metric": "rpm",
+      "value": 0,
+      "value_type": "int",
+      "weight": null
+    },
+    {
+      "group": "qa-rpm-env-36095",
+      "id": "qa-rpm-env-36095-preferred",
+      "metric": "rpm",
+      "value": 1000000,
+      "value_type": "int",
+      "weight": null
+    },
+    {
+      "group": "qa-rpm-env-36095",
+      "id": "qa-rpm-env-36095-zero",
+      "metric": "rpm",
+      "value": 0,
+      "value_type": "int",
+      "weight": null
+    },
+    {
+      "group": "qa-tpm-env-36095",
+      "id": "qa-tpm-env-36095-preferred",
+      "metric": "tpm",
+      "value": 1000000,
+      "value_type": "int",
+      "weight": null
+    },
+    {
+      "group": "qa-tpm-env-36095",
+      "id": "qa-tpm-env-36095-zero",
+      "metric": "tpm",
+      "value": 0,
+      "value_type": "int",
+      "weight": null
+    }
+  ],
+  "cases": [
+    {
+      "group": "qa-weight-int-36095",
+      "endpoint": "/v1/chat/completions",
+      "stream": false,
+      "status": 500,
+      "request_body": {
+        "model": "qa-weight-int-36095",
+        "stream": false,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Reply with only: Weights work. Verification reference ae6bd9cf14d3"
+          }
+        ],
+        "max_tokens": 48
+      },
+      "response_body": {
+        "error": {
+          "message": "Deployment weight must be numeric",
+          "type": "internal_server_error",
+          "param": null,
+          "code": "500"
+        }
+      },
+      "headers": {
+        "x-litellm-call-id": "51ad7008-bfdb-48f4-ac86-8e5e6f0dffb1"
+      },
+      "result": "reported bug reproduced"
+    },
+    {
+      "group": "qa-weight-frac-36095",
+      "endpoint": "/v1/chat/completions",
+      "stream": false,
+      "status": 500,
+      "request_body": {
+        "model": "qa-weight-frac-36095",
+        "stream": false,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Reply with only: Weights work. Verification reference b1391f692537"
+          }
+        ],
+        "max_tokens": 48
+      },
+      "response_body": {
+        "error": {
+          "message": "Deployment weight must be numeric",
+          "type": "internal_server_error",
+          "param": null,
+          "code": "500"
+        }
+      },
+      "headers": {
+        "x-litellm-call-id": "e17a73ba-83c6-4095-8346-1a6a80833c69"
+      },
+      "result": "reported bug reproduced"
+    },
+    {
+      "group": "qa-weight-numeric-36095",
+      "endpoint": "/v1/chat/completions",
+      "stream": false,
+      "status": 200,
+      "request_body": {
+        "model": "qa-weight-numeric-36095",
+        "stream": false,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Reply with only: Weights work. Verification reference 3780ec8e5397"
+          }
+        ],
+        "max_tokens": 48
+      },
+      "response_body": {
+        "id": "chatcmpl-a282f6a7-ae23-47f6-93b0-e6c21a41ee83",
+        "created": 1792956143,
+        "model": "qa-weight-numeric-36095",
+        "object": "chat.completion",
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "message": {
+              "content": "Weights work. Verification reference 3780ec8e5397",
+              "role": "assistant"
+            }
+          }
+        ],
+        "usage": {
+          "completion_tokens": 19,
+          "prompt_tokens": 34,
+          "total_tokens": 53
+        }
+      },
+      "headers": {
+        "x-litellm-call-id": "fed8d198-5d3f-4ace-8e9f-9a3d7e30180b",
+        "x-litellm-model-id": "qa-weight-numeric-36095-preferred",
+        "x-litellm-model-name": "ollama_chat/qa-qwen3.5-0.8b",
+        "x-litellm-model-api-base": "http://127.0.0.1:11434"
+      },
+      "generated_content": "Weights work. Verification reference 3780ec8e5397",
+      "result": "preferred deployment selected"
+    },
+    {
+      "group": "qa-weight-none-36095",
+      "endpoint": "/v1/chat/completions",
+      "stream": false,
+      "status": 200,
+      "request_body": {
+        "model": "qa-weight-none-36095",
+        "stream": false,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Reply with only: Weights work. Verification reference 1957b575b0f4"
+          }
+        ],
+        "max_tokens": 48
+      },
+      "response_body": {
+        "id": "chatcmpl-aac69d11-5b99-45df-b5db-1d04d3eb8ae8",
+        "created": 1792956143,
+        "model": "qa-weight-none-36095",
+        "object": "chat.completion",
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "message": {
+              "content": "Weights work. Verification reference 1957b575b0f4",
+              "role": "assistant"
+            }
+          }
+        ],
+        "usage": {
+          "completion_tokens": 20,
+          "prompt_tokens": 35,
+          "total_tokens": 55
+        }
+      },
+      "headers": {
+        "x-litellm-call-id": "e74e6497-7775-4eb6-a6d9-11a193102650",
+        "x-litellm-model-id": "qa-weight-none-36095-preferred",
+        "x-litellm-model-name": "ollama_chat/qa-qwen3.5-0.8b",
+        "x-litellm-model-api-base": "http://127.0.0.1:11434"
+      },
+      "generated_content": "Weights work. Verification reference 1957b575b0f4",
+      "result": "preferred deployment selected"
+    },
+    {
+      "group": "qa-rpm-env-36095",
+      "endpoint": "/v1/chat/completions",
+      "stream": false,
+      "status": 200,
+      "request_body": {
+        "model": "qa-rpm-env-36095",
+        "stream": false,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Reply with only: Weights work. Verification reference aed73109fdea"
+          }
+        ],
+        "max_tokens": 48
+      },
+      "response_body": {
+        "id": "chatcmpl-7ec67437-1266-4b0c-973f-f6e9411ef528",
+        "created": 1792956144,
+        "model": "qa-rpm-env-36095",
+        "object": "chat.completion",
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "message": {
+              "content": "Weights work. Verification reference aed73109fdea",
+              "role": "assistant"
+            }
+          }
+        ],
+        "usage": {
+          "completion_tokens": 15,
+          "prompt_tokens": 31,
+          "total_tokens": 46
+        }
+      },
+      "headers": {
+        "x-litellm-call-id": "12510f16-f7c8-4892-ad7c-63039371645d",
+        "x-litellm-model-id": "qa-rpm-env-36095-preferred",
+        "x-litellm-model-name": "ollama_chat/qa-qwen3.5-0.8b",
+        "x-litellm-model-api-base": "http://127.0.0.1:11434"
+      },
+      "generated_content": "Weights work. Verification reference aed73109fdea",
+      "result": "preferred deployment selected"
+    },
+    {
+      "group": "qa-tpm-env-36095",
+      "endpoint": "/v1/chat/completions",
+      "stream": false,
+      "status": 200,
+      "request_body": {
+        "model": "qa-tpm-env-36095",
+        "stream": false,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Reply with only: Weights work. Verification reference 3f7f7affec93"
+          }
+        ],
+        "max_tokens": 48
+      },
+      "response_body": {
+        "id": "chatcmpl-38f4672e-927e-4524-8bb3-ae5238d87a95",
+        "created": 1792956145,
+        "model": "qa-tpm-env-36095",
+        "object": "chat.completion",
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "message": {
+              "content": "Weights work. Verification reference 3f7f7affec93",
+              "role": "assistant"
+            }
+          }
+        ],
+        "usage": {
+          "completion_tokens": 17,
+          "prompt_tokens": 32,
+          "total_tokens": 49
+        }
+      },
+      "headers": {
+        "x-litellm-call-id": "1220ee09-bd63-4a24-99a8-71464dc13ff3",
+        "x-litellm-model-id": "qa-tpm-env-36095-preferred",
+        "x-litellm-model-name": "ollama_chat/qa-qwen3.5-0.8b",
+        "x-litellm-model-api-base": "http://127.0.0.1:11434"
+      },
+      "generated_content": "Weights work. Verification reference 3f7f7affec93",
+      "result": "preferred deployment selected"
+    },
+    {
+      "group": "qa-weight-int-36095",
+      "endpoint": "/v1/chat/completions",
+      "stream": true,
+      "status": 500,
+      "request_body": {
+        "model": "qa-weight-int-36095",
+        "stream": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Reply with only: Weights work. Verification reference cd64f2966d5e"
+          }
+        ],
+        "max_tokens": 48
+      },
+      "response_body": {
+        "error": {
+          "message": "Deployment weight must be numeric",
+          "type": "internal_server_error",
+          "param": null,
+          "code": "500"
+        }
+      },
+      "headers": {
+        "x-litellm-call-id": "de52e0d0-4101-45a9-bf19-db82da3fcdef"
+      },
+      "result": "reported bug reproduced"
+    },
+    {
+      "group": "qa-weight-frac-36095",
+      "endpoint": "/v1/chat/completions",
+      "stream": true,
+      "status": 500,
+      "request_body": {
+        "model": "qa-weight-frac-36095",
+        "stream": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Reply with only: Weights work. Verification reference 91a2a3513c70"
+          }
+        ],
+        "max_tokens": 48
+      },
+      "response_body": {
+        "error": {
+          "message": "Deployment weight must be numeric",
+          "type": "internal_server_error",
+          "param": null,
+          "code": "500"
+        }
+      },
+      "headers": {
+        "x-litellm-call-id": "6f9f842b-e122-47c5-b772-407f29925c90"
+      },
+      "result": "reported bug reproduced"
+    },
+    {
+      "group": "qa-weight-numeric-36095",
+      "endpoint": "/v1/chat/completions",
+      "stream": true,
+      "status": 200,
+      "request_body": {
+        "model": "qa-weight-numeric-36095",
+        "stream": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Reply with only: Weights work. Verification reference c309dbee1c59"
+          }
+        ],
+        "max_tokens": 48
+      },
+      "response_body": "data: {\"id\":\"e8414281-0d58-4e3e-8e74-85f4afc30d39\",\"object\":\"chat.completion.chunk\",\"created\":1792956146,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"role\":\"assistant\",\"content\":\"Weights\"}}]}\n\ndata: {\"id\":\"ff3e95c4-5cfc-4223-aefe-218aed75e588\",\"object\":\"chat.completion.chunk\",\"created\":1792956146,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" work\"}}]}\n\ndata: {\"id\":\"4e612023-fc49-4fe6-ae7b-e654e08ad70b\",\"object\":\"chat.completion.chunk\",\"created\":1792956146,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\".\"}}]}\n\ndata: {\"id\":\"54ef6b01-3923-43cd-80e8-ca2510f20e5d\",\"object\":\"chat.completion.chunk\",\"created\":1792956146,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" Verification\"}}]}\n\ndata: {\"id\":\"c4fbfcf1-22b0-4ca6-83b0-3efb37aeb9e1\",\"object\":\"chat.completion.chunk\",\"created\":1792956146,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" reference\"}}]}\n\ndata: {\"id\":\"38110df3-3292-46c0-a310-0fb233aaf543\",\"object\":\"chat.completion.chunk\",\"created\":1792956146,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" c\"}}]}\n\ndata: {\"id\":\"aaa518d5-ca30-4ae9-8f80-a7a18aa88007\",\"object\":\"chat.completion.chunk\",\"created\":1792956146,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"3\"}}]}\n\ndata: {\"id\":\"a88bf832-ddfe-4491-8672-33ac5cb74127\",\"object\":\"chat.completion.chunk\",\"created\":1792956146,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"0\"}}]}\n\ndata: {\"id\":\"11134b86-6e33-4888-ae85-d7d8cd17533a\",\"object\":\"chat.completion.chunk\",\"created\":1792956146,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"9\"}}]}\n\ndata: {\"id\":\"0fe3fdce-2406-46aa-abef-e4411e27277e\",\"object\":\"chat.completion.chunk\",\"created\":1792956146,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"d\"}}]}\n\ndata: {\"id\":\"5e057ccc-034c-479c-b5ae-7f5ab6be6dd1\",\"object\":\"chat.completion.chunk\",\"created\":1792956146,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"bee\"}}]}\n\ndata: {\"id\":\"12172e02-a11d-4778-965f-c5efbc6b6f02\",\"object\":\"chat.completion.chunk\",\"created\":1792956146,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"1\"}}]}\n\ndata: {\"id\":\"494dc809-8a25-4635-84fa-3aff50a40cfc\",\"object\":\"chat.completion.chunk\",\"created\":1792956146,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"c\"}}]}\n\ndata: {\"id\":\"0b1bb692-6565-4e8a-84e7-fce139a707b6\",\"object\":\"chat.completion.chunk\",\"created\":1792956146,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"5\"}}]}\n\ndata: {\"id\":\"25cc8be1-7a47-4fc4-8e67-1119999a2066\",\"object\":\"chat.completion.chunk\",\"created\":1792956146,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"9\"}}]}\n\ndata: {\"id\":\"54c9f910-16bb-4168-a5c4-6a2ecc8424f1\",\"object\":\"chat.completion.chunk\",\"created\":1792956146,\"model\":\"qa-weight-numeric-36095\",\"choices\":[{\"index\":0,\"delta\":{},\"finish_reason\":\"stop\"}]}\n\ndata: [DONE]\n\n",
+      "headers": {
+        "x-litellm-call-id": "151cb594-0385-4c62-bc68-5cea40fa0d1c",
+        "x-litellm-model-id": "qa-weight-numeric-36095-preferred",
+        "x-litellm-model-name": "ollama_chat/qa-qwen3.5-0.8b",
+        "x-litellm-model-api-base": "http://127.0.0.1:11434"
+      },
+      "generated_content": "Weights work. Verification reference c309dbee1c59",
+      "result": "preferred deployment selected"
+    },
+    {
+      "group": "qa-weight-none-36095",
+      "endpoint": "/v1/chat/completions",
+      "stream": true,
+      "status": 200,
+      "request_body": {
+        "model": "qa-weight-none-36095",
+        "stream": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Reply with only: Weights work. Verification reference 449d80520edf"
+          }
+        ],
+        "max_tokens": 48
+      },
+      "response_body": "data: {\"id\":\"2b69d8fd-aa7f-40dd-91da-3a1b048df6f4\",\"object\":\"chat.completion.chunk\",\"created\":1792956146,\"model\":\"qa-weight-none-36095\",\"choices\":[{\"index\":0,\"delta\":{\"role\":\"assistant\",\"content\":\"Weights\"}}]}\n\ndata: {\"id\":\"30805d0e-a495-42e9-bbe4-7828e057237d\",\"object\":\"chat.completion.chunk\",\"created\":1792956146,\"model\":\"qa-weight-none-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" work\"}}]}\n\ndata: {\"id\":\"17eaf44e-4988-42ec-97c5-86ca5acc972e\",\"object\":\"chat.completion.chunk\",\"created\":1792956146,\"model\":\"qa-weight-none-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\".\"}}]}\n\ndata: {\"id\":\"01d162a5-cd31-491a-91e3-113a7986e971\",\"object\":\"chat.completion.chunk\",\"created\":1792956146,\"model\":\"qa-weight-none-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" Verification\"}}]}\n\ndata: {\"id\":\"f24efb66-d5e8-4dcd-bc44-9585dc964b5f\",\"object\":\"chat.completion.chunk\",\"created\":1792956146,\"model\":\"qa-weight-none-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" reference\"}}]}\n\ndata: {\"id\":\"1165d001-841a-4e5f-8dc8-ddbcf02ea391\",\"object\":\"chat.completion.chunk\",\"created\":1792956146,\"model\":\"qa-weight-none-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" \"}}]}\n\ndata: {\"id\":\"e41ffb8b-a0e2-4573-a445-a1d9856d565b\",\"object\":\"chat.completion.chunk\",\"created\":1792956146,\"model\":\"qa-weight-none-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"4\"}}]}\n\ndata: {\"id\":\"b89096b9-d7ee-40f6-b11f-e574306d622d\",\"object\":\"chat.completion.chunk\",\"created\":1792956146,\"model\":\"qa-weight-none-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"4\"}}]}\n\ndata: {\"id\":\"100af2ac-1838-4d11-bbee-bbcfbb13882d\",\"object\":\"chat.completion.chunk\",\"created\":1792956146,\"model\":\"qa-weight-none-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"9\"}}]}\n\ndata: {\"id\":\"29903d12-bc30-4740-88cb-bbf743bf314d\",\"object\":\"chat.completion.chunk\",\"created\":1792956146,\"model\":\"qa-weight-none-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"d\"}}]}\n\ndata: {\"id\":\"4d9ac02b-d895-47d1-a8e6-1f3bc1a225ae\",\"object\":\"chat.completion.chunk\",\"created\":1792956146,\"model\":\"qa-weight-none-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"8\"}}]}\n\ndata: {\"id\":\"78b93707-7820-498f-a764-22ebfa7c550b\",\"object\":\"chat.completion.chunk\",\"created\":1792956146,\"model\":\"qa-weight-none-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"0\"}}]}\n\ndata: {\"id\":\"e5de2a6b-583f-42ac-87fe-f8bc766a11c8\",\"object\":\"chat.completion.chunk\",\"created\":1792956146,\"model\":\"qa-weight-none-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"5\"}}]}\n\ndata: {\"id\":\"94424cb9-6cd5-4d49-9da6-2af1e535a2f1\",\"object\":\"chat.completion.chunk\",\"created\":1792956146,\"model\":\"qa-weight-none-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"2\"}}]}\n\ndata: {\"id\":\"8a26eef5-1a8b-4024-9677-be3f6b19c0db\",\"object\":\"chat.completion.chunk\",\"created\":1792956146,\"model\":\"qa-weight-none-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"0\"}}]}\n\ndata: {\"id\":\"a00eea59-d4f3-4345-bd3b-e9a29fdb56b9\",\"object\":\"chat.completion.chunk\",\"created\":1792956146,\"model\":\"qa-weight-none-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"ed\"}}]}\n\ndata: {\"id\":\"36457cd8-5b4f-4507-a5c3-6d83a25257d5\",\"object\":\"chat.completion.chunk\",\"created\":1792956146,\"model\":\"qa-weight-none-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"f\"}}]}\n\ndata: {\"id\":\"33446488-fc95-44e8-91ce-34e1e31a6bf8\",\"object\":\"chat.completion.chunk\",\"created\":1792956146,\"model\":\"qa-weight-none-36095\",\"choices\":[{\"index\":0,\"delta\":{},\"finish_reason\":\"stop\"}]}\n\ndata: [DONE]\n\n",
+      "headers": {
+        "x-litellm-call-id": "ba254aff-c104-4416-a4b1-cf6420f784cb",
+        "x-litellm-model-id": "qa-weight-none-36095-preferred",
+        "x-litellm-model-name": "ollama_chat/qa-qwen3.5-0.8b",
+        "x-litellm-model-api-base": "http://127.0.0.1:11434"
+      },
+      "generated_content": "Weights work. Verification reference 449d80520edf",
+      "result": "preferred deployment selected"
+    },
+    {
+      "group": "qa-rpm-env-36095",
+      "endpoint": "/v1/chat/completions",
+      "stream": true,
+      "status": 200,
+      "request_body": {
+        "model": "qa-rpm-env-36095",
+        "stream": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Reply with only: Weights work. Verification reference 833b40c2a297"
+          }
+        ],
+        "max_tokens": 48
+      },
+      "response_body": "data: {\"id\":\"c7ea390c-c8ca-4814-9c8e-b7288a207bc3\",\"object\":\"chat.completion.chunk\",\"created\":1792956147,\"model\":\"qa-rpm-env-36095\",\"choices\":[{\"index\":0,\"delta\":{\"role\":\"assistant\",\"content\":\"Weights\"}}]}\n\ndata: {\"id\":\"23714d6c-338d-42ca-965d-06cf4ad80ef0\",\"object\":\"chat.completion.chunk\",\"created\":1792956147,\"model\":\"qa-rpm-env-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" work\"}}]}\n\ndata: {\"id\":\"a969ee13-ee79-4a37-8e0f-84ba2ced6573\",\"object\":\"chat.completion.chunk\",\"created\":1792956147,\"model\":\"qa-rpm-env-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\".\"}}]}\n\ndata: {\"id\":\"57dacd56-1b1d-4be7-8034-0d780548e83d\",\"object\":\"chat.completion.chunk\",\"created\":1792956147,\"model\":\"qa-rpm-env-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" Verification\"}}]}\n\ndata: {\"id\":\"39340f93-9602-425e-8318-87ae870e299f\",\"object\":\"chat.completion.chunk\",\"created\":1792956147,\"model\":\"qa-rpm-env-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" reference\"}}]}\n\ndata: {\"id\":\"a39ff47b-01f6-44f1-ac1e-b5b3eafe7301\",\"object\":\"chat.completion.chunk\",\"created\":1792956147,\"model\":\"qa-rpm-env-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" \"}}]}\n\ndata: {\"id\":\"ef8d445d-b952-496f-83d6-a7f84660971a\",\"object\":\"chat.completion.chunk\",\"created\":1792956147,\"model\":\"qa-rpm-env-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"8\"}}]}\n\ndata: {\"id\":\"a2bacbd2-4382-411d-86c6-a3c2c673618f\",\"object\":\"chat.completion.chunk\",\"created\":1792956147,\"model\":\"qa-rpm-env-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"3\"}}]}\n\ndata: {\"id\":\"919bacde-2bf0-487c-92dd-3a155143f876\",\"object\":\"chat.completion.chunk\",\"created\":1792956147,\"model\":\"qa-rpm-env-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"3\"}}]}\n\ndata: {\"id\":\"45e7d625-aea9-4ef4-97c1-bb320c4aec12\",\"object\":\"chat.completion.chunk\",\"created\":1792956147,\"model\":\"qa-rpm-env-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"b\"}}]}\n\ndata: {\"id\":\"42a0cf7c-6271-487e-887d-477c45cd5869\",\"object\":\"chat.completion.chunk\",\"created\":1792956147,\"model\":\"qa-rpm-env-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"4\"}}]}\n\ndata: {\"id\":\"3d564d1d-ffb0-462a-b8f2-fc298dfa736e\",\"object\":\"chat.completion.chunk\",\"created\":1792956147,\"model\":\"qa-rpm-env-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"0\"}}]}\n\ndata: {\"id\":\"798e4688-31f6-48f2-b911-0b10261cfd84\",\"object\":\"chat.completion.chunk\",\"created\":1792956147,\"model\":\"qa-rpm-env-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"c\"}}]}\n\ndata: {\"id\":\"4c1d05b4-38fe-4ca5-b08e-e1eef89fa5f7\",\"object\":\"chat.completion.chunk\",\"created\":1792956147,\"model\":\"qa-rpm-env-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"2\"}}]}\n\ndata: {\"id\":\"91de1636-9758-439e-b50f-cee34e8b15fd\",\"object\":\"chat.completion.chunk\",\"created\":1792956147,\"model\":\"qa-rpm-env-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"a\"}}]}\n\ndata: {\"id\":\"39aa8080-f3a3-403e-a7a6-d685de41c0b5\",\"object\":\"chat.completion.chunk\",\"created\":1792956147,\"model\":\"qa-rpm-env-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"2\"}}]}\n\ndata: {\"id\":\"ce78eab7-9f86-4843-85ce-7b3b7ab1a985\",\"object\":\"chat.completion.chunk\",\"created\":1792956147,\"model\":\"qa-rpm-env-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"9\"}}]}\n\ndata: {\"id\":\"2f1b32b3-bd6a-48a8-878e-4eee84dd5b31\",\"object\":\"chat.completion.chunk\",\"created\":1792956147,\"model\":\"qa-rpm-env-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"7\"}}]}\n\ndata: {\"id\":\"ddaf458e-1178-4b17-b636-72b449b0895f\",\"object\":\"chat.completion.chunk\",\"created\":1792956147,\"model\":\"qa-rpm-env-36095\",\"choices\":[{\"index\":0,\"delta\":{},\"finish_reason\":\"stop\"}]}\n\ndata: [DONE]\n\n",
+      "headers": {
+        "x-litellm-call-id": "57d9ccf5-fac7-4ca8-8d06-b49fc09fb27d",
+        "x-litellm-model-id": "qa-rpm-env-36095-preferred",
+        "x-litellm-model-name": "ollama_chat/qa-qwen3.5-0.8b",
+        "x-litellm-model-api-base": "http://127.0.0.1:11434"
+      },
+      "generated_content": "Weights work. Verification reference 833b40c2a297",
+      "result": "preferred deployment selected"
+    },
+    {
+      "group": "qa-tpm-env-36095",
+      "endpoint": "/v1/chat/completions",
+      "stream": true,
+      "status": 200,
+      "request_body": {
+        "model": "qa-tpm-env-36095",
+        "stream": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Reply with only: Weights work. Verification reference d9989e6e936f"
+          }
+        ],
+        "max_tokens": 48
+      },
+      "response_body": "data: {\"id\":\"5c66e888-7248-4588-bbf2-8f4081305fb7\",\"object\":\"chat.completion.chunk\",\"created\":1792956148,\"model\":\"qa-tpm-env-36095\",\"choices\":[{\"index\":0,\"delta\":{\"role\":\"assistant\",\"content\":\"Weights\"}}]}\n\ndata: {\"id\":\"0a039a67-c4b6-4c9d-8485-00689cd77893\",\"object\":\"chat.completion.chunk\",\"created\":1792956148,\"model\":\"qa-tpm-env-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" work\"}}]}\n\ndata: {\"id\":\"a48bba33-d96e-4540-b366-e523cafdcee1\",\"object\":\"chat.completion.chunk\",\"created\":1792956148,\"model\":\"qa-tpm-env-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\".\"}}]}\n\ndata: {\"id\":\"e73809c3-b3f8-4d0d-98a1-8297f9a75f0c\",\"object\":\"chat.completion.chunk\",\"created\":1792956148,\"model\":\"qa-tpm-env-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" Verification\"}}]}\n\ndata: {\"id\":\"c548b1b3-1a88-45ed-b948-f1f666156eef\",\"object\":\"chat.completion.chunk\",\"created\":1792956148,\"model\":\"qa-tpm-env-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" reference\"}}]}\n\ndata: {\"id\":\"39862dbd-7eae-4ff1-a2ff-064f14c104bc\",\"object\":\"chat.completion.chunk\",\"created\":1792956148,\"model\":\"qa-tpm-env-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\" d\"}}]}\n\ndata: {\"id\":\"94671e60-fec1-4238-9761-05642a31d863\",\"object\":\"chat.completion.chunk\",\"created\":1792956148,\"model\":\"qa-tpm-env-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"9\"}}]}\n\ndata: {\"id\":\"d9bd6e33-bc9a-43ae-b431-15ba524a52c6\",\"object\":\"chat.completion.chunk\",\"created\":1792956148,\"model\":\"qa-tpm-env-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"9\"}}]}\n\ndata: {\"id\":\"17aa0bb9-f9ed-486f-b6e5-8c385a4bcf1f\",\"object\":\"chat.completion.chunk\",\"created\":1792956148,\"model\":\"qa-tpm-env-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"8\"}}]}\n\ndata: {\"id\":\"1a7961ed-b634-4e92-ac5e-99b3090363ab\",\"object\":\"chat.completion.chunk\",\"created\":1792956148,\"model\":\"qa-tpm-env-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"9\"}}]}\n\ndata: {\"id\":\"cacd9536-b1e7-4170-9296-bf2566c0d7b8\",\"object\":\"chat.completion.chunk\",\"created\":1792956148,\"model\":\"qa-tpm-env-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"e\"}}]}\n\ndata: {\"id\":\"7810c956-cff1-4aaf-9e8b-70e8d21e1ab1\",\"object\":\"chat.completion.chunk\",\"created\":1792956148,\"model\":\"qa-tpm-env-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"6\"}}]}\n\ndata: {\"id\":\"76870353-5e2f-46fe-9662-272500c22403\",\"object\":\"chat.completion.chunk\",\"created\":1792956148,\"model\":\"qa-tpm-env-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"e\"}}]}\n\ndata: {\"id\":\"8be3bd3d-b1a8-4218-8dea-0a581d18db7f\",\"object\":\"chat.completion.chunk\",\"created\":1792956148,\"model\":\"qa-tpm-env-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"9\"}}]}\n\ndata: {\"id\":\"6f85e8d6-e330-477e-998e-6e1874b71488\",\"object\":\"chat.completion.chunk\",\"created\":1792956148,\"model\":\"qa-tpm-env-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"3\"}}]}\n\ndata: {\"id\":\"6c005426-bcb2-4d56-a573-cae81d257363\",\"object\":\"chat.completion.chunk\",\"created\":1792956148,\"model\":\"qa-tpm-env-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"6\"}}]}\n\ndata: {\"id\":\"1b931acb-8340-4579-b9f6-7915d1e3fba5\",\"object\":\"chat.completion.chunk\",\"created\":1792956148,\"model\":\"qa-tpm-env-36095\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"f\"}}]}\n\ndata: {\"id\":\"00c10dd8-ed3d-4d71-8ed8-44183ddc56ca\",\"object\":\"chat.completion.chunk\",\"created\":1792956148,\"model\":\"qa-tpm-env-36095\",\"choices\":[{\"index\":0,\"delta\":{},\"finish_reason\":\"stop\"}]}\n\ndata: [DONE]\n\n",
+      "headers": {
+        "x-litellm-call-id": "5e3eb539-6a9b-4979-b875-4cae30a3bcb7",
+        "x-litellm-model-id": "qa-tpm-env-36095-preferred",
+        "x-litellm-model-name": "ollama_chat/qa-qwen3.5-0.8b",
+        "x-litellm-model-api-base": "http://127.0.0.1:11434"
+      },
+      "generated_content": "Weights work. Verification reference d9989e6e936f",
+      "result": "preferred deployment selected"
+    },
+    {
+      "group": "qa-weight-int-36095",
+      "endpoint": "/v1/responses",
+      "stream": false,
+      "status": 500,
+      "request_body": {
+        "model": "qa-weight-int-36095",
+        "stream": false,
+        "input": "Reply with only: Weights work. Verification reference 45b588a21c93",
+        "max_output_tokens": 48
+      },
+      "response_body": {
+        "error": {
+          "message": "Deployment weight must be numeric",
+          "type": "internal_server_error",
+          "param": null,
+          "code": "500"
+        }
+      },
+      "headers": {
+        "x-litellm-call-id": "caa8de98-0bc7-4382-a5c9-61f3e38a25e7"
+      },
+      "result": "reported bug reproduced"
+    },
+    {
+      "group": "qa-weight-frac-36095",
+      "endpoint": "/v1/responses",
+      "stream": false,
+      "status": 500,
+      "request_body": {
+        "model": "qa-weight-frac-36095",
+        "stream": false,
+        "input": "Reply with only: Weights work. Verification reference a1cc421e1105",
+        "max_output_tokens": 48
+      },
+      "response_body": {
+        "error": {
+          "message": "Deployment weight must be numeric",
+          "type": "internal_server_error",
+          "param": null,
+          "code": "500"
+        }
+      },
+      "headers": {
+        "x-litellm-call-id": "a49942db-7c16-4110-bbce-c9f92dd21d56"
+      },
+      "result": "reported bug reproduced"
+    },
+    {
+      "group": "qa-weight-numeric-36095",
+      "endpoint": "/v1/responses",
+      "stream": false,
+      "status": 200,
+      "request_body": {
+        "model": "qa-weight-numeric-36095",
+        "stream": false,
+        "input": "Reply with only: Weights work. Verification reference 9f654ef03893",
+        "max_output_tokens": 48
+      },
+      "response_body": {
+        "id": "resp_TbIAzGh-siH1Sdlsr7PxMpbVUqgJ4wtNKILgH54VfNcyIpIArDmJDNtF8W9Cnjwvj5-5CufN1GGu0ENDl_jnM2R40tnvS2R6wipcHVn5jjjlhZ0R44gkdkICRJntXNNZHupSRdB9-7BhoVYugtEs9447Tvq0I90BigwxjwdwssgR6UiNctTV30d_WyilYA9ZAi2knsuF6u9hU4DTiw6jSXOMRvtMUDgHX2capIJKeiDidcmHYNx7hYMvN-5G_PQNmC1s6ubWsQ86bQAFh3Qwihm_erMeotNqUKzYRqWpVsMNjOL7njXABQ76Ax0eqskvNjy3Al0NR-yHIFcjoyBWlM8iGnQJbj8uglbdLR5ETp8re7FdI6q8pnN4opOo9hEkTAqo",
+        "created_at": 1792956151,
+        "error": null,
+        "incomplete_details": null,
+        "instructions": null,
+        "metadata": {},
+        "model": "qa-weight-numeric-36095",
+        "object": "response",
+        "output": [
+          {
+            "type": "message",
+            "id": "msg_7198c6df-b7ec-44a2-aa1f-3408d48a54c5",
+            "status": "completed",
+            "role": "assistant",
+            "content": [
+              {
+                "type": "output_text",
+                "text": "Weights work. Verification reference 9f654ef03893",
+                "annotations": []
+              }
+            ],
+            "phase": null
+          }
+        ],
+        "parallel_tool_calls": false,
+        "temperature": 0.0,
+        "tool_choice": "auto",
+        "tools": [],
+        "top_p": null,
+        "max_output_tokens": 48,
+        "previous_response_id": null,
+        "reasoning": {
+          "effort": "none"
+        },
+        "status": "completed",
+        "text": {},
+        "truncation": null,
+        "usage": {
+          "input_tokens": 34,
+          "input_tokens_details": null,
+          "output_tokens": 19,
+          "output_tokens_details": null,
+          "total_tokens": 53,
+          "cost": null
+        },
+        "user": null,
+        "store": null
+      },
+      "headers": {
+        "x-litellm-call-id": "7d50ce03-0840-4bfa-aacf-77fd8699ec94",
+        "x-litellm-model-id": "qa-weight-numeric-36095-preferred",
+        "x-litellm-model-name": "ollama_chat/qa-qwen3.5-0.8b",
+        "x-litellm-model-api-base": "http://127.0.0.1:11434"
+      },
+      "generated_content": "Weights work. Verification reference 9f654ef03893",
+      "result": "preferred deployment selected"
+    },
+    {
+      "group": "qa-weight-none-36095",
+      "endpoint": "/v1/responses",
+      "stream": false,
+      "status": 200,
+      "request_body": {
+        "model": "qa-weight-none-36095",
+        "stream": false,
+        "input": "Reply with only: Weights work. Verification reference f08dd7e5e1f3",
+        "max_output_tokens": 48
+      },
+      "response_body": {
+        "id": "resp_wp1HeMlJ8qVMpS9n0SikAT2V1ZFl5mkfXDwKyfgLRIRN7rwWbmkw_UMmlJopX3jp_PzWtMQsUlTGcGsY1OeRKZRCkL3gEjqIxLN6V7ZKD_-ItSmHIxLPC-l2oQVY33tKR8MDq3e7bYhLncw7sXgjTPa0vW-KTgeOiKyVgIepdV1NCQVfbFCS_npD5XhKVA2kijhiaJKvBiaHlvOp2KabEV5kwAYqN5v1rTIbPgUWerH77XK_hriqro0nyCQTF4wJKj6qq78DbtHVdClRJSH0ITefAAbTFcsvpFocdOmFaCPF52c24rILSB4Y3lcN2TiQEWRGGO0Gbzw58YRbD3oAgm9QdII2HaIuDE5apu4BH4mQGwdBBNE9UgaVe44Oux4=",
+        "created_at": 1792956152,
+        "error": null,
+        "incomplete_details": null,
+        "instructions": null,
+        "metadata": {},
+        "model": "qa-weight-none-36095",
+        "object": "response",
+        "output": [
+          {
+            "type": "message",
+            "id": "msg_80d343a3-e795-4afb-a447-e6ef93a1a82c",
+            "status": "completed",
+            "role": "assistant",
+            "content": [
+              {
+                "type": "output_text",
+                "text": "Weights work. Verification reference f08dd7e5e1f3",
+                "annotations": []
+              }
+            ],
+            "phase": null
+          }
+        ],
+        "parallel_tool_calls": false,
+        "temperature": 0.0,
+        "tool_choice": "auto",
+        "tools": [],
+        "top_p": null,
+        "max_output_tokens": 48,
+        "previous_response_id": null,
+        "reasoning": {
+          "effort": "none"
+        },
+        "status": "completed",
+        "text": {},
+        "truncation": null,
+        "usage": {
+          "input_tokens": 33,
+          "input_tokens_details": null,
+          "output_tokens": 17,
+          "output_tokens_details": null,
+          "total_tokens": 50,
+          "cost": null
+        },
+        "user": null,
+        "store": null
+      },
+      "headers": {
+        "x-litellm-call-id": "82ceaf25-3470-47b5-a4ad-d38b2b59bbc1",
+        "x-litellm-model-id": "qa-weight-none-36095-preferred",
+        "x-litellm-model-name": "ollama_chat/qa-qwen3.5-0.8b",
+        "x-litellm-model-api-base": "http://127.0.0.1:11434"
+      },
+      "generated_content": "Weights work. Verification reference f08dd7e5e1f3",
+      "result": "preferred deployment selected"
+    },
+    {
+      "group": "qa-rpm-env-36095",
+      "endpoint": "/v1/responses",
+      "stream": false,
+      "status": 200,
+      "request_body": {
+        "model": "qa-rpm-env-36095",
+        "stream": false,
+        "input": "Reply with only: Weights work. Verification reference 82c037a1d8d4",
+        "max_output_tokens": 48
+      },
+      "response_body": {
+        "id": "resp_PzewNEmoYyxa2py-flhQam0Pp7M03Bh169INnorxc0aKrQ3O8_IK2pJlWTk0j_7zcgL56HduVQVVya_CTtAsZXtVS6oknREYV8KWaQiWdmTNGSpHKKOIapP0e16uqsXqgqwI8gzKxauzH88S_jNSTXfNiidLYzdk2TyJF9M9O51VtpBJiM_Cm4ewUdRLJsc2xt_YikSyCbkx2tB7tHKx3V8ojk-tQhaqHX6BKgW919eLXaLp13SLEhPYLrMYad76Qr6ayB6qKcXGR-LvDxouwfAfeNEq0phh3RTkvSvmiEDb3LLgqaItUVS1E7Ob9axbXJ3Ck-IPH-n_GGOFSi9P1p1OGlcRqPPeBIlP6gPz1cv1J9cnPe5H8XLMCg==",
+        "created_at": 1792956153,
+        "error": null,
+        "incomplete_details": null,
+        "instructions": null,
+        "metadata": {},
+        "model": "qa-rpm-env-36095",
+        "object": "response",
+        "output": [
+          {
+            "type": "message",
+            "id": "msg_60db087c-8c51-4b89-accf-78f9c16e3aba",
+            "status": "completed",
+            "role": "assistant",
+            "content": [
+              {
+                "type": "output_text",
+                "text": "Weights work. Verification reference 82c037a1d8d4",
+                "annotations": []
+              }
+            ],
+            "phase": null
+          }
+        ],
+        "parallel_tool_calls": false,
+        "temperature": 0.0,
+        "tool_choice": "auto",
+        "tools": [],
+        "top_p": null,
+        "max_output_tokens": 48,
+        "previous_response_id": null,
+        "reasoning": {
+          "effort": "none"
+        },
+        "status": "completed",
+        "text": {},
+        "truncation": null,
+        "usage": {
+          "input_tokens": 35,
+          "input_tokens_details": null,
+          "output_tokens": 20,
+          "output_tokens_details": null,
+          "total_tokens": 55,
+          "cost": null
+        },
+        "user": null,
+        "store": null
+      },
+      "headers": {
+        "x-litellm-call-id": "9c86677c-de2f-489c-81dd-cae4e5a77425",
+        "x-litellm-model-id": "qa-rpm-env-36095-preferred",
+        "x-litellm-model-name": "ollama_chat/qa-qwen3.5-0.8b",
+        "x-litellm-model-api-base": "http://127.0.0.1:11434"
+      },
+      "generated_content": "Weights work. Verification reference 82c037a1d8d4",
+      "result": "preferred deployment selected"
+    },
+    {
+      "group": "qa-tpm-env-36095",
+      "endpoint": "/v1/responses",
+      "stream": false,
+      "status": 200,
+      "request_body": {
+        "model": "qa-tpm-env-36095",
+        "stream": false,
+        "input": "Reply with only: Weights work. Verification reference 110afc8c9c98",
+        "max_output_tokens": 48
+      },
+      "response_body": {
+        "id": "resp_rlT2HYOTqm9nOA5AyoaoMQePiHM_yIPj8MJgmrjzsLSFfYIq6X1KYAFPby0iLOFyXKsUf8j6aLGjy6OLezZHMiQdvxqAP02z--aoYKzr2LqHk3hXRj8AXBegXovVsNnavE-TOtstQyEk8hlTGCos62bVkmrIMPvxoRF2KTqGnIVaH4SzMipz5BKZZEi-z3Vh_qbcohnCC4AIIa70cJU14pdGY_Q4CaUdDNQJzHySLryQksNCc7sOGVbnQ6rUgd9rQ92RS8Se8JWvUcKxIRCfquhMxLEVCgGpJQqtkd3UkgalJYgPcNccBRKDVB1ZOqly7AwJyw0nd6NOsRGbgDw9bidDuEGvK0uzFavLCafhdQXtZv-mamdb75u8aQ==",
+        "created_at": 1792956153,
+        "error": null,
+        "incomplete_details": null,
+        "instructions": null,
+        "metadata": {},
+        "model": "qa-tpm-env-36095",
+        "object": "response",
+        "output": [
+          {
+            "type": "message",
+            "id": "msg_84e4af30-0942-4dd3-af34-a5de3d6ac394",
+            "status": "completed",
+            "role": "assistant",
+            "content": [
+              {
+                "type": "output_text",
+                "text": "Weights work. Verification reference 110afc8c9c98",
+                "annotations": []
+              }
+            ],
+            "phase": null
+          }
+        ],
+        "parallel_tool_calls": false,
+        "temperature": 0.0,
+        "tool_choice": "auto",
+        "tools": [],
+        "top_p": null,
+        "max_output_tokens": 48,
+        "previous_response_id": null,
+        "reasoning": {
+          "effort": "none"
+        },
+        "status": "completed",
+        "text": {},
+        "truncation": null,
+        "usage": {
+          "input_tokens": 33,
+          "input_tokens_details": null,
+          "output_tokens": 18,
+          "output_tokens_details": null,
+          "total_tokens": 51,
+          "cost": null
+        },
+        "user": null,
+        "store": null
+      },
+      "headers": {
+        "x-litellm-call-id": "23a26d20-949b-4d72-8dc6-2852b74896ed",
+        "x-litellm-model-id": "qa-tpm-env-36095-preferred",
+        "x-litellm-model-name": "ollama_chat/qa-qwen3.5-0.8b",
+        "x-litellm-model-api-base": "http://127.0.0.1:11434"
+      },
+      "generated_content": "Weights work. Verification reference 110afc8c9c98",
+      "result": "preferred deployment selected"
+    },
+    {
+      "group": "qa-weight-int-36095",
+      "endpoint": "/v1/responses",
+      "stream": true,
+      "status": 500,
+      "request_body": {
+        "model": "qa-weight-int-36095",
+        "stream": true,
+        "input": "Reply with only: Weights work. Verification reference a1105d69dd4f",
+        "max_output_tokens": 48
+      },
+      "response_body": {
+        "error": {
+          "message": "Deployment weight must be numeric",
+          "type": "internal_server_error",
+          "param": null,
+          "code": "500"
+        }
+      },
+      "headers": {
+        "x-litellm-call-id": "b0b1b3bd-2de8-47b1-9497-f1a04abc8b90"
+      },
+      "result": "reported bug reproduced"
+    },
+    {
+      "group": "qa-weight-frac-36095",
+      "endpoint": "/v1/responses",
+      "stream": true,
+      "status": 500,
+      "request_body": {
+        "model": "qa-weight-frac-36095",
+        "stream": true,
+        "input": "Reply with only: Weights work. Verification reference 80a848a6b3ea",
+        "max_output_tokens": 48
+      },
+      "response_body": {
+        "error": {
+          "message": "Deployment weight must be numeric",
+          "type": "internal_server_error",
+          "param": null,
+          "code": "500"
+        }
+      },
+      "headers": {
+        "x-litellm-call-id": "823d1642-b390-461f-ac53-8d60298965d5"
+      },
+      "result": "reported bug reproduced"
+    },
+    {
+      "group": "qa-weight-numeric-36095",
+      "endpoint": "/v1/responses",
+      "stream": true,
+      "status": 200,
+      "request_body": {
+        "model": "qa-weight-numeric-36095",
+        "stream": true,
+        "input": "Reply with only: Weights work. Verification reference 4d0a7282986f",
+        "max_output_tokens": 48
+      },
+      "response_body": "data: {\"type\":\"response.created\",\"response\":{\"id\":\"resp_DyVrq9NsRA99rCfkzdSVLC8E9UTUzK2z-3djZ84gka5LEZfdDwNRCQiP_8XIUKjdviBduUUC4wXQe67cvE1o8enVAxoYPb_QQfhq65fK4VA2t_4uL8eMhhhau5g3Xfn817qswTTdxKgU480g0IeWa6D9Y43X-m2kwEscH9QEpx3pWdT_KVkKG7uX4WbT6gy9IFb4uWzrF3alBFnqdim2Hx-Qty_knYMLCnRMxuol2meWpjfwxx1OUIwqPCsUrGM0RVUk9aZc2Rv9RJLvfg8UzsqCY1JWmO4XQkKSM5acJyjX9wCPJh6gwCGXiQ6iAUoM1XQp2HiqeX34epSujSukjRi0mONnTqnxA-pZepfevBoqKojB7Kh6\",\"created_at\":1792956154,\"model\":\"qa-weight-numeric-36095\",\"object\":\"response\",\"output\":[],\"parallel_tool_calls\":true,\"temperature\":0.0,\"tool_choice\":\"auto\",\"tools\":[],\"top_p\":1.0,\"reasoning\":{\"effort\":null,\"summary\":null},\"status\":\"in_progress\",\"store\":true},\"model\":\"qa-weight-numeric-36095\"}\n\ndata: {\"type\":\"response.in_progress\",\"response\":{\"id\":\"resp_DyVrq9NsRA99rCfkzdSVLC8E9UTUzK2z-3djZ84gka5LEZfdDwNRCQiP_8XIUKjdviBduUUC4wXQe67cvE1o8enVAxoYPb_QQfhq65fK4VA2t_4uL8eMhhhau5g3Xfn817qswTTdxKgU480g0IeWa6D9Y43X-m2kwEscH9QEpx3pWdT_KVkKG7uX4WbT6gy9IFb4uWzrF3alBFnqdim2Hx-Qty_knYMLCnRMxuol2meWpjfwxx1OUIwqPCsUrGM0RVUk9aZc2Rv9RJLvfg8UzsqCY1JWmO4XQkKSM5acJyjX9wCPJh6gwCGXiQ6iAUoM1XQp2HiqeX34epSujSukjRi0mONnTqnxA-pZepfevBoqKojB7Kh6\",\"created_at\":1792956154,\"model\":\"qa-weight-numeric-36095\",\"object\":\"response\",\"output\":[],\"parallel_tool_calls\":true,\"temperature\":0.0,\"tool_choice\":\"auto\",\"tools\":[],\"top_p\":1.0,\"reasoning\":{\"effort\":null,\"summary\":null},\"status\":\"in_progress\",\"store\":true},\"model\":\"qa-weight-numeric-36095\"}\n\ndata: {\"type\":\"response.output_item.added\",\"output_index\":0,\"item\":{\"id\":\"msg_14ccbf08-dfcf-45df-9889-b082cbb15077\",\"type\":\"message\",\"role\":\"assistant\",\"status\":\"in_progress\",\"content\":[]},\"model\":\"qa-weight-numeric-36095\"}\n\ndata: {\"type\":\"response.content_part.added\",\"item_id\":\"msg_14ccbf08-dfcf-45df-9889-b082cbb15077\",\"output_index\":0,\"content_index\":0,\"part\":{\"type\":\"output_text\",\"text\":\"\",\"annotations\":[]},\"model\":\"qa-weight-numeric-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_14ccbf08-dfcf-45df-9889-b082cbb15077\",\"output_index\":0,\"content_index\":0,\"delta\":\"We\",\"model\":\"qa-weight-numeric-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_14ccbf08-dfcf-45df-9889-b082cbb15077\",\"output_index\":0,\"content_index\":0,\"delta\":\"ights\",\"model\":\"qa-weight-numeric-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_14ccbf08-dfcf-45df-9889-b082cbb15077\",\"output_index\":0,\"content_index\":0,\"delta\":\" work\",\"model\":\"qa-weight-numeric-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_14ccbf08-dfcf-45df-9889-b082cbb15077\",\"output_index\":0,\"content_index\":0,\"delta\":\".\",\"model\":\"qa-weight-numeric-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_14ccbf08-dfcf-45df-9889-b082cbb15077\",\"output_index\":0,\"content_index\":0,\"delta\":\" Verification\",\"model\":\"qa-weight-numeric-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_14ccbf08-dfcf-45df-9889-b082cbb15077\",\"output_index\":0,\"content_index\":0,\"delta\":\" reference\",\"model\":\"qa-weight-numeric-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_14ccbf08-dfcf-45df-9889-b082cbb15077\",\"output_index\":0,\"content_index\":0,\"delta\":\" \",\"model\":\"qa-weight-numeric-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_14ccbf08-dfcf-45df-9889-b082cbb15077\",\"output_index\":0,\"content_index\":0,\"delta\":\"4\",\"model\":\"qa-weight-numeric-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_14ccbf08-dfcf-45df-9889-b082cbb15077\",\"output_index\":0,\"content_index\":0,\"delta\":\"d\",\"model\":\"qa-weight-numeric-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_14ccbf08-dfcf-45df-9889-b082cbb15077\",\"output_index\":0,\"content_index\":0,\"delta\":\"0\",\"model\":\"qa-weight-numeric-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_14ccbf08-dfcf-45df-9889-b082cbb15077\",\"output_index\":0,\"content_index\":0,\"delta\":\"a\",\"model\":\"qa-weight-numeric-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_14ccbf08-dfcf-45df-9889-b082cbb15077\",\"output_index\":0,\"content_index\":0,\"delta\":\"7\",\"model\":\"qa-weight-numeric-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_14ccbf08-dfcf-45df-9889-b082cbb15077\",\"output_index\":0,\"content_index\":0,\"delta\":\"2\",\"model\":\"qa-weight-numeric-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_14ccbf08-dfcf-45df-9889-b082cbb15077\",\"output_index\":0,\"content_index\":0,\"delta\":\"8\",\"model\":\"qa-weight-numeric-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_14ccbf08-dfcf-45df-9889-b082cbb15077\",\"output_index\":0,\"content_index\":0,\"delta\":\"2\",\"model\":\"qa-weight-numeric-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_14ccbf08-dfcf-45df-9889-b082cbb15077\",\"output_index\":0,\"content_index\":0,\"delta\":\"9\",\"model\":\"qa-weight-numeric-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_14ccbf08-dfcf-45df-9889-b082cbb15077\",\"output_index\":0,\"content_index\":0,\"delta\":\"8\",\"model\":\"qa-weight-numeric-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_14ccbf08-dfcf-45df-9889-b082cbb15077\",\"output_index\":0,\"content_index\":0,\"delta\":\"6\",\"model\":\"qa-weight-numeric-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_14ccbf08-dfcf-45df-9889-b082cbb15077\",\"output_index\":0,\"content_index\":0,\"delta\":\"f\",\"model\":\"qa-weight-numeric-36095\"}\n\ndata: {\"type\":\"response.output_text.done\",\"item_id\":\"msg_14ccbf08-dfcf-45df-9889-b082cbb15077\",\"output_index\":0,\"content_index\":0,\"text\":\"Weights work. Verification reference 4d0a7282986f\",\"model\":\"qa-weight-numeric-36095\"}\n\ndata: {\"type\":\"response.content_part.done\",\"item_id\":\"msg_14ccbf08-dfcf-45df-9889-b082cbb15077\",\"output_index\":0,\"content_index\":0,\"part\":{\"type\":\"output_text\",\"text\":\"Weights work. Verification reference 4d0a7282986f\",\"annotations\":[]},\"model\":\"qa-weight-numeric-36095\"}\n\ndata: {\"type\":\"response.output_item.done\",\"output_index\":0,\"sequence_number\":1,\"item\":{\"id\":\"msg_14ccbf08-dfcf-45df-9889-b082cbb15077\",\"status\":\"completed\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"output_text\",\"text\":\"Weights work. Verification reference 4d0a7282986f\",\"annotations\":[]}]},\"model\":\"qa-weight-numeric-36095\"}\n\ndata: {\"type\":\"response.completed\",\"response\":{\"id\":\"resp_DyVrq9NsRA99rCfkzdSVLC8E9UTUzK2z-3djZ84gka5LEZfdDwNRCQiP_8XIUKjdviBduUUC4wXQe67cvE1o8enVAxoYPb_QQfhq65fK4VA2t_4uL8eMhhhau5g3Xfn817qswTTdxKgU480g0IeWa6D9Y43X-m2kwEscH9QEpx3pWdT_KVkKG7uX4WbT6gy9IFb4uWzrF3alBFnqdim2Hx-Qty_knYMLCnRMxuol2meWpjfwxx1OUIwqPCsUrGM0RVUk9aZc2Rv9RJLvfg8UzsqCY1JWmO4XQkKSM5acJyjX9wCPJh6gwCGXiQ6iAUoM1XQp2HiqeX34epSujSukjRi0mONnTqnxA-pZepfevBoqKojB7Kh6\",\"created_at\":1792956154,\"metadata\":{},\"model\":\"qa-weight-numeric-36095\",\"object\":\"response\",\"output\":[{\"type\":\"message\",\"id\":\"msg_14ccbf08-dfcf-45df-9889-b082cbb15077\",\"status\":\"completed\",\"role\":\"assistant\",\"content\":[{\"type\":\"output_text\",\"text\":\"Weights work. Verification reference 4d0a7282986f\",\"annotations\":[]}]}],\"parallel_tool_calls\":false,\"temperature\":0.0,\"tool_choice\":\"auto\",\"tools\":[],\"max_output_tokens\":48,\"reasoning\":{\"effort\":\"none\"},\"status\":\"completed\",\"text\":{},\"usage\":{\"input_tokens\":35,\"output_tokens\":20,\"output_tokens_details\":{\"reasoning_tokens\":0,\"text_tokens\":20},\"total_tokens\":55,\"cost\":0.000054999999999999995}},\"model\":\"qa-weight-numeric-36095\"}\n\ndata: [DONE]\n\n",
+      "headers": {
+        "x-litellm-call-id": "bd03346d-f79c-4699-8026-50fcff59ce2f",
+        "x-litellm-model-id": "qa-weight-numeric-36095-preferred",
+        "x-litellm-model-name": "ollama_chat/qa-qwen3.5-0.8b"
+      },
+      "generated_content": "Weights work. Verification reference 4d0a7282986f",
+      "result": "preferred deployment selected"
+    },
+    {
+      "group": "qa-weight-none-36095",
+      "endpoint": "/v1/responses",
+      "stream": true,
+      "status": 200,
+      "request_body": {
+        "model": "qa-weight-none-36095",
+        "stream": true,
+        "input": "Reply with only: Weights work. Verification reference 73c12ddb3ec4",
+        "max_output_tokens": 48
+      },
+      "response_body": "data: {\"type\":\"response.created\",\"response\":{\"id\":\"resp_M56iBMcqV7HTHvEzGe8SZ5fIznV4s7m91V-WfrE7Ury5uI5NHiRfmQSfRgdKBgiG61q8ZwmHAgjKwAUX0vYOz8QZ1EIwOYjh3domld175KJjctCwLpgGxwLeL5_EghA7bauUkgEK13BZ1YUGExsgOVCIuxh4fh2xjj31hg-9y_Rrvwl2n4itH8U1gKWQqLG9wHuuXMTAHhk0or3W0eupPdNRg7viokuuLMal_FmLZq5DnkP7ZaFio6sr-Pcy17CF4Gof_zUmH2RgGziXqv5FIEE1eRHoMJf97mP213wK82apT1vDEbUQqG9XVNwb0sJlLfC4uqYsUV7W0aG7A9l77wMkwLuDHO4GD0vtbc3zTEF55JE=\",\"created_at\":1792956155,\"model\":\"qa-weight-none-36095\",\"object\":\"response\",\"output\":[],\"parallel_tool_calls\":true,\"temperature\":0.0,\"tool_choice\":\"auto\",\"tools\":[],\"top_p\":1.0,\"reasoning\":{\"effort\":null,\"summary\":null},\"status\":\"in_progress\",\"store\":true},\"model\":\"qa-weight-none-36095\"}\n\ndata: {\"type\":\"response.in_progress\",\"response\":{\"id\":\"resp_M56iBMcqV7HTHvEzGe8SZ5fIznV4s7m91V-WfrE7Ury5uI5NHiRfmQSfRgdKBgiG61q8ZwmHAgjKwAUX0vYOz8QZ1EIwOYjh3domld175KJjctCwLpgGxwLeL5_EghA7bauUkgEK13BZ1YUGExsgOVCIuxh4fh2xjj31hg-9y_Rrvwl2n4itH8U1gKWQqLG9wHuuXMTAHhk0or3W0eupPdNRg7viokuuLMal_FmLZq5DnkP7ZaFio6sr-Pcy17CF4Gof_zUmH2RgGziXqv5FIEE1eRHoMJf97mP213wK82apT1vDEbUQqG9XVNwb0sJlLfC4uqYsUV7W0aG7A9l77wMkwLuDHO4GD0vtbc3zTEF55JE=\",\"created_at\":1792956155,\"model\":\"qa-weight-none-36095\",\"object\":\"response\",\"output\":[],\"parallel_tool_calls\":true,\"temperature\":0.0,\"tool_choice\":\"auto\",\"tools\":[],\"top_p\":1.0,\"reasoning\":{\"effort\":null,\"summary\":null},\"status\":\"in_progress\",\"store\":true},\"model\":\"qa-weight-none-36095\"}\n\ndata: {\"type\":\"response.output_item.added\",\"output_index\":0,\"item\":{\"id\":\"msg_eebbb0e7-f81a-490c-beb4-c40470875130\",\"type\":\"message\",\"role\":\"assistant\",\"status\":\"in_progress\",\"content\":[]},\"model\":\"qa-weight-none-36095\"}\n\ndata: {\"type\":\"response.content_part.added\",\"item_id\":\"msg_eebbb0e7-f81a-490c-beb4-c40470875130\",\"output_index\":0,\"content_index\":0,\"part\":{\"type\":\"output_text\",\"text\":\"\",\"annotations\":[]},\"model\":\"qa-weight-none-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_eebbb0e7-f81a-490c-beb4-c40470875130\",\"output_index\":0,\"content_index\":0,\"delta\":\"We\",\"model\":\"qa-weight-none-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_eebbb0e7-f81a-490c-beb4-c40470875130\",\"output_index\":0,\"content_index\":0,\"delta\":\"ights\",\"model\":\"qa-weight-none-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_eebbb0e7-f81a-490c-beb4-c40470875130\",\"output_index\":0,\"content_index\":0,\"delta\":\" work\",\"model\":\"qa-weight-none-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_eebbb0e7-f81a-490c-beb4-c40470875130\",\"output_index\":0,\"content_index\":0,\"delta\":\".\",\"model\":\"qa-weight-none-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_eebbb0e7-f81a-490c-beb4-c40470875130\",\"output_index\":0,\"content_index\":0,\"delta\":\" Verification\",\"model\":\"qa-weight-none-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_eebbb0e7-f81a-490c-beb4-c40470875130\",\"output_index\":0,\"content_index\":0,\"delta\":\" reference\",\"model\":\"qa-weight-none-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_eebbb0e7-f81a-490c-beb4-c40470875130\",\"output_index\":0,\"content_index\":0,\"delta\":\" \",\"model\":\"qa-weight-none-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_eebbb0e7-f81a-490c-beb4-c40470875130\",\"output_index\":0,\"content_index\":0,\"delta\":\"7\",\"model\":\"qa-weight-none-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_eebbb0e7-f81a-490c-beb4-c40470875130\",\"output_index\":0,\"content_index\":0,\"delta\":\"3\",\"model\":\"qa-weight-none-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_eebbb0e7-f81a-490c-beb4-c40470875130\",\"output_index\":0,\"content_index\":0,\"delta\":\"c\",\"model\":\"qa-weight-none-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_eebbb0e7-f81a-490c-beb4-c40470875130\",\"output_index\":0,\"content_index\":0,\"delta\":\"1\",\"model\":\"qa-weight-none-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_eebbb0e7-f81a-490c-beb4-c40470875130\",\"output_index\":0,\"content_index\":0,\"delta\":\"2\",\"model\":\"qa-weight-none-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_eebbb0e7-f81a-490c-beb4-c40470875130\",\"output_index\":0,\"content_index\":0,\"delta\":\"ddb\",\"model\":\"qa-weight-none-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_eebbb0e7-f81a-490c-beb4-c40470875130\",\"output_index\":0,\"content_index\":0,\"delta\":\"3\",\"model\":\"qa-weight-none-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_eebbb0e7-f81a-490c-beb4-c40470875130\",\"output_index\":0,\"content_index\":0,\"delta\":\"ec\",\"model\":\"qa-weight-none-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_eebbb0e7-f81a-490c-beb4-c40470875130\",\"output_index\":0,\"content_index\":0,\"delta\":\"4\",\"model\":\"qa-weight-none-36095\"}\n\ndata: {\"type\":\"response.output_text.done\",\"item_id\":\"msg_eebbb0e7-f81a-490c-beb4-c40470875130\",\"output_index\":0,\"content_index\":0,\"text\":\"Weights work. Verification reference 73c12ddb3ec4\",\"model\":\"qa-weight-none-36095\"}\n\ndata: {\"type\":\"response.content_part.done\",\"item_id\":\"msg_eebbb0e7-f81a-490c-beb4-c40470875130\",\"output_index\":0,\"content_index\":0,\"part\":{\"type\":\"output_text\",\"text\":\"Weights work. Verification reference 73c12ddb3ec4\",\"annotations\":[]},\"model\":\"qa-weight-none-36095\"}\n\ndata: {\"type\":\"response.output_item.done\",\"output_index\":0,\"sequence_number\":1,\"item\":{\"id\":\"msg_eebbb0e7-f81a-490c-beb4-c40470875130\",\"status\":\"completed\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"output_text\",\"text\":\"Weights work. Verification reference 73c12ddb3ec4\",\"annotations\":[]}]},\"model\":\"qa-weight-none-36095\"}\n\ndata: {\"type\":\"response.completed\",\"response\":{\"id\":\"resp_M56iBMcqV7HTHvEzGe8SZ5fIznV4s7m91V-WfrE7Ury5uI5NHiRfmQSfRgdKBgiG61q8ZwmHAgjKwAUX0vYOz8QZ1EIwOYjh3domld175KJjctCwLpgGxwLeL5_EghA7bauUkgEK13BZ1YUGExsgOVCIuxh4fh2xjj31hg-9y_Rrvwl2n4itH8U1gKWQqLG9wHuuXMTAHhk0or3W0eupPdNRg7viokuuLMal_FmLZq5DnkP7ZaFio6sr-Pcy17CF4Gof_zUmH2RgGziXqv5FIEE1eRHoMJf97mP213wK82apT1vDEbUQqG9XVNwb0sJlLfC4uqYsUV7W0aG7A9l77wMkwLuDHO4GD0vtbc3zTEF55JE=\",\"created_at\":1792956155,\"metadata\":{},\"model\":\"qa-weight-none-36095\",\"object\":\"response\",\"output\":[{\"type\":\"message\",\"id\":\"msg_eebbb0e7-f81a-490c-beb4-c40470875130\",\"status\":\"completed\",\"role\":\"assistant\",\"content\":[{\"type\":\"output_text\",\"text\":\"Weights work. Verification reference 73c12ddb3ec4\",\"annotations\":[]}]}],\"parallel_tool_calls\":false,\"temperature\":0.0,\"tool_choice\":\"auto\",\"tools\":[],\"max_output_tokens\":48,\"reasoning\":{\"effort\":\"none\"},\"status\":\"completed\",\"text\":{},\"usage\":{\"input_tokens\":32,\"output_tokens\":17,\"output_tokens_details\":{\"reasoning_tokens\":0,\"text_tokens\":17},\"total_tokens\":49,\"cost\":0.000049}},\"model\":\"qa-weight-none-36095\"}\n\ndata: [DONE]\n\n",
+      "headers": {
+        "x-litellm-call-id": "315b287a-27ff-49a2-830c-43a415beb7e1",
+        "x-litellm-model-id": "qa-weight-none-36095-preferred",
+        "x-litellm-model-name": "ollama_chat/qa-qwen3.5-0.8b"
+      },
+      "generated_content": "Weights work. Verification reference 73c12ddb3ec4",
+      "result": "preferred deployment selected"
+    },
+    {
+      "group": "qa-rpm-env-36095",
+      "endpoint": "/v1/responses",
+      "stream": true,
+      "status": 200,
+      "request_body": {
+        "model": "qa-rpm-env-36095",
+        "stream": true,
+        "input": "Reply with only: Weights work. Verification reference 5c870104bdef",
+        "max_output_tokens": 48
+      },
+      "response_body": "data: {\"type\":\"response.created\",\"response\":{\"id\":\"resp_uq09hy-j_aLrhIbRJ3RsQZ4ktAHOwPXvetud7Ko0q5JfoytVcSNmui50rpzY8F3orFLGqwhuuvUeskTQ7LVt8cz4Wqa9yc3_kJdE5ibhHqVPxbk_YxYaMY-JBIyn6LNJgaRSe4zFH5CHvzykbmiOllpSZGX20Y6NzVPRRVPaEsMm2DyWaeFc7x5GuutdU6HetzWclHVJ9-pC2qmQsXj7lhVO3LvN7AlkUkWINZ7b0WnhWs_G7H-1ydeGzVAZQ6BlkZ9lWDCeRIRPsEHAYKfKC0BzUAddm2tZvX7rHCJbNFX5QbExbhfwZNQ-AbdG_NJBO4lbXSDCPLkX7_z2aR3jVIm4XXs7nT8oFrbpvIR2uQ==\",\"created_at\":1792956156,\"model\":\"qa-rpm-env-36095\",\"object\":\"response\",\"output\":[],\"parallel_tool_calls\":true,\"temperature\":0.0,\"tool_choice\":\"auto\",\"tools\":[],\"top_p\":1.0,\"reasoning\":{\"effort\":null,\"summary\":null},\"status\":\"in_progress\",\"store\":true},\"model\":\"qa-rpm-env-36095\"}\n\ndata: {\"type\":\"response.in_progress\",\"response\":{\"id\":\"resp_uq09hy-j_aLrhIbRJ3RsQZ4ktAHOwPXvetud7Ko0q5JfoytVcSNmui50rpzY8F3orFLGqwhuuvUeskTQ7LVt8cz4Wqa9yc3_kJdE5ibhHqVPxbk_YxYaMY-JBIyn6LNJgaRSe4zFH5CHvzykbmiOllpSZGX20Y6NzVPRRVPaEsMm2DyWaeFc7x5GuutdU6HetzWclHVJ9-pC2qmQsXj7lhVO3LvN7AlkUkWINZ7b0WnhWs_G7H-1ydeGzVAZQ6BlkZ9lWDCeRIRPsEHAYKfKC0BzUAddm2tZvX7rHCJbNFX5QbExbhfwZNQ-AbdG_NJBO4lbXSDCPLkX7_z2aR3jVIm4XXs7nT8oFrbpvIR2uQ==\",\"created_at\":1792956156,\"model\":\"qa-rpm-env-36095\",\"object\":\"response\",\"output\":[],\"parallel_tool_calls\":true,\"temperature\":0.0,\"tool_choice\":\"auto\",\"tools\":[],\"top_p\":1.0,\"reasoning\":{\"effort\":null,\"summary\":null},\"status\":\"in_progress\",\"store\":true},\"model\":\"qa-rpm-env-36095\"}\n\ndata: {\"type\":\"response.output_item.added\",\"output_index\":0,\"item\":{\"id\":\"msg_c4657a23-e07e-4454-a6d9-61561f7eb020\",\"type\":\"message\",\"role\":\"assistant\",\"status\":\"in_progress\",\"content\":[]},\"model\":\"qa-rpm-env-36095\"}\n\ndata: {\"type\":\"response.content_part.added\",\"item_id\":\"msg_c4657a23-e07e-4454-a6d9-61561f7eb020\",\"output_index\":0,\"content_index\":0,\"part\":{\"type\":\"output_text\",\"text\":\"\",\"annotations\":[]},\"model\":\"qa-rpm-env-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_c4657a23-e07e-4454-a6d9-61561f7eb020\",\"output_index\":0,\"content_index\":0,\"delta\":\"We\",\"model\":\"qa-rpm-env-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_c4657a23-e07e-4454-a6d9-61561f7eb020\",\"output_index\":0,\"content_index\":0,\"delta\":\"ights\",\"model\":\"qa-rpm-env-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_c4657a23-e07e-4454-a6d9-61561f7eb020\",\"output_index\":0,\"content_index\":0,\"delta\":\" work\",\"model\":\"qa-rpm-env-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_c4657a23-e07e-4454-a6d9-61561f7eb020\",\"output_index\":0,\"content_index\":0,\"delta\":\".\",\"model\":\"qa-rpm-env-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_c4657a23-e07e-4454-a6d9-61561f7eb020\",\"output_index\":0,\"content_index\":0,\"delta\":\" Verification\",\"model\":\"qa-rpm-env-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_c4657a23-e07e-4454-a6d9-61561f7eb020\",\"output_index\":0,\"content_index\":0,\"delta\":\" reference\",\"model\":\"qa-rpm-env-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_c4657a23-e07e-4454-a6d9-61561f7eb020\",\"output_index\":0,\"content_index\":0,\"delta\":\" \",\"model\":\"qa-rpm-env-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_c4657a23-e07e-4454-a6d9-61561f7eb020\",\"output_index\":0,\"content_index\":0,\"delta\":\"5\",\"model\":\"qa-rpm-env-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_c4657a23-e07e-4454-a6d9-61561f7eb020\",\"output_index\":0,\"content_index\":0,\"delta\":\"c\",\"model\":\"qa-rpm-env-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_c4657a23-e07e-4454-a6d9-61561f7eb020\",\"output_index\":0,\"content_index\":0,\"delta\":\"8\",\"model\":\"qa-rpm-env-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_c4657a23-e07e-4454-a6d9-61561f7eb020\",\"output_index\":0,\"content_index\":0,\"delta\":\"7\",\"model\":\"qa-rpm-env-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_c4657a23-e07e-4454-a6d9-61561f7eb020\",\"output_index\":0,\"content_index\":0,\"delta\":\"0\",\"model\":\"qa-rpm-env-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_c4657a23-e07e-4454-a6d9-61561f7eb020\",\"output_index\":0,\"content_index\":0,\"delta\":\"1\",\"model\":\"qa-rpm-env-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_c4657a23-e07e-4454-a6d9-61561f7eb020\",\"output_index\":0,\"content_index\":0,\"delta\":\"0\",\"model\":\"qa-rpm-env-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_c4657a23-e07e-4454-a6d9-61561f7eb020\",\"output_index\":0,\"content_index\":0,\"delta\":\"4\",\"model\":\"qa-rpm-env-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_c4657a23-e07e-4454-a6d9-61561f7eb020\",\"output_index\":0,\"content_index\":0,\"delta\":\"b\",\"model\":\"qa-rpm-env-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_c4657a23-e07e-4454-a6d9-61561f7eb020\",\"output_index\":0,\"content_index\":0,\"delta\":\"def\",\"model\":\"qa-rpm-env-36095\"}\n\ndata: {\"type\":\"response.output_text.done\",\"item_id\":\"msg_c4657a23-e07e-4454-a6d9-61561f7eb020\",\"output_index\":0,\"content_index\":0,\"text\":\"Weights work. Verification reference 5c870104bdef\",\"model\":\"qa-rpm-env-36095\"}\n\ndata: {\"type\":\"response.content_part.done\",\"item_id\":\"msg_c4657a23-e07e-4454-a6d9-61561f7eb020\",\"output_index\":0,\"content_index\":0,\"part\":{\"type\":\"output_text\",\"text\":\"Weights work. Verification reference 5c870104bdef\",\"annotations\":[]},\"model\":\"qa-rpm-env-36095\"}\n\ndata: {\"type\":\"response.output_item.done\",\"output_index\":0,\"sequence_number\":1,\"item\":{\"id\":\"msg_c4657a23-e07e-4454-a6d9-61561f7eb020\",\"status\":\"completed\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"output_text\",\"text\":\"Weights work. Verification reference 5c870104bdef\",\"annotations\":[]}]},\"model\":\"qa-rpm-env-36095\"}\n\ndata: {\"type\":\"response.completed\",\"response\":{\"id\":\"resp_uq09hy-j_aLrhIbRJ3RsQZ4ktAHOwPXvetud7Ko0q5JfoytVcSNmui50rpzY8F3orFLGqwhuuvUeskTQ7LVt8cz4Wqa9yc3_kJdE5ibhHqVPxbk_YxYaMY-JBIyn6LNJgaRSe4zFH5CHvzykbmiOllpSZGX20Y6NzVPRRVPaEsMm2DyWaeFc7x5GuutdU6HetzWclHVJ9-pC2qmQsXj7lhVO3LvN7AlkUkWINZ7b0WnhWs_G7H-1ydeGzVAZQ6BlkZ9lWDCeRIRPsEHAYKfKC0BzUAddm2tZvX7rHCJbNFX5QbExbhfwZNQ-AbdG_NJBO4lbXSDCPLkX7_z2aR3jVIm4XXs7nT8oFrbpvIR2uQ==\",\"created_at\":1792956156,\"metadata\":{},\"model\":\"qa-rpm-env-36095\",\"object\":\"response\",\"output\":[{\"type\":\"message\",\"id\":\"msg_c4657a23-e07e-4454-a6d9-61561f7eb020\",\"status\":\"completed\",\"role\":\"assistant\",\"content\":[{\"type\":\"output_text\",\"text\":\"Weights work. Verification reference 5c870104bdef\",\"annotations\":[]}]}],\"parallel_tool_calls\":false,\"temperature\":0.0,\"tool_choice\":\"auto\",\"tools\":[],\"max_output_tokens\":48,\"reasoning\":{\"effort\":\"none\"},\"status\":\"completed\",\"text\":{},\"usage\":{\"input_tokens\":33,\"output_tokens\":18,\"output_tokens_details\":{\"reasoning_tokens\":0,\"text_tokens\":18},\"total_tokens\":51,\"cost\":0.00005099999999999999}},\"model\":\"qa-rpm-env-36095\"}\n\ndata: [DONE]\n\n",
+      "headers": {
+        "x-litellm-call-id": "fac326d0-e4b7-447c-b611-47cb90c20e23",
+        "x-litellm-model-id": "qa-rpm-env-36095-preferred",
+        "x-litellm-model-name": "ollama_chat/qa-qwen3.5-0.8b"
+      },
+      "generated_content": "Weights work. Verification reference 5c870104bdef",
+      "result": "preferred deployment selected"
+    },
+    {
+      "group": "qa-tpm-env-36095",
+      "endpoint": "/v1/responses",
+      "stream": true,
+      "status": 200,
+      "request_body": {
+        "model": "qa-tpm-env-36095",
+        "stream": true,
+        "input": "Reply with only: Weights work. Verification reference 1083599dc7b4",
+        "max_output_tokens": 48
+      },
+      "response_body": "data: {\"type\":\"response.created\",\"response\":{\"id\":\"resp__lHqeN_664_O8T_r6Ml8M6Dy38g22ejxV3C3cCnjNcp8ctuXcJzCdM31gw4i_Vg521MH8trKCsl7RYkKOlqgs5-4b6WiSHXn6Lo9QxjUv8gY5c8WbFlCWEOGbuDBWryyccEW9WNxN3Mx_di_koMx6JmC-3X7St6kqtliBDYRdWumWqqRvu-MTVZi4J2x-qsxi9vyC8F0YOdnA9jPLWNxqzqZiPoHSDRJOMXI1HiEsrMXT-DLWOK_aiHpCtxam5LsL4tW8p7Uu25zQzzRWWqi_BenMQ0nkQBvGdZBk1R2f3YaWh2yh9ZNExbQqKntuMhB4NiXlF5BmrJt7DgVeCSYobjl_9iLztsZDuFT8SMhSA==\",\"created_at\":1792956157,\"model\":\"qa-tpm-env-36095\",\"object\":\"response\",\"output\":[],\"parallel_tool_calls\":true,\"temperature\":0.0,\"tool_choice\":\"auto\",\"tools\":[],\"top_p\":1.0,\"reasoning\":{\"effort\":null,\"summary\":null},\"status\":\"in_progress\",\"store\":true},\"model\":\"qa-tpm-env-36095\"}\n\ndata: {\"type\":\"response.in_progress\",\"response\":{\"id\":\"resp__lHqeN_664_O8T_r6Ml8M6Dy38g22ejxV3C3cCnjNcp8ctuXcJzCdM31gw4i_Vg521MH8trKCsl7RYkKOlqgs5-4b6WiSHXn6Lo9QxjUv8gY5c8WbFlCWEOGbuDBWryyccEW9WNxN3Mx_di_koMx6JmC-3X7St6kqtliBDYRdWumWqqRvu-MTVZi4J2x-qsxi9vyC8F0YOdnA9jPLWNxqzqZiPoHSDRJOMXI1HiEsrMXT-DLWOK_aiHpCtxam5LsL4tW8p7Uu25zQzzRWWqi_BenMQ0nkQBvGdZBk1R2f3YaWh2yh9ZNExbQqKntuMhB4NiXlF5BmrJt7DgVeCSYobjl_9iLztsZDuFT8SMhSA==\",\"created_at\":1792956157,\"model\":\"qa-tpm-env-36095\",\"object\":\"response\",\"output\":[],\"parallel_tool_calls\":true,\"temperature\":0.0,\"tool_choice\":\"auto\",\"tools\":[],\"top_p\":1.0,\"reasoning\":{\"effort\":null,\"summary\":null},\"status\":\"in_progress\",\"store\":true},\"model\":\"qa-tpm-env-36095\"}\n\ndata: {\"type\":\"response.output_item.added\",\"output_index\":0,\"item\":{\"id\":\"msg_d6d88547-9400-4025-9a02-7dcba520daae\",\"type\":\"message\",\"role\":\"assistant\",\"status\":\"in_progress\",\"content\":[]},\"model\":\"qa-tpm-env-36095\"}\n\ndata: {\"type\":\"response.content_part.added\",\"item_id\":\"msg_d6d88547-9400-4025-9a02-7dcba520daae\",\"output_index\":0,\"content_index\":0,\"part\":{\"type\":\"output_text\",\"text\":\"\",\"annotations\":[]},\"model\":\"qa-tpm-env-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_d6d88547-9400-4025-9a02-7dcba520daae\",\"output_index\":0,\"content_index\":0,\"delta\":\"We\",\"model\":\"qa-tpm-env-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_d6d88547-9400-4025-9a02-7dcba520daae\",\"output_index\":0,\"content_index\":0,\"delta\":\"ights\",\"model\":\"qa-tpm-env-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_d6d88547-9400-4025-9a02-7dcba520daae\",\"output_index\":0,\"content_index\":0,\"delta\":\" work\",\"model\":\"qa-tpm-env-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_d6d88547-9400-4025-9a02-7dcba520daae\",\"output_index\":0,\"content_index\":0,\"delta\":\".\",\"model\":\"qa-tpm-env-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_d6d88547-9400-4025-9a02-7dcba520daae\",\"output_index\":0,\"content_index\":0,\"delta\":\" Verification\",\"model\":\"qa-tpm-env-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_d6d88547-9400-4025-9a02-7dcba520daae\",\"output_index\":0,\"content_index\":0,\"delta\":\" reference\",\"model\":\"qa-tpm-env-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_d6d88547-9400-4025-9a02-7dcba520daae\",\"output_index\":0,\"content_index\":0,\"delta\":\" \",\"model\":\"qa-tpm-env-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_d6d88547-9400-4025-9a02-7dcba520daae\",\"output_index\":0,\"content_index\":0,\"delta\":\"1\",\"model\":\"qa-tpm-env-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_d6d88547-9400-4025-9a02-7dcba520daae\",\"output_index\":0,\"content_index\":0,\"delta\":\"0\",\"model\":\"qa-tpm-env-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_d6d88547-9400-4025-9a02-7dcba520daae\",\"output_index\":0,\"content_index\":0,\"delta\":\"8\",\"model\":\"qa-tpm-env-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_d6d88547-9400-4025-9a02-7dcba520daae\",\"output_index\":0,\"content_index\":0,\"delta\":\"3\",\"model\":\"qa-tpm-env-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_d6d88547-9400-4025-9a02-7dcba520daae\",\"output_index\":0,\"content_index\":0,\"delta\":\"5\",\"model\":\"qa-tpm-env-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_d6d88547-9400-4025-9a02-7dcba520daae\",\"output_index\":0,\"content_index\":0,\"delta\":\"9\",\"model\":\"qa-tpm-env-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_d6d88547-9400-4025-9a02-7dcba520daae\",\"output_index\":0,\"content_index\":0,\"delta\":\"9\",\"model\":\"qa-tpm-env-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_d6d88547-9400-4025-9a02-7dcba520daae\",\"output_index\":0,\"content_index\":0,\"delta\":\"dc\",\"model\":\"qa-tpm-env-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_d6d88547-9400-4025-9a02-7dcba520daae\",\"output_index\":0,\"content_index\":0,\"delta\":\"7\",\"model\":\"qa-tpm-env-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_d6d88547-9400-4025-9a02-7dcba520daae\",\"output_index\":0,\"content_index\":0,\"delta\":\"b\",\"model\":\"qa-tpm-env-36095\"}\n\ndata: {\"type\":\"response.output_text.delta\",\"item_id\":\"msg_d6d88547-9400-4025-9a02-7dcba520daae\",\"output_index\":0,\"content_index\":0,\"delta\":\"4\",\"model\":\"qa-tpm-env-36095\"}\n\ndata: {\"type\":\"response.output_text.done\",\"item_id\":\"msg_d6d88547-9400-4025-9a02-7dcba520daae\",\"output_index\":0,\"content_index\":0,\"text\":\"Weights work. Verification reference 1083599dc7b4\",\"model\":\"qa-tpm-env-36095\"}\n\ndata: {\"type\":\"response.content_part.done\",\"item_id\":\"msg_d6d88547-9400-4025-9a02-7dcba520daae\",\"output_index\":0,\"content_index\":0,\"part\":{\"type\":\"output_text\",\"text\":\"Weights work. Verification reference 1083599dc7b4\",\"annotations\":[]},\"model\":\"qa-tpm-env-36095\"}\n\ndata: {\"type\":\"response.output_item.done\",\"output_index\":0,\"sequence_number\":1,\"item\":{\"id\":\"msg_d6d88547-9400-4025-9a02-7dcba520daae\",\"status\":\"completed\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"output_text\",\"text\":\"Weights work. Verification reference 1083599dc7b4\",\"annotations\":[]}]},\"model\":\"qa-tpm-env-36095\"}\n\ndata: {\"type\":\"response.completed\",\"response\":{\"id\":\"resp__lHqeN_664_O8T_r6Ml8M6Dy38g22ejxV3C3cCnjNcp8ctuXcJzCdM31gw4i_Vg521MH8trKCsl7RYkKOlqgs5-4b6WiSHXn6Lo9QxjUv8gY5c8WbFlCWEOGbuDBWryyccEW9WNxN3Mx_di_koMx6JmC-3X7St6kqtliBDYRdWumWqqRvu-MTVZi4J2x-qsxi9vyC8F0YOdnA9jPLWNxqzqZiPoHSDRJOMXI1HiEsrMXT-DLWOK_aiHpCtxam5LsL4tW8p7Uu25zQzzRWWqi_BenMQ0nkQBvGdZBk1R2f3YaWh2yh9ZNExbQqKntuMhB4NiXlF5BmrJt7DgVeCSYobjl_9iLztsZDuFT8SMhSA==\",\"created_at\":1792956157,\"metadata\":{},\"model\":\"qa-tpm-env-36095\",\"object\":\"response\",\"output\":[{\"type\":\"message\",\"id\":\"msg_d6d88547-9400-4025-9a02-7dcba520daae\",\"status\":\"completed\",\"role\":\"assistant\",\"content\":[{\"type\":\"output_text\",\"text\":\"Weights work. Verification reference 1083599dc7b4\",\"annotations\":[]}]}],\"parallel_tool_calls\":false,\"temperature\":0.0,\"tool_choice\":\"auto\",\"tools\":[],\"max_output_tokens\":48,\"reasoning\":{\"effort\":\"none\"},\"status\":\"completed\",\"text\":{},\"usage\":{\"input_tokens\":34,\"output_tokens\":19,\"output_tokens_details\":{\"reasoning_tokens\":0,\"text_tokens\":19},\"total_tokens\":53,\"cost\":0.000053}},\"model\":\"qa-tpm-env-36095\"}\n\ndata: [DONE]\n\n",
+      "headers": {
+        "x-litellm-call-id": "afd6f995-ee11-4fb4-b569-86c7e549771f",
+        "x-litellm-model-id": "qa-tpm-env-36095-preferred",
+        "x-litellm-model-name": "ollama_chat/qa-qwen3.5-0.8b"
+      },
+      "generated_content": "Weights work. Verification reference 1083599dc7b4",
+      "result": "preferred deployment selected"
+    },
+    {
+      "group": "qa-weight-int-36095",
+      "endpoint": "/v1/messages",
+      "stream": false,
+      "status": 500,
+      "request_body": {
+        "model": "qa-weight-int-36095",
+        "stream": false,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Reply with only: Weights work. Verification reference 0cbf83037b6d"
+          }
+        ],
+        "max_tokens": 48
+      },
+      "response_body": {
+        "type": "error",
+        "error": {
+          "type": "api_error",
+          "message": "Deployment weight must be numeric"
+        }
+      },
+      "headers": {
+        "x-litellm-call-id": "e292c8ed-e765-4f15-b5d8-e99f1e0e3d87"
+      },
+      "result": "reported bug reproduced"
+    },
+    {
+      "group": "qa-weight-frac-36095",
+      "endpoint": "/v1/messages",
+      "stream": false,
+      "status": 500,
+      "request_body": {
+        "model": "qa-weight-frac-36095",
+        "stream": false,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Reply with only: Weights work. Verification reference 4f6cd1a77a28"
+          }
+        ],
+        "max_tokens": 48
+      },
+      "response_body": {
+        "type": "error",
+        "error": {
+          "type": "api_error",
+          "message": "Deployment weight must be numeric"
+        }
+      },
+      "headers": {
+        "x-litellm-call-id": "c180a048-f2f8-47f6-845d-e7252861ab87"
+      },
+      "result": "reported bug reproduced"
+    },
+    {
+      "group": "qa-weight-numeric-36095",
+      "endpoint": "/v1/messages",
+      "stream": false,
+      "status": 200,
+      "request_body": {
+        "model": "qa-weight-numeric-36095",
+        "stream": false,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Reply with only: Weights work. Verification reference 6bed14293743"
+          }
+        ],
+        "max_tokens": 48
+      },
+      "response_body": {
+        "id": "chatcmpl-82d0d87b-4d90-4ef4-939a-f8eb79f5226c",
+        "type": "message",
+        "role": "assistant",
+        "model": "qa-weight-numeric-36095",
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 33,
+          "output_tokens": 18
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "Weights work. Verification reference 6bed14293743"
+          }
+        ],
+        "stop_reason": "end_turn",
+        "stop_details": null
+      },
+      "headers": {
+        "x-litellm-call-id": "bf045537-48cc-473f-9aed-1a46c133947c",
+        "x-litellm-model-id": "qa-weight-numeric-36095-preferred",
+        "x-litellm-model-name": "ollama_chat/qa-qwen3.5-0.8b"
+      },
+      "generated_content": "Weights work. Verification reference 6bed14293743",
+      "result": "preferred deployment selected"
+    },
+    {
+      "group": "qa-weight-none-36095",
+      "endpoint": "/v1/messages",
+      "stream": false,
+      "status": 200,
+      "request_body": {
+        "model": "qa-weight-none-36095",
+        "stream": false,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Reply with only: Weights work. Verification reference dec7fe697380"
+          }
+        ],
+        "max_tokens": 48
+      },
+      "response_body": {
+        "id": "chatcmpl-152c90a5-1e65-4e2e-8b8c-05a3e70298a2",
+        "type": "message",
+        "role": "assistant",
+        "model": "qa-weight-none-36095",
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 31,
+          "output_tokens": 16
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "Weights work. Verification reference dec7fe697380"
+          }
+        ],
+        "stop_reason": "end_turn",
+        "stop_details": null
+      },
+      "headers": {
+        "x-litellm-call-id": "194370e2-912a-48e3-be23-4d6d878ce158",
+        "x-litellm-model-id": "qa-weight-none-36095-preferred",
+        "x-litellm-model-name": "ollama_chat/qa-qwen3.5-0.8b"
+      },
+      "generated_content": "Weights work. Verification reference dec7fe697380",
+      "result": "preferred deployment selected"
+    },
+    {
+      "group": "qa-rpm-env-36095",
+      "endpoint": "/v1/messages",
+      "stream": false,
+      "status": 200,
+      "request_body": {
+        "model": "qa-rpm-env-36095",
+        "stream": false,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Reply with only: Weights work. Verification reference 3aa137ae2272"
+          }
+        ],
+        "max_tokens": 48
+      },
+      "response_body": {
+        "id": "chatcmpl-74c289fd-557d-413e-a359-982e3b265c0b",
+        "type": "message",
+        "role": "assistant",
+        "model": "qa-rpm-env-36095",
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 33,
+          "output_tokens": 18
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "Weights work. Verification reference 3aa137ae2272"
+          }
+        ],
+        "stop_reason": "end_turn",
+        "stop_details": null
+      },
+      "headers": {
+        "x-litellm-call-id": "267b2f4e-1e8b-4375-bb02-0ad2f97a447f",
+        "x-litellm-model-id": "qa-rpm-env-36095-preferred",
+        "x-litellm-model-name": "ollama_chat/qa-qwen3.5-0.8b"
+      },
+      "generated_content": "Weights work. Verification reference 3aa137ae2272",
+      "result": "preferred deployment selected"
+    },
+    {
+      "group": "qa-tpm-env-36095",
+      "endpoint": "/v1/messages",
+      "stream": false,
+      "status": 200,
+      "request_body": {
+        "model": "qa-tpm-env-36095",
+        "stream": false,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Reply with only: Weights work. Verification reference 331713779a66"
+          }
+        ],
+        "max_tokens": 48
+      },
+      "response_body": {
+        "id": "chatcmpl-3d4a45ee-990f-4172-b3cc-18965aaeffa4",
+        "type": "message",
+        "role": "assistant",
+        "model": "qa-tpm-env-36095",
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 35,
+          "output_tokens": 19
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "Weights work. Verification reference 331713779a66"
+          }
+        ],
+        "stop_reason": "end_turn",
+        "stop_details": null
+      },
+      "headers": {
+        "x-litellm-call-id": "39e4cf21-effe-4015-b095-cb560ad23b4a",
+        "x-litellm-model-id": "qa-tpm-env-36095-preferred",
+        "x-litellm-model-name": "ollama_chat/qa-qwen3.5-0.8b"
+      },
+      "generated_content": "Weights work. Verification reference 331713779a66",
+      "result": "preferred deployment selected"
+    },
+    {
+      "group": "qa-weight-int-36095",
+      "endpoint": "/v1/messages",
+      "stream": true,
+      "status": 500,
+      "request_body": {
+        "model": "qa-weight-int-36095",
+        "stream": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Reply with only: Weights work. Verification reference 16470f4a367c"
+          }
+        ],
+        "max_tokens": 48
+      },
+      "response_body": {
+        "type": "error",
+        "error": {
+          "type": "api_error",
+          "message": "Deployment weight must be numeric"
+        }
+      },
+      "headers": {
+        "x-litellm-call-id": "318c06b5-8e50-465f-8477-ec77ad9ea9f4"
+      },
+      "result": "reported bug reproduced"
+    },
+    {
+      "group": "qa-weight-frac-36095",
+      "endpoint": "/v1/messages",
+      "stream": true,
+      "status": 500,
+      "request_body": {
+        "model": "qa-weight-frac-36095",
+        "stream": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Reply with only: Weights work. Verification reference f11d534d6f96"
+          }
+        ],
+        "max_tokens": 48
+      },
+      "response_body": {
+        "type": "error",
+        "error": {
+          "type": "api_error",
+          "message": "Deployment weight must be numeric"
+        }
+      },
+      "headers": {
+        "x-litellm-call-id": "03c35bb0-4b64-47e6-b354-a57ae1fc4cef"
+      },
+      "result": "reported bug reproduced"
+    },
+    {
+      "group": "qa-weight-numeric-36095",
+      "endpoint": "/v1/messages",
+      "stream": true,
+      "status": 200,
+      "request_body": {
+        "model": "qa-weight-numeric-36095",
+        "stream": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Reply with only: Weights work. Verification reference cef57e58ee79"
+          }
+        ],
+        "max_tokens": 48
+      },
+      "response_body": "event: message_start\ndata: {\"type\":\"message_start\",\"message\":{\"id\":\"msg_27462f58-0bb3-46fe-abbd-8be7ba5c2024\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[],\"model\":\"qa-weight-numeric-36095\",\"stop_reason\":null,\"stop_sequence\":null,\"usage\":{\"input_tokens\":0,\"output_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0}}}\n\nevent: content_block_start\ndata: {\"type\": \"content_block_start\", \"index\": 0, \"content_block\": {\"type\": \"text\", \"text\": \"\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"Weights\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \" work\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \".\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \" Verification\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \" reference\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \" c\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"ef\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"5\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"7\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"e\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"5\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"8\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"ee\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"7\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"9\"}}\n\nevent: content_block_stop\ndata: {\"type\": \"content_block_stop\", \"index\": 0}\n\nevent: message_delta\ndata: {\"type\": \"message_delta\", \"delta\": {\"stop_reason\": \"end_turn\"}, \"usage\": {\"input_tokens\": 32, \"output_tokens\": 16}}\n\nevent: message_stop\ndata: {\"type\": \"message_stop\"}\n\n",
+      "headers": {
+        "x-litellm-call-id": "0c5ee668-8fbb-4b26-9e9e-7460997eb8b0",
+        "x-litellm-model-id": "qa-weight-numeric-36095-preferred",
+        "x-litellm-model-name": "ollama_chat/qa-qwen3.5-0.8b",
+        "x-litellm-model-api-base": "http://127.0.0.1:11434"
+      },
+      "generated_content": "Weights work. Verification reference cef57e58ee79",
+      "result": "preferred deployment selected"
+    },
+    {
+      "group": "qa-weight-none-36095",
+      "endpoint": "/v1/messages",
+      "stream": true,
+      "status": 200,
+      "request_body": {
+        "model": "qa-weight-none-36095",
+        "stream": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Reply with only: Weights work. Verification reference ff3aeb15778b"
+          }
+        ],
+        "max_tokens": 48
+      },
+      "response_body": "event: message_start\ndata: {\"type\":\"message_start\",\"message\":{\"id\":\"msg_c3ae464c-f1d4-43e9-a829-a88bcc2fdb30\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[],\"model\":\"qa-weight-none-36095\",\"stop_reason\":null,\"stop_sequence\":null,\"usage\":{\"input_tokens\":0,\"output_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0}}}\n\nevent: content_block_start\ndata: {\"type\": \"content_block_start\", \"index\": 0, \"content_block\": {\"type\": \"text\", \"text\": \"\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"Weights\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \" work\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \".\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \" Verification\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \" reference\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \" ff\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"3\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"a\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"eb\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"1\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"5\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"7\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"7\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"8\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"b\"}}\n\nevent: content_block_stop\ndata: {\"type\": \"content_block_stop\", \"index\": 0}\n\nevent: message_delta\ndata: {\"type\": \"message_delta\", \"delta\": {\"stop_reason\": \"end_turn\"}, \"usage\": {\"input_tokens\": 32, \"output_tokens\": 16}}\n\nevent: message_stop\ndata: {\"type\": \"message_stop\"}\n\n",
+      "headers": {
+        "x-litellm-call-id": "8eb6442d-8d17-4b03-863c-10dbe4f2cda7",
+        "x-litellm-model-id": "qa-weight-none-36095-preferred",
+        "x-litellm-model-name": "ollama_chat/qa-qwen3.5-0.8b",
+        "x-litellm-model-api-base": "http://127.0.0.1:11434"
+      },
+      "generated_content": "Weights work. Verification reference ff3aeb15778b",
+      "result": "preferred deployment selected"
+    },
+    {
+      "group": "qa-rpm-env-36095",
+      "endpoint": "/v1/messages",
+      "stream": true,
+      "status": 200,
+      "request_body": {
+        "model": "qa-rpm-env-36095",
+        "stream": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Reply with only: Weights work. Verification reference eaaf217b01f5"
+          }
+        ],
+        "max_tokens": 48
+      },
+      "response_body": "event: message_start\ndata: {\"type\":\"message_start\",\"message\":{\"id\":\"msg_dc3d3a94-f03a-4703-8cd6-9da412c900a6\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[],\"model\":\"qa-rpm-env-36095\",\"stop_reason\":null,\"stop_sequence\":null,\"usage\":{\"input_tokens\":0,\"output_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0}}}\n\nevent: content_block_start\ndata: {\"type\": \"content_block_start\", \"index\": 0, \"content_block\": {\"type\": \"text\", \"text\": \"\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"Weights\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \" work\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \".\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \" Verification\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \" reference\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \" ea\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"af\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"2\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"1\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"7\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"b\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"0\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"1\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"f\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"5\"}}\n\nevent: content_block_stop\ndata: {\"type\": \"content_block_stop\", \"index\": 0}\n\nevent: message_delta\ndata: {\"type\": \"message_delta\", \"delta\": {\"stop_reason\": \"end_turn\"}, \"usage\": {\"input_tokens\": 32, \"output_tokens\": 16}}\n\nevent: message_stop\ndata: {\"type\": \"message_stop\"}\n\n",
+      "headers": {
+        "x-litellm-call-id": "6a448f81-ed34-4109-8a51-b3b9306b0059",
+        "x-litellm-model-id": "qa-rpm-env-36095-preferred",
+        "x-litellm-model-name": "ollama_chat/qa-qwen3.5-0.8b",
+        "x-litellm-model-api-base": "http://127.0.0.1:11434"
+      },
+      "generated_content": "Weights work. Verification reference eaaf217b01f5",
+      "result": "preferred deployment selected"
+    },
+    {
+      "group": "qa-tpm-env-36095",
+      "endpoint": "/v1/messages",
+      "stream": true,
+      "status": 200,
+      "request_body": {
+        "model": "qa-tpm-env-36095",
+        "stream": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Reply with only: Weights work. Verification reference 1eef5d11261b"
+          }
+        ],
+        "max_tokens": 48
+      },
+      "response_body": "event: message_start\ndata: {\"type\":\"message_start\",\"message\":{\"id\":\"msg_0d7ec540-bd2c-42fa-8f31-78ecd7267168\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[],\"model\":\"qa-tpm-env-36095\",\"stop_reason\":null,\"stop_sequence\":null,\"usage\":{\"input_tokens\":0,\"output_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0}}}\n\nevent: content_block_start\ndata: {\"type\": \"content_block_start\", \"index\": 0, \"content_block\": {\"type\": \"text\", \"text\": \"\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"We\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"ights\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \" work\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \".\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \" Verification\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \" reference\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \" \"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"1\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"e\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"ef\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"5\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"d\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"1\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"1\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"2\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"6\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"1\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"b\"}}\n\nevent: content_block_stop\ndata: {\"type\": \"content_block_stop\", \"index\": 0}\n\nevent: message_delta\ndata: {\"type\": \"message_delta\", \"delta\": {\"stop_reason\": \"end_turn\"}, \"usage\": {\"input_tokens\": 34, \"output_tokens\": 19}}\n\nevent: message_stop\ndata: {\"type\": \"message_stop\"}\n\n",
+      "headers": {
+        "x-litellm-call-id": "f637eb7d-ffc7-4480-9e4c-fed8ffadfb38",
+        "x-litellm-model-id": "qa-tpm-env-36095-preferred",
+        "x-litellm-model-name": "ollama_chat/qa-qwen3.5-0.8b",
+        "x-litellm-model-api-base": "http://127.0.0.1:11434"
+      },
+      "generated_content": "Weights work. Verification reference 1eef5d11261b",
+      "result": "preferred deployment selected"
+    }
+  ],
+  "provider_version": {
+    "version": "0.40.11"
+  },
+  "provider_model": {
+    "name": "qa-qwen3.5-0.8b:latest",
+    "model": "qa-qwen3.5-0.8b:latest",
+    "modified_at": "2026-10-25T18:19:40.2149338Z",
+    "size": 563036247,
+    "digest": "b790a0205272c35146e957d39a04462650f001c32bfecabcb6518a00b63ce3b7",
+    "details": {
+      "parent_model": "Qwen3.5-0.8B-Q4_0.gguf",
+      "format": "gguf",
+      "family": "qwen35",
+      "families": [
+        "qwen35"
+      ],
+      "parameter_size": "752.39M",
+      "quantization_level": "Q4_0",
+      "context_length": 262144,
+      "embedding_length": 1024,
+      "runner": "llamacpp"
+    },
+    "capabilities": [
+      "tools",
+      "thinking",
+      "completion"
+    ]
+  },
+  "alias": "qa-36095-baseline-b404f2",
+  "successes": 24,
+  "expected_failures": 12,
+  "provider_loaded_models": {
+    "models": [
+      {
+        "name": "qa-qwen3.5-0.8b:latest",
+        "model": "qa-qwen3.5-0.8b:latest",
+        "size": 623630088,
+        "digest": "b790a0205272c35146e957d39a04462650f001c32bfecabcb6518a00b63ce3b7",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "qwen35",
+          "families": [
+            "qwen35"
+          ],
+          "parameter_size": "752.39M",
+          "quantization_level": "Q4_0"
+        },
+        "expires_at": "2026-10-25T19:27:44.456323234Z",
+        "size_vram": 0,
+        "context_length": 1024,
+        "runner": "llamacpp"
+      }
+    ]
+  },
+  "completed_at": "2026-10-25T19:22:44.537230+00:00"
+}

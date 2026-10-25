@@ -1,0 +1,6 @@
+{
+  "base": "dddbaa803d6e9fcc862ea7a5412f771cb1ae040e",
+  "branch": "litellm_fix_36095_numeric_weights",
+  "previous_pr_closed_unmerged": 36100,
+  "adjacent_ui_pr_not_same_fix": 46224
+}

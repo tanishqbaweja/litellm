@@ -1,0 +1,81 @@
+[
+  {
+    "name": "qa-weight-int-36095",
+    "metric": "weight",
+    "values": [
+      "os.environ/QA_36095_INTEGER_WEIGHT",
+      "os.environ/QA_36095_ZERO_WEIGHT"
+    ],
+    "normalized": [
+      100,
+      0
+    ],
+    "fails_on_main": true
+  },
+  {
+    "name": "qa-weight-frac-36095",
+    "metric": "weight",
+    "values": [
+      "os.environ/QA_36095_FRACTIONAL_WEIGHT",
+      "os.environ/QA_36095_ZERO_WEIGHT"
+    ],
+    "normalized": [
+      1.5,
+      0
+    ],
+    "fails_on_main": true
+  },
+  {
+    "name": "qa-weight-numeric-36095",
+    "metric": "weight",
+    "values": [
+      1.5,
+      0
+    ],
+    "normalized": [
+      1.5,
+      0
+    ],
+    "fails_on_main": false
+  },
+  {
+    "name": "qa-weight-none-36095",
+    "metric": "rpm",
+    "values": [
+      1000000,
+      0
+    ],
+    "normalized": [
+      1000000,
+      0
+    ],
+    "explicit_none_weight": true,
+    "fails_on_main": false
+  },
+  {
+    "name": "qa-rpm-env-36095",
+    "metric": "rpm",
+    "values": [
+      "os.environ/QA_36095_RATE",
+      "os.environ/QA_36095_ZERO_RATE"
+    ],
+    "normalized": [
+      1000000,
+      0
+    ],
+    "fails_on_main": false
+  },
+  {
+    "name": "qa-tpm-env-36095",
+    "metric": "tpm",
+    "values": [
+      "os.environ/QA_36095_RATE",
+      "os.environ/QA_36095_ZERO_RATE"
+    ],
+    "normalized": [
+      1000000,
+      0
+    ],
+    "fails_on_main": false
+  }
+]
