@@ -16,4 +16,6 @@ Both legs ran the proxy on 127.0.0.1:4317 against a fresh PostgreSQL 16.2 databa
 | `after-create-toast.png` | Branch, "Guardrail created successfully" |
 | `before-guardrail-list.png` | Main, the Guardrails table is still empty after the failed create |
 | `after-guardrail-list.png` | Branch, the Guardrails table lists the new guardrail |
+| `before-edit-form.png` | Main, Settings > Edit Settings of a Generic Guardrail API guardrail created through `POST /guardrails`. Provider Settings is empty |
+| `after-edit-form.png` | Branch, the same view shows the stored `api_base` and a masked `api_key` |
 | `guardrail_standin.py` | The local guardrail service and chat model the proxy called, stdlib only |
